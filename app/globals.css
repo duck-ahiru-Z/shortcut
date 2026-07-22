@@ -158,6 +158,103 @@ main {
 }
 
 /* ==========================================
+   ホーム画面 (ヒーロー・級別)
+   ========================================== */
+.hero-card {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--accent-primary);
+}
+
+.hero-desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-main);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  border-left: 5px solid var(--accent-primary);
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+.grade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.grade-card {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grade-header {
+  margin-bottom: 16px;
+}
+
+.grade-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border: 1px solid var(--text-main);
+}
+
+.badge-available {
+  background-color: var(--accent-primary);
+  color: #ffffff;
+}
+
+.badge-upcoming {
+  background-color: var(--bg-primary);
+  color: var(--text-muted);
+}
+
+.grade-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.grade-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.grade-meta {
+  font-size: 13px;
+  border-top: 1px solid var(--border-light);
+  padding-top: 12px;
+  margin-bottom: 24px;
+  color: var(--text-main);
+}
+
+.grade-meta p {
+  margin-bottom: 4px;
+}
+
+/* ==========================================
    画面構成
    ========================================== */
 .screen {
