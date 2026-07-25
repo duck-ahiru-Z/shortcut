@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
-import { CertificateApp, CertificateData } from "@/lib/certificate";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import jsPDF from "jspdf";
 import { GradeResult, WrongAnswerInfo } from "@/actions/exam";
+import CertificateDOM from "@/components/exam/CertificateDOM";
+import { CertificateData } from "@/lib/certificate";
 
 type StoredResult = GradeResult & {
   lastName: string;
@@ -16,7 +16,7 @@ type StoredResult = GradeResult & {
 export default function ResultPage() {
   const router = useRouter();
   const [result, setResult] = useState<StoredResult | null>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [certData, setCertData] = useState<CertificateData | null>(null);
 
   useEffect(() => {
     const data = sessionStorage.getItem("examResult");
@@ -28,46 +28,28 @@ export default function ResultPage() {
     try {
       const parsed = JSON.parse(data);
       setResult(parsed);
+      
+      if (parsed.passed) {
+        const date = new Date();
+        const dateStr = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+        setCertData({
+          score: parsed.score,
+          rate: parsed.rate,
+          certNo: parsed.certNo || "IBT-00000000-0000",
+          dateStr,
+          gradeTitle: parsed.gradeTitle || "5級 (Windows版)",
+          lastName: parsed.lastName,
+          firstName: parsed.firstName,
+        });
+      }
     } catch (e) {
       router.push("/");
     }
   }, [router]);
 
-  useEffect(() => {
-    if (result && result.passed && canvasRef.current) {
-      const date = new Date();
-      const dateStr = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
-
-      const certData: CertificateData = {
-        score: result.score,
-        rate: result.rate,
-        certNo: result.certNo || "IBT-00000000-0000",
-        dateStr,
-        gradeTitle: result.gradeTitle || "5級 (Windows版)",
-        lastName: result.lastName,
-        firstName: result.firstName,
-      };
-
-      CertificateApp.generate(canvasRef.current, certData);
-    }
-  }, [result]);
-
   const handleDownloadPDF = () => {
-    if (!canvasRef.current) return;
-    
-    // Create jsPDF instance (A4 landscape)
-    const doc = new jsPDF({
-      orientation: 'landscape',
-      unit: 'mm',
-      format: 'a4'
-    });
-
-    const imgData = canvasRef.current.toDataURL('image/png');
-    // Add image to PDF. 297x210 is A4 landscape in mm
-    doc.addImage(imgData, 'PNG', 0, 0, 297, 210);
-    
-    const gradeName = result?.gradeTitle?.replace(/\s+/g, '_') || 'certificate';
-    doc.save(`${gradeName}.pdf`);
+    // 印刷ダイアログを呼び出し、ブラウザの機能でベクターPDFとして保存させる
+    window.print();
   };
 
   if (!result) return null;
@@ -145,18 +127,19 @@ export default function ResultPage() {
           )}
         </div>
 
-        {result.passed && (
+        {result.passed && certData && (
           <div className="certificate-section" style={{ marginTop: "48px" }}>
             <div className="certificate-title">合格証書 (IBT)</div>
             
-            <div style={{ marginTop: "16px", marginBottom: "16px" }}>
+            <div style={{ marginTop: "16px", marginBottom: "24px" }}>
               <button className="btn btn-primary" onClick={handleDownloadPDF} style={{ padding: "12px 32px" }}>
-                PDFでダウンロードする
+                PDFで保存・印刷する
               </button>
             </div>
             
-            <div className="certificate-preview-container">
-              <canvas id="certificateCanvas" ref={canvasRef} style={{ pointerEvents: "none" }}></canvas>
+            {/* DOM版の合格証書（印刷時にはこれが全画面になる） */}
+            <div className="print-only">
+              <CertificateDOM data={certData} />
             </div>
             <p style={{ fontSize: "13px", color: "var(--text-muted)", marginTop: "8px" }}>
               ※証書番号: {result.certNo}

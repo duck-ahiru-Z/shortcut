@@ -6,6 +6,7 @@ import AdminLogin from "@/components/AdminLogin";
 import AdminResultsTable from "@/components/AdminResultsTable";
 import AdminStatsCards from "@/components/admin/AdminStatsCards";
 import AdminWrongRankings from "@/components/admin/AdminWrongRankings";
+import AdminQuestionEditor from "@/components/admin/AdminQuestionEditor";
 
 // Server Component (Admin Dashboard)
 export default async function AdminDashboard({
@@ -114,7 +115,7 @@ export default async function AdminDashboard({
         passRate={passRate} 
       />
 
-      <div style={{ display: "flex", gap: "32px", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", gap: "32px", flexWrap: "wrap", marginBottom: "32px" }}>
         
         {/* 間違えやすい問題ランキング */}
         <div style={{ flex: "1 1 300px" }}>
@@ -123,7 +124,7 @@ export default async function AdminDashboard({
 
         {/* 直近の受験履歴 */}
         <div style={{ flex: "2 1 500px" }}>
-          <div className="card" style={{ padding: "24px" }}>
+          <div className="card" style={{ padding: "24px", height: "100%" }}>
             <h2 className="section-title" style={{ fontSize: "18px", marginBottom: "16px" }}>
               直近の受験記録
             </h2>
@@ -135,8 +136,12 @@ export default async function AdminDashboard({
             
           </div>
         </div>
-
       </div>
+
+      {/* 問題エディタ */}
+      <AdminQuestionEditor grade={grade} />
+      
     </main>
   );
 }
+

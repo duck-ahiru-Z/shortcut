@@ -6,16 +6,19 @@ export function useAntiCheat(
   setTabSwitches: React.Dispatch<React.SetStateAction<number>>
 ) {
   useEffect(() => {
-    if (!started || isSubmitting) return;
-
+    // コンテキストメニュー（右クリック）を常に禁止
     const handleContextMenu = (e: MouseEvent) => {
       e.preventDefault();
     };
 
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'hidden') {
-        setTabSwitches(prev => prev + 1);
-        alert("【警告】試験中のタブ切り替え・別ウィンドウの操作は禁止されています。この操作は記録されます。");
+        // 試験中（開始後かつ提出前）のみタブ切り替え回数をカウントするが、
+        // 警告は試験前でも出すようにして厳格化する
+        if (started && !isSubmitting) {
+          setTabSwitches(prev => prev + 1);
+        }
+        alert("【警告】試験ページでの別ウィンドウの操作・タブ切り替えは禁止されています。（試験中は記録されます）");
       }
     };
 

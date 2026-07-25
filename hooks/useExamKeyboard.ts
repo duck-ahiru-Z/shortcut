@@ -11,16 +11,24 @@ export function useExamKeyboard(
   handleSubmit: () => void
 ) {
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
-    if (!started || isSubmitting) return;
+    // 1. 常時ブロックする操作 (デベロッパーツール対策)
+    const isMac = navigator.userAgent.toUpperCase().indexOf('MAC') >= 0;
+    const isDevTools = 
+      e.key === "F12" || 
+      (e.ctrlKey && e.key.toLowerCase() === "u") ||
+      (isMac && e.metaKey && e.altKey && e.key.toLowerCase() === "i") || // Mac Cmd+Option+I
+      (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") ||
+      (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") ||
+      (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") ||
+      (e.ctrlKey && e.key.toLowerCase() === "c");
 
-    // Block F12, Ctrl+U, Ctrl+Shift+I, Ctrl+C
-    if (e.key === "F12" || 
-       (e.ctrlKey && e.key.toLowerCase() === "u") ||
-       (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") ||
-       (e.ctrlKey && e.key.toLowerCase() === "c")) {
+    if (isDevTools) {
       e.preventDefault();
       return;
     }
+
+    // 2. 試験中のみ有効な操作 (回答ショートカット)
+    if (!started || isSubmitting) return;
 
     const currentQ = questions[currentIndex];
     if (!currentQ) return;
