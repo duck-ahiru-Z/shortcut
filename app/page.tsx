@@ -40,51 +40,100 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 4級 (準備中) */}
+          {/* 4級 */}
           <div className="grade-card">
             <div className="grade-header">
-              <span className="grade-badge badge-upcoming">準備中</span>
+              <span className="grade-badge badge-available">受験可能</span>
               <h3 className="grade-title">4級 (Windows版)</h3>
-              <p className="grade-desc">現在準備中です。公開までお待ちください。</p>
+              <p className="grade-desc">
+                ウィンドウ操作（Winキー）や文字の範囲選択、ブラウザの高度なタブ操作など、ワンランク上の実務向けショートカットキーを出題します。
+              </p>
             </div>
             <div>
-              <button className="btn btn-disabled" disabled>準備中</button>
+              <div className="grade-meta">
+                <p><strong>出題数:</strong> 30問</p>
+                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>合格基準:</strong> 正答率80%以上</p>
+              </div>
+              <Link href="/exam?grade=4kyu" className="btn btn-primary">
+                4級を受験する (IBT試験へ)
+              </Link>
             </div>
           </div>
 
-          {/* 3級 (準備中) */}
+          {/* 3級 */}
           <div className="grade-card">
             <div className="grade-header">
-              <span className="grade-badge badge-upcoming">準備中</span>
+              <span className="grade-badge badge-upcoming">テスト運用中</span>
               <h3 className="grade-title">3級 (Windows版)</h3>
-              <p className="grade-desc">現在準備中です。公開までお待ちください。</p>
+              <p className="grade-desc">【仮問題】WordやExcelなどの各アプリ固有の操作など、応用的なショートカットを出題予定です。</p>
             </div>
             <div>
-              <button className="btn btn-disabled" disabled>準備中</button>
+              <div className="grade-meta">
+                <p><strong>出題数:</strong> 5問 (仮)</p>
+                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>合格基準:</strong> 正答率80%以上</p>
+              </div>
+              <Link href="/exam?grade=3kyu" className="btn btn-primary">
+                3級を受験する (仮テスト)
+              </Link>
             </div>
           </div>
 
-          {/* 2級 (準備中) */}
+          {/* 2級 */}
           <div className="grade-card">
             <div className="grade-header">
-              <span className="grade-badge badge-upcoming">準備中</span>
+              <span className="grade-badge badge-upcoming">テスト運用中</span>
               <h3 className="grade-title">2級 (Windows版)</h3>
-              <p className="grade-desc">現在準備中です。公開までお待ちください。</p>
+              <p className="grade-desc">【仮問題】さらに高度な操作や、PCの設定周りのショートカットなどを出題予定です。</p>
             </div>
             <div>
-              <button className="btn btn-disabled" disabled>準備中</button>
+              <div className="grade-meta">
+                <p><strong>出題数:</strong> 5問 (仮)</p>
+                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>合格基準:</strong> 正答率80%以上</p>
+              </div>
+              <Link href="/exam?grade=2kyu" className="btn btn-primary">
+                2級を受験する (仮テスト)
+              </Link>
             </div>
           </div>
 
-          {/* 1級 (準備中) */}
+          {/* 1級 */}
           <div className="grade-card">
             <div className="grade-header">
-              <span className="grade-badge badge-upcoming">準備中</span>
+              <span className="grade-badge badge-upcoming">テスト運用中</span>
               <h3 className="grade-title">1級 (Windows版)</h3>
-              <p className="grade-desc">現在準備中です。公開までお待ちください。</p>
+              <p className="grade-desc">【仮問題】あらゆるアプリをマウスなしで操作する、プロフェッショナル向けの最難関試験です。</p>
             </div>
             <div>
-              <button className="btn btn-disabled" disabled>準備中</button>
+              <div className="grade-meta">
+                <p><strong>出題数:</strong> 5問 (仮)</p>
+                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>合格基準:</strong> 正答率80%以上</p>
+              </div>
+              <Link href="/exam?grade=1kyu" className="btn btn-primary">
+                1級を受験する (仮テスト)
+              </Link>
+            </div>
+          </div>
+
+          {/* 実務検定 */}
+          <div className="grade-card">
+            <div className="grade-header">
+              <span className="grade-badge badge-available" style={{ backgroundColor: "#8a2be2" }}>NEW!</span>
+              <h3 className="grade-title">実務検定 (フットペダル連携)</h3>
+              <p className="grade-desc">【仮問題】足元のフットペダルと連携し、実践的なタイピング＋ショートカットの速さを測定します。</p>
+            </div>
+            <div>
+              <div className="grade-meta">
+                <p><strong>出題数:</strong> 5問 (仮)</p>
+                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>合格基準:</strong> 正答率80%以上</p>
+              </div>
+              <Link href="/exam?grade=practical" className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                実務検定に挑戦する
+              </Link>
             </div>
           </div>
 
