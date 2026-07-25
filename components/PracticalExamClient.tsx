@@ -144,8 +144,6 @@ export default function PracticalExamClient({ grade }: Props) {
   if (!started) {
     return (
       <ExamPreScreen 
-        lastName={lastName} setLastName={setLastName}
-        firstName={firstName} setFirstName={setFirstName}
         agreed={agreed} setAgreed={setAgreed}
         isLoading={isLoading}
         onStart={handleStart}

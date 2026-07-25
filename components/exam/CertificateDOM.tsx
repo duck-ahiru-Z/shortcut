@@ -6,7 +6,8 @@ type Props = {
 };
 
 export default function CertificateDOM({ data }: Props) {
-  const fullName = `${data.lastName}  ${data.firstName}`;
+  const hasName = data.lastName || data.firstName;
+  const fullName = hasName ? `${data.lastName || ''} ${data.firstName || ''}`.trim() : "受験者";
 
   return (
     <div className="certificate-dom-container">

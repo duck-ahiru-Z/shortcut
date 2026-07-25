@@ -51,53 +51,79 @@ function parse4kyu() {
 }
 
 function generateDummyQuestions(gradePrefix, startId) {
-  const questions = [];
-  for (let i = 1; i <= 5; i++) {
-    questions.push({
-      id: startId + i,
-      question: `これは${gradePrefix}の仮の問題${i}です。正しい選択肢を選んでください。`,
-      choices: [
-        `A. 正解の選択肢`,
-        `B. 間違いの選択肢1`,
-        `C. 間違いの選択肢2`,
-        `D. 間違いの選択肢3`
-      ],
-      answer: `A. 正解の選択肢`
-    });
-  }
-  return questions;
+  const dummyData = [
+    {
+      q: `【${gradePrefix}】現在開いているウィンドウをすべて最小化するショートカットキーはどれか。`,
+      c: ["A. Windows + D", "B. Windows + M", "C. Ctrl + D", "D. Alt + Tab"],
+      a: "A. Windows + D"
+    },
+    {
+      q: `【${gradePrefix}】ブラウザで直前に閉じたタブを復元するショートカットキーはどれか。`,
+      c: ["A. Ctrl + Shift + T", "B. Ctrl + T", "C. Alt + Left", "D. Ctrl + R"],
+      a: "A. Ctrl + Shift + T"
+    },
+    {
+      q: `【${gradePrefix}】ファイル名を変更するショートカットキーはどれか。`,
+      c: ["A. F2", "B. F4", "C. F5", "D. F12"],
+      a: "A. F2"
+    },
+    {
+      q: `【${gradePrefix}】クリップボードの履歴を表示するショートカットキーはどれか。`,
+      c: ["A. Windows + V", "B. Ctrl + V", "C. Windows + C", "D. Alt + V"],
+      a: "A. Windows + V"
+    },
+    {
+      q: `【${gradePrefix}】エクスプローラーを開くショートカットキーはどれか。`,
+      c: ["A. Windows + E", "B. Windows + R", "C. Ctrl + E", "D. Alt + E"],
+      a: "A. Windows + E"
+    }
+  ];
+
+  return dummyData.map((d, i) => ({
+    id: startId + i,
+    question: d.q,
+    choices: d.c,
+    answer: d.a
+  }));
 }
 
 function generatePracticalQuestions() {
   return [
     {
       id: 5001,
-      question: "すべて選択してください",
-      expectedKeyCombo: ["Control", "a"],
+      type: "select_all",
+      question: "下のテキストエリア内の文章をすべて選択してください。（マウスによるドラッグ選択禁止）",
+      expectedKeyCombo: ["control", "a"],
       answer: "CORRECT"
     },
     {
       id: 5002,
-      question: "コピーしてください",
-      expectedKeyCombo: ["Control", "c"],
-      answer: "CORRECT"
+      type: "find_password",
+      question: "以下の大量のテキストの中から「パスワード」を探し出し、下の解答欄に入力してください。",
+      expectedKeyCombo: ["control", "f"], // not strictly required if they type it, but good to have
+      taskData: { password: "APPLE" },
+      answer: "APPLE"
     },
     {
       id: 5003,
-      question: "貼り付けてください",
-      expectedKeyCombo: ["Control", "v"],
-      answer: "CORRECT"
+      type: "copy_paste",
+      question: "下の複雑なURLをコピーして、すぐ下の入力欄に貼り付けてください。（右クリック禁止）",
+      expectedKeyCombo: ["control", "v"], 
+      taskData: { targetText: "https://example.com/secure/token=xyz987" },
+      answer: "https://example.com/secure/token=xyz987"
     },
     {
       id: 5004,
-      question: "上書き保存してください",
-      expectedKeyCombo: ["Control", "s"],
+      type: "save_file",
+      question: "このファイルを上書き保存してください。",
+      expectedKeyCombo: ["control", "s"],
       answer: "CORRECT"
     },
     {
       id: 5005,
-      question: "検索ボックスを開いてください",
-      expectedKeyCombo: ["Control", "f"],
+      type: "rename_file",
+      question: "選択されているファイルの名前を変更するモードに切り替えてください。",
+      expectedKeyCombo: ["f2"],
       answer: "CORRECT"
     }
   ];
