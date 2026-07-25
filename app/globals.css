@@ -158,6 +158,103 @@ main {
 }
 
 /* ==========================================
+   ホーム画面 (ヒーロー・級別)
+   ========================================== */
+.hero-card {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--accent-primary);
+}
+
+.hero-desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-main);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  border-left: 5px solid var(--accent-primary);
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+.grade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.grade-card {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grade-header {
+  margin-bottom: 16px;
+}
+
+.grade-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border: 1px solid var(--text-main);
+}
+
+.badge-available {
+  background-color: var(--accent-primary);
+  color: #ffffff;
+}
+
+.badge-upcoming {
+  background-color: var(--bg-primary);
+  color: var(--text-muted);
+}
+
+.grade-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.grade-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.grade-meta {
+  font-size: 13px;
+  border-top: 1px solid var(--border-light);
+  padding-top: 12px;
+  margin-bottom: 24px;
+  color: var(--text-main);
+}
+
+.grade-meta p {
+  margin-bottom: 4px;
+}
+
+/* ==========================================
    画面構成
    ========================================== */
 .screen {
@@ -511,7 +608,173 @@ footer {
     flex-direction: column;
     gap: 12px;
   }
-  .controls-container .btn {
+.controls-container .btn {
     width: 100%;
+  }
+}
+
+/* ==========================================
+   DOM版 合格証書 (ベクター印刷対応)
+   ========================================== */
+.certificate-dom-container {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 1.414 / 1; /* A4 Landscape */
+  background: radial-gradient(circle, #faf6eb 0%, #ebdcb9 100%);
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: "MS Mincho", "Hiragino Mincho ProN", serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-outer-border {
+  border: 6px solid #c5a880;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.cert-inner-border {
+  border: 2px solid #a67c4e;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.cert-corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+.cert-corner.top-left { top: -2px; left: -2px; }
+.cert-corner.top-right { top: -2px; right: -2px; }
+.cert-corner.bottom-left { bottom: -2px; left: -2px; }
+.cert-corner.bottom-right { bottom: -2px; right: -2px; }
+
+.cert-content {
+  padding: 8% 8%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.cert-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-divider {
+  width: 40%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a67c4e, transparent);
+  margin: 0 auto 1rem;
+}
+
+.cert-grade {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #b45309;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.cert-name-section {
+  margin-bottom: 6%;
+}
+
+.cert-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "MS Gothic", "Hiragino Sans", sans-serif;
+  color: #0f172a;
+  margin-right: 1rem;
+}
+
+.cert-suffix {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.cert-body {
+  font-size: 1.1rem;
+  color: #1e293b;
+  line-height: 1.8;
+  margin-bottom: auto;
+}
+
+.cert-score {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-top: 1rem;
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 4%;
+}
+
+.cert-meta {
+  font-size: 0.9rem;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+.cert-signature {
+  text-align: right;
+  position: relative;
+}
+
+.cert-org {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cert-rep {
+  font-size: 1.1rem;
+}
+
+.cert-stamp {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.9;
+}
+
+/* 印刷用スタイル */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-only, .print-only * {
+    visibility: visible;
+  }
+  .print-only {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 297mm !important;
+    height: 210mm !important;
+    max-width: none !important;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  @page {
+    size: A4 landscape;
+    margin: 0;
   }
 }

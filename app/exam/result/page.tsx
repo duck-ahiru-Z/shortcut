@@ -1,14 +1,22 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
-import { CertificateApp, CertificateData } from "@/lib/certificate";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { GradeResult, WrongAnswerInfo } from "@/actions/exam";
+import CertificateDOM from "@/components/exam/CertificateDOM";
+import { CertificateData } from "@/lib/certificate";
+
+type StoredResult = GradeResult & {
+  lastName: string;
+  firstName: string;
+  gradeTitle: string;
+};
 
 export default function ResultPage() {
   const router = useRouter();
-  const [result, setResult] = useState<any>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [result, setResult] = useState<StoredResult | null>(null);
+  const [certData, setCertData] = useState<CertificateData | null>(null);
 
   useEffect(() => {
     const data = sessionStorage.getItem("examResult");
@@ -20,30 +28,29 @@ export default function ResultPage() {
     try {
       const parsed = JSON.parse(data);
       setResult(parsed);
+      
+      if (parsed.passed) {
+        const date = new Date();
+        const dateStr = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+        setCertData({
+          score: parsed.score,
+          rate: parsed.rate,
+          certNo: parsed.certNo || "IBT-00000000-0000",
+          dateStr,
+          gradeTitle: parsed.gradeTitle || "5級 (Windows版)",
+          lastName: parsed.lastName,
+          firstName: parsed.firstName,
+        });
+      }
     } catch (e) {
       router.push("/");
     }
   }, [router]);
 
-  useEffect(() => {
-    if (result && result.passed && canvasRef.current) {
-      const date = new Date();
-      const dateStr = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
-      const certNo = `IBT-${date.getFullYear()}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getDate()).padStart(2, '0')}-${Math.floor(Math.random() * 10000).toString().padStart(4, '0')}`;
-
-      const certData: CertificateData = {
-        score: result.score,
-        rate: result.rate,
-        certNo,
-        dateStr,
-        gradeTitle: result.gradeTitle || "5級 (Windows版)",
-        lastName: result.lastName,
-        firstName: result.firstName,
-      };
-
-      CertificateApp.generate(canvasRef.current, certData);
-    }
-  }, [result]);
+  const handleDownloadPDF = () => {
+    // 印刷ダイアログを呼び出し、ブラウザの機能でベクターPDFとして保存させる
+    window.print();
+  };
 
   if (!result) return null;
 
@@ -79,14 +86,63 @@ export default function ResultPage() {
           </div>
         </div>
 
-        {result.passed && (
-          <div className="certificate-section">
+        {/* 間違えた問題の振り返りセクション */}
+        <div style={{ marginTop: "40px" }}>
+          <h3 className="section-title">結果の振り返り</h3>
+          <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "16px" }}>
+            不正解だった問題と正しい解答を確認できます。（解説は準備中です）
+          </p>
+          
+          {result.wrongAnswers && result.wrongAnswers.length > 0 ? (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              {result.wrongAnswers.map((wrongObj: WrongAnswerInfo, i: number) => (
+                <div key={i} style={{ border: "1px solid var(--border-color)", padding: "16px", backgroundColor: "var(--bg-tertiary)" }}>
+                  <p style={{ fontWeight: 700, marginBottom: "12px", lineHeight: "1.5" }}>
+                    Q. {wrongObj.question}
+                  </p>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", fontSize: "14px" }}>
+                    <div style={{ flex: 1, minWidth: "200px" }}>
+                      <span style={{ color: "var(--danger)", fontWeight: 700 }}>× あなたの解答:</span>
+                      <div style={{ marginTop: "4px", padding: "8px", border: "1px solid var(--danger)", backgroundColor: "var(--danger-bg)" }}>
+                        {wrongObj.userAnswer}
+                      </div>
+                    </div>
+                    <div style={{ flex: 1, minWidth: "200px" }}>
+                      <span style={{ color: "var(--success)", fontWeight: 700 }}>○ 正しい解答:</span>
+                      <div style={{ marginTop: "4px", padding: "8px", border: "1px solid var(--success)", backgroundColor: "var(--success-bg)" }}>
+                        {wrongObj.correctAnswer}
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: "12px", paddingTop: "12px", borderTop: "1px dashed var(--border-light)", fontSize: "13px", color: "var(--text-muted)" }}>
+                    <strong>【解説】</strong> 現在準備中です。
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div style={{ padding: "24px", border: "1px solid var(--success)", backgroundColor: "var(--success-bg)", color: "var(--success)", textAlign: "center", fontWeight: 700 }}>
+              全問正解です！素晴らしい成績です。
+            </div>
+          )}
+        </div>
+
+        {result.passed && certData && (
+          <div className="certificate-section" style={{ marginTop: "48px" }}>
             <div className="certificate-title">合格証書 (IBT)</div>
-            <div className="certificate-preview-container">
-              <canvas id="certificateCanvas" ref={canvasRef}></canvas>
+            
+            <div style={{ marginTop: "16px", marginBottom: "24px" }}>
+              <button className="btn btn-primary" onClick={handleDownloadPDF} style={{ padding: "12px 32px" }}>
+                PDFで保存・印刷する
+              </button>
+            </div>
+            
+            {/* DOM版の合格証書（印刷時にはこれが全画面になる） */}
+            <div className="print-only">
+              <CertificateDOM data={certData} />
             </div>
             <p style={{ fontSize: "13px", color: "var(--text-muted)", marginTop: "8px" }}>
-              ※画像として保存（右クリックまたは長押し）してご利用いただけます。
+              ※証書番号: {result.certNo}
             </p>
           </div>
         )}

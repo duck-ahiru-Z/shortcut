@@ -13,9 +13,9 @@ export default function Home() {
 
       {/* 級別セクション */}
       <div>
-        <h2 className="section-title">級別の紹介と受験申請</h2>
-        <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px" }}>
-          受験したい級のボタンを押すと、試験ページへ遷移します。
+        <h2 className="section-title">受験可能な試験一覧</h2>
+        <p style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "32px", lineHeight: "1.6" }}>
+          現在のスキルレベルに合わせて、ご希望の試験をお選びください。初めての方は5級からの受験をおすすめします。
         </p>
         
         <div className="grade-grid">

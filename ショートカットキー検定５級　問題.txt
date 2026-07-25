@@ -1,0 +1,200 @@
+1問題文: 選択した文字やファイルをコピーしたい。使うショートカットはどれか。選択肢: A. Control + C　B. Control + X　C. Control + V　D. Control + A回答: A. Control + C
+2問題文: 選択した文字やファイルを別の場所へ移動するために切り取りたい。使うショートカットはどれか。選択肢: A. Control + V　B. Control + X　C. Control + C　D. Control + S回答: B. Control + X
+3問題文: コピーした文章を入力欄に貼り付けたい。使うショートカットはどれか。選択肢: A. Control + A　B. Control + C　C. Control + V　D. Control + Z回答: C. Control + V
+4問題文: 入力を間違えたので、直前の操作を取り消したい。使うショートカットはどれか。選択肢: A. Control + Y　B. Control + S　C. Control + F　D. Control + Z回答: D. Control + Z
+5問題文: Control + Zで取り消した操作をもう一度やり直したい。使うショートカットはどれか。選択肢: A. Control + Y　B. Control + X　C. Control + H　D. Control + P回答: A. Control + Y
+6問題文: 画面内の文章やフォルダー内のファイルをまとめて選択したい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + A　C. Control + C　D. Control + T回答: B. Control + A
+7問題文: ブラウザで新しいタブを開きたい。使うショートカットはどれか。選択肢: A. Control + N　B. Control + W　C. Control + T　D. Control + H回答: C. Control + T
+8問題文: 今開いているブラウザのタブを閉じたい。使うショートカットはどれか。選択肢: A. Control + Shift + T　B. Alt + Tab　C. Control + T　D. Control + W回答: D. Control + W
+9問題文: 間違えて閉じてしまったブラウザのタブをもう一度開きたい。使うショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + W　C. Control + R　D. Control + N回答: A. Control + Shift + T
+10問題文: ブラウザで表示中のページを最新の情報に更新したい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + R　C. Control + H　D. Control + P回答: B. Control + R
+11問題文: ブラウザのページをキーボードの単独キーで再読み込みしたい。使うキーはどれか。選択肢: A. F2　B. Control + S　C. F5　D. Control + A回答: C. F5
+12問題文: ブラウザで新しいウィンドウを開きたい。使うショートカットはどれか。選択肢: A. Control + T　B. Control + W　C. Alt + Tab　D. Control + N回答: D. Control + N
+13問題文: ページ内やファイル内から特定の文字を探したい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + H　C. Control + A　D. Control + S回答: A. Control + F
+14問題文: ブラウザで過去に見たページの閲覧履歴を表示したい。使うショートカットはどれか。選択肢: A. Control + R　B. Control + H　C. Control + N　D. Control + P回答: B. Control + H
+15問題文: WordやExcelなどで作業中のファイルを上書き保存したい。使うショートカットはどれか。選択肢: A. Control + P　B. Control + C　C. Control + S　D. Control + V回答: C. Control + S
+16問題文: 開いているページやファイルを印刷する画面を開きたい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + S　C. Control + H　D. Control + P回答: D. Control + P
+17問題文: 選択しているファイルやフォルダーの名前を変更したい。使うキーはどれか。選択肢: A. F2　B. F5　C. Control + A　D. Control + C回答: A. F2
+18問題文: 開いているアプリやウィンドウをすばやく切り替えたい。使うショートカットはどれか。選択肢: A. Control + T　B. Alt + Tab　C. Control + W　D. Windows + PrintScreen回答: B. Alt + Tab
+19問題文: 画面の一部分だけを切り取ってコピーしたい。使うショートカットはどれか。選択肢: A. Windows + PrintScreen　B. Control + C　C. Windows + Shift + S　D. Control + P回答: C. Windows + Shift + S
+20問題文: 画面全体を撮影し、自動的に画像として保存したい。使うショートカットはどれか。選択肢: A. Control + S　B. Windows + Shift + S　C. F2　D. Windows + PrintScreen回答: D. Windows + PrintScreen
+21問題文: Control + Cの主な働きはどれか。選択肢: A. 選択した文字やファイルをコピーする　B. 選択した文字やファイルを切り取る　C. 作業中のファイルを保存する　D. ページ内を検索する回答: A. 選択した文字やファイルをコピーする
+22問題文: Control + Xの主な働きはどれか。選択肢: A. 貼り付ける　B. 選択した文字やファイルを切り取る　C. すべて選択する　D. 印刷画面を開く回答: B. 選択した文字やファイルを切り取る
+23問題文: Control + Vの主な働きはどれか。選択肢: A. 元に戻す　B. 新しいタブを開く　C. コピーまたは切り取ったデータを貼り付ける　D. 閲覧履歴を表示する回答: C. コピーまたは切り取ったデータを貼り付ける
+24問題文: Control + Zの主な働きはどれか。選択肢: A. やり直す　B. 名前を変更する　C. 再読み込みする　D. 直前の操作を元に戻す回答: D. 直前の操作を元に戻す
+25問題文: Control + Yの主な働きはどれか。選択肢: A. 元に戻した操作をやり直す　B. すべて選択する　C. 新しいウィンドウを開く　D. 閉じたタブを開き直す回答: A. 元に戻した操作をやり直す
+26問題文: Control + Aの主な働きはどれか。選択肢: A. ページを更新する　B. 画面内の文字やファイルをすべて選択する　C. 貼り付ける　D. 印刷画面を開く回答: B. 画面内の文字やファイルをすべて選択する
+27問題文: Control + Tの主な働きはどれか。選択肢: A. 今のタブを閉じる　B. 閲覧履歴を表示する　C. ブラウザで新しいタブを開く　D. アプリを切り替える回答: C. ブラウザで新しいタブを開く
+28問題文: Control + Wの主な働きはどれか。選択肢: A. 新しいウィンドウを開く　B. 閉じたタブを復元する　C. ページ内を検索する　D. 今開いているタブやウィンドウを閉じる回答: D. 今開いているタブやウィンドウを閉じる
+29問題文: Control + Shift + Tの主な働きはどれか。選択肢: A. 間違えて閉じたタブを開き直す　B. 新しいタブを開く　C. ページを印刷する　D. 画面全体を保存する回答: A. 間違えて閉じたタブを開き直す
+30問題文: Control + Rの主な働きはどれか。選択肢: A. 名前を変更する　B. ブラウザのページを再読み込みする　C. 文字をコピーする　D. すべて選択する回答: B. ブラウザのページを再読み込みする
+31問題文: F5の主な働きはどれか。選択肢: A. 選択したファイル名を変更する　B. 新しいタブを開く　C. ブラウザのページを再読み込みする　D. 印刷画面を開く回答: C. ブラウザのページを再読み込みする
+32問題文: Control + Nの主な働きはどれか。選択肢: A. 新しいタブを開く　B. 直前の操作を元に戻す　C. 画面の一部をコピーする　D. 新しいウィンドウや新規作成画面を開く回答: D. 新しいウィンドウや新規作成画面を開く
+33問題文: Control + Fの主な働きはどれか。選択肢: A. ページ内やファイル内の文字を検索する　B. 閲覧履歴を表示する　C. ファイルを保存する　D. ファイル名を変更する回答: A. ページ内やファイル内の文字を検索する
+34問題文: Control + Hのブラウザでの主な働きはどれか。選択肢: A. 新しいウィンドウを開く　B. 閲覧履歴を表示する　C. すべて選択する　D. 貼り付ける回答: B. 閲覧履歴を表示する
+35問題文: Control + Sの主な働きはどれか。選択肢: A. 印刷画面を開く　B. 閉じたタブを開き直す　C. 作業中のファイルを上書き保存する　D. 画面全体を保存する回答: C. 作業中のファイルを上書き保存する
+36問題文: Control + Pの主な働きはどれか。選択肢: A. ページ内を検索する　B. ファイルを切り取る　C. ページを更新する　D. 印刷画面を開く回答: D. 印刷画面を開く
+37問題文: F2の主な働きはどれか。選択肢: A. 選択しているファイルやフォルダーの名前を変更する　B. ページを再読み込みする　C. すべて選択する　D. 貼り付ける回答: A. 選択しているファイルやフォルダーの名前を変更する
+38問題文: Alt + Tabの主な働きはどれか。選択肢: A. 閉じたタブを復元する　B. 開いているアプリやウィンドウを切り替える　C. ブラウザの履歴を開く　D. 画面の一部をコピーする回答: B. 開いているアプリやウィンドウを切り替える
+39問題文: Windows + Shift + Sの主な働きはどれか。選択肢: A. 画面全体を自動保存する　B. ファイルを上書き保存する　C. 画面の好きな部分を切り取ってコピーする　D. 印刷画面を開く回答: C. 画面の好きな部分を切り取ってコピーする
+40問題文: Windows + PrintScreenの主な働きはどれか。選択肢: A. 文字を検索する　B. 画面の一部分だけをコピーする　C. 新しいウィンドウを開く　D. 画面全体を撮影して画像として保存する回答: D. 画面全体を撮影して画像として保存する
+41問題文: レポートの一文を別の場所にも使いたいが、元の文は残したい。使うショートカットはどれか。選択肢: A. Control + C　B. Control + X　C. Control + Z　D. Control + W回答: A. Control + C
+42問題文: 文章の段落を今の場所から消して、別の場所へ移したい。まず使うショートカットはどれか。選択肢: A. Control + V　B. Control + X　C. Control + A　D. Control + S回答: B. Control + X
+43問題文: Control + Cでコピーした文章を、カーソル位置に入れたい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + C　C. Control + V　D. Control + Y回答: C. Control + V
+44問題文: ファイル名を変更中に入力を間違えたため、直前の操作を取り消したい。使うショートカットはどれか。選択肢: A. F2　B. Control + Y　C. Control + S　D. Control + Z回答: D. Control + Z
+45問題文: 消してしまった文字をControl + Zで戻したが、やはり消した状態にしたい。使うショートカットはどれか。選択肢: A. Control + Y　B. Control + A　C. Control + H　D. Control + P回答: A. Control + Y
+46問題文: フォルダー内のファイルを全部まとめて選択したい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + A　C. Control + T　D. Control + C回答: B. Control + A
+47問題文: 調べもの中に、同じブラウザ画面内で別のページも開きたい。使うショートカットはどれか。選択肢: A. Control + N　B. Control + W　C. Control + T　D. Alt + Tab回答: C. Control + T
+48問題文: ブラウザの不要なタブを閉じて整理したい。使うショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + R　C. Control + N　D. Control + W回答: D. Control + W
+49問題文: うっかり閉じた資料ページをすぐに戻したい。使うショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + T　C. Control + W　D. Control + H回答: A. Control + Shift + T
+50問題文: Webページの表示が古い気がするので再読み込みしたい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + R　C. Control + S　D. Control + P回答: B. Control + R
+51問題文: ブラウザの更新ボタンを押さずに、Fキーでページを更新したい。使うキーはどれか。選択肢: A. F2　B. Control + H　C. F5　D. Alt + Tab回答: C. F5
+52問題文: ブラウザのタブではなく、新しいウィンドウを開きたい。使うショートカットはどれか。選択肢: A. Control + T　B. Control + Shift + T　C. Control + W　D. Control + N回答: D. Control + N
+53問題文: 長いページの中から「提出期限」という文字を探したい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + H　C. Control + A　D. Control + R回答: A. Control + F
+54問題文: 昨日開いたWebページを探すため、ブラウザの閲覧履歴を開きたい。使うショートカットはどれか。選択肢: A. Control + N　B. Control + H　C. Control + F　D. Control + T回答: B. Control + H
+55問題文: 作業中の文書を失わないように、こまめに上書き保存したい。使うショートカットはどれか。選択肢: A. Control + P　B. Control + Z　C. Control + S　D. Control + C回答: C. Control + S
+56問題文: 画面に表示している資料を紙に印刷する画面を開きたい。使うショートカットはどれか。選択肢: A. Control + S　B. Control + F　C. Control + H　D. Control + P回答: D. Control + P
+57問題文: デスクトップ上で選択したフォルダー名を変えたい。使うキーはどれか。選択肢: A. F2　B. F5　C. Control + V　D. Control + W回答: A. F2
+58問題文: ブラウザとメモ帳など、開いているアプリをキーボードで切り替えたい。使うショートカットはどれか。選択肢: A. Control + T　B. Alt + Tab　C. Control + A　D. Windows + Shift + S回答: B. Alt + Tab
+59問題文: 画面の一部だけを選んで、チャットに貼り付けられる状態にしたい。使うショートカットはどれか。選択肢: A. Windows + PrintScreen　B. Control + P　C. Windows + Shift + S　D. Control + S回答: C. Windows + Shift + S
+60問題文: 画面全体のスクリーンショットを画像ファイルとして自動保存したい。使うショートカットはどれか。選択肢: A. Windows + Shift + S　B. Control + C　C. F2　D. Windows + PrintScreen回答: D. Windows + PrintScreen
+61問題文: コピーに使う「Control + C」の「C」は何の頭文字として覚えるとよいか。選択肢: A. Cut　B. Copy　C. Clear　D. Create回答: B. Copy
+62問題文: Xをはさみの形と考える覚え方がしやすい、切り取りのショートカットはどれか。選択肢: A. Control + C　B. Control + X　C. Control + A　D. Control + P回答: B. Control + X
+63問題文: コピーや切り取りの後、データを貼り付けるショートカットはどれか。選択肢: A. Control + Z　B. Control + C　C. Control + V　D. Control + F回答: C. Control + V
+64問題文: 「1つ前の状態に戻す」と考える操作のショートカットはどれか。選択肢: A. Control + Y　B. Control + S　C. Control + T　D. Control + Z回答: D. Control + Z
+65問題文: 「元に戻す」を取り消して、もう一度進める操作のショートカットはどれか。選択肢: A. Control + Y　B. Control + A　C. Control + W　D. Control + R回答: A. Control + Y
+66問題文: すべて選択に使う「Control + A」の「A」は何の頭文字として覚えるとよいか。選択肢: A. Add　B. Area　C. All　D. Any回答: C. All
+67問題文: ブラウザで新しいタブを開く「Control + T」の「T」は何の頭文字として覚えるとよいか。選択肢: A. Tab　B. Top　C. Tool　D. Text回答: A. Tab
+68問題文: 今開いているタブを閉じる操作として使うショートカットはどれか。選択肢: A. Control + T　B. Control + Shift + T　C. Control + N　D. Control + W回答: D. Control + W
+69問題文: 「閉じたタブを復活させる」ときに使う、Control + Shiftを含むショートカットはどれか。選択肢: A. Control + Shift + T　B. Windows + Shift + S　C. Control + T　D. Alt + Tab回答: A. Control + Shift + T
+70問題文: ページ再読み込みに使う「Control + R」の「R」は何の頭文字として覚えるとよいか。選択肢: A. Return　B. Read　C. Reload　D. Record回答: C. Reload
+71問題文: ブラウザ更新でControl + Rと同じ目的に使えるキーはどれか。選択肢: A. F2　B. Control + S　C. F5　D. Control + C回答: C. F5
+72問題文: 新しいウィンドウを開く「Control + N」の「N」は何の頭文字として覚えるとよいか。選択肢: A. Now　B. Next　C. Name　D. New回答: D. New
+73問題文: ページ内検索に使う「Control + F」の「F」は何の頭文字として覚えるとよいか。選択肢: A. File　B. Find　C. Forward　D. Focus回答: B. Find
+74問題文: ブラウザの閲覧履歴を表示する「Control + H」の「H」は何の頭文字として覚えるとよいか。選択肢: A. Home　B. Help　C. History　D. Hide回答: C. History
+75問題文: 上書き保存に使う「Control + S」の「S」は何の頭文字として覚えるとよいか。選択肢: A. Send　B. Stop　C. Save　D. Search回答: C. Save
+76問題文: 印刷画面を開く「Control + P」の「P」は何の頭文字として覚えるとよいか。選択肢: A. Print　B. Page　C. Paste　D. Panel回答: A. Print
+77問題文: ファイル名変更でよく使うファンクションキーはどれか。選択肢: A. F2　B. F5　C. Control + R　D. Control + V回答: A. F2
+78問題文: アプリの切り替えで、Tabキーと一緒に使うショートカットはどれか。選択肢: A. Control + Tab　B. Alt + Tab　C. Control + T　D. Control + W回答: B. Alt + Tab
+79問題文: 画面の好きな範囲を選んで切り取るスクリーンショットのショートカットはどれか。選択肢: A. Windows + PrintScreen　B. Control + P　C. Windows + Shift + S　D. Control + S回答: C. Windows + Shift + S
+80問題文: PrintScreenをWindowsキーと一緒に押して行う操作はどれか。選択肢: A. ページ内検索　B. 文字の貼り付け　C. タブを閉じる　D. 画面全体を画像として保存する回答: D. 画面全体を画像として保存する
+81問題文: 元の文字を残したまま同じ内容を増やす操作はどれか。選択肢: A. コピー　B. 切り取り　C. 元に戻す　D. 印刷回答: A. コピー
+82問題文: 元の場所から消して、別の場所へ移動するための操作はどれか。選択肢: A. 貼り付け　B. 切り取り　C. すべて選択　D. 保存回答: B. 切り取り
+83問題文: 切り取ったファイルを別のフォルダーへ入れるとき、移動先で使う操作はどれか。選択肢: A. コピー　B. 検索　C. 貼り付け　D. 履歴表示回答: C. 貼り付け
+84問題文: 誤って文字を消した直後に、消す前の状態へ戻す操作はどれか。選択肢: A. やり直し　B. 保存　C. 印刷　D. 元に戻す回答: D. 元に戻す
+85問題文: 「元に戻す」で取り消した操作を、もう一度実行する操作はどれか。選択肢: A. やり直し　B. すべて選択　C. 名前の変更　D. 閲覧履歴回答: A. やり直し
+86問題文: フォルダー内のファイルを一括で選ぶ操作はどれか。選択肢: A. 検索　B. すべて選択　C. 再読み込み　D. 貼り付け回答: B. すべて選択
+87問題文: ブラウザで同じウィンドウ内に追加の表示場所を作る操作はどれか。選択肢: A. 新しいウィンドウを開く　B. タブを閉じる　C. 新しいタブを開く　D. 印刷画面を開く回答: C. 新しいタブを開く
+88問題文: 使わなくなった現在のタブを消す操作はどれか。選択肢: A. 閉じたタブを開き直す　B. 新しいタブを開く　C. ページ内検索　D. タブを閉じる回答: D. タブを閉じる
+89問題文: 誤って閉じたブラウザのタブを復元する操作はどれか。選択肢: A. 閉じたタブを開き直す　B. ページを再読み込みする　C. 新しいウィンドウを開く　D. すべて選択する回答: A. 閉じたタブを開き直す
+90問題文: ブラウザのページを最新状態に読み直す操作はどれか。選択肢: A. 閲覧履歴を表示する　B. 再読み込みする　C. ファイルを保存する　D. 印刷する回答: B. 再読み込みする
+91問題文: F5でできるブラウザ操作はどれか。選択肢: A. ファイル名変更　B. タブを閉じる　C. ページを再読み込みする　D. 画面の一部をコピーする回答: C. ページを再読み込みする
+92問題文: Control + TではなくControl + Nで開くものとして正しいものはどれか。選択肢: A. 新しいタブ　B. 閉じたタブ　C. 閲覧履歴　D. 新しいウィンドウ回答: D. 新しいウィンドウ
+93問題文: 長い文書の中から単語を探す操作はどれか。選択肢: A. 検索　B. 保存　C. 印刷　D. 切り取り回答: A. 検索
+94問題文: ブラウザで過去に開いたページの一覧を見る操作はどれか。選択肢: A. 再読み込み　B. 閲覧履歴の表示　C. 新しいタブ　D. 貼り付け回答: B. 閲覧履歴の表示
+95問題文: 作業中のファイルに現在の内容を残すための操作はどれか。選択肢: A. 印刷　B. 検索　C. 上書き保存　D. 元に戻す回答: C. 上書き保存
+96問題文: 開いているファイルを紙に出すための画面を開く操作はどれか。選択肢: A. 保存　B. コピー　C. 新規作成　D. 印刷回答: D. 印刷
+97問題文: 選択したファイルの名称を変更する操作はどれか。選択肢: A. 名前を変更する　B. すべて選択する　C. 貼り付ける　D. 更新する回答: A. 名前を変更する
+98問題文: 複数のアプリを開いているとき、前面に出すアプリを変える操作はどれか。選択肢: A. 新しいタブを開く　B. アプリやウィンドウを切り替える　C. 閲覧履歴を表示する　D. 画面全体を保存する回答: B. アプリやウィンドウを切り替える
+99問題文: 画面の一部分だけを選んでコピーする操作はどれか。選択肢: A. 画面全体を保存する　B. 印刷する　C. 範囲指定スクリーンショット　D. 上書き保存する回答: C. 範囲指定スクリーンショット
+100問題文: 画面全体のスクリーンショットを自動的に画像として残す操作はどれか。選択肢: A. 部分スクリーンショット　B. 検索　C. 貼り付け　D. 全画面スクリーンショット保存回答: D. 全画面スクリーンショット保存
+101問題文: 友人に送るため、選択したファイルを複製する準備をしたい。使うショートカットはどれか。選択肢: A. Control + C　B. Control + X　C. Control + V　D. Control + P回答: A. Control + C
+102問題文: デスクトップのファイルを別フォルダーに移動したい。元の場所から取り除くために使うショートカットはどれか。選択肢: A. Control + C　B. Control + X　C. Control + S　D. Control + F回答: B. Control + X
+103問題文: コピーしたURLを検索欄に入れたい。使うショートカットはどれか。選択肢: A. Control + A　B. Control + C　C. Control + V　D. Control + H回答: C. Control + V
+104問題文: 表計算ソフトでセルに入力した内容を直前の状態に戻したい。使うショートカットはどれか。選択肢: A. Control + Y　B. Control + R　C. Control + S　D. Control + Z回答: D. Control + Z
+105問題文: 取り消した書式変更を、やっぱりもう一度適用したい。使うショートカットはどれか。選択肢: A. Control + Y　B. Control + X　C. Control + T　D. Control + W回答: A. Control + Y
+106問題文: 入力欄の文字を全部選んで、まとめて消したい。まず使うショートカットはどれか。選択肢: A. Control + F　B. Control + A　C. Control + H　D. Control + N回答: B. Control + A
+107問題文: ブラウザで調査ページを開いたまま、別の検索もしたい。新しいタブを開くショートカットはどれか。選択肢: A. Control + N　B. Control + W　C. Control + T　D. Control + R回答: C. Control + T
+108問題文: 動画サイトのタブだけを閉じ、他のタブは残したい。使うショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + T　C. Control + N　D. Control + W回答: D. Control + W
+109問題文: 閉じたタブを履歴から探さずにすぐ戻したい。使うショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + H　C. Control + W　D. Control + P回答: A. Control + Shift + T
+110問題文: ブラウザのページが更新されないとき、読み込み直すショートカットはどれか。選択肢: A. Control + F　B. Control + R　C. Control + C　D. Control + A回答: B. Control + R
+111問題文: ページを再読み込みするために押すファンクションキーはどれか。選択肢: A. F2　B. Control + S　C. F5　D. Alt + Tab回答: C. F5
+112問題文: ブラウザで別ウィンドウを開いて、画面を分けて使いたい。使うショートカットはどれか。選択肢: A. Control + T　B. Control + W　C. Control + Shift + T　D. Control + N回答: D. Control + N
+113問題文: PDF内で特定の語句が出てくる場所を探したい。使うショートカットはどれか。選択肢: A. Control + F　B. Control + H　C. Control + S　D. Control + X回答: A. Control + F
+114問題文: ブラウザで閲覧履歴のページを開きたい。使うショートカットはどれか。選択肢: A. Control + R　B. Control + H　C. Control + T　D. Control + A回答: B. Control + H
+115問題文: 作成中の資料を保存して、変更内容を失わないようにしたい。使うショートカットはどれか。選択肢: A. Control + P　B. Control + Z　C. Control + S　D. Control + V回答: C. Control + S
+116問題文: Webページを印刷するための画面を開きたい。使うショートカットはどれか。選択肢: A. Control + S　B. Control + F　C. Control + H　D. Control + P回答: D. Control + P
+117問題文: フォルダーを選択した状態で、すぐ名前を入力できる状態にしたい。使うキーはどれか。選択肢: A. F2　B. F5　C. Control + R　D. Control + Y回答: A. F2
+118問題文: レポート作成画面とブラウザを交互に切り替えたい。使うショートカットはどれか。選択肢: A. Control + T　B. Alt + Tab　C. Control + W　D. Control + Shift + T回答: B. Alt + Tab
+119問題文: エラー画面の一部だけを選択してスクリーンショットにしたい。使うショートカットはどれか。選択肢: A. Windows + PrintScreen　B. Control + C　C. Windows + Shift + S　D. Control + P回答: C. Windows + Shift + S
+120問題文: 画面全体を記録用に撮影し、画像として保存したい。使うショートカットはどれか。選択肢: A. Windows + Shift + S　B. Control + S　C. F2　D. Windows + PrintScreen回答: D. Windows + PrintScreen
+121問題文: 「Control + C」と組み合わせてよく使われる、コピーした内容を貼り付けるショートカットはどれか。選択肢: A. Control + V　B. Control + X　C. Control + Z　D. Control + F回答: A. Control + V
+122問題文: 「Control + X」の後、切り取ったデータを移動先に置くためのショートカットはどれか。選択肢: A. Control + C　B. Control + V　C. Control + A　D. Control + S回答: B. Control + V
+123問題文: 「貼り付け」を行う前に、元のデータを残したい場合に使うショートカットはどれか。選択肢: A. Control + X　B. Control + Z　C. Control + C　D. Control + W回答: C. Control + C
+124問題文: 「やり直し」と対になる、直前の操作を取り消すショートカットはどれか。選択肢: A. Control + Y　B. Control + A　C. Control + S　D. Control + Z回答: D. Control + Z
+125問題文: 「元に戻す」と対になる、取り消した操作を再実行するショートカットはどれか。選択肢: A. Control + Y　B. Control + H　C. Control + P　D. Control + C回答: A. Control + Y
+126問題文: すべての文字を選んでからコピーしたい。最初に使うショートカットはどれか。選択肢: A. Control + F　B. Control + A　C. Control + V　D. Control + R回答: B. Control + A
+127問題文: 新しいタブを開いた直後、今のタブは閉じられるか。選択肢: A. 閉じられる　B. 保存される　C. 閉じられず新しいタブが増える　D. 閲覧履歴が開く回答: C. 閉じられず新しいタブが増える
+128問題文: Control + Wを押したときの動作として最も近いものはどれか。選択肢: A. 新しいタブを開く　B. ページを再読み込みする　C. 印刷画面を開く　D. 今開いているタブやウィンドウを閉じる回答: D. 今開いているタブやウィンドウを閉じる
+129問題文: Control + Shift + Tは、どの操作の失敗を助けるショートカットか。選択肢: A. タブを間違えて閉じた　B. ファイル名を間違えた　C. 印刷を間違えた　D. 文字を検索したい回答: A. タブを間違えて閉じた
+130問題文: Control + Rを使う場面として正しいものはどれか。選択肢: A. ファイルを複製したい　B. Webページを最新状態にしたい　C. アプリを切り替えたい　D. 画面全体を保存したい回答: B. Webページを最新状態にしたい
+131問題文: F5を使う場面として正しいものはどれか。選択肢: A. ファイル名を変更したい　B. 新しいウィンドウを開きたい　C. Webページを更新したい　D. 文字を貼り付けたい回答: C. Webページを更新したい
+132問題文: Control + NとControl + Tの違いとして正しいものはどれか。選択肢: A. Control + Nは検索、Control + Tは保存　B. Control + Nは閉じる、Control + Tは復元　C. Control + Nは印刷、Control + Tは履歴　D. Control + Nは新しいウィンドウ、Control + Tは新しいタブ回答: D. Control + Nは新しいウィンドウ、Control + Tは新しいタブ
+133問題文: Control + Fを使う場面として正しいものはどれか。選択肢: A. 長い文章から特定の単語を探す　B. ファイルを上書き保存する　C. タブを閉じる　D. 画面全体を撮影する回答: A. 長い文章から特定の単語を探す
+134問題文: ブラウザでControl + Hを押したときに開くものとして正しいものはどれか。選択肢: A. 印刷画面　B. 閲覧履歴　C. 新しいタブ　D. すべて選択回答: B. 閲覧履歴
+135問題文: Control + Sを押すタイミングとして最も適切なものはどれか。選択肢: A. 印刷したいとき　B. 検索したいとき　C. 作業内容を保存したいとき　D. タブを閉じたいとき回答: C. 作業内容を保存したいとき
+136問題文: Control + Pを押すタイミングとして最も適切なものはどれか。選択肢: A. 保存したいとき　B. コピーしたいとき　C. 履歴を見たいとき　D. 印刷したいとき回答: D. 印刷したいとき
+137問題文: F2を使う場面として正しいものはどれか。選択肢: A. 選択中のファイル名を変えたい　B. ブラウザのページを更新したい　C. 閉じたタブを戻したい　D. 画面の一部を撮りたい回答: A. 選択中のファイル名を変えたい
+138問題文: Alt + Tabを使う場面として正しいものはどれか。選択肢: A. タブを新規作成したい　B. 開いているアプリを切り替えたい　C. ファイルを貼り付けたい　D. 履歴を表示したい回答: B. 開いているアプリを切り替えたい
+139問題文: Windows + Shift + Sを使う場面として正しいものはどれか。選択肢: A. 画面全体を自動保存したい　B. 文書を上書き保存したい　C. 画面の必要な部分だけをコピーしたい　D. タブを閉じたい回答: C. 画面の必要な部分だけをコピーしたい
+140問題文: Windows + PrintScreenを使う場面として正しいものはどれか。選択肢: A. 文字を切り取りたい　B. 画面の一部だけを選びたい　C. ファイル名を変えたい　D. 画面全体を画像として保存したい回答: D. 画面全体を画像として保存したい
+141問題文: メール本文の一部を選択し、同じ文を別の場所にも使いたい。最初に使う操作はどれか。選択肢: A. コピー　B. 切り取り　C. 印刷　D. 閲覧履歴回答: A. コピー
+142問題文: 文書内の一文を別の段落へ移動したい。元の場所から取り除く操作はどれか。選択肢: A. コピー　B. 切り取り　C. 検索　D. 保存回答: B. 切り取り
+143問題文: コピー済みの文字を入力欄に入れる操作はどれか。選択肢: A. 元に戻す　B. すべて選択　C. 貼り付け　D. 新しいタブ回答: C. 貼り付け
+144問題文: 誤操作の直後に、1つ前の状態へ戻す操作はどれか。選択肢: A. やり直し　B. 保存　C. 履歴表示　D. 元に戻す回答: D. 元に戻す
+145問題文: Control + Zで戻しすぎたとき、戻した操作を再び行う操作はどれか。選択肢: A. やり直し　B. すべて選択　C. コピー　D. 新規作成回答: A. やり直し
+146問題文: 文書全体を一気に選ぶ操作はどれか。選択肢: A. 検索　B. すべて選択　C. 切り取り　D. 印刷回答: B. すべて選択
+147問題文: ブラウザで、今のウィンドウ内に新しいページの入れ物を追加する操作はどれか。選択肢: A. 新しいウィンドウ　B. 閲覧履歴　C. 新しいタブ　D. 再読み込み回答: C. 新しいタブ
+148問題文: ブラウザで現在のタブを消す操作はどれか。選択肢: A. タブを復元　B. 新規作成　C. 検索　D. タブを閉じる回答: D. タブを閉じる
+149問題文: 閉じてしまったタブを再度開く操作はどれか。選択肢: A. 閉じたタブを開き直す　B. 新しいウィンドウを開く　C. すべて選択　D. 印刷回答: A. 閉じたタブを開き直す
+150問題文: ブラウザの情報を読み直して最新にする操作はどれか。選択肢: A. 閲覧履歴　B. 再読み込み　C. 保存　D. 名前変更回答: B. 再読み込み
+151問題文: F5と関係が深い操作はどれか。選択肢: A. 印刷　B. 貼り付け　C. 再読み込み　D. すべて選択回答: C. 再読み込み
+152問題文: 新しいブラウザウィンドウを開く操作はどれか。選択肢: A. 新しいタブ　B. タブを閉じる　C. 元に戻す　D. 新しいウィンドウ回答: D. 新しいウィンドウ
+153問題文: ファイル内の語句を探す操作はどれか。選択肢: A. 検索　B. 上書き保存　C. 印刷　D. 貼り付け回答: A. 検索
+154問題文: ブラウザで過去に見たWebページを確認する操作はどれか。選択肢: A. 再読み込み　B. 閲覧履歴の表示　C. 新しいタブ　D. 切り取り回答: B. 閲覧履歴の表示
+155問題文: WordやExcelで作成中の内容をファイルに残す操作はどれか。選択肢: A. 検索　B. 印刷　C. 上書き保存　D. タブを閉じる回答: C. 上書き保存
+156問題文: ページやファイルを紙に出す準備をする操作はどれか。選択肢: A. 保存　B. 履歴表示　C. 名前変更　D. 印刷回答: D. 印刷
+157問題文: 選択中のフォルダー名を変更する操作はどれか。選択肢: A. 名前を変更する　B. すべて選択する　C. コピーする　D. 再読み込みする回答: A. 名前を変更する
+158問題文: 複数のウィンドウを行き来する操作はどれか。選択肢: A. 新しいタブを開く　B. アプリやウィンドウを切り替える　C. 画面全体を保存する　D. 閲覧履歴を表示する回答: B. アプリやウィンドウを切り替える
+159問題文: 必要な範囲だけ画面を切り取ってコピーする操作はどれか。選択肢: A. 全画面保存　B. 上書き保存　C. 部分スクリーンショット　D. 印刷回答: C. 部分スクリーンショット
+160問題文: 画面全体を撮影して画像として保存する操作はどれか。選択肢: A. 部分スクリーンショット　B. 検索　C. コピー　D. 全画面スクリーンショット保存回答: D. 全画面スクリーンショット保存
+161問題文: URLを選択してコピーするときに使うショートカットはどれか。選択肢: A. Control + C　B. Control + V　C. Control + X　D. Control + H回答: A. Control + C
+162問題文: ファイルを別フォルダーへ移すため、元の場所から切り取りたい。使うショートカットはどれか。選択肢: A. Control + C　B. Control + X　C. Control + P　D. Control + R回答: B. Control + X
+163問題文: コピーしたファイルを別フォルダーに複製したい。移動先で使うショートカットはどれか。選択肢: A. Control + A　B. Control + F　C. Control + V　D. Control + Z回答: C. Control + V
+164問題文: 誤って貼り付けた内容をなかったことにしたい。使うショートカットはどれか。選択肢: A. Control + Y　B. Control + S　C. Control + H　D. Control + Z回答: D. Control + Z
+165問題文: Control + Zで取り消した貼り付けを、もう一度貼り付けた状態にしたい。使うショートカットはどれか。選択肢: A. Control + Y　B. Control + X　C. Control + T　D. Control + F回答: A. Control + Y
+166問題文: メモ帳の文章を全部コピーする前に、全文を選びたい。使うショートカットはどれか。選択肢: A. Control + C　B. Control + A　C. Control + V　D. Control + W回答: B. Control + A
+167問題文: 検索結果を残したまま、別の検索ページをタブで開きたい。使うショートカットはどれか。選択肢: A. Control + N　B. Control + H　C. Control + T　D. Control + P回答: C. Control + T
+168問題文: 今見ているブラウザタブを閉じたい。使うショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + R　C. Control + N　D. Control + W回答: D. Control + W
+169問題文: 誤って閉じたタブを、もう一度開き直すショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + T　C. Control + W　D. Control + S回答: A. Control + Shift + T
+170問題文: Webページを再読み込みするControlキーを使ったショートカットはどれか。選択肢: A. Control + F　B. Control + R　C. Control + H　D. Control + N回答: B. Control + R
+171問題文: Webページを再読み込みするファンクションキーはどれか。選択肢: A. F2　B. Control + A　C. F5　D. Control + C回答: C. F5
+172問題文: 新しいブラウザウィンドウを作るショートカットはどれか。選択肢: A. Control + T　B. Control + W　C. Control + Shift + T　D. Control + N回答: D. Control + N
+173問題文: ページ内検索を開くショートカットはどれか。選択肢: A. Control + F　B. Control + H　C. Control + R　D. Control + S回答: A. Control + F
+174問題文: ブラウザの閲覧履歴を開くショートカットはどれか。選択肢: A. Control + N　B. Control + H　C. Control + P　D. Control + V回答: B. Control + H
+175問題文: 作業中のファイルを上書き保存するショートカットはどれか。選択肢: A. Control + P　B. Control + F　C. Control + S　D. Control + Z回答: C. Control + S
+176問題文: 印刷画面を開くショートカットはどれか。選択肢: A. Control + S　B. Control + H　C. Control + C　D. Control + P回答: D. Control + P
+177問題文: ファイルやフォルダーの名前を変更するために使うキーはどれか。選択肢: A. F2　B. F5　C. Control + R　D. Control + Y回答: A. F2
+178問題文: 開いているアプリを切り替えるショートカットはどれか。選択肢: A. Control + T　B. Alt + Tab　C. Control + A　D. Windows + Shift + S回答: B. Alt + Tab
+179問題文: 選択範囲を指定してスクリーンショットをコピーするショートカットはどれか。選択肢: A. Windows + PrintScreen　B. Control + P　C. Windows + Shift + S　D. Control + S回答: C. Windows + Shift + S
+180問題文: 全画面スクリーンショットを自動保存するショートカットはどれか。選択肢: A. Windows + Shift + S　B. Control + C　C. F2　D. Windows + PrintScreen回答: D. Windows + PrintScreen
+181問題文: 選択した文章をそのまま残し、同じ内容を別の場所へ使う操作に最も近いものはどれか。選択肢: A. Control + C　B. Control + X　C. Control + Z　D. Control + W回答: A. Control + C
+182問題文: ファイルを移動させるため、元の場所からいったん取り除く操作に最も近いものはどれか。選択肢: A. Control + V　B. Control + X　C. Control + A　D. Control + S回答: B. Control + X
+183問題文: クリップボードに入っている内容を現在の位置に出す操作はどれか。選択肢: A. Control + C　B. Control + F　C. Control + V　D. Control + H回答: C. Control + V
+184問題文: 直前の変更を取り消すショートカットはどれか。選択肢: A. Control + Y　B. Control + S　C. Control + P　D. Control + Z回答: D. Control + Z
+185問題文: 取り消した変更を再び反映させるショートカットはどれか。選択肢: A. Control + Y　B. Control + A　C. Control + T　D. Control + R回答: A. Control + Y
+186問題文: 画面内の対象をまとめて選択するショートカットはどれか。選択肢: A. Control + F　B. Control + A　C. Control + C　D. Control + N回答: B. Control + A
+187問題文: ブラウザでタブを1つ増やすショートカットはどれか。選択肢: A. Control + N　B. Control + W　C. Control + T　D. Alt + Tab回答: C. Control + T
+188問題文: 現在開いているタブやウィンドウを閉じるショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + R　C. Control + N　D. Control + W回答: D. Control + W
+189問題文: 閉じたタブを再表示するショートカットはどれか。選択肢: A. Control + Shift + T　B. Control + T　C. Control + W　D. Control + H回答: A. Control + Shift + T
+190問題文: ページを最新情報に更新するショートカットはどれか。選択肢: A. Control + F　B. Control + R　C. Control + S　D. Control + P回答: B. Control + R
+191問題文: Control + Rと同じく、ブラウザの再読み込みに使えるキーはどれか。選択肢: A. F2　B. Control + H　C. F5　D. Windows + PrintScreen回答: C. F5
+192問題文: 新しいウィンドウや新規作成画面を開くショートカットはどれか。選択肢: A. Control + T　B. Control + W　C. Control + F　D. Control + N回答: D. Control + N
+193問題文: 文書やWebページ内から文字を探すショートカットはどれか。選択肢: A. Control + F　B. Control + H　C. Control + A　D. Control + S回答: A. Control + F
+194問題文: ブラウザで閲覧履歴を確認するショートカットはどれか。選択肢: A. Control + R　B. Control + H　C. Control + N　D. Control + P回答: B. Control + H
+195問題文: ファイルの作業内容を保存するショートカットはどれか。選択肢: A. Control + P　B. Control + C　C. Control + S　D. Control + V回答: C. Control + S
+196問題文: 印刷の設定画面を開くショートカットはどれか。選択肢: A. Control + S　B. Control + F　C. Control + H　D. Control + P回答: D. Control + P
+197問題文: 選択中のファイル名をすばやく変更するキーはどれか。選択肢: A. F2　B. F5　C. Control + R　D. Control + Y回答: A. F2
+198問題文: 複数のアプリを開いているとき、キーボードで切り替えるショートカットはどれか。選択肢: A. Control + T　B. Alt + Tab　C. Control + W　D. Windows + Shift + S回答: B. Alt + Tab
+199問題文: 画面の必要な部分だけを範囲指定してコピーするショートカットはどれか。選択肢: A. Windows + PrintScreen　B. Control + P　C. Windows + Shift + S　D. Control + S回答: C. Windows + Shift + S
+200問題文: 画面全体を撮影し、ピクチャフォルダなどに画像として自動保存するショートカットはどれか。選択肢: A. Windows + Shift + S　B. Control + C　C. F2　D. Windows + PrintScreen回答: D. Windows + PrintScreen
