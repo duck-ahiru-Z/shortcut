@@ -1,4 +1,5 @@
 import ExamClient from "@/components/ExamClient";
+import PracticalExamClient from "@/components/PracticalExamClient";
 
 export default async function ExamPage({
   searchParams,
@@ -9,7 +10,11 @@ export default async function ExamPage({
 
   return (
     <main>
-      <ExamClient grade={grade} />
+      {grade === "practical" ? (
+        <PracticalExamClient grade={grade} />
+      ) : (
+        <ExamClient grade={grade} />
+      )}
     </main>
   );
 }

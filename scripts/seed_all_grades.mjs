@@ -68,6 +68,41 @@ function generateDummyQuestions(gradePrefix, startId) {
   return questions;
 }
 
+function generatePracticalQuestions() {
+  return [
+    {
+      id: 5001,
+      question: "すべて選択してください",
+      expectedKeyCombo: ["Control", "a"],
+      answer: "CORRECT"
+    },
+    {
+      id: 5002,
+      question: "コピーしてください",
+      expectedKeyCombo: ["Control", "c"],
+      answer: "CORRECT"
+    },
+    {
+      id: 5003,
+      question: "貼り付けてください",
+      expectedKeyCombo: ["Control", "v"],
+      answer: "CORRECT"
+    },
+    {
+      id: 5004,
+      question: "上書き保存してください",
+      expectedKeyCombo: ["Control", "s"],
+      answer: "CORRECT"
+    },
+    {
+      id: 5005,
+      question: "検索ボックスを開いてください",
+      expectedKeyCombo: ["Control", "f"],
+      answer: "CORRECT"
+    }
+  ];
+}
+
 async function seed() {
   console.log("Parsing 4kyu questions...");
   const q4kyu = parse4kyu();
@@ -108,11 +143,11 @@ async function seed() {
     },
     {
       id: "practical",
-      title: "実務検定 (フットペダル・実践)",
+      title: "実務検定 (実践シミュレータ)",
       questionsCount: 5,
       passingRate: 0.8,
       duration: 1800,
-      pool: generateDummyQuestions("実務検定", 5000)
+      pool: generatePracticalQuestions()
     }
   ];
 

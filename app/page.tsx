@@ -122,8 +122,8 @@ export default function Home() {
           <div className="grade-card">
             <div className="grade-header">
               <span className="grade-badge badge-available" style={{ backgroundColor: "#8a2be2" }}>NEW!</span>
-              <h3 className="grade-title">実務検定 (フットペダル連携)</h3>
-              <p className="grade-desc">【仮問題】足元のフットペダルと連携し、実践的なタイピング＋ショートカットの速さを測定します。</p>
+              <h3 className="grade-title">実務検定 (実践シミュレータ)</h3>
+              <p className="grade-desc">【β版】4択ではなく、出題されたお題を実際にキーボード操作だけでこなしていく、より実践に近い形式の検定です。</p>
             </div>
             <div>
               <div className="grade-meta">
