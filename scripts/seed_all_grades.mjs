@@ -194,7 +194,7 @@ async function seed() {
     {
       id: "5kyu",
       title: "5級 (Windows版)",
-      questionsCount: 30,
+      questionsCount: 5,
       passingRate: 0.8,
       duration: 1800,
       pool: generateDummyQuestions("5級", 5000)
@@ -210,7 +210,7 @@ async function seed() {
     {
       id: "3kyu",
       title: "3級 (Windows版)",
-      questionsCount: 30,
+      questionsCount: 5,
       passingRate: 0.8,
       duration: 1800,
       pool: generateDummyQuestions("3級", 3000)
@@ -218,7 +218,7 @@ async function seed() {
     {
       id: "2kyu",
       title: "2級 (Windows版)",
-      questionsCount: 30,
+      questionsCount: 5,
       passingRate: 0.8,
       duration: 1800,
       pool: generateDummyQuestions("2級", 2000)
@@ -226,7 +226,7 @@ async function seed() {
     {
       id: "1kyu",
       title: "1級 (Windows版)",
-      questionsCount: 30,
+      questionsCount: 5,
       passingRate: 0.8,
       duration: 1800,
       pool: generateDummyQuestions("1級", 1000)

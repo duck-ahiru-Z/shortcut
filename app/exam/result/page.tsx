@@ -93,7 +93,11 @@ export default function ResultPage() {
             不正解だった問題と正しい解答を確認できます。（解説は準備中です）
           </p>
           
-          {result.wrongAnswers && result.wrongAnswers.length > 0 ? (
+          {result.score === result.total ? (
+            <div style={{ padding: "24px", border: "1px solid var(--success)", backgroundColor: "var(--success-bg)", color: "var(--success)", textAlign: "center", fontWeight: 700 }}>
+              全問正解です！素晴らしい成績です。
+            </div>
+          ) : result.wrongAnswers && result.wrongAnswers.length > 0 ? (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               {result.wrongAnswers.map((wrongObj: WrongAnswerInfo, i: number) => (
                 <div key={i} style={{ border: "1px solid var(--border-color)", padding: "16px", backgroundColor: "var(--bg-tertiary)" }}>
@@ -121,8 +125,8 @@ export default function ResultPage() {
               ))}
             </div>
           ) : (
-            <div style={{ padding: "24px", border: "1px solid var(--success)", backgroundColor: "var(--success-bg)", color: "var(--success)", textAlign: "center", fontWeight: 700 }}>
-              全問正解です！素晴らしい成績です。
+            <div style={{ padding: "24px", border: "1px solid var(--warning)", backgroundColor: "var(--warning-bg, #fff8e1)", color: "#b27b00", textAlign: "center", fontWeight: 700 }}>
+              未解答の問題がありました。（間違えた問題のデータがありません）
             </div>
           )}
         </div>
