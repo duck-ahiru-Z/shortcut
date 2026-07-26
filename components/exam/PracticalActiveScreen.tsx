@@ -112,7 +112,14 @@ export default function PracticalActiveScreen({
 
       // If it's a pure key combo task (like save_file or rename_file), mark success.
       // If it's select_all, we already check selection, but we can also use this as fallback.
-      if (isMatch && (q.type === "save_file" || q.type === "rename_file" || q.type === "select_all")) {
+      if (isMatch && (
+        q.type === "save_file" || 
+        q.type === "rename_file" || 
+        q.type === "select_all" ||
+        q.type === "undo_action" ||
+        q.type === "bold_text" ||
+        q.type === "print_doc"
+      )) {
         triggerSuccess();
       }
     };
@@ -249,6 +256,63 @@ export default function PracticalActiveScreen({
               <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "16px" }}>
                 <span style={{ fontSize: "12px", color: "var(--text-muted)" }}>未保存の変更があります*</span>
               </div>
+            </div>
+          </div>
+        );
+
+      case "undo_action":
+        return (
+          <div style={{ marginTop: "40px", display: "flex", justifyContent: "center" }}>
+            <div style={{
+              width: "100%", maxWidth: "500px", border: "1px solid var(--border-color)",
+              backgroundColor: "var(--bg-secondary)", borderRadius: "8px", padding: "24px",
+              fontFamily: "monospace", fontSize: "16px"
+            }}>
+              <div>const data = fetchData();</div>
+              <div style={{ color: "var(--danger)", textDecoration: "line-through", opacity: 0.7, margin: "8px 0" }}>
+                processData(data); // Accidentally deleted!
+              </div>
+              <div>return data;</div>
+              <p style={{ marginTop: "24px", fontSize: "13px", color: "var(--text-muted)", textAlign: "center" }}>
+                直前の操作を取り消してください。
+              </p>
+            </div>
+          </div>
+        );
+
+      case "bold_text":
+        return (
+          <div style={{ marginTop: "40px", display: "flex", justifyContent: "center" }}>
+            <div style={{
+              width: "100%", maxWidth: "500px", border: "1px solid var(--border-color)",
+              backgroundColor: "var(--bg-secondary)", borderRadius: "8px", padding: "24px",
+              fontSize: "18px"
+            }}>
+              <p>
+                本日は晴天なり。明日の会議資料の<span style={{ backgroundColor: "var(--accent-primary)", color: "white", padding: "2px 4px" }}>重要ポイント</span>について説明します。
+              </p>
+              <p style={{ marginTop: "24px", fontSize: "13px", color: "var(--text-muted)", textAlign: "center" }}>
+                選択中のテキストを太字にしてください。
+              </p>
+            </div>
+          </div>
+        );
+
+      case "print_doc":
+        return (
+          <div style={{ marginTop: "40px", display: "flex", justifyContent: "center" }}>
+            <div style={{
+              width: "100%", maxWidth: "400px", border: "1px solid var(--border-color)",
+              backgroundColor: "var(--bg-secondary)", borderRadius: "8px", padding: "24px",
+              boxShadow: "0 10px 25px rgba(0,0,0,0.1)", display: "flex", flexDirection: "column", alignItems: "center"
+            }}>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginBottom: "16px", color: "var(--text-muted)" }}>
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              <h3 style={{ margin: "0 0 8px 0" }}>月次報告書.pdf</h3>
+              <p style={{ margin: 0, fontSize: "14px", color: "var(--text-muted)" }}>全5ページ</p>
             </div>
           </div>
         );

@@ -10,7 +10,7 @@ export default async function ExamPage({
 
   return (
     <main>
-      {grade === "practical" ? (
+      {grade.startsWith("practical-") ? (
         <PracticalExamClient grade={grade} />
       ) : (
         <ExamClient grade={grade} />

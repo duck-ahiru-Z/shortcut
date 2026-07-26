@@ -66,12 +66,16 @@ export default async function AdminDashboard({
   const passRate = totalTakes > 0 ? Math.round((passedCount / totalTakes) * 100) : 0;
 
   const grades = [
-    { id: "5kyu", name: "5級" },
-    { id: "4kyu", name: "4級" },
-    { id: "3kyu", name: "3級" },
-    { id: "2kyu", name: "2級" },
-    { id: "1kyu", name: "1級" },
-    { id: "practical", name: "実務検定" }
+    { id: "5kyu", name: "5級 (知識)" },
+    { id: "4kyu", name: "4級 (知識)" },
+    { id: "3kyu", name: "3級 (知識)" },
+    { id: "2kyu", name: "2級 (知識)" },
+    { id: "1kyu", name: "1級 (知識)" },
+    { id: "practical-5kyu", name: "5級 (実務)" },
+    { id: "practical-4kyu", name: "4級 (実務)" },
+    { id: "practical-3kyu", name: "3級 (実務)" },
+    { id: "practical-2kyu", name: "2級 (実務)" },
+    { id: "practical-1kyu", name: "1級 (実務)" }
   ];
 
   return (

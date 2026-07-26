@@ -30,13 +30,17 @@ export default function Home() {
             </div>
             <div>
               <div className="grade-meta">
-                <p><strong>出題数:</strong> 30問</p>
-                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
-              <Link href="/exam?grade=5kyu" className="btn btn-primary">
-                5級を受験する (IBT試験へ)
-              </Link>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <Link href="/exam?grade=5kyu" className="btn btn-primary">
+                  5級 知識試験を受験する
+                </Link>
+                <Link href="/exam?grade=practical-5kyu" className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                  5級 実務試験に挑戦する
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -51,13 +55,17 @@ export default function Home() {
             </div>
             <div>
               <div className="grade-meta">
-                <p><strong>出題数:</strong> 30問</p>
-                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
-              <Link href="/exam?grade=4kyu" className="btn btn-primary">
-                4級を受験する (IBT試験へ)
-              </Link>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <Link href="/exam?grade=4kyu" className="btn btn-primary">
+                  4級 知識試験を受験する
+                </Link>
+                <Link href="/exam?grade=practical-4kyu" className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                  4級 実務試験に挑戦する
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -70,13 +78,17 @@ export default function Home() {
             </div>
             <div>
               <div className="grade-meta">
-                <p><strong>出題数:</strong> 5問 (仮)</p>
-                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
-              <Link href="/exam?grade=3kyu" className="btn btn-primary">
-                3級を受験する (仮テスト)
-              </Link>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <Link href="/exam?grade=3kyu" className="btn btn-primary">
+                  3級 知識試験を受験する
+                </Link>
+                <Link href="/exam?grade=practical-3kyu" className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                  3級 実務試験に挑戦する
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -89,13 +101,17 @@ export default function Home() {
             </div>
             <div>
               <div className="grade-meta">
-                <p><strong>出題数:</strong> 5問 (仮)</p>
-                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
-              <Link href="/exam?grade=2kyu" className="btn btn-primary">
-                2級を受験する (仮テスト)
-              </Link>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <Link href="/exam?grade=2kyu" className="btn btn-primary">
+                  2級 知識試験を受験する
+                </Link>
+                <Link href="/exam?grade=practical-2kyu" className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                  2級 実務試験に挑戦する
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -108,32 +124,17 @@ export default function Home() {
             </div>
             <div>
               <div className="grade-meta">
-                <p><strong>出題数:</strong> 5問 (仮)</p>
-                <p><strong>制限時間:</strong> 30分</p>
+                <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
-              <Link href="/exam?grade=1kyu" className="btn btn-primary">
-                1級を受験する (仮テスト)
-              </Link>
-            </div>
-          </div>
-
-          {/* 実務検定 */}
-          <div className="grade-card">
-            <div className="grade-header">
-              <span className="grade-badge badge-available" style={{ backgroundColor: "#8a2be2" }}>NEW!</span>
-              <h3 className="grade-title">実務検定 (実践シミュレータ)</h3>
-              <p className="grade-desc">【β版】4択ではなく、出題されたお題を実際にキーボード操作だけでこなしていく、より実践に近い形式の検定です。</p>
-            </div>
-            <div>
-              <div className="grade-meta">
-                <p><strong>出題数:</strong> 5問 (仮)</p>
-                <p><strong>制限時間:</strong> 30分</p>
-                <p><strong>合格基準:</strong> 正答率80%以上</p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <Link href="/exam?grade=1kyu" className="btn btn-primary">
+                  1級 知識試験を受験する
+                </Link>
+                <Link href="/exam?grade=practical-1kyu" className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                  1級 実務試験に挑戦する
+                </Link>
               </div>
-              <Link href="/exam?grade=practical" className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
-                実務検定に挑戦する
-              </Link>
             </div>
           </div>
 
