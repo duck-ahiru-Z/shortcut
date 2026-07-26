@@ -20,6 +20,7 @@ export type QuestionData = {
   choices?: string[];
   answer: string;
   expectedKeyCombo?: string[];
+  expectedKeyComboHash?: string;
   taskData?: any;
 };
 
@@ -120,7 +121,10 @@ export async function startExam(grade: string) {
       qData.choices = shuffleArray<string>(q.choices);
     }
     if (q.type) qData.type = q.type;
-    if (q.expectedKeyCombo) qData.expectedKeyCombo = q.expectedKeyCombo;
+    if (q.expectedKeyCombo) {
+      const sortedCombo = [...q.expectedKeyCombo].sort().join("+");
+      qData.expectedKeyComboHash = crypto.createHash('sha256').update(sortedCombo).digest('hex');
+    }
     if (q.taskData) qData.taskData = q.taskData;
     
     return qData;
