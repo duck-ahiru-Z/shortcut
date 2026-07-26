@@ -108,11 +108,20 @@ export async function startExam(grade: string) {
   if (!data) throw new Error("Exam not found");
 
   const shuffledPool = shuffleArray(data.pool);
-  const selectedQuestions = shuffledPool.slice(0, data.questionsCount).map((q: QuestionData) => ({
-    id: q.id,
-    question: q.question,
-    choices: shuffleArray<string>(q.choices)
-  }));
+  const selectedQuestions = shuffledPool.slice(0, data.questionsCount).map((q: any) => {
+    const qData: any = {
+      id: q.id,
+      question: q.question,
+    };
+    if (q.choices) {
+      qData.choices = shuffleArray<string>(q.choices);
+    }
+    if (q.type) qData.type = q.type;
+    if (q.expectedKeyCombo) qData.expectedKeyCombo = q.expectedKeyCombo;
+    if (q.taskData) qData.taskData = q.taskData;
+    
+    return qData;
+  });
 
   const token = signPayload({
     grade,
