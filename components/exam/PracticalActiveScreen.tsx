@@ -48,16 +48,20 @@ export default function PracticalActiveScreen({
     }
   }, [currentIndex]);
 
-  // Input validation for result-based tasks
-  useEffect(() => {
+  const handleInputSubmit = () => {
     if (!q || successAnim || isSubmitting) return;
-
-    if (q.type === "find_password" || q.type === "copy_paste") {
-      if (inputValue === q.answer) {
-        triggerSuccess();
-      }
+    if (inputValue === q.answer) {
+      triggerSuccess();
+    } else {
+      alert("不正解です。もう一度確認してください。");
     }
-  }, [inputValue, q, successAnim, isSubmitting]);
+  };
+
+  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleInputSubmit();
+    }
+  };
 
   // Check selection for select_all
   useEffect(() => {
@@ -175,17 +179,25 @@ export default function PracticalActiveScreen({
               <span style={{ color: "black", fontWeight: "bold" }}>パスワード：{q.taskData?.password}</span>
               {"あ".repeat(3000)}
             </div>
-            <div>
+            <div style={{ display: "flex", gap: "12px" }}>
               <input
                 type="text"
                 placeholder="見つけたパスワードを入力"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
+                onKeyDown={handleInputKeyDown}
                 style={{
-                  width: "100%", padding: "12px", fontSize: "16px",
+                  flex: 1, padding: "12px", fontSize: "16px",
                   border: "2px solid var(--border-color)"
                 }}
               />
+              <button 
+                onClick={handleInputSubmit}
+                className="btn btn-primary"
+                style={{ padding: "0 24px" }}
+              >
+                回答する
+              </button>
             </div>
           </div>
         );
@@ -205,17 +217,27 @@ export default function PracticalActiveScreen({
             <p style={{ fontSize: "14px", color: "var(--danger)", margin: "-10px 0 0 0" }}>
               ※右クリックは禁止されています。
             </p>
-            <input
-              type="text"
-              placeholder="ここにペースト"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              onContextMenu={(e) => e.preventDefault()}
-              style={{
-                width: "100%", padding: "12px", fontSize: "16px",
-                border: "2px solid var(--border-color)"
-              }}
-            />
+            <div style={{ display: "flex", gap: "12px" }}>
+              <input
+                type="text"
+                placeholder="ここにペースト"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyDown={handleInputKeyDown}
+                onContextMenu={(e) => e.preventDefault()}
+                style={{
+                  flex: 1, padding: "12px", fontSize: "16px",
+                  border: "2px solid var(--border-color)"
+                }}
+              />
+              <button 
+                onClick={handleInputSubmit}
+                className="btn btn-primary"
+                style={{ padding: "0 24px" }}
+              >
+                回答する
+              </button>
+            </div>
           </div>
         );
 
@@ -359,7 +381,7 @@ export default function PracticalActiveScreen({
 
         {successAnim ? (
           <div style={{ color: '#4caf50', fontSize: '3rem', fontWeight: 'bold', animation: 'popIn 0.3s ease-out', textAlign: 'center', marginTop: '50px' }}>
-            SUCCESS!
+            正解！
           </div>
         ) : (
           <div>
