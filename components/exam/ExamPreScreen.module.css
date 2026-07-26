@@ -1,0 +1,68 @@
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.warningBox {
+  padding: 16px;
+  background-color: var(--warning-bg, #fff8e1);
+  border: 1px solid var(--warning, #ffb300);
+  border-radius: 8px;
+  margin-bottom: 24px;
+  color: #b27b00;
+}
+
+.warningText {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.instructionText {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.agreementGroup {
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-top: 4px;
+}
+
+.startButton {
+  width: 100%;
+}

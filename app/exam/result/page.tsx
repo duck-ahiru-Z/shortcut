@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { GradeResult, WrongAnswerInfo } from "@/actions/exam";
-import CertificateDOM from "@/components/exam/CertificateDOM";
-import { CertificateData } from "@/lib/certificate";
+import { CertificateApp, CertificateData } from "@/lib/certificate";
+import { jsPDF } from "jspdf";
 
 type StoredResult = GradeResult & {
   lastName: string;
@@ -17,6 +17,7 @@ export default function ResultPage() {
   const router = useRouter();
   const [result, setResult] = useState<StoredResult | null>(null);
   const [certData, setCertData] = useState<CertificateData | null>(null);
+  const canvasRef = React.useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const data = sessionStorage.getItem("examResult");
@@ -47,9 +48,26 @@ export default function ResultPage() {
     }
   }, [router]);
 
+  useEffect(() => {
+    if (certData && canvasRef.current) {
+      CertificateApp.generate(canvasRef.current, certData);
+    }
+  }, [certData]);
+
   const handleDownloadPDF = () => {
-    // 印刷ダイアログを呼び出し、ブラウザの機能でベクターPDFとして保存させる
-    window.print();
+    if (!canvasRef.current || !certData) return;
+    
+    const doc = new jsPDF({
+      orientation: 'landscape',
+      unit: 'mm',
+      format: 'a4'
+    });
+
+    const imgData = canvasRef.current.toDataURL('image/png');
+    doc.addImage(imgData, 'PNG', 0, 0, 297, 210);
+    
+    const safeGradeName = certData.gradeTitle.replace(/\s+/g, '_');
+    doc.save(`${certData.lastName}_${certData.firstName}_${safeGradeName}.pdf`);
   };
 
   if (!result) return null;
@@ -90,7 +108,7 @@ export default function ResultPage() {
         <div style={{ marginTop: "40px" }}>
           <h3 className="section-title">結果の振り返り</h3>
           <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "16px" }}>
-            不正解だった問題と正しい解答を確認できます。（解説は準備中です）
+            不正解だった問題と正しい解答、および詳細な解説を確認できます。
           </p>
           
           {result.score === result.total ? (
@@ -118,9 +136,12 @@ export default function ResultPage() {
                       </div>
                     </div>
                   </div>
-                  <div style={{ marginTop: "12px", paddingTop: "12px", borderTop: "1px dashed var(--border-light)", fontSize: "13px", color: "var(--text-muted)" }}>
-                    <strong>【解説】</strong> 現在準備中です。
-                  </div>
+                  {wrongObj.explanation && (
+                    <div style={{ marginTop: "12px", paddingTop: "12px", borderTop: "1px dashed var(--border-light)", fontSize: "13px", color: "var(--text-muted)", whiteSpace: "pre-wrap", lineHeight: "1.6" }}>
+                      <strong>【解説】</strong><br/>
+                      {wrongObj.explanation}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -141,9 +162,13 @@ export default function ResultPage() {
               </button>
             </div>
             
-            {/* DOM版の合格証書（印刷時にはこれが全画面になる） */}
-            <div className="print-only">
-              <CertificateDOM data={certData} />
+            {/* キャンバス版の合格証書（高画質でプレビュー＆PDF化） */}
+            <div style={{ marginTop: "24px", maxWidth: "100%", overflowX: "auto" }}>
+              <canvas 
+                id="resultCertCanvas" 
+                ref={canvasRef} 
+                style={{ width: "100%", maxWidth: "800px", height: "auto", border: "1px solid var(--border-color)", boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }}
+              ></canvas>
             </div>
             <p style={{ fontSize: "13px", color: "var(--text-muted)", marginTop: "8px" }}>
               ※証書番号: {result.certNo}

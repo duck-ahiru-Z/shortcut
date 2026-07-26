@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "./ExamPreScreen.module.css";
 
 type Props = {
   agreed: boolean;
@@ -34,51 +35,51 @@ export default function ExamPreScreen({
   }, []);
 
   return (
-    <div className="card" style={{ maxWidth: "500px", margin: "40px auto" }}>
+    <div className={`card ${styles.container}`}>
       <h2 className="section-title">受験開始の確認</h2>
       
       {isMobile && (
-        <div style={{ padding: "16px", backgroundColor: "var(--warning-bg, #fff8e1)", border: "1px solid var(--warning, #ffb300)", borderRadius: "8px", marginBottom: "24px", color: "#b27b00" }}>
+        <div className={styles.warningBox}>
           <strong>【重要】PC環境での受験を推奨します</strong>
-          <p style={{ fontSize: "14px", marginTop: "8px", margin: 0 }}>
+          <p className={styles.warningText}>
             本試験（特に実務シミュレータ）は、物理的なキーボード操作が必須となります。スマートフォン等のタッチデバイスでは正常に解答できない可能性があるため、PC環境での受験をお願いいたします。
           </p>
         </div>
       )}
 
-      <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px" }}>
+      <p className={styles.instructionText}>
         準備ができたら以下の項目を入力・確認して、試験を開始してください。
       </p>
 
-      <div style={{ marginBottom: "24px" }}>
-        <label style={{ display: "block", fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+      <div className={styles.formGroup}>
+        <label className={styles.label}>
           受験者氏名 (合格証書に記載されます)
         </label>
-        <div style={{ display: "flex", gap: "12px" }}>
+        <div className={styles.inputGroup}>
           <input
             type="text"
             placeholder="姓"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
-            style={{ flex: 1, padding: "10px", border: "1px solid var(--border-color)", borderRadius: "4px" }}
+            className={styles.input}
           />
           <input
             type="text"
             placeholder="名"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
-            style={{ flex: 1, padding: "10px", border: "1px solid var(--border-color)", borderRadius: "4px" }}
+            className={styles.input}
           />
         </div>
       </div>
 
-      <div style={{ marginBottom: "32px", fontSize: "14px" }}>
-        <label style={{ display: "flex", alignItems: "flex-start", gap: "8px", cursor: "pointer" }}>
+      <div className={styles.agreementGroup}>
+        <label className={styles.checkboxLabel}>
           <input 
             type="checkbox" 
             checked={agreed} 
             onChange={e => setAgreed(e.target.checked)} 
-            style={{ marginTop: "4px" }}
+            className={styles.checkbox}
           />
           <span>
             【利用規約・不正行為への同意】<br />
@@ -88,10 +89,9 @@ export default function ExamPreScreen({
       </div>
 
       <button 
-        className={`btn ${canStart ? 'btn-primary' : 'btn-disabled'}`} 
+        className={`btn ${canStart ? 'btn-primary' : 'btn-disabled'} ${styles.startButton}`} 
         onClick={onStart}
         disabled={!canStart}
-        style={{ width: "100%" }}
       >
         {isLoading ? '準備中...' : '試験を開始する'}
       </button>

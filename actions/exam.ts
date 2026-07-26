@@ -23,6 +23,7 @@ export type QuestionData = {
   expectedKeyCombo?: string[];
   expectedKeyComboHash?: string;
   taskData?: any;
+  explanation?: string;
 };
 
 export type ExamData = {
@@ -38,6 +39,7 @@ export type WrongAnswerInfo = {
   question: string;
   userAnswer: string;
   correctAnswer: string;
+  explanation?: string;
 };
 
 export type GradeResult = {
@@ -198,7 +200,8 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
           id: q.id,
           question: q.question,
           userAnswer: displayUser,
-          correctAnswer: displayCorrect
+          correctAnswer: displayCorrect,
+          explanation: q.explanation
         });
         wrongIds[q.id.toString()] = 1; // Mark for stats
       }

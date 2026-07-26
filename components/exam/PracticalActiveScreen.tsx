@@ -7,6 +7,7 @@ import WordMock from "./mocks/WordMock";
 import BrowserMock from "./mocks/BrowserMock";
 import ExplorerMock from "./mocks/ExplorerMock";
 import WindowsMock from "./mocks/WindowsMock";
+import styles from "./PracticalActiveScreen.module.css";
 
 type Question = {
   id: number;
@@ -167,8 +168,8 @@ export default function PracticalActiveScreen({
       case "windows": return <WindowsMock />;
       default:
         return (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', marginTop: '30px' }}>
-            <div style={{ padding: "16px 32px", backgroundColor: "var(--bg-secondary)", border: "1px solid var(--border-color)", borderRadius: "8px", color: "var(--text-primary)", fontWeight: "bold" }}>
+          <div className={styles.defaultGimmick}>
+            <div className={styles.defaultGimmickBox}>
               指示されたキーを入力...
             </div>
           </div>
@@ -187,26 +188,25 @@ export default function PracticalActiveScreen({
 
   return (
     <div 
-      className="exam-container" 
+      className={styles.container} 
       ref={containerRef} 
       tabIndex={0} 
-      style={{ outline: 'none' }}
     >
-      <div className="exam-header">
-        <div className="exam-progress">
+      <div className={styles.header}>
+        <div className={styles.progress}>
           問題 {currentIdxDisplay} / {totalDisplay}
         </div>
-        <div className={`exam-timer ${timeLeft < 60 ? "danger" : ""}`}>
+        <div className={`${styles.timer} ${timeLeft < 60 ? styles.timerDanger : ""}`}>
           残り時間: {formatTime(timeLeft)}
         </div>
       </div>
 
-      <div className="exam-question-box">
-        <h2 className="exam-question-text">{q.question}</h2>
+      <div className={styles.questionBox}>
+        <h2 className={styles.questionText}>{q.question}</h2>
         {renderGimmick()}
       </div>
 
-      <div style={{ marginTop: "20px", display: "flex", justifyContent: "flex-end" }}>
+      <div className={styles.skipContainer}>
         <button 
           onClick={() => onSkip(q.id)} 
           className="btn btn-secondary"
@@ -217,8 +217,8 @@ export default function PracticalActiveScreen({
       </div>
 
       {isSubmitting && (
-        <div className="submitting-overlay">
-          <div className="spinner"></div>
+        <div className={styles.submittingOverlay}>
+          <div className={styles.spinner}></div>
           <p>解答を送信中...</p>
         </div>
       )}

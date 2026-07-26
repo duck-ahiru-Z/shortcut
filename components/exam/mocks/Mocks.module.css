@@ -1,0 +1,396 @@
+/* Shared */
+.promptBox {
+  background-color: var(--bg-primary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* BrowserMock */
+.browserContainer {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto 0;
+  background-color: var(--bg-primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.browserHeader {
+  background-color: var(--bg-secondary);
+  display: flex;
+  padding: 8px 12px;
+  gap: 8px;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.browserDotRed {
+  width: 12px; height: 12px; border-radius: 50%; background-color: #ff5f56;
+}
+.browserDotYellow {
+  width: 12px; height: 12px; border-radius: 50%; background-color: #ffbd2e;
+}
+.browserDotGreen {
+  width: 12px; height: 12px; border-radius: 50%; background-color: #27c93f;
+}
+.browserAddress {
+  flex: 1;
+  background-color: var(--bg-primary);
+  border-radius: 16px;
+  padding: 4px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-left: 12px;
+  border: 1px solid var(--border-light);
+}
+.browserBody {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+/* ExcelMock */
+.excelContainer {
+  border: 1px solid #107c41;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0;
+  background-color: white;
+}
+.excelHeader {
+  background-color: #107c41;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.excelBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(#e0e0e0 1px, transparent 1px), linear-gradient(90deg, #e0e0e0 1px, transparent 1px);
+  background-size: 80px 30px;
+  height: 180px;
+}
+.excelBodyInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* ExplorerMock */
+.explorerContainer {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0;
+  background-color: var(--bg-primary);
+}
+.explorerHeader {
+  background-color: var(--bg-secondary);
+  display: flex;
+  padding: 8px 12px;
+  gap: 8px;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.explorerTitle {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+.explorerBody {
+  display: flex;
+  height: 180px;
+}
+.explorerSidebar {
+  width: 120px;
+  border-right: 1px solid var(--border-color);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--bg-secondary);
+}
+.explorerSidebarItem1 { height: 8px; background-color: var(--border-light); border-radius: 4px; }
+.explorerSidebarItem2 { height: 8px; background-color: var(--border-light); border-radius: 4px; width: 80%; }
+.explorerSidebarItem3 { height: 8px; background-color: var(--border-light); border-radius: 4px; width: 90%; }
+.explorerMain {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+/* WindowsMock */
+.windowsContainer {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0;
+  background-color: #0078d4;
+  position: relative;
+  height: 220px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+.windowsBody {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.windowsTaskbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+  backdrop-filter: blur(4px);
+}
+.windowsTaskbarIcon {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+.windowsPromptBox {
+  background-color: var(--bg-primary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* WordMock */
+.wordContainer {
+  border: 1px solid #185abd;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0;
+  background-color: #f3f2f1;
+}
+.wordHeader {
+  background-color: #185abd;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.wordBody {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.wordPage {
+  width: 85%;
+  height: 180px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/* LegacyGimmicks */
+.legacyContainer {
+  margin-top: 20px;
+}
+.legacyContainerLarge {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.legacyTextarea {
+  width: 100%;
+  height: 200px;
+  padding: 16px;
+  font-size: 16px;
+  border: 2px solid var(--border-color);
+  user-select: none;
+}
+.legacyWarning {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--danger);
+}
+.legacyWarningTop {
+  font-size: 14px;
+  color: var(--danger);
+  margin: -10px 0 0 0;
+}
+.legacyColumnGroup {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.legacyScrollBox {
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  padding: 16px;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-tertiary);
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.legacyRowGroup {
+  display: flex;
+  gap: 12px;
+}
+.legacyInput {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid var(--border-color);
+}
+.legacyButton {
+  padding: 0 24px;
+}
+.legacyStaticBox {
+  padding: 16px;
+  background-color: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  word-break: break-all;
+}
+.legacyFileIcon {
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--accent-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.legacyFileName {
+  margin-top: 12px;
+  font-size: 14px;
+  background-color: var(--accent-primary);
+  color: white;
+  padding: 2px 8px;
+}
+.legacyWindowBox {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 16px;
+}
+.legacyWindowHeader {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+.legacyDotRed { width: 12px; height: 12px; border-radius: 50%; background-color: var(--danger); }
+.legacyDotYellow { width: 12px; height: 12px; border-radius: 50%; background-color: var(--warning); }
+.legacyDotGreen { width: 12px; height: 12px; border-radius: 50%; background-color: var(--success); }
+.legacyLine80 { height: 10px; width: 80%; background-color: var(--border-light); margin-bottom: 8px; }
+.legacyLine60 { height: 10px; width: 60%; background-color: var(--border-light); margin-bottom: 8px; }
+.legacyLine90 { height: 10px; width: 90%; background-color: var(--border-light); margin-bottom: 8px; }
+.legacyRightAlign {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+.legacyMutedText {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.legacyCodeBox {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 24px;
+  font-family: monospace;
+  font-size: 16px;
+}
+.legacyDeletedCode {
+  color: var(--danger);
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin: 8px 0;
+}
+.legacyInstructionText {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+}
+.legacyTextBox {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 24px;
+  font-size: 18px;
+}
+.legacyHighlight {
+  background-color: var(--accent-primary);
+  color: white;
+  padding: 2px 4px;
+}
+.legacyPrintBox {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.legacyPrintIcon {
+  margin-bottom: 16px;
+  color: var(--text-muted);
+}
+.legacyPrintTitle {
+  margin: 0 0 8px 0;
+}
+.legacyPrintDesc {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
