@@ -15,9 +15,12 @@ export type ScrubbedQuestion = {
 
 export type QuestionData = {
   id: number;
+  type?: string;
   question: string;
-  choices: string[];
+  choices?: string[];
   answer: string;
+  expectedKeyCombo?: string[];
+  taskData?: any;
 };
 
 export type ExamData = {
@@ -174,16 +177,46 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
 
   const answeredIds = Object.keys(userAnswers).map(Number);
 
+  const formatKeyCombo = (combo: string[]) => {
+    if (!combo || !Array.isArray(combo) || combo.length === 0) return "CORRECT";
+    const map: Record<string, string> = {
+      "control": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Win", "escape": "Esc",
+      "enter": "Enter", "space": "Space", "arrowup": "↑", "arrowdown": "↓", "arrowleft": "←",
+      "arrowright": "→", "period": ".", "comma": ",", "plus": "+", "minus": "-", "equal": "=",
+      "semicolon": ";", "apostrophe": "'", "slash": "/", "grave": "`", "backspace": "Backspace",
+      "delete": "Delete", "insert": "Insert", "home": "Home", "end": "End", "pageup": "PageUp",
+      "pagedown": "PageDown", "printscreen": "PrtScn"
+    };
+    return combo.map(k => {
+      const lower = k.toLowerCase();
+      if (map[lower]) return map[lower];
+      return lower.charAt(0).toUpperCase() + lower.slice(1);
+    }).join(" + ");
+  };
+
   for (const q of realQuestions) {
     if (answeredIds.includes(q.id)) {
       if (q.answer === userAnswers[q.id]) {
         score++;
       } else {
+        let displayCorrect = q.answer;
+        if (q.expectedKeyCombo) {
+          displayCorrect = formatKeyCombo(q.expectedKeyCombo);
+        }
+        
+        let displayUser = userAnswers[q.id] || "無回答";
+        if (displayUser === "SKIPPED") {
+          displayUser = "スキップ (時間切れ等)";
+        } else if (q.expectedKeyCombo && displayUser !== "SKIPPED") {
+          // In practical exams, user answers are either correct or skipped,
+          // but just in case we have other values, leave them as is
+        }
+
         wrongAnswers.push({
           id: q.id,
           question: q.question,
-          userAnswer: userAnswers[q.id] || "無回答",
-          correctAnswer: q.answer
+          userAnswer: displayUser,
+          correctAnswer: displayCorrect
         });
         wrongIds[q.id.toString()] = 1; // Mark for stats
       }
