@@ -626,6 +626,7 @@ footer {
   font-family: "MS Mincho", "Hiragino Mincho ProN", serif;
   position: relative;
   overflow: hidden;
+  container-type: inline-size;
 }
 
 .cert-outer-border {
@@ -663,23 +664,23 @@ footer {
 }
 
 .cert-title {
-  font-size: 2.2rem;
+  font-size: 4.4cqi;
   font-weight: 700;
   color: #1e293b;
   text-align: center;
-  letter-spacing: 0.5rem;
-  margin-bottom: 0.5rem;
+  letter-spacing: 1cqi;
+  margin-bottom: 1cqi;
 }
 
 .cert-divider {
   width: 40%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #a67c4e, transparent);
-  margin: 0 auto 1rem;
+  margin: 0 auto 2cqi;
 }
 
 .cert-grade {
-  font-size: 1.4rem;
+  font-size: 2.8cqi;
   font-weight: 700;
   color: #b45309;
   text-align: center;
@@ -691,29 +692,29 @@ footer {
 }
 
 .cert-name {
-  font-size: 1.8rem;
+  font-size: 3.6cqi;
   font-weight: 700;
   font-family: "MS Gothic", "Hiragino Sans", sans-serif;
   color: #0f172a;
-  margin-right: 1rem;
+  margin-right: 2cqi;
 }
 
 .cert-suffix {
-  font-size: 1.4rem;
+  font-size: 2.8cqi;
   font-weight: 700;
 }
 
 .cert-body {
-  font-size: 1.1rem;
+  font-size: 2.2cqi;
   color: #1e293b;
   line-height: 1.8;
   margin-bottom: auto;
 }
 
 .cert-score {
-  font-size: 0.9rem;
+  font-size: 1.8cqi;
   color: #475569;
-  margin-top: 1rem;
+  margin-top: 2cqi;
 }
 
 .cert-footer {
@@ -724,7 +725,7 @@ footer {
 }
 
 .cert-meta {
-  font-size: 0.9rem;
+  font-size: 1.8cqi;
   color: #1e293b;
   line-height: 1.6;
 }
@@ -735,13 +736,13 @@ footer {
 }
 
 .cert-org {
-  font-size: 1.2rem;
+  font-size: 2.4cqi;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1cqi;
 }
 
 .cert-rep {
-  font-size: 1.1rem;
+  font-size: 2.2cqi;
 }
 
 .cert-stamp {

@@ -15,6 +15,8 @@ export default function ExamClient({ grade }: Props) {
   const {
     started,
     agreed, setAgreed,
+    lastName, setLastName,
+    firstName, setFirstName,
     isLoading,
     isSubmitting,
     timeLeft,
@@ -43,6 +45,8 @@ export default function ExamClient({ grade }: Props) {
     return (
       <ExamPreScreen 
         agreed={agreed} setAgreed={setAgreed}
+        lastName={lastName} setLastName={setLastName}
+        firstName={firstName} setFirstName={setFirstName}
         isLoading={isLoading}
         onStart={handleStart}
       />

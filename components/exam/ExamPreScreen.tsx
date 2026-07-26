@@ -3,15 +3,21 @@ import React, { useEffect, useState } from "react";
 type Props = {
   agreed: boolean;
   setAgreed: (v: boolean) => void;
+  lastName: string;
+  setLastName: (v: string) => void;
+  firstName: string;
+  setFirstName: (v: string) => void;
   isLoading: boolean;
   onStart: () => void;
 };
 
 export default function ExamPreScreen({
   agreed, setAgreed,
+  lastName, setLastName,
+  firstName, setFirstName,
   isLoading, onStart
 }: Props) {
-  const canStart = agreed && !isLoading;
+  const canStart = agreed && !isLoading && lastName.trim() !== "" && firstName.trim() !== "";
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -41,8 +47,30 @@ export default function ExamPreScreen({
       )}
 
       <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px" }}>
-        準備ができたら以下の項目に同意して、試験を開始してください。
+        準備ができたら以下の項目を入力・確認して、試験を開始してください。
       </p>
+
+      <div style={{ marginBottom: "24px" }}>
+        <label style={{ display: "block", fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+          受験者氏名 (合格証書に記載されます)
+        </label>
+        <div style={{ display: "flex", gap: "12px" }}>
+          <input
+            type="text"
+            placeholder="姓"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            style={{ flex: 1, padding: "10px", border: "1px solid var(--border-color)", borderRadius: "4px" }}
+          />
+          <input
+            type="text"
+            placeholder="名"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            style={{ flex: 1, padding: "10px", border: "1px solid var(--border-color)", borderRadius: "4px" }}
+          />
+        </div>
+      </div>
 
       <div style={{ marginBottom: "32px", fontSize: "14px" }}>
         <label style={{ display: "flex", alignItems: "flex-start", gap: "8px", cursor: "pointer" }}>

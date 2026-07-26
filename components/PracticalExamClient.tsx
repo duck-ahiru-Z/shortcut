@@ -14,6 +14,8 @@ export default function PracticalExamClient({ grade }: Props) {
   const {
     started,
     agreed, setAgreed,
+    lastName, setLastName,
+    firstName, setFirstName,
     isLoading,
     isSubmitting,
     timeLeft,
@@ -46,6 +48,8 @@ export default function PracticalExamClient({ grade }: Props) {
     return (
       <ExamPreScreen 
         agreed={agreed} setAgreed={setAgreed}
+        lastName={lastName} setLastName={setLastName}
+        firstName={firstName} setFirstName={setFirstName}
         isLoading={isLoading}
         onStart={handleStart}
       />
