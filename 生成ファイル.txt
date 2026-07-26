@@ -1,0 +1,1502 @@
+[
+  {
+    "q": "選択した文字やファイルをコピーするショートカットキーはどれか。",
+    "c": ["A. Ctrl+X", "B. Ctrl+C", "C. Ctrl+V", "D. Ctrl+Z"],
+    "a": "B. Ctrl+C"
+  },
+  {
+    "q": "コピーまたは切り取りした内容を貼り付けるショートカットキーはどれか。",
+    "c": ["A. Ctrl+P", "B. Ctrl+B", "C. Ctrl+V", "D. Ctrl+C"],
+    "a": "C. Ctrl+V"
+  },
+  {
+    "q": "選択した文字やファイルを切り取るショートカットキーはどれか。",
+    "c": ["A. Ctrl+X", "B. Ctrl+C", "C. Ctrl+S", "D. Ctrl+A"],
+    "a": "A. Ctrl+X"
+  },
+  {
+    "q": "直前の操作を元に戻すショートカットキーはどれか。",
+    "c": ["A. Ctrl+Y", "B. Ctrl+Z", "C. Ctrl+R", "D. Ctrl+U"],
+    "a": "B. Ctrl+Z"
+  },
+  {
+    "q": "元に戻した操作をやり直すショートカットキーはどれか。",
+    "c": ["A. Ctrl+Y", "B. Ctrl+Z", "C. Ctrl+H", "D. Ctrl+E"],
+    "a": "A. Ctrl+Y"
+  },
+  {
+    "q": "文書や一覧の内容をすべて選択するショートカットキーはどれか。",
+    "c": ["A. Ctrl+S", "B. Ctrl+F", "C. Ctrl+A", "D. Ctrl+N"],
+    "a": "C. Ctrl+A"
+  },
+  {
+    "q": "作業中のファイルを保存するショートカットキーはどれか。",
+    "c": ["A. Ctrl+S", "B. Ctrl+P", "C. Ctrl+O", "D. Ctrl+W"],
+    "a": "A. Ctrl+S"
+  },
+  {
+    "q": "印刷画面を開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+F", "B. Ctrl+P", "C. Ctrl+S", "D. Ctrl+H"],
+    "a": "B. Ctrl+P"
+  },
+  {
+    "q": "文書やページ内の文字を検索するショートカットキーはどれか。",
+    "c": ["A. Ctrl+F", "B. Ctrl+H", "C. Ctrl+G", "D. Ctrl+J"],
+    "a": "A. Ctrl+F"
+  },
+  {
+    "q": "WordやExcelで置換画面を開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+F", "B. Ctrl+G", "C. Ctrl+H", "D. Ctrl+R"],
+    "a": "C. Ctrl+H"
+  },
+  {
+    "q": "新しい文書、ブック、ウィンドウなどを作成する基本ショートカットキーはどれか。",
+    "c": ["A. Ctrl+N", "B. Ctrl+O", "C. Ctrl+W", "D. Ctrl+P"],
+    "a": "A. Ctrl+N"
+  },
+  {
+    "q": "既存のファイルを開くダイアログを表示するショートカットキーはどれか。",
+    "c": ["A. Ctrl+S", "B. Ctrl+O", "C. Ctrl+N", "D. Ctrl+F"],
+    "a": "B. Ctrl+O"
+  },
+  {
+    "q": "現在開いている文書やタブを閉じるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Q", "B. Ctrl+T", "C. Ctrl+W", "D. Ctrl+R"],
+    "a": "C. Ctrl+W"
+  },
+  {
+    "q": "アクティブなアプリを終了するショートカットキーはどれか。",
+    "c": ["A. Alt+Tab", "B. Alt+F4", "C. Ctrl+F4", "D. Shift+F4"],
+    "a": "B. Alt+F4"
+  },
+  {
+    "q": "多くのアプリでヘルプを表示するファンクションキーはどれか。",
+    "c": ["A. F1", "B. F2", "C. F5", "D. F12"],
+    "a": "A. F1"
+  },
+  {
+    "q": "ブラウザで表示中のページを再読み込みする基本ショートカットキーはどれか。",
+    "c": ["A. F2", "B. F5", "C. F7", "D. F12"],
+    "a": "B. F5"
+  },
+  {
+    "q": "カーソルを行の先頭へ移動するキーはどれか。",
+    "c": ["A. Home", "B. End", "C. PageUp", "D. Insert"],
+    "a": "A. Home"
+  },
+  {
+    "q": "カーソルを行の末尾へ移動するキーはどれか。",
+    "c": ["A. Home", "B. End", "C. Delete", "D. PageDown"],
+    "a": "B. End"
+  },
+  {
+    "q": "文字入力中にカーソルを1単語左へ移動するショートカットキーはどれか。",
+    "c": ["A. Shift+Left", "B. Ctrl+Left", "C. Alt+Left", "D. Ctrl+Shift+Left"],
+    "a": "B. Ctrl+Left"
+  },
+  {
+    "q": "文字入力中にカーソルを1単語右へ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Right", "B. Shift+Right", "C. Alt+Right", "D. Ctrl+Shift+Right"],
+    "a": "A. Ctrl+Right"
+  },
+  {
+    "q": "カーソル位置から右方向に1文字分選択範囲を広げるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Right", "B. Shift+Right", "C. Alt+Right", "D. Ctrl+Shift+Right"],
+    "a": "B. Shift+Right"
+  },
+  {
+    "q": "カーソル位置から右方向に1単語分選択範囲を広げるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Right", "B. Shift+Right", "C. Ctrl+Shift+Right", "D. Alt+Shift+Right"],
+    "a": "C. Ctrl+Shift+Right"
+  },
+  {
+    "q": "カーソルの右側の1文字を削除するキーはどれか。",
+    "c": ["A. Backspace", "B. Delete", "C. Insert", "D. End"],
+    "a": "B. Delete"
+  },
+  {
+    "q": "カーソルの左側の1文字を削除するキーはどれか。",
+    "c": ["A. Delete", "B. Insert", "C. Backspace", "D. Home"],
+    "a": "C. Backspace"
+  },
+  {
+    "q": "カーソルの左側の1単語を削除するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Backspace", "B. Ctrl+Delete", "C. Shift+Backspace", "D. Alt+Backspace"],
+    "a": "A. Ctrl+Backspace"
+  },
+  {
+    "q": "カーソルの右側の1単語を削除するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Backspace", "B. Ctrl+Delete", "C. Shift+Delete", "D. Alt+Delete"],
+    "a": "B. Ctrl+Delete"
+  },
+  {
+    "q": "Wordで選択した文字を太字にするショートカットキーはどれか。",
+    "c": ["A. Ctrl+B", "B. Ctrl+I", "C. Ctrl+U", "D. Ctrl+E"],
+    "a": "A. Ctrl+B"
+  },
+  {
+    "q": "Wordで選択した文字を斜体にするショートカットキーはどれか。",
+    "c": ["A. Ctrl+B", "B. Ctrl+I", "C. Ctrl+U", "D. Ctrl+J"],
+    "a": "B. Ctrl+I"
+  },
+  {
+    "q": "Wordで選択した文字に下線を付けるショートカットキーはどれか。",
+    "c": ["A. Ctrl+I", "B. Ctrl+L", "C. Ctrl+U", "D. Ctrl+D"],
+    "a": "C. Ctrl+U"
+  },
+  {
+    "q": "Wordで段落を左揃えにするショートカットキーはどれか。",
+    "c": ["A. Ctrl+L", "B. Ctrl+E", "C. Ctrl+R", "D. Ctrl+J"],
+    "a": "A. Ctrl+L"
+  },
+  {
+    "q": "Wordで段落を中央揃えにするショートカットキーはどれか。",
+    "c": ["A. Ctrl+L", "B. Ctrl+E", "C. Ctrl+R", "D. Ctrl+M"],
+    "a": "B. Ctrl+E"
+  },
+  {
+    "q": "Wordで段落を右揃えにするショートカットキーはどれか。",
+    "c": ["A. Ctrl+J", "B. Ctrl+E", "C. Ctrl+R", "D. Ctrl+Q"],
+    "a": "C. Ctrl+R"
+  },
+  {
+    "q": "Wordで段落を両端揃えにするショートカットキーはどれか。",
+    "c": ["A. Ctrl+J", "B. Ctrl+R", "C. Ctrl+L", "D. Ctrl+Shift+J"],
+    "a": "A. Ctrl+J"
+  },
+  {
+    "q": "Wordでハイパーリンクを挿入するショートカットキーはどれか。",
+    "c": ["A. Ctrl+H", "B. Ctrl+K", "C. Ctrl+L", "D. Ctrl+Shift+K"],
+    "a": "B. Ctrl+K"
+  },
+  {
+    "q": "Wordで改ページを挿入するショートカットキーはどれか。",
+    "c": ["A. Shift+Enter", "B. Ctrl+Enter", "C. Alt+Enter", "D. Ctrl+Shift+Enter"],
+    "a": "B. Ctrl+Enter"
+  },
+  {
+    "q": "Wordで段落を変えずに行だけを改めるショートカットキーはどれか。",
+    "c": ["A. Enter", "B. Ctrl+Enter", "C. Shift+Enter", "D. Alt+Enter"],
+    "a": "C. Shift+Enter"
+  },
+  {
+    "q": "Wordでスペルチェックと文章校正を実行するファンクションキーはどれか。",
+    "c": ["A. F2", "B. F5", "C. F7", "D. F9"],
+    "a": "C. F7"
+  },
+  {
+    "q": "Wordで選択した英字の大文字・小文字を切り替えるショートカットキーはどれか。",
+    "c": ["A. Shift+F3", "B. Ctrl+F3", "C. Alt+F3", "D. F3"],
+    "a": "A. Shift+F3"
+  },
+  {
+    "q": "Wordでフォント設定ダイアログを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+F", "B. Ctrl+D", "C. Ctrl+Shift+F", "D. Alt+D"],
+    "a": "B. Ctrl+D"
+  },
+  {
+    "q": "Wordで箇条書きを適用するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+L", "B. Ctrl+L", "C. Ctrl+Alt+L", "D. Shift+F7"],
+    "a": "A. Ctrl+Shift+L"
+  },
+  {
+    "q": "Wordで段落書式を解除するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Space", "B. Ctrl+Q", "C. Ctrl+Shift+N", "D. Ctrl+M"],
+    "a": "B. Ctrl+Q"
+  },
+  {
+    "q": "Wordで文字書式を解除するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Space", "B. Ctrl+Q", "C. Ctrl+Shift+M", "D. Ctrl+Alt+Space"],
+    "a": "A. Ctrl+Space"
+  },
+  {
+    "q": "Wordで段落のインデントを増やすショートカットキーはどれか。",
+    "c": ["A. Ctrl+M", "B. Ctrl+Shift+M", "C. Ctrl+T", "D. Ctrl+Shift+T"],
+    "a": "A. Ctrl+M"
+  },
+  {
+    "q": "Wordで段落のインデントを減らすショートカットキーはどれか。",
+    "c": ["A. Ctrl+M", "B. Ctrl+Shift+M", "C. Ctrl+Alt+M", "D. Shift+M"],
+    "a": "B. Ctrl+Shift+M"
+  },
+  {
+    "q": "Wordで行間を1行に設定するショートカットキーはどれか。",
+    "c": ["A. Ctrl+1", "B. Ctrl+2", "C. Ctrl+5", "D. Ctrl+0"],
+    "a": "A. Ctrl+1"
+  },
+  {
+    "q": "Wordで行間を2行に設定するショートカットキーはどれか。",
+    "c": ["A. Ctrl+1", "B. Ctrl+2", "C. Ctrl+5", "D. Ctrl+Shift+2"],
+    "a": "B. Ctrl+2"
+  },
+  {
+    "q": "Wordで行間を1.5行に設定するショートカットキーはどれか。",
+    "c": ["A. Ctrl+1", "B. Ctrl+2", "C. Ctrl+5", "D. Ctrl+Shift+5"],
+    "a": "C. Ctrl+5"
+  },
+  {
+    "q": "Wordで見出し1スタイルを適用するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Alt+1", "B. Ctrl+Shift+1", "C. Alt+Shift+1", "D. Ctrl+1"],
+    "a": "A. Ctrl+Alt+1"
+  },
+  {
+    "q": "Wordでコメントを挿入するショートカットキーはどれか。",
+    "c": ["A. Ctrl+M", "B. Ctrl+Alt+M", "C. Ctrl+Shift+M", "D. Alt+M"],
+    "a": "B. Ctrl+Alt+M"
+  },
+  {
+    "q": "Wordで文書の先頭へ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Home", "B. Ctrl+End", "C. Alt+Home", "D. Shift+Home"],
+    "a": "A. Ctrl+Home"
+  },
+  {
+    "q": "Wordで文書の末尾へ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Home", "B. Ctrl+End", "C. Alt+End", "D. Shift+End"],
+    "a": "B. Ctrl+End"
+  },
+  {
+    "q": "Excelでアクティブセルを編集状態にするファンクションキーはどれか。",
+    "c": ["A. F1", "B. F2", "C. F4", "D. F12"],
+    "a": "B. F2"
+  },
+  {
+    "q": "Excelで直前に行った操作を繰り返すショートカットキーはどれか。",
+    "c": ["A. F2", "B. F4", "C. F5", "D. F9"],
+    "a": "B. F4"
+  },
+  {
+    "q": "Excelで数式編集中にセル参照の相対参照・絶対参照を切り替えるキーはどれか。",
+    "c": ["A. F2", "B. F4", "C. F7", "D. F12"],
+    "a": "B. F4"
+  },
+  {
+    "q": "ExcelでオートSUMを挿入するショートカットキーはどれか。",
+    "c": ["A. Alt+=", "B. Ctrl+=", "C. Ctrl+Shift+S", "D. Alt+S"],
+    "a": "A. Alt+="
+  },
+  {
+    "q": "Excelでセルの書式設定ダイアログを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+1", "B. Ctrl+2", "C. Ctrl+F1", "D. Alt+1"],
+    "a": "A. Ctrl+1"
+  },
+  {
+    "q": "Excelでフィルターのオン・オフを切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+F", "B. Ctrl+Shift+L", "C. Alt+F", "D. Ctrl+Alt+L"],
+    "a": "B. Ctrl+Shift+L"
+  },
+  {
+    "q": "Excelで選択中のセルがある列全体を選択するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Space", "B. Shift+Space", "C. Ctrl+A", "D. Alt+Space"],
+    "a": "A. Ctrl+Space"
+  },
+  {
+    "q": "Excelで選択中のセルがある行全体を選択するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Space", "B. Shift+Space", "C. Ctrl+Shift+Space", "D. Alt+Space"],
+    "a": "B. Shift+Space"
+  },
+  {
+    "q": "Excelで現在の日付を入力するショートカットキーはどれか。",
+    "c": ["A. Ctrl+;", "B. Ctrl+Shift+;", "C. Alt+;", "D. Shift+;"],
+    "a": "A. Ctrl+;"
+  },
+  {
+    "q": "Excelで現在の時刻を入力するショートカットキーはどれか。",
+    "c": ["A. Ctrl+;", "B. Ctrl+Shift+;", "C. Alt+Shift+;", "D. Ctrl+:"],
+    "a": "B. Ctrl+Shift+;"
+  },
+  {
+    "q": "Excelで数式の表示と計算結果の表示を切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+`", "B. Ctrl+'", "C. Ctrl+Shift+`", "D. Alt+`"],
+    "a": "A. Ctrl+`"
+  },
+  {
+    "q": "Excelで上のセルの内容を下方向へコピーするショートカットキーはどれか。",
+    "c": ["A. Ctrl+D", "B. Ctrl+R", "C. Ctrl+U", "D. Ctrl+Shift+D"],
+    "a": "A. Ctrl+D"
+  },
+  {
+    "q": "Excelで左のセルの内容を右方向へコピーするショートカットキーはどれか。",
+    "c": ["A. Ctrl+D", "B. Ctrl+R", "C. Ctrl+L", "D. Ctrl+Shift+R"],
+    "a": "B. Ctrl+R"
+  },
+  {
+    "q": "Excelで選択範囲をテーブルに変換するショートカットキーはどれか。",
+    "c": ["A. Ctrl+T", "B. Ctrl+L", "C. Ctrl+Shift+T", "D. Alt+T"],
+    "a": "A. Ctrl+T"
+  },
+  {
+    "q": "Excelで次のワークシートへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+PageUp", "B. Ctrl+PageDown", "C. Alt+PageDown", "D. Shift+PageDown"],
+    "a": "B. Ctrl+PageDown"
+  },
+  {
+    "q": "Excelで前のワークシートへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+PageUp", "B. Ctrl+PageDown", "C. Alt+PageUp", "D. Shift+PageUp"],
+    "a": "A. Ctrl+PageUp"
+  },
+  {
+    "q": "Excelで新しいワークシートを挿入するショートカットキーはどれか。",
+    "c": ["A. Ctrl+F11", "B. Shift+F11", "C. Alt+F11", "D. F11"],
+    "a": "B. Shift+F11"
+  },
+  {
+    "q": "Excelでワークシートの先頭セルA1へ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Home", "B. Ctrl+End", "C. Alt+Home", "D. Shift+Home"],
+    "a": "A. Ctrl+Home"
+  },
+  {
+    "q": "Excelで使用中の範囲の右下端へ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Home", "B. Ctrl+End", "C. Alt+End", "D. Shift+End"],
+    "a": "B. Ctrl+End"
+  },
+  {
+    "q": "Excelでデータ範囲の端まで一気に移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Arrow", "B. Shift+Arrow", "C. Alt+Arrow", "D. Ctrl+Shift+Arrow"],
+    "a": "A. Ctrl+Arrow"
+  },
+  {
+    "q": "Excelで現在位置からデータ範囲の端まで選択範囲を広げるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Arrow", "B. Shift+Arrow", "C. Ctrl+Shift+Arrow", "D. Alt+Shift+Arrow"],
+    "a": "C. Ctrl+Shift+Arrow"
+  },
+  {
+    "q": "Excelで選択した行を非表示にするショートカットキーはどれか。",
+    "c": ["A. Ctrl+8", "B. Ctrl+9", "C. Ctrl+0", "D. Ctrl+Shift+9"],
+    "a": "B. Ctrl+9"
+  },
+  {
+    "q": "Excelで選択した列を非表示にするショートカットキーはどれか。",
+    "c": ["A. Ctrl+0", "B. Ctrl+9", "C. Ctrl+Shift+0", "D. Alt+0"],
+    "a": "A. Ctrl+0"
+  },
+  {
+    "q": "Excelで選択したセル、行、列を削除するショートカットキーはどれか。",
+    "c": ["A. Ctrl+-", "B. Ctrl+Shift+=", "C. Ctrl+D", "D. Alt+-"],
+    "a": "A. Ctrl+-"
+  },
+  {
+    "q": "Excelでセル、行、列を挿入するショートカットキーはどれか。",
+    "c": ["A. Ctrl+-", "B. Ctrl+Shift+=", "C. Ctrl+Alt+=", "D. Shift+Insert"],
+    "a": "B. Ctrl+Shift+="
+  },
+  {
+    "q": "Excelでジャンプダイアログを開くファンクションキーはどれか。",
+    "c": ["A. F2", "B. F4", "C. F5", "D. F9"],
+    "a": "C. F5"
+  },
+  {
+    "q": "Officeアプリで名前を付けて保存を開くショートカットキーはどれか。",
+    "c": ["A. F2", "B. F5", "C. F10", "D. F12"],
+    "a": "D. F12"
+  },
+  {
+    "q": "Excelで選択した複数セルに同じ内容を一括入力するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Enter", "B. Alt+Enter", "C. Shift+Enter", "D. Ctrl+Shift+Enter"],
+    "a": "A. Ctrl+Enter"
+  },
+  {
+    "q": "Excelでセル内改行を入力するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Enter", "B. Alt+Enter", "C. Shift+Enter", "D. Ctrl+Alt+Enter"],
+    "a": "B. Alt+Enter"
+  },
+  {
+    "q": "ブラウザで新しいタブを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+N", "B. Ctrl+T", "C. Ctrl+W", "D. Ctrl+Shift+T"],
+    "a": "B. Ctrl+T"
+  },
+  {
+    "q": "ブラウザで現在のタブを閉じるショートカットキーはどれか。",
+    "c": ["A. Ctrl+W", "B. Ctrl+T", "C. Ctrl+Tab", "D. Ctrl+Shift+W"],
+    "a": "A. Ctrl+W"
+  },
+  {
+    "q": "ブラウザで閉じたタブを再度開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+N", "B. Ctrl+Shift+T", "C. Ctrl+Alt+T", "D. Ctrl+T"],
+    "a": "B. Ctrl+Shift+T"
+  },
+  {
+    "q": "ブラウザで次のタブへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Tab", "B. Ctrl+Shift+Tab", "C. Alt+Tab", "D. Ctrl+PageUp"],
+    "a": "A. Ctrl+Tab"
+  },
+  {
+    "q": "ブラウザで前のタブへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Tab", "B. Ctrl+Shift+Tab", "C. Alt+Left", "D. Ctrl+PageDown"],
+    "a": "B. Ctrl+Shift+Tab"
+  },
+  {
+    "q": "ブラウザでアドレスバーにフォーカスするショートカットキーはどれか。",
+    "c": ["A. Ctrl+L", "B. Ctrl+F", "C. Ctrl+D", "D. Ctrl+E"],
+    "a": "A. Ctrl+L"
+  },
+  {
+    "q": "ブラウザで現在のページをブックマークに追加するショートカットキーはどれか。",
+    "c": ["A. Ctrl+B", "B. Ctrl+D", "C. Ctrl+H", "D. Ctrl+J"],
+    "a": "B. Ctrl+D"
+  },
+  {
+    "q": "ブラウザでページ内検索を行うショートカットキーはどれか。",
+    "c": ["A. Ctrl+F", "B. Ctrl+H", "C. Ctrl+L", "D. Ctrl+J"],
+    "a": "A. Ctrl+F"
+  },
+  {
+    "q": "ブラウザでページを通常の再読み込みするショートカットキーはどれか。",
+    "c": ["A. Ctrl+R", "B. Ctrl+Shift+R", "C. Ctrl+F5", "D. Alt+R"],
+    "a": "A. Ctrl+R"
+  },
+  {
+    "q": "ブラウザでキャッシュを無視して再読み込みする代表的なショートカットキーはどれか。",
+    "c": ["A. Ctrl+R", "B. Ctrl+Shift+R", "C. Ctrl+T", "D. Ctrl+Alt+R"],
+    "a": "B. Ctrl+Shift+R"
+  },
+  {
+    "q": "ブラウザで表示倍率を上げるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Plus", "B. Ctrl+-", "C. Ctrl+0", "D. Ctrl+Shift+Plus"],
+    "a": "A. Ctrl+Plus"
+  },
+  {
+    "q": "ブラウザで表示倍率を下げるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Plus", "B. Ctrl+-", "C. Ctrl+0", "D. Alt+-"],
+    "a": "B. Ctrl+-"
+  },
+  {
+    "q": "ブラウザで表示倍率を100%に戻すショートカットキーはどれか。",
+    "c": ["A. Ctrl+1", "B. Ctrl+9", "C. Ctrl+0", "D. Ctrl+Space"],
+    "a": "C. Ctrl+0"
+  },
+  {
+    "q": "ブラウザで新しいウィンドウを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+N", "B. Ctrl+T", "C. Ctrl+Shift+N", "D. Ctrl+W"],
+    "a": "A. Ctrl+N"
+  },
+  {
+    "q": "ブラウザでプライベート閲覧用の新しいウィンドウを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+N", "B. Ctrl+Shift+N", "C. Ctrl+Alt+N", "D. Ctrl+Shift+T"],
+    "a": "B. Ctrl+Shift+N"
+  },
+  {
+    "q": "ブラウザで前のページへ戻るショートカットキーはどれか。",
+    "c": ["A. Alt+Left", "B. Alt+Right", "C. Ctrl+Left", "D. Shift+Left"],
+    "a": "A. Alt+Left"
+  },
+  {
+    "q": "ブラウザで次のページへ進むショートカットキーはどれか。",
+    "c": ["A. Alt+Left", "B. Alt+Right", "C. Ctrl+Right", "D. Shift+Right"],
+    "a": "B. Alt+Right"
+  },
+  {
+    "q": "ブラウザでダウンロード一覧を開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+D", "B. Ctrl+J", "C. Ctrl+H", "D. Ctrl+Shift+D"],
+    "a": "B. Ctrl+J"
+  },
+  {
+    "q": "ブラウザで履歴を開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+H", "B. Ctrl+J", "C. Ctrl+D", "D. Ctrl+Shift+H"],
+    "a": "A. Ctrl+H"
+  },
+  {
+    "q": "ブラウザで閲覧データの削除画面を開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+Delete", "B. Ctrl+Delete", "C. Ctrl+Alt+Delete", "D. Shift+Delete"],
+    "a": "A. Ctrl+Shift+Delete"
+  },
+  {
+    "q": "スタートメニューを開くWindowsキー操作はどれか。",
+    "c": ["A. Win", "B. Win+E", "C. Alt+Tab", "D. Ctrl+Space"],
+    "a": "A. Win"
+  },
+  {
+    "q": "PCをロックするショートカットキーはどれか。",
+    "c": ["A. Win+D", "B. Win+L", "C. Win+M", "D. Win+R"],
+    "a": "B. Win+L"
+  },
+  {
+    "q": "ファイル名を指定して実行を開くショートカットキーはどれか。",
+    "c": ["A. Win+E", "B. Win+R", "C. Win+S", "D. Win+X"],
+    "a": "B. Win+R"
+  },
+  {
+    "q": "Windowsの設定アプリを開くショートカットキーはどれか。",
+    "c": ["A. Win+I", "B. Win+S", "C. Win+A", "D. Win+U"],
+    "a": "A. Win+I"
+  },
+  {
+    "q": "エクスプローラーを開くショートカットキーはどれか。",
+    "c": ["A. Win+R", "B. Win+E", "C. Win+D", "D. Win+F"],
+    "a": "B. Win+E"
+  },
+  {
+    "q": "Windows検索を開くショートカットキーはどれか。",
+    "c": ["A. Win+S", "B. Win+V", "C. Win+T", "D. Win+B"],
+    "a": "A. Win+S"
+  },
+  {
+    "q": "開いているウィンドウを一時的に隠してデスクトップを表示するショートカットキーはどれか。",
+    "c": ["A. Win+M", "B. Win+D", "C. Win+Home", "D. Win+Tab"],
+    "a": "B. Win+D"
+  },
+  {
+    "q": "すべてのウィンドウを最小化するショートカットキーはどれか。",
+    "c": ["A. Win+D", "B. Win+M", "C. Win+Down", "D. Win+Home"],
+    "a": "B. Win+M"
+  },
+  {
+    "q": "Win+Mで最小化したウィンドウを復元するショートカットキーはどれか。",
+    "c": ["A. Win+Shift+M", "B. Win+Ctrl+M", "C. Win+Alt+M", "D. Win+M"],
+    "a": "A. Win+Shift+M"
+  },
+  {
+    "q": "クイックリンクメニューを開くショートカットキーはどれか。",
+    "c": ["A. Win+X", "B. Win+Q", "C. Win+K", "D. Win+P"],
+    "a": "A. Win+X"
+  },
+  {
+    "q": "クリップボード履歴を開くショートカットキーはどれか。",
+    "c": ["A. Win+C", "B. Win+V", "C. Win+B", "D. Win+Y"],
+    "a": "B. Win+V"
+  },
+  {
+    "q": "絵文字パネルを開くショートカットキーはどれか。",
+    "c": ["A. Win+.", "B. Win+E", "C. Ctrl+.", "D. Alt+."],
+    "a": "A. Win+."
+  },
+  {
+    "q": "画面領域を選択してスクリーンショットを撮るショートカットキーはどれか。",
+    "c": ["A. Win+PrtSc", "B. Win+Shift+S", "C. Alt+PrtSc", "D. Ctrl+PrtSc"],
+    "a": "B. Win+Shift+S"
+  },
+  {
+    "q": "画面全体のスクリーンショットを画像ファイルとして保存するショートカットキーはどれか。",
+    "c": ["A. PrtSc", "B. Alt+PrtSc", "C. Win+PrtSc", "D. Ctrl+PrtSc"],
+    "a": "C. Win+PrtSc"
+  },
+  {
+    "q": "タスクマネージャーを直接開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Alt+Delete", "B. Ctrl+Shift+Esc", "C. Win+Esc", "D. Alt+Esc"],
+    "a": "B. Ctrl+Shift+Esc"
+  },
+  {
+    "q": "ロック、サインアウト、タスクマネージャーなどのセキュリティ画面を表示するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Alt+Delete", "B. Ctrl+Shift+Esc", "C. Alt+F4", "D. Win+L"],
+    "a": "A. Ctrl+Alt+Delete"
+  },
+  {
+    "q": "開いているアプリを切り替える標準ショートカットキーはどれか。",
+    "c": ["A. Ctrl+Tab", "B. Alt+Tab", "C. Win+Tab", "D. Alt+Esc"],
+    "a": "B. Alt+Tab"
+  },
+  {
+    "q": "キーを離しても表示が残るウィンドウ切り替え画面を開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Alt+Tab", "B. Alt+Tab", "C. Win+Tab", "D. Ctrl+Tab"],
+    "a": "A. Ctrl+Alt+Tab"
+  },
+  {
+    "q": "タスクビューを開くショートカットキーはどれか。",
+    "c": ["A. Win+Tab", "B. Alt+Tab", "C. Ctrl+Tab", "D. Win+T"],
+    "a": "A. Win+Tab"
+  },
+  {
+    "q": "新しい仮想デスクトップを作成するショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+D", "B. Win+Ctrl+F4", "C. Win+Alt+D", "D. Win+Shift+D"],
+    "a": "A. Win+Ctrl+D"
+  },
+  {
+    "q": "右側の仮想デスクトップへ切り替えるショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+Left", "B. Win+Ctrl+Right", "C. Win+Shift+Right", "D. Win+Alt+Right"],
+    "a": "B. Win+Ctrl+Right"
+  },
+  {
+    "q": "左側の仮想デスクトップへ切り替えるショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+Left", "B. Win+Ctrl+Right", "C. Win+Shift+Left", "D. Win+Alt+Left"],
+    "a": "A. Win+Ctrl+Left"
+  },
+  {
+    "q": "現在の仮想デスクトップを閉じるショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+D", "B. Win+Ctrl+F4", "C. Win+Shift+F4", "D. Alt+F4"],
+    "a": "B. Win+Ctrl+F4"
+  },
+  {
+    "q": "アクティブウィンドウを画面左半分にスナップするショートカットキーはどれか。",
+    "c": ["A. Win+Left", "B. Win+Right", "C. Win+Up", "D. Win+Down"],
+    "a": "A. Win+Left"
+  },
+  {
+    "q": "アクティブウィンドウを画面右半分にスナップするショートカットキーはどれか。",
+    "c": ["A. Win+Left", "B. Win+Right", "C. Win+Up", "D. Win+Down"],
+    "a": "B. Win+Right"
+  },
+  {
+    "q": "アクティブウィンドウを最大化するショートカットキーはどれか。",
+    "c": ["A. Win+Up", "B. Win+Down", "C. Win+Home", "D. Win+Shift+Up"],
+    "a": "A. Win+Up"
+  },
+  {
+    "q": "アクティブウィンドウを復元または最小化するショートカットキーはどれか。",
+    "c": ["A. Win+Up", "B. Win+Down", "C. Win+Left", "D. Win+M"],
+    "a": "B. Win+Down"
+  },
+  {
+    "q": "Windows 11でスナップレイアウトを表示するショートカットキーはどれか。",
+    "c": ["A. Win+Z", "B. Win+S", "C. Win+A", "D. Win+Shift+Z"],
+    "a": "A. Win+Z"
+  },
+  {
+    "q": "アクティブウィンドウ以外を最小化するショートカットキーはどれか。",
+    "c": ["A. Win+Home", "B. Win+M", "C. Win+D", "D. Win+Shift+M"],
+    "a": "A. Win+Home"
+  },
+  {
+    "q": "アクティブウィンドウを別のモニターへ移動するショートカットキーはどれか。",
+    "c": ["A. Win+Left または Win+Right", "B. Win+Ctrl+Left または Win+Ctrl+Right", "C. Win+Shift+Left または Win+Shift+Right", "D. Alt+Shift+Left または Alt+Shift+Right"],
+    "a": "C. Win+Shift+Left または Win+Shift+Right"
+  },
+  {
+    "q": "外部ディスプレイへの投影方法を選ぶ画面を開くショートカットキーはどれか。",
+    "c": ["A. Win+P", "B. Win+K", "C. Win+I", "D. Win+O"],
+    "a": "A. Win+P"
+  },
+  {
+    "q": "ワイヤレスディスプレイやキャスト接続を開くショートカットキーはどれか。",
+    "c": ["A. Win+P", "B. Win+K", "C. Win+G", "D. Win+V"],
+    "a": "B. Win+K"
+  },
+  {
+    "q": "クイック設定またはアクションセンターを開くショートカットキーはどれか。",
+    "c": ["A. Win+A", "B. Win+N", "C. Win+S", "D. Win+Q"],
+    "a": "A. Win+A"
+  },
+  {
+    "q": "Windows 11で通知センターを開くショートカットキーはどれか。",
+    "c": ["A. Win+A", "B. Win+N", "C. Win+V", "D. Win+B"],
+    "a": "B. Win+N"
+  },
+  {
+    "q": "音声入力を開始するショートカットキーはどれか。",
+    "c": ["A. Win+H", "B. Win+V", "C. Win+Y", "D. Win+Ctrl+H"],
+    "a": "A. Win+H"
+  },
+  {
+    "q": "Xbox Game Barを開くショートカットキーはどれか。",
+    "c": ["A. Win+G", "B. Win+Alt+G", "C. Win+Shift+G", "D. Ctrl+G"],
+    "a": "A. Win+G"
+  },
+  {
+    "q": "Xbox Game Barで録画を開始または停止するショートカットキーはどれか。",
+    "c": ["A. Win+G", "B. Win+Alt+R", "C. Win+Shift+R", "D. Ctrl+Alt+R"],
+    "a": "B. Win+Alt+R"
+  },
+  {
+    "q": "タスクバー上のアプリにフォーカスを移すショートカットキーはどれか。",
+    "c": ["A. Win+T", "B. Win+B", "C. Win+1", "D. Win+Tab"],
+    "a": "A. Win+T"
+  },
+  {
+    "q": "通知領域にフォーカスを移すショートカットキーはどれか。",
+    "c": ["A. Win+T", "B. Win+B", "C. Win+N", "D. Win+A"],
+    "a": "B. Win+B"
+  },
+  {
+    "q": "タスクバーの1番目にあるアプリを起動または切り替えるショートカットキーはどれか。",
+    "c": ["A. Win+1", "B. Win+Shift+1", "C. Win+Alt+1", "D. Ctrl+1"],
+    "a": "A. Win+1"
+  },
+  {
+    "q": "タスクバーの1番目にあるアプリの新しいインスタンスを開くショートカットキーはどれか。",
+    "c": ["A. Win+1", "B. Win+Shift+1", "C. Win+Ctrl+1", "D. Win+Alt+1"],
+    "a": "B. Win+Shift+1"
+  },
+  {
+    "q": "タスクバーの1番目にあるアプリのジャンプリストを開くショートカットキーはどれか。",
+    "c": ["A. Win+1", "B. Win+Shift+1", "C. Win+Alt+1", "D. Win+Ctrl+1"],
+    "a": "C. Win+Alt+1"
+  },
+  {
+    "q": "タスクバーの1番目にあるアプリで最後にアクティブだったウィンドウへ切り替えるショートカットキーはどれか。",
+    "c": ["A. Win+1", "B. Win+Ctrl+1", "C. Win+Shift+1", "D. Win+Alt+1"],
+    "a": "B. Win+Ctrl+1"
+  },
+  {
+    "q": "押している間だけデスクトップを一時表示するショートカットキーはどれか。",
+    "c": ["A. Win+D", "B. Win+M", "C. Win+,", "D. Win+Home"],
+    "a": "C. Win+,"
+  },
+  {
+    "q": "システム情報またはバージョン情報を開くショートカットキーはどれか。",
+    "c": ["A. Win+Pause", "B. Win+I", "C. Win+U", "D. Ctrl+Pause"],
+    "a": "A. Win+Pause"
+  },
+  {
+    "q": "アクセシビリティ設定を開くショートカットキーはどれか。",
+    "c": ["A. Win+U", "B. Win+A", "C. Win+H", "D. Win+Ctrl+U"],
+    "a": "A. Win+U"
+  },
+  {
+    "q": "拡大鏡を起動するショートカットキーはどれか。",
+    "c": ["A. Win+Plus", "B. Win+Minus", "C. Ctrl+Plus", "D. Alt+Plus"],
+    "a": "A. Win+Plus"
+  },
+  {
+    "q": "拡大鏡を終了するショートカットキーはどれか。",
+    "c": ["A. Win+Esc", "B. Esc", "C. Ctrl+Esc", "D. Alt+Esc"],
+    "a": "A. Win+Esc"
+  },
+  {
+    "q": "ナレーターをオンまたはオフにするショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+Enter", "B. Win+Enter", "C. Ctrl+Alt+Enter", "D. Win+Shift+Enter"],
+    "a": "A. Win+Ctrl+Enter"
+  },
+  {
+    "q": "入力言語やキーボードレイアウトを切り替えるショートカットキーはどれか。",
+    "c": ["A. Win+Space", "B. Win+Tab", "C. Ctrl+Space", "D. Alt+Space"],
+    "a": "A. Win+Space"
+  },
+  {
+    "q": "複数の入力言語がある環境で入力言語を切り替えるショートカットキーはどれか。",
+    "c": ["A. Alt+Shift", "B. Ctrl+Alt", "C. Shift+Space", "D. Win+Shift"],
+    "a": "A. Alt+Shift"
+  },
+  {
+    "q": "エクスプローラーでアドレスバーへフォーカスするショートカットキーはどれか。",
+    "c": ["A. Alt+D", "B. Ctrl+P", "C. F2", "D. Win+D"],
+    "a": "A. Alt+D"
+  },
+  {
+    "q": "エクスプローラーで検索ボックスへフォーカスするショートカットキーはどれか。",
+    "c": ["A. Ctrl+E", "B. Ctrl+L", "C. Ctrl+D", "D. Alt+E"],
+    "a": "A. Ctrl+E"
+  },
+  {
+    "q": "エクスプローラーで新しいフォルダーを作成するショートカットキーはどれか。",
+    "c": ["A. Ctrl+N", "B. Ctrl+Shift+N", "C. Ctrl+Alt+N", "D. Shift+F11"],
+    "a": "B. Ctrl+Shift+N"
+  },
+  {
+    "q": "エクスプローラーで選択したファイル名を変更するキーはどれか。",
+    "c": ["A. F1", "B. F2", "C. F4", "D. F5"],
+    "a": "B. F2"
+  },
+  {
+    "q": "エクスプローラーで表示内容を更新するキーはどれか。",
+    "c": ["A. F2", "B. F4", "C. F5", "D. F6"],
+    "a": "C. F5"
+  },
+  {
+    "q": "エクスプローラーで1つ上の階層へ移動するショートカットキーはどれか。",
+    "c": ["A. Alt+Up", "B. Alt+Left", "C. Alt+Right", "D. Ctrl+Up"],
+    "a": "A. Alt+Up"
+  },
+  {
+    "q": "エクスプローラーで前の場所へ戻るショートカットキーはどれか。",
+    "c": ["A. Alt+Up", "B. Alt+Left", "C. Alt+Right", "D. Ctrl+Left"],
+    "a": "B. Alt+Left"
+  },
+  {
+    "q": "エクスプローラーで次の場所へ進むショートカットキーはどれか。",
+    "c": ["A. Alt+Up", "B. Alt+Left", "C. Alt+Right", "D. Ctrl+Right"],
+    "a": "C. Alt+Right"
+  },
+  {
+    "q": "エクスプローラーで新しいウィンドウを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+N", "B. Ctrl+T", "C. Ctrl+Shift+N", "D. Win+N"],
+    "a": "A. Ctrl+N"
+  },
+  {
+    "q": "エクスプローラーで現在のウィンドウを閉じるショートカットキーはどれか。",
+    "c": ["A. Ctrl+W", "B. Ctrl+N", "C. Ctrl+Q", "D. Alt+W"],
+    "a": "A. Ctrl+W"
+  },
+  {
+    "q": "エクスプローラーでプレビューウィンドウを表示または非表示にするショートカットキーはどれか。",
+    "c": ["A. Alt+P", "B. Ctrl+P", "C. Shift+P", "D. Win+P"],
+    "a": "A. Alt+P"
+  },
+  {
+    "q": "エクスプローラーで詳細ウィンドウを表示または非表示にするショートカットキーはどれか。",
+    "c": ["A. Alt+P", "B. Alt+Shift+P", "C. Ctrl+Shift+P", "D. Win+Shift+P"],
+    "a": "B. Alt+Shift+P"
+  },
+  {
+    "q": "エクスプローラーで選択した項目のプロパティを開くショートカットキーはどれか。",
+    "c": ["A. Alt+Enter", "B. Ctrl+Enter", "C. Shift+Enter", "D. Alt+Space"],
+    "a": "A. Alt+Enter"
+  },
+  {
+    "q": "選択中の項目のコンテキストメニューをキーボードで開くショートカットキーはどれか。",
+    "c": ["A. Shift+F10", "B. Ctrl+F10", "C. Alt+F10", "D. F10"],
+    "a": "A. Shift+F10"
+  },
+  {
+    "q": "ファイルをごみ箱に入れず完全に削除するショートカットキーはどれか。",
+    "c": ["A. Delete", "B. Shift+Delete", "C. Ctrl+Delete", "D. Alt+Delete"],
+    "a": "B. Shift+Delete"
+  },
+  {
+    "q": "エクスプローラーでアドレスバーの履歴一覧を表示するキーはどれか。",
+    "c": ["A. F2", "B. F4", "C. F5", "D. F6"],
+    "a": "B. F4"
+  },
+  {
+    "q": "エクスプローラーでフォルダー内の項目をすべて選択するショートカットキーはどれか。",
+    "c": ["A. Ctrl+A", "B. Ctrl+S", "C. Ctrl+E", "D. Ctrl+Shift+A"],
+    "a": "A. Ctrl+A"
+  },
+  {
+    "q": "エクスプローラーのナビゲーションウィンドウで、選択フォルダーまでの親フォルダーを展開するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+E", "B. Ctrl+Shift+N", "C. Ctrl+E", "D. Alt+Shift+E"],
+    "a": "A. Ctrl+Shift+E"
+  },
+  {
+    "q": "エクスプローラーの表示を詳細に切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+5", "B. Ctrl+Shift+6", "C. Ctrl+Shift+7", "D. Ctrl+Shift+8"],
+    "a": "B. Ctrl+Shift+6"
+  },
+  {
+    "q": "エクスプローラーの表示を一覧に切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+4", "B. Ctrl+Shift+5", "C. Ctrl+Shift+6", "D. Ctrl+Shift+8"],
+    "a": "B. Ctrl+Shift+5"
+  },
+  {
+    "q": "エクスプローラーの表示をコンテンツに切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+6", "B. Ctrl+Shift+7", "C. Ctrl+Shift+8", "D. Ctrl+Shift+9"],
+    "a": "C. Ctrl+Shift+8"
+  },
+  {
+    "q": "エクスプローラーの表示を大アイコンに切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+1", "B. Ctrl+Shift+2", "C. Ctrl+Shift+5", "D. Ctrl+Shift+6"],
+    "a": "B. Ctrl+Shift+2"
+  },
+  {
+    "q": "アクティブウィンドウのシステムメニューを開くショートカットキーはどれか。",
+    "c": ["A. Alt+Space", "B. Ctrl+Space", "C. Win+Space", "D. Shift+Space"],
+    "a": "A. Alt+Space"
+  },
+  {
+    "q": "現在のウィンドウまたはアプリを閉じるショートカットキーはどれか。",
+    "c": ["A. Ctrl+F4", "B. Alt+F4", "C. Shift+F4", "D. Win+F4"],
+    "a": "B. Alt+F4"
+  },
+  {
+    "q": "開いているウィンドウを開いた順に切り替えるショートカットキーはどれか。",
+    "c": ["A. Alt+Tab", "B. Alt+Esc", "C. Ctrl+Tab", "D. Win+Tab"],
+    "a": "B. Alt+Esc"
+  },
+  {
+    "q": "エクスプローラーやブラウザで全画面表示を切り替えるキーはどれか。",
+    "c": ["A. F5", "B. F6", "C. F11", "D. F12"],
+    "a": "C. F11"
+  },
+  {
+    "q": "ダイアログで次の入力欄やボタンへ移動するキーはどれか。",
+    "c": ["A. Tab", "B. Shift+Tab", "C. Ctrl+Tab", "D. Alt+Tab"],
+    "a": "A. Tab"
+  },
+  {
+    "q": "ダイアログで前の入力欄やボタンへ戻るショートカットキーはどれか。",
+    "c": ["A. Tab", "B. Shift+Tab", "C. Ctrl+Tab", "D. Alt+Tab"],
+    "a": "B. Shift+Tab"
+  },
+  {
+    "q": "ダイアログでフォーカス中のチェックボックスをオン・オフするキーはどれか。",
+    "c": ["A. Enter", "B. Space", "C. Esc", "D. Delete"],
+    "a": "B. Space"
+  },
+  {
+    "q": "ダイアログで既定のボタンや選択中の項目を実行するキーはどれか。",
+    "c": ["A. Enter", "B. Esc", "C. Backspace", "D. Insert"],
+    "a": "A. Enter"
+  },
+  {
+    "q": "ダイアログやメニューをキャンセルして閉じるキーはどれか。",
+    "c": ["A. Enter", "B. Esc", "C. Tab", "D. Space"],
+    "a": "B. Esc"
+  },
+  {
+    "q": "タブ付きダイアログで次のタブへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Tab", "B. Ctrl+Shift+Tab", "C. Alt+Tab", "D. Shift+Tab"],
+    "a": "A. Ctrl+Tab"
+  },
+  {
+    "q": "タブ付きダイアログで前のタブへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Tab", "B. Ctrl+Shift+Tab", "C. Alt+Tab", "D. Shift+Tab"],
+    "a": "B. Ctrl+Shift+Tab"
+  },
+  {
+    "q": "Windowsキーを使わずにスタートメニューを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Esc", "B. Alt+Esc", "C. Ctrl+Space", "D. Alt+Space"],
+    "a": "A. Ctrl+Esc"
+  },
+  {
+    "q": "多くのデスクトップアプリでメニューバーにフォーカスするキーはどれか。",
+    "c": ["A. Alt", "B. Ctrl", "C. Shift", "D. Esc"],
+    "a": "A. Alt"
+  },
+  {
+    "q": "コンテキストメニューを開くための専用キーはどれか。",
+    "c": ["A. Menuキー", "B. Pauseキー", "C. ScrollLockキー", "D. Insertキー"],
+    "a": "A. Menuキー"
+  },
+  {
+    "q": "エクスプローラーで選択したファイルをコピーするショートカットキーはどれか。",
+    "c": ["A. Ctrl+C", "B. Ctrl+X", "C. Ctrl+V", "D. Ctrl+Z"],
+    "a": "A. Ctrl+C"
+  },
+  {
+    "q": "エクスプローラーで選択したファイルを移動のために切り取るショートカットキーはどれか。",
+    "c": ["A. Ctrl+C", "B. Ctrl+X", "C. Ctrl+V", "D. Ctrl+Y"],
+    "a": "B. Ctrl+X"
+  },
+  {
+    "q": "エクスプローラーでコピーまたは切り取りしたファイルを貼り付けるショートカットキーはどれか。",
+    "c": ["A. Ctrl+P", "B. Ctrl+V", "C. Ctrl+F", "D. Ctrl+H"],
+    "a": "B. Ctrl+V"
+  },
+  {
+    "q": "エクスプローラーで直前のファイル操作を元に戻すショートカットキーはどれか。",
+    "c": ["A. Ctrl+Z", "B. Ctrl+Y", "C. Ctrl+R", "D. Ctrl+U"],
+    "a": "A. Ctrl+Z"
+  },
+  {
+    "q": "エクスプローラーで元に戻したファイル操作をやり直すショートカットキーはどれか。",
+    "c": ["A. Ctrl+Z", "B. Ctrl+Y", "C. Ctrl+Shift+Z", "D. Alt+Y"],
+    "a": "B. Ctrl+Y"
+  },
+  {
+    "q": "ファイル一覧で連続した複数項目をキーボードで選択する基本操作はどれか。",
+    "c": ["A. Shift+Arrow", "B. Ctrl+Arrow", "C. Alt+Arrow", "D. Win+Arrow"],
+    "a": "A. Shift+Arrow"
+  },
+  {
+    "q": "ファイル一覧でフォーカスを移動しながら個別に選択を追加する基本操作はどれか。",
+    "c": ["A. Shift+矢印で移動して Enter", "B. Ctrl+矢印で移動して Space", "C. Alt+矢印で移動して Space", "D. Win+矢印で移動して Enter"],
+    "a": "B. Ctrl+矢印で移動して Space"
+  },
+  {
+    "q": "クイックアシストを開くショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+Q", "B. Win+Q", "C. Ctrl+Alt+Q", "D. Win+Shift+Q"],
+    "a": "A. Win+Ctrl+Q"
+  },
+  {
+    "q": "Windows 11でウィジェットを開くショートカットキーはどれか。",
+    "c": ["A. Win+W", "B. Win+V", "C. Win+N", "D. Win+A"],
+    "a": "A. Win+W"
+  },
+  {
+    "q": "タスクバーの日時やカレンダー表示を開閉するショートカットキーはどれか。",
+    "c": ["A. Win+Alt+D", "B. Win+Shift+D", "C. Win+Ctrl+D", "D. Alt+Shift+D"],
+    "a": "A. Win+Alt+D"
+  },
+  {
+    "q": "通知を順番に切り替えて確認するショートカットキーはどれか。",
+    "c": ["A. Win+Shift+V", "B. Win+V", "C. Win+Ctrl+V", "D. Alt+Shift+V"],
+    "a": "A. Win+Shift+V"
+  },
+  {
+    "q": "色覚フィルターのオン・オフを切り替えるショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+C", "B. Win+C", "C. Ctrl+Alt+C", "D. Win+Shift+C"],
+    "a": "A. Win+Ctrl+C"
+  },
+  {
+    "q": "スクリーンキーボードを開くショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+O", "B. Win+O", "C. Ctrl+Alt+O", "D. Win+Shift+O"],
+    "a": "A. Win+Ctrl+O"
+  },
+  {
+    "q": "ファイル名を指定して実行や検索結果で、入力したコマンドを管理者として起動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Enter", "B. Ctrl+Shift+Enter", "C. Alt+Enter", "D. Shift+Enter"],
+    "a": "B. Ctrl+Shift+Enter"
+  },
+  {
+    "q": "画面が真っ黒になるなど表示系の問題が起きたとき、グラフィックスドライバーをリセットするショートカットキーはどれか。",
+    "c": ["A. Win+Ctrl+Shift+B", "B. Win+Alt+Shift+B", "C. Ctrl+Alt+Delete", "D. Win+Shift+R"],
+    "a": "A. Win+Ctrl+Shift+B"
+  },
+  {
+    "q": "ウィンドウのシステムメニューから最大化をキーボード操作で実行する組み合わせはどれか。",
+    "c": ["A. Alt+Space, X", "B. Alt+Space, N", "C. Alt+Space, M", "D. Alt+Space, C"],
+    "a": "A. Alt+Space, X"
+  },
+  {
+    "q": "ウィンドウのシステムメニューから最小化をキーボード操作で実行する組み合わせはどれか。",
+    "c": ["A. Alt+Space, X", "B. Alt+Space, N", "C. Alt+Space, S", "D. Alt+Space, R"],
+    "a": "B. Alt+Space, N"
+  },
+  {
+    "q": "ウィンドウのシステムメニューから閉じるをキーボード操作で実行する組み合わせはどれか。",
+    "c": ["A. Alt+Space, M", "B. Alt+Space, R", "C. Alt+Space, C", "D. Alt+Space, S"],
+    "a": "C. Alt+Space, C"
+  },
+  {
+    "q": "マウスを使わずにウィンドウ移動モードへ入るシステムメニュー操作はどれか。",
+    "c": ["A. Alt+Space, M", "B. Alt+Space, S", "C. Alt+Space, X", "D. Alt+Space, N"],
+    "a": "A. Alt+Space, M"
+  },
+  {
+    "q": "マウスを使わずにウィンドウサイズ変更モードへ入るシステムメニュー操作はどれか。",
+    "c": ["A. Alt+Space, M", "B. Alt+Space, S", "C. Alt+Space, R", "D. Alt+Space, C"],
+    "a": "B. Alt+Space, S"
+  },
+  {
+    "q": "最大化や最小化したウィンドウを元のサイズに戻すシステムメニュー操作はどれか。",
+    "c": ["A. Alt+Space, R", "B. Alt+Space, X", "C. Alt+Space, N", "D. Alt+Space, C"],
+    "a": "A. Alt+Space, R"
+  },
+  {
+    "q": "デスクトップにフォーカスがある状態でシャットダウンダイアログを表示するショートカットキーはどれか。",
+    "c": ["A. Alt+F4", "B. Ctrl+Alt+Delete", "C. Win+L", "D. Win+X"],
+    "a": "A. Alt+F4"
+  },
+  {
+    "q": "タスクバーの1番目にあるアプリを管理者として起動するショートカットキーはどれか。",
+    "c": ["A. Win+Shift+1", "B. Win+Ctrl+1", "C. Win+Alt+1", "D. Win+Ctrl+Shift+1"],
+    "a": "D. Win+Ctrl+Shift+1"
+  },
+  {
+    "q": "リモートデスクトップ接続中にリモート側へCtrl+Alt+Delete相当を送るショートカットキーはどれか。",
+    "c": ["A. Ctrl+Alt+End", "B. Ctrl+Alt+Delete", "C. Ctrl+Shift+End", "D. Alt+End"],
+    "a": "A. Ctrl+Alt+End"
+  },
+  {
+    "q": "リモートデスクトップ接続で全画面表示を切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Alt+Break", "B. Ctrl+Alt+Enter", "C. Alt+Enter", "D. Win+Enter"],
+    "a": "A. Ctrl+Alt+Break"
+  },
+  {
+    "q": "リモートデスクトップ接続でアプリを左から右へ切り替えるショートカットキーはどれか。",
+    "c": ["A. Alt+PageUp", "B. Alt+PageDown", "C. Ctrl+PageUp", "D. Ctrl+Alt+Tab"],
+    "a": "A. Alt+PageUp"
+  },
+  {
+    "q": "リモートデスクトップ接続でアプリを右から左へ切り替えるショートカットキーはどれか。",
+    "c": ["A. Alt+PageUp", "B. Alt+PageDown", "C. Ctrl+PageDown", "D. Shift+Alt+Tab"],
+    "a": "B. Alt+PageDown"
+  },
+  {
+    "q": "リモートデスクトップ接続で起動した順にプログラムを切り替えるショートカットキーはどれか。",
+    "c": ["A. Alt+Insert", "B. Alt+Home", "C. Ctrl+Insert", "D. Shift+Insert"],
+    "a": "A. Alt+Insert"
+  },
+  {
+    "q": "リモートデスクトップ接続でリモート画面全体のスクリーンショットをクリップボードにコピーするショートカットキーはどれか。",
+    "c": ["A. Ctrl+Alt+Plus", "B. Ctrl+Alt+Minus", "C. Alt+PrtSc", "D. Win+PrtSc"],
+    "a": "A. Ctrl+Alt+Plus"
+  },
+  {
+    "q": "リモートデスクトップ接続でリモート側のアクティブウィンドウのスクリーンショットをコピーするショートカットキーはどれか。",
+    "c": ["A. Ctrl+Alt+Plus", "B. Ctrl+Alt+Minus", "C. Alt+PrtSc", "D. Ctrl+PrtSc"],
+    "a": "B. Ctrl+Alt+Minus"
+  },
+  {
+    "q": "Windows Terminalで新しいタブを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+T", "B. Ctrl+T", "C. Ctrl+Alt+T", "D. Alt+T"],
+    "a": "A. Ctrl+Shift+T"
+  },
+  {
+    "q": "Windows Terminalで現在のタブまたはペインを閉じるショートカットキーはどれか。",
+    "c": ["A. Ctrl+W", "B. Ctrl+Shift+W", "C. Alt+F4", "D. Ctrl+F4"],
+    "a": "B. Ctrl+Shift+W"
+  },
+  {
+    "q": "Windows Terminalでコマンドパレットを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+P", "B. Ctrl+P", "C. Ctrl+Alt+P", "D. Alt+P"],
+    "a": "A. Ctrl+Shift+P"
+  },
+  {
+    "q": "Windows Terminalで検索を開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+F", "B. Ctrl+Shift+F", "C. Alt+F", "D. Ctrl+Alt+F"],
+    "a": "B. Ctrl+Shift+F"
+  },
+  {
+    "q": "Windows Terminalで設定画面を開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+,", "B. Ctrl+.", "C. Ctrl+Shift+,", "D. Alt+,"],
+    "a": "A. Ctrl+,"
+  },
+  {
+    "q": "Windows Terminalで選択したテキストをコピーする既定ショートカットキーはどれか。",
+    "c": ["A. Ctrl+C", "B. Ctrl+Shift+C", "C. Alt+C", "D. Ctrl+Alt+C"],
+    "a": "B. Ctrl+Shift+C"
+  },
+  {
+    "q": "Windows Terminalでクリップボードの内容を貼り付ける既定ショートカットキーはどれか。",
+    "c": ["A. Ctrl+V", "B. Ctrl+Shift+V", "C. Shift+Insert", "D. Alt+V"],
+    "a": "B. Ctrl+Shift+V"
+  },
+  {
+    "q": "Windows Terminalでペインを自動分割するショートカットキーはどれか。",
+    "c": ["A. Alt+Shift+D", "B. Ctrl+Shift+D", "C. Alt+D", "D. Ctrl+Alt+D"],
+    "a": "A. Alt+Shift+D"
+  },
+  {
+    "q": "Windows Terminalで水平ペイン分割を行う既定ショートカットキーはどれか。",
+    "c": ["A. Alt+Shift+Minus", "B. Alt+Shift+Plus", "C. Ctrl+Shift+Minus", "D. Ctrl+Alt+Minus"],
+    "a": "A. Alt+Shift+Minus"
+  },
+  {
+    "q": "Windows Terminalで垂直ペイン分割を行う既定ショートカットキーはどれか。",
+    "c": ["A. Alt+Shift+Minus", "B. Alt+Shift+Plus", "C. Ctrl+Shift+Plus", "D. Ctrl+Alt+Plus"],
+    "a": "B. Alt+Shift+Plus"
+  },
+  {
+    "q": "Windows Terminalで分割ペイン間のフォーカスを移動するショートカットキーはどれか。",
+    "c": ["A. Alt+Arrow", "B. Ctrl+Arrow", "C. Shift+Arrow", "D. Win+Arrow"],
+    "a": "A. Alt+Arrow"
+  },
+  {
+    "q": "Windows Terminalで分割ペインのサイズを変更するショートカットキーはどれか。",
+    "c": ["A. Alt+Shift+Arrow", "B. Ctrl+Shift+Arrow", "C. Win+Shift+Arrow", "D. Ctrl+Alt+Arrow"],
+    "a": "A. Alt+Shift+Arrow"
+  },
+  {
+    "q": "Windows Terminalで次のタブへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Tab", "B. Ctrl+Shift+Tab", "C. Alt+Tab", "D. Ctrl+PageUp"],
+    "a": "A. Ctrl+Tab"
+  },
+  {
+    "q": "Windows Terminalで前のタブへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Tab", "B. Ctrl+Shift+Tab", "C. Alt+Tab", "D. Ctrl+PageDown"],
+    "a": "B. Ctrl+Shift+Tab"
+  },
+  {
+    "q": "Windows Terminalで1番目のタブへ直接移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+1", "B. Ctrl+Alt+1", "C. Ctrl+Shift+1", "D. Alt+1"],
+    "a": "B. Ctrl+Alt+1"
+  },
+  {
+    "q": "Windows Terminalで新しいタブのプロファイル選択メニューを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+Space", "B. Ctrl+Space", "C. Alt+Space", "D. Ctrl+Alt+Space"],
+    "a": "A. Ctrl+Shift+Space"
+  },
+  {
+    "q": "コマンドプロンプトでコマンド履歴ウィンドウを表示するキーはどれか。",
+    "c": ["A. F3", "B. F5", "C. F7", "D. F9"],
+    "a": "C. F7"
+  },
+  {
+    "q": "コマンドプロンプトで直前のコマンドを再入力するキーはどれか。",
+    "c": ["A. F1", "B. F2", "C. F3", "D. F4"],
+    "a": "C. F3"
+  },
+  {
+    "q": "コマンドプロンプトで直前のコマンドから1文字ずつコピーするキーはどれか。",
+    "c": ["A. F1", "B. F2", "C. F3", "D. F4"],
+    "a": "A. F1"
+  },
+  {
+    "q": "コマンドプロンプトで指定した文字の直前まで、前回コマンドからコピーするキーはどれか。",
+    "c": ["A. F1", "B. F2", "C. F4", "D. F8"],
+    "a": "B. F2"
+  },
+  {
+    "q": "コマンドプロンプトで指定した文字の直前まで、現在行の文字を削除するキーはどれか。",
+    "c": ["A. F2", "B. F3", "C. F4", "D. F7"],
+    "a": "C. F4"
+  },
+  {
+    "q": "コマンドプロンプトで入力済みの文字列に一致する履歴を順に検索するキーはどれか。",
+    "c": ["A. F5", "B. F7", "C. F8", "D. F9"],
+    "a": "C. F8"
+  },
+  {
+    "q": "コマンドプロンプトで番号を指定して履歴からコマンドを呼び出すキーはどれか。",
+    "c": ["A. F5", "B. F7", "C. F8", "D. F9"],
+    "a": "D. F9"
+  },
+  {
+    "q": "コマンドプロンプトで現在のコマンド履歴を消去するショートカットキーはどれか。",
+    "c": ["A. Alt+F7", "B. Ctrl+F7", "C. Shift+F7", "D. Alt+Delete"],
+    "a": "A. Alt+F7"
+  },
+  {
+    "q": "コマンド入力中に現在行をクリアするキーはどれか。",
+    "c": ["A. Esc", "B. Tab", "C. Insert", "D. Pause"],
+    "a": "A. Esc"
+  },
+  {
+    "q": "ターミナルで実行中のコマンドを中断する代表的なショートカットキーはどれか。",
+    "c": ["A. Ctrl+C", "B. Ctrl+V", "C. Ctrl+Z", "D. Ctrl+X"],
+    "a": "A. Ctrl+C"
+  },
+  {
+    "q": "コンソールアプリへBreak信号を送るショートカットキーはどれか。",
+    "c": ["A. Ctrl+Break", "B. Ctrl+Pause", "C. Alt+Break", "D. Shift+Break"],
+    "a": "A. Ctrl+Break"
+  },
+  {
+    "q": "コマンド入力行でカーソル左側の文字をまとめて削除するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Home", "B. Ctrl+End", "C. Ctrl+Left", "D. Ctrl+Backspace"],
+    "a": "A. Ctrl+Home"
+  },
+  {
+    "q": "コマンド入力行でカーソル右側の文字をまとめて削除するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Home", "B. Ctrl+End", "C. Ctrl+Right", "D. Ctrl+Delete"],
+    "a": "B. Ctrl+End"
+  },
+  {
+    "q": "PowerShellで画面をクリアする代表的なショートカットキーはどれか。",
+    "c": ["A. Ctrl+L", "B. Ctrl+R", "C. Ctrl+K", "D. Ctrl+E"],
+    "a": "A. Ctrl+L"
+  },
+  {
+    "q": "PowerShellで履歴の逆方向検索を開始するショートカットキーはどれか。",
+    "c": ["A. Ctrl+F", "B. Ctrl+R", "C. Ctrl+H", "D. Ctrl+S"],
+    "a": "B. Ctrl+R"
+  },
+  {
+    "q": "コマンドラインで入力中のコマンドやパスを補完する基本キーはどれか。",
+    "c": ["A. Tab", "B. Esc", "C. Insert", "D. Pause"],
+    "a": "A. Tab"
+  },
+  {
+    "q": "コマンドライン補完候補を逆方向にたどるショートカットキーはどれか。",
+    "c": ["A. Shift+Tab", "B. Ctrl+Tab", "C. Alt+Tab", "D. Win+Tab"],
+    "a": "A. Shift+Tab"
+  },
+  {
+    "q": "Visual Studio Codeでコマンドパレットを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+P", "B. Ctrl+P", "C. Ctrl+Alt+P", "D. F1+P"],
+    "a": "A. Ctrl+Shift+P"
+  },
+  {
+    "q": "Visual Studio Codeでファイルを素早く開くQuick Openのショートカットキーはどれか。",
+    "c": ["A. Ctrl+P", "B. Ctrl+Shift+P", "C. Ctrl+O", "D. Ctrl+Alt+O"],
+    "a": "A. Ctrl+P"
+  },
+  {
+    "q": "Visual Studio Codeで統合ターミナルを表示または非表示にするショートカットキーはどれか。",
+    "c": ["A. Ctrl+`", "B. Ctrl+Shift+`", "C. Alt+`", "D. Ctrl+T"],
+    "a": "A. Ctrl+`"
+  },
+  {
+    "q": "Visual Studio Codeでサイドバーを表示または非表示にするショートカットキーはどれか。",
+    "c": ["A. Ctrl+B", "B. Ctrl+Shift+B", "C. Alt+B", "D. Ctrl+J"],
+    "a": "A. Ctrl+B"
+  },
+  {
+    "q": "Visual Studio Codeでエクスプローラービューを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+E", "B. Ctrl+E", "C. Ctrl+Alt+E", "D. Alt+E"],
+    "a": "A. Ctrl+Shift+E"
+  },
+  {
+    "q": "Visual Studio Codeで検索ビューを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+F", "B. Ctrl+Shift+F", "C. Ctrl+H", "D. Ctrl+Alt+F"],
+    "a": "B. Ctrl+Shift+F"
+  },
+  {
+    "q": "Visual Studio Codeでソース管理ビューを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+G", "B. Ctrl+G", "C. Ctrl+Alt+G", "D. Alt+G"],
+    "a": "A. Ctrl+Shift+G"
+  },
+  {
+    "q": "Visual Studio Codeで実行とデバッグビューを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+D", "B. Ctrl+D", "C. Ctrl+Alt+D", "D. F5"],
+    "a": "A. Ctrl+Shift+D"
+  },
+  {
+    "q": "Visual Studio Codeで拡張機能ビューを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+X", "B. Ctrl+X", "C. Ctrl+Alt+X", "D. Alt+X"],
+    "a": "A. Ctrl+Shift+X"
+  },
+  {
+    "q": "Visual Studio Codeで問題パネルを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+M", "B. Ctrl+M", "C. Ctrl+Alt+M", "D. Alt+M"],
+    "a": "A. Ctrl+Shift+M"
+  },
+  {
+    "q": "Visual Studio Codeでパネルを表示または非表示にするショートカットキーはどれか。",
+    "c": ["A. Ctrl+J", "B. Ctrl+B", "C. Ctrl+Shift+J", "D. Alt+J"],
+    "a": "A. Ctrl+J"
+  },
+  {
+    "q": "Visual Studio Codeで定義へ移動するキーはどれか。",
+    "c": ["A. F2", "B. F5", "C. F12", "D. Shift+F12"],
+    "a": "C. F12"
+  },
+  {
+    "q": "Visual Studio Codeで定義をピーク表示するショートカットキーはどれか。",
+    "c": ["A. F12", "B. Alt+F12", "C. Shift+F12", "D. Ctrl+F12"],
+    "a": "B. Alt+F12"
+  },
+  {
+    "q": "Visual Studio Codeで参照を表示するショートカットキーはどれか。",
+    "c": ["A. F12", "B. Alt+F12", "C. Shift+F12", "D. Ctrl+Shift+F12"],
+    "a": "C. Shift+F12"
+  },
+  {
+    "q": "Visual Studio Codeでシンボル名を変更するキーはどれか。",
+    "c": ["A. F2", "B. F4", "C. F9", "D. F12"],
+    "a": "A. F2"
+  },
+  {
+    "q": "Visual Studio Codeで候補提示を手動表示するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Space", "B. Ctrl+Enter", "C. Alt+Space", "D. Ctrl+Shift+Space"],
+    "a": "A. Ctrl+Space"
+  },
+  {
+    "q": "Visual Studio Codeでクイック修正を表示するショートカットキーはどれか。",
+    "c": ["A. Ctrl+.", "B. Ctrl+,", "C. Alt+Enter", "D. Shift+F4"],
+    "a": "A. Ctrl+."
+  },
+  {
+    "q": "Visual Studio Codeで現在行を上下へ移動するショートカットキーはどれか。",
+    "c": ["A. Alt+Up/Down", "B. Ctrl+Up/Down", "C. Shift+Up/Down", "D. Ctrl+Shift+Up/Down"],
+    "a": "A. Alt+Up/Down"
+  },
+  {
+    "q": "Visual Studio Codeで現在行を下に複製するショートカットキーはどれか。",
+    "c": ["A. Ctrl+D", "B. Shift+Alt+Down", "C. Ctrl+Shift+D", "D. Alt+Down"],
+    "a": "B. Shift+Alt+Down"
+  },
+  {
+    "q": "Visual Studio Codeで行コメントを切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+/", "B. Ctrl+Shift+/", "C. Alt+/", "D. Shift+Alt+A"],
+    "a": "A. Ctrl+/"
+  },
+  {
+    "q": "Visual Studio Codeでブロックコメントを切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+/", "B. Ctrl+Shift+/", "C. Shift+Alt+A", "D. Ctrl+Alt+A"],
+    "a": "C. Shift+Alt+A"
+  },
+  {
+    "q": "Visual Studio Codeで現在選択している単語の次の一致箇所を追加選択するショートカットキーはどれか。",
+    "c": ["A. Ctrl+D", "B. Ctrl+F", "C. Ctrl+Shift+L", "D. Alt+D"],
+    "a": "A. Ctrl+D"
+  },
+  {
+    "q": "Visual Studio Codeで現在の選択語句と一致するすべての箇所を選択するショートカットキーはどれか。",
+    "c": ["A. Ctrl+D", "B. Ctrl+Shift+L", "C. Ctrl+F2", "D. Ctrl+Alt+L"],
+    "a": "B. Ctrl+Shift+L"
+  },
+  {
+    "q": "Visual Studio Codeで現在の単語の全出現箇所を選択するショートカットキーはどれか。",
+    "c": ["A. Ctrl+F2", "B. Ctrl+D", "C. Ctrl+Shift+F", "D. Alt+F2"],
+    "a": "A. Ctrl+F2"
+  },
+  {
+    "q": "Visual Studio Codeでキーボードショートカット一覧を開くキーシーケンスはどれか。",
+    "c": ["A. Ctrl+K Ctrl+S", "B. Ctrl+K Ctrl+O", "C. Ctrl+K Ctrl+F", "D. Ctrl+Shift+S"],
+    "a": "A. Ctrl+K Ctrl+S"
+  },
+  {
+    "q": "Visual Studio Codeですべて折りたたむキーシーケンスはどれか。",
+    "c": ["A. Ctrl+K Ctrl+0", "B. Ctrl+K Ctrl+J", "C. Ctrl+Shift+[", "D. Ctrl+Shift+]"],
+    "a": "A. Ctrl+K Ctrl+0"
+  },
+  {
+    "q": "Visual Studio Codeですべて展開するキーシーケンスはどれか。",
+    "c": ["A. Ctrl+K Ctrl+0", "B. Ctrl+K Ctrl+J", "C. Ctrl+Shift+[", "D. Ctrl+Shift+]"],
+    "a": "B. Ctrl+K Ctrl+J"
+  },
+  {
+    "q": "Visual Studio Codeで現在の領域を折りたたむショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+[", "B. Ctrl+Shift+]", "C. Ctrl+K Ctrl+0", "D. Alt+["],
+    "a": "A. Ctrl+Shift+["
+  },
+  {
+    "q": "Visual Studio Codeで現在の領域を展開するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+[", "B. Ctrl+Shift+]", "C. Ctrl+K Ctrl+J", "D. Alt+]"],
+    "a": "B. Ctrl+Shift+]"
+  },
+  {
+    "q": "Visual Studio CodeでZen Modeを切り替えるキーシーケンスはどれか。",
+    "c": ["A. Ctrl+K Z", "B. Ctrl+K M", "C. Ctrl+Shift+Z", "D. Alt+Z"],
+    "a": "A. Ctrl+K Z"
+  },
+  {
+    "q": "Visual Studio Codeで1番目のエディターグループにフォーカスするショートカットキーはどれか。",
+    "c": ["A. Ctrl+1", "B. Alt+1", "C. Ctrl+Alt+1", "D. Ctrl+Shift+1"],
+    "a": "A. Ctrl+1"
+  },
+  {
+    "q": "Visual Studio Codeで2番目のエディターグループにフォーカスするショートカットキーはどれか。",
+    "c": ["A. Ctrl+1", "B. Ctrl+2", "C. Alt+2", "D. Ctrl+Shift+2"],
+    "a": "B. Ctrl+2"
+  },
+  {
+    "q": "Visual Studio Codeで次のエディターへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+PageDown", "B. Ctrl+PageUp", "C. Alt+PageDown", "D. Shift+PageDown"],
+    "a": "A. Ctrl+PageDown"
+  },
+  {
+    "q": "Visual Studio Codeで前のエディターへ移動するショートカットキーはどれか。",
+    "c": ["A. Ctrl+PageDown", "B. Ctrl+PageUp", "C. Alt+PageUp", "D. Shift+PageUp"],
+    "a": "B. Ctrl+PageUp"
+  },
+  {
+    "q": "Visual Studio Codeで閉じたエディターを再度開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+T", "B. Ctrl+T", "C. Ctrl+Shift+N", "D. Ctrl+Alt+T"],
+    "a": "A. Ctrl+Shift+T"
+  },
+  {
+    "q": "Visual Studio Codeでデバッグを開始するキーはどれか。",
+    "c": ["A. F2", "B. F5", "C. F9", "D. F10"],
+    "a": "B. F5"
+  },
+  {
+    "q": "Visual Studio Codeでデバッグせずに実行するショートカットキーはどれか。",
+    "c": ["A. Ctrl+F5", "B. Shift+F5", "C. Alt+F5", "D. Ctrl+Shift+F5"],
+    "a": "A. Ctrl+F5"
+  },
+  {
+    "q": "Visual Studio Codeでデバッグを停止するショートカットキーはどれか。",
+    "c": ["A. F5", "B. Ctrl+F5", "C. Shift+F5", "D. Alt+F5"],
+    "a": "C. Shift+F5"
+  },
+  {
+    "q": "Visual Studio Codeでブレークポイントを切り替えるキーはどれか。",
+    "c": ["A. F5", "B. F8", "C. F9", "D. F10"],
+    "a": "C. F9"
+  },
+  {
+    "q": "Visual Studio Codeのデバッグ中にステップオーバーするキーはどれか。",
+    "c": ["A. F9", "B. F10", "C. F11", "D. Shift+F11"],
+    "a": "B. F10"
+  },
+  {
+    "q": "Visual Studio Codeのデバッグ中にステップインするキーはどれか。",
+    "c": ["A. F9", "B. F10", "C. F11", "D. Shift+F11"],
+    "a": "C. F11"
+  },
+  {
+    "q": "Visual Studio Codeのデバッグ中にステップアウトするショートカットキーはどれか。",
+    "c": ["A. F10", "B. F11", "C. Shift+F11", "D. Ctrl+F11"],
+    "a": "C. Shift+F11"
+  },
+  {
+    "q": "ChromeやEdgeで開発者ツールを開く標準的な単一キーはどれか。",
+    "c": ["A. F5", "B. F7", "C. F11", "D. F12"],
+    "a": "D. F12"
+  },
+  {
+    "q": "ChromeやEdgeで開発者ツールを開く代表的な複合ショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+I", "B. Ctrl+Shift+J", "C. Ctrl+Shift+C", "D. Ctrl+Shift+M"],
+    "a": "A. Ctrl+Shift+I"
+  },
+  {
+    "q": "ChromeやEdgeの開発者ツールでConsoleを直接開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+I", "B. Ctrl+Shift+J", "C. Ctrl+Shift+C", "D. Ctrl+Shift+P"],
+    "a": "B. Ctrl+Shift+J"
+  },
+  {
+    "q": "ChromeやEdgeで要素選択ツールを起動してページ上の要素を検査するショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+C", "B. Ctrl+Shift+I", "C. Ctrl+Shift+J", "D. Ctrl+Shift+M"],
+    "a": "A. Ctrl+Shift+C"
+  },
+  {
+    "q": "ChromeやEdgeの開発者ツールでデバイスツールバーを切り替えるショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+D", "B. Ctrl+Shift+M", "C. Ctrl+Alt+M", "D. Alt+Shift+M"],
+    "a": "B. Ctrl+Shift+M"
+  },
+  {
+    "q": "ChromeやEdgeの開発者ツールでコマンドメニューを開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+Shift+P", "B. Ctrl+P", "C. Ctrl+Alt+P", "D. Alt+P"],
+    "a": "A. Ctrl+Shift+P"
+  },
+  {
+    "q": "ChromeやEdgeの開発者ツールでSources内のファイルを素早く開くショートカットキーはどれか。",
+    "c": ["A. Ctrl+P", "B. Ctrl+Shift+P", "C. Ctrl+O", "D. Ctrl+Alt+O"],
+    "a": "A. Ctrl+P"
+  },
+  {
+    "q": "ChromeやEdgeの開発者ツールで下部ドロワーを表示または非表示にするキーはどれか。",
+    "c": ["A. Esc", "B. Tab", "C. F5", "D. Insert"],
+    "a": "A. Esc"
+  }
+]

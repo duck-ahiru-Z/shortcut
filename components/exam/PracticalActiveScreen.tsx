@@ -108,16 +108,9 @@ export default function PracticalActiveScreen({
 
       const isMatch = expected.every((k: string) => pressed.has(k)) && pressed.size === expected.length;
 
-      // If it's a pure key combo task (like save_file or rename_file), mark success.
+      // If it's a pure key combo task, mark success.
       // If it's select_all, we already check selection, but we can also use this as fallback.
-      if (isMatch && (
-        q.type === "save_file" || 
-        q.type === "rename_file" || 
-        q.type === "select_all" ||
-        q.type === "undo_action" ||
-        q.type === "bold_text" ||
-        q.type === "print_doc"
-      )) {
+      if (isMatch && !isTypingTask) {
         onAnswer(q.id, "CORRECT");
       }
     };

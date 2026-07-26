@@ -20,6 +20,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+const knowledgePoolStr = fs.readFileSync(path.join(__dirname, "knowledge_pool.json"), "utf8");
+const knowledgePool = JSON.parse(knowledgePoolStr);
+
 // Parse 4kyu questions
 function parse4kyu() {
   const filePath = path.join(__dirname, '..', 'ショートカットキー検定４級　問題.txt');
@@ -210,26 +213,26 @@ async function seed() {
     {
       id: "3kyu",
       title: "3級 (Windows版)",
-      questionsCount: 5,
+      questionsCount: 30,
       passingRate: 0.8,
       duration: 1800,
-      pool: generateDummyQuestions("3級", 3000)
+      pool: knowledgePool["3kyu"]
     },
     {
       id: "2kyu",
       title: "2級 (Windows版)",
-      questionsCount: 5,
+      questionsCount: 30,
       passingRate: 0.8,
       duration: 1800,
-      pool: generateDummyQuestions("2級", 2000)
+      pool: knowledgePool["2kyu"]
     },
     {
       id: "1kyu",
       title: "1級 (Windows版)",
-      questionsCount: 5,
+      questionsCount: 30,
       passingRate: 0.8,
       duration: 1800,
-      pool: generateDummyQuestions("1級", 1000)
+      pool: knowledgePool["1kyu"]
     },
     // Practical Exams
     {
