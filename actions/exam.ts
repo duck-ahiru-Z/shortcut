@@ -3,6 +3,7 @@
 import { doc, getDoc, collection, addDoc, setDoc, increment } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import crypto from "crypto";
+import { shuffleArray, formatKeyCombo } from "@/lib/examHelpers";
 
 // Secret for HMAC signing (in production, use process.env.SECRET_KEY)
 const SECRET_KEY = process.env.SECRET_KEY || "shortcut_exam_secret_key_2026";
@@ -74,15 +75,7 @@ async function getCachedExamData(grade: string): Promise<ExamData | null> {
   }
 }
 
-// Fisher-Yates shuffle
-function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-  }
-  return newArray;
-}
+// Utility functions removed to lib/examHelpers.ts
 
 function signPayload(payload: any): string {
   const dataStr = JSON.stringify(payload);
@@ -181,22 +174,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
 
   const answeredIds = Object.keys(userAnswers).map(Number);
 
-  const formatKeyCombo = (combo: string[]) => {
-    if (!combo || !Array.isArray(combo) || combo.length === 0) return "CORRECT";
-    const map: Record<string, string> = {
-      "control": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Win", "escape": "Esc",
-      "enter": "Enter", "space": "Space", "arrowup": "↑", "arrowdown": "↓", "arrowleft": "←",
-      "arrowright": "→", "period": ".", "comma": ",", "plus": "+", "minus": "-", "equal": "=",
-      "semicolon": ";", "apostrophe": "'", "slash": "/", "grave": "`", "backspace": "Backspace",
-      "delete": "Delete", "insert": "Insert", "home": "Home", "end": "End", "pageup": "PageUp",
-      "pagedown": "PageDown", "printscreen": "PrtScn"
-    };
-    return combo.map(k => {
-      const lower = k.toLowerCase();
-      if (map[lower]) return map[lower];
-      return lower.charAt(0).toUpperCase() + lower.slice(1);
-    }).join(" + ");
-  };
+  // Helper formatKeyCombo moved to lib/examHelpers
 
   for (const q of realQuestions) {
     if (answeredIds.includes(q.id)) {
