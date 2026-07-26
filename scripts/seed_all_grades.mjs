@@ -23,6 +23,9 @@ const db = getFirestore(app);
 const knowledgePoolStr = fs.readFileSync(path.join(__dirname, "knowledge_pool.json"), "utf8");
 const knowledgePool = JSON.parse(knowledgePoolStr);
 
+const practicalPoolStr = fs.readFileSync(path.join(__dirname, "practical_pool.json"), "utf8");
+const practicalPool = JSON.parse(practicalPoolStr);
+
 // Parse 4kyu questions
 function parse4kyu() {
   const filePath = path.join(__dirname, '..', 'ショートカットキー検定４級　問題.txt');
@@ -254,26 +257,26 @@ async function seed() {
     {
       id: "practical-3kyu",
       title: "3級 実務検定 (実践シミュレータ)",
-      questionsCount: 5,
+      questionsCount: 30,
       passingRate: 0.8,
       duration: 1800,
-      pool: generatePracticalQuestions("3kyu")
+      pool: practicalPool["practical-3kyu"]
     },
     {
       id: "practical-2kyu",
       title: "2級 実務検定 (実践シミュレータ)",
-      questionsCount: 5,
+      questionsCount: 30,
       passingRate: 0.8,
       duration: 1800,
-      pool: generatePracticalQuestions("2kyu")
+      pool: practicalPool["practical-2kyu"]
     },
     {
       id: "practical-1kyu",
       title: "1級 実務検定 (実践シミュレータ)",
-      questionsCount: 5,
+      questionsCount: 30,
       passingRate: 0.8,
       duration: 1800,
-      pool: generatePracticalQuestions("1kyu")
+      pool: practicalPool["practical-1kyu"]
     }
   ];
 

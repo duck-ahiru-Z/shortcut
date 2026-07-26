@@ -318,14 +318,109 @@ export default function PracticalActiveScreen({
           </div>
         );
 
-      default:
-        return (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>
-              指示されたショートカットキーを押してください...
-            </p>
-          </div>
-        );
+      default: {
+        const getUIContext = (text: string) => {
+          if (/(Excel|セル|シート|数式|オートSUM)/i.test(text)) return "excel";
+          if (/(Word|段落|文書|文字|書式)/i.test(text)) return "word";
+          if (/(ブラウザ|タブ|ページ|ダウンロード|再読み込み|ブックマーク|履歴)/i.test(text)) return "browser";
+          if (/(エクスプローラー|フォルダ|ファイル)/i.test(text)) return "explorer";
+          if (/(Windows|タスクバー|デスクトップ|仮想|設定|アプリ|画面|パソコン|システム|スタートメニュー)/i.test(text)) return "windows";
+          return "default";
+        };
+
+        const ctx = getUIContext(q.question);
+        
+        switch (ctx) {
+          case "excel":
+            return (
+              <div style={{ border: "1px solid #107c41", borderRadius: "6px", overflow: "hidden", width: "100%", maxWidth: "500px", margin: "20px auto 0", backgroundColor: "white" }}>
+                <div style={{ backgroundColor: "#107c41", color: "white", padding: "8px 12px", fontSize: "14px", display: "flex", alignItems: "center", gap: "8px" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                  スプレッドシート
+                </div>
+                <div style={{ padding: "20px", display: "flex", flexDirection: "column", gap: "10px", backgroundImage: "linear-gradient(#e0e0e0 1px, transparent 1px), linear-gradient(90deg, #e0e0e0 1px, transparent 1px)", backgroundSize: "80px 30px", height: "180px" }}>
+                  <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                     <div style={{ backgroundColor: "var(--bg-primary)", padding: "12px 24px", borderRadius: "8px", border: "1px solid var(--border-color)", color: "var(--text-primary)", fontWeight: "bold", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
+                       指示されたキーを入力...
+                     </div>
+                  </div>
+                </div>
+              </div>
+            );
+          case "word":
+            return (
+              <div style={{ border: "1px solid #185abd", borderRadius: "6px", overflow: "hidden", width: "100%", maxWidth: "500px", margin: "20px auto 0", backgroundColor: "#f3f2f1" }}>
+                <div style={{ backgroundColor: "#185abd", color: "white", padding: "8px 12px", fontSize: "14px", display: "flex", alignItems: "center", gap: "8px" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M4 4h16v16H4z"></path></svg>
+                  文書
+                </div>
+                <div style={{ padding: "20px", display: "flex", justifyContent: "center" }}>
+                  <div style={{ width: "85%", height: "180px", backgroundColor: "white", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "20px", color: "var(--text-primary)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", borderRadius: "2px" }}>
+                     指示されたキーを入力...
+                  </div>
+                </div>
+              </div>
+            );
+          case "browser":
+            return (
+              <div style={{ border: "1px solid var(--border-color)", borderRadius: "8px", overflow: "hidden", width: "100%", maxWidth: "600px", margin: "20px auto 0", backgroundColor: "var(--bg-primary)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
+                <div style={{ backgroundColor: "var(--bg-secondary)", display: "flex", padding: "8px 12px", gap: "8px", alignItems: "center", borderBottom: "1px solid var(--border-color)" }}>
+                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: "#ff5f56" }}></div>
+                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: "#ffbd2e" }}></div>
+                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: "#27c93f" }}></div>
+                  <div style={{ flex: 1, backgroundColor: "var(--bg-primary)", borderRadius: "16px", padding: "4px 16px", fontSize: "12px", color: "var(--text-muted)", marginLeft: "12px", border: "1px solid var(--border-light)" }}>
+                    https://example.com
+                  </div>
+                </div>
+                <div style={{ height: "180px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-primary)", fontWeight: "bold" }}>
+                  指示されたキーを入力...
+                </div>
+              </div>
+            );
+          case "explorer":
+            return (
+              <div style={{ border: "1px solid var(--border-color)", borderRadius: "6px", overflow: "hidden", width: "100%", maxWidth: "500px", margin: "20px auto 0", backgroundColor: "var(--bg-primary)" }}>
+                <div style={{ backgroundColor: "var(--bg-secondary)", display: "flex", padding: "8px 12px", gap: "8px", alignItems: "center", borderBottom: "1px solid var(--border-color)" }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#f3d32a"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path></svg>
+                  <span style={{ fontSize: "14px", color: "var(--text-primary)" }}>PC &gt; ドキュメント</span>
+                </div>
+                <div style={{ display: "flex", height: "180px" }}>
+                  <div style={{ width: "120px", borderRight: "1px solid var(--border-color)", padding: "12px", display: "flex", flexDirection: "column", gap: "10px", backgroundColor: "var(--bg-secondary)" }}>
+                    <div style={{ height: "8px", backgroundColor: "var(--border-light)", borderRadius: "4px" }}></div>
+                    <div style={{ height: "8px", backgroundColor: "var(--border-light)", borderRadius: "4px", width: "80%" }}></div>
+                    <div style={{ height: "8px", backgroundColor: "var(--border-light)", borderRadius: "4px", width: "90%" }}></div>
+                  </div>
+                  <div style={{ flex: 1, padding: "20px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-primary)", fontWeight: "bold" }}>
+                    指示されたキーを入力...
+                  </div>
+                </div>
+              </div>
+            );
+          case "windows":
+            return (
+              <div style={{ border: "1px solid var(--border-color)", borderRadius: "8px", overflow: "hidden", width: "100%", maxWidth: "500px", margin: "20px auto 0", backgroundColor: "#0078d4", position: "relative", height: "220px", boxShadow: "0 8px 24px rgba(0,0,0,0.15)" }}>
+                <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                   <div style={{ backgroundColor: "var(--bg-primary)", padding: "12px 24px", borderRadius: "8px", color: "var(--text-primary)", fontWeight: "bold", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" }}>
+                     指示されたキーを入力...
+                   </div>
+                </div>
+                <div style={{ position: "absolute", bottom: 0, width: "100%", height: "40px", backgroundColor: "rgba(0,0,0,0.6)", display: "flex", alignItems: "center", padding: "0 16px", gap: "12px", backdropFilter: "blur(4px)" }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#00a4ef"><rect x="2" y="2" width="9" height="9"></rect><rect x="13" y="2" width="9" height="9"></rect><rect x="2" y="13" width="9" height="9"></rect><rect x="13" y="13" width="9" height="9"></rect></svg>
+                  <div style={{ width: "20px", height: "20px", backgroundColor: "rgba(255,255,255,0.2)", borderRadius: "4px" }}></div>
+                  <div style={{ width: "20px", height: "20px", backgroundColor: "rgba(255,255,255,0.2)", borderRadius: "4px" }}></div>
+                </div>
+              </div>
+            );
+          default:
+            return (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', marginTop: '30px' }}>
+                <div style={{ padding: "16px 32px", backgroundColor: "var(--bg-secondary)", border: "1px solid var(--border-color)", borderRadius: "8px", color: "var(--text-primary)", fontWeight: "bold" }}>
+                  指示されたキーを入力...
+                </div>
+              </div>
+            );
+        }
+      }
     }
   };
 
