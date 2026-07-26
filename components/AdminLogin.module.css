@@ -1,0 +1,42 @@
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bg-secondary);
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.error {
+  color: var(--danger);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.button {
+  width: 100%;
+}

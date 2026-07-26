@@ -27,6 +27,8 @@ type Props = {
   onClose: () => void;
 };
 
+import styles from "./AdminResultDetailModal.module.css";
+
 export default function AdminResultDetailModal({ selectedResult, gradeName, onClose }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -69,63 +71,62 @@ export default function AdminResultDetailModal({ selectedResult, gradeName, onCl
   if (!selectedResult) return null;
 
   return (
-    <div style={{
-      position: "fixed", top: 0, left: 0, right: 0, bottom: 0, 
-      backgroundColor: "rgba(0,0,0,0.6)", zIndex: 9999,
-      display: "flex", justifyContent: "center", alignItems: "center", padding: "20px"
-    }}>
-      <div className="card" style={{ 
-        width: "100%", maxWidth: "800px", maxHeight: "90vh", overflowY: "auto", 
-        position: "relative", backgroundColor: "var(--bg-primary)" 
-      }}>
+    <div className={styles.overlay}>
+      <div className={`card ${styles.modalContent}`}>
         <button 
           onClick={onClose}
-          style={{ position: "absolute", top: "16px", right: "16px", background: "none", border: "none", fontSize: "24px", cursor: "pointer", color: "var(--text-muted)" }}
+          className={styles.closeButton}
         >
           ×
         </button>
         
-        <h2 className="section-title" style={{ fontSize: "20px", marginBottom: "24px" }}>
+        <h2 className={`section-title ${styles.title}`}>
           受験詳細: {selectedResult.lastName} {selectedResult.firstName}
         </h2>
         
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "24px", fontSize: "14px" }}>
-          <div style={{ padding: "12px", backgroundColor: "var(--bg-secondary)", borderRadius: "8px" }}>
-            <p><strong>スコア:</strong> <span style={{ color: selectedResult.passed ? "var(--success)" : "var(--danger)", fontWeight: 700 }}>{selectedResult.score} / {selectedResult.total} ({selectedResult.rate}%) - {selectedResult.passed ? '合格' : '不合格'}</span></p>
+        <div className={styles.statsGrid}>
+          <div className={styles.statsBox}>
+            <p><strong>スコア:</strong> <span className={selectedResult.passed ? styles.successText : styles.dangerText}>{selectedResult.score} / {selectedResult.total} ({selectedResult.rate}%) - {selectedResult.passed ? '合格' : '不合格'}</span></p>
             <p><strong>受験日時:</strong> {new Date(selectedResult.timestamp).toLocaleString("ja-JP")}</p>
             <p><strong>所要時間:</strong> {Math.floor(selectedResult.timeTakenSec / 60)}分{(selectedResult.timeTakenSec % 60).toString().padStart(2, '0')}秒</p>
           </div>
-          <div style={{ padding: "12px", backgroundColor: "var(--bg-secondary)", borderRadius: "8px" }}>
-            <p><strong>端末ID:</strong> <span style={{ fontSize: "11px", color: "var(--text-muted)", wordBreak: "break-all" }}>{selectedResult.deviceId}</span></p>
-            <p><strong>タブ切替回数:</strong> <span style={{ color: selectedResult.tabSwitches > 0 ? "var(--danger)" : "inherit", fontWeight: 700 }}>{selectedResult.tabSwitches}回</span></p>
-            <p><strong>タイマー違反:</strong> <span style={{ color: selectedResult.timerViolated ? "var(--danger)" : "inherit", fontWeight: 700 }}>{selectedResult.timerViolated ? "あり (超過)" : "なし"}</span></p>
+          <div className={styles.statsBox}>
+            <p><strong>端末ID:</strong> <span className={styles.deviceIdText}>{selectedResult.deviceId}</span></p>
+            <p><strong>タブ切替回数:</strong> <span className={selectedResult.tabSwitches > 0 ? styles.dangerText : ""}>{selectedResult.tabSwitches}回</span></p>
+            <p><strong>タイマー違反:</strong> <span className={selectedResult.timerViolated ? styles.dangerText : ""}>{selectedResult.timerViolated ? "あり (超過)" : "なし"}</span></p>
           </div>
         </div>
 
         {selectedResult.passed && (
-          <div style={{ marginBottom: "32px", padding: "16px", border: "1px solid var(--border-color)", borderRadius: "8px" }}>
-            <h3 style={{ fontSize: "16px", marginBottom: "16px" }}>合格証書プレビュー</h3>
-            <div className="certificate-preview-container" style={{ marginBottom: "16px", transform: "scale(0.8)", transformOrigin: "top left", height: "auto" }}>
-              <canvas id="adminCertCanvas" ref={canvasRef} style={{ pointerEvents: "none" }}></canvas>
+          <div className={styles.certPreviewSection}>
+            <h3 className={styles.sectionHeading}>合格証書プレビュー</h3>
+            <div className={`certificate-preview-container ${styles.certPreviewContainer}`}>
+              <canvas id="adminCertCanvas" ref={canvasRef} className={styles.certCanvas}></canvas>
             </div>
             <button onClick={handleDownloadPDF} className="btn btn-primary">PDFでダウンロード</button>
           </div>
         )}
 
         <div>
-          <h3 style={{ fontSize: "16px", marginBottom: "16px" }}>間違えた問題一覧</h3>
+          <h3 className={styles.sectionHeading}>間違えた問題一覧</h3>
           {selectedResult.wrongAnswers && selectedResult.wrongAnswers.length > 0 ? (
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <div className={styles.wrongAnswersList}>
               {selectedResult.wrongAnswers.map((w, i) => (
-                <div key={i} style={{ padding: "12px", border: "1px solid var(--border-light)", backgroundColor: "var(--bg-tertiary)", fontSize: "14px" }}>
-                  <p style={{ fontWeight: 700, marginBottom: "8px" }}>Q. {w.question}</p>
-                  <p><span style={{ color: "var(--danger)" }}>✖ ユーザーの解答:</span> {w.userAnswer}</p>
-                  <p><span style={{ color: "var(--success)" }}>〇 正解:</span> {w.correctAnswer}</p>
+                <div key={i} className={styles.wrongAnswerItem}>
+                  <p className={styles.questionText}>Q. {w.question}</p>
+                  <p><span className={styles.userAnswerMark}>✖ ユーザーの解答:</span> {w.userAnswer}</p>
+                  <p><span className={styles.correctAnswerMark}>〇 正解:</span> {w.correctAnswer}</p>
+                  {w.explanation && (
+                    <div style={{ marginTop: "12px", paddingTop: "12px", borderTop: "1px dashed var(--border-light)", fontSize: "13px", color: "var(--text-muted)", whiteSpace: "pre-wrap" }}>
+                      <strong>【解説】</strong><br/>
+                      {w.explanation}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
           ) : (
-            <p style={{ color: "var(--text-muted)", fontSize: "14px" }}>
+            <p className={styles.emptyMessage}>
               {selectedResult.wrongAnswers ? "全問正解です" : "詳細データが記録されていません（アップデート前の受験データ等）"}
             </p>
           )}

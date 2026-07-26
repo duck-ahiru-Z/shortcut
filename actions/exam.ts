@@ -3,6 +3,7 @@
 import { doc, getDoc, collection, addDoc, setDoc, increment } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import crypto from "crypto";
+import { shuffleArray, formatKeyCombo } from "@/lib/examHelpers";
 
 // Secret for HMAC signing (in production, use process.env.SECRET_KEY)
 const SECRET_KEY = process.env.SECRET_KEY || "shortcut_exam_secret_key_2026";
@@ -15,9 +16,14 @@ export type ScrubbedQuestion = {
 
 export type QuestionData = {
   id: number;
+  type?: string;
   question: string;
-  choices: string[];
+  choices?: string[];
   answer: string;
+  expectedKeyCombo?: string[];
+  expectedKeyComboHash?: string;
+  taskData?: any;
+  explanation?: string;
 };
 
 export type ExamData = {
@@ -33,6 +39,7 @@ export type WrongAnswerInfo = {
   question: string;
   userAnswer: string;
   correctAnswer: string;
+  explanation?: string;
 };
 
 export type GradeResult = {
@@ -70,15 +77,7 @@ async function getCachedExamData(grade: string): Promise<ExamData | null> {
   }
 }
 
-// Fisher-Yates shuffle
-function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-  }
-  return newArray;
-}
+// Utility functions removed to lib/examHelpers.ts
 
 function signPayload(payload: any): string {
   const dataStr = JSON.stringify(payload);
@@ -108,11 +107,23 @@ export async function startExam(grade: string) {
   if (!data) throw new Error("Exam not found");
 
   const shuffledPool = shuffleArray(data.pool);
-  const selectedQuestions = shuffledPool.slice(0, data.questionsCount).map((q: QuestionData) => ({
-    id: q.id,
-    question: q.question,
-    choices: shuffleArray<string>(q.choices)
-  }));
+  const selectedQuestions = shuffledPool.slice(0, data.questionsCount).map((q: any) => {
+    const qData: any = {
+      id: q.id,
+      question: q.question,
+    };
+    if (q.choices) {
+      qData.choices = shuffleArray<string>(q.choices);
+    }
+    if (q.type) qData.type = q.type;
+    if (q.expectedKeyCombo) {
+      const sortedCombo = [...q.expectedKeyCombo].sort().join("+");
+      qData.expectedKeyComboHash = crypto.createHash('sha256').update(sortedCombo).digest('hex');
+    }
+    if (q.taskData) qData.taskData = q.taskData;
+    
+    return qData;
+  });
 
   const token = signPayload({
     grade,
@@ -165,16 +176,32 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
 
   const answeredIds = Object.keys(userAnswers).map(Number);
 
+  // Helper formatKeyCombo moved to lib/examHelpers
+
   for (const q of realQuestions) {
     if (answeredIds.includes(q.id)) {
       if (q.answer === userAnswers[q.id]) {
         score++;
       } else {
+        let displayCorrect = q.answer;
+        if (q.expectedKeyCombo) {
+          displayCorrect = formatKeyCombo(q.expectedKeyCombo);
+        }
+        
+        let displayUser = userAnswers[q.id] || "無回答";
+        if (displayUser === "SKIPPED") {
+          displayUser = "スキップ (時間切れ等)";
+        } else if (q.expectedKeyCombo && displayUser !== "SKIPPED") {
+          // In practical exams, user answers are either correct or skipped,
+          // but just in case we have other values, leave them as is
+        }
+
         wrongAnswers.push({
           id: q.id,
           question: q.question,
-          userAnswer: userAnswers[q.id] || "無回答",
-          correctAnswer: q.answer
+          userAnswer: displayUser,
+          correctAnswer: displayCorrect,
+          explanation: q.explanation
         });
         wrongIds[q.id.toString()] = 1; // Mark for stats
       }

@@ -1,5 +1,6 @@
 import React from "react";
 import { ScrubbedQuestion } from "@/actions/exam";
+import styles from "./ExamActiveScreen.module.css";
 
 type Props = {
   questions: ScrubbedQuestion[];
@@ -32,17 +33,17 @@ export default function ExamActiveScreen({
   };
 
   return (
-    <div id="exam-screen" className="screen active" style={{ userSelect: "none" }}>
-      <div className="exam-header">
-        <div className="exam-progress">
-          <div className="progress-text">第 {currentIndex + 1} 問 / 全 {questions.length} 問</div>
-          <div className="progress-bar-bg">
-            <div className="progress-bar-fill" style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}></div>
+    <div id="exam-screen" className={`${styles.screen} ${styles.screenActive}`}>
+      <div className={styles.examHeader}>
+        <div className={styles.examProgress}>
+          <div className={styles.progressText}>第 {currentIndex + 1} 問 / 全 {questions.length} 問</div>
+          <div className={styles.progressBarBg}>
+            <div className={styles.progressBarFill} style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}></div>
           </div>
         </div>
         
-        <div className={`timer-container ${timeLeft <= 300 ? 'timer-warning' : ''}`}>
-          <span className="timer-val">{formatTime(timeLeft)}</span>
+        <div className={`${styles.timerContainer} ${timeLeft <= 300 ? styles.timerWarning : ''}`}>
+          <span className={styles.timerVal}>{formatTime(timeLeft)}</span>
         </div>
         
         <button className="btn btn-danger" onClick={onSubmit} disabled={isSubmitting}>
@@ -50,35 +51,35 @@ export default function ExamActiveScreen({
         </button>
       </div>
 
-      <div className="keyboard-guide-bar">
+      <div className={styles.keyboardGuideBar}>
         <span><strong>キーボードショートカット：</strong></span>
-        <span>選択：<span className="keyboard-badge">A</span> <span className="keyboard-badge">B</span> <span className="keyboard-badge">C</span> <span className="keyboard-badge">D</span></span>
-        <span>次へ/提出：<span className="keyboard-badge">Enter</span></span>
-        <span>問題移動：<span className="keyboard-badge">←</span> / <span className="keyboard-badge">→</span></span>
+        <span>選択：<span className={styles.keyboardBadge}>A</span> <span className={styles.keyboardBadge}>B</span> <span className={styles.keyboardBadge}>C</span> <span className={styles.keyboardBadge}>D</span></span>
+        <span>次へ/提出：<span className={styles.keyboardBadge}>Enter</span></span>
+        <span>問題移動：<span className={styles.keyboardBadge}>←</span> / <span className={styles.keyboardBadge}>→</span></span>
       </div>
 
-      <div className="card question-card">
-        <div className="question-num">QUESTION {String(currentIndex + 1).padStart(2, '0')}</div>
-        <div className="question-text">{currentQ.question}</div>
+      <div className={`card ${styles.questionCard}`}>
+        <div className={styles.questionNum}>QUESTION {String(currentIndex + 1).padStart(2, '0')}</div>
+        <div className={styles.questionText}>{currentQ.question}</div>
         
-        <div className="choices-container">
+        <div className={styles.choicesContainer}>
           {currentQ.choices.map((choice, idx) => {
             const letter = ['A', 'B', 'C', 'D'][idx];
             const isSelected = answers[currentQ.id] === choice;
             return (
               <button 
                 key={idx}
-                className={`choice-btn ${isSelected ? 'selected' : ''}`}
+                className={`${styles.choiceBtn} ${isSelected ? styles.choiceBtnSelected : ''}`}
                 onClick={() => handleSelect(currentQ.id, choice)}
               >
-                <div className="choice-badge">{letter}</div>
+                <div className={styles.choiceBadge}>{letter}</div>
                 <div>{choice}</div>
               </button>
             );
           })}
         </div>
 
-        <div className="controls-container">
+        <div className={styles.controlsContainer}>
           <button 
             className="btn btn-secondary" 
             onClick={() => setCurrentIndex(prev => Math.max(0, prev - 1))}
@@ -105,13 +106,13 @@ export default function ExamActiveScreen({
           )}
         </div>
 
-        <div className="navigation-section">
-          <div className="nav-section-title">問題ナビゲーション (数字クリックでジャンプ)</div>
-          <div className="nav-grid">
+        <div className={styles.navigationSection}>
+          <div className={styles.navSectionTitle}>問題ナビゲーション (数字クリックでジャンプ)</div>
+          <div className={styles.navGrid}>
             {questions.map((q, idx) => (
               <button 
                 key={q.id}
-                className={`nav-item ${currentIndex === idx ? 'current' : ''} ${answers[q.id] ? 'answered' : ''}`}
+                className={`${styles.navItem} ${currentIndex === idx ? styles.navItemCurrent : ''} ${answers[q.id] ? styles.navItemAnswered : ''}`}
                 onClick={() => setCurrentIndex(idx)}
               >
                 {idx + 1}

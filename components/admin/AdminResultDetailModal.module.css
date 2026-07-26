@@ -1,0 +1,122 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  background-color: var(--bg-primary);
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.statsBox {
+  padding: 12px;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.successText {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.dangerText {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.deviceIdText {
+  font-size: 11px;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+
+.certPreviewSection {
+  margin-bottom: 32px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.sectionHeading {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.certPreviewContainer {
+  margin-bottom: 16px;
+  transform: scale(0.8);
+  transform-origin: top left;
+  height: auto;
+}
+
+.certCanvas {
+  pointer-events: none;
+}
+
+.wrongAnswersList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wrongAnswerItem {
+  padding: 12px;
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-tertiary);
+  font-size: 14px;
+}
+
+.questionText {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.userAnswerMark {
+  color: var(--danger);
+}
+
+.correctAnswerMark {
+  color: var(--success);
+}
+
+.emptyMessage {
+  color: var(--text-muted);
+  font-size: 14px;
+}

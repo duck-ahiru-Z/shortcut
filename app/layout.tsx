@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({ 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <footer>
           &copy; 2026 Shortcut Key Certification. All Rights Reserved.
         </footer>
+        <Analytics />
       </body>
     </html>
   );

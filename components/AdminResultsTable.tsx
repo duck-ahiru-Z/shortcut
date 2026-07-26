@@ -27,57 +27,59 @@ type Props = {
   gradeName: string;
 };
 
+import styles from "./AdminResultsTable.module.css";
+
 export default function AdminResultsTable({ results, gradeName }: Props) {
   const [selectedResult, setSelectedResult] = useState<ResultRecord | null>(null);
 
   return (
     <>
-      <div style={{ overflowX: "auto" }}>
-        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px", textAlign: "left" }}>
+      <div className={styles.container}>
+        <table className={styles.table}>
           <thead>
-            <tr style={{ borderBottom: "2px solid var(--border-color)", backgroundColor: "var(--bg-tertiary)" }}>
-              <th style={{ padding: "12px" }}>日時</th>
-              <th style={{ padding: "12px" }}>氏名</th>
-              <th style={{ padding: "12px" }}>結果</th>
-              <th style={{ padding: "12px" }}>スコア</th>
-              <th style={{ padding: "12px" }}>所要時間</th>
-              <th style={{ padding: "12px" }}>不正疑い</th>
-              <th style={{ padding: "12px" }}>アクション</th>
+            <tr className={styles.tableHeadRow}>
+              <th className={styles.tableHeader}>日時</th>
+              <th className={styles.tableHeader}>氏名</th>
+              <th className={styles.tableHeader}>結果</th>
+              <th className={styles.tableHeader}>スコア</th>
+              <th className={styles.tableHeader}>所要時間</th>
+              <th className={styles.tableHeader}>不正疑い</th>
+              <th className={styles.tableHeader}>アクション</th>
             </tr>
           </thead>
           <tbody>
             {results.map((r, i) => (
-              <tr key={r.id} style={{ borderBottom: "1px solid var(--border-light)", backgroundColor: i % 2 === 0 ? "var(--bg-secondary)" : "var(--bg-tertiary)" }}>
-                <td style={{ padding: "12px", whiteSpace: "nowrap" }}>
+              <tr key={r.id} className={i % 2 === 0 ? styles.tableRowEven : styles.tableRowOdd}>
+                <td className={styles.tableCellNowrap}>
                   {new Date(r.timestamp).toLocaleString("ja-JP", { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
                 </td>
-                <td style={{ padding: "12px" }}>{r.lastName} {r.firstName}</td>
-                <td style={{ padding: "12px", fontWeight: 700, color: r.passed ? "var(--success)" : "var(--danger)" }}>
+                <td className={styles.tableCell}>{r.lastName} {r.firstName}</td>
+                <td className={r.passed ? styles.tableCellPass : styles.tableCellFail}>
                   {r.passed ? '合格' : '不合格'}
                 </td>
-                <td style={{ padding: "12px" }}>{r.score} / {r.total}</td>
-                <td style={{ padding: "12px" }}>
-                  <span style={{ color: r.timerViolated ? "var(--danger)" : "inherit" }}>
+                <td className={styles.tableCell}>{r.score} / {r.total}</td>
+                <td className={styles.tableCell}>
+                  <span className={r.timerViolated ? styles.timerViolated : styles.timerNormal}>
                     {Math.floor(r.timeTakenSec / 60)}分{(r.timeTakenSec % 60).toString().padStart(2, '0')}秒
                   </span>
                 </td>
-                <td style={{ padding: "12px" }}>
+                <td className={styles.tableCell}>
                   {r.tabSwitches > 0 ? (
-                    <span style={{ color: "var(--danger)", fontWeight: 700, padding: "4px 8px", border: "1px solid var(--danger)" }}>
+                    <span className={styles.cheatDetected}>
                       切替 {r.tabSwitches}回
                     </span>
                   ) : (
-                    <span style={{ color: "var(--text-muted)" }}>なし</span>
+                    <span className={styles.noCheat}>なし</span>
                   )}
                 </td>
-                <td style={{ padding: "12px" }}>
-                  <button onClick={() => setSelectedResult(r)} className="btn btn-secondary" style={{ padding: "6px 12px", fontSize: "12px" }}>詳細</button>
+                <td className={styles.tableCell}>
+                  <button onClick={() => setSelectedResult(r)} className={`btn btn-secondary ${styles.actionButton}`}>詳細</button>
                 </td>
               </tr>
             ))}
             {results.length === 0 && (
               <tr>
-                <td colSpan={7} style={{ padding: "24px", textAlign: "center", color: "var(--text-muted)" }}>
+                <td colSpan={7} className={styles.emptyCell}>
                   まだ受験記録がありません。
                 </td>
               </tr>

@@ -1,0 +1,80 @@
+.container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+.tableHeadRow {
+  border-bottom: 2px solid var(--border-color);
+  background-color: var(--bg-tertiary);
+}
+
+.tableHeader {
+  padding: 12px;
+}
+
+.tableRowEven {
+  border-bottom: 1px solid var(--border-light);
+  background-color: var(--bg-secondary);
+}
+
+.tableRowOdd {
+  border-bottom: 1px solid var(--border-light);
+  background-color: var(--bg-tertiary);
+}
+
+.tableCell {
+  padding: 12px;
+}
+
+.tableCellNowrap {
+  padding: 12px;
+  white-space: nowrap;
+}
+
+.tableCellPass {
+  padding: 12px;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.tableCellFail {
+  padding: 12px;
+  font-weight: 700;
+  color: var(--danger);
+}
+
+.timerViolated {
+  color: var(--danger);
+}
+
+.timerNormal {
+  color: inherit;
+}
+
+.cheatDetected {
+  color: var(--danger);
+  font-weight: 700;
+  padding: 4px 8px;
+  border: 1px solid var(--danger);
+}
+
+.noCheat {
+  color: var(--text-muted);
+}
+
+.actionButton {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.emptyCell {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-muted);
+}

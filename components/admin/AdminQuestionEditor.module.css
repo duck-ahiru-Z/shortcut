@@ -1,0 +1,97 @@
+.container {
+  margin-top: 32px;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.saveButton {
+  padding: 8px 24px;
+}
+
+.messageBox {
+  padding: 12px;
+  margin-bottom: 24px;
+  background-color: var(--success-bg);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-tertiary);
+}
+
+.fieldGroup {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 8px;
+  min-height: 80px;
+  border: 1px solid var(--border-color);
+  outline: none;
+}
+
+.choicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.choiceItem {
+  flex: 1 1 200px;
+}
+
+.choiceLabel {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  outline: none;
+}
+
+.answerLabel {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--danger);
+}
+
+.answerInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--danger);
+  background-color: var(--danger-bg);
+  outline: none;
+}

@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { loginAdmin } from "@/actions/admin";
 
+import styles from "./AdminLogin.module.css";
+
 export default function AdminLogin() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
@@ -27,20 +29,20 @@ export default function AdminLogin() {
   };
 
   return (
-    <div style={{ maxWidth: "400px", margin: "100px auto", padding: "24px", border: "1px solid var(--border-color)", borderRadius: "8px", backgroundColor: "var(--bg-secondary)" }}>
-      <h2 style={{ fontSize: "20px", marginBottom: "16px", textAlign: "center" }}>HQ Portal Login</h2>
+    <div className={styles.container}>
+      <h2 className={styles.title}>HQ Portal Login</h2>
       <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: "16px" }}>
-          <label style={{ display: "block", marginBottom: "8px", fontSize: "14px" }}>Password</label>
+        <div className={styles.formGroup}>
+          <label className={styles.label}>Password</label>
           <input 
             type="password" 
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            style={{ width: "100%", padding: "10px", fontSize: "16px", borderRadius: "4px", border: "1px solid var(--border-color)" }}
+            className={styles.input}
           />
         </div>
-        {error && <p style={{ color: "var(--danger)", fontSize: "14px", marginBottom: "16px" }}>Incorrect password.</p>}
-        <button type="submit" disabled={loading} className="btn btn-primary" style={{ width: "100%" }}>
+        {error && <p className={styles.error}>Incorrect password.</p>}
+        <button type="submit" disabled={loading} className={`btn btn-primary ${styles.button}`}>
           {loading ? "Authenticating..." : "Login"}
         </button>
       </form>

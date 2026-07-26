@@ -1,0 +1,3475 @@
+{
+  "5kyu": [
+    {
+      "question": "【5級】現在開いているウィンドウをすべて最小化するショートカットキーはどれか。",
+      "choices": [
+        "A. Windows + D",
+        "B. Windows + M",
+        "C. Ctrl + D",
+        "D. Alt + Tab"
+      ],
+      "id": 5000,
+      "answer": "A. Windows + D"
+    },
+    {
+      "answer": "A. Ctrl + Shift + T",
+      "id": 5001,
+      "choices": [
+        "A. Ctrl + Shift + T",
+        "B. Ctrl + T",
+        "C. Alt + Left",
+        "D. Ctrl + R"
+      ],
+      "question": "【5級】ブラウザで直前に閉じたタブを復元するショートカットキーはどれか。"
+    },
+    {
+      "question": "【5級】ファイル名を変更するショートカットキーはどれか。",
+      "choices": [
+        "A. F2",
+        "B. F4",
+        "C. F5",
+        "D. F12"
+      ],
+      "id": 5002,
+      "answer": "A. F2"
+    },
+    {
+      "choices": [
+        "A. Windows + V",
+        "B. Ctrl + V",
+        "C. Windows + C",
+        "D. Alt + V"
+      ],
+      "question": "【5級】クリップボードの履歴を表示するショートカットキーはどれか。",
+      "answer": "A. Windows + V",
+      "id": 5003
+    },
+    {
+      "id": 5004,
+      "answer": "A. Windows + E",
+      "question": "【5級】エクスプローラーを開くショートカットキーはどれか。",
+      "choices": [
+        "A. Windows + E",
+        "B. Windows + R",
+        "C. Ctrl + E",
+        "D. Alt + E"
+      ]
+    }
+  ],
+  "4kyu": [
+    {
+      "choices": [
+        "A. Windows + P",
+        "B. Windows + E",
+        "C. Windows + D",
+        "D. Windows + L"
+      ],
+      "question": "外部モニターやプロジェクターへの表示方法を切り替えたい。使うショートカットはどれか。",
+      "id": 1001,
+      "answer": "A. Windows + P"
+    },
+    {
+      "question": "PowerPointでスライドショーを最初のスライドから開始したい。使うキーはどれか。",
+      "choices": [
+        "A. Shift + F5",
+        "B. F5",
+        "C. F11",
+        "D. Esc"
+      ],
+      "id": 1002,
+      "answer": "A. Shift + F5"
+    },
+    {
+      "question": "PowerPointで現在開いているスライドからスライドショーを開始したい。使うショートカットはどれか。",
+      "choices": [
+        "A. F5",
+        "B. Ctrl + P",
+        "C. Shift + F5",
+        "D. Windows + P"
+      ],
+      "answer": "A. F5",
+      "id": 1003
+    },
+    {
+      "question": "スライドショーや動画の全画面表示を終了して元の画面に戻りたい。使うキーはどれか。",
+      "choices": [
+        "A. F11",
+        "B. Ctrl + W",
+        "C. Alt + Tab",
+        "D. Esc"
+      ],
+      "answer": "A. F11",
+      "id": 1004
+    },
+    {
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. P",
+        "D. D"
+      ],
+      "question": "スライドショー中に画面を真っ暗にして、いったん注目を集めたい。押すキーはどれか。",
+      "id": 1005,
+      "answer": "A. B"
+    },
+    {
+      "question": "スライドショー中に画面を真っ白にして、一時的に表示を止めたい。押すキーはどれか。",
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. Esc",
+        "D. F5"
+      ],
+      "id": 1006,
+      "answer": "A. B"
+    },
+    {
+      "question": "PowerPointのスライドショー実行中に、ポインターをペンに変えて書き込みたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + D",
+        "B. Ctrl + K",
+        "C. Ctrl + P",
+        "D. Ctrl + S"
+      ],
+      "answer": "A. Ctrl + D",
+      "id": 1007
+    },
+    {
+      "answer": "A. Ctrl + 矢印キー",
+      "id": 1008,
+      "question": "文字を1文字ずつ範囲選択しながらカーソルを動かしたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + 矢印キー",
+        "B. Alt + 矢印キー",
+        "C. Windows + 矢印キー",
+        "D. Shift + 矢印キー"
+      ]
+    },
+    {
+      "answer": "A. Ctrl + 矢印キー",
+      "id": 1009,
+      "question": "文書内でカーソルを1単語ごとにすばやく移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + 矢印キー",
+        "B. Shift + 矢印キー",
+        "C. Windows + 矢印キー",
+        "D. Alt + Tab"
+      ]
+    },
+    {
+      "choices": [
+        "A. End",
+        "B. Home",
+        "C. Ctrl + Home",
+        "D. Shift + Home"
+      ],
+      "question": "現在入力している行の先頭へカーソルを移動したい。使うキーはどれか。",
+      "answer": "A. End",
+      "id": 1010
+    },
+    {
+      "answer": "A. Ctrl + End",
+      "id": 1011,
+      "choices": [
+        "A. Ctrl + End",
+        "B. Home",
+        "C. End",
+        "D. Shift + End"
+      ],
+      "question": "現在入力している行の末尾へカーソルを移動したい。使うキーはどれか。"
+    },
+    {
+      "id": 1012,
+      "answer": "A. Shift + Home",
+      "question": "ファイルやページの一番上へ一気に移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Shift + Home",
+        "B. Home",
+        "C. Ctrl + End",
+        "D. Ctrl + Home"
+      ]
+    },
+    {
+      "answer": "A. Ctrl + End",
+      "id": 1013,
+      "choices": [
+        "A. Ctrl + End",
+        "B. End",
+        "C. Shift + End",
+        "D. Ctrl + Home"
+      ],
+      "question": "ファイルやページの一番下へ一気に移動したい。使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Ctrl + Home",
+        "B. Shift + Home",
+        "C. Home",
+        "D. Ctrl + Shift + N"
+      ],
+      "question": "カーソル位置から行の先頭までを一気に範囲選択したい。使うショートカットはどれか。",
+      "id": 1014,
+      "answer": "A. Ctrl + Home"
+    },
+    {
+      "id": 1015,
+      "answer": "A. End",
+      "question": "カーソル位置から行の末尾までを一気に範囲選択したい。使うショートカットはどれか。",
+      "choices": [
+        "A. End",
+        "B. Ctrl + End",
+        "C. Shift + End",
+        "D. Ctrl + Shift + Tab"
+      ]
+    },
+    {
+      "choices": [
+        "A. Ctrl + I",
+        "B. Ctrl + U",
+        "C. Ctrl + K",
+        "D. Ctrl + B"
+      ],
+      "question": "選択した文字を太字にしたい。使うショートカットはどれか。",
+      "answer": "A. Ctrl + I",
+      "id": 1016
+    },
+    {
+      "id": 1017,
+      "answer": "A. Ctrl + I",
+      "choices": [
+        "A. Ctrl + I",
+        "B. Ctrl + B",
+        "C. Ctrl + U",
+        "D. Ctrl + D"
+      ],
+      "question": "選択した文字を斜体にしたい。使うショートカットはどれか。"
+    },
+    {
+      "id": 1018,
+      "answer": "A. Ctrl + B",
+      "choices": [
+        "A. Ctrl + B",
+        "B. Ctrl + U",
+        "C. Ctrl + K",
+        "D. Ctrl + L"
+      ],
+      "question": "選択した文字に下線を引きたい。使うショートカットはどれか。"
+    },
+    {
+      "question": "カーソルの左側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Delete",
+        "B. Shift + Delete",
+        "C. Ctrl + Backspace",
+        "D. Alt + Backspace"
+      ],
+      "id": 1019,
+      "answer": "A. Ctrl + Delete"
+    },
+    {
+      "id": 1020,
+      "answer": "A. Ctrl + Backspace",
+      "question": "カーソルの右側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Backspace",
+        "B. Backspace",
+        "C. Delete",
+        "D. Ctrl + Delete"
+      ]
+    },
+    {
+      "question": "選択した文字にWebリンクを挿入したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + K",
+        "B. Ctrl + L",
+        "C. Ctrl + D",
+        "D. Ctrl + J"
+      ],
+      "id": 1021,
+      "answer": "A. Ctrl + K"
+    },
+    {
+      "question": "開いているすべてのウィンドウを最小化してデスクトップを表示したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + E",
+        "B. Windows + D",
+        "C. Windows + L",
+        "D. Windows + V"
+      ],
+      "answer": "A. Windows + E",
+      "id": 1022
+    },
+    {
+      "question": "ウィンドウを画面の左側や右側にぴったり配置したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Alt + 矢印キー",
+        "B. Ctrl + 矢印キー",
+        "C. Windows + 矢印キー（←→）",
+        "D. Shift + 矢印キー"
+      ],
+      "answer": "A. Alt + 矢印キー",
+      "id": 1023
+    },
+    {
+      "question": "ウィンドウを最大化したり、元のサイズに戻したり、最小化したりしたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + 矢印キー（↑↓）",
+        "B. Shift + 矢印キー（↑↓）",
+        "C. Alt + 矢印キー（↑↓）",
+        "D. Windows + 矢印キー（↑↓）"
+      ],
+      "id": 1024,
+      "answer": "A. Ctrl + 矢印キー（↑↓）"
+    },
+    {
+      "id": 1025,
+      "answer": "A. Alt + F4",
+      "question": "現在開いているアプリやウィンドウを完全に終了したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Alt + F4",
+        "B. Ctrl + W",
+        "C. Alt + Tab",
+        "D. Windows + D"
+      ]
+    },
+    {
+      "id": 1026,
+      "answer": "A. Windows + I",
+      "choices": [
+        "A. Windows + I",
+        "B. Windows + V",
+        "C. Ctrl + V",
+        "D. Ctrl + C"
+      ],
+      "question": "過去にコピーした文字や画像の履歴を表示して、選んで貼り付けたい。使うショートカットはどれか。"
+    },
+    {
+      "question": "Windowsの設定画面をすばやく開きたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + X",
+        "B. Windows + E",
+        "C. Windows + I",
+        "D. Windows + P"
+      ],
+      "answer": "A. Windows + X",
+      "id": 1027
+    },
+    {
+      "question": "スタートボタンを右クリックしたときのようなシステムツールのメニューを開きたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + L",
+        "B. Windows + D",
+        "C. Windows + V",
+        "D. Windows + X"
+      ],
+      "id": 1028,
+      "answer": "A. Windows + L"
+    },
+    {
+      "id": 1029,
+      "answer": "A. Windows + 数字キー（1〜9）",
+      "question": "タスクバーにピン留めされたアプリを、左からの順番に対応する数字で起動・切り替えしたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + 数字キー（1〜9）",
+        "B. Ctrl + 数字キー（1〜9）",
+        "C. Alt + 数字キー（1〜9）",
+        "D. Shift + 数字キー（1〜9）"
+      ]
+    },
+    {
+      "choices": [
+        "A. Alt + Tab",
+        "B. Ctrl + Tab",
+        "C. Ctrl + T",
+        "D. Ctrl + W"
+      ],
+      "question": "ブラウザで右隣のタブへ順番に切り替えたい。使うショートカットはどれか。",
+      "answer": "A. Alt + Tab",
+      "id": 1030
+    },
+    {
+      "answer": "A. Ctrl + 1",
+      "id": 1031,
+      "choices": [
+        "A. Ctrl + 1",
+        "B. Ctrl + T",
+        "C. Ctrl + Shift + Tab",
+        "D. Ctrl + Shift + T"
+      ],
+      "question": "ブラウザで左隣のタブへ順番に切り替えたい。使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Windows + 数字キー",
+        "B. Alt + 数字キー",
+        "C. Shift + 数字キー",
+        "D. Ctrl + 数字キー（1〜9）"
+      ],
+      "question": "ブラウザで左から数えた指定番号のタブへ一瞬で移動したい。使うショートカットはどれか。",
+      "answer": "A. Windows + 数字キー",
+      "id": 1032
+    },
+    {
+      "answer": "A. Ctrl + L",
+      "id": 1033,
+      "question": "ブラウザのアドレスバーを全選択して、すぐ検索語を入力したい。Ctrlキーを使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + L",
+        "B. Ctrl + D",
+        "C. Ctrl + J",
+        "D. Ctrl + F"
+      ]
+    },
+    {
+      "id": 1034,
+      "answer": "A. Alt + Tab",
+      "choices": [
+        "A. Alt + Tab",
+        "B. Alt + D",
+        "C. Alt + F4",
+        "D. Alt + 矢印キー"
+      ],
+      "question": "ブラウザのアドレスバーを全選択したい。Altキーを使うショートカットはどれか。"
+    },
+    {
+      "id": 1035,
+      "answer": "A. Ctrl + J",
+      "question": "現在見ているWebページをお気に入り、またはブックマークに追加したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + J",
+        "B. Ctrl + K",
+        "C. Ctrl + D",
+        "D. Ctrl + H"
+      ]
+    },
+    {
+      "id": 1036,
+      "answer": "A. Ctrl + H",
+      "choices": [
+        "A. Ctrl + H",
+        "B. Ctrl + D",
+        "C. Ctrl + L",
+        "D. Ctrl + J"
+      ],
+      "question": "ブラウザのダウンロード履歴画面を開きたい。使うショートカットはどれか。"
+    },
+    {
+      "id": 1037,
+      "answer": "A. Ctrl + ＋",
+      "question": "ブラウザの表示を拡大したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + ＋",
+        "B. Ctrl + 0",
+        "C. Ctrl + －",
+        "D. Ctrl + D"
+      ]
+    },
+    {
+      "answer": "A. Ctrl + ＋",
+      "id": 1038,
+      "choices": [
+        "A. Ctrl + ＋",
+        "B. Ctrl + －",
+        "C. Ctrl + 0",
+        "D. Ctrl + L"
+      ],
+      "question": "ブラウザの表示を縮小したい。使うショートカットはどれか。"
+    },
+    {
+      "question": "拡大・縮小したブラウザの表示倍率を100%に戻したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + ＋",
+        "B. Ctrl + －",
+        "C. Ctrl + 0",
+        "D. Ctrl + R"
+      ],
+      "id": 1039,
+      "answer": "A. Ctrl + ＋"
+    },
+    {
+      "question": "Webページを1画面分下へスクロールしたい。使うキーはどれか。",
+      "choices": [
+        "A. Shift + Space",
+        "B. Ctrl + Space",
+        "C. Alt + Space",
+        "D. Space"
+      ],
+      "answer": "A. Shift + Space",
+      "id": 1040
+    },
+    {
+      "answer": "A. Shift + Space",
+      "id": 1041,
+      "choices": [
+        "A. Shift + Space",
+        "B. Space",
+        "C. Ctrl + Space",
+        "D. Alt + Space"
+      ],
+      "question": "Webページを1画面分上へスクロールしたい。使うショートカットはどれか。"
+    },
+    {
+      "answer": "A. Ctrl + H",
+      "id": 1042,
+      "question": "ブラウザの閲覧履歴データを削除する画面をすぐ開きたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + H",
+        "B. Ctrl + Shift + Delete",
+        "C. Ctrl + Delete",
+        "D. Shift + Delete"
+      ]
+    },
+    {
+      "answer": "A. Windows + I",
+      "id": 1043,
+      "choices": [
+        "A. Windows + I",
+        "B. Windows + D",
+        "C. Windows + E",
+        "D. Windows + X"
+      ],
+      "question": "エクスプローラーを新しく開き、ファイルやフォルダーを探したい。使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Alt + ←",
+        "B. Alt + →",
+        "C. Ctrl + ↑",
+        "D. Alt + ↑"
+      ],
+      "question": "エクスプローラーで現在見ているフォルダーの1つ上の階層へ移動したい。使うショートカットはどれか。",
+      "answer": "A. Alt + ←",
+      "id": 1044
+    },
+    {
+      "id": 1045,
+      "answer": "A. Alt + ←",
+      "question": "エクスプローラーやブラウザで前の画面に戻りたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Alt + ←",
+        "B. Alt + →",
+        "C. Alt + ↑",
+        "D. Ctrl + ←"
+      ]
+    },
+    {
+      "id": 1046,
+      "answer": "A. Alt + ↑",
+      "question": "エクスプローラーやブラウザで、戻った後に先の画面へ進みたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Alt + ↑",
+        "B. Alt + →",
+        "C. Alt + ←",
+        "D. Ctrl + →"
+      ]
+    },
+    {
+      "id": 1047,
+      "answer": "A. Ctrl + N",
+      "question": "新しいフォルダーをキーボード操作だけで作成したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + N",
+        "B. Ctrl + Shift + T",
+        "C. Ctrl + Shift + N",
+        "D. Ctrl + T"
+      ]
+    },
+    {
+      "choices": [
+        "A. Delete",
+        "B. Ctrl + Delete",
+        "C. Ctrl + Backspace",
+        "D. Shift + Delete"
+      ],
+      "question": "ファイルをごみ箱に入れず、完全に削除したい。使うショートカットはどれか。",
+      "answer": "A. Delete",
+      "id": 1048
+    },
+    {
+      "id": 1049,
+      "answer": "A. Windows + L",
+      "choices": [
+        "A. Windows + L",
+        "B. Windows + D",
+        "C. Windows + P",
+        "D. Windows + V"
+      ],
+      "question": "離席するとき、パソコンの画面をロックしたい。使うショートカットはどれか。"
+    },
+    {
+      "id": 1050,
+      "answer": "A. Ctrl + Alt + Delete",
+      "question": "アプリが固まったときにタスクマネージャーを開きたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Alt + Delete",
+        "B. Ctrl + Shift + Esc",
+        "C. Alt + F4",
+        "D. Windows + X"
+      ]
+    },
+    {
+      "id": 1051,
+      "answer": "A. F5",
+      "choices": [
+        "A. F5",
+        "B. Esc",
+        "C. F11",
+        "D. F2"
+      ],
+      "question": "ブラウザやエクスプローラーを全画面表示にしたい。使うキーはどれか。"
+    },
+    {
+      "question": "デスクトップやフォルダー内のアイコンの大きさを変更したい。使う操作はどれか。",
+      "choices": [
+        "A. Shift + マウスホイール",
+        "B. Alt + マウスホイール",
+        "C. Windows + マウスホイール",
+        "D. Ctrl + マウスホイール"
+      ],
+      "id": 1052,
+      "answer": "A. Shift + マウスホイール"
+    },
+    {
+      "id": 1053,
+      "answer": "A. Windows + P",
+      "choices": [
+        "A. Windows + P",
+        "B. Windows + I",
+        "C. Windows + E",
+        "D. Windows + X"
+      ],
+      "question": "会議室でノートPCをプロジェクターにつなぎ、「複製」や「拡張」をすばやく選びたい。使うショートカットはどれか。"
+    },
+    {
+      "question": "発表のリハーサルで、必ず1枚目からスライドショーを始めたい。使うキーはどれか。",
+      "choices": [
+        "A. Shift + F5",
+        "B. F5",
+        "C. Esc",
+        "D. F11"
+      ],
+      "id": 1054,
+      "answer": "A. Shift + F5"
+    },
+    {
+      "id": 1055,
+      "answer": "A. Ctrl + F5",
+      "choices": [
+        "A. Ctrl + F5",
+        "B. F11",
+        "C. Shift + F5",
+        "D. Windows + P"
+      ],
+      "question": "10枚目のスライドを編集中で、そこから発表表示を確認したい。使うショートカットはどれか。"
+    },
+    {
+      "answer": "A. F5",
+      "id": 1056,
+      "choices": [
+        "A. F5",
+        "B. Ctrl + W",
+        "C. Alt + Tab",
+        "D. Esc"
+      ],
+      "question": "スライドショーを終えて編集画面へ戻りたい。使うキーはどれか。"
+    },
+    {
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. F5",
+        "D. P"
+      ],
+      "question": "発表中、説明を止めて聴衆の視線を自分に集めるために黒画面にしたい。押すキーはどれか。",
+      "id": 1057,
+      "answer": "A. B"
+    },
+    {
+      "id": 1058,
+      "answer": "A. B",
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. Esc",
+        "D. Ctrl + P"
+      ],
+      "question": "発表中、画面を白くして一時中断したい。押すキーはどれか。"
+    },
+    {
+      "question": "スライドショー中、図に丸を付けながら説明したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + K",
+        "B. Ctrl + B",
+        "C. Ctrl + P",
+        "D. Ctrl + D"
+      ],
+      "answer": "A. Ctrl + K",
+      "id": 1059
+    },
+    {
+      "answer": "A. Ctrl + →",
+      "id": 1060,
+      "choices": [
+        "A. Ctrl + →",
+        "B. Alt + →",
+        "C. Windows + →",
+        "D. Shift + →"
+      ],
+      "question": "文章を修正中、右方向に1文字ずつ範囲を広げて選択したい。使うショートカットはどれか。"
+    },
+    {
+      "question": "長い英単語が続く文で、単語単位でカーソルを右へ移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + →",
+        "B. Shift + →",
+        "C. Alt + →",
+        "D. Windows + →"
+      ],
+      "answer": "A. Ctrl + →",
+      "id": 1061
+    },
+    {
+      "choices": [
+        "A. End",
+        "B. Home",
+        "C. Ctrl + Home",
+        "D. Shift + Home"
+      ],
+      "question": "入力中の行の先頭に戻って文字を追加したい。使うキーはどれか。",
+      "answer": "A. End",
+      "id": 1062
+    },
+    {
+      "question": "入力中の行の最後にすぐ移動したい。使うキーはどれか。",
+      "choices": [
+        "A. Ctrl + End",
+        "B. Home",
+        "C. End",
+        "D. Shift + End"
+      ],
+      "answer": "A. Ctrl + End",
+      "id": 1063
+    },
+    {
+      "question": "長い文書の最初へ一気に戻りたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Shift + Home",
+        "B. Home",
+        "C. Ctrl + End",
+        "D. Ctrl + Home"
+      ],
+      "answer": "A. Shift + Home",
+      "id": 1064
+    },
+    {
+      "id": 1065,
+      "answer": "A. Ctrl + End",
+      "choices": [
+        "A. Ctrl + End",
+        "B. End",
+        "C. Shift + End",
+        "D. Ctrl + Home"
+      ],
+      "question": "長い文書の最後へ一気に移動したい。使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Ctrl + Home",
+        "B. Shift + Home",
+        "C. Ctrl + Backspace",
+        "D. Alt + ↑"
+      ],
+      "question": "カーソルから行頭までを選んで消したい。まず使うショートカットはどれか。",
+      "id": 1066,
+      "answer": "A. Ctrl + Home"
+    },
+    {
+      "id": 1067,
+      "answer": "A. End",
+      "question": "カーソルから行末までをまとめて選択したい。使うショートカットはどれか。",
+      "choices": [
+        "A. End",
+        "B. Ctrl + End",
+        "C. Shift + End",
+        "D. Shift + Space"
+      ]
+    },
+    {
+      "id": 1068,
+      "answer": "A. Ctrl + I",
+      "question": "レポートの見出しを強調するため、選択した文字を太字にしたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + I",
+        "B. Ctrl + U",
+        "C. Ctrl + K",
+        "D. Ctrl + B"
+      ]
+    },
+    {
+      "answer": "A. Ctrl + I",
+      "id": 1069,
+      "choices": [
+        "A. Ctrl + I",
+        "B. Ctrl + B",
+        "C. Ctrl + U",
+        "D. Ctrl + P"
+      ],
+      "question": "英単語や作品名などを斜体にしたい。使うショートカットはどれか。"
+    },
+    {
+      "question": "重要語句に下線を付けたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + B",
+        "B. Ctrl + U",
+        "C. Ctrl + I",
+        "D. Ctrl + K"
+      ],
+      "answer": "A. Ctrl + B",
+      "id": 1070
+    },
+    {
+      "question": "カーソルの左側にある単語を丸ごと消して、入力をやり直したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Delete",
+        "B. Delete",
+        "C. Ctrl + Backspace",
+        "D. Shift + Delete"
+      ],
+      "id": 1071,
+      "answer": "A. Ctrl + Delete"
+    },
+    {
+      "question": "カーソルの右側にある次の単語を丸ごと削除したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Backspace",
+        "B. Backspace",
+        "C. Shift + Delete",
+        "D. Ctrl + Delete"
+      ],
+      "answer": "A. Ctrl + Backspace",
+      "id": 1072
+    },
+    {
+      "id": 1073,
+      "answer": "A. Ctrl + K",
+      "question": "選択した「公式サイト」という文字にURLを設定したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + K",
+        "B. Ctrl + L",
+        "C. Ctrl + D",
+        "D. Ctrl + J"
+      ]
+    },
+    {
+      "question": "画面がウィンドウでいっぱいなので、デスクトップを一瞬で表示したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + E",
+        "B. Windows + D",
+        "C. Windows + L",
+        "D. Windows + P"
+      ],
+      "answer": "A. Windows + E",
+      "id": 1074
+    },
+    {
+      "choices": [
+        "A. Alt + ←→",
+        "B. Ctrl + ←→",
+        "C. Windows + ←→",
+        "D. Shift + ←→"
+      ],
+      "question": "資料とブラウザを左右に並べて見たい。ウィンドウを左右に固定するショートカットはどれか。",
+      "answer": "A. Alt + ←→",
+      "id": 1075
+    },
+    {
+      "choices": [
+        "A. Alt + ↑",
+        "B. Ctrl + ↑",
+        "C. Shift + ↑",
+        "D. Windows + ↑"
+      ],
+      "question": "ウィンドウを画面いっぱいに最大化したい。使うショートカットはどれか。",
+      "id": 1076,
+      "answer": "A. Alt + ↑"
+    },
+    {
+      "question": "使い終わったアプリを終了したい。現在のアプリに対して使うショートカットはどれか。",
+      "choices": [
+        "A. Alt + F4",
+        "B. Ctrl + W",
+        "C. Windows + D",
+        "D. Alt + Tab"
+      ],
+      "answer": "A. Alt + F4",
+      "id": 1077
+    },
+    {
+      "id": 1078,
+      "answer": "A. Ctrl + V",
+      "choices": [
+        "A. Ctrl + V",
+        "B. Windows + V",
+        "C. Ctrl + C",
+        "D. Windows + C"
+      ],
+      "question": "さっきコピーした複数の文章の中から、別のものを選んで貼り付けたい。使うショートカットはどれか。"
+    },
+    {
+      "id": 1079,
+      "answer": "A. Windows + X",
+      "question": "Wi-FiやBluetoothなどの設定を変更するため、Windowsの設定画面を開きたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + X",
+        "B. Windows + E",
+        "C. Windows + I",
+        "D. Windows + P"
+      ]
+    },
+    {
+      "id": 1080,
+      "answer": "A. Windows + L",
+      "question": "デバイスマネージャーなどに行きやすい、スタートボタン右クリック相当のメニューを出したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + L",
+        "B. Windows + D",
+        "C. Windows + V",
+        "D. Windows + X"
+      ]
+    },
+    {
+      "answer": "A. Windows + 1",
+      "id": 1081,
+      "question": "タスクバー左から1番目のアプリをキーボードで起動・切り替えしたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + 1",
+        "B. Ctrl + 1",
+        "C. Alt + 1",
+        "D. Shift + 1"
+      ]
+    },
+    {
+      "id": 1082,
+      "answer": "A. Alt + Tab",
+      "question": "ブラウザで複数タブを開いているとき、次のタブへ移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Alt + Tab",
+        "B. Ctrl + Tab",
+        "C. Ctrl + N",
+        "D. Ctrl + W"
+      ]
+    },
+    {
+      "id": 1083,
+      "answer": "A. Ctrl + T",
+      "question": "ブラウザで1つ前のタブへ戻るように左方向へ切り替えたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + T",
+        "B. Ctrl + W",
+        "C. Ctrl + Shift + Tab",
+        "D. Ctrl + Shift + T"
+      ]
+    },
+    {
+      "answer": "A. Windows + 3",
+      "id": 1084,
+      "choices": [
+        "A. Windows + 3",
+        "B. Alt + 3",
+        "C. Shift + 3",
+        "D. Ctrl + 3"
+      ],
+      "question": "ブラウザで左から3番目のタブへ直接ジャンプしたい。使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Ctrl + L",
+        "B. Ctrl + F",
+        "C. Ctrl + H",
+        "D. Ctrl + J"
+      ],
+      "question": "URL欄をすぐ選択して、今のURLを消さずにそのまま上書き入力できる状態にしたい。使うショートカットはどれか。",
+      "id": 1085,
+      "answer": "A. Ctrl + L"
+    },
+    {
+      "id": 1086,
+      "answer": "A. Alt + Tab",
+      "choices": [
+        "A. Alt + Tab",
+        "B. Alt + D",
+        "C. Alt + F4",
+        "D. Alt + ↑"
+      ],
+      "question": "アドレスバーを選択する別の方法として、Altキーと組み合わせて使うものはどれか。"
+    },
+    {
+      "id": 1087,
+      "answer": "A. Ctrl + J",
+      "question": "後で読み返したいページをブックマークに入れたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + J",
+        "B. Ctrl + H",
+        "C. Ctrl + D",
+        "D. Ctrl + K"
+      ]
+    },
+    {
+      "answer": "A. Ctrl + D",
+      "id": 1088,
+      "question": "ダウンロードしたファイルの履歴を確認したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + D",
+        "B. Ctrl + H",
+        "C. Ctrl + L",
+        "D. Ctrl + J"
+      ]
+    },
+    {
+      "choices": [
+        "A. Ctrl + ＋",
+        "B. Ctrl + 0",
+        "C. Ctrl + －",
+        "D. Ctrl + D"
+      ],
+      "question": "Webページの文字が小さいので表示を大きくしたい。使うショートカットはどれか。",
+      "id": 1089,
+      "answer": "A. Ctrl + ＋"
+    },
+    {
+      "answer": "A. Ctrl + ＋",
+      "id": 1090,
+      "question": "Webページを拡大しすぎたので少し小さくしたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + ＋",
+        "B. Ctrl + －",
+        "C. Ctrl + 0",
+        "D. Ctrl + L"
+      ]
+    },
+    {
+      "question": "ブラウザの拡大率を標準の100%へ戻したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + ＋",
+        "B. Ctrl + －",
+        "C. Ctrl + 0",
+        "D. Ctrl + R"
+      ],
+      "answer": "A. Ctrl + ＋",
+      "id": 1091
+    },
+    {
+      "choices": [
+        "A. Shift + Space",
+        "B. Ctrl + Space",
+        "C. Alt + Space",
+        "D. Space"
+      ],
+      "question": "長いWebページをマウスホイールなしで1画面分下へ進めたい。使うキーはどれか。",
+      "id": 1092,
+      "answer": "A. Shift + Space"
+    },
+    {
+      "id": 1093,
+      "answer": "A. Shift + Space",
+      "choices": [
+        "A. Shift + Space",
+        "B. Space",
+        "C. Ctrl + Space",
+        "D. Alt + Space"
+      ],
+      "question": "Webページを1画面分上へ戻って読みたい。使うショートカットはどれか。"
+    },
+    {
+      "question": "ブラウザの閲覧履歴やCookieなどを削除する画面を開きたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + H",
+        "B. Ctrl + Shift + Delete",
+        "C. Ctrl + J",
+        "D. Shift + Delete"
+      ],
+      "id": 1094,
+      "answer": "A. Ctrl + H"
+    },
+    {
+      "question": "ファイルを探すため、エクスプローラーをすぐ開きたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + I",
+        "B. Windows + P",
+        "C. Windows + E",
+        "D. Windows + X"
+      ],
+      "id": 1095,
+      "answer": "A. Windows + I"
+    },
+    {
+      "question": "「資料」フォルダーの中から、その親フォルダーへ移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Alt + ←",
+        "B. Alt + →",
+        "C. Ctrl + ↑",
+        "D. Alt + ↑"
+      ],
+      "answer": "A. Alt + ←",
+      "id": 1096
+    },
+    {
+      "answer": "A. Alt + ←",
+      "id": 1097,
+      "choices": [
+        "A. Alt + ←",
+        "B. Alt + →",
+        "C. Alt + ↑",
+        "D. Ctrl + ←"
+      ],
+      "question": "ブラウザで1つ前に見ていたページへ戻りたい。使うショートカットはどれか。"
+    },
+    {
+      "id": 1098,
+      "answer": "A. Alt + ↑",
+      "choices": [
+        "A. Alt + ↑",
+        "B. Alt + →",
+        "C. Alt + ←",
+        "D. Ctrl + →"
+      ],
+      "question": "ブラウザで戻ったあと、もう一度先のページへ進みたい。使うショートカットはどれか。"
+    },
+    {
+      "answer": "A. Ctrl + N",
+      "id": 1099,
+      "question": "デスクトップに新しいフォルダーを作りたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + N",
+        "B. Ctrl + Shift + T",
+        "C. Ctrl + Shift + N",
+        "D. Ctrl + T"
+      ]
+    },
+    {
+      "choices": [
+        "A. Delete",
+        "B. Ctrl + Delete",
+        "C. Backspace",
+        "D. Shift + Delete"
+      ],
+      "question": "機密ファイルをごみ箱に残さず削除したい。使うショートカットはどれか。",
+      "answer": "A. Delete",
+      "id": 1100
+    },
+    {
+      "id": 1101,
+      "answer": "A. Windows + L",
+      "choices": [
+        "A. Windows + L",
+        "B. Windows + D",
+        "C. Windows + P",
+        "D. Windows + V"
+      ],
+      "question": "席を離れる前に、他人に画面を見られないようロックしたい。使うショートカットはどれか。"
+    },
+    {
+      "answer": "A. Alt + F4",
+      "id": 1102,
+      "choices": [
+        "A. Alt + F4",
+        "B. Ctrl + Shift + Esc",
+        "C. Windows + X",
+        "D. Ctrl + Shift + N"
+      ],
+      "question": "アプリの動きが止まったので、タスクマネージャーを直接開きたい。使うショートカットはどれか。"
+    },
+    {
+      "answer": "A. F5",
+      "id": 1103,
+      "choices": [
+        "A. F5",
+        "B. Esc",
+        "C. F11",
+        "D. F2"
+      ],
+      "question": "ブラウザを全画面表示にして、画面を広く使いたい。使うキーはどれか。"
+    },
+    {
+      "question": "フォルダー内のアイコンが小さいので、Ctrlキーを押しながらある操作をして大きさを変えたい。どれか。",
+      "choices": [
+        "A. クリック",
+        "B. ドラッグ",
+        "C. 右クリック",
+        "D. マウスホイール"
+      ],
+      "id": 1104,
+      "answer": "A. クリック"
+    },
+    {
+      "id": 1105,
+      "answer": "A. 通常時は印刷、スライドショー中はペン",
+      "choices": [
+        "A. 通常時は印刷、スライドショー中はペン",
+        "B. 通常時は保存、スライドショー中は印刷",
+        "C. 通常時は検索、スライドショー中は新規作成",
+        "D. 通常時はタブ移動、スライドショー中は履歴表示"
+      ],
+      "question": "5級のCtrl + Pと4級のスライドショー中Ctrl + Pの違いとして正しいものはどれか。"
+    },
+    {
+      "choices": [
+        "A. 現在のスライドから開始する",
+        "B. 最初のスライドから開始する",
+        "C. スライドショーを終了する",
+        "D. 画面を黒くする"
+      ],
+      "question": "F5について、PowerPointのスライドショーでの働きとして正しいものはどれか。",
+      "id": 1106,
+      "answer": "A. 現在のスライドから開始する"
+    },
+    {
+      "question": "Shift + F5について、PowerPointのスライドショーでの働きとして正しいものはどれか。",
+      "choices": [
+        "A. ペンに変更する",
+        "B. 画面を白くする",
+        "C. 現在のスライドから開始する",
+        "D. 外部モニターを切り替える"
+      ],
+      "answer": "A. ペンに変更する",
+      "id": 1107
+    },
+    {
+      "answer": "A. 文字を太字にする",
+      "id": 1108,
+      "question": "Escを使う場面として最も適切なものはどれか。",
+      "choices": [
+        "A. 文字を太字にする",
+        "B. アドレスバーを選択する",
+        "C. 新しいフォルダーを作る",
+        "D. 全画面表示を終了する"
+      ]
+    },
+    {
+      "choices": [
+        "A. BlackのBで黒画面",
+        "B. BookmarkのBでお気に入り",
+        "C. BoldのBで太字",
+        "D. BackのBで戻る"
+      ],
+      "question": "スライドショー中のBキーの由来として覚えやすいものはどれか。",
+      "answer": "A. BlackのBで黒画面",
+      "id": 1109
+    },
+    {
+      "answer": "A. WindowのWでウィンドウ切替",
+      "id": 1110,
+      "question": "スライドショー中のWキーの由来として覚えやすいものはどれか。",
+      "choices": [
+        "A. WindowのWでウィンドウ切替",
+        "B. WhiteのWで白画面",
+        "C. WordのWで文書作成",
+        "D. WebのWで検索"
+      ]
+    },
+    {
+      "answer": "A. 印刷画面を開く",
+      "id": 1111,
+      "choices": [
+        "A. 印刷画面を開く",
+        "B. ページを更新する",
+        "C. ポインターをペンに変更する",
+        "D. 新しいタブを開く"
+      ],
+      "question": "Ctrl + Pをスライドショー実行中に使うときの目的はどれか。"
+    },
+    {
+      "question": "Shift + 矢印キーの説明として正しいものはどれか。",
+      "choices": [
+        "A. 1単語ごとに削除する",
+        "B. アプリを切り替える",
+        "C. タブを閉じる",
+        "D. 文字や行を少しずつ範囲選択する"
+      ],
+      "answer": "A. 1単語ごとに削除する",
+      "id": 1112
+    },
+    {
+      "answer": "A. カーソルを1単語ごとに移動する",
+      "id": 1113,
+      "question": "Ctrl + 矢印キー（←→）の説明として正しいものはどれか。",
+      "choices": [
+        "A. カーソルを1単語ごとに移動する",
+        "B. 画面を左右に分割する",
+        "C. 前後のページに移動する",
+        "D. タブを左右に切り替える"
+      ]
+    },
+    {
+      "choices": [
+        "A. ファイルの一番上へ移動する",
+        "B. 現在の行の先頭へ移動する",
+        "C. 現在の行の末尾へ移動する",
+        "D. 行末まで選択する"
+      ],
+      "question": "Homeキーの説明として正しいものはどれか。",
+      "id": 1114,
+      "answer": "A. ファイルの一番上へ移動する"
+    },
+    {
+      "id": 1115,
+      "answer": "A. ページの一番下へ移動する",
+      "choices": [
+        "A. ページの一番下へ移動する",
+        "B. 行頭まで選択する",
+        "C. 現在の行の末尾へ移動する",
+        "D. ファイルを終了する"
+      ],
+      "question": "Endキーの説明として正しいものはどれか。"
+    },
+    {
+      "question": "Ctrl + Homeの説明として正しいものはどれか。",
+      "choices": [
+        "A. 行の先頭へ移動する",
+        "B. 行頭まで選択する",
+        "C. ページの一番下へ移動する",
+        "D. ファイルやページの一番上へ移動する"
+      ],
+      "answer": "A. 行の先頭へ移動する",
+      "id": 1116
+    },
+    {
+      "id": 1117,
+      "answer": "A. ファイルやページの一番下へ移動する",
+      "choices": [
+        "A. ファイルやページの一番下へ移動する",
+        "B. 行の末尾へ移動する",
+        "C. 行末まで選択する",
+        "D. ページを更新する"
+      ],
+      "question": "Ctrl + Endの説明として正しいものはどれか。"
+    },
+    {
+      "question": "Shift + Homeの説明として正しいものはどれか。",
+      "choices": [
+        "A. ページの先頭へ移動する",
+        "B. カーソル位置から行の先頭まで選択する",
+        "C. 行末へ移動する",
+        "D. タブを左へ切り替える"
+      ],
+      "id": 1118,
+      "answer": "A. ページの先頭へ移動する"
+    },
+    {
+      "answer": "A. 行末へ移動するだけ",
+      "id": 1119,
+      "question": "Shift + Endの説明として正しいものはどれか。",
+      "choices": [
+        "A. 行末へ移動するだけ",
+        "B. ページ末尾へ移動する",
+        "C. カーソル位置から行の末尾まで選択する",
+        "D. 画面を白くする"
+      ]
+    },
+    {
+      "question": "Ctrl + BのBは何の覚え方がしやすいか。",
+      "choices": [
+        "A. Bookmark",
+        "B. Back",
+        "C. Browser",
+        "D. Bold"
+      ],
+      "answer": "A. Bookmark",
+      "id": 1120
+    },
+    {
+      "id": 1121,
+      "answer": "A. Italic",
+      "choices": [
+        "A. Italic",
+        "B. Insert",
+        "C. Internet",
+        "D. Image"
+      ],
+      "question": "Ctrl + IのIは何の覚え方がしやすいか。"
+    },
+    {
+      "choices": [
+        "A. Undo",
+        "B. Underline",
+        "C. Upload",
+        "D. Update"
+      ],
+      "question": "Ctrl + UのUは何の覚え方がしやすいか。",
+      "id": 1122,
+      "answer": "A. Undo"
+    },
+    {
+      "answer": "A. 右側の1単語を削除する",
+      "id": 1123,
+      "question": "Ctrl + Backspaceの説明として正しいものはどれか。",
+      "choices": [
+        "A. 右側の1単語を削除する",
+        "B. ファイルを完全削除する",
+        "C. 左側の1単語を削除する",
+        "D. 直前の操作を元に戻す"
+      ]
+    },
+    {
+      "choices": [
+        "A. 左側の1単語を削除する",
+        "B. 文字を貼り付ける",
+        "C. ファイルを保存する",
+        "D. 右側の1単語を削除する"
+      ],
+      "question": "Ctrl + Deleteの説明として正しいものはどれか。",
+      "id": 1124,
+      "answer": "A. 左側の1単語を削除する"
+    },
+    {
+      "answer": "A. 選択した文字にハイパーリンクを挿入する",
+      "id": 1125,
+      "question": "Ctrl + Kの説明として正しいものはどれか。",
+      "choices": [
+        "A. 選択した文字にハイパーリンクを挿入する",
+        "B. 画面をロックする",
+        "C. アドレスバーを選択する",
+        "D. ダウンロード履歴を開く"
+      ]
+    },
+    {
+      "answer": "A. 設定画面を開く",
+      "id": 1126,
+      "question": "Windows + Dの説明として正しいものはどれか。",
+      "choices": [
+        "A. 設定画面を開く",
+        "B. デスクトップを表示する",
+        "C. エクスプローラーを開く",
+        "D. 画面をロックする"
+      ]
+    },
+    {
+      "choices": [
+        "A. ページを戻る・進む",
+        "B. 単語ごとに移動する",
+        "C. ウィンドウを左右に配置する",
+        "D. タブを左右に切り替える"
+      ],
+      "question": "Windows + ← または Windows + →の説明として正しいものはどれか。",
+      "id": 1127,
+      "answer": "A. ページを戻る・進む"
+    },
+    {
+      "choices": [
+        "A. フォルダーの階層を移動する",
+        "B. 画面をスクロールする",
+        "C. 行を選択する",
+        "D. ウィンドウの最大化・復元・最小化を行う"
+      ],
+      "question": "Windows + ↑ または Windows + ↓の説明として正しいものはどれか。",
+      "id": 1128,
+      "answer": "A. フォルダーの階層を移動する"
+    },
+    {
+      "question": "Alt + F4の説明として正しいものはどれか。",
+      "choices": [
+        "A. 現在のアプリやウィンドウを終了する",
+        "B. 開いているアプリを切り替える",
+        "C. ブラウザのタブを閉じる",
+        "D. デスクトップを表示する"
+      ],
+      "id": 1129,
+      "answer": "A. 現在のアプリやウィンドウを終了する"
+    },
+    {
+      "choices": [
+        "A. 貼り付けのみを行う",
+        "B. クリップボードの履歴を表示する",
+        "C. 設定画面を開く",
+        "D. 新しいフォルダーを作る"
+      ],
+      "question": "Windows + Vの説明として正しいものはどれか。",
+      "answer": "A. 貼り付けのみを行う",
+      "id": 1130
+    },
+    {
+      "choices": [
+        "A. エクスプローラーを開く",
+        "B. 画面をロックする",
+        "C. Windowsの設定を開く",
+        "D. デスクトップを表示する"
+      ],
+      "question": "Windows + Iの説明として正しいものはどれか。",
+      "answer": "A. エクスプローラーを開く",
+      "id": 1131
+    },
+    {
+      "choices": [
+        "A. タスクバーのアプリを起動する",
+        "B. クリップボード履歴を開く",
+        "C. 外部モニター設定を切り替える",
+        "D. スタートボタン右クリック相当のメニューを開く"
+      ],
+      "question": "Windows + Xの説明として正しいものはどれか。",
+      "answer": "A. タスクバーのアプリを起動する",
+      "id": 1132
+    },
+    {
+      "choices": [
+        "A. タスクバーの対応するアプリを起動・切り替えする",
+        "B. ブラウザの指定番号タブへ移動する",
+        "C. 文字サイズを変更する",
+        "D. 画面表示倍率をリセットする"
+      ],
+      "question": "Windows + 数字キー（1〜9）の説明として正しいものはどれか。",
+      "answer": "A. タスクバーの対応するアプリを起動・切り替えする",
+      "id": 1133
+    },
+    {
+      "answer": "A. アプリを切り替える",
+      "id": 1134,
+      "choices": [
+        "A. アプリを切り替える",
+        "B. ブラウザの次のタブへ切り替える",
+        "C. 閉じたタブを復元する",
+        "D. 新しいタブを開く"
+      ],
+      "question": "Ctrl + Tabの説明として正しいものはどれか。"
+    },
+    {
+      "id": 1135,
+      "answer": "A. 新しいタブを開く",
+      "choices": [
+        "A. 新しいタブを開く",
+        "B. 閉じたタブを開き直す",
+        "C. ブラウザの前のタブへ切り替える",
+        "D. タスクマネージャーを開く"
+      ],
+      "question": "Ctrl + Shift + Tabの説明として正しいものはどれか。"
+    },
+    {
+      "id": 1136,
+      "answer": "A. タスクバーアプリを起動する",
+      "choices": [
+        "A. タスクバーアプリを起動する",
+        "B. 画面の表示倍率を変える",
+        "C. 行番号へ移動する",
+        "D. ブラウザの指定番号タブへ移動する"
+      ],
+      "question": "Ctrl + 数字キー（1〜9）の説明として正しいものはどれか。"
+    },
+    {
+      "question": "Ctrl + Lの説明として正しいものはどれか。",
+      "choices": [
+        "A. ブラウザのアドレスバーを選択する",
+        "B. 画面をロックする",
+        "C. リンクを挿入する",
+        "D. ダウンロード履歴を開く"
+      ],
+      "answer": "A. ブラウザのアドレスバーを選択する",
+      "id": 1137
+    },
+    {
+      "answer": "A. デスクトップを表示する",
+      "id": 1138,
+      "question": "Alt + Dの説明として正しいものはどれか。",
+      "choices": [
+        "A. デスクトップを表示する",
+        "B. ブラウザのアドレスバーを選択する",
+        "C. アプリを終了する",
+        "D. 前のページに戻る"
+      ]
+    },
+    {
+      "id": 1139,
+      "answer": "A. ダウンロード履歴を開く",
+      "choices": [
+        "A. ダウンロード履歴を開く",
+        "B. 履歴を削除する",
+        "C. 現在のページをお気に入りに追加する",
+        "D. アドレスバーを選択する"
+      ],
+      "question": "Ctrl + Dのブラウザでの説明として正しいものはどれか。"
+    },
+    {
+      "choices": [
+        "A. ブックマークに追加する",
+        "B. アドレスバーを選択する",
+        "C. 閲覧履歴を開く",
+        "D. ダウンロード履歴を開く"
+      ],
+      "question": "Ctrl + Jのブラウザでの説明として正しいものはどれか。",
+      "id": 1140,
+      "answer": "A. ブックマークに追加する"
+    },
+    {
+      "id": 1141,
+      "answer": "A. ブラウザ表示を拡大する",
+      "question": "Ctrl + ＋の説明として正しいものはどれか。",
+      "choices": [
+        "A. ブラウザ表示を拡大する",
+        "B. ブラウザ表示を縮小する",
+        "C. 表示倍率を100%に戻す",
+        "D. ページを更新する"
+      ]
+    },
+    {
+      "answer": "A. 表示倍率を100%に戻す",
+      "id": 1142,
+      "question": "Ctrl + －の説明として正しいものはどれか。",
+      "choices": [
+        "A. 表示倍率を100%に戻す",
+        "B. ブラウザ表示を縮小する",
+        "C. ブラウザ表示を拡大する",
+        "D. ファイルを完全削除する"
+      ]
+    },
+    {
+      "question": "Ctrl + 0の説明として正しいものはどれか。",
+      "choices": [
+        "A. ページを最上部へ移動する",
+        "B. タブを閉じる",
+        "C. ブラウザの表示倍率を100%に戻す",
+        "D. 画面をロックする"
+      ],
+      "id": 1143,
+      "answer": "A. ページを最上部へ移動する"
+    },
+    {
+      "choices": [
+        "A. 1画面分上へスクロールする",
+        "B. タブを右へ移動する",
+        "C. アドレスバーを選択する",
+        "D. 1画面分下へスクロールする"
+      ],
+      "question": "Spaceキーのブラウザ操作として正しいものはどれか。",
+      "answer": "A. 1画面分上へスクロールする",
+      "id": 1144
+    },
+    {
+      "question": "Shift + Spaceのブラウザ操作として正しいものはどれか。",
+      "choices": [
+        "A. 1画面分上へスクロールする",
+        "B. 1画面分下へスクロールする",
+        "C. 前のタブへ移動する",
+        "D. 表示倍率を戻す"
+      ],
+      "answer": "A. 1画面分上へスクロールする",
+      "id": 1145
+    },
+    {
+      "choices": [
+        "A. 新しいフォルダーを作る",
+        "B. 閲覧履歴データの削除画面を開く",
+        "C. ファイルを完全削除する",
+        "D. タスクマネージャーを開く"
+      ],
+      "question": "Ctrl + Shift + Deleteの説明として正しいものはどれか。",
+      "id": 1146,
+      "answer": "A. 新しいフォルダーを作る"
+    },
+    {
+      "answer": "A. 設定画面を開く",
+      "id": 1147,
+      "choices": [
+        "A. 設定画面を開く",
+        "B. デスクトップを表示する",
+        "C. エクスプローラーを開く",
+        "D. 画面をロックする"
+      ],
+      "question": "Windows + Eの説明として正しいものはどれか。"
+    },
+    {
+      "choices": [
+        "A. 前の画面へ戻る",
+        "B. 次の画面へ進む",
+        "C. 画面を上へスクロールする",
+        "D. 1つ上の階層へ移動する"
+      ],
+      "question": "Alt + ↑のエクスプローラーでの説明として正しいものはどれか。",
+      "id": 1148,
+      "answer": "A. 前の画面へ戻る"
+    },
+    {
+      "id": 1149,
+      "answer": "A. 前の画面へ戻る",
+      "question": "Alt + ←の説明として正しいものはどれか。",
+      "choices": [
+        "A. 前の画面へ戻る",
+        "B. 次の画面へ進む",
+        "C. 1つ上の階層へ移動する",
+        "D. 単語ごとに移動する"
+      ]
+    },
+    {
+      "answer": "A. 1つ上の階層へ移動する",
+      "id": 1150,
+      "choices": [
+        "A. 1つ上の階層へ移動する",
+        "B. 先の画面へ進む",
+        "C. ウィンドウを右に配置する",
+        "D. 次の単語へ移動する"
+      ],
+      "question": "Alt + →の説明として正しいものはどれか。"
+    },
+    {
+      "question": "Ctrl + Shift + Nの説明として正しいものはどれか。",
+      "choices": [
+        "A. 閉じたタブを開き直す",
+        "B. 新しいウィンドウを開く",
+        "C. 新しいフォルダーを作成する",
+        "D. 閲覧履歴データを削除する"
+      ],
+      "answer": "A. 閉じたタブを開き直す",
+      "id": 1151
+    },
+    {
+      "question": "Shift + Deleteの説明として正しいものはどれか。",
+      "choices": [
+        "A. 右側の単語を削除する",
+        "B. 左側の単語を削除する",
+        "C. 新しいフォルダーを作る",
+        "D. ごみ箱を経由せず完全削除する"
+      ],
+      "id": 1152,
+      "answer": "A. 右側の単語を削除する"
+    },
+    {
+      "question": "Windows + Lの説明として正しいものはどれか。",
+      "choices": [
+        "A. パソコンの画面をロックする",
+        "B. アドレスバーを選択する",
+        "C. リンクを挿入する",
+        "D. 外部画面を切り替える"
+      ],
+      "id": 1153,
+      "answer": "A. パソコンの画面をロックする"
+    },
+    {
+      "question": "Ctrl + Shift + Escの説明として正しいものはどれか。",
+      "choices": [
+        "A. 閲覧履歴を削除する",
+        "B. タスクマネージャーを開く",
+        "C. 新しいフォルダーを作る",
+        "D. アプリを切り替える"
+      ],
+      "answer": "A. 閲覧履歴を削除する",
+      "id": 1154
+    },
+    {
+      "question": "F11の説明として正しいものはどれか。",
+      "choices": [
+        "A. ページを更新する",
+        "B. ファイル名を変更する",
+        "C. ブラウザやエクスプローラーを全画面表示にする",
+        "D. スライドショーを終了する"
+      ],
+      "answer": "A. ページを更新する",
+      "id": 1155
+    },
+    {
+      "id": 1156,
+      "answer": "A. ページを戻る",
+      "question": "Ctrl + マウスホイールの説明として正しいものはどれか。",
+      "choices": [
+        "A. ページを戻る",
+        "B. タブを切り替える",
+        "C. アプリを終了する",
+        "D. デスクトップやフォルダー内のアイコンの大きさを変更する"
+      ]
+    },
+    {
+      "answer": "A. Windows + P",
+      "id": 1157,
+      "choices": [
+        "A. Windows + P",
+        "B. Windows + L",
+        "C. Windows + V",
+        "D. Windows + X"
+      ],
+      "question": "「外部ディスプレイに映す設定を変える」と聞いたとき、最も適切なショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. F5",
+        "B. Shift + F5",
+        "C. Esc",
+        "D. Ctrl + P"
+      ],
+      "question": "「現在のスライドから発表を始める」と聞いたとき、最も適切なショートカットはどれか。",
+      "id": 1158,
+      "answer": "A. F5"
+    },
+    {
+      "choices": [
+        "A. Ctrl + End",
+        "B. End",
+        "C. Shift + End",
+        "D. Ctrl + Shift + N"
+      ],
+      "question": "「行の途中から行末までをまとめて選択する」と聞いたとき、最も適切なショートカットはどれか。",
+      "answer": "A. Ctrl + End",
+      "id": 1159
+    },
+    {
+      "question": "「現在のアプリを終了する」と聞いたとき、最も適切なショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + W",
+        "B. Alt + Tab",
+        "C. Windows + D",
+        "D. Alt + F4"
+      ],
+      "answer": "A. Ctrl + W",
+      "id": 1160
+    },
+    {
+      "question": "「過去のコピー履歴から選んで貼り付ける」と聞いたとき、最も適切なショートカットはどれか。",
+      "choices": [
+        "A. Windows + V",
+        "B. Ctrl + V",
+        "C. Ctrl + C",
+        "D. Windows + C"
+      ],
+      "id": 1161,
+      "answer": "A. Windows + V"
+    },
+    {
+      "answer": "A. Windows + E",
+      "id": 1162,
+      "choices": [
+        "A. Windows + E",
+        "B. Windows + I",
+        "C. Windows + D",
+        "D. Windows + P"
+      ],
+      "question": "「Windowsの設定を開く」と聞いたとき、最も適切なショートカットはどれか。"
+    },
+    {
+      "answer": "A. Ctrl + Tab",
+      "id": 1163,
+      "question": "「ブラウザで左隣のタブに切り替える」と聞いたとき、最も適切なショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Tab",
+        "B. Alt + Tab",
+        "C. Ctrl + Shift + Tab",
+        "D. Ctrl + Shift + T"
+      ]
+    },
+    {
+      "id": 1164,
+      "answer": "A. Ctrl + H",
+      "question": "「ダウンロード履歴を開く」と聞いたとき、最も適切なショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + H",
+        "B. Ctrl + D",
+        "C. Ctrl + L",
+        "D. Ctrl + J"
+      ]
+    },
+    {
+      "question": "「ブラウザ表示を標準サイズに戻す」と聞いたとき、最も適切なショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + 0",
+        "B. Ctrl + ＋",
+        "C. Ctrl + －",
+        "D. Ctrl + R"
+      ],
+      "id": 1165,
+      "answer": "A. Ctrl + 0"
+    },
+    {
+      "id": 1166,
+      "answer": "A. Windows + I",
+      "question": "「エクスプローラーを開く」と聞いたとき、最も適切なショートカットはどれか。",
+      "choices": [
+        "A. Windows + I",
+        "B. Windows + E",
+        "C. Windows + D",
+        "D. Windows + X"
+      ]
+    },
+    {
+      "question": "「ごみ箱に入れずに削除する」と聞いたとき、最も適切なショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Delete",
+        "B. Delete",
+        "C. Shift + Delete",
+        "D. Ctrl + Backspace"
+      ],
+      "id": 1167,
+      "answer": "A. Ctrl + Delete"
+    },
+    {
+      "question": "「タスクマネージャーを開く」と聞いたとき、最も適切なショートカットはどれか。",
+      "choices": [
+        "A. Alt + F4",
+        "B. Windows + X",
+        "C. Ctrl + Shift + N",
+        "D. Ctrl + Shift + Esc"
+      ],
+      "id": 1168,
+      "answer": "A. Alt + F4"
+    },
+    {
+      "id": 1169,
+      "answer": "A. Windows + P",
+      "choices": [
+        "A. Windows + P",
+        "B. Windows + E",
+        "C. Windows + L",
+        "D. Windows + D"
+      ],
+      "question": "発表会でプロジェクターに映らない。まず出力先を切り替えるために試すショートカットはどれか。"
+    },
+    {
+      "id": 1170,
+      "answer": "A. F5",
+      "choices": [
+        "A. F5",
+        "B. Shift + F5",
+        "C. Ctrl + P",
+        "D. Esc"
+      ],
+      "question": "プレゼンの途中で編集しているスライドからすぐ確認したい。使うショートカットはどれか。"
+    },
+    {
+      "question": "プレゼンを最初から通して確認したい。使うキーはどれか。",
+      "choices": [
+        "A. Shift + F5",
+        "B. F11",
+        "C. F5",
+        "D. Esc"
+      ],
+      "answer": "A. Shift + F5",
+      "id": 1171
+    },
+    {
+      "answer": "A. Ctrl + K",
+      "id": 1172,
+      "choices": [
+        "A. Ctrl + K",
+        "B. Ctrl + B",
+        "C. Ctrl + D",
+        "D. Ctrl + P"
+      ],
+      "question": "スライドショー中にペン表示へ変える操作として正しいものはどれか。"
+    },
+    {
+      "question": "黒画面で発表を一時中断したあと、もう一度Bを押すと元に戻せる。黒画面にするキーはどれか。",
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. Esc",
+        "D. F11"
+      ],
+      "id": 1173,
+      "answer": "A. B"
+    },
+    {
+      "id": 1174,
+      "answer": "A. B",
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. P",
+        "D. L"
+      ],
+      "question": "スライドショー中に白画面にするキーは、色の英語の頭文字で覚えられる。どれか。"
+    },
+    {
+      "question": "文字を左へ1文字ずつ選択範囲に含めたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + ←",
+        "B. Alt + ←",
+        "C. Shift + ←",
+        "D. Windows + ←"
+      ],
+      "answer": "A. Ctrl + ←",
+      "id": 1175
+    },
+    {
+      "question": "単語単位でカーソルを左へ移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Shift + ←",
+        "B. Alt + ←",
+        "C. Windows + ←",
+        "D. Ctrl + ←"
+      ],
+      "id": 1176,
+      "answer": "A. Shift + ←"
+    },
+    {
+      "question": "行頭へ移動した後、そこから文章を入力したい。使うキーはどれか。",
+      "choices": [
+        "A. Home",
+        "B. End",
+        "C. Ctrl + Home",
+        "D. Shift + Home"
+      ],
+      "id": 1177,
+      "answer": "A. Home"
+    },
+    {
+      "question": "行末へ移動した後、続きの文章を入力したい。使うキーはどれか。",
+      "choices": [
+        "A. Home",
+        "B. End",
+        "C. Ctrl + End",
+        "D. Shift + End"
+      ],
+      "id": 1178,
+      "answer": "A. Home"
+    },
+    {
+      "question": "ページ上部の見出しへ一気に戻る操作として最も近いものはどれか。",
+      "choices": [
+        "A. Shift + Home",
+        "B. Home",
+        "C. Ctrl + Home",
+        "D. Ctrl + End"
+      ],
+      "answer": "A. Shift + Home",
+      "id": 1179
+    },
+    {
+      "answer": "A. End",
+      "id": 1180,
+      "question": "ページ下部の最後の内容へ一気に移動する操作として最も近いものはどれか。",
+      "choices": [
+        "A. End",
+        "B. Shift + End",
+        "C. Home",
+        "D. Ctrl + End"
+      ]
+    },
+    {
+      "choices": [
+        "A. Shift + Home",
+        "B. Ctrl + Home",
+        "C. Home",
+        "D. Ctrl + A"
+      ],
+      "question": "カーソルから行頭までを選択して、その部分だけコピーしたい。最初に使うショートカットはどれか。",
+      "id": 1181,
+      "answer": "A. Shift + Home"
+    },
+    {
+      "id": 1182,
+      "answer": "A. End",
+      "choices": [
+        "A. End",
+        "B. Shift + End",
+        "C. Ctrl + End",
+        "D. Ctrl + B"
+      ],
+      "question": "カーソルから行末までを選択して太字にしたい。まず範囲選択に使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. 斜体",
+        "B. 下線",
+        "C. 太字",
+        "D. ハイパーリンク"
+      ],
+      "question": "太字、斜体、下線のうち、Ctrl + Bで行うものはどれか。",
+      "answer": "A. 斜体",
+      "id": 1183
+    },
+    {
+      "id": 1184,
+      "answer": "A. 太字",
+      "question": "太字、斜体、下線のうち、Ctrl + Uで行うものはどれか。",
+      "choices": [
+        "A. 太字",
+        "B. 斜体",
+        "C. ハイパーリンク",
+        "D. 下線"
+      ]
+    },
+    {
+      "choices": [
+        "A. 斜体",
+        "B. 太字",
+        "C. 下線",
+        "D. 印刷"
+      ],
+      "question": "太字、斜体、下線のうち、Ctrl + Iで行うものはどれか。",
+      "id": 1185,
+      "answer": "A. 斜体"
+    },
+    {
+      "choices": [
+        "A. Ctrl + L",
+        "B. Ctrl + K",
+        "C. Ctrl + D",
+        "D. Ctrl + J"
+      ],
+      "question": "URLを付けたい文字を選んだ後に使う、リンク挿入のショートカットはどれか。",
+      "answer": "A. Ctrl + L",
+      "id": 1186
+    },
+    {
+      "choices": [
+        "A. 左側はCtrl + Delete、右側はCtrl + Backspace",
+        "B. 左側はShift + Delete、右側はCtrl + Delete",
+        "C. 左側はCtrl + Backspace、右側はCtrl + Delete",
+        "D. 左側はBackspace、右側はShift + Delete"
+      ],
+      "question": "左側の単語削除と右側の単語削除の組み合わせとして正しいものはどれか。",
+      "answer": "A. 左側はCtrl + Delete、右側はCtrl + Backspace",
+      "id": 1187
+    },
+    {
+      "question": "画面上のウィンドウを一度すべて隠し、デスクトップのファイルを確認したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + E",
+        "B. Alt + Tab",
+        "C. Windows + L",
+        "D. Windows + D"
+      ],
+      "answer": "A. Windows + E",
+      "id": 1188
+    },
+    {
+      "question": "左右2分割作業をしたいとき、ウィンドウを右半分に寄せるショートカットはどれか。",
+      "choices": [
+        "A. Windows + →",
+        "B. Ctrl + →",
+        "C. Alt + →",
+        "D. Shift + →"
+      ],
+      "answer": "A. Windows + →",
+      "id": 1189
+    },
+    {
+      "question": "ウィンドウを左半分に寄せたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + ←",
+        "B. Windows + ←",
+        "C. Alt + ←",
+        "D. Shift + ←"
+      ],
+      "id": 1190,
+      "answer": "A. Ctrl + ←"
+    },
+    {
+      "answer": "A. Windows + P",
+      "id": 1191,
+      "question": "ウィンドウの最小化に関係するWindowsキーの組み合わせはどれか。",
+      "choices": [
+        "A. Windows + P",
+        "B. Windows + I",
+        "C. Windows + ↓",
+        "D. Windows + E"
+      ]
+    },
+    {
+      "answer": "A. Windows + D",
+      "id": 1192,
+      "choices": [
+        "A. Windows + D",
+        "B. Windows + L",
+        "C. Windows + V",
+        "D. Windows + ↑"
+      ],
+      "question": "ウィンドウの最大化に関係するWindowsキーの組み合わせはどれか。"
+    },
+    {
+      "answer": "A. 終了はAlt + F4、切り替えはAlt + Tab",
+      "id": 1193,
+      "choices": [
+        "A. 終了はAlt + F4、切り替えはAlt + Tab",
+        "B. 終了はAlt + Tab、切り替えはAlt + F4",
+        "C. 終了はWindows + D、切り替えはAlt + F4",
+        "D. 終了はCtrl + Tab、切り替えはCtrl + W"
+      ],
+      "question": "いま使っているアプリを終了する操作と、アプリを切り替える操作の組み合わせとして正しいものはどれか。"
+    },
+    {
+      "id": 1194,
+      "answer": "A. Ctrl + Vは履歴表示、Windows + Vはコピー",
+      "question": "Ctrl + VとWindows + Vの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Ctrl + Vは履歴表示、Windows + Vはコピー",
+        "B. Ctrl + Vは通常の貼り付け、Windows + Vはクリップボード履歴",
+        "C. Ctrl + Vは保存、Windows + Vは印刷",
+        "D. Ctrl + Vはロック、Windows + Vは設定"
+      ]
+    },
+    {
+      "id": 1195,
+      "answer": "A. Windows + Iは設定、Windows + Xはシステムツール系メニュー",
+      "question": "Windows + IとWindows + Xの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Windows + Iは設定、Windows + Xはシステムツール系メニュー",
+        "B. Windows + Iはエクスプローラー、Windows + Xは設定",
+        "C. Windows + Iはロック、Windows + Xはデスクトップ表示",
+        "D. Windows + Iは表示切替、Windows + Xはコピー履歴"
+      ]
+    },
+    {
+      "question": "Ctrl + TabとAlt + Tabの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Ctrl + Tabはアプリ切替、Alt + Tabはタブ切替",
+        "B. Ctrl + Tabは次のブラウザタブ、Alt + Tabはアプリやウィンドウ切替",
+        "C. Ctrl + Tabは閉じたタブ復元、Alt + Tabは新しいタブ",
+        "D. Ctrl + Tabは印刷、Alt + Tabは保存"
+      ],
+      "answer": "A. Ctrl + Tabはアプリ切替、Alt + Tabはタブ切替",
+      "id": 1196
+    },
+    {
+      "question": "Ctrl + 数字キーとWindows + 数字キーの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Ctrl + 数字はタスクバー、Windows + 数字はブラウザタブ",
+        "B. Ctrl + 数字は拡大、Windows + 数字は縮小",
+        "C. Ctrl + 数字はブラウザの指定タブ、Windows + 数字はタスクバーアプリ",
+        "D. Ctrl + 数字は検索、Windows + 数字は履歴"
+      ],
+      "id": 1197,
+      "answer": "A. Ctrl + 数字はタスクバー、Windows + 数字はブラウザタブ"
+    },
+    {
+      "id": 1198,
+      "answer": "A. Ctrl + Lはアドレスバー選択、Ctrl + Kはリンク挿入",
+      "choices": [
+        "A. Ctrl + Lはアドレスバー選択、Ctrl + Kはリンク挿入",
+        "B. Ctrl + Lはリンク挿入、Ctrl + Kはアドレスバー選択",
+        "C. Ctrl + Lはダウンロード履歴、Ctrl + Kはブックマーク追加",
+        "D. Ctrl + Lはロック、Ctrl + Kは設定"
+      ],
+      "question": "Ctrl + LとCtrl + Kの違いとして正しいものはどれか。"
+    },
+    {
+      "answer": "A. Ctrl + Dはダウンロード履歴、Ctrl + Jはブックマーク",
+      "id": 1199,
+      "question": "Ctrl + DとCtrl + Jの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Ctrl + Dはダウンロード履歴、Ctrl + Jはブックマーク",
+        "B. Ctrl + Dはブックマーク追加、Ctrl + Jはダウンロード履歴",
+        "C. Ctrl + Dはアドレスバー選択、Ctrl + Jは表示拡大",
+        "D. Ctrl + Dは履歴削除、Ctrl + Jは履歴表示"
+      ]
+    },
+    {
+      "question": "Ctrl + ＋、Ctrl + －、Ctrl + 0の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. ＋は縮小、－は拡大、0は保存",
+        "B. ＋は保存、－は印刷、0は検索",
+        "C. ＋は拡大、－は縮小、0は100%に戻す",
+        "D. ＋はタブ移動、－はタブ復元、0は閉じる"
+      ],
+      "answer": "A. ＋は縮小、－は拡大、0は保存",
+      "id": 1200
+    },
+    {
+      "choices": [
+        "A. Spaceは上へ、Shift + Spaceは下へスクロール",
+        "B. Spaceは拡大、Shift + Spaceは縮小",
+        "C. Spaceは新しいタブ、Shift + Spaceは閉じる",
+        "D. Spaceは下へ、Shift + Spaceは上へスクロール"
+      ],
+      "question": "SpaceとShift + Spaceの違いとして正しいものはどれか。",
+      "answer": "A. Spaceは上へ、Shift + Spaceは下へスクロール",
+      "id": 1201
+    },
+    {
+      "choices": [
+        "A. Ctrl + Shift + Deleteは閲覧履歴データ削除画面、Shift + Deleteは完全削除",
+        "B. Ctrl + Shift + Deleteは完全削除、Shift + Deleteは履歴画面",
+        "C. Ctrl + Shift + Deleteは新規フォルダー、Shift + Deleteはタスク管理",
+        "D. Ctrl + Shift + Deleteはコピー履歴、Shift + Deleteは印刷"
+      ],
+      "question": "Ctrl + Shift + DeleteとShift + Deleteの違いとして正しいものはどれか。",
+      "id": 1202,
+      "answer": "A. Ctrl + Shift + Deleteは閲覧履歴データ削除画面、Shift + Deleteは完全削除"
+    },
+    {
+      "answer": "A. Windows + Eは親フォルダー、Alt + ↑はエクスプローラー起動",
+      "id": 1203,
+      "question": "Windows + EとAlt + ↑の違いとして正しいものはどれか。",
+      "choices": [
+        "A. Windows + Eは親フォルダー、Alt + ↑はエクスプローラー起動",
+        "B. Windows + Eはエクスプローラーを開く、Alt + ↑は親フォルダーへ移動",
+        "C. Windows + Eは設定、Alt + ↑は戻る",
+        "D. Windows + Eはロック、Alt + ↑は全画面"
+      ]
+    },
+    {
+      "answer": "A. ←は戻る、→は進む、↑は上の階層へ移動",
+      "id": 1204,
+      "question": "Alt + ←、Alt + →、Alt + ↑の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. ←は戻る、→は進む、↑は上の階層へ移動",
+        "B. ←は進む、→は戻る、↑は全画面",
+        "C. ←は左配置、→は右配置、↑は最大化",
+        "D. ←は単語移動、→は単語移動、↑は行選択"
+      ]
+    },
+    {
+      "question": "Ctrl + Shift + NとCtrl + Shift + Tの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Ctrl + Shift + Nは閉じたタブ復元、Ctrl + Shift + Tは新規フォルダー",
+        "B. Ctrl + Shift + Nは新規フォルダー、Ctrl + Shift + Tは閉じたタブ復元",
+        "C. Ctrl + Shift + Nは履歴削除、Ctrl + Shift + Tは履歴表示",
+        "D. Ctrl + Shift + Nは全画面、Ctrl + Shift + Tはロック"
+      ],
+      "answer": "A. Ctrl + Shift + Nは閉じたタブ復元、Ctrl + Shift + Tは新規フォルダー",
+      "id": 1205
+    },
+    {
+      "answer": "A. Windows + Lはロック、Windows + Dはデスクトップ表示",
+      "id": 1206,
+      "question": "Windows + LとWindows + Dの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Windows + Lはロック、Windows + Dはデスクトップ表示",
+        "B. Windows + Lはデスクトップ表示、Windows + Dはロック",
+        "C. Windows + Lは設定、Windows + Dはエクスプローラー",
+        "D. Windows + Lはコピー履歴、Windows + Dは表示切替"
+      ]
+    },
+    {
+      "id": 1207,
+      "answer": "A. Ctrl + Shift + Escはアプリ終了、Alt + F4はタスクマネージャー",
+      "choices": [
+        "A. Ctrl + Shift + Escはアプリ終了、Alt + F4はタスクマネージャー",
+        "B. Ctrl + Shift + Escはタスクマネージャー、Alt + F4は現在のアプリ終了",
+        "C. Ctrl + Shift + Escは新規フォルダー、Alt + F4は全画面",
+        "D. Ctrl + Shift + Escはロック、Alt + F4はコピー"
+      ],
+      "question": "Ctrl + Shift + EscとAlt + F4の違いとして正しいものはどれか。"
+    },
+    {
+      "choices": [
+        "A. F11はブラウザなどの全画面表示、Escはスライドショーや動画の全画面終了",
+        "B. F11は印刷、Escは保存",
+        "C. F11はファイル名変更、Escはタブ移動",
+        "D. F11はリンク挿入、Escは履歴削除"
+      ],
+      "question": "F11とEscの違いとして正しいものはどれか。",
+      "answer": "A. F11はブラウザなどの全画面表示、Escはスライドショーや動画の全画面終了",
+      "id": 1208
+    },
+    {
+      "id": 1209,
+      "answer": "A. Windows + D",
+      "choices": [
+        "A. Windows + D",
+        "B. Windows + P",
+        "C. Windows + V",
+        "D. Windows + L"
+      ],
+      "question": "発表直前に「PC画面のみ」から「複製」へ切り替えたい。どのショートカットが目的に合うか。"
+    },
+    {
+      "question": "PowerPointで5枚目を修正後、5枚目から動きを確認したい。使うショートカットはどれか。",
+      "choices": [
+        "A. F5",
+        "B. Esc",
+        "C. Shift + F5",
+        "D. Ctrl + P"
+      ],
+      "id": 1210,
+      "answer": "A. F5"
+    },
+    {
+      "question": "PowerPointの1枚目から本番と同じ流れで確認したい。使うキーはどれか。",
+      "choices": [
+        "A. Shift + F5",
+        "B. Esc",
+        "C. F11",
+        "D. F5"
+      ],
+      "answer": "A. Shift + F5",
+      "id": 1211
+    },
+    {
+      "question": "スライドショー中、説明をいったん止めたいがスライドを閉じたくはない。黒画面にするキーはどれか。",
+      "choices": [
+        "A. B",
+        "B. Esc",
+        "C. F5",
+        "D. Ctrl + W"
+      ],
+      "answer": "A. B",
+      "id": 1212
+    },
+    {
+      "id": 1213,
+      "answer": "A. B",
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. F11",
+        "D. Ctrl + P"
+      ],
+      "question": "スライドショー中、白い画面にして内容を一時的に隠したい。押すキーはどれか。"
+    },
+    {
+      "id": 1214,
+      "answer": "A. Ctrl + B",
+      "choices": [
+        "A. Ctrl + B",
+        "B. Ctrl + K",
+        "C. Ctrl + P",
+        "D. Ctrl + U"
+      ],
+      "question": "プレゼン中に手書きで線を引きたい。ペンに切り替えるショートカットはどれか。"
+    },
+    {
+      "answer": "A. F5",
+      "id": 1215,
+      "choices": [
+        "A. F5",
+        "B. F11",
+        "C. Alt + F4",
+        "D. Esc"
+      ],
+      "question": "動画を全画面で見ていて、通常表示へ戻りたい。使うキーはどれか。"
+    },
+    {
+      "choices": [
+        "A. Shift + 矢印キー",
+        "B. Ctrl + 矢印キー",
+        "C. Alt + 矢印キー",
+        "D. Windows + 矢印キー"
+      ],
+      "question": "文章の一部をキーボードだけで細かく選びたい。使うショートカットはどれか。",
+      "answer": "A. Shift + 矢印キー",
+      "id": 1216
+    },
+    {
+      "question": "文章中の単語を飛び石のように移動しながらカーソルを動かしたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Shift + 矢印キー",
+        "B. Ctrl + 矢印キー",
+        "C. Windows + 矢印キー",
+        "D. Alt + 矢印キー"
+      ],
+      "answer": "A. Shift + 矢印キー",
+      "id": 1217
+    },
+    {
+      "choices": [
+        "A. 行頭はEnd、文書先頭はCtrl + End",
+        "B. 行頭はShift + Home、文書先頭はHome",
+        "C. 行頭はHome、文書先頭はCtrl + Home",
+        "D. 行頭はCtrl + Home、文書先頭はHome"
+      ],
+      "question": "行の先頭へ移動するHomeキーと、文書の先頭へ移動するショートカットの組み合わせとして正しいものはどれか。",
+      "answer": "A. 行頭はEnd、文書先頭はCtrl + End",
+      "id": 1218
+    },
+    {
+      "question": "行の末尾へ移動するEndキーと、文書の末尾へ移動するショートカットの組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 行末はHome、文書末尾はCtrl + Home",
+        "B. 行末はShift + End、文書末尾はEnd",
+        "C. 行末はCtrl + End、文書末尾はEnd",
+        "D. 行末はEnd、文書末尾はCtrl + End"
+      ],
+      "answer": "A. 行末はHome、文書末尾はCtrl + Home",
+      "id": 1219
+    },
+    {
+      "id": 1220,
+      "answer": "A. 行頭までShift + Home、行末までShift + End",
+      "choices": [
+        "A. 行頭までShift + Home、行末までShift + End",
+        "B. 行頭までCtrl + Home、行末までCtrl + End",
+        "C. 行頭までHome、行末までEnd",
+        "D. 行頭までCtrl + ←、行末までCtrl + →"
+      ],
+      "question": "カーソルから行頭までを選ぶ操作と、カーソルから行末までを選ぶ操作の組み合わせとして正しいものはどれか。"
+    },
+    {
+      "choices": [
+        "A. 太字Ctrl + I、斜体Ctrl + U、下線Ctrl + B",
+        "B. 太字Ctrl + B、斜体Ctrl + I、下線Ctrl + U",
+        "C. 太字Ctrl + U、斜体Ctrl + B、下線Ctrl + I",
+        "D. 太字Ctrl + K、斜体Ctrl + B、下線Ctrl + D"
+      ],
+      "question": "見出しを太字、用語を斜体、重要語を下線にしたい。正しい組み合わせはどれか。",
+      "id": 1221,
+      "answer": "A. 太字Ctrl + I、斜体Ctrl + U、下線Ctrl + B"
+    },
+    {
+      "choices": [
+        "A. 左Ctrl + Delete、右Ctrl + Backspace",
+        "B. 左Delete、右Backspace",
+        "C. 左Ctrl + Backspace、右Ctrl + Delete",
+        "D. 左Shift + Delete、右Ctrl + Delete"
+      ],
+      "question": "カーソル左側の単語を削除する操作と、右側の単語を削除する操作の組み合わせとして正しいものはどれか。",
+      "id": 1222,
+      "answer": "A. 左Ctrl + Delete、右Ctrl + Backspace"
+    },
+    {
+      "choices": [
+        "A. リンク挿入Ctrl + D、ブックマークCtrl + K",
+        "B. リンク挿入Ctrl + K、ブックマークCtrl + D",
+        "C. リンク挿入Ctrl + L、ブックマークCtrl + J",
+        "D. リンク挿入Ctrl + J、ブックマークCtrl + L"
+      ],
+      "question": "リンク挿入とブックマーク追加の組み合わせとして正しいものはどれか。",
+      "id": 1223,
+      "answer": "A. リンク挿入Ctrl + D、ブックマークCtrl + K"
+    },
+    {
+      "choices": [
+        "A. デスクトップWindows + D、設定Windows + I、ロックWindows + L",
+        "B. デスクトップWindows + E、設定Windows + D、ロックWindows + I",
+        "C. デスクトップWindows + L、設定Windows + P、ロックWindows + D",
+        "D. デスクトップWindows + V、設定Windows + X、ロックWindows + E"
+      ],
+      "question": "デスクトップ表示、設定画面、画面ロックの組み合わせとして正しいものはどれか。",
+      "answer": "A. デスクトップWindows + D、設定Windows + I、ロックWindows + L",
+      "id": 1224
+    },
+    {
+      "answer": "A. エクスプローラーWindows + P、投影Windows + V、履歴Windows + E",
+      "id": 1225,
+      "choices": [
+        "A. エクスプローラーWindows + P、投影Windows + V、履歴Windows + E",
+        "B. エクスプローラーWindows + E、投影Windows + P、履歴Windows + V",
+        "C. エクスプローラーWindows + V、投影Windows + E、履歴Windows + P",
+        "D. エクスプローラーWindows + X、投影Windows + I、履歴Windows + L"
+      ],
+      "question": "エクスプローラー、投影設定、クリップボード履歴の組み合わせとして正しいものはどれか。"
+    },
+    {
+      "question": "ブラウザで次のタブ、前のタブ、指定番号タブへ移動する組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 次Alt + Tab、前Alt + Shift + Tab、指定Windows + 数字",
+        "B. 次Ctrl + T、前Ctrl + W、指定Ctrl + D",
+        "C. 次Ctrl + Tab、前Ctrl + Shift + Tab、指定Ctrl + 数字",
+        "D. 次Ctrl + R、前Ctrl + H、指定Ctrl + J"
+      ],
+      "answer": "A. 次Alt + Tab、前Alt + Shift + Tab、指定Windows + 数字",
+      "id": 1226
+    },
+    {
+      "id": 1227,
+      "answer": "A. アドレスバーCtrl + L、ブックマークCtrl + D、ダウンロードCtrl + J",
+      "question": "アドレスバー選択、ブックマーク追加、ダウンロード履歴の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. アドレスバーCtrl + L、ブックマークCtrl + D、ダウンロードCtrl + J",
+        "B. アドレスバーCtrl + D、ブックマークCtrl + J、ダウンロードCtrl + L",
+        "C. アドレスバーCtrl + J、ブックマークCtrl + L、ダウンロードCtrl + D",
+        "D. アドレスバーCtrl + H、ブックマークCtrl + F、ダウンロードCtrl + R"
+      ]
+    },
+    {
+      "answer": "A. 拡大Ctrl + －、縮小Ctrl + ＋、戻すCtrl + R",
+      "id": 1228,
+      "question": "拡大、縮小、100%に戻すの組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 拡大Ctrl + －、縮小Ctrl + ＋、戻すCtrl + R",
+        "B. 拡大Ctrl + ＋、縮小Ctrl + －、戻すCtrl + 0",
+        "C. 拡大Ctrl + 0、縮小Ctrl + R、戻すCtrl + ＋",
+        "D. 拡大Ctrl + D、縮小Ctrl + J、戻すCtrl + L"
+      ]
+    },
+    {
+      "id": 1229,
+      "answer": "A. 下Space、上Shift + Space",
+      "question": "Webページで1画面下へ進む操作と、1画面上へ戻る操作の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 下Space、上Shift + Space",
+        "B. 下Shift + Space、上Space",
+        "C. 下Ctrl + Space、上Alt + Space",
+        "D. 下Ctrl + Tab、上Ctrl + Shift + Tab"
+      ]
+    },
+    {
+      "id": 1230,
+      "answer": "A. 新規Ctrl + Shift + T、親Alt + ←、完全Ctrl + Delete",
+      "question": "エクスプローラーで新規フォルダー作成、親フォルダー移動、完全削除の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 新規Ctrl + Shift + T、親Alt + ←、完全Ctrl + Delete",
+        "B. 新規Ctrl + Shift + N、親Alt + ↑、完全Shift + Delete",
+        "C. 新規Windows + E、親Alt + →、完全Ctrl + Backspace",
+        "D. 新規Ctrl + N、親Ctrl + ↑、完全Delete"
+      ]
+    },
+    {
+      "id": 1231,
+      "answer": "A. Windows + L",
+      "question": "会社のPCで席を外す前に最も使うべきショートカットはどれか。",
+      "choices": [
+        "A. Windows + L",
+        "B. Windows + D",
+        "C. Ctrl + W",
+        "D. Alt + Tab"
+      ]
+    },
+    {
+      "answer": "A. エクスプローラー",
+      "id": 1232,
+      "choices": [
+        "A. エクスプローラー",
+        "B. タスクマネージャー",
+        "C. クリップボード履歴",
+        "D. ブックマーク画面"
+      ],
+      "question": "フリーズしたアプリを確認して終了したいとき、まず開くものとして最も適切なのはどれか。"
+    },
+    {
+      "answer": "A. Ctrl + Shift + N",
+      "id": 1233,
+      "choices": [
+        "A. Ctrl + Shift + N",
+        "B. Ctrl + Shift + T",
+        "C. Ctrl + Shift + Esc",
+        "D. Ctrl + Shift + Delete"
+      ],
+      "question": "タスクマネージャーを開くショートカットはどれか。"
+    },
+    {
+      "answer": "A. F5",
+      "id": 1234,
+      "choices": [
+        "A. F5",
+        "B. Esc",
+        "C. F2",
+        "D. F11"
+      ],
+      "question": "ブラウザを全画面表示にしたり、元へ戻したりするキーはどれか。"
+    },
+    {
+      "answer": "A. Ctrl + マウスホイール",
+      "id": 1235,
+      "choices": [
+        "A. Ctrl + マウスホイール",
+        "B. Shift + マウスホイール",
+        "C. Alt + Tab",
+        "D. Windows + P"
+      ],
+      "question": "デスクトップのアイコン表示を大きくしたり小さくしたりしたい。使う操作はどれか。"
+    },
+    {
+      "choices": [
+        "A. Ctrl + V",
+        "B. Windows + V",
+        "C. Ctrl + C",
+        "D. Ctrl + A"
+      ],
+      "question": "コピーはしたが、直前の1つだけでなく過去のコピー内容から選びたい。使うショートカットはどれか。",
+      "answer": "A. Ctrl + V",
+      "id": 1236
+    },
+    {
+      "choices": [
+        "A. Link",
+        "B. List",
+        "C. Lock",
+        "D. Left"
+      ],
+      "question": "画面をロックするWindows + LのLは、何の意味で覚えるとよいか。",
+      "answer": "A. Link",
+      "id": 1237
+    },
+    {
+      "question": "設定を開くWindows + IのIは、何の意味で覚えると近いか。",
+      "choices": [
+        "A. Informationや設定項目への入口",
+        "B. Italic",
+        "C. Insert",
+        "D. Internet履歴"
+      ],
+      "answer": "A. Informationや設定項目への入口",
+      "id": 1238
+    },
+    {
+      "question": "エクスプローラーを開くWindows + EのEは、何で覚えるとよいか。",
+      "choices": [
+        "A. End",
+        "B. Explorer",
+        "C. Escape",
+        "D. Edit"
+      ],
+      "answer": "A. End",
+      "id": 1239
+    },
+    {
+      "choices": [
+        "A. 後で見たいページを保存しておきたいとき",
+        "B. ダウンロード履歴を見たいとき",
+        "C. URL欄へ移動したいとき",
+        "D. ページを削除したいとき"
+      ],
+      "question": "ブックマーク追加のCtrl + Dは、どの場面で使うのが最も自然か。",
+      "answer": "A. 後で見たいページを保存しておきたいとき",
+      "id": 1240
+    },
+    {
+      "question": "Ctrl + Jを使う場面として最も自然なものはどれか。",
+      "choices": [
+        "A. ページをお気に入りに入れたい",
+        "B. ダウンロードしたファイルの一覧を見たい",
+        "C. ページを1画面下へ進めたい",
+        "D. リンクを挿入したい"
+      ],
+      "id": 1241,
+      "answer": "A. ページをお気に入りに入れたい"
+    },
+    {
+      "answer": "A. Webページ内の語句を検索したい",
+      "id": 1242,
+      "choices": [
+        "A. Webページ内の語句を検索したい",
+        "B. 文字を太字にしたい",
+        "C. URL欄を選択して検索語を打ちたい",
+        "D. タブを閉じたい"
+      ],
+      "question": "Ctrl + Lを使う場面として最も自然なものはどれか。"
+    },
+    {
+      "answer": "A. ファイルを完全削除したい",
+      "id": 1243,
+      "question": "Ctrl + Shift + Deleteを使う場面として最も自然なものはどれか。",
+      "choices": [
+        "A. ファイルを完全削除したい",
+        "B. 新しいフォルダーを作りたい",
+        "C. タスクマネージャーを開きたい",
+        "D. ブラウザの閲覧履歴データ削除画面を開きたい"
+      ]
+    },
+    {
+      "question": "Alt + ↑を使う場面として最も自然なものはどれか。",
+      "choices": [
+        "A. エクスプローラーで親フォルダーへ移動したい",
+        "B. ブラウザで前のページへ戻りたい",
+        "C. ウィンドウを最大化したい",
+        "D. カーソルを単語単位で動かしたい"
+      ],
+      "answer": "A. エクスプローラーで親フォルダーへ移動したい",
+      "id": 1244
+    },
+    {
+      "id": 1245,
+      "answer": "A. 親フォルダーへ移動したい",
+      "choices": [
+        "A. 親フォルダーへ移動したい",
+        "B. 前の画面に戻りたい",
+        "C. 次の画面へ進みたい",
+        "D. 左の単語へ移動したい"
+      ],
+      "question": "Alt + ←を使う場面として最も自然なものはどれか。"
+    },
+    {
+      "question": "Ctrl + Shift + Nを使う場面として最も自然なものはどれか。",
+      "choices": [
+        "A. 閉じたタブを戻したい",
+        "B. 履歴を削除したい",
+        "C. 新しいフォルダーを作りたい",
+        "D. 画面をロックしたい"
+      ],
+      "answer": "A. 閉じたタブを戻したい",
+      "id": 1246
+    },
+    {
+      "id": 1247,
+      "answer": "A. コピー履歴が消える",
+      "choices": [
+        "A. コピー履歴が消える",
+        "B. ブラウザ履歴だけが消える",
+        "C. タブが完全に閉じる",
+        "D. ごみ箱を経由しない完全削除なので注意する"
+      ],
+      "question": "Shift + Deleteを使うときの注意として最も正しいものはどれか。"
+    },
+    {
+      "id": 1248,
+      "answer": "A. PC画面のみ・複製・拡張・セカンドスクリーンのみ",
+      "choices": [
+        "A. PC画面のみ・複製・拡張・セカンドスクリーンのみ",
+        "B. コピー・切り取り・貼り付け・元に戻す",
+        "C. 太字・斜体・下線・リンク",
+        "D. 戻る・進む・更新・検索"
+      ],
+      "question": "Windows + Pで選べる内容として最も近いものはどれか。"
+    },
+    {
+      "question": "Windows + Dをもう一度押したときの動きとして最も近いものはどれか。",
+      "choices": [
+        "A. 画面がロックされる",
+        "B. 最小化したウィンドウが元に戻る",
+        "C. エクスプローラーが開く",
+        "D. 設定画面が開く"
+      ],
+      "id": 1249,
+      "answer": "A. 画面がロックされる"
+    },
+    {
+      "choices": [
+        "A. 前のページへ戻る",
+        "B. 次の単語へ移動する",
+        "C. ウィンドウを画面右側に配置する",
+        "D. 右側の単語を削除する"
+      ],
+      "question": "Windows + →を使う目的として最も近いものはどれか。",
+      "id": 1250,
+      "answer": "A. 前のページへ戻る"
+    },
+    {
+      "question": "Windows + ↓を使う目的として最も近いものはどれか。",
+      "choices": [
+        "A. 親フォルダーへ移動する",
+        "B. ページを下へスクロールする",
+        "C. タブを次へ切り替える",
+        "D. ウィンドウを元のサイズに戻す・最小化する"
+      ],
+      "answer": "A. 親フォルダーへ移動する",
+      "id": 1251
+    },
+    {
+      "answer": "A. Alt + F4はアプリやウィンドウ終了、Ctrl + Wは今のタブやウィンドウを閉じる",
+      "id": 1252,
+      "choices": [
+        "A. Alt + F4はアプリやウィンドウ終了、Ctrl + Wは今のタブやウィンドウを閉じる",
+        "B. Alt + F4はコピー、Ctrl + Wは貼り付け",
+        "C. Alt + F4は保存、Ctrl + Wは印刷",
+        "D. Alt + F4は設定、Ctrl + Wはロック"
+      ],
+      "question": "Alt + F4とCtrl + Wの違いとして最も正しいものはどれか。"
+    },
+    {
+      "answer": "A. Ctrl + Tabは閉じたタブ復元、Ctrl + Shift + Tは次のタブ",
+      "id": 1253,
+      "question": "Ctrl + TabとCtrl + Shift + Tの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Ctrl + Tabは閉じたタブ復元、Ctrl + Shift + Tは次のタブ",
+        "B. Ctrl + Tabは次のタブへ切替、Ctrl + Shift + Tは閉じたタブ復元",
+        "C. Ctrl + Tabは新しいタブ、Ctrl + Shift + Tはタブを閉じる",
+        "D. Ctrl + Tabは履歴表示、Ctrl + Shift + Tは印刷"
+      ]
+    },
+    {
+      "id": 1254,
+      "answer": "A. Ctrl + Lはページ内検索、Ctrl + Fはアドレスバー選択",
+      "choices": [
+        "A. Ctrl + Lはページ内検索、Ctrl + Fはアドレスバー選択",
+        "B. Ctrl + Lはアドレスバー選択、Ctrl + Fはページ内検索",
+        "C. Ctrl + Lは保存、Ctrl + Fは印刷",
+        "D. Ctrl + Lはブックマーク、Ctrl + Fはダウンロード履歴"
+      ],
+      "question": "Ctrl + LとCtrl + Fの違いとして正しいものはどれか。"
+    },
+    {
+      "question": "Ctrl + DとWindows + Dの違いとして正しいものはどれか。",
+      "choices": [
+        "A. Ctrl + Dはデスクトップ表示、Windows + Dはブックマーク",
+        "B. Ctrl + Dはブックマーク追加、Windows + Dはデスクトップ表示",
+        "C. Ctrl + Dは削除画面、Windows + Dはダウンロード履歴",
+        "D. Ctrl + Dは設定、Windows + Dは外部画面"
+      ],
+      "answer": "A. Ctrl + Dはデスクトップ表示、Windows + Dはブックマーク",
+      "id": 1255
+    },
+    {
+      "answer": "A. ブラウザでは再読み込み、PowerPointでは最初からスライドショー開始",
+      "id": 1256,
+      "choices": [
+        "A. ブラウザでは再読み込み、PowerPointでは最初からスライドショー開始",
+        "B. ブラウザでは印刷、PowerPointでは黒画面",
+        "C. ブラウザではタブ復元、PowerPointではリンク挿入",
+        "D. ブラウザでは設定、PowerPointでは完全削除"
+      ],
+      "question": "F5について、ブラウザとPowerPointでの違いとして正しいものはどれか。"
+    },
+    {
+      "question": "Ctrl + Pについて、通常のページやファイルとスライドショー中の違いとして正しいものはどれか。",
+      "choices": [
+        "A. 通常は保存、スライドショー中は終了",
+        "B. 通常は印刷画面、スライドショー中はペン",
+        "C. 通常はペン、スライドショー中は印刷画面",
+        "D. 通常は検索、スライドショー中はブックマーク"
+      ],
+      "id": 1257,
+      "answer": "A. 通常は保存、スライドショー中は終了"
+    },
+    {
+      "answer": "A. Ctrl + D",
+      "id": 1258,
+      "choices": [
+        "A. Ctrl + D",
+        "B. Ctrl + J",
+        "C. Ctrl + L",
+        "D. Ctrl + Tab"
+      ],
+      "question": "「今のページをブックマークしてから、別のタブへ移動したい」。ブックマークで使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Ctrl + H",
+        "B. Ctrl + J",
+        "C. Ctrl + D",
+        "D. Ctrl + K"
+      ],
+      "question": "「ダウンロードしたPDFがどこへ行ったか確認したい」。まず使うショートカットはどれか。",
+      "answer": "A. Ctrl + H",
+      "id": 1259
+    },
+    {
+      "question": "「URL欄を選んで、すぐ別の検索語を打つ」。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + F",
+        "B. Ctrl + H",
+        "C. Ctrl + L",
+        "D. Ctrl + D"
+      ],
+      "answer": "A. Ctrl + F",
+      "id": 1260
+    },
+    {
+      "question": "「ページを拡大しすぎたので一発で標準に戻す」。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + ＋",
+        "B. Ctrl + －",
+        "C. Ctrl + R",
+        "D. Ctrl + 0"
+      ],
+      "answer": "A. Ctrl + ＋",
+      "id": 1261
+    },
+    {
+      "id": 1262,
+      "answer": "A. Space",
+      "question": "「長い記事を下へ1画面分進めながら読む」。使うキーはどれか。",
+      "choices": [
+        "A. Space",
+        "B. Shift + Space",
+        "C. Ctrl + Tab",
+        "D. Alt + →"
+      ]
+    },
+    {
+      "answer": "A. Space",
+      "id": 1263,
+      "choices": [
+        "A. Space",
+        "B. Shift + Space",
+        "C. Ctrl + L",
+        "D. Alt + ←"
+      ],
+      "question": "「長い記事を1画面分上へ戻って読み直す」。使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Ctrl + H",
+        "B. Shift + Delete",
+        "C. Ctrl + Shift + Delete",
+        "D. Ctrl + Delete"
+      ],
+      "question": "「ブラウザに残った閲覧履歴データを削除する画面を開く」。使うショートカットはどれか。",
+      "answer": "A. Ctrl + H",
+      "id": 1264
+    },
+    {
+      "question": "「ファイルを探す画面をすぐ開く」。使うショートカットはどれか。",
+      "choices": [
+        "A. Windows + I",
+        "B. Windows + P",
+        "C. Windows + X",
+        "D. Windows + E"
+      ],
+      "id": 1265,
+      "answer": "A. Windows + I"
+    },
+    {
+      "choices": [
+        "A. Alt + ↑",
+        "B. Alt + ←",
+        "C. Alt + →",
+        "D. Ctrl + ↑"
+      ],
+      "question": "「今見ているフォルダーの親フォルダーへ上がる」。使うショートカットはどれか。",
+      "id": 1266,
+      "answer": "A. Alt + ↑"
+    },
+    {
+      "answer": "A. Alt + ↑",
+      "id": 1267,
+      "choices": [
+        "A. Alt + ↑",
+        "B. Alt + →",
+        "C. Alt + ←",
+        "D. Ctrl + →"
+      ],
+      "question": "「エクスプローラーで戻りすぎたので、先の画面へ進む」。使うショートカットはどれか。"
+    },
+    {
+      "answer": "A. Ctrl + Shift + T",
+      "id": 1268,
+      "choices": [
+        "A. Ctrl + Shift + T",
+        "B. Ctrl + N",
+        "C. Ctrl + Shift + N",
+        "D. Windows + E"
+      ],
+      "question": "「新しいフォルダーを作って、その中に資料をまとめたい」。フォルダー作成に使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Delete",
+        "B. Ctrl + Delete",
+        "C. Ctrl + Backspace",
+        "D. Shift + Delete"
+      ],
+      "question": "「不要なファイルをごみ箱に残さず削除する」。使うショートカットはどれか。",
+      "id": 1269,
+      "answer": "A. Delete"
+    },
+    {
+      "answer": "A. Windows + L",
+      "id": 1270,
+      "choices": [
+        "A. Windows + L",
+        "B. Windows + D",
+        "C. Windows + V",
+        "D. Windows + P"
+      ],
+      "question": "「離席時のセキュリティ対策」として最も適切なショートカットはどれか。"
+    },
+    {
+      "id": 1271,
+      "answer": "A. Alt + F4",
+      "question": "「アプリが応答しないので状態を確認したい」。タスクマネージャーを開くショートカットはどれか。",
+      "choices": [
+        "A. Alt + F4",
+        "B. Ctrl + Shift + Esc",
+        "C. Ctrl + Shift + N",
+        "D. Ctrl + Shift + Delete"
+      ]
+    },
+    {
+      "answer": "A. F5",
+      "id": 1272,
+      "choices": [
+        "A. F5",
+        "B. Esc",
+        "C. F11",
+        "D. F2"
+      ],
+      "question": "「ブラウザの表示領域を最大限使うため全画面にする」。使うキーはどれか。"
+    },
+    {
+      "answer": "A. Alt + マウスホイール",
+      "id": 1273,
+      "question": "「フォルダー内のアイコンを見やすい大きさに変える」。使う操作はどれか。",
+      "choices": [
+        "A. Alt + マウスホイール",
+        "B. Shift + マウスホイール",
+        "C. Windows + マウスホイール",
+        "D. Ctrl + マウスホイール"
+      ]
+    },
+    {
+      "choices": [
+        "A. 終了Esc、全画面F11",
+        "B. 終了F11、全画面Esc",
+        "C. 終了F5、全画面Shift + F5",
+        "D. 終了Ctrl + P、全画面Windows + P"
+      ],
+      "question": "「スライドショーを終わらせる」と「ブラウザを全画面表示にする」の組み合わせとして正しいものはどれか。",
+      "answer": "A. 終了Esc、全画面F11",
+      "id": 1274
+    },
+    {
+      "id": 1275,
+      "answer": "A. 最初からShift + F5、現在からF5",
+      "choices": [
+        "A. 最初からShift + F5、現在からF5",
+        "B. 最初からF5、現在からShift + F5",
+        "C. 最初からEsc、現在からF11",
+        "D. 最初からWindows + P、現在からCtrl + P"
+      ],
+      "question": "「スライドショーを最初から」と「現在のスライドから」の組み合わせとして正しいものはどれか。"
+    },
+    {
+      "answer": "A. 黒W、白B",
+      "id": 1276,
+      "choices": [
+        "A. 黒W、白B",
+        "B. 黒P、白W",
+        "C. 黒B、白W",
+        "D. 黒Esc、白F5"
+      ],
+      "question": "「スライドを黒画面」と「白画面」にするキーの組み合わせとして正しいものはどれか。"
+    },
+    {
+      "choices": [
+        "A. 範囲選択Ctrl + 矢印、単語移動Shift + 矢印",
+        "B. 範囲選択Alt + 矢印、単語移動Windows + 矢印",
+        "C. 範囲選択Windows + 矢印、単語移動Alt + 矢印",
+        "D. 範囲選択Shift + 矢印、単語移動Ctrl + 矢印"
+      ],
+      "question": "「1文字ずつ範囲選択」と「1単語ごと移動」の組み合わせとして正しいものはどれか。",
+      "answer": "A. 範囲選択Ctrl + 矢印、単語移動Shift + 矢印",
+      "id": 1277
+    },
+    {
+      "question": "「行の先頭へ移動」と「行の末尾へ移動」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 先頭Home、末尾End",
+        "B. 先頭End、末尾Home",
+        "C. 先頭Ctrl + Home、末尾Ctrl + End",
+        "D. 先頭Shift + Home、末尾Shift + End"
+      ],
+      "answer": "A. 先頭Home、末尾End",
+      "id": 1278
+    },
+    {
+      "answer": "A. 上Home、下End",
+      "id": 1279,
+      "question": "「ファイルの一番上へ移動」と「一番下へ移動」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 上Home、下End",
+        "B. 上Ctrl + Home、下Ctrl + End",
+        "C. 上Shift + Home、下Shift + End",
+        "D. 上Ctrl + ↑、下Ctrl + ↓"
+      ]
+    },
+    {
+      "id": 1280,
+      "answer": "A. 行頭Home、行末End",
+      "choices": [
+        "A. 行頭Home、行末End",
+        "B. 行頭Ctrl + Home、行末Ctrl + End",
+        "C. 行頭Shift + Home、行末Shift + End",
+        "D. 行頭Ctrl + ←、行末Ctrl + →"
+      ],
+      "question": "「行頭まで選択」と「行末まで選択」の組み合わせとして正しいものはどれか。"
+    },
+    {
+      "id": 1281,
+      "answer": "A. 太字Ctrl + K、リンクCtrl + B",
+      "question": "「太字」と「リンク挿入」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 太字Ctrl + K、リンクCtrl + B",
+        "B. 太字Ctrl + I、リンクCtrl + U",
+        "C. 太字Ctrl + U、リンクCtrl + I",
+        "D. 太字Ctrl + B、リンクCtrl + K"
+      ]
+    },
+    {
+      "answer": "A. 斜体Ctrl + I、下線Ctrl + U",
+      "id": 1282,
+      "question": "「斜体」と「下線」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 斜体Ctrl + I、下線Ctrl + U",
+        "B. 斜体Ctrl + U、下線Ctrl + I",
+        "C. 斜体Ctrl + B、下線Ctrl + K",
+        "D. 斜体Ctrl + D、下線Ctrl + J"
+      ]
+    },
+    {
+      "id": 1283,
+      "answer": "A. 左Ctrl + Delete、右Shift + Delete",
+      "choices": [
+        "A. 左Ctrl + Delete、右Shift + Delete",
+        "B. 左Ctrl + Backspace、右Ctrl + Delete",
+        "C. 左Delete、右Backspace",
+        "D. 左Shift + Home、右Shift + End"
+      ],
+      "question": "「左側の単語削除」と「右側の単語削除」の組み合わせとして正しいものはどれか。"
+    },
+    {
+      "choices": [
+        "A. デスクトップWindows + E、ロックWindows + I",
+        "B. デスクトップWindows + P、ロックWindows + X",
+        "C. デスクトップWindows + D、ロックWindows + L",
+        "D. デスクトップWindows + V、ロックWindows + D"
+      ],
+      "question": "「デスクトップ表示」と「画面ロック」の組み合わせとして正しいものはどれか。",
+      "answer": "A. デスクトップWindows + E、ロックWindows + I",
+      "id": 1284
+    },
+    {
+      "answer": "A. 左右配置Alt + ←→、最大化・最小化Alt + ↑↓",
+      "id": 1285,
+      "question": "「左右配置」と「最大化・最小化」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 左右配置Alt + ←→、最大化・最小化Alt + ↑↓",
+        "B. 左右配置Ctrl + ←→、最大化・最小化Ctrl + ↑↓",
+        "C. 左右配置Shift + ←→、最大化・最小化Shift + ↑↓",
+        "D. 左右配置Windows + ←→、最大化・最小化Windows + ↑↓"
+      ]
+    },
+    {
+      "question": "「アプリ終了」と「デスクトップ表示」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. アプリ終了Alt + F4、デスクトップ表示Windows + D",
+        "B. アプリ終了Windows + D、デスクトップ表示Alt + F4",
+        "C. アプリ終了Ctrl + W、デスクトップ表示Ctrl + D",
+        "D. アプリ終了Alt + Tab、デスクトップ表示Windows + L"
+      ],
+      "id": 1286,
+      "answer": "A. アプリ終了Alt + F4、デスクトップ表示Windows + D"
+    },
+    {
+      "answer": "A. コピー履歴Ctrl + V、通常貼り付けWindows + V",
+      "id": 1287,
+      "question": "「コピー履歴」と「通常の貼り付け」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. コピー履歴Ctrl + V、通常貼り付けWindows + V",
+        "B. コピー履歴Windows + V、通常貼り付けCtrl + V",
+        "C. コピー履歴Ctrl + C、通常貼り付けCtrl + X",
+        "D. コピー履歴Windows + C、通常貼り付けWindows + V"
+      ]
+    },
+    {
+      "choices": [
+        "A. 設定Windows + E、メニューWindows + D",
+        "B. 設定Windows + P、メニューWindows + V",
+        "C. 設定Windows + I、メニューWindows + X",
+        "D. 設定Windows + L、メニューWindows + E"
+      ],
+      "question": "「設定画面」と「スタート右クリック相当メニュー」の組み合わせとして正しいものはどれか。",
+      "answer": "A. 設定Windows + E、メニューWindows + D",
+      "id": 1288
+    },
+    {
+      "choices": [
+        "A. タスクバーWindows + 数字、ブラウザ指定タブCtrl + 数字",
+        "B. タスクバーCtrl + 数字、ブラウザ指定タブWindows + 数字",
+        "C. タスクバーAlt + 数字、ブラウザ指定タブShift + 数字",
+        "D. タスクバーCtrl + Tab、ブラウザ指定タブAlt + Tab"
+      ],
+      "question": "「タスクバーアプリ」と「ブラウザ指定タブ」の組み合わせとして正しいものはどれか。",
+      "answer": "A. タスクバーWindows + 数字、ブラウザ指定タブCtrl + 数字",
+      "id": 1289
+    },
+    {
+      "choices": [
+        "A. 次Ctrl + Shift + Tab、前Ctrl + Tab",
+        "B. 次Ctrl + Tab、前Ctrl + Shift + Tab",
+        "C. 次Alt + Tab、前Alt + Shift + Tab",
+        "D. 次Ctrl + T、前Ctrl + W"
+      ],
+      "question": "「次のブラウザタブ」と「前のブラウザタブ」の組み合わせとして正しいものはどれか。",
+      "answer": "A. 次Ctrl + Shift + Tab、前Ctrl + Tab",
+      "id": 1290
+    },
+    {
+      "answer": "A. アドレスバーCtrl + F、検索Ctrl + L",
+      "id": 1291,
+      "question": "「アドレスバー選択」と「ページ内検索」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. アドレスバーCtrl + F、検索Ctrl + L",
+        "B. アドレスバーCtrl + D、検索Ctrl + J",
+        "C. アドレスバーCtrl + L、検索Ctrl + F",
+        "D. アドレスバーCtrl + H、検索Ctrl + R"
+      ]
+    },
+    {
+      "answer": "A. お気に入りCtrl + J、ダウンロードCtrl + D",
+      "id": 1292,
+      "choices": [
+        "A. お気に入りCtrl + J、ダウンロードCtrl + D",
+        "B. お気に入りCtrl + L、ダウンロードCtrl + H",
+        "C. お気に入りCtrl + K、ダウンロードCtrl + F",
+        "D. お気に入りCtrl + D、ダウンロードCtrl + J"
+      ],
+      "question": "「お気に入り追加」と「ダウンロード履歴」の組み合わせとして正しいものはどれか。"
+    },
+    {
+      "choices": [
+        "A. 表示Ctrl + H、削除画面Ctrl + Shift + Delete",
+        "B. 表示Ctrl + Shift + Delete、削除画面Ctrl + H",
+        "C. 表示Ctrl + J、削除画面Shift + Delete",
+        "D. 表示Ctrl + D、削除画面Ctrl + Delete"
+      ],
+      "question": "「閲覧履歴表示」と「閲覧履歴データ削除画面」の組み合わせとして正しいものはどれか。",
+      "id": 1293,
+      "answer": "A. 表示Ctrl + H、削除画面Ctrl + Shift + Delete"
+    },
+    {
+      "answer": "A. 拡大Ctrl + －、縮小Ctrl + ＋",
+      "id": 1294,
+      "question": "「表示拡大」と「表示縮小」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 拡大Ctrl + －、縮小Ctrl + ＋",
+        "B. 拡大Ctrl + ＋、縮小Ctrl + －",
+        "C. 拡大Ctrl + 0、縮小Ctrl + R",
+        "D. 拡大Ctrl + D、縮小Ctrl + J"
+      ]
+    },
+    {
+      "answer": "A. 戻るAlt + ↑、進むAlt + ↓",
+      "id": 1295,
+      "question": "「前の画面へ戻る」と「先の画面へ進む」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 戻るAlt + ↑、進むAlt + ↓",
+        "B. 戻るCtrl + ←、進むCtrl + →",
+        "C. 戻るAlt + ←、進むAlt + →",
+        "D. 戻るWindows + ←、進むWindows + →"
+      ]
+    },
+    {
+      "id": 1296,
+      "answer": "A. 新規Ctrl + N、開くWindows + I",
+      "choices": [
+        "A. 新規Ctrl + N、開くWindows + I",
+        "B. 新規Ctrl + Shift + T、開くWindows + P",
+        "C. 新規Windows + E、開くCtrl + Shift + N",
+        "D. 新規Ctrl + Shift + N、開くWindows + E"
+      ],
+      "question": "「新しいフォルダー作成」と「エクスプローラーを開く」の組み合わせとして正しいものはどれか。"
+    },
+    {
+      "question": "「完全削除」と「1単語右側削除」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 完全削除Shift + Delete、右側単語削除Ctrl + Delete",
+        "B. 完全削除Ctrl + Delete、右側単語削除Shift + Delete",
+        "C. 完全削除Delete、右側単語削除Ctrl + Backspace",
+        "D. 完全削除Ctrl + Backspace、右側単語削除Shift + Delete"
+      ],
+      "answer": "A. 完全削除Shift + Delete、右側単語削除Ctrl + Delete",
+      "id": 1297
+    },
+    {
+      "question": "「タスクマネージャー」と「スタート右クリック相当メニュー」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. タスクマネージャーWindows + X、メニューCtrl + Shift + Esc",
+        "B. タスクマネージャーCtrl + Shift + Esc、メニューWindows + X",
+        "C. タスクマネージャーCtrl + Shift + N、メニューWindows + E",
+        "D. タスクマネージャーAlt + F4、メニューWindows + D"
+      ],
+      "answer": "A. タスクマネージャーWindows + X、メニューCtrl + Shift + Esc",
+      "id": 1298
+    },
+    {
+      "question": "「ブラウザ全画面表示」と「画面全体スクリーンショット保存」の組み合わせとして正しいものはどれか。",
+      "choices": [
+        "A. 全画面F5、保存Windows + Shift + S",
+        "B. 全画面Esc、保存Windows + P",
+        "C. 全画面F11、保存Windows + PrintScreen",
+        "D. 全画面Windows + D、保存F11"
+      ],
+      "answer": "A. 全画面F5、保存Windows + Shift + S",
+      "id": 1299
+    },
+    {
+      "choices": [
+        "A. 部分スクリーンショットWindows + PrintScreen、アイコンCtrl + ＋",
+        "B. 部分スクリーンショットWindows + Shift + S、アイコンCtrl + マウスホイール",
+        "C. 部分スクリーンショットCtrl + Shift + Delete、アイコンShift + マウスホイール",
+        "D. 部分スクリーンショットF11、アイコンAlt + マウスホイール"
+      ],
+      "question": "「部分スクリーンショット」と「アイコンサイズ変更」の組み合わせとして正しいものはどれか。",
+      "answer": "A. 部分スクリーンショットWindows + PrintScreen、アイコンCtrl + ＋",
+      "id": 1300
+    }
+  ],
+  "practical-5kyu": [
+    {
+      "question": "下のテキストエリア内の文章をすべて選択してください。（マウスによるドラッグ選択禁止）",
+      "id": 5001,
+      "expectedKeyCombo": [
+        "control",
+        "a"
+      ],
+      "type": "select_all",
+      "answer": "CORRECT"
+    },
+    {
+      "type": "copy_paste",
+      "answer": "https://example.com/secure/token=xyz987",
+      "taskData": {
+        "targetText": "https://example.com/secure/token=xyz987"
+      },
+      "question": "下の複雑なURLをコピーして、すぐ下の入力欄に貼り付けてください。（右クリック禁止）",
+      "id": 5002,
+      "expectedKeyCombo": [
+        "control",
+        "v"
+      ]
+    },
+    {
+      "question": "このファイルを上書き保存してください。",
+      "id": 5003,
+      "expectedKeyCombo": [
+        "control",
+        "s"
+      ],
+      "type": "save_file",
+      "answer": "CORRECT"
+    },
+    {
+      "expectedKeyCombo": [
+        "control",
+        "f"
+      ],
+      "id": 5004,
+      "question": "以下の大量のテキストの中から「パスワード」を探し出し、下の解答欄に入力してください。",
+      "taskData": {
+        "password": "APPLE"
+      },
+      "answer": "APPLE",
+      "type": "find_password"
+    },
+    {
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "id": 5005,
+      "question": "選択されているファイルの名前を変更するモードに切り替えてください。",
+      "answer": "CORRECT",
+      "type": "rename_file"
+    }
+  ],
+  "practical-4kyu": [
+    {
+      "question": "誤って削除してしまったテキストを「元に戻す」ショートカットを使用してください。",
+      "expectedKeyCombo": [
+        "control",
+        "z"
+      ],
+      "id": 4001,
+      "type": "undo_action",
+      "answer": "CORRECT"
+    },
+    {
+      "question": "下の複雑なURLをコピーして、すぐ下の入力欄に貼り付けてください。（右クリック禁止）",
+      "expectedKeyCombo": [
+        "control",
+        "v"
+      ],
+      "id": 5002,
+      "type": "copy_paste",
+      "taskData": {
+        "targetText": "https://example.com/secure/token=xyz987"
+      },
+      "answer": "https://example.com/secure/token=xyz987"
+    },
+    {
+      "question": "このファイルを上書き保存してください。",
+      "expectedKeyCombo": [
+        "control",
+        "s"
+      ],
+      "id": 5003,
+      "type": "save_file",
+      "answer": "CORRECT"
+    },
+    {
+      "answer": "BANANA",
+      "taskData": {
+        "password": "BANANA"
+      },
+      "type": "find_password",
+      "id": 5004,
+      "expectedKeyCombo": [
+        "control",
+        "f"
+      ],
+      "question": "以下の大量のテキストの中から「パスワード」を探し出し、下の解答欄に入力してください。"
+    },
+    {
+      "question": "選択されているファイルの名前を変更するモードに切り替えてください。",
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "id": 5005,
+      "type": "rename_file",
+      "answer": "CORRECT"
+    }
+  ]
+}

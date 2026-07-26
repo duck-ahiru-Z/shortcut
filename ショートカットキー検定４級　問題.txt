@@ -1,0 +1,300 @@
+1	問題文: 外部モニターやプロジェクターへの表示方法を切り替えたい。使うショートカットはどれか。	選択肢: A. Windows + P　B. Windows + E　C. Windows + D　D. Windows + L
+2	問題文: PowerPointでスライドショーを最初のスライドから開始したい。使うキーはどれか。	選択肢: A. Shift + F5　B. F5　C. F11　D. Esc
+3	問題文: PowerPointで現在開いているスライドからスライドショーを開始したい。使うショートカットはどれか。	選択肢: A. F5　B. Ctrl + P　C. Shift + F5　D. Windows + P
+4	問題文: スライドショーや動画の全画面表示を終了して元の画面に戻りたい。使うキーはどれか。	選択肢: A. F11　B. Ctrl + W　C. Alt + Tab　D. Esc
+5	問題文: スライドショー中に画面を真っ暗にして、いったん注目を集めたい。押すキーはどれか。	選択肢: A. B　B. W　C. P　D. D
+6	問題文: スライドショー中に画面を真っ白にして、一時的に表示を止めたい。押すキーはどれか。	選択肢: A. B　B. W　C. Esc　D. F5
+7	問題文: PowerPointのスライドショー実行中に、ポインターをペンに変えて書き込みたい。使うショートカットはどれか。	選択肢: A. Ctrl + D　B. Ctrl + K　C. Ctrl + P　D. Ctrl + S
+8	問題文: 文字を1文字ずつ範囲選択しながらカーソルを動かしたい。使うショートカットはどれか。	選択肢: A. Ctrl + 矢印キー　B. Alt + 矢印キー　C. Windows + 矢印キー　D. Shift + 矢印キー
+9	問題文: 文書内でカーソルを1単語ごとにすばやく移動したい。使うショートカットはどれか。	選択肢: A. Ctrl + 矢印キー　B. Shift + 矢印キー　C. Windows + 矢印キー　D. Alt + Tab
+10	問題文: 現在入力している行の先頭へカーソルを移動したい。使うキーはどれか。	選択肢: A. End　B. Home　C. Ctrl + Home　D. Shift + Home
+11	問題文: 現在入力している行の末尾へカーソルを移動したい。使うキーはどれか。	選択肢: A. Ctrl + End　B. Home　C. End　D. Shift + End
+12	問題文: ファイルやページの一番上へ一気に移動したい。使うショートカットはどれか。	選択肢: A. Shift + Home　B. Home　C. Ctrl + End　D. Ctrl + Home
+13	問題文: ファイルやページの一番下へ一気に移動したい。使うショートカットはどれか。	選択肢: A. Ctrl + End　B. End　C. Shift + End　D. Ctrl + Home
+14	問題文: カーソル位置から行の先頭までを一気に範囲選択したい。使うショートカットはどれか。	選択肢: A. Ctrl + Home　B. Shift + Home　C. Home　D. Ctrl + Shift + N
+15	問題文: カーソル位置から行の末尾までを一気に範囲選択したい。使うショートカットはどれか。	選択肢: A. End　B. Ctrl + End　C. Shift + End　D. Ctrl + Shift + Tab
+16	問題文: 選択した文字を太字にしたい。使うショートカットはどれか。	選択肢: A. Ctrl + I　B. Ctrl + U　C. Ctrl + K　D. Ctrl + B
+17	問題文: 選択した文字を斜体にしたい。使うショートカットはどれか。	選択肢: A. Ctrl + I　B. Ctrl + B　C. Ctrl + U　D. Ctrl + D
+18	問題文: 選択した文字に下線を引きたい。使うショートカットはどれか。	選択肢: A. Ctrl + B　B. Ctrl + U　C. Ctrl + K　D. Ctrl + L
+19	問題文: カーソルの左側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。	選択肢: A. Ctrl + Delete　B. Shift + Delete　C. Ctrl + Backspace　D. Alt + Backspace
+20	問題文: カーソルの右側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。	選択肢: A. Ctrl + Backspace　B. Backspace　C. Delete　D. Ctrl + Delete
+21	問題文: 選択した文字にWebリンクを挿入したい。使うショートカットはどれか。	選択肢: A. Ctrl + K　B. Ctrl + L　C. Ctrl + D　D. Ctrl + J
+22	問題文: 開いているすべてのウィンドウを最小化してデスクトップを表示したい。使うショートカットはどれか。	選択肢: A. Windows + E　B. Windows + D　C. Windows + L　D. Windows + V
+23	問題文: ウィンドウを画面の左側や右側にぴったり配置したい。使うショートカットはどれか。	選択肢: A. Alt + 矢印キー　B. Ctrl + 矢印キー　C. Windows + 矢印キー（←→）　D. Shift + 矢印キー
+24	問題文: ウィンドウを最大化したり、元のサイズに戻したり、最小化したりしたい。使うショートカットはどれか。	選択肢: A. Ctrl + 矢印キー（↑↓）　B. Shift + 矢印キー（↑↓）　C. Alt + 矢印キー（↑↓）　D. Windows + 矢印キー（↑↓）
+25	問題文: 現在開いているアプリやウィンドウを完全に終了したい。使うショートカットはどれか。	選択肢: A. Alt + F4　B. Ctrl + W　C. Alt + Tab　D. Windows + D
+26	問題文: 過去にコピーした文字や画像の履歴を表示して、選んで貼り付けたい。使うショートカットはどれか。	選択肢: A. Windows + I　B. Windows + V　C. Ctrl + V　D. Ctrl + C
+27	問題文: Windowsの設定画面をすばやく開きたい。使うショートカットはどれか。	選択肢: A. Windows + X　B. Windows + E　C. Windows + I　D. Windows + P
+28	問題文: スタートボタンを右クリックしたときのようなシステムツールのメニューを開きたい。使うショートカットはどれか。	選択肢: A. Windows + L　B. Windows + D　C. Windows + V　D. Windows + X
+29	問題文: タスクバーにピン留めされたアプリを、左からの順番に対応する数字で起動・切り替えしたい。使うショートカットはどれか。	選択肢: A. Windows + 数字キー（1〜9）　B. Ctrl + 数字キー（1〜9）　C. Alt + 数字キー（1〜9）　D. Shift + 数字キー（1〜9）
+30	問題文: ブラウザで右隣のタブへ順番に切り替えたい。使うショートカットはどれか。	選択肢: A. Alt + Tab　B. Ctrl + Tab　C. Ctrl + T　D. Ctrl + W
+31	問題文: ブラウザで左隣のタブへ順番に切り替えたい。使うショートカットはどれか。	選択肢: A. Ctrl + 1　B. Ctrl + T　C. Ctrl + Shift + Tab　D. Ctrl + Shift + T
+32	問題文: ブラウザで左から数えた指定番号のタブへ一瞬で移動したい。使うショートカットはどれか。	選択肢: A. Windows + 数字キー　B. Alt + 数字キー　C. Shift + 数字キー　D. Ctrl + 数字キー（1〜9）
+33	問題文: ブラウザのアドレスバーを全選択して、すぐ検索語を入力したい。Ctrlキーを使うショートカットはどれか。	選択肢: A. Ctrl + L　B. Ctrl + D　C. Ctrl + J　D. Ctrl + F
+34	問題文: ブラウザのアドレスバーを全選択したい。Altキーを使うショートカットはどれか。	選択肢: A. Alt + Tab　B. Alt + D　C. Alt + F4　D. Alt + 矢印キー
+35	問題文: 現在見ているWebページをお気に入り、またはブックマークに追加したい。使うショートカットはどれか。	選択肢: A. Ctrl + J　B. Ctrl + K　C. Ctrl + D　D. Ctrl + H
+36	問題文: ブラウザのダウンロード履歴画面を開きたい。使うショートカットはどれか。	選択肢: A. Ctrl + H　B. Ctrl + D　C. Ctrl + L　D. Ctrl + J
+37	問題文: ブラウザの表示を拡大したい。使うショートカットはどれか。	選択肢: A. Ctrl + ＋　B. Ctrl + 0　C. Ctrl + －　D. Ctrl + D
+38	問題文: ブラウザの表示を縮小したい。使うショートカットはどれか。	選択肢: A. Ctrl + ＋　B. Ctrl + －　C. Ctrl + 0　D. Ctrl + L
+39	問題文: 拡大・縮小したブラウザの表示倍率を100%に戻したい。使うショートカットはどれか。	選択肢: A. Ctrl + ＋　B. Ctrl + －　C. Ctrl + 0　D. Ctrl + R
+40	問題文: Webページを1画面分下へスクロールしたい。使うキーはどれか。	選択肢: A. Shift + Space　B. Ctrl + Space　C. Alt + Space　D. Space
+41	問題文: Webページを1画面分上へスクロールしたい。使うショートカットはどれか。	選択肢: A. Shift + Space　B. Space　C. Ctrl + Space　D. Alt + Space
+42	問題文: ブラウザの閲覧履歴データを削除する画面をすぐ開きたい。使うショートカットはどれか。	選択肢: A. Ctrl + H　B. Ctrl + Shift + Delete　C. Ctrl + Delete　D. Shift + Delete
+43	問題文: エクスプローラーを新しく開き、ファイルやフォルダーを探したい。使うショートカットはどれか。	選択肢: A. Windows + I　B. Windows + D　C. Windows + E　D. Windows + X
+44	問題文: エクスプローラーで現在見ているフォルダーの1つ上の階層へ移動したい。使うショートカットはどれか。	選択肢: A. Alt + ←　B. Alt + →　C. Ctrl + ↑　D. Alt + ↑
+45	問題文: エクスプローラーやブラウザで前の画面に戻りたい。使うショートカットはどれか。	選択肢: A. Alt + ←　B. Alt + →　C. Alt + ↑　D. Ctrl + ←
+46	問題文: エクスプローラーやブラウザで、戻った後に先の画面へ進みたい。使うショートカットはどれか。	選択肢: A. Alt + ↑　B. Alt + →　C. Alt + ←　D. Ctrl + →
+47	問題文: 新しいフォルダーをキーボード操作だけで作成したい。使うショートカットはどれか。	選択肢: A. Ctrl + N　B. Ctrl + Shift + T　C. Ctrl + Shift + N　D. Ctrl + T
+48	問題文: ファイルをごみ箱に入れず、完全に削除したい。使うショートカットはどれか。	選択肢: A. Delete　B. Ctrl + Delete　C. Ctrl + Backspace　D. Shift + Delete
+49	問題文: 離席するとき、パソコンの画面をロックしたい。使うショートカットはどれか。	選択肢: A. Windows + L　B. Windows + D　C. Windows + P　D. Windows + V
+50	問題文: アプリが固まったときにタスクマネージャーを開きたい。使うショートカットはどれか。	選択肢: A. Ctrl + Alt + Delete　B. Ctrl + Shift + Esc　C. Alt + F4　D. Windows + X
+51	問題文: ブラウザやエクスプローラーを全画面表示にしたい。使うキーはどれか。	選択肢: A. F5　B. Esc　C. F11　D. F2
+52	問題文: デスクトップやフォルダー内のアイコンの大きさを変更したい。使う操作はどれか。	選択肢: A. Shift + マウスホイール　B. Alt + マウスホイール　C. Windows + マウスホイール　D. Ctrl + マウスホイール
+53	問題文: 会議室でノートPCをプロジェクターにつなぎ、「複製」や「拡張」をすばやく選びたい。使うショートカットはどれか。	選択肢: A. Windows + P　B. Windows + I　C. Windows + E　D. Windows + X
+54	問題文: 発表のリハーサルで、必ず1枚目からスライドショーを始めたい。使うキーはどれか。	選択肢: A. Shift + F5　B. F5　C. Esc　D. F11
+55	問題文: 10枚目のスライドを編集中で、そこから発表表示を確認したい。使うショートカットはどれか。	選択肢: A. Ctrl + F5　B. F11　C. Shift + F5　D. Windows + P
+56	問題文: スライドショーを終えて編集画面へ戻りたい。使うキーはどれか。	選択肢: A. F5　B. Ctrl + W　C. Alt + Tab　D. Esc
+57	問題文: 発表中、説明を止めて聴衆の視線を自分に集めるために黒画面にしたい。押すキーはどれか。	選択肢: A. B　B. W　C. F5　D. P
+58	問題文: 発表中、画面を白くして一時中断したい。押すキーはどれか。	選択肢: A. B　B. W　C. Esc　D. Ctrl + P
+59	問題文: スライドショー中、図に丸を付けながら説明したい。使うショートカットはどれか。	選択肢: A. Ctrl + K　B. Ctrl + B　C. Ctrl + P　D. Ctrl + D
+60	問題文: 文章を修正中、右方向に1文字ずつ範囲を広げて選択したい。使うショートカットはどれか。	選択肢: A. Ctrl + →　B. Alt + →　C. Windows + →　D. Shift + →
+61	問題文: 長い英単語が続く文で、単語単位でカーソルを右へ移動したい。使うショートカットはどれか。	選択肢: A. Ctrl + →　B. Shift + →　C. Alt + →　D. Windows + →
+62	問題文: 入力中の行の先頭に戻って文字を追加したい。使うキーはどれか。	選択肢: A. End　B. Home　C. Ctrl + Home　D. Shift + Home
+63	問題文: 入力中の行の最後にすぐ移動したい。使うキーはどれか。	選択肢: A. Ctrl + End　B. Home　C. End　D. Shift + End
+64	問題文: 長い文書の最初へ一気に戻りたい。使うショートカットはどれか。	選択肢: A. Shift + Home　B. Home　C. Ctrl + End　D. Ctrl + Home
+65	問題文: 長い文書の最後へ一気に移動したい。使うショートカットはどれか。	選択肢: A. Ctrl + End　B. End　C. Shift + End　D. Ctrl + Home
+66	問題文: カーソルから行頭までを選んで消したい。まず使うショートカットはどれか。	選択肢: A. Ctrl + Home　B. Shift + Home　C. Ctrl + Backspace　D. Alt + ↑
+67	問題文: カーソルから行末までをまとめて選択したい。使うショートカットはどれか。	選択肢: A. End　B. Ctrl + End　C. Shift + End　D. Shift + Space
+68	問題文: レポートの見出しを強調するため、選択した文字を太字にしたい。使うショートカットはどれか。	選択肢: A. Ctrl + I　B. Ctrl + U　C. Ctrl + K　D. Ctrl + B
+69	問題文: 英単語や作品名などを斜体にしたい。使うショートカットはどれか。	選択肢: A. Ctrl + I　B. Ctrl + B　C. Ctrl + U　D. Ctrl + P
+70	問題文: 重要語句に下線を付けたい。使うショートカットはどれか。	選択肢: A. Ctrl + B　B. Ctrl + U　C. Ctrl + I　D. Ctrl + K
+71	問題文: カーソルの左側にある単語を丸ごと消して、入力をやり直したい。使うショートカットはどれか。	選択肢: A. Ctrl + Delete　B. Delete　C. Ctrl + Backspace　D. Shift + Delete
+72	問題文: カーソルの右側にある次の単語を丸ごと削除したい。使うショートカットはどれか。	選択肢: A. Ctrl + Backspace　B. Backspace　C. Shift + Delete　D. Ctrl + Delete
+73	問題文: 選択した「公式サイト」という文字にURLを設定したい。使うショートカットはどれか。	選択肢: A. Ctrl + K　B. Ctrl + L　C. Ctrl + D　D. Ctrl + J
+74	問題文: 画面がウィンドウでいっぱいなので、デスクトップを一瞬で表示したい。使うショートカットはどれか。	選択肢: A. Windows + E　B. Windows + D　C. Windows + L　D. Windows + P
+75	問題文: 資料とブラウザを左右に並べて見たい。ウィンドウを左右に固定するショートカットはどれか。	選択肢: A. Alt + ←→　B. Ctrl + ←→　C. Windows + ←→　D. Shift + ←→
+76	問題文: ウィンドウを画面いっぱいに最大化したい。使うショートカットはどれか。	選択肢: A. Alt + ↑　B. Ctrl + ↑　C. Shift + ↑　D. Windows + ↑
+77	問題文: 使い終わったアプリを終了したい。現在のアプリに対して使うショートカットはどれか。	選択肢: A. Alt + F4　B. Ctrl + W　C. Windows + D　D. Alt + Tab
+78	問題文: さっきコピーした複数の文章の中から、別のものを選んで貼り付けたい。使うショートカットはどれか。	選択肢: A. Ctrl + V　B. Windows + V　C. Ctrl + C　D. Windows + C
+79	問題文: Wi-FiやBluetoothなどの設定を変更するため、Windowsの設定画面を開きたい。使うショートカットはどれか。	選択肢: A. Windows + X　B. Windows + E　C. Windows + I　D. Windows + P
+80	問題文: デバイスマネージャーなどに行きやすい、スタートボタン右クリック相当のメニューを出したい。使うショートカットはどれか。	選択肢: A. Windows + L　B. Windows + D　C. Windows + V　D. Windows + X
+81	問題文: タスクバー左から1番目のアプリをキーボードで起動・切り替えしたい。使うショートカットはどれか。	選択肢: A. Windows + 1　B. Ctrl + 1　C. Alt + 1　D. Shift + 1
+82	問題文: ブラウザで複数タブを開いているとき、次のタブへ移動したい。使うショートカットはどれか。	選択肢: A. Alt + Tab　B. Ctrl + Tab　C. Ctrl + N　D. Ctrl + W
+83	問題文: ブラウザで1つ前のタブへ戻るように左方向へ切り替えたい。使うショートカットはどれか。	選択肢: A. Ctrl + T　B. Ctrl + W　C. Ctrl + Shift + Tab　D. Ctrl + Shift + T
+84	問題文: ブラウザで左から3番目のタブへ直接ジャンプしたい。使うショートカットはどれか。	選択肢: A. Windows + 3　B. Alt + 3　C. Shift + 3　D. Ctrl + 3
+85	問題文: URL欄をすぐ選択して、今のURLを消さずにそのまま上書き入力できる状態にしたい。使うショートカットはどれか。	選択肢: A. Ctrl + L　B. Ctrl + F　C. Ctrl + H　D. Ctrl + J
+86	問題文: アドレスバーを選択する別の方法として、Altキーと組み合わせて使うものはどれか。	選択肢: A. Alt + Tab　B. Alt + D　C. Alt + F4　D. Alt + ↑
+87	問題文: 後で読み返したいページをブックマークに入れたい。使うショートカットはどれか。	選択肢: A. Ctrl + J　B. Ctrl + H　C. Ctrl + D　D. Ctrl + K
+88	問題文: ダウンロードしたファイルの履歴を確認したい。使うショートカットはどれか。	選択肢: A. Ctrl + D　B. Ctrl + H　C. Ctrl + L　D. Ctrl + J
+89	問題文: Webページの文字が小さいので表示を大きくしたい。使うショートカットはどれか。	選択肢: A. Ctrl + ＋　B. Ctrl + 0　C. Ctrl + －　D. Ctrl + D
+90	問題文: Webページを拡大しすぎたので少し小さくしたい。使うショートカットはどれか。	選択肢: A. Ctrl + ＋　B. Ctrl + －　C. Ctrl + 0　D. Ctrl + L
+91	問題文: ブラウザの拡大率を標準の100%へ戻したい。使うショートカットはどれか。	選択肢: A. Ctrl + ＋　B. Ctrl + －　C. Ctrl + 0　D. Ctrl + R
+92	問題文: 長いWebページをマウスホイールなしで1画面分下へ進めたい。使うキーはどれか。	選択肢: A. Shift + Space　B. Ctrl + Space　C. Alt + Space　D. Space
+93	問題文: Webページを1画面分上へ戻って読みたい。使うショートカットはどれか。	選択肢: A. Shift + Space　B. Space　C. Ctrl + Space　D. Alt + Space
+94	問題文: ブラウザの閲覧履歴やCookieなどを削除する画面を開きたい。使うショートカットはどれか。	選択肢: A. Ctrl + H　B. Ctrl + Shift + Delete　C. Ctrl + J　D. Shift + Delete
+95	問題文: ファイルを探すため、エクスプローラーをすぐ開きたい。使うショートカットはどれか。	選択肢: A. Windows + I　B. Windows + P　C. Windows + E　D. Windows + X
+96	問題文: 「資料」フォルダーの中から、その親フォルダーへ移動したい。使うショートカットはどれか。	選択肢: A. Alt + ←　B. Alt + →　C. Ctrl + ↑　D. Alt + ↑
+97	問題文: ブラウザで1つ前に見ていたページへ戻りたい。使うショートカットはどれか。	選択肢: A. Alt + ←　B. Alt + →　C. Alt + ↑　D. Ctrl + ←
+98	問題文: ブラウザで戻ったあと、もう一度先のページへ進みたい。使うショートカットはどれか。	選択肢: A. Alt + ↑　B. Alt + →　C. Alt + ←　D. Ctrl + →
+99	問題文: デスクトップに新しいフォルダーを作りたい。使うショートカットはどれか。	選択肢: A. Ctrl + N　B. Ctrl + Shift + T　C. Ctrl + Shift + N　D. Ctrl + T
+100	問題文: 機密ファイルをごみ箱に残さず削除したい。使うショートカットはどれか。	選択肢: A. Delete　B. Ctrl + Delete　C. Backspace　D. Shift + Delete
+101	問題文: 席を離れる前に、他人に画面を見られないようロックしたい。使うショートカットはどれか。	選択肢: A. Windows + L　B. Windows + D　C. Windows + P　D. Windows + V
+102	問題文: アプリの動きが止まったので、タスクマネージャーを直接開きたい。使うショートカットはどれか。	選択肢: A. Alt + F4　B. Ctrl + Shift + Esc　C. Windows + X　D. Ctrl + Shift + N
+103	問題文: ブラウザを全画面表示にして、画面を広く使いたい。使うキーはどれか。	選択肢: A. F5　B. Esc　C. F11　D. F2
+104	問題文: フォルダー内のアイコンが小さいので、Ctrlキーを押しながらある操作をして大きさを変えたい。どれか。	選択肢: A. クリック　B. ドラッグ　C. 右クリック　D. マウスホイール
+105	問題文: 5級のCtrl + Pと4級のスライドショー中Ctrl + Pの違いとして正しいものはどれか。	選択肢: A. 通常時は印刷、スライドショー中はペン　B. 通常時は保存、スライドショー中は印刷　C. 通常時は検索、スライドショー中は新規作成　D. 通常時はタブ移動、スライドショー中は履歴表示
+106	問題文: F5について、PowerPointのスライドショーでの働きとして正しいものはどれか。	選択肢: A. 現在のスライドから開始する　B. 最初のスライドから開始する　C. スライドショーを終了する　D. 画面を黒くする
+107	問題文: Shift + F5について、PowerPointのスライドショーでの働きとして正しいものはどれか。	選択肢: A. ペンに変更する　B. 画面を白くする　C. 現在のスライドから開始する　D. 外部モニターを切り替える
+108	問題文: Escを使う場面として最も適切なものはどれか。	選択肢: A. 文字を太字にする　B. アドレスバーを選択する　C. 新しいフォルダーを作る　D. 全画面表示を終了する
+109	問題文: スライドショー中のBキーの由来として覚えやすいものはどれか。	選択肢: A. BlackのBで黒画面　B. BookmarkのBでお気に入り　C. BoldのBで太字　D. BackのBで戻る
+110	問題文: スライドショー中のWキーの由来として覚えやすいものはどれか。	選択肢: A. WindowのWでウィンドウ切替　B. WhiteのWで白画面　C. WordのWで文書作成　D. WebのWで検索
+111	問題文: Ctrl + Pをスライドショー実行中に使うときの目的はどれか。	選択肢: A. 印刷画面を開く　B. ページを更新する　C. ポインターをペンに変更する　D. 新しいタブを開く
+112	問題文: Shift + 矢印キーの説明として正しいものはどれか。	選択肢: A. 1単語ごとに削除する　B. アプリを切り替える　C. タブを閉じる　D. 文字や行を少しずつ範囲選択する
+113	問題文: Ctrl + 矢印キー（←→）の説明として正しいものはどれか。	選択肢: A. カーソルを1単語ごとに移動する　B. 画面を左右に分割する　C. 前後のページに移動する　D. タブを左右に切り替える
+114	問題文: Homeキーの説明として正しいものはどれか。	選択肢: A. ファイルの一番上へ移動する　B. 現在の行の先頭へ移動する　C. 現在の行の末尾へ移動する　D. 行末まで選択する
+115	問題文: Endキーの説明として正しいものはどれか。	選択肢: A. ページの一番下へ移動する　B. 行頭まで選択する　C. 現在の行の末尾へ移動する　D. ファイルを終了する
+116	問題文: Ctrl + Homeの説明として正しいものはどれか。	選択肢: A. 行の先頭へ移動する　B. 行頭まで選択する　C. ページの一番下へ移動する　D. ファイルやページの一番上へ移動する
+117	問題文: Ctrl + Endの説明として正しいものはどれか。	選択肢: A. ファイルやページの一番下へ移動する　B. 行の末尾へ移動する　C. 行末まで選択する　D. ページを更新する
+118	問題文: Shift + Homeの説明として正しいものはどれか。	選択肢: A. ページの先頭へ移動する　B. カーソル位置から行の先頭まで選択する　C. 行末へ移動する　D. タブを左へ切り替える
+119	問題文: Shift + Endの説明として正しいものはどれか。	選択肢: A. 行末へ移動するだけ　B. ページ末尾へ移動する　C. カーソル位置から行の末尾まで選択する　D. 画面を白くする
+120	問題文: Ctrl + BのBは何の覚え方がしやすいか。	選択肢: A. Bookmark　B. Back　C. Browser　D. Bold
+121	問題文: Ctrl + IのIは何の覚え方がしやすいか。	選択肢: A. Italic　B. Insert　C. Internet　D. Image
+122	問題文: Ctrl + UのUは何の覚え方がしやすいか。	選択肢: A. Undo　B. Underline　C. Upload　D. Update
+123	問題文: Ctrl + Backspaceの説明として正しいものはどれか。	選択肢: A. 右側の1単語を削除する　B. ファイルを完全削除する　C. 左側の1単語を削除する　D. 直前の操作を元に戻す
+124	問題文: Ctrl + Deleteの説明として正しいものはどれか。	選択肢: A. 左側の1単語を削除する　B. 文字を貼り付ける　C. ファイルを保存する　D. 右側の1単語を削除する
+125	問題文: Ctrl + Kの説明として正しいものはどれか。	選択肢: A. 選択した文字にハイパーリンクを挿入する　B. 画面をロックする　C. アドレスバーを選択する　D. ダウンロード履歴を開く
+126	問題文: Windows + Dの説明として正しいものはどれか。	選択肢: A. 設定画面を開く　B. デスクトップを表示する　C. エクスプローラーを開く　D. 画面をロックする
+127	問題文: Windows + ← または Windows + →の説明として正しいものはどれか。	選択肢: A. ページを戻る・進む　B. 単語ごとに移動する　C. ウィンドウを左右に配置する　D. タブを左右に切り替える
+128	問題文: Windows + ↑ または Windows + ↓の説明として正しいものはどれか。	選択肢: A. フォルダーの階層を移動する　B. 画面をスクロールする　C. 行を選択する　D. ウィンドウの最大化・復元・最小化を行う
+129	問題文: Alt + F4の説明として正しいものはどれか。	選択肢: A. 現在のアプリやウィンドウを終了する　B. 開いているアプリを切り替える　C. ブラウザのタブを閉じる　D. デスクトップを表示する
+130	問題文: Windows + Vの説明として正しいものはどれか。	選択肢: A. 貼り付けのみを行う　B. クリップボードの履歴を表示する　C. 設定画面を開く　D. 新しいフォルダーを作る
+131	問題文: Windows + Iの説明として正しいものはどれか。	選択肢: A. エクスプローラーを開く　B. 画面をロックする　C. Windowsの設定を開く　D. デスクトップを表示する
+132	問題文: Windows + Xの説明として正しいものはどれか。	選択肢: A. タスクバーのアプリを起動する　B. クリップボード履歴を開く　C. 外部モニター設定を切り替える　D. スタートボタン右クリック相当のメニューを開く
+133	問題文: Windows + 数字キー（1〜9）の説明として正しいものはどれか。	選択肢: A. タスクバーの対応するアプリを起動・切り替えする　B. ブラウザの指定番号タブへ移動する　C. 文字サイズを変更する　D. 画面表示倍率をリセットする
+134	問題文: Ctrl + Tabの説明として正しいものはどれか。	選択肢: A. アプリを切り替える　B. ブラウザの次のタブへ切り替える　C. 閉じたタブを復元する　D. 新しいタブを開く
+135	問題文: Ctrl + Shift + Tabの説明として正しいものはどれか。	選択肢: A. 新しいタブを開く　B. 閉じたタブを開き直す　C. ブラウザの前のタブへ切り替える　D. タスクマネージャーを開く
+136	問題文: Ctrl + 数字キー（1〜9）の説明として正しいものはどれか。	選択肢: A. タスクバーアプリを起動する　B. 画面の表示倍率を変える　C. 行番号へ移動する　D. ブラウザの指定番号タブへ移動する
+137	問題文: Ctrl + Lの説明として正しいものはどれか。	選択肢: A. ブラウザのアドレスバーを選択する　B. 画面をロックする　C. リンクを挿入する　D. ダウンロード履歴を開く
+138	問題文: Alt + Dの説明として正しいものはどれか。	選択肢: A. デスクトップを表示する　B. ブラウザのアドレスバーを選択する　C. アプリを終了する　D. 前のページに戻る
+139	問題文: Ctrl + Dのブラウザでの説明として正しいものはどれか。	選択肢: A. ダウンロード履歴を開く　B. 履歴を削除する　C. 現在のページをお気に入りに追加する　D. アドレスバーを選択する
+140	問題文: Ctrl + Jのブラウザでの説明として正しいものはどれか。	選択肢: A. ブックマークに追加する　B. アドレスバーを選択する　C. 閲覧履歴を開く　D. ダウンロード履歴を開く
+141	問題文: Ctrl + ＋の説明として正しいものはどれか。	選択肢: A. ブラウザ表示を拡大する　B. ブラウザ表示を縮小する　C. 表示倍率を100%に戻す　D. ページを更新する
+142	問題文: Ctrl + －の説明として正しいものはどれか。	選択肢: A. 表示倍率を100%に戻す　B. ブラウザ表示を縮小する　C. ブラウザ表示を拡大する　D. ファイルを完全削除する
+143	問題文: Ctrl + 0の説明として正しいものはどれか。	選択肢: A. ページを最上部へ移動する　B. タブを閉じる　C. ブラウザの表示倍率を100%に戻す　D. 画面をロックする
+144	問題文: Spaceキーのブラウザ操作として正しいものはどれか。	選択肢: A. 1画面分上へスクロールする　B. タブを右へ移動する　C. アドレスバーを選択する　D. 1画面分下へスクロールする
+145	問題文: Shift + Spaceのブラウザ操作として正しいものはどれか。	選択肢: A. 1画面分上へスクロールする　B. 1画面分下へスクロールする　C. 前のタブへ移動する　D. 表示倍率を戻す
+146	問題文: Ctrl + Shift + Deleteの説明として正しいものはどれか。	選択肢: A. 新しいフォルダーを作る　B. 閲覧履歴データの削除画面を開く　C. ファイルを完全削除する　D. タスクマネージャーを開く
+147	問題文: Windows + Eの説明として正しいものはどれか。	選択肢: A. 設定画面を開く　B. デスクトップを表示する　C. エクスプローラーを開く　D. 画面をロックする
+148	問題文: Alt + ↑のエクスプローラーでの説明として正しいものはどれか。	選択肢: A. 前の画面へ戻る　B. 次の画面へ進む　C. 画面を上へスクロールする　D. 1つ上の階層へ移動する
+149	問題文: Alt + ←の説明として正しいものはどれか。	選択肢: A. 前の画面へ戻る　B. 次の画面へ進む　C. 1つ上の階層へ移動する　D. 単語ごとに移動する
+150	問題文: Alt + →の説明として正しいものはどれか。	選択肢: A. 1つ上の階層へ移動する　B. 先の画面へ進む　C. ウィンドウを右に配置する　D. 次の単語へ移動する
+151	問題文: Ctrl + Shift + Nの説明として正しいものはどれか。	選択肢: A. 閉じたタブを開き直す　B. 新しいウィンドウを開く　C. 新しいフォルダーを作成する　D. 閲覧履歴データを削除する
+152	問題文: Shift + Deleteの説明として正しいものはどれか。	選択肢: A. 右側の単語を削除する　B. 左側の単語を削除する　C. 新しいフォルダーを作る　D. ごみ箱を経由せず完全削除する
+153	問題文: Windows + Lの説明として正しいものはどれか。	選択肢: A. パソコンの画面をロックする　B. アドレスバーを選択する　C. リンクを挿入する　D. 外部画面を切り替える
+154	問題文: Ctrl + Shift + Escの説明として正しいものはどれか。	選択肢: A. 閲覧履歴を削除する　B. タスクマネージャーを開く　C. 新しいフォルダーを作る　D. アプリを切り替える
+155	問題文: F11の説明として正しいものはどれか。	選択肢: A. ページを更新する　B. ファイル名を変更する　C. ブラウザやエクスプローラーを全画面表示にする　D. スライドショーを終了する
+156	問題文: Ctrl + マウスホイールの説明として正しいものはどれか。	選択肢: A. ページを戻る　B. タブを切り替える　C. アプリを終了する　D. デスクトップやフォルダー内のアイコンの大きさを変更する
+157	問題文: 「外部ディスプレイに映す設定を変える」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Windows + P　B. Windows + L　C. Windows + V　D. Windows + X
+158	問題文: 「現在のスライドから発表を始める」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. F5　B. Shift + F5　C. Esc　D. Ctrl + P
+159	問題文: 「行の途中から行末までをまとめて選択する」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Ctrl + End　B. End　C. Shift + End　D. Ctrl + Shift + N
+160	問題文: 「現在のアプリを終了する」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Ctrl + W　B. Alt + Tab　C. Windows + D　D. Alt + F4
+161	問題文: 「過去のコピー履歴から選んで貼り付ける」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Windows + V　B. Ctrl + V　C. Ctrl + C　D. Windows + C
+162	問題文: 「Windowsの設定を開く」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Windows + E　B. Windows + I　C. Windows + D　D. Windows + P
+163	問題文: 「ブラウザで左隣のタブに切り替える」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Ctrl + Tab　B. Alt + Tab　C. Ctrl + Shift + Tab　D. Ctrl + Shift + T
+164	問題文: 「ダウンロード履歴を開く」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Ctrl + H　B. Ctrl + D　C. Ctrl + L　D. Ctrl + J
+165	問題文: 「ブラウザ表示を標準サイズに戻す」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Ctrl + 0　B. Ctrl + ＋　C. Ctrl + －　D. Ctrl + R
+166	問題文: 「エクスプローラーを開く」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Windows + I　B. Windows + E　C. Windows + D　D. Windows + X
+167	問題文: 「ごみ箱に入れずに削除する」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Ctrl + Delete　B. Delete　C. Shift + Delete　D. Ctrl + Backspace
+168	問題文: 「タスクマネージャーを開く」と聞いたとき、最も適切なショートカットはどれか。	選択肢: A. Alt + F4　B. Windows + X　C. Ctrl + Shift + N　D. Ctrl + Shift + Esc
+169	問題文: 発表会でプロジェクターに映らない。まず出力先を切り替えるために試すショートカットはどれか。	選択肢: A. Windows + P　B. Windows + E　C. Windows + L　D. Windows + D
+170	問題文: プレゼンの途中で編集しているスライドからすぐ確認したい。使うショートカットはどれか。	選択肢: A. F5　B. Shift + F5　C. Ctrl + P　D. Esc
+171	問題文: プレゼンを最初から通して確認したい。使うキーはどれか。	選択肢: A. Shift + F5　B. F11　C. F5　D. Esc
+172	問題文: スライドショー中にペン表示へ変える操作として正しいものはどれか。	選択肢: A. Ctrl + K　B. Ctrl + B　C. Ctrl + D　D. Ctrl + P
+173	問題文: 黒画面で発表を一時中断したあと、もう一度Bを押すと元に戻せる。黒画面にするキーはどれか。	選択肢: A. B　B. W　C. Esc　D. F11
+174	問題文: スライドショー中に白画面にするキーは、色の英語の頭文字で覚えられる。どれか。	選択肢: A. B　B. W　C. P　D. L
+175	問題文: 文字を左へ1文字ずつ選択範囲に含めたい。使うショートカットはどれか。	選択肢: A. Ctrl + ←　B. Alt + ←　C. Shift + ←　D. Windows + ←
+176	問題文: 単語単位でカーソルを左へ移動したい。使うショートカットはどれか。	選択肢: A. Shift + ←　B. Alt + ←　C. Windows + ←　D. Ctrl + ←
+177	問題文: 行頭へ移動した後、そこから文章を入力したい。使うキーはどれか。	選択肢: A. Home　B. End　C. Ctrl + Home　D. Shift + Home
+178	問題文: 行末へ移動した後、続きの文章を入力したい。使うキーはどれか。	選択肢: A. Home　B. End　C. Ctrl + End　D. Shift + End
+179	問題文: ページ上部の見出しへ一気に戻る操作として最も近いものはどれか。	選択肢: A. Shift + Home　B. Home　C. Ctrl + Home　D. Ctrl + End
+180	問題文: ページ下部の最後の内容へ一気に移動する操作として最も近いものはどれか。	選択肢: A. End　B. Shift + End　C. Home　D. Ctrl + End
+181	問題文: カーソルから行頭までを選択して、その部分だけコピーしたい。最初に使うショートカットはどれか。	選択肢: A. Shift + Home　B. Ctrl + Home　C. Home　D. Ctrl + A
+182	問題文: カーソルから行末までを選択して太字にしたい。まず範囲選択に使うショートカットはどれか。	選択肢: A. End　B. Shift + End　C. Ctrl + End　D. Ctrl + B
+183	問題文: 太字、斜体、下線のうち、Ctrl + Bで行うものはどれか。	選択肢: A. 斜体　B. 下線　C. 太字　D. ハイパーリンク
+184	問題文: 太字、斜体、下線のうち、Ctrl + Uで行うものはどれか。	選択肢: A. 太字　B. 斜体　C. ハイパーリンク　D. 下線
+185	問題文: 太字、斜体、下線のうち、Ctrl + Iで行うものはどれか。	選択肢: A. 斜体　B. 太字　C. 下線　D. 印刷
+186	問題文: URLを付けたい文字を選んだ後に使う、リンク挿入のショートカットはどれか。	選択肢: A. Ctrl + L　B. Ctrl + K　C. Ctrl + D　D. Ctrl + J
+187	問題文: 左側の単語削除と右側の単語削除の組み合わせとして正しいものはどれか。	選択肢: A. 左側はCtrl + Delete、右側はCtrl + Backspace　B. 左側はShift + Delete、右側はCtrl + Delete　C. 左側はCtrl + Backspace、右側はCtrl + Delete　D. 左側はBackspace、右側はShift + Delete
+188	問題文: 画面上のウィンドウを一度すべて隠し、デスクトップのファイルを確認したい。使うショートカットはどれか。	選択肢: A. Windows + E　B. Alt + Tab　C. Windows + L　D. Windows + D
+189	問題文: 左右2分割作業をしたいとき、ウィンドウを右半分に寄せるショートカットはどれか。	選択肢: A. Windows + →　B. Ctrl + →　C. Alt + →　D. Shift + →
+190	問題文: ウィンドウを左半分に寄せたい。使うショートカットはどれか。	選択肢: A. Ctrl + ←　B. Windows + ←　C. Alt + ←　D. Shift + ←
+191	問題文: ウィンドウの最小化に関係するWindowsキーの組み合わせはどれか。	選択肢: A. Windows + P　B. Windows + I　C. Windows + ↓　D. Windows + E
+192	問題文: ウィンドウの最大化に関係するWindowsキーの組み合わせはどれか。	選択肢: A. Windows + D　B. Windows + L　C. Windows + V　D. Windows + ↑
+193	問題文: いま使っているアプリを終了する操作と、アプリを切り替える操作の組み合わせとして正しいものはどれか。	選択肢: A. 終了はAlt + F4、切り替えはAlt + Tab　B. 終了はAlt + Tab、切り替えはAlt + F4　C. 終了はWindows + D、切り替えはAlt + F4　D. 終了はCtrl + Tab、切り替えはCtrl + W
+194	問題文: Ctrl + VとWindows + Vの違いとして正しいものはどれか。	選択肢: A. Ctrl + Vは履歴表示、Windows + Vはコピー　B. Ctrl + Vは通常の貼り付け、Windows + Vはクリップボード履歴　C. Ctrl + Vは保存、Windows + Vは印刷　D. Ctrl + Vはロック、Windows + Vは設定
+195	問題文: Windows + IとWindows + Xの違いとして正しいものはどれか。	選択肢: A. Windows + Iは設定、Windows + Xはシステムツール系メニュー　B. Windows + Iはエクスプローラー、Windows + Xは設定　C. Windows + Iはロック、Windows + Xはデスクトップ表示　D. Windows + Iは表示切替、Windows + Xはコピー履歴
+196	問題文: Ctrl + TabとAlt + Tabの違いとして正しいものはどれか。	選択肢: A. Ctrl + Tabはアプリ切替、Alt + Tabはタブ切替　B. Ctrl + Tabは次のブラウザタブ、Alt + Tabはアプリやウィンドウ切替　C. Ctrl + Tabは閉じたタブ復元、Alt + Tabは新しいタブ　D. Ctrl + Tabは印刷、Alt + Tabは保存
+197	問題文: Ctrl + 数字キーとWindows + 数字キーの違いとして正しいものはどれか。	選択肢: A. Ctrl + 数字はタスクバー、Windows + 数字はブラウザタブ　B. Ctrl + 数字は拡大、Windows + 数字は縮小　C. Ctrl + 数字はブラウザの指定タブ、Windows + 数字はタスクバーアプリ　D. Ctrl + 数字は検索、Windows + 数字は履歴
+198	問題文: Ctrl + LとCtrl + Kの違いとして正しいものはどれか。	選択肢: A. Ctrl + Lはアドレスバー選択、Ctrl + Kはリンク挿入　B. Ctrl + Lはリンク挿入、Ctrl + Kはアドレスバー選択　C. Ctrl + Lはダウンロード履歴、Ctrl + Kはブックマーク追加　D. Ctrl + Lはロック、Ctrl + Kは設定
+199	問題文: Ctrl + DとCtrl + Jの違いとして正しいものはどれか。	選択肢: A. Ctrl + Dはダウンロード履歴、Ctrl + Jはブックマーク　B. Ctrl + Dはブックマーク追加、Ctrl + Jはダウンロード履歴　C. Ctrl + Dはアドレスバー選択、Ctrl + Jは表示拡大　D. Ctrl + Dは履歴削除、Ctrl + Jは履歴表示
+200	問題文: Ctrl + ＋、Ctrl + －、Ctrl + 0の組み合わせとして正しいものはどれか。	選択肢: A. ＋は縮小、－は拡大、0は保存　B. ＋は保存、－は印刷、0は検索　C. ＋は拡大、－は縮小、0は100%に戻す　D. ＋はタブ移動、－はタブ復元、0は閉じる
+201	問題文: SpaceとShift + Spaceの違いとして正しいものはどれか。	選択肢: A. Spaceは上へ、Shift + Spaceは下へスクロール　B. Spaceは拡大、Shift + Spaceは縮小　C. Spaceは新しいタブ、Shift + Spaceは閉じる　D. Spaceは下へ、Shift + Spaceは上へスクロール
+202	問題文: Ctrl + Shift + DeleteとShift + Deleteの違いとして正しいものはどれか。	選択肢: A. Ctrl + Shift + Deleteは閲覧履歴データ削除画面、Shift + Deleteは完全削除　B. Ctrl + Shift + Deleteは完全削除、Shift + Deleteは履歴画面　C. Ctrl + Shift + Deleteは新規フォルダー、Shift + Deleteはタスク管理　D. Ctrl + Shift + Deleteはコピー履歴、Shift + Deleteは印刷
+203	問題文: Windows + EとAlt + ↑の違いとして正しいものはどれか。	選択肢: A. Windows + Eは親フォルダー、Alt + ↑はエクスプローラー起動　B. Windows + Eはエクスプローラーを開く、Alt + ↑は親フォルダーへ移動　C. Windows + Eは設定、Alt + ↑は戻る　D. Windows + Eはロック、Alt + ↑は全画面
+204	問題文: Alt + ←、Alt + →、Alt + ↑の組み合わせとして正しいものはどれか。	選択肢: A. ←は戻る、→は進む、↑は上の階層へ移動　B. ←は進む、→は戻る、↑は全画面　C. ←は左配置、→は右配置、↑は最大化　D. ←は単語移動、→は単語移動、↑は行選択
+205	問題文: Ctrl + Shift + NとCtrl + Shift + Tの違いとして正しいものはどれか。	選択肢: A. Ctrl + Shift + Nは閉じたタブ復元、Ctrl + Shift + Tは新規フォルダー　B. Ctrl + Shift + Nは新規フォルダー、Ctrl + Shift + Tは閉じたタブ復元　C. Ctrl + Shift + Nは履歴削除、Ctrl + Shift + Tは履歴表示　D. Ctrl + Shift + Nは全画面、Ctrl + Shift + Tはロック
+206	問題文: Windows + LとWindows + Dの違いとして正しいものはどれか。	選択肢: A. Windows + Lはロック、Windows + Dはデスクトップ表示　B. Windows + Lはデスクトップ表示、Windows + Dはロック　C. Windows + Lは設定、Windows + Dはエクスプローラー　D. Windows + Lはコピー履歴、Windows + Dは表示切替
+207	問題文: Ctrl + Shift + EscとAlt + F4の違いとして正しいものはどれか。	選択肢: A. Ctrl + Shift + Escはアプリ終了、Alt + F4はタスクマネージャー　B. Ctrl + Shift + Escはタスクマネージャー、Alt + F4は現在のアプリ終了　C. Ctrl + Shift + Escは新規フォルダー、Alt + F4は全画面　D. Ctrl + Shift + Escはロック、Alt + F4はコピー
+208	問題文: F11とEscの違いとして正しいものはどれか。	選択肢: A. F11はブラウザなどの全画面表示、Escはスライドショーや動画の全画面終了　B. F11は印刷、Escは保存　C. F11はファイル名変更、Escはタブ移動　D. F11はリンク挿入、Escは履歴削除
+209	問題文: 発表直前に「PC画面のみ」から「複製」へ切り替えたい。どのショートカットが目的に合うか。	選択肢: A. Windows + D　B. Windows + P　C. Windows + V　D. Windows + L
+210	問題文: PowerPointで5枚目を修正後、5枚目から動きを確認したい。使うショートカットはどれか。	選択肢: A. F5　B. Esc　C. Shift + F5　D. Ctrl + P
+211	問題文: PowerPointの1枚目から本番と同じ流れで確認したい。使うキーはどれか。	選択肢: A. Shift + F5　B. Esc　C. F11　D. F5
+212	問題文: スライドショー中、説明をいったん止めたいがスライドを閉じたくはない。黒画面にするキーはどれか。	選択肢: A. B　B. Esc　C. F5　D. Ctrl + W
+213	問題文: スライドショー中、白い画面にして内容を一時的に隠したい。押すキーはどれか。	選択肢: A. B　B. W　C. F11　D. Ctrl + P
+214	問題文: プレゼン中に手書きで線を引きたい。ペンに切り替えるショートカットはどれか。	選択肢: A. Ctrl + B　B. Ctrl + K　C. Ctrl + P　D. Ctrl + U
+215	問題文: 動画を全画面で見ていて、通常表示へ戻りたい。使うキーはどれか。	選択肢: A. F5　B. F11　C. Alt + F4　D. Esc
+216	問題文: 文章の一部をキーボードだけで細かく選びたい。使うショートカットはどれか。	選択肢: A. Shift + 矢印キー　B. Ctrl + 矢印キー　C. Alt + 矢印キー　D. Windows + 矢印キー
+217	問題文: 文章中の単語を飛び石のように移動しながらカーソルを動かしたい。使うショートカットはどれか。	選択肢: A. Shift + 矢印キー　B. Ctrl + 矢印キー　C. Windows + 矢印キー　D. Alt + 矢印キー
+218	問題文: 行の先頭へ移動するHomeキーと、文書の先頭へ移動するショートカットの組み合わせとして正しいものはどれか。	選択肢: A. 行頭はEnd、文書先頭はCtrl + End　B. 行頭はShift + Home、文書先頭はHome　C. 行頭はHome、文書先頭はCtrl + Home　D. 行頭はCtrl + Home、文書先頭はHome
+219	問題文: 行の末尾へ移動するEndキーと、文書の末尾へ移動するショートカットの組み合わせとして正しいものはどれか。	選択肢: A. 行末はHome、文書末尾はCtrl + Home　B. 行末はShift + End、文書末尾はEnd　C. 行末はCtrl + End、文書末尾はEnd　D. 行末はEnd、文書末尾はCtrl + End
+220	問題文: カーソルから行頭までを選ぶ操作と、カーソルから行末までを選ぶ操作の組み合わせとして正しいものはどれか。	選択肢: A. 行頭までShift + Home、行末までShift + End　B. 行頭までCtrl + Home、行末までCtrl + End　C. 行頭までHome、行末までEnd　D. 行頭までCtrl + ←、行末までCtrl + →
+221	問題文: 見出しを太字、用語を斜体、重要語を下線にしたい。正しい組み合わせはどれか。	選択肢: A. 太字Ctrl + I、斜体Ctrl + U、下線Ctrl + B　B. 太字Ctrl + B、斜体Ctrl + I、下線Ctrl + U　C. 太字Ctrl + U、斜体Ctrl + B、下線Ctrl + I　D. 太字Ctrl + K、斜体Ctrl + B、下線Ctrl + D
+222	問題文: カーソル左側の単語を削除する操作と、右側の単語を削除する操作の組み合わせとして正しいものはどれか。	選択肢: A. 左Ctrl + Delete、右Ctrl + Backspace　B. 左Delete、右Backspace　C. 左Ctrl + Backspace、右Ctrl + Delete　D. 左Shift + Delete、右Ctrl + Delete
+223	問題文: リンク挿入とブックマーク追加の組み合わせとして正しいものはどれか。	選択肢: A. リンク挿入Ctrl + D、ブックマークCtrl + K　B. リンク挿入Ctrl + K、ブックマークCtrl + D　C. リンク挿入Ctrl + L、ブックマークCtrl + J　D. リンク挿入Ctrl + J、ブックマークCtrl + L
+224	問題文: デスクトップ表示、設定画面、画面ロックの組み合わせとして正しいものはどれか。	選択肢: A. デスクトップWindows + D、設定Windows + I、ロックWindows + L　B. デスクトップWindows + E、設定Windows + D、ロックWindows + I　C. デスクトップWindows + L、設定Windows + P、ロックWindows + D　D. デスクトップWindows + V、設定Windows + X、ロックWindows + E
+225	問題文: エクスプローラー、投影設定、クリップボード履歴の組み合わせとして正しいものはどれか。	選択肢: A. エクスプローラーWindows + P、投影Windows + V、履歴Windows + E　B. エクスプローラーWindows + E、投影Windows + P、履歴Windows + V　C. エクスプローラーWindows + V、投影Windows + E、履歴Windows + P　D. エクスプローラーWindows + X、投影Windows + I、履歴Windows + L
+226	問題文: ブラウザで次のタブ、前のタブ、指定番号タブへ移動する組み合わせとして正しいものはどれか。	選択肢: A. 次Alt + Tab、前Alt + Shift + Tab、指定Windows + 数字　B. 次Ctrl + T、前Ctrl + W、指定Ctrl + D　C. 次Ctrl + Tab、前Ctrl + Shift + Tab、指定Ctrl + 数字　D. 次Ctrl + R、前Ctrl + H、指定Ctrl + J
+227	問題文: アドレスバー選択、ブックマーク追加、ダウンロード履歴の組み合わせとして正しいものはどれか。	選択肢: A. アドレスバーCtrl + L、ブックマークCtrl + D、ダウンロードCtrl + J　B. アドレスバーCtrl + D、ブックマークCtrl + J、ダウンロードCtrl + L　C. アドレスバーCtrl + J、ブックマークCtrl + L、ダウンロードCtrl + D　D. アドレスバーCtrl + H、ブックマークCtrl + F、ダウンロードCtrl + R
+228	問題文: 拡大、縮小、100%に戻すの組み合わせとして正しいものはどれか。	選択肢: A. 拡大Ctrl + －、縮小Ctrl + ＋、戻すCtrl + R　B. 拡大Ctrl + ＋、縮小Ctrl + －、戻すCtrl + 0　C. 拡大Ctrl + 0、縮小Ctrl + R、戻すCtrl + ＋　D. 拡大Ctrl + D、縮小Ctrl + J、戻すCtrl + L
+229	問題文: Webページで1画面下へ進む操作と、1画面上へ戻る操作の組み合わせとして正しいものはどれか。	選択肢: A. 下Space、上Shift + Space　B. 下Shift + Space、上Space　C. 下Ctrl + Space、上Alt + Space　D. 下Ctrl + Tab、上Ctrl + Shift + Tab
+230	問題文: エクスプローラーで新規フォルダー作成、親フォルダー移動、完全削除の組み合わせとして正しいものはどれか。	選択肢: A. 新規Ctrl + Shift + T、親Alt + ←、完全Ctrl + Delete　B. 新規Ctrl + Shift + N、親Alt + ↑、完全Shift + Delete　C. 新規Windows + E、親Alt + →、完全Ctrl + Backspace　D. 新規Ctrl + N、親Ctrl + ↑、完全Delete
+231	問題文: 会社のPCで席を外す前に最も使うべきショートカットはどれか。	選択肢: A. Windows + L　B. Windows + D　C. Ctrl + W　D. Alt + Tab
+232	問題文: フリーズしたアプリを確認して終了したいとき、まず開くものとして最も適切なのはどれか。	選択肢: A. エクスプローラー　B. タスクマネージャー　C. クリップボード履歴　D. ブックマーク画面
+233	問題文: タスクマネージャーを開くショートカットはどれか。	選択肢: A. Ctrl + Shift + N　B. Ctrl + Shift + T　C. Ctrl + Shift + Esc　D. Ctrl + Shift + Delete
+234	問題文: ブラウザを全画面表示にしたり、元へ戻したりするキーはどれか。	選択肢: A. F5　B. Esc　C. F2　D. F11
+235	問題文: デスクトップのアイコン表示を大きくしたり小さくしたりしたい。使う操作はどれか。	選択肢: A. Ctrl + マウスホイール　B. Shift + マウスホイール　C. Alt + Tab　D. Windows + P
+236	問題文: コピーはしたが、直前の1つだけでなく過去のコピー内容から選びたい。使うショートカットはどれか。	選択肢: A. Ctrl + V　B. Windows + V　C. Ctrl + C　D. Ctrl + A
+237	問題文: 画面をロックするWindows + LのLは、何の意味で覚えるとよいか。	選択肢: A. Link　B. List　C. Lock　D. Left
+238	問題文: 設定を開くWindows + IのIは、何の意味で覚えると近いか。	選択肢: A. Informationや設定項目への入口　B. Italic　C. Insert　D. Internet履歴
+239	問題文: エクスプローラーを開くWindows + EのEは、何で覚えるとよいか。	選択肢: A. End　B. Explorer　C. Escape　D. Edit
+240	問題文: ブックマーク追加のCtrl + Dは、どの場面で使うのが最も自然か。	選択肢: A. 後で見たいページを保存しておきたいとき　B. ダウンロード履歴を見たいとき　C. URL欄へ移動したいとき　D. ページを削除したいとき
+241	問題文: Ctrl + Jを使う場面として最も自然なものはどれか。	選択肢: A. ページをお気に入りに入れたい　B. ダウンロードしたファイルの一覧を見たい　C. ページを1画面下へ進めたい　D. リンクを挿入したい
+242	問題文: Ctrl + Lを使う場面として最も自然なものはどれか。	選択肢: A. Webページ内の語句を検索したい　B. 文字を太字にしたい　C. URL欄を選択して検索語を打ちたい　D. タブを閉じたい
+243	問題文: Ctrl + Shift + Deleteを使う場面として最も自然なものはどれか。	選択肢: A. ファイルを完全削除したい　B. 新しいフォルダーを作りたい　C. タスクマネージャーを開きたい　D. ブラウザの閲覧履歴データ削除画面を開きたい
+244	問題文: Alt + ↑を使う場面として最も自然なものはどれか。	選択肢: A. エクスプローラーで親フォルダーへ移動したい　B. ブラウザで前のページへ戻りたい　C. ウィンドウを最大化したい　D. カーソルを単語単位で動かしたい
+245	問題文: Alt + ←を使う場面として最も自然なものはどれか。	選択肢: A. 親フォルダーへ移動したい　B. 前の画面に戻りたい　C. 次の画面へ進みたい　D. 左の単語へ移動したい
+246	問題文: Ctrl + Shift + Nを使う場面として最も自然なものはどれか。	選択肢: A. 閉じたタブを戻したい　B. 履歴を削除したい　C. 新しいフォルダーを作りたい　D. 画面をロックしたい
+247	問題文: Shift + Deleteを使うときの注意として最も正しいものはどれか。	選択肢: A. コピー履歴が消える　B. ブラウザ履歴だけが消える　C. タブが完全に閉じる　D. ごみ箱を経由しない完全削除なので注意する
+248	問題文: Windows + Pで選べる内容として最も近いものはどれか。	選択肢: A. PC画面のみ・複製・拡張・セカンドスクリーンのみ　B. コピー・切り取り・貼り付け・元に戻す　C. 太字・斜体・下線・リンク　D. 戻る・進む・更新・検索
+249	問題文: Windows + Dをもう一度押したときの動きとして最も近いものはどれか。	選択肢: A. 画面がロックされる　B. 最小化したウィンドウが元に戻る　C. エクスプローラーが開く　D. 設定画面が開く
+250	問題文: Windows + →を使う目的として最も近いものはどれか。	選択肢: A. 前のページへ戻る　B. 次の単語へ移動する　C. ウィンドウを画面右側に配置する　D. 右側の単語を削除する
+251	問題文: Windows + ↓を使う目的として最も近いものはどれか。	選択肢: A. 親フォルダーへ移動する　B. ページを下へスクロールする　C. タブを次へ切り替える　D. ウィンドウを元のサイズに戻す・最小化する
+252	問題文: Alt + F4とCtrl + Wの違いとして最も正しいものはどれか。	選択肢: A. Alt + F4はアプリやウィンドウ終了、Ctrl + Wは今のタブやウィンドウを閉じる　B. Alt + F4はコピー、Ctrl + Wは貼り付け　C. Alt + F4は保存、Ctrl + Wは印刷　D. Alt + F4は設定、Ctrl + Wはロック
+253	問題文: Ctrl + TabとCtrl + Shift + Tの違いとして正しいものはどれか。	選択肢: A. Ctrl + Tabは閉じたタブ復元、Ctrl + Shift + Tは次のタブ　B. Ctrl + Tabは次のタブへ切替、Ctrl + Shift + Tは閉じたタブ復元　C. Ctrl + Tabは新しいタブ、Ctrl + Shift + Tはタブを閉じる　D. Ctrl + Tabは履歴表示、Ctrl + Shift + Tは印刷
+254	問題文: Ctrl + LとCtrl + Fの違いとして正しいものはどれか。	選択肢: A. Ctrl + Lはページ内検索、Ctrl + Fはアドレスバー選択　B. Ctrl + Lはアドレスバー選択、Ctrl + Fはページ内検索　C. Ctrl + Lは保存、Ctrl + Fは印刷　D. Ctrl + Lはブックマーク、Ctrl + Fはダウンロード履歴
+255	問題文: Ctrl + DとWindows + Dの違いとして正しいものはどれか。	選択肢: A. Ctrl + Dはデスクトップ表示、Windows + Dはブックマーク　B. Ctrl + Dはブックマーク追加、Windows + Dはデスクトップ表示　C. Ctrl + Dは削除画面、Windows + Dはダウンロード履歴　D. Ctrl + Dは設定、Windows + Dは外部画面
+256	問題文: F5について、ブラウザとPowerPointでの違いとして正しいものはどれか。	選択肢: A. ブラウザでは再読み込み、PowerPointでは最初からスライドショー開始　B. ブラウザでは印刷、PowerPointでは黒画面　C. ブラウザではタブ復元、PowerPointではリンク挿入　D. ブラウザでは設定、PowerPointでは完全削除
+257	問題文: Ctrl + Pについて、通常のページやファイルとスライドショー中の違いとして正しいものはどれか。	選択肢: A. 通常は保存、スライドショー中は終了　B. 通常は印刷画面、スライドショー中はペン　C. 通常はペン、スライドショー中は印刷画面　D. 通常は検索、スライドショー中はブックマーク
+258	問題文: 「今のページをブックマークしてから、別のタブへ移動したい」。ブックマークで使うショートカットはどれか。	選択肢: A. Ctrl + D　B. Ctrl + J　C. Ctrl + L　D. Ctrl + Tab
+259	問題文: 「ダウンロードしたPDFがどこへ行ったか確認したい」。まず使うショートカットはどれか。	選択肢: A. Ctrl + H　B. Ctrl + J　C. Ctrl + D　D. Ctrl + K
+260	問題文: 「URL欄を選んで、すぐ別の検索語を打つ」。使うショートカットはどれか。	選択肢: A. Ctrl + F　B. Ctrl + H　C. Ctrl + L　D. Ctrl + D
+261	問題文: 「ページを拡大しすぎたので一発で標準に戻す」。使うショートカットはどれか。	選択肢: A. Ctrl + ＋　B. Ctrl + －　C. Ctrl + R　D. Ctrl + 0
+262	問題文: 「長い記事を下へ1画面分進めながら読む」。使うキーはどれか。	選択肢: A. Space　B. Shift + Space　C. Ctrl + Tab　D. Alt + →
+263	問題文: 「長い記事を1画面分上へ戻って読み直す」。使うショートカットはどれか。	選択肢: A. Space　B. Shift + Space　C. Ctrl + L　D. Alt + ←
+264	問題文: 「ブラウザに残った閲覧履歴データを削除する画面を開く」。使うショートカットはどれか。	選択肢: A. Ctrl + H　B. Shift + Delete　C. Ctrl + Shift + Delete　D. Ctrl + Delete
+265	問題文: 「ファイルを探す画面をすぐ開く」。使うショートカットはどれか。	選択肢: A. Windows + I　B. Windows + P　C. Windows + X　D. Windows + E
+266	問題文: 「今見ているフォルダーの親フォルダーへ上がる」。使うショートカットはどれか。	選択肢: A. Alt + ↑　B. Alt + ←　C. Alt + →　D. Ctrl + ↑
+267	問題文: 「エクスプローラーで戻りすぎたので、先の画面へ進む」。使うショートカットはどれか。	選択肢: A. Alt + ↑　B. Alt + →　C. Alt + ←　D. Ctrl + →
+268	問題文: 「新しいフォルダーを作って、その中に資料をまとめたい」。フォルダー作成に使うショートカットはどれか。	選択肢: A. Ctrl + Shift + T　B. Ctrl + N　C. Ctrl + Shift + N　D. Windows + E
+269	問題文: 「不要なファイルをごみ箱に残さず削除する」。使うショートカットはどれか。	選択肢: A. Delete　B. Ctrl + Delete　C. Ctrl + Backspace　D. Shift + Delete
+270	問題文: 「離席時のセキュリティ対策」として最も適切なショートカットはどれか。	選択肢: A. Windows + L　B. Windows + D　C. Windows + V　D. Windows + P
+271	問題文: 「アプリが応答しないので状態を確認したい」。タスクマネージャーを開くショートカットはどれか。	選択肢: A. Alt + F4　B. Ctrl + Shift + Esc　C. Ctrl + Shift + N　D. Ctrl + Shift + Delete
+272	問題文: 「ブラウザの表示領域を最大限使うため全画面にする」。使うキーはどれか。	選択肢: A. F5　B. Esc　C. F11　D. F2
+273	問題文: 「フォルダー内のアイコンを見やすい大きさに変える」。使う操作はどれか。	選択肢: A. Alt + マウスホイール　B. Shift + マウスホイール　C. Windows + マウスホイール　D. Ctrl + マウスホイール
+274	問題文: 「スライドショーを終わらせる」と「ブラウザを全画面表示にする」の組み合わせとして正しいものはどれか。	選択肢: A. 終了Esc、全画面F11　B. 終了F11、全画面Esc　C. 終了F5、全画面Shift + F5　D. 終了Ctrl + P、全画面Windows + P
+275	問題文: 「スライドショーを最初から」と「現在のスライドから」の組み合わせとして正しいものはどれか。	選択肢: A. 最初からShift + F5、現在からF5　B. 最初からF5、現在からShift + F5　C. 最初からEsc、現在からF11　D. 最初からWindows + P、現在からCtrl + P
+276	問題文: 「スライドを黒画面」と「白画面」にするキーの組み合わせとして正しいものはどれか。	選択肢: A. 黒W、白B　B. 黒P、白W　C. 黒B、白W　D. 黒Esc、白F5
+277	問題文: 「1文字ずつ範囲選択」と「1単語ごと移動」の組み合わせとして正しいものはどれか。	選択肢: A. 範囲選択Ctrl + 矢印、単語移動Shift + 矢印　B. 範囲選択Alt + 矢印、単語移動Windows + 矢印　C. 範囲選択Windows + 矢印、単語移動Alt + 矢印　D. 範囲選択Shift + 矢印、単語移動Ctrl + 矢印
+278	問題文: 「行の先頭へ移動」と「行の末尾へ移動」の組み合わせとして正しいものはどれか。	選択肢: A. 先頭Home、末尾End　B. 先頭End、末尾Home　C. 先頭Ctrl + Home、末尾Ctrl + End　D. 先頭Shift + Home、末尾Shift + End
+279	問題文: 「ファイルの一番上へ移動」と「一番下へ移動」の組み合わせとして正しいものはどれか。	選択肢: A. 上Home、下End　B. 上Ctrl + Home、下Ctrl + End　C. 上Shift + Home、下Shift + End　D. 上Ctrl + ↑、下Ctrl + ↓
+280	問題文: 「行頭まで選択」と「行末まで選択」の組み合わせとして正しいものはどれか。	選択肢: A. 行頭Home、行末End　B. 行頭Ctrl + Home、行末Ctrl + End　C. 行頭Shift + Home、行末Shift + End　D. 行頭Ctrl + ←、行末Ctrl + →
+281	問題文: 「太字」と「リンク挿入」の組み合わせとして正しいものはどれか。	選択肢: A. 太字Ctrl + K、リンクCtrl + B　B. 太字Ctrl + I、リンクCtrl + U　C. 太字Ctrl + U、リンクCtrl + I　D. 太字Ctrl + B、リンクCtrl + K
+282	問題文: 「斜体」と「下線」の組み合わせとして正しいものはどれか。	選択肢: A. 斜体Ctrl + I、下線Ctrl + U　B. 斜体Ctrl + U、下線Ctrl + I　C. 斜体Ctrl + B、下線Ctrl + K　D. 斜体Ctrl + D、下線Ctrl + J
+283	問題文: 「左側の単語削除」と「右側の単語削除」の組み合わせとして正しいものはどれか。	選択肢: A. 左Ctrl + Delete、右Shift + Delete　B. 左Ctrl + Backspace、右Ctrl + Delete　C. 左Delete、右Backspace　D. 左Shift + Home、右Shift + End
+284	問題文: 「デスクトップ表示」と「画面ロック」の組み合わせとして正しいものはどれか。	選択肢: A. デスクトップWindows + E、ロックWindows + I　B. デスクトップWindows + P、ロックWindows + X　C. デスクトップWindows + D、ロックWindows + L　D. デスクトップWindows + V、ロックWindows + D
+285	問題文: 「左右配置」と「最大化・最小化」の組み合わせとして正しいものはどれか。	選択肢: A. 左右配置Alt + ←→、最大化・最小化Alt + ↑↓　B. 左右配置Ctrl + ←→、最大化・最小化Ctrl + ↑↓　C. 左右配置Shift + ←→、最大化・最小化Shift + ↑↓　D. 左右配置Windows + ←→、最大化・最小化Windows + ↑↓
+286	問題文: 「アプリ終了」と「デスクトップ表示」の組み合わせとして正しいものはどれか。	選択肢: A. アプリ終了Alt + F4、デスクトップ表示Windows + D　B. アプリ終了Windows + D、デスクトップ表示Alt + F4　C. アプリ終了Ctrl + W、デスクトップ表示Ctrl + D　D. アプリ終了Alt + Tab、デスクトップ表示Windows + L
+287	問題文: 「コピー履歴」と「通常の貼り付け」の組み合わせとして正しいものはどれか。	選択肢: A. コピー履歴Ctrl + V、通常貼り付けWindows + V　B. コピー履歴Windows + V、通常貼り付けCtrl + V　C. コピー履歴Ctrl + C、通常貼り付けCtrl + X　D. コピー履歴Windows + C、通常貼り付けWindows + V
+288	問題文: 「設定画面」と「スタート右クリック相当メニュー」の組み合わせとして正しいものはどれか。	選択肢: A. 設定Windows + E、メニューWindows + D　B. 設定Windows + P、メニューWindows + V　C. 設定Windows + I、メニューWindows + X　D. 設定Windows + L、メニューWindows + E
+289	問題文: 「タスクバーアプリ」と「ブラウザ指定タブ」の組み合わせとして正しいものはどれか。	選択肢: A. タスクバーWindows + 数字、ブラウザ指定タブCtrl + 数字　B. タスクバーCtrl + 数字、ブラウザ指定タブWindows + 数字　C. タスクバーAlt + 数字、ブラウザ指定タブShift + 数字　D. タスクバーCtrl + Tab、ブラウザ指定タブAlt + Tab
+290	問題文: 「次のブラウザタブ」と「前のブラウザタブ」の組み合わせとして正しいものはどれか。	選択肢: A. 次Ctrl + Shift + Tab、前Ctrl + Tab　B. 次Ctrl + Tab、前Ctrl + Shift + Tab　C. 次Alt + Tab、前Alt + Shift + Tab　D. 次Ctrl + T、前Ctrl + W
+291	問題文: 「アドレスバー選択」と「ページ内検索」の組み合わせとして正しいものはどれか。	選択肢: A. アドレスバーCtrl + F、検索Ctrl + L　B. アドレスバーCtrl + D、検索Ctrl + J　C. アドレスバーCtrl + L、検索Ctrl + F　D. アドレスバーCtrl + H、検索Ctrl + R
+292	問題文: 「お気に入り追加」と「ダウンロード履歴」の組み合わせとして正しいものはどれか。	選択肢: A. お気に入りCtrl + J、ダウンロードCtrl + D　B. お気に入りCtrl + L、ダウンロードCtrl + H　C. お気に入りCtrl + K、ダウンロードCtrl + F　D. お気に入りCtrl + D、ダウンロードCtrl + J
+293	問題文: 「閲覧履歴表示」と「閲覧履歴データ削除画面」の組み合わせとして正しいものはどれか。	選択肢: A. 表示Ctrl + H、削除画面Ctrl + Shift + Delete　B. 表示Ctrl + Shift + Delete、削除画面Ctrl + H　C. 表示Ctrl + J、削除画面Shift + Delete　D. 表示Ctrl + D、削除画面Ctrl + Delete
+294	問題文: 「表示拡大」と「表示縮小」の組み合わせとして正しいものはどれか。	選択肢: A. 拡大Ctrl + －、縮小Ctrl + ＋　B. 拡大Ctrl + ＋、縮小Ctrl + －　C. 拡大Ctrl + 0、縮小Ctrl + R　D. 拡大Ctrl + D、縮小Ctrl + J
+295	問題文: 「前の画面へ戻る」と「先の画面へ進む」の組み合わせとして正しいものはどれか。	選択肢: A. 戻るAlt + ↑、進むAlt + ↓　B. 戻るCtrl + ←、進むCtrl + →　C. 戻るAlt + ←、進むAlt + →　D. 戻るWindows + ←、進むWindows + →
+296	問題文: 「新しいフォルダー作成」と「エクスプローラーを開く」の組み合わせとして正しいものはどれか。	選択肢: A. 新規Ctrl + N、開くWindows + I　B. 新規Ctrl + Shift + T、開くWindows + P　C. 新規Windows + E、開くCtrl + Shift + N　D. 新規Ctrl + Shift + N、開くWindows + E
+297	問題文: 「完全削除」と「1単語右側削除」の組み合わせとして正しいものはどれか。	選択肢: A. 完全削除Shift + Delete、右側単語削除Ctrl + Delete　B. 完全削除Ctrl + Delete、右側単語削除Shift + Delete　C. 完全削除Delete、右側単語削除Ctrl + Backspace　D. 完全削除Ctrl + Backspace、右側単語削除Shift + Delete
+298	問題文: 「タスクマネージャー」と「スタート右クリック相当メニュー」の組み合わせとして正しいものはどれか。	選択肢: A. タスクマネージャーWindows + X、メニューCtrl + Shift + Esc　B. タスクマネージャーCtrl + Shift + Esc、メニューWindows + X　C. タスクマネージャーCtrl + Shift + N、メニューWindows + E　D. タスクマネージャーAlt + F4、メニューWindows + D
+299	問題文: 「ブラウザ全画面表示」と「画面全体スクリーンショット保存」の組み合わせとして正しいものはどれか。	選択肢: A. 全画面F5、保存Windows + Shift + S　B. 全画面Esc、保存Windows + P　C. 全画面F11、保存Windows + PrintScreen　D. 全画面Windows + D、保存F11
+300	問題文: 「部分スクリーンショット」と「アイコンサイズ変更」の組み合わせとして正しいものはどれか。	選択肢: A. 部分スクリーンショットWindows + PrintScreen、アイコンCtrl + ＋　B. 部分スクリーンショットWindows + Shift + S、アイコンCtrl + マウスホイール　C. 部分スクリーンショットCtrl + Shift + Delete、アイコンShift + マウスホイール　D. 部分スクリーンショットF11、アイコンAlt + マウスホイール
