@@ -84,9 +84,6 @@ export default function PracticalActiveScreen({
     const expected = q.expectedKeyCombo.map((k: string) => k.toLowerCase());
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Allow F5 and F12 and Escape
-      if (e.key === "F5" || e.key === "F12" || e.key === "Escape") return;
-
       // Only prevent default if it's an action-based task, to avoid interfering with copy/paste/typing
       if (!isTypingTask) {
         e.preventDefault();
@@ -98,7 +95,19 @@ export default function PracticalActiveScreen({
       if (e.altKey) pressed.add("alt");
       if (e.metaKey) pressed.add("meta");
 
-      const keyMap: Record<string, string> = { " ": "space" };
+      const keyMap: Record<string, string> = { 
+        " ": "space",
+        ".": "period",
+        ",": "comma",
+        "+": "plus",
+        "-": "minus",
+        "=": "equal",
+        ";": "semicolon",
+        "'": "apostrophe",
+        "/": "slash",
+        "`": "grave",
+        "pause": "break"
+      };
       let mainKey = e.key.toLowerCase();
       if (keyMap[mainKey]) mainKey = keyMap[mainKey];
       
