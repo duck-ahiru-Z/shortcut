@@ -103,8 +103,8 @@ export default function PracticalExamClient({ grade }: Props) {
     handleSubmit // onExpire
   );
 
-  const handleCorrect = useCallback((qId: number) => {
-    setAnswers(prev => ({ ...prev, [qId]: "CORRECT" }));
+  const handleAnswer = useCallback((qId: number, answerValue: string) => {
+    setAnswers(prev => ({ ...prev, [qId]: answerValue }));
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1);
     } else {
@@ -157,7 +157,7 @@ export default function PracticalExamClient({ grade }: Props) {
       currentIndex={currentIndex}
       timeLeft={timeLeft}
       isSubmitting={isSubmitting}
-      onCorrect={handleCorrect}
+      onAnswer={handleAnswer}
       onSkip={handleSkip}
     />
   );

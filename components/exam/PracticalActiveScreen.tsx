@@ -16,7 +16,7 @@ type Props = {
   currentIndex: number;
   timeLeft: number;
   isSubmitting: boolean;
-  onCorrect: (qId: number) => void;
+  onAnswer: (qId: number, answerValue: string) => void;
   onSkip: (qId: number) => void;
 };
 
@@ -25,11 +25,10 @@ export default function PracticalActiveScreen({
   currentIndex,
   timeLeft,
   isSubmitting,
-  onCorrect,
+  onAnswer,
   onSkip,
 }: Props) {
   const q = questions[currentIndex];
-  const [successAnim, setSuccessAnim] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   
   // For find_password and copy_paste
@@ -38,7 +37,6 @@ export default function PracticalActiveScreen({
   // Reset input when question changes
   useEffect(() => {
     setInputValue("");
-    setSuccessAnim(false);
   }, [currentIndex]);
 
   // Focus the container on mount
@@ -49,12 +47,8 @@ export default function PracticalActiveScreen({
   }, [currentIndex]);
 
   const handleInputSubmit = () => {
-    if (!q || successAnim || isSubmitting) return;
-    if (inputValue === q.answer) {
-      triggerSuccess();
-    } else {
-      alert("不正解です。もう一度確認してください。");
-    }
+    if (!q || isSubmitting) return;
+    onAnswer(q.id, inputValue);
   };
 
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -65,24 +59,24 @@ export default function PracticalActiveScreen({
 
   // Check selection for select_all
   useEffect(() => {
-    if (!q || q.type !== "select_all" || successAnim || isSubmitting) return;
+    if (!q || q.type !== "select_all" || isSubmitting) return;
     
     const checkSelection = () => {
       const activeEl = document.activeElement as HTMLTextAreaElement;
       if (activeEl && activeEl.tagName === "TEXTAREA") {
         if (activeEl.selectionEnd - activeEl.selectionStart === activeEl.value.length && activeEl.value.length > 0) {
-          triggerSuccess();
+          onAnswer(q.id, "CORRECT");
         }
       }
     };
 
     document.addEventListener("selectionchange", checkSelection);
     return () => document.removeEventListener("selectionchange", checkSelection);
-  }, [q, successAnim, isSubmitting]);
+  }, [q, isSubmitting]);
 
   // Keyboard shortcut listener (for traditional keyCombo tasks)
   useEffect(() => {
-    if (!q || !q.expectedKeyCombo || isSubmitting || successAnim) return;
+    if (!q || !q.expectedKeyCombo || isSubmitting) return;
 
     // For tasks that require typing, we shouldn't prevent default on everything.
     const isTypingTask = q.type === "find_password" || q.type === "copy_paste";
@@ -124,21 +118,13 @@ export default function PracticalActiveScreen({
         q.type === "bold_text" ||
         q.type === "print_doc"
       )) {
-        triggerSuccess();
+        onAnswer(q.id, "CORRECT");
       }
     };
 
     window.addEventListener("keydown", handleKeyDown, { passive: false });
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [q, isSubmitting, successAnim]);
-
-  const triggerSuccess = () => {
-    setSuccessAnim(true);
-    setTimeout(() => {
-      setSuccessAnim(false);
-      onCorrect(q.id);
-    }, 800);
-  };
+  }, [q, isSubmitting, onAnswer]);
 
   if (!q) return null;
 
@@ -379,32 +365,18 @@ export default function PracticalActiveScreen({
           {q.question}
         </h2>
 
-        {successAnim ? (
-          <div style={{ color: '#4caf50', fontSize: '3rem', fontWeight: 'bold', animation: 'popIn 0.3s ease-out', textAlign: 'center', marginTop: '50px' }}>
-            正解！
+        <div>
+          {renderGimmick()}
+          <div style={{ textAlign: "center", marginTop: "40px" }}>
+            <button 
+              onClick={() => onSkip(q.id)}
+              className="btn btn-secondary"
+            >
+              わからない（スキップ）
+            </button>
           </div>
-        ) : (
-          <div>
-            {renderGimmick()}
-            <div style={{ textAlign: "center", marginTop: "40px" }}>
-              <button 
-                onClick={() => onSkip(q.id)}
-                className="btn btn-secondary"
-              >
-                わからない（スキップ）
-              </button>
-            </div>
-          </div>
-        )}
+        </div>
       </div>
-
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes popIn {
-          0% { transform: scale(0.5); opacity: 0; }
-          70% { transform: scale(1.2); opacity: 1; }
-          100% { transform: scale(1); opacity: 1; }
-        }
-      `}} />
     </div>
   );
 }
