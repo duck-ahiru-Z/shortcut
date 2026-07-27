@@ -76,7 +76,11 @@ export default function Exams() {
                 onMouseOver={(e) => { e.currentTarget.style.borderColor = '#00a4ef'; e.currentTarget.style.background = 'rgba(0, 164, 239, 0.05)' }}
                 onMouseOut={(e) => { e.currentTarget.style.borderColor = 'var(--border-color)'; e.currentTarget.style.background = 'transparent' }}
               >
-                <div style={{ fontSize: '40px' }}>🪟</div>
+                <div style={{ marginBottom: '8px', color: '#00a4ef' }}>
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.951-1.801"/>
+                  </svg>
+                </div>
                 <div style={{ fontWeight: 'bold', fontSize: '18px' }}>Windows</div>
               </button>
               
@@ -92,7 +96,11 @@ export default function Exams() {
                 onMouseOver={(e) => { e.currentTarget.style.borderColor = 'var(--text-color)'; e.currentTarget.style.background = 'rgba(0, 0, 0, 0.05)' }}
                 onMouseOut={(e) => { e.currentTarget.style.borderColor = 'var(--border-color)'; e.currentTarget.style.background = 'transparent' }}
               >
-                <div style={{ fontSize: '40px' }}>🍎</div>
+                <div style={{ marginBottom: '8px', color: 'var(--text-color)' }}>
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                  </svg>
+                </div>
                 <div style={{ fontWeight: 'bold', fontSize: '18px' }}>Mac</div>
               </button>
             </div>
