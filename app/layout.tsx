@@ -25,7 +25,7 @@ export default function RootLayout({
         <header>
           <div className="header-container">
             <a href="/" className="logo-container">
-              <img src="/logo.png" alt="Logo" width={32} height={32} className="logo-image" style={{ objectFit: 'contain' }} />
+              <img src="/logo.png" alt="Logo" width={44} height={44} className="logo-image" style={{ objectFit: 'contain' }} />
               <div className="logo-text">ショートカットキー検定</div>
             </a>
           </div>
