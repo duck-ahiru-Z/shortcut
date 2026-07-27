@@ -1,13 +1,21 @@
 import styles from "./Mocks.module.css";
 
-export default function ExplorerMock() {
+export default function ExplorerMock({ os = "windows" }: { os?: "windows" | "mac" }) {
   return (
     <div className={styles.explorerContainer}>
       <div className={styles.explorerHeader}>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="#f3d32a">
-          <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
-        </svg>
-        <span className={styles.explorerTitle}>PC &gt; ドキュメント</span>
+        {os === "mac" ? (
+          <div style={{ display: 'flex', gap: '6px', marginRight: '16px' }}>
+            <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#ff5f56' }} />
+            <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#ffbd2e' }} />
+            <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#27c93f' }} />
+          </div>
+        ) : (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f3d32a">
+            <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
+          </svg>
+        )}
+        <span className={styles.explorerTitle}>{os === "mac" ? "Finder" : "PC > ドキュメント"}</span>
       </div>
       <div className={styles.explorerBody}>
         <div className={styles.explorerSidebar}>

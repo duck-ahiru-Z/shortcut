@@ -20,6 +20,7 @@ type Question = {
 };
 
 type Props = {
+  grade: string;
   questions: Question[];
   currentIndex: number;
   timeLeft: number;
@@ -29,6 +30,7 @@ type Props = {
 };
 
 export default function PracticalActiveScreen({
+  grade,
   questions,
   currentIndex,
   timeLeft,
@@ -159,13 +161,14 @@ export default function PracticalActiveScreen({
     };
 
     const ctx = getUIContext(q.question);
+    const isMac = grade.includes("mac");
     
     switch (ctx) {
-      case "excel": return <ExcelMock />;
-      case "word": return <WordMock />;
-      case "browser": return <BrowserMock />;
-      case "explorer": return <ExplorerMock />;
-      case "windows": return <WindowsMock />;
+      case "excel": return <ExcelMock os={isMac ? "mac" : "windows"} />;
+      case "word": return <WordMock os={isMac ? "mac" : "windows"} />;
+      case "browser": return <BrowserMock os={isMac ? "mac" : "windows"} />;
+      case "explorer": return <ExplorerMock os={isMac ? "mac" : "windows"} />;
+      case "windows": return <WindowsMock os={isMac ? "mac" : "windows"} />;
       default:
         return (
           <div className={styles.defaultGimmick}>

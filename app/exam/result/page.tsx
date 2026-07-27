@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { GradeResult, WrongAnswerInfo } from "@/actions/exam";
 import { CertificateApp, CertificateData } from "@/lib/certificate";
-import { jsPDF } from "jspdf";
 
 type StoredResult = GradeResult & {
   lastName: string;
@@ -55,19 +54,8 @@ export default function ResultPage() {
   }, [certData]);
 
   const handleDownloadPDF = () => {
-    if (!canvasRef.current || !certData) return;
-    
-    const doc = new jsPDF({
-      orientation: 'landscape',
-      unit: 'mm',
-      format: 'a4'
-    });
-
-    const imgData = canvasRef.current.toDataURL('image/png');
-    doc.addImage(imgData, 'PNG', 0, 0, 297, 210);
-    
-    const safeGradeName = certData.gradeTitle.replace(/\s+/g, '_');
-    doc.save(`${certData.lastName}_${certData.firstName}_${safeGradeName}.pdf`);
+    // 印刷ダイアログを呼び出し、ブラウザの機能でベクターPDFとして保存させる
+    window.print();
   };
 
   if (!result) return null;
@@ -162,12 +150,12 @@ export default function ResultPage() {
               </button>
             </div>
             
-            {/* キャンバス版の合格証書（高画質でプレビュー＆PDF化） */}
-            <div style={{ marginTop: "24px", maxWidth: "100%", overflowX: "auto" }}>
+            {/* キャンバス版の合格証書（高画質でプレビュー＆印刷対応） */}
+            <div style={{ marginTop: "24px", maxWidth: "100%", textAlign: "center" }}>
               <canvas 
                 id="resultCertCanvas" 
                 ref={canvasRef} 
-                style={{ width: "100%", maxWidth: "800px", height: "auto", border: "1px solid var(--border-color)", boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }}
+                style={{ width: "100%", maxWidth: "800px", height: "auto", aspectRatio: "1.414 / 1", border: "1px solid var(--border-color)", boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }}
               ></canvas>
             </div>
             <p style={{ fontSize: "13px", color: "var(--text-muted)", marginTop: "8px" }}>
