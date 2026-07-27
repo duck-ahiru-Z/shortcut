@@ -2,14 +2,22 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 import fs from "fs";
 
+const envContent = fs.readFileSync(".env.local", "utf-8");
+const env = {};
+for (const line of envContent.split("\n")) {
+  if (line.includes("=")) {
+    const [key, ...rest] = line.split("=");
+    env[key.trim()] = rest.join("=").trim().replace(/['"]/g, '');
+  }
+}
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAuAsWLctHoBp6Eh2UN2sIM3wE1YJZIxvQ",
-  authDomain: "shortcut-key-exam.firebaseapp.com",
-  projectId: "shortcut-key-exam",
-  storageBucket: "shortcut-key-exam.firebasestorage.app",
-  messagingSenderId: "522459442819",
-  appId: "1:522459442819:web:3a390baf5d2b6e001075b6",
-  measurementId: "G-7TRX1BYWC2"
+  apiKey: env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
