@@ -1,4 +1,7 @@
-"use client";
+const fs = require('fs');
+const path = require('path');
+
+const pageContent = `"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -80,10 +83,10 @@ export default function Home() {
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                <Link href={`/exam?grade=${osPrefix}5kyu`} className="btn btn-primary">
+                <Link href={\`/exam?grade=\${osPrefix}5kyu\`} className="btn btn-primary">
                   5級 知識試験を受験する
                 </Link>
-                <Link href={`/exam?grade=practical-${osPrefix}5kyu`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                <Link href={\`/exam?grade=practical-\${osPrefix}5kyu\`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
                   5級 実務試験に挑戦する
                 </Link>
               </div>
@@ -105,10 +108,10 @@ export default function Home() {
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                <Link href={`/exam?grade=${osPrefix}4kyu`} className="btn btn-primary">
+                <Link href={\`/exam?grade=\${osPrefix}4kyu\`} className="btn btn-primary">
                   4級 知識試験を受験する
                 </Link>
-                <Link href={`/exam?grade=practical-${osPrefix}4kyu`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                <Link href={\`/exam?grade=practical-\${osPrefix}4kyu\`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
                   4級 実務試験に挑戦する
                 </Link>
               </div>
@@ -128,10 +131,10 @@ export default function Home() {
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                <Link href={`/exam?grade=${osPrefix}3kyu`} className="btn btn-primary">
+                <Link href={\`/exam?grade=\${osPrefix}3kyu\`} className="btn btn-primary">
                   3級 知識試験を受験する
                 </Link>
-                <Link href={`/exam?grade=practical-${osPrefix}3kyu`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                <Link href={\`/exam?grade=practical-\${osPrefix}3kyu\`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
                   3級 実務試験に挑戦する
                 </Link>
               </div>
@@ -151,10 +154,10 @@ export default function Home() {
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                <Link href={`/exam?grade=${osPrefix}2kyu`} className="btn btn-primary">
+                <Link href={\`/exam?grade=\${osPrefix}2kyu\`} className="btn btn-primary">
                   2級 知識試験を受験する
                 </Link>
-                <Link href={`/exam?grade=practical-${osPrefix}2kyu`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                <Link href={\`/exam?grade=practical-\${osPrefix}2kyu\`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
                   2級 実務試験に挑戦する
                 </Link>
               </div>
@@ -174,10 +177,10 @@ export default function Home() {
                 <p><strong>合格基準:</strong> 正答率80%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                <Link href={`/exam?grade=${osPrefix}1kyu`} className="btn btn-primary">
+                <Link href={\`/exam?grade=\${osPrefix}1kyu\`} className="btn btn-primary">
                   1級 知識試験を受験する
                 </Link>
-                <Link href={`/exam?grade=practical-${osPrefix}1kyu`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
+                <Link href={\`/exam?grade=practical-\${osPrefix}1kyu\`} className="btn btn-primary" style={{ backgroundColor: "#8a2be2" }}>
                   1級 実務試験に挑戦する
                 </Link>
               </div>
@@ -189,3 +192,7 @@ export default function Home() {
     </main>
   );
 }
+`;
+
+fs.writeFileSync(path.join(process.cwd(), 'app', 'page.tsx'), pageContent, 'utf8');
+console.log('Successfully updated app/page.tsx');

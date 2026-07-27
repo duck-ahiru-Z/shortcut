@@ -1,6 +1,6 @@
 import styles from "./Mocks.module.css";
 
-export default function WindowsMock() {
+export default function WindowsMock({ os = "windows" }: { os?: "windows" | "mac" }) {
   return (
     <div className={styles.windowsContainer}>
       <div className={styles.windowsBody}>
@@ -8,15 +8,24 @@ export default function WindowsMock() {
            指示されたキーを入力...
          </div>
       </div>
-      <div className={styles.windowsTaskbar}>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="#00a4ef">
-          <rect x="2" y="2" width="9" height="9"></rect>
-          <rect x="13" y="2" width="9" height="9"></rect>
-          <rect x="2" y="13" width="9" height="9"></rect>
-          <rect x="13" y="13" width="9" height="9"></rect>
-        </svg>
-        <div className={styles.windowsTaskbarIcon}></div>
-        <div className={styles.windowsTaskbarIcon}></div>
+      <div className={styles.windowsTaskbar} style={os === "mac" ? { justifyContent: 'center', background: 'rgba(255,255,255,0.2)', borderRadius: '12px', margin: '4px 20%' } : {}}>
+        {os === "mac" ? (
+          <>
+            <div style={{ width: '24px', height: '24px', backgroundColor: '#eee', borderRadius: '4px' }}></div>
+            <div style={{ width: '24px', height: '24px', backgroundColor: '#00a4ef', borderRadius: '4px', marginLeft: '8px' }}></div>
+          </>
+        ) : (
+          <>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#00a4ef">
+              <rect x="2" y="2" width="9" height="9"></rect>
+              <rect x="13" y="2" width="9" height="9"></rect>
+              <rect x="2" y="13" width="9" height="9"></rect>
+              <rect x="13" y="13" width="9" height="9"></rect>
+            </svg>
+            <div className={styles.windowsTaskbarIcon}></div>
+            <div className={styles.windowsTaskbarIcon}></div>
+          </>
+        )}
       </div>
     </div>
   );

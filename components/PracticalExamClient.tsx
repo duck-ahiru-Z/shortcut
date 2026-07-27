@@ -58,6 +58,7 @@ export default function PracticalExamClient({ grade }: Props) {
 
   return (
     <PracticalActiveScreen 
+      grade={grade}
       questions={questions}
       currentIndex={currentIndex}
       timeLeft={timeLeft}
