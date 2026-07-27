@@ -1,4 +1,7 @@
-import Link from "next/link";
+const fs = require('fs');
+const path = require('path');
+
+const pageContent = `import Link from "next/link";
 import Image from "next/image";
 
 export default function LandingPage() {
@@ -100,7 +103,7 @@ export default function LandingPage() {
             { grade: '1級', desc: '完全マウスレス (準備中)', color: '#ff5f56' },
           ].map((g, i) => (
             <div key={i} style={{ 
-              background: 'var(--card-bg)', border: `1px solid ${g.color}`, borderRadius: '12px', 
+              background: 'var(--card-bg)', border: \`1px solid \${g.color}\`, borderRadius: '12px', 
               padding: '24px', width: '220px', textAlign: 'center',
               boxShadow: '0 4px 12px rgba(0,0,0,0.05)'
             }}>
@@ -122,3 +125,7 @@ export default function LandingPage() {
     </main>
   );
 }
+`;
+
+fs.writeFileSync(path.join(process.cwd(), 'app', 'page.tsx'), pageContent, 'utf8');
+console.log('Successfully created app/page.tsx');
