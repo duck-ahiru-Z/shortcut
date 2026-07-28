@@ -106,6 +106,8 @@ export async function startExam(grade: string) {
   const data = await getCachedExamData(grade);
   if (!data) throw new Error("Exam not found");
 
+  const dynamicAnswers: Record<number, string> = {};
+
   const shuffledPool = shuffleArray(data.pool);
   const selectedQuestions = shuffledPool.slice(0, data.questionsCount).map((q: any) => {
     const qData: any = {
@@ -120,7 +122,17 @@ export async function startExam(grade: string) {
       const sortedCombo = [...q.expectedKeyCombo].sort().join("+");
       qData.expectedKeyComboHash = crypto.createHash('sha256').update(sortedCombo).digest('hex');
     }
-    if (q.taskData) qData.taskData = q.taskData;
+    
+    // Generate dynamic passwords
+    if (q.type === 'find_password' || q.type === 'copy_paste') {
+      const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+      let pwd = "";
+      for (let i = 0; i < 8; i++) pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+      dynamicAnswers[q.id] = pwd;
+      qData.taskData = { ...q.taskData, password: pwd };
+    } else if (q.taskData) {
+      qData.taskData = q.taskData;
+    }
     
     return qData;
   });
@@ -128,7 +140,8 @@ export async function startExam(grade: string) {
   const token = signPayload({
     grade,
     startTime: Date.now(),
-    duration: data.duration
+    duration: data.duration,
+    dynamicAnswers
   });
 
   return {
@@ -154,7 +167,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
     return null;
   }
 
-  const { grade, startTime, duration } = payload;
+  const { grade, startTime, duration, dynamicAnswers } = payload;
   const data = await getCachedExamData(grade);
   if (!data) return null;
 
@@ -180,10 +193,11 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
 
   for (const q of realQuestions) {
     if (answeredIds.includes(q.id)) {
-      if (q.answer === userAnswers[q.id]) {
+      const correctAnswer = (dynamicAnswers && dynamicAnswers[q.id]) ? dynamicAnswers[q.id] : q.answer;
+      if (correctAnswer === userAnswers[q.id]) {
         score++;
       } else {
-        let displayCorrect = q.answer;
+        let displayCorrect = correctAnswer;
         if (q.expectedKeyCombo) {
           displayCorrect = formatKeyCombo(q.expectedKeyCombo);
         }
