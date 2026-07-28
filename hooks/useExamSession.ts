@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { startExam, gradeExam } from "@/actions/exam";
 import { useExamState } from "@/hooks/useExamState";
@@ -40,6 +40,11 @@ export function useExamSession(grade: string, disableAntiCheat = false) {
   } = stateHooks;
 
   // 2. Auto-Save State
+  const answersRef = useRef(answers);
+  useEffect(() => {
+    answersRef.current = answers;
+  }, [answers]);
+
   useEffect(() => {
     if (!started || isSubmitting) return;
     const state = {
@@ -70,7 +75,7 @@ export function useExamSession(grade: string, disableAntiCheat = false) {
         firstName
       };
 
-      const result = await gradeExam(examToken, answers, tracking);
+      const result = await gradeExam(examToken, answersRef.current, tracking);
       
       if (result) {
         localStorage.removeItem(stateKey);

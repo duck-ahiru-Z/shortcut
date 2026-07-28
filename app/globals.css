@@ -21,6 +21,8 @@
   
   --text-main: #111827; /* ほぼ黒 (Slate 900) */
   --text-muted: #4b5563; /* グレー (Slate 600) */
+  --text-color: var(--text-main);
+  --card-bg: var(--bg-secondary);
   
   --font-body: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'Courier New', Courier, monospace;
