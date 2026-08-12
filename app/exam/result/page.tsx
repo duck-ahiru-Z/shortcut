@@ -10,6 +10,7 @@ type StoredResult = GradeResult & {
   lastName: string;
   firstName: string;
   gradeTitle: string;
+  gradeId?: string;
 };
 
 export default function ResultPage() {
@@ -40,6 +41,7 @@ export default function ResultPage() {
           gradeTitle: parsed.gradeTitle || "5級 (Windows版)",
           lastName: parsed.lastName,
           firstName: parsed.firstName,
+          gradeId: parsed.gradeId,
         });
       }
     } catch (e) {
