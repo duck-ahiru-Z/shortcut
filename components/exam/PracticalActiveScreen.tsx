@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import LegacyGimmicks from "./mocks/LegacyGimmicks";
 import ExcelMock from "./mocks/ExcelMock";
 import WordMock from "./mocks/WordMock";
@@ -82,12 +82,12 @@ export default function PracticalActiveScreen({
     }
   };
 
-  const handleSuccess = (qId: number) => {
+  const handleSuccess = useCallback((qId: number) => {
     setIsSuccess(true);
     setTimeout(() => {
       onAnswer(qId, "CORRECT");
     }, 1000);
-  };
+  }, [onAnswer]);
 
   // Keyboard shortcut listener extracted to a custom hook
   usePracticalKeyboard({ 
