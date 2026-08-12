@@ -1,0 +1,58 @@
+/* WordMock */
+.wordContainer {
+  border: 1px solid #185abd;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0;
+  background-color: #f3f2f1;
+}
+.wordHeader {
+  background-color: #185abd;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.wordBody {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.wordPage {
+  width: 85%;
+  height: 180px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+
+.successToast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 120, 215, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  animation: popIn 0.3s ease-out;
+  pointer-events: none;
+}
+
+@keyframes popIn {
+  0% { transform: translate(-50%, -40%); opacity: 0; }
+  100% { transform: translate(-50%, -50%); opacity: 1; }
+}

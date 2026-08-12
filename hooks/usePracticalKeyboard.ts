@@ -11,9 +11,10 @@ type UsePracticalKeyboardProps = {
   q: Question | undefined;
   isSubmitting: boolean;
   onAnswer: (qId: number, answerValue: string) => void;
+  onSuccess?: (qId: number) => void;
 };
 
-export function usePracticalKeyboard({ q, isSubmitting, onAnswer }: UsePracticalKeyboardProps) {
+export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: UsePracticalKeyboardProps) {
   useEffect(() => {
     if (!q || (!q.expectedKeyCombo && !q.expectedKeyComboHash) || isSubmitting) return;
 
@@ -30,7 +31,10 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer }: UsePractical
       if (e.ctrlKey) pressed.add("control");
       if (e.shiftKey) pressed.add("shift");
       if (e.altKey) pressed.add("alt");
-      if (e.metaKey) pressed.add("meta");
+      if (e.metaKey) {
+        pressed.add("meta");
+        pressed.add("windows");
+      }
 
       const keyMap: Record<string, string> = { 
         " ": "space",
@@ -68,11 +72,15 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer }: UsePractical
       }
 
       if (isMatch && !isTypingTask) {
-        onAnswer(q.id, "CORRECT");
+        if (onSuccess) {
+          onSuccess(q.id);
+        } else {
+          onAnswer(q.id, "CORRECT");
+        }
       }
     };
 
     window.addEventListener("keydown", handleKeyDown, { passive: false });
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [q, isSubmitting, onAnswer]);
+  }, [q, isSubmitting, onAnswer, onSuccess]);
 }

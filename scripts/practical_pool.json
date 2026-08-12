@@ -1,0 +1,731 @@
+{
+  "practical-3kyu": [
+    {
+      "id": 13001,
+      "question": "（Excel）表の現在位置から下方向のデータ終端へ一気に移動してください。",
+      "expectedKeyCombo": [
+        "control",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + 矢印キーは連続データの端へ一気にジャンプできます。巨大な表でスクロールを続ける時間をゼロにし、確認作業の速度を根本から上げます。"
+    },
+    {
+      "id": 13002,
+      "question": "（Excel）現在位置から右方向のデータ終端まで一気に範囲選択してください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "arrowright"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + 矢印キーは、データ端までの範囲選択を瞬時に行います。巨大な表のコピー、削除、書式設定の準備をドラッグなしで正確に実行できます。"
+    },
+    {
+      "id": 13003,
+      "question": "（Excel）右隣のワークシートへ切り替えてください。",
+      "expectedKeyCombo": [
+        "control",
+        "pagedown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + PageDownは右隣のシートへ移動します。複数シートをまたぐ確認作業で、画面左下の小さなシート見出しを狙う必要がなくなります。"
+    },
+    {
+      "id": 13004,
+      "question": "（Excel）A1セルへ一気に戻ってください。",
+      "expectedKeyCombo": [
+        "control",
+        "home"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Homeはシートの先頭であるA1へ戻ります。広いシートで現在地を見失っても、即座に起点へ復帰できるため作業が止まりません。"
+    },
+    {
+      "id": 13005,
+      "question": "（Excel）スクロールで画面外にあるアクティブセルへ表示位置を戻してください。",
+      "expectedKeyCombo": [
+        "control",
+        "backspace"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Backspaceは選択中のセルが見える位置へ画面を戻します。確認のために遠くへスクロールしたあとでも、現在の作業地点へ迷わず復帰できます。"
+    },
+    {
+      "id": 13006,
+      "question": "（Excel）選択中のセルを編集モードにしてください。",
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2はセル編集モードに入るキーです。ダブルクリックの位置ズレを避け、文字や数式の修正をキーボードだけでスムーズに始められます。"
+    },
+    {
+      "id": 13007,
+      "question": "（Excel）上のセルの内容を、現在のセルへコピーしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Dは上のセルを下へコピーします。連続入力や同じ値の展開で、コピーして貼り付ける2操作を1操作に圧縮できます。"
+    },
+    {
+      "id": 13008,
+      "question": "（Excel）左のセルの内容を、現在のセルへコピーしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "r"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Rは左のセルを右へコピーします。横方向に同じ数式や見出しを広げるとき、マウス操作なしでテンポよく表を作成できます。"
+    },
+    {
+      "id": 13010,
+      "question": "（Excel）入力例から法則性を読み取り、フラッシュフィルを実行してください。",
+      "expectedKeyCombo": [
+        "control",
+        "e"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Eはフラッシュフィルを実行します。氏名分割やコード整形などの手作業を自動化し、データ加工の時間を劇的に短縮できます。"
+    },
+    {
+      "id": 13011,
+      "question": "（Excel）形式を選択して貼り付けるダイアログを開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "alt",
+        "v"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Alt + Vは貼り付け形式を選ぶ入口です。値のみ、数式のみ、書式のみを使い分けることで、貼り付け事故を防ぎます。"
+    },
+    {
+      "id": 13012,
+      "question": "（Excel）選択中のセルの書式設定ダイアログを開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "1"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + 1はセルの書式設定を開きます。表示形式、配置、罫線などの調整を右クリックなしで始められる、Excel実務の必須キーです。"
+    },
+    {
+      "id": 13013,
+      "question": "（Excel）選択範囲の末尾にオートサムを挿入してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "equal"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt + =はオートサムを挿入します。SUM関数を手入力せず合計行や合計列を作れるため、集計表作成が一気に速くなります。"
+    },
+    {
+      "id": 13014,
+      "question": "（Excel）現在選択しているセルに、本日の日付をすばやく入力してください。",
+      "expectedKeyCombo": [
+        "control",
+        "semicolon"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + ; は今日の日付を一瞬で入力します。日報作成やファイルの更新日入力など、毎日使う操作を高速化します。"
+    },
+    {
+      "id": 13015,
+      "question": "（Excel）現在の行全体を選択してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "space"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + Spaceは行全体を選択します。行の挿入、削除、書式変更と組み合わせることで、表のレイアウト調整をマウスレスで進められます。"
+    },
+    {
+      "id": 13016,
+      "question": "（Excel）選択中の行または列に対して挿入を実行してください。",
+      "expectedKeyCombo": [
+        "control",
+        "plus"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + +はセル、行、列の挿入に使います。行選択や列選択と組み合わせると、右クリックメニューを開かず表構造を変更できます。"
+    },
+    {
+      "id": 13017,
+      "question": "（Word/PowerPoint）選択中の段落またはテキストを中央揃えにしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "e"
+      ],
+      "answer": "CORRECT",
+      "explanation": "WordやPowerPointのCtrl + Eは中央揃えです。リボンの配置ボタンを探さず、見た目を確認しながらレイアウトを即調整できます。"
+    },
+    {
+      "id": 13018,
+      "question": "（PowerPoint）選択中の図形またはスライドを複製してください。",
+      "expectedKeyCombo": [
+        "control",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "PowerPointのCtrl + Dは複製です。同じデザインの図形やスライドを素早く増やせるため、資料作成の速度と整列の美しさが向上します。"
+    },
+    {
+      "id": 13019,
+      "question": "（Word/PowerPoint）選択中の文字や図形の書式だけをコピーしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "c"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Cは書式のみをコピーします。色、フォント、枠線などの見た目を統一したいとき、資料全体の完成度を一気に高められます。"
+    },
+    {
+      "id": 13020,
+      "question": "（Slack/Teams）クイックスイッチャーを開き、相手やチャンネルへ移動できる状態にしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "k"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Kはチャットツールの移動を高速化するキーです。チャンネルや相手をマウスで探さず、名前を数文字打つだけで目的地へジャンプできます。"
+    }
+  ],
+  "practical-2kyu": [
+    {
+      "id": 12001,
+      "question": "（Windows）直前に使っていた別のアプリへ切り替えてください。",
+      "expectedKeyCombo": [
+        "alt",
+        "tab"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt + Tabはアプリ切り替えの基本です。Excel、ブラウザ、チャットを往復する実務で、タスクバーを探す時間を削減できます。"
+    },
+    {
+      "id": 12002,
+      "question": "（Windows）デスクトップを表示してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Dは開いているウィンドウを一時的に隠してデスクトップを表示します。デスクトップ上の資料を取りたいときに一瞬で作業できます。"
+    },
+    {
+      "id": 12003,
+      "question": "（Windows）エクスプローラーを開いてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "e"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Eはエクスプローラーを即起動します。ファイル添付、保存先確認、フォルダー整理の入口をすぐ開けます。"
+    },
+    {
+      "id": 12004,
+      "question": "（Windows）PCをロックしてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "l"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Lは離席時の安全操作です。画面上の情報を即座に保護でき、セキュリティ意識の高い実務習慣になります。"
+    },
+    {
+      "id": 12005,
+      "question": "（Windows）画面の一部を範囲指定してスクリーンショットを撮れる状態にしてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "shift",
+        "s"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Shift + Sは画面切り取りを起動します。エラー画面や資料の一部を必要な範囲だけ素早く共有できます。"
+    },
+    {
+      "id": 12006,
+      "question": "（Windows）クリップボード履歴を開いてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "v"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Vはクリップボード履歴を開きます。過去にコピーした内容を選んで貼れるため、コピーし直しの往復を減らせます。"
+    },
+    {
+      "id": 12007,
+      "question": "（Windows）タスクマネージャーを直接開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "escape"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。アプリが固まったときに、すぐ状態確認と終了操作へ移れます。"
+    },
+    {
+      "id": 12010,
+      "question": "（エクスプローラー）選択中のファイル名を変更できる状態にしてください。",
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2は名前変更のキーです。大量のファイル名を整える作業で、右クリックを使わずテンポよくリネームできます。"
+    },
+    {
+      "id": 12011,
+      "question": "（ブラウザ/エクスプローラー）アドレスバーへフォーカスしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "l"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Lはアドレスバーへ即移動します。URL入力、検索、フォルダーパス移動をキーボードだけで開始できます。"
+    },
+    {
+      "id": 12016,
+      "question": "（ブラウザ/文書）ページ内または文書内検索を開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "f"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Fは検索の入口です。長いWebページや資料から目的の言葉を一瞬で見つけ、目視探索の時間を削減できます。"
+    },
+    {
+      "id": 12017,
+      "question": "（アプリ共通）現在の入力欄や一覧の内容をすべて選択してください。",
+      "expectedKeyCombo": [
+        "control",
+        "a"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Aは全選択です。全文コピー、一括削除、一括書式変更など、次の操作へ移るための準備を高速化します。"
+    },
+    {
+      "id": 12018,
+      "question": "（アプリ共通）選択中の内容をコピーしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "c"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Cはコピーの基本です。文字、ファイル、セル、画像などを再利用する実務の土台となる操作です。"
+    },
+    {
+      "id": 12019,
+      "question": "（アプリ共通）直前の操作を元に戻してください。",
+      "expectedKeyCombo": [
+        "control",
+        "z"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Zは元に戻す操作です。誤入力や誤編集をすぐ取り消せるため、スピードを落とさず安心して作業できます。"
+    },
+    {
+      "id": 12020,
+      "question": "（アプリ共通）作成中のファイルを上書き保存してください。",
+      "expectedKeyCombo": [
+        "control",
+        "s"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Sは上書き保存です。作業の節目で反射的に押すことで、突然のトラブルによる作業損失を防げます。"
+    },
+    {
+      "id": 12021,
+      "question": "（エクスプローラー）名前変更中のファイル名を確定し、次のファイルの名前変更へ移ってください。",
+      "expectedKeyCombo": [
+        "tab"
+      ],
+      "answer": "CORRECT",
+      "explanation": "名前変更中にTabを押すと、現在の名前を確定しながら次のファイルの名前変更モードへ移れます。連続リネーム作業を爆速化する神コンボです。"
+    },
+    {
+      "id": 12022,
+      "question": "（エクスプローラー）選択中のファイルに対する右クリックメニューを表示してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "f10"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + F10はコンテキストメニューを表示します。圧縮、プロパティ、送るなどの操作を、マウスの右クリックなしで呼び出せます。"
+    },
+    {
+      "id": 12023,
+      "question": "（エクスプローラー）現在のファイルから下方向へ連続範囲選択してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + 下矢印は、隣接するファイルを下方向へ範囲選択します。複数ファイルの移動、削除、右クリックメニュー操作の前準備に必須です。"
+    },
+    {
+      "id": 12024,
+      "question": "（エクスプローラー）現在のファイルから上方向へ連続範囲選択してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + 上矢印は、上方向へ範囲選択を広げます。ファイル一覧をキーボードだけで扱えるようになり、整理作業の持ち替えが減ります。"
+    },
+    {
+      "id": 12025,
+      "question": "（VS Code）現在行の下にマルチカーソルを追加してください。",
+      "expectedKeyCombo": [
+        "control",
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Alt + 下矢印は、下方向へカーソルを追加します。複数行の同じ位置に同時入力でき、反復編集を一括操作に変えられます。"
+    },
+    {
+      "id": 12026,
+      "question": "（VS Code）現在行の上にマルチカーソルを追加してください。",
+      "expectedKeyCombo": [
+        "control",
+        "alt",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Alt + 上矢印は、上方向へカーソルを追加します。複数行の接頭辞追加や同じ列位置の修正を、1回の入力でまとめて処理できます。"
+    },
+    {
+      "id": 12027,
+      "question": "（VS Code）現在行または選択行を下へ移動してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt + 下矢印は行を下へ移動します。カット＆ペーストを使わず、コードや段落の順序を安全に入れ替えられます。"
+    },
+    {
+      "id": 12028,
+      "question": "（VS Code）現在行または選択行を上へ移動してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt + 上矢印は行を上へ移動します。文章構成やコード順序の調整を、行単位で直感的に行えます。"
+    },
+    {
+      "id": 12029,
+      "question": "（VS Code）現在行または選択行を下方向へ複製してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + Alt + 下矢印は行を下へ複製します。似た処理や設定行を増やすとき、コピー＆ペーストの手間をなくせます。"
+    },
+    {
+      "id": 12030,
+      "question": "（VS Code）現在行または選択行を上方向へ複製してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + Alt + 上矢印は行を上へ複製します。既存行を基準に似た内容を増やす編集で、作業スピードが大きく上がります。"
+    },
+    {
+      "id": 12031,
+      "question": "（VS Code）現在の行を一発で削除してください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "k"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Kは現在行を削除します。行全体を選択してDeleteを押す必要がなく、不要なコードや文章を瞬時に消せます。"
+    },
+    {
+      "id": 12032,
+      "question": "（VS Code）現在行または選択行のコメントアウトを切り替えてください。",
+      "expectedKeyCombo": [
+        "control",
+        "slash"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + /はコメントアウトと解除を切り替えます。検証中の一時無効化やメモ化をすばやく行える、開発・編集の必須キーです。"
+    },
+    {
+      "id": 12033,
+      "question": "（Windows）タスクマネージャーを直接開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "escape"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。フリーズしたアプリの終了やCPU・メモリ負荷の確認に即移れます。"
+    },
+    {
+      "id": 12034,
+      "question": "（Windows）タスクマネージャーを直接起動して、アプリの動作状況を確認してください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "escape"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。Ctrl+Alt+Delete画面を経由しないため、フリーズ時の初動が最速になります。"
+    },
+    {
+      "id": 12035,
+      "question": "（Windows）「ファイル名を指定して実行」ダイアログを起動してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "r"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Win + R は様々なアプリをコマンドで直接起動するための入り口になります。"
+    },
+    {
+      "id": 12036,
+      "question": "（Windows）スタートボタンを右クリックしたときに出る「クイックリンクメニュー」を開いてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "x"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Win + X はシステム設定やデバイスマネージャーなどに素早くアクセスするための重要ショートカットです。"
+    },
+    {
+      "id": 12037,
+      "question": "（Windows）画面右下から通知パネル（アクションセンター）を開いてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "a"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Win + A で通知パネルを開くことができ、Wi-FiやBluetoothの切り替えもすばやく行えます。"
+    },
+    {
+      "id": 12038,
+      "question": "（Windows）システムのバージョン情報を開いてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "pause"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Win + Pause/Breakはシステム情報を開きます。CPU、メモリ、Windowsバージョンなどを確認するために設定画面を深くたどる必要がありません。"
+    },
+    {
+      "id": 12040,
+      "question": "（Windows）これまでにコピーしたテキストの「クリップボード履歴」を表示してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "v"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Win + V は過去にコピーした内容をさかのぼって貼り付けることができる、実務必須の時短ショートカットです。"
+    }
+  ],
+  "practical-1kyu": [
+    {
+      "id": 11001,
+      "question": "（Windows）タスクビューを開いて、開いているウィンドウや仮想デスクトップを一覧できる状態にしてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "tab"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Tabはタスクビューを開きます。複数案件や複数アプリを同時に扱うとき、作業全体を俯瞰して素早く目的の画面へ戻れます。"
+    },
+    {
+      "id": 11002,
+      "question": "（Windows）新しい仮想デスクトップを作成してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "control",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Ctrl + Dは仮想デスクトップを新規作成します。作業空間を用途別に分けることで、画面の散らかりと集中力の低下を防げます。"
+    },
+    {
+      "id": 11003,
+      "question": "（Windows）右隣の仮想デスクトップへ移動してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "control",
+        "arrowright"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Ctrl + 右矢印は右隣の仮想デスクトップへ移動します。作業空間を切り替えるたびにタスクビューを開かずに済みます。"
+    },
+    {
+      "id": 11004,
+      "question": "（Windows）現在の仮想デスクトップを閉じてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "control",
+        "f4"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Ctrl + F4は現在の仮想デスクトップを閉じます。使い終わった作業空間を即座に片付け、作業環境を整理できます。"
+    },
+    {
+      "id": 11005,
+      "question": "（Windows）アクティブウィンドウを画面左半分にスナップしてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "arrowleft"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + 左矢印はウィンドウを左半分に配置します。資料とブラウザ、Excelとチャットなどを並べる比較作業で威力を発揮します。"
+    },
+    {
+      "id": 11006,
+      "question": "（Windows）スナップレイアウトを表示してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "z"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Zはスナップレイアウトを表示します。複数ウィンドウを整然と並べる配置をキーボードから選べるため、大画面作業が効率化します。"
+    },
+    {
+      "id": 11007,
+      "question": "（Windows）絵文字や記号を入力するパネルを開いてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "period"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + . は絵文字・記号パネルを開きます。チャットの反応や資料内の記号入力を、検索やコピペなしで素早く行えます。"
+    },
+    {
+      "id": 11008,
+      "question": "（VS Code）コマンドパレットを開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "p"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Pはコマンドパレットを開きます。機能名を入力して直接実行できるため、メニュー階層を探す時間を削減できます。"
+    },
+    {
+      "id": 11010,
+      "question": "（VS Code）統合ターミナルを開閉してください。",
+      "expectedKeyCombo": [
+        "control",
+        "backquote"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + `は統合ターミナルを開閉します。コード編集からコマンド実行へ即移れるため、開発作業の流れを止めません。"
+    },
+    {
+      "id": 11011,
+      "question": "（VS Code）現在行または選択行を上へ移動してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt + 上矢印は行を上へ移動します。コピペを使わず順序変更できるため、コードや箇条書きの構造整理が速く安全になります。"
+    },
+    {
+      "id": 11012,
+      "question": "（VS Code）現在行を下方向に複製してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + Alt + 下矢印は行を複製します。似た処理や設定行を増やすとき、コピーと貼り付けを1操作に短縮できます。"
+    },
+    {
+      "id": 11013,
+      "question": "（VS Code）現在行または選択行のコメントアウトを切り替えてください。",
+      "expectedKeyCombo": [
+        "control",
+        "slash"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + /はコメント切り替えです。検証中の一時無効化やメモ化をすばやく行え、デバッグやレビューのテンポが上がります。"
+    },
+    {
+      "id": 11014,
+      "question": "（VS Code）選択中の変数名や関数名をリネームできる状態にしてください。",
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2はシンボルのリネームです。単なる検索置換ではなく参照関係を踏まえて変更できるため、名前変更の漏れや事故を防げます。"
+    },
+    {
+      "id": 11015,
+      "question": "（VS Code）選択中の単語と同じ次の出現箇所を追加選択してください。",
+      "expectedKeyCombo": [
+        "control",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Dは次の一致を選択に追加します。複数箇所を同時編集でき、同じ修正を何度も繰り返す手間を減らせます。"
+    },
+    {
+      "id": 11016,
+      "question": "（VS Code）選択中の関数やクラスの定義元へ移動してください。",
+      "expectedKeyCombo": [
+        "f12"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F12は定義へ移動します。実装場所をファイルツリーから探す必要がなくなり、コード理解やレビューが高速になります。"
+    },
+    {
+      "id": 11017,
+      "question": "（ブラウザ）閲覧履歴やキャッシュなどの削除ダイアログを開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "delete"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Deleteは閲覧データ削除を開きます。Webアプリの表示不具合やキャッシュ問題にすぐ対処できます。"
+    },
+    {
+      "id": 11018,
+      "question": "（PowerPoint）スライドショーを最初のスライドから開始してください。",
+      "expectedKeyCombo": [
+        "f5"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F5はスライドショーを最初から開始します。発表本番や通し確認で、リボンの再生ボタンを探さずスムーズに開始できます。"
+    },
+    {
+      "id": 11019,
+      "question": "（PowerPoint）現在のスライドからスライドショーを開始してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "f5"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + F5は現在のスライドからスライドショーを開始します。途中スライドの確認や修正後のチェックを最短で行えます。"
+    },
+    {
+      "id": 11020,
+      "question": "（Windows）スタート検索で選択中のアプリを管理者として実行してください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "enter"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Enterは管理者として実行する操作です。管理者権限が必要なツールや設定を、右クリックなしで素早く起動できます。"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+.keyboardContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2b2b2b;
+  padding: 10px 5px 20px 5px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 1000;
+  user-select: none;
+  /* Hide on desktop, show on mobile/tablet */
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .keyboardContainer {
+    display: flex;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.key {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 42px;
+  min-width: 30px;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 0 #1a1a1a;
+  transition: background-color 0.1s, transform 0.1s;
+  text-transform: uppercase;
+}
+
+.key:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 #1a1a1a;
+  background-color: #555;
+}
+
+.modifier {
+  background-color: #3b4252;
+  font-size: 12px;
+  min-width: 44px;
+}
+
+.modifierActive {
+  background-color: #0078d7;
+  color: white;
+  box-shadow: 0 2px 0 #005a9e;
+}
+
+.modifierActive:active {
+  box-shadow: 0 0 0 #005a9e;
+  background-color: #0086f0;
+}
+
+.spaceBar {
+  flex: 4;
+}
+
+.fnKey {
+  font-size: 11px;
+  min-width: 32px;
+  background-color: #333;
+}
