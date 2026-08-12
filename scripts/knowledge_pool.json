@@ -1,3308 +1,968 @@
 {
   "3kyu": [
     {
-      "id": 3000,
-      "question": "選択した文字やファイルをコピーするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+X",
-        "B. Ctrl+C",
-        "C. Ctrl+V",
-        "D. Ctrl+Z"
-      ],
-      "answer": "B. Ctrl+C"
-    },
-    {
       "id": 3001,
-      "question": "コピーまたは切り取りした内容を貼り付けるショートカットキーはどれか。",
+      "question": "Excelで数万行の売上データを確認しているとき、現在のセルから表の一番下のデータ端まで一気に移動するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+P",
-        "B. Ctrl+B",
-        "C. Ctrl+V",
-        "D. Ctrl+C"
+        "Ctrl + 矢印キー",
+        "Shift + 矢印キー",
+        "Ctrl + PageDown",
+        "Alt + 矢印キー"
       ],
-      "answer": "C. Ctrl+V"
+      "answer": "Ctrl + 矢印キー",
+      "explanation": "Ctrl + 矢印キーは、連続したデータ範囲の端へ一気にジャンプできます。何万行もの表をマウスホイールで追いかける時間を消し去る、Excel実務の移動速度を根本から変えるショートカットです。"
     },
     {
       "id": 3002,
-      "question": "選択した文字やファイルを切り取るショートカットキーはどれか。",
+      "question": "Excelで現在のセルからデータの端まで一気に範囲選択し、コピーや書式設定の準備をしたい場合に使うショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+X",
-        "B. Ctrl+C",
-        "C. Ctrl+S",
-        "D. Ctrl+A"
+        "Ctrl + Shift + 矢印キー",
+        "Ctrl + Alt + 矢印キー",
+        "Shift + PageDown",
+        "Ctrl + Space"
       ],
-      "answer": "A. Ctrl+X"
+      "answer": "Ctrl + Shift + 矢印キー",
+      "explanation": "Ctrl + Shift + 矢印キーは、移動だけでなくデータ端までの範囲選択を一瞬で行えます。巨大な表の列や行をまとめて処理する場面で、ドラッグ選択の不安定さを完全に排除できます。"
     },
     {
       "id": 3003,
-      "question": "直前の操作を元に戻すショートカットキーはどれか。",
+      "question": "Excelで複数のワークシートを確認しているとき、画面左下のシート見出しをクリックせずに左右のシートへ切り替えるショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Y",
-        "B. Ctrl+Z",
-        "C. Ctrl+R",
-        "D. Ctrl+U"
+        "Ctrl + PageUp / Ctrl + PageDown",
+        "Alt + Tab",
+        "Ctrl + Tab",
+        "Shift + F4"
       ],
-      "answer": "B. Ctrl+Z"
+      "answer": "Ctrl + PageUp / Ctrl + PageDown",
+      "explanation": "Ctrl + PageUp / Ctrl + PageDownを使うと、Excel内のシートを左右に高速移動できます。月別シートや部門別シートを横断して確認する作業では、マウスで小さなタブを狙う必要がなくなります。"
     },
     {
       "id": 3004,
-      "question": "元に戻した操作をやり直すショートカットキーはどれか。",
+      "question": "Excelで広いシートを操作中に迷子になったとき、A1セルへ一瞬で戻るショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Y",
-        "B. Ctrl+Z",
-        "C. Ctrl+H",
-        "D. Ctrl+E"
+        "Ctrl + Home",
+        "Ctrl + End",
+        "Alt + Home",
+        "Shift + Home"
       ],
-      "answer": "A. Ctrl+Y"
+      "answer": "Ctrl + Home",
+      "explanation": "Ctrl + Homeはシートの先頭であるA1セルへ戻るための復帰キーです。広大な表の中で現在位置を見失ったとき、マウスでスクロールして戻るより圧倒的に速く、作業のリズムを崩しません。"
     },
     {
       "id": 3005,
-      "question": "文書や一覧の内容をすべて選択するショートカットキーはどれか。",
+      "question": "Excelで画面だけ遠くへスクロールして確認したあと、現在選択しているアクティブセルが見える位置へ表示を戻すショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+S",
-        "B. Ctrl+F",
-        "C. Ctrl+A",
-        "D. Ctrl+N"
+        "Ctrl + Backspace",
+        "Ctrl + Home",
+        "Alt + Backspace",
+        "Ctrl + F"
       ],
-      "answer": "C. Ctrl+A"
+      "answer": "Ctrl + Backspace",
+      "explanation": "Ctrl + Backspaceは、選択中のセルが画面に表示されるように視点を戻します。確認のためにスクロールしても現在地へ即復帰できるため、Excelでの迷子時間を大幅に削減できます。"
     },
     {
       "id": 3006,
-      "question": "作業中のファイルを保存するショートカットキーはどれか。",
+      "question": "Excelでセルをダブルクリックせずに、セル内の文字や数式をすぐ編集したい場合に使うキーはどれですか？",
       "choices": [
-        "A. Ctrl+S",
-        "B. Ctrl+P",
-        "C. Ctrl+O",
-        "D. Ctrl+W"
+        "F2",
+        "F4",
+        "F7",
+        "Enter"
       ],
-      "answer": "A. Ctrl+S"
+      "answer": "F2",
+      "explanation": "F2はセルを編集モードに切り替える基本中の基本です。セルの末尾に追記したいときや数式を微修正したいとき、ダブルクリックの位置ズレを防ぎ、入力作業を滑らかにします。"
     },
     {
       "id": 3007,
-      "question": "印刷画面を開くショートカットキーはどれか。",
+      "question": "Excelで上のセルの内容を、現在選択している下のセルへすばやくコピーするショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+F",
-        "B. Ctrl+P",
-        "C. Ctrl+S",
-        "D. Ctrl+H"
+        "Ctrl + D",
+        "Ctrl + R",
+        "Ctrl + C",
+        "Ctrl + E"
       ],
-      "answer": "B. Ctrl+P"
+      "answer": "Ctrl + D",
+      "explanation": "Ctrl + DのDはDownの意味で、上のセルを下へコピーします。連続入力や同じ分類名の入力で、Ctrl+CとCtrl+Vを繰り返す手間を1アクションに圧縮できます。"
     },
     {
       "id": 3008,
-      "question": "文書やページ内の文字を検索するショートカットキーはどれか。",
+      "question": "Excelで左のセルの内容を、現在選択している右のセルへすばやくコピーするショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+F",
-        "B. Ctrl+H",
-        "C. Ctrl+G",
-        "D. Ctrl+J"
+        "Ctrl + R",
+        "Ctrl + D",
+        "Ctrl + L",
+        "Ctrl + Shift + R"
       ],
-      "answer": "A. Ctrl+F"
+      "answer": "Ctrl + R",
+      "explanation": "Ctrl + RのRはRightの意味で、左のセルを右へコピーします。横方向に同じ数式や見出しを展開する場面で、表作成のスピードを一気に引き上げます。"
     },
     {
       "id": 3009,
-      "question": "WordやExcelで置換画面を開くショートカットキーはどれか。",
+      "question": "Excelで通常のデータ範囲を、フィルターや自動拡張が効くテーブルに変換するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+F",
-        "B. Ctrl+G",
-        "C. Ctrl+H",
-        "D. Ctrl+R"
+        "Ctrl + L（または Ctrl + T）",
+        "Ctrl + E",
+        "Ctrl + Shift + L",
+        "Alt + ="
       ],
-      "answer": "C. Ctrl+H"
+      "answer": "Ctrl + L（または Ctrl + T）",
+      "explanation": "Ctrl + LまたはCtrl + Tで、ただの範囲をExcelテーブルに変換できます。フィルター、デザイン、数式の自動拡張が効くようになり、集計表を実務で扱いやすい構造へ一瞬で変えられます。"
     },
     {
       "id": 3010,
-      "question": "新しい文書、ブック、ウィンドウなどを作成する基本ショートカットキーはどれか。",
+      "question": "Excelで氏名の列から名字だけを抽出するなど、入力例から法則性を読み取って自動入力する機能を呼び出すショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+N",
-        "B. Ctrl+O",
-        "C. Ctrl+W",
-        "D. Ctrl+P"
+        "Ctrl + E",
+        "Ctrl + D",
+        "Ctrl + R",
+        "Alt + E"
       ],
-      "answer": "A. Ctrl+N"
+      "answer": "Ctrl + E",
+      "explanation": "Ctrl + Eはフラッシュフィルのショートカットです。文字列の分割、結合、整形を法則性から自動実行できるため、手作業のデータ加工を一気に時短できます。"
     },
     {
       "id": 3011,
-      "question": "既存のファイルを開くダイアログを表示するショートカットキーはどれか。",
+      "question": "Excelで値のみ、数式のみ、書式のみなどを選んで貼り付けたいときに、「形式を選択して貼り付け」ダイアログを開くショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+S",
-        "B. Ctrl+O",
-        "C. Ctrl+N",
-        "D. Ctrl+F"
+        "Ctrl + Alt + V",
+        "Ctrl + Shift + V",
+        "Ctrl + V",
+        "Alt + V"
       ],
-      "answer": "B. Ctrl+O"
+      "answer": "Ctrl + Alt + V",
+      "explanation": "Ctrl + Alt + Vは貼り付け方法を選ぶ入口です。値貼り付けや書式のみ貼り付けを正確に使い分けることで、数式崩れや不要な装飾の混入を防げます。"
     },
     {
       "id": 3012,
-      "question": "現在開いている文書やタブを閉じるショートカットキーはどれか。",
+      "question": "Excelで現在選択しているセルの表示形式、配置、罫線などを調整する「セルの書式設定」ダイアログを開くショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Q",
-        "B. Ctrl+T",
-        "C. Ctrl+W",
-        "D. Ctrl+R"
+        "Ctrl + 1",
+        "Ctrl + F",
+        "Alt + Enter",
+        "F2"
       ],
-      "answer": "C. Ctrl+W"
+      "answer": "Ctrl + 1",
+      "explanation": "Ctrl + 1はセル書式設定の最短ルートです。右クリックから探す時間をなくし、数値、日付、罫線、配置などの調整をすぐ始められるため、表の仕上げ速度が大きく変わります。"
     },
     {
       "id": 3013,
-      "question": "アクティブなアプリを終了するショートカットキーはどれか。",
+      "question": "Excelで選択中の数値に、桁区切りカンマなどの表示形式をすばやく適用するショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+Tab",
-        "B. Alt+F4",
-        "C. Ctrl+F4",
-        "D. Shift+F4"
+        "Ctrl + Shift + 1",
+        "Ctrl + 1",
+        "Ctrl + Alt + 1",
+        "Shift + F4"
       ],
-      "answer": "B. Alt+F4"
+      "answer": "Ctrl + Shift + 1",
+      "explanation": "Ctrl + Shift + 1は数値に桁区切り表示を適用する代表的な書式ショートカットです。売上金額や数量を見やすく整える操作を、リボンに触れずに一瞬で完了できます。"
     },
     {
       "id": 3014,
-      "question": "多くのアプリでヘルプを表示するファンクションキーはどれか。",
+      "question": "Excelで集計表の末尾にSUM関数を手入力せず、合計を自動挿入するショートカットキーはどれですか？",
       "choices": [
-        "A. F1",
-        "B. F2",
-        "C. F5",
-        "D. F12"
+        "Alt + =",
+        "Ctrl + =",
+        "Shift + =",
+        "Ctrl + Shift + ="
       ],
-      "answer": "A. F1"
+      "answer": "Alt + =",
+      "explanation": "Alt + =はオートサムを挿入するショートカットです。合計行や合計列を作るたびにSUM関数を手打ちしなくて済み、集計表作成の定番作業を高速化できます。"
     },
     {
       "id": 3015,
-      "question": "ブラウザで表示中のページを再読み込みする基本ショートカットキーはどれか。",
+      "question": "Excelで列番号をマウスでクリックせず、現在の列全体を選択するショートカットキーはどれですか？",
       "choices": [
-        "A. F2",
-        "B. F5",
-        "C. F7",
-        "D. F12"
+        "Ctrl + Space",
+        "Shift + Space",
+        "Ctrl + A",
+        "Alt + Space"
       ],
-      "answer": "B. F5"
+      "answer": "Ctrl + Space",
+      "explanation": "Ctrl + Spaceは列全体を選択するショートカットです。列の削除、挿入、書式変更と組み合わせることで、表のレイアウト調整をマウスレスで進められます。"
     },
     {
       "id": 3016,
-      "question": "カーソルを行の先頭へ移動するキーはどれか。",
+      "question": "Excelで行や列を選択したあと、挿入または削除をキーボードだけで実行するショートカットキーの組み合わせはどれですか？",
       "choices": [
-        "A. Home",
-        "B. End",
-        "C. PageUp",
-        "D. Insert"
+        "Ctrl + + / Ctrl + -",
+        "Ctrl + I / Ctrl + D",
+        "Alt + + / Alt + -",
+        "Shift + + / Shift + -"
       ],
-      "answer": "A. Home"
+      "answer": "Ctrl + + / Ctrl + -",
+      "explanation": "Ctrl + +で挿入、Ctrl + -で削除できます。行選択や列選択と組み合わせると、表の行列調整を右クリックなしで完結できる強力な実務コンボになります。"
     },
     {
       "id": 3017,
-      "question": "カーソルを行の末尾へ移動するキーはどれか。",
+      "question": "WordやPowerPointで、段落やテキストを左揃え、右揃え、中央揃え、両端揃えに切り替えるショートカットキー群はどれですか？",
       "choices": [
-        "A. Home",
-        "B. End",
-        "C. Delete",
-        "D. PageDown"
+        "Ctrl + L / Ctrl + R / Ctrl + E / Ctrl + J",
+        "Ctrl + C / Ctrl + V / Ctrl + X / Ctrl + Z",
+        "Alt + L / Alt + R / Alt + E / Alt + J",
+        "Ctrl + Shift + L / Ctrl + Shift + R / Ctrl + Shift + E / Ctrl + Shift + J"
       ],
-      "answer": "B. End"
+      "answer": "Ctrl + L / Ctrl + R / Ctrl + E / Ctrl + J",
+      "explanation": "WordやPowerPointではCtrl + L/R/E/Jで文字配置を瞬時に切り替えられます。リボンで配置ボタンを探さず、資料や文書の見た目をテンポよく整えられます。"
     },
     {
       "id": 3018,
-      "question": "文字入力中にカーソルを1単語左へ移動するショートカットキーはどれか。",
+      "question": "PowerPointで図形やスライドを複製し、同じデザインの要素をすばやく増やしたいときに使うショートカットキーはどれですか？",
       "choices": [
-        "A. Shift+Left",
-        "B. Ctrl+Left",
-        "C. Alt+Left",
-        "D. Ctrl+Shift+Left"
+        "Ctrl + D",
+        "Ctrl + R",
+        "Ctrl + G",
+        "Ctrl + Shift + C"
       ],
-      "answer": "B. Ctrl+Left"
+      "answer": "Ctrl + D",
+      "explanation": "PowerPointのCtrl + Dは複製の必須キーです。図形を等間隔で増やしたり、同じ構成のスライドを量産したりできるため、資料作成のスピードと整列精度が一気に上がります。"
     },
     {
       "id": 3019,
-      "question": "文字入力中にカーソルを1単語右へ移動するショートカットキーはどれか。",
+      "question": "WordやPowerPointで、文字や図形の色、フォント、枠線などの見た目だけをコピーして別の要素に適用するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Right",
-        "B. Shift+Right",
-        "C. Alt+Right",
-        "D. Ctrl+Shift+Right"
+        "Ctrl + Shift + C / Ctrl + Shift + V",
+        "Ctrl + C / Ctrl + V",
+        "Ctrl + Alt + V",
+        "Ctrl + G / Ctrl + Shift + G"
       ],
-      "answer": "A. Ctrl+Right"
+      "answer": "Ctrl + Shift + C / Ctrl + Shift + V",
+      "explanation": "Ctrl + Shift + CとCtrl + Shift + Vは、内容ではなく書式だけをコピーして貼り付けます。資料全体のデザインを統一するうえで、マウス操作より圧倒的に速く美しい仕上げが可能です。"
     },
     {
       "id": 3020,
-      "question": "カーソル位置から右方向に1文字分選択範囲を広げるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Right",
-        "B. Shift+Right",
-        "C. Alt+Right",
-        "D. Ctrl+Shift+Right"
-      ],
-      "answer": "B. Shift+Right"
-    },
-    {
-      "id": 3021,
-      "question": "カーソル位置から右方向に1単語分選択範囲を広げるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Right",
-        "B. Shift+Right",
-        "C. Ctrl+Shift+Right",
-        "D. Alt+Shift+Right"
-      ],
-      "answer": "C. Ctrl+Shift+Right"
-    },
-    {
-      "id": 3022,
-      "question": "カーソルの右側の1文字を削除するキーはどれか。",
-      "choices": [
-        "A. Backspace",
-        "B. Delete",
-        "C. Insert",
-        "D. End"
-      ],
-      "answer": "B. Delete"
-    },
-    {
-      "id": 3023,
-      "question": "カーソルの左側の1文字を削除するキーはどれか。",
-      "choices": [
-        "A. Delete",
-        "B. Insert",
-        "C. Backspace",
-        "D. Home"
-      ],
-      "answer": "C. Backspace"
-    },
-    {
-      "id": 3024,
-      "question": "カーソルの左側の1単語を削除するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Backspace",
-        "B. Ctrl+Delete",
-        "C. Shift+Backspace",
-        "D. Alt+Backspace"
-      ],
-      "answer": "A. Ctrl+Backspace"
-    },
-    {
-      "id": 3025,
-      "question": "カーソルの右側の1単語を削除するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Backspace",
-        "B. Ctrl+Delete",
-        "C. Shift+Delete",
-        "D. Alt+Delete"
-      ],
-      "answer": "B. Ctrl+Delete"
-    },
-    {
-      "id": 3026,
-      "question": "Wordで選択した文字を太字にするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+B",
-        "B. Ctrl+I",
-        "C. Ctrl+U",
-        "D. Ctrl+E"
-      ],
-      "answer": "A. Ctrl+B"
-    },
-    {
-      "id": 3027,
-      "question": "Wordで選択した文字を斜体にするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+B",
-        "B. Ctrl+I",
-        "C. Ctrl+U",
-        "D. Ctrl+J"
-      ],
-      "answer": "B. Ctrl+I"
-    },
-    {
-      "id": 3028,
-      "question": "Wordで選択した文字に下線を付けるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+I",
-        "B. Ctrl+L",
-        "C. Ctrl+U",
-        "D. Ctrl+D"
-      ],
-      "answer": "C. Ctrl+U"
-    },
-    {
-      "id": 3029,
-      "question": "Wordで段落を左揃えにするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+L",
-        "B. Ctrl+E",
-        "C. Ctrl+R",
-        "D. Ctrl+J"
-      ],
-      "answer": "A. Ctrl+L"
-    },
-    {
-      "id": 3030,
-      "question": "Wordで段落を中央揃えにするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+L",
-        "B. Ctrl+E",
-        "C. Ctrl+R",
-        "D. Ctrl+M"
-      ],
-      "answer": "B. Ctrl+E"
-    },
-    {
-      "id": 3031,
-      "question": "Wordで段落を右揃えにするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+J",
-        "B. Ctrl+E",
-        "C. Ctrl+R",
-        "D. Ctrl+Q"
-      ],
-      "answer": "C. Ctrl+R"
-    },
-    {
-      "id": 3032,
-      "question": "Wordで段落を両端揃えにするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+J",
-        "B. Ctrl+R",
-        "C. Ctrl+L",
-        "D. Ctrl+Shift+J"
-      ],
-      "answer": "A. Ctrl+J"
-    },
-    {
-      "id": 3033,
-      "question": "Wordでハイパーリンクを挿入するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+H",
-        "B. Ctrl+K",
-        "C. Ctrl+L",
-        "D. Ctrl+Shift+K"
-      ],
-      "answer": "B. Ctrl+K"
-    },
-    {
-      "id": 3034,
-      "question": "Wordで改ページを挿入するショートカットキーはどれか。",
-      "choices": [
-        "A. Shift+Enter",
-        "B. Ctrl+Enter",
-        "C. Alt+Enter",
-        "D. Ctrl+Shift+Enter"
-      ],
-      "answer": "B. Ctrl+Enter"
-    },
-    {
-      "id": 3035,
-      "question": "Wordで段落を変えずに行だけを改めるショートカットキーはどれか。",
-      "choices": [
-        "A. Enter",
-        "B. Ctrl+Enter",
-        "C. Shift+Enter",
-        "D. Alt+Enter"
-      ],
-      "answer": "C. Shift+Enter"
-    },
-    {
-      "id": 3036,
-      "question": "Wordでスペルチェックと文章校正を実行するファンクションキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F5",
-        "C. F7",
-        "D. F9"
-      ],
-      "answer": "C. F7"
-    },
-    {
-      "id": 3037,
-      "question": "Wordで選択した英字の大文字・小文字を切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Shift+F3",
-        "B. Ctrl+F3",
-        "C. Alt+F3",
-        "D. F3"
-      ],
-      "answer": "A. Shift+F3"
-    },
-    {
-      "id": 3038,
-      "question": "Wordでフォント設定ダイアログを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F",
-        "B. Ctrl+D",
-        "C. Ctrl+Shift+F",
-        "D. Alt+D"
-      ],
-      "answer": "B. Ctrl+D"
-    },
-    {
-      "id": 3039,
-      "question": "Wordで箇条書きを適用するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+L",
-        "B. Ctrl+L",
-        "C. Ctrl+Alt+L",
-        "D. Shift+F7"
-      ],
-      "answer": "A. Ctrl+Shift+L"
-    },
-    {
-      "id": 3040,
-      "question": "Wordで段落書式を解除するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Space",
-        "B. Ctrl+Q",
-        "C. Ctrl+Shift+N",
-        "D. Ctrl+M"
-      ],
-      "answer": "B. Ctrl+Q"
-    },
-    {
-      "id": 3041,
-      "question": "Wordで文字書式を解除するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Space",
-        "B. Ctrl+Q",
-        "C. Ctrl+Shift+M",
-        "D. Ctrl+Alt+Space"
-      ],
-      "answer": "A. Ctrl+Space"
-    },
-    {
-      "id": 3042,
-      "question": "Wordで段落のインデントを増やすショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+M",
-        "B. Ctrl+Shift+M",
-        "C. Ctrl+T",
-        "D. Ctrl+Shift+T"
-      ],
-      "answer": "A. Ctrl+M"
-    },
-    {
-      "id": 3043,
-      "question": "Wordで段落のインデントを減らすショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+M",
-        "B. Ctrl+Shift+M",
-        "C. Ctrl+Alt+M",
-        "D. Shift+M"
-      ],
-      "answer": "B. Ctrl+Shift+M"
-    },
-    {
-      "id": 3044,
-      "question": "Wordで行間を1行に設定するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+1",
-        "B. Ctrl+2",
-        "C. Ctrl+5",
-        "D. Ctrl+0"
-      ],
-      "answer": "A. Ctrl+1"
-    },
-    {
-      "id": 3045,
-      "question": "Wordで行間を2行に設定するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+1",
-        "B. Ctrl+2",
-        "C. Ctrl+5",
-        "D. Ctrl+Shift+2"
-      ],
-      "answer": "B. Ctrl+2"
-    },
-    {
-      "id": 3046,
-      "question": "Wordで行間を1.5行に設定するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+1",
-        "B. Ctrl+2",
-        "C. Ctrl+5",
-        "D. Ctrl+Shift+5"
-      ],
-      "answer": "C. Ctrl+5"
-    },
-    {
-      "id": 3047,
-      "question": "Wordで見出し1スタイルを適用するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Alt+1",
-        "B. Ctrl+Shift+1",
-        "C. Alt+Shift+1",
-        "D. Ctrl+1"
-      ],
-      "answer": "A. Ctrl+Alt+1"
-    },
-    {
-      "id": 3048,
-      "question": "Wordでコメントを挿入するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+M",
-        "B. Ctrl+Alt+M",
-        "C. Ctrl+Shift+M",
-        "D. Alt+M"
-      ],
-      "answer": "B. Ctrl+Alt+M"
-    },
-    {
-      "id": 3049,
-      "question": "Wordで文書の先頭へ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Home",
-        "B. Ctrl+End",
-        "C. Alt+Home",
-        "D. Shift+Home"
-      ],
-      "answer": "A. Ctrl+Home"
-    },
-    {
-      "id": 3050,
-      "question": "Wordで文書の末尾へ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Home",
-        "B. Ctrl+End",
-        "C. Alt+End",
-        "D. Shift+End"
-      ],
-      "answer": "B. Ctrl+End"
-    },
-    {
-      "id": 3051,
-      "question": "Excelでアクティブセルを編集状態にするファンクションキーはどれか。",
-      "choices": [
-        "A. F1",
-        "B. F2",
-        "C. F4",
-        "D. F12"
-      ],
-      "answer": "B. F2"
-    },
-    {
-      "id": 3052,
-      "question": "Excelで直前に行った操作を繰り返すショートカットキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F4",
-        "C. F5",
-        "D. F9"
-      ],
-      "answer": "B. F4"
-    },
-    {
-      "id": 3053,
-      "question": "Excelで数式編集中にセル参照の相対参照・絶対参照を切り替えるキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F4",
-        "C. F7",
-        "D. F12"
-      ],
-      "answer": "B. F4"
-    },
-    {
-      "id": 3054,
-      "question": "ExcelでオートSUMを挿入するショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+=",
-        "B. Ctrl+=",
-        "C. Ctrl+Shift+S",
-        "D. Alt+S"
-      ],
-      "answer": "A. Alt+="
-    },
-    {
-      "id": 3055,
-      "question": "Excelでセルの書式設定ダイアログを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+1",
-        "B. Ctrl+2",
-        "C. Ctrl+F1",
-        "D. Alt+1"
-      ],
-      "answer": "A. Ctrl+1"
-    },
-    {
-      "id": 3056,
-      "question": "Excelでフィルターのオン・オフを切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+F",
-        "B. Ctrl+Shift+L",
-        "C. Alt+F",
-        "D. Ctrl+Alt+L"
-      ],
-      "answer": "B. Ctrl+Shift+L"
-    },
-    {
-      "id": 3057,
-      "question": "Excelで選択中のセルがある列全体を選択するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Space",
-        "B. Shift+Space",
-        "C. Ctrl+A",
-        "D. Alt+Space"
-      ],
-      "answer": "A. Ctrl+Space"
-    },
-    {
-      "id": 3058,
-      "question": "Excelで選択中のセルがある行全体を選択するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Space",
-        "B. Shift+Space",
-        "C. Ctrl+Shift+Space",
-        "D. Alt+Space"
-      ],
-      "answer": "B. Shift+Space"
-    },
-    {
-      "id": 3059,
-      "question": "Excelで現在の日付を入力するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+;",
-        "B. Ctrl+Shift+;",
-        "C. Alt+;",
-        "D. Shift+;"
-      ],
-      "answer": "A. Ctrl+;"
-    },
-    {
-      "id": 3060,
-      "question": "Excelで現在の時刻を入力するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+;",
-        "B. Ctrl+Shift+;",
-        "C. Alt+Shift+;",
-        "D. Ctrl+:"
-      ],
-      "answer": "B. Ctrl+Shift+;"
-    },
-    {
-      "id": 3061,
-      "question": "Excelで数式の表示と計算結果の表示を切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+`",
-        "B. Ctrl+'",
-        "C. Ctrl+Shift+`",
-        "D. Alt+`"
-      ],
-      "answer": "A. Ctrl+`"
-    },
-    {
-      "id": 3062,
-      "question": "Excelで上のセルの内容を下方向へコピーするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+D",
-        "B. Ctrl+R",
-        "C. Ctrl+U",
-        "D. Ctrl+Shift+D"
-      ],
-      "answer": "A. Ctrl+D"
-    },
-    {
-      "id": 3063,
-      "question": "Excelで左のセルの内容を右方向へコピーするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+D",
-        "B. Ctrl+R",
-        "C. Ctrl+L",
-        "D. Ctrl+Shift+R"
-      ],
-      "answer": "B. Ctrl+R"
-    },
-    {
-      "id": 3064,
-      "question": "Excelで選択範囲をテーブルに変換するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+T",
-        "B. Ctrl+L",
-        "C. Ctrl+Shift+T",
-        "D. Alt+T"
-      ],
-      "answer": "A. Ctrl+T"
-    },
-    {
-      "id": 3065,
-      "question": "Excelで次のワークシートへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+PageUp",
-        "B. Ctrl+PageDown",
-        "C. Alt+PageDown",
-        "D. Shift+PageDown"
-      ],
-      "answer": "B. Ctrl+PageDown"
-    },
-    {
-      "id": 3066,
-      "question": "Excelで前のワークシートへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+PageUp",
-        "B. Ctrl+PageDown",
-        "C. Alt+PageUp",
-        "D. Shift+PageUp"
-      ],
-      "answer": "A. Ctrl+PageUp"
-    },
-    {
-      "id": 3067,
-      "question": "Excelで新しいワークシートを挿入するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F11",
-        "B. Shift+F11",
-        "C. Alt+F11",
-        "D. F11"
-      ],
-      "answer": "B. Shift+F11"
-    },
-    {
-      "id": 3068,
-      "question": "Excelでワークシートの先頭セルA1へ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Home",
-        "B. Ctrl+End",
-        "C. Alt+Home",
-        "D. Shift+Home"
-      ],
-      "answer": "A. Ctrl+Home"
-    },
-    {
-      "id": 3069,
-      "question": "Excelで使用中の範囲の右下端へ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Home",
-        "B. Ctrl+End",
-        "C. Alt+End",
-        "D. Shift+End"
-      ],
-      "answer": "B. Ctrl+End"
-    },
-    {
-      "id": 3070,
-      "question": "Excelでデータ範囲の端まで一気に移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Arrow",
-        "B. Shift+Arrow",
-        "C. Alt+Arrow",
-        "D. Ctrl+Shift+Arrow"
-      ],
-      "answer": "A. Ctrl+Arrow"
-    },
-    {
-      "id": 3071,
-      "question": "Excelで現在位置からデータ範囲の端まで選択範囲を広げるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Arrow",
-        "B. Shift+Arrow",
-        "C. Ctrl+Shift+Arrow",
-        "D. Alt+Shift+Arrow"
-      ],
-      "answer": "C. Ctrl+Shift+Arrow"
-    },
-    {
-      "id": 3072,
-      "question": "Excelで選択した行を非表示にするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+8",
-        "B. Ctrl+9",
-        "C. Ctrl+0",
-        "D. Ctrl+Shift+9"
-      ],
-      "answer": "B. Ctrl+9"
-    },
-    {
-      "id": 3073,
-      "question": "Excelで選択した列を非表示にするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+0",
-        "B. Ctrl+9",
-        "C. Ctrl+Shift+0",
-        "D. Alt+0"
-      ],
-      "answer": "A. Ctrl+0"
-    },
-    {
-      "id": 3074,
-      "question": "Excelで選択したセル、行、列を削除するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+-",
-        "B. Ctrl+Shift+=",
-        "C. Ctrl+D",
-        "D. Alt+-"
-      ],
-      "answer": "A. Ctrl+-"
-    },
-    {
-      "id": 3075,
-      "question": "Excelでセル、行、列を挿入するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+-",
-        "B. Ctrl+Shift+=",
-        "C. Ctrl+Alt+=",
-        "D. Shift+Insert"
-      ],
-      "answer": "B. Ctrl+Shift+="
-    },
-    {
-      "id": 3076,
-      "question": "Excelでジャンプダイアログを開くファンクションキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F4",
-        "C. F5",
-        "D. F9"
-      ],
-      "answer": "C. F5"
-    },
-    {
-      "id": 3077,
-      "question": "Officeアプリで名前を付けて保存を開くショートカットキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F5",
-        "C. F10",
-        "D. F12"
-      ],
-      "answer": "D. F12"
-    },
-    {
-      "id": 3078,
-      "question": "Excelで選択した複数セルに同じ内容を一括入力するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Enter",
-        "B. Alt+Enter",
-        "C. Shift+Enter",
-        "D. Ctrl+Shift+Enter"
-      ],
-      "answer": "A. Ctrl+Enter"
-    },
-    {
-      "id": 3079,
-      "question": "Excelでセル内改行を入力するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Enter",
-        "B. Alt+Enter",
-        "C. Shift+Enter",
-        "D. Ctrl+Alt+Enter"
-      ],
-      "answer": "B. Alt+Enter"
-    },
-    {
-      "id": 3080,
-      "question": "ブラウザで新しいタブを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+N",
-        "B. Ctrl+T",
-        "C. Ctrl+W",
-        "D. Ctrl+Shift+T"
-      ],
-      "answer": "B. Ctrl+T"
-    },
-    {
-      "id": 3081,
-      "question": "ブラウザで現在のタブを閉じるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+W",
-        "B. Ctrl+T",
-        "C. Ctrl+Tab",
-        "D. Ctrl+Shift+W"
-      ],
-      "answer": "A. Ctrl+W"
-    },
-    {
-      "id": 3082,
-      "question": "ブラウザで閉じたタブを再度開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+N",
-        "B. Ctrl+Shift+T",
-        "C. Ctrl+Alt+T",
-        "D. Ctrl+T"
-      ],
-      "answer": "B. Ctrl+Shift+T"
-    },
-    {
-      "id": 3083,
-      "question": "ブラウザで次のタブへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Tab",
-        "B. Ctrl+Shift+Tab",
-        "C. Alt+Tab",
-        "D. Ctrl+PageUp"
-      ],
-      "answer": "A. Ctrl+Tab"
-    },
-    {
-      "id": 3084,
-      "question": "ブラウザで前のタブへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Tab",
-        "B. Ctrl+Shift+Tab",
-        "C. Alt+Left",
-        "D. Ctrl+PageDown"
-      ],
-      "answer": "B. Ctrl+Shift+Tab"
-    },
-    {
-      "id": 3085,
-      "question": "ブラウザでアドレスバーにフォーカスするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+L",
-        "B. Ctrl+F",
-        "C. Ctrl+D",
-        "D. Ctrl+E"
-      ],
-      "answer": "A. Ctrl+L"
-    },
-    {
-      "id": 3086,
-      "question": "ブラウザで現在のページをブックマークに追加するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+B",
-        "B. Ctrl+D",
-        "C. Ctrl+H",
-        "D. Ctrl+J"
-      ],
-      "answer": "B. Ctrl+D"
-    },
-    {
-      "id": 3087,
-      "question": "ブラウザでページ内検索を行うショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F",
-        "B. Ctrl+H",
-        "C. Ctrl+L",
-        "D. Ctrl+J"
-      ],
-      "answer": "A. Ctrl+F"
-    },
-    {
-      "id": 3088,
-      "question": "ブラウザでページを通常の再読み込みするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+R",
-        "B. Ctrl+Shift+R",
-        "C. Ctrl+F5",
-        "D. Alt+R"
-      ],
-      "answer": "A. Ctrl+R"
-    },
-    {
-      "id": 3089,
-      "question": "ブラウザでキャッシュを無視して再読み込みする代表的なショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+R",
-        "B. Ctrl+Shift+R",
-        "C. Ctrl+T",
-        "D. Ctrl+Alt+R"
-      ],
-      "answer": "B. Ctrl+Shift+R"
-    },
-    {
-      "id": 3090,
-      "question": "ブラウザで表示倍率を上げるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Plus",
-        "B. Ctrl+-",
-        "C. Ctrl+0",
-        "D. Ctrl+Shift+Plus"
-      ],
-      "answer": "A. Ctrl+Plus"
-    },
-    {
-      "id": 3091,
-      "question": "ブラウザで表示倍率を下げるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Plus",
-        "B. Ctrl+-",
-        "C. Ctrl+0",
-        "D. Alt+-"
-      ],
-      "answer": "B. Ctrl+-"
-    },
-    {
-      "id": 3092,
-      "question": "ブラウザで表示倍率を100%に戻すショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+1",
-        "B. Ctrl+9",
-        "C. Ctrl+0",
-        "D. Ctrl+Space"
-      ],
-      "answer": "C. Ctrl+0"
-    },
-    {
-      "id": 3093,
-      "question": "ブラウザで新しいウィンドウを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+N",
-        "B. Ctrl+T",
-        "C. Ctrl+Shift+N",
-        "D. Ctrl+W"
-      ],
-      "answer": "A. Ctrl+N"
-    },
-    {
-      "id": 3094,
-      "question": "ブラウザでプライベート閲覧用の新しいウィンドウを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+N",
-        "B. Ctrl+Shift+N",
-        "C. Ctrl+Alt+N",
-        "D. Ctrl+Shift+T"
-      ],
-      "answer": "B. Ctrl+Shift+N"
-    },
-    {
-      "id": 3095,
-      "question": "ブラウザで前のページへ戻るショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Left",
-        "B. Alt+Right",
-        "C. Ctrl+Left",
-        "D. Shift+Left"
-      ],
-      "answer": "A. Alt+Left"
-    },
-    {
-      "id": 3096,
-      "question": "ブラウザで次のページへ進むショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Left",
-        "B. Alt+Right",
-        "C. Ctrl+Right",
-        "D. Shift+Right"
-      ],
-      "answer": "B. Alt+Right"
-    },
-    {
-      "id": 3097,
-      "question": "ブラウザでダウンロード一覧を開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+D",
-        "B. Ctrl+J",
-        "C. Ctrl+H",
-        "D. Ctrl+Shift+D"
-      ],
-      "answer": "B. Ctrl+J"
-    },
-    {
-      "id": 3098,
-      "question": "ブラウザで履歴を開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+H",
-        "B. Ctrl+J",
-        "C. Ctrl+D",
-        "D. Ctrl+Shift+H"
-      ],
-      "answer": "A. Ctrl+H"
-    },
-    {
-      "id": 3099,
-      "question": "ブラウザで閲覧データの削除画面を開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+Delete",
-        "B. Ctrl+Delete",
-        "C. Ctrl+Alt+Delete",
-        "D. Shift+Delete"
-      ],
-      "answer": "A. Ctrl+Shift+Delete"
+      "question": "SlackやTeamsで、検索窓をクリックせずに相手の名前やチャンネル名を入力して目的の場所へ移動するショートカットキーはどれですか？",
+      "choices": [
+        "Ctrl + K",
+        "Ctrl + F",
+        "Shift + Esc",
+        "Ctrl + /"
+      ],
+      "answer": "Ctrl + K",
+      "explanation": "Ctrl + Kはチャットツールのクイックスイッチャーを呼び出す代表的なショートカットです。未読チャンネルや相手をマウスで探す時間をなくし、情報処理のスピードを大きく高めます。"
     }
   ],
   "2kyu": [
     {
-      "id": 2000,
-      "question": "スタートメニューを開くWindowsキー操作はどれか。",
-      "choices": [
-        "A. Win",
-        "B. Win+E",
-        "C. Alt+Tab",
-        "D. Ctrl+Space"
-      ],
-      "answer": "A. Win"
-    },
-    {
       "id": 2001,
-      "question": "PCをロックするショートカットキーはどれか。",
+      "question": "Windowsで複数のアプリを開いているとき、マウスでタスクバーをクリックせずに直前のアプリへ切り替えるショートカットキーはどれですか？",
       "choices": [
-        "A. Win+D",
-        "B. Win+L",
-        "C. Win+M",
-        "D. Win+R"
+        "Alt + Tab",
+        "Ctrl + Tab",
+        "Windows + D",
+        "Ctrl + Shift + Tab"
       ],
-      "answer": "B. Win+L"
+      "answer": "Alt + Tab",
+      "explanation": "Alt + Tabはアプリ切り替えの基本です。資料、ブラウザ、チャット、Excelを行き来する実務では、タスクバーを探す時間をなくすだけで集中力のロスを大きく減らせます。"
     },
     {
       "id": 2002,
-      "question": "ファイル名を指定して実行を開くショートカットキーはどれか。",
+      "question": "Windowsで開いているウィンドウを一時的にすべて隠し、デスクトップを表示するショートカットキーはどれですか？",
       "choices": [
-        "A. Win+E",
-        "B. Win+R",
-        "C. Win+S",
-        "D. Win+X"
+        "Windows + D",
+        "Alt + D",
+        "Ctrl + D",
+        "Windows + M"
       ],
-      "answer": "B. Win+R"
+      "answer": "Windows + D",
+      "explanation": "Windows + Dはデスクトップ表示の即効キーです。デスクトップ上のファイルを取りたいときや画面を一瞬片付けたいとき、ウィンドウを1つずつ最小化する無駄をなくします。"
     },
     {
       "id": 2003,
-      "question": "Windowsの設定アプリを開くショートカットキーはどれか。",
+      "question": "Windowsでエクスプローラーをすぐ開き、ファイルやフォルダーを探し始めるショートカットキーはどれですか？",
       "choices": [
-        "A. Win+I",
-        "B. Win+S",
-        "C. Win+A",
-        "D. Win+U"
+        "Windows + E",
+        "Windows + F",
+        "Ctrl + E",
+        "Alt + E"
       ],
-      "answer": "A. Win+I"
+      "answer": "Windows + E",
+      "explanation": "Windows + Eはエクスプローラーを即起動します。資料の保存先確認、ファイル添付、フォルダー整理など、毎日発生するファイル操作の入口を一瞬で開けます。"
     },
     {
       "id": 2004,
-      "question": "エクスプローラーを開くショートカットキーはどれか。",
+      "question": "離席時にPCをすぐロックし、画面上の情報を保護するためのWindowsショートカットキーはどれですか？",
       "choices": [
-        "A. Win+R",
-        "B. Win+E",
-        "C. Win+D",
-        "D. Win+F"
+        "Windows + L",
+        "Ctrl + L",
+        "Alt + L",
+        "Windows + P"
       ],
-      "answer": "B. Win+E"
+      "answer": "Windows + L",
+      "explanation": "Windows + LはPCロックの最短操作です。会議室やオフィスで席を外すたびに使うことで、情報漏えいリスクを下げる実務上の安全習慣になります。"
     },
     {
       "id": 2005,
-      "question": "Windows検索を開くショートカットキーはどれか。",
+      "question": "Windowsで画面の一部を範囲指定してスクリーンショットとして切り取りたいときに使うショートカットキーはどれですか？",
       "choices": [
-        "A. Win+S",
-        "B. Win+V",
-        "C. Win+T",
-        "D. Win+B"
+        "Windows + Shift + S",
+        "PrintScreen",
+        "Alt + PrintScreen",
+        "Ctrl + Shift + S"
       ],
-      "answer": "A. Win+S"
+      "answer": "Windows + Shift + S",
+      "explanation": "Windows + Shift + Sは画面切り取りを呼び出します。エラー画面、資料の一部、チャット共有用の画像を必要な範囲だけ素早く取得でき、説明の手間を大きく減らせます。"
     },
     {
       "id": 2006,
-      "question": "開いているウィンドウを一時的に隠してデスクトップを表示するショートカットキーはどれか。",
+      "question": "Windowsで過去にコピーした複数のテキストや画像から選んで貼り付ける、クリップボード履歴を開くショートカットキーはどれですか？",
       "choices": [
-        "A. Win+M",
-        "B. Win+D",
-        "C. Win+Home",
-        "D. Win+Tab"
+        "Windows + V",
+        "Ctrl + V",
+        "Shift + V",
+        "Windows + C"
       ],
-      "answer": "B. Win+D"
+      "answer": "Windows + V",
+      "explanation": "Windows + Vはクリップボード履歴を開きます。何度も同じ文章やURLを貼る作業で、コピーし直しの往復をなくし、入力作業を一段上の効率に引き上げます。"
     },
     {
       "id": 2007,
-      "question": "すべてのウィンドウを最小化するショートカットキーはどれか。",
+      "question": "Windowsでアプリが固まったとき、タスクマネージャーを直接開くショートカットキーはどれですか？",
       "choices": [
-        "A. Win+D",
-        "B. Win+M",
-        "C. Win+Down",
-        "D. Win+Home"
+        "Ctrl + Shift + Esc",
+        "Ctrl + Alt + Delete",
+        "Alt + F4",
+        "Windows + X"
       ],
-      "answer": "B. Win+M"
+      "answer": "Ctrl + Shift + Esc",
+      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接起動します。フリーズしたアプリを終了したいとき、余計な画面を経由せず素早く状況確認と復旧に移れます。"
     },
     {
       "id": 2008,
-      "question": "Win+Mで最小化したウィンドウを復元するショートカットキーはどれか。",
+      "question": "Windowsで現在アクティブなアプリやウィンドウを閉じるショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Shift+M",
-        "B. Win+Ctrl+M",
-        "C. Win+Alt+M",
-        "D. Win+M"
+        "Alt + F4",
+        "Ctrl + F4",
+        "Shift + F4",
+        "Windows + F4"
       ],
-      "answer": "A. Win+Shift+M"
+      "answer": "Alt + F4",
+      "explanation": "Alt + F4はアクティブウィンドウを閉じる定番ショートカットです。アプリ終了や不要なダイアログの整理をマウスなしで実行でき、作業画面を素早く片付けられます。"
     },
     {
       "id": 2009,
-      "question": "クイックリンクメニューを開くショートカットキーはどれか。",
+      "question": "エクスプローラーで新しいフォルダーを作成し、ファイル整理をすぐ始めるショートカットキーはどれですか？",
       "choices": [
-        "A. Win+X",
-        "B. Win+Q",
-        "C. Win+K",
-        "D. Win+P"
+        "Ctrl + Shift + N",
+        "Ctrl + N",
+        "Alt + N",
+        "Windows + N"
       ],
-      "answer": "A. Win+X"
+      "answer": "Ctrl + Shift + N",
+      "explanation": "Ctrl + Shift + Nは新規フォルダー作成の最速キーです。案件別、日付別、部署別にファイルを整理する場面で、右クリックメニューを開く必要がなくなります。"
     },
     {
       "id": 2010,
-      "question": "クリップボード履歴を開くショートカットキーはどれか。",
+      "question": "エクスプローラーで選択中のファイル名やフォルダー名をすぐ変更するキーはどれですか？",
       "choices": [
-        "A. Win+C",
-        "B. Win+V",
-        "C. Win+B",
-        "D. Win+Y"
+        "F2",
+        "F4",
+        "F5",
+        "F12"
       ],
-      "answer": "B. Win+V"
+      "answer": "F2",
+      "explanation": "F2はファイル名変更の基本キーです。大量の資料名を整える作業で右クリックして名前の変更を選ぶ時間をなくし、連続リネームを滑らかに進められます。"
     },
     {
       "id": 2011,
-      "question": "絵文字パネルを開くショートカットキーはどれか。",
+      "question": "ブラウザやエクスプローラーで、アドレスバーにフォーカスしてURLやパスをすぐ入力するショートカットキーはどれですか？",
       "choices": [
-        "A. Win+.",
-        "B. Win+E",
-        "C. Ctrl+.",
-        "D. Alt+."
+        "Ctrl + L",
+        "Ctrl + K",
+        "Ctrl + F",
+        "Alt + Tab"
       ],
-      "answer": "A. Win+."
+      "answer": "Ctrl + L",
+      "explanation": "Ctrl + Lはアドレスバーへ即移動するショートカットです。URL入力、検索、フォルダーパスの貼り付けをマウスなしで開始でき、ブラウザ操作とファイル移動が格段に速くなります。"
     },
     {
       "id": 2012,
-      "question": "画面領域を選択してスクリーンショットを撮るショートカットキーはどれか。",
+      "question": "ブラウザで新しいタブを開き、検索や別ページの確認を始めるショートカットキーはどれですか？",
       "choices": [
-        "A. Win+PrtSc",
-        "B. Win+Shift+S",
-        "C. Alt+PrtSc",
-        "D. Ctrl+PrtSc"
+        "Ctrl + T",
+        "Ctrl + N",
+        "Ctrl + W",
+        "Ctrl + Shift + T"
       ],
-      "answer": "B. Win+Shift+S"
+      "answer": "Ctrl + T",
+      "explanation": "Ctrl + Tは新規タブを開く基本操作です。調べ物をしながら資料作成をする場面で、タブ追加のたびにマウスへ手を伸ばす必要がなくなります。"
     },
     {
       "id": 2013,
-      "question": "画面全体のスクリーンショットを画像ファイルとして保存するショートカットキーはどれか。",
+      "question": "ブラウザで現在開いているタブを閉じるショートカットキーはどれですか？",
       "choices": [
-        "A. PrtSc",
-        "B. Alt+PrtSc",
-        "C. Win+PrtSc",
-        "D. Ctrl+PrtSc"
+        "Ctrl + W",
+        "Ctrl + T",
+        "Alt + W",
+        "Ctrl + Shift + W"
       ],
-      "answer": "C. Win+PrtSc"
+      "answer": "Ctrl + W",
+      "explanation": "Ctrl + Wは現在のタブを閉じるショートカットです。調査後に不要なタブを素早く整理でき、タブが増えすぎて作業対象を見失う状態を防げます。"
     },
     {
       "id": 2014,
-      "question": "タスクマネージャーを直接開くショートカットキーはどれか。",
+      "question": "ブラウザで誤って閉じたタブを復元するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Alt+Delete",
-        "B. Ctrl+Shift+Esc",
-        "C. Win+Esc",
-        "D. Alt+Esc"
+        "Ctrl + Shift + T",
+        "Ctrl + Alt + T",
+        "Ctrl + T",
+        "Shift + Tab"
       ],
-      "answer": "B. Ctrl+Shift+Esc"
+      "answer": "Ctrl + Shift + T",
+      "explanation": "Ctrl + Shift + Tは閉じたタブを復元します。調査中に重要なページを消してしまっても即座に戻せるため、検索し直しの無駄を防げる保険のようなキーです。"
     },
     {
       "id": 2015,
-      "question": "ロック、サインアウト、タスクマネージャーなどのセキュリティ画面を表示するショートカットキーはどれか。",
+      "question": "ブラウザで複数タブを開いているとき、次のタブへ移動するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Alt+Delete",
-        "B. Ctrl+Shift+Esc",
-        "C. Alt+F4",
-        "D. Win+L"
+        "Ctrl + Tab",
+        "Alt + Tab",
+        "Windows + Tab",
+        "Shift + Tab"
       ],
-      "answer": "A. Ctrl+Alt+Delete"
+      "answer": "Ctrl + Tab",
+      "explanation": "Ctrl + Tabはブラウザ内の次のタブへ移動します。アプリ全体を切り替えるAlt + Tabと使い分けることで、調査や比較作業の移動速度が大きく向上します。"
     },
     {
       "id": 2016,
-      "question": "開いているアプリを切り替える標準ショートカットキーはどれか。",
+      "question": "ブラウザ、PDF、Office文書などで、ページ内や文書内のキーワードを検索するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Tab",
-        "B. Alt+Tab",
-        "C. Win+Tab",
-        "D. Alt+Esc"
+        "Ctrl + F",
+        "Ctrl + K",
+        "Ctrl + L",
+        "Alt + F"
       ],
-      "answer": "B. Alt+Tab"
+      "answer": "Ctrl + F",
+      "explanation": "Ctrl + Fは検索の入口です。長いWebページ、PDF、議事録、仕様書から目的の語句を瞬時に見つけられるため、目視で探す時間を大幅に削れます。"
     },
     {
       "id": 2017,
-      "question": "キーを離しても表示が残るウィンドウ切り替え画面を開くショートカットキーはどれか。",
+      "question": "文書、入力欄、ファイル一覧などで、対象をまとめて選択するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Alt+Tab",
-        "B. Alt+Tab",
-        "C. Win+Tab",
-        "D. Ctrl+Tab"
+        "Ctrl + A",
+        "Ctrl + C",
+        "Ctrl + X",
+        "Ctrl + F"
       ],
-      "answer": "A. Ctrl+Alt+Tab"
+      "answer": "Ctrl + A",
+      "explanation": "Ctrl + Aは全選択の基本です。全文コピー、一覧削除、一括書式変更など、次の操作の前段階として非常に頻出し、マウスドラッグより正確で速く選択できます。"
     },
     {
       "id": 2018,
-      "question": "タスクビューを開くショートカットキーはどれか。",
+      "question": "選択中の文字列、ファイル、セルなどをクリップボードへコピーするショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Tab",
-        "B. Alt+Tab",
-        "C. Ctrl+Tab",
-        "D. Win+T"
+        "Ctrl + C",
+        "Ctrl + V",
+        "Ctrl + X",
+        "Ctrl + Z"
       ],
-      "answer": "A. Win+Tab"
+      "answer": "Ctrl + C",
+      "explanation": "Ctrl + Cはコピーの基本操作です。実務では文章、数値、ファイル、画像などあらゆる情報を再利用するため、コピーをマウスレスで行えることは全操作速度の土台になります。"
     },
     {
       "id": 2019,
-      "question": "新しい仮想デスクトップを作成するショートカットキーはどれか。",
+      "question": "入力ミスや誤操作をした直後に、前の状態へ戻すショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Ctrl+D",
-        "B. Win+Ctrl+F4",
-        "C. Win+Alt+D",
-        "D. Win+Shift+D"
+        "Ctrl + Z",
+        "Ctrl + Y",
+        "Ctrl + S",
+        "Ctrl + X"
       ],
-      "answer": "A. Win+Ctrl+D"
+      "answer": "Ctrl + Z",
+      "explanation": "Ctrl + Zは元に戻す操作です。ミスを恐れず素早く作業できるようになるため、編集、資料作成、データ入力のすべてで心理的なブレーキを外してくれます。"
     },
     {
       "id": 2020,
-      "question": "右側の仮想デスクトップへ切り替えるショートカットキーはどれか。",
+      "question": "作成中の文書や資料を、メニューを開かずに上書き保存するショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Ctrl+Left",
-        "B. Win+Ctrl+Right",
-        "C. Win+Shift+Right",
-        "D. Win+Alt+Right"
+        "Ctrl + S",
+        "Ctrl + Shift + S",
+        "F12",
+        "Alt + S"
       ],
-      "answer": "B. Win+Ctrl+Right"
+      "answer": "Ctrl + S",
+      "explanation": "Ctrl + Sは上書き保存の最重要キーです。作業の区切りごとに反射的に押せるようになると、アプリの強制終了やPCトラブルによる損失を最小限にできます。"
     },
     {
       "id": 2021,
-      "question": "左側の仮想デスクトップへ切り替えるショートカットキーはどれか。",
+      "question": "エクスプローラーでアドレスバーへフォーカスし、過去に開いたフォルダーパスの履歴ドロップダウンも表示したい場合に押すキーはどれですか？",
       "choices": [
-        "A. Win+Ctrl+Left",
-        "B. Win+Ctrl+Right",
-        "C. Win+Shift+Left",
-        "D. Win+Alt+Left"
+        "F4",
+        "F2",
+        "Alt + ↑",
+        "Ctrl + L"
       ],
-      "answer": "A. Win+Ctrl+Left"
+      "answer": "F4",
+      "explanation": "エクスプローラーのF4はアドレスバーの履歴ドロップダウンを表示します。よく使うフォルダーへ履歴から移動できるため、階層をクリックしてたどる作業を大幅に短縮できます。"
     },
     {
       "id": 2022,
-      "question": "現在の仮想デスクトップを閉じるショートカットキーはどれか。",
+      "question": "エクスプローラーで、履歴の「戻る」ではなく現在いるフォルダーの親フォルダーへ確実に移動するショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Ctrl+D",
-        "B. Win+Ctrl+F4",
-        "C. Win+Shift+F4",
-        "D. Alt+F4"
+        "Alt + ↑",
+        "Backspace",
+        "Alt + ←",
+        "Ctrl + ↑"
       ],
-      "answer": "B. Win+Ctrl+F4"
+      "answer": "Alt + ↑",
+      "explanation": "Alt + ↑は親フォルダーへ移動します。BackspaceやAlt + ←は履歴を戻る操作ですが、Alt + ↑は階層を1つ上がるため、ファイル整理ではより意図通りに移動できます。"
     },
     {
       "id": 2023,
-      "question": "アクティブウィンドウを画面左半分にスナップするショートカットキーはどれか。",
+      "question": "エクスプローラーでファイル名変更を開始するための基本キーはどれですか？",
       "choices": [
-        "A. Win+Left",
-        "B. Win+Right",
-        "C. Win+Up",
-        "D. Win+Down"
+        "F2",
+        "F4",
+        "F5",
+        "Shift + F10"
       ],
-      "answer": "A. Win+Left"
+      "answer": "F2",
+      "explanation": "F2は選択中のファイルやフォルダーの名前変更を開始します。右クリックから名前変更を選ぶ必要がなく、大量ファイルのリネーム作業では必須の起点になります。"
     },
     {
       "id": 2024,
-      "question": "アクティブウィンドウを画面右半分にスナップするショートカットキーはどれか。",
+      "question": "エクスプローラーでF2による名前変更後、Enterではなく次のファイルの名前変更へそのまま移るキーはどれですか？",
       "choices": [
-        "A. Win+Left",
-        "B. Win+Right",
-        "C. Win+Up",
-        "D. Win+Down"
+        "Tab",
+        "Esc",
+        "F4",
+        "Ctrl + Tab"
       ],
-      "answer": "B. Win+Right"
+      "answer": "Tab",
+      "explanation": "名前変更中にTabを押すと、現在の名前を確定しつつ次のファイルの名前変更モードへ移れます。連続リネーム作業では、クリックや再度F2を押す手間が消え、作業速度が数倍変わります。"
     },
     {
       "id": 2025,
-      "question": "アクティブウィンドウを最大化するショートカットキーはどれか。",
+      "question": "複数ファイルを選択した状態で、右クリックメニューをキーボードから表示するショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Up",
-        "B. Win+Down",
-        "C. Win+Home",
-        "D. Win+Shift+Up"
+        "Shift + F10",
+        "Ctrl + F10",
+        "Alt + F10",
+        "Shift + Esc"
       ],
-      "answer": "A. Win+Up"
+      "answer": "Shift + F10",
+      "explanation": "Shift + F10はコンテキストメニュー、つまり右クリックメニューを表示します。ZIP化、プロパティ確認、送る操作などをマウスなしで呼び出せるため、ファイル管理が完全にキーボード化します。"
     },
     {
       "id": 2026,
-      "question": "アクティブウィンドウを復元または最小化するショートカットキーはどれか。",
+      "question": "エクスプローラーで隣り合う複数ファイルをキーボードだけで範囲選択したい場合に使う操作はどれですか？",
       "choices": [
-        "A. Win+Up",
-        "B. Win+Down",
-        "C. Win+Left",
-        "D. Win+M"
+        "Shift + 矢印キー",
+        "Ctrl + 矢印キー",
+        "Alt + 矢印キー",
+        "Win + 矢印キー"
       ],
-      "answer": "B. Win+Down"
+      "answer": "Shift + 矢印キー",
+      "explanation": "Shift + 矢印キーは、現在位置から連続した範囲を選択します。複数ファイルをまとめて移動、削除、右クリックメニュー操作する前段階として非常に重要です。"
     },
     {
       "id": 2027,
-      "question": "Windows 11でスナップレイアウトを表示するショートカットキーはどれか。",
+      "question": "ファイル一覧で複数選択したあと、まとめて圧縮やプロパティ表示を行うために最初に呼び出すべきメニュー操作はどれですか？",
       "choices": [
-        "A. Win+Z",
-        "B. Win+S",
-        "C. Win+A",
-        "D. Win+Shift+Z"
+        "Shift + F10",
+        "F4",
+        "Alt + ↑",
+        "Ctrl + Shift + I"
       ],
-      "answer": "A. Win+Z"
+      "answer": "Shift + F10",
+      "explanation": "Shift + F10で右クリックメニューを開けば、選択した複数ファイルに対する操作をキーボードだけで実行できます。マウスに持ち替えず、まとめ処理へ直行できるのが強みです。"
     },
     {
       "id": 2028,
-      "question": "アクティブウィンドウ以外を最小化するショートカットキーはどれか。",
+      "question": "エクスプローラーで過去に入力・表示したパス履歴を使って別フォルダーへ移動したい場合、最も直接的なキーはどれですか？",
       "choices": [
-        "A. Win+Home",
-        "B. Win+M",
-        "C. Win+D",
-        "D. Win+Shift+M"
+        "F4",
+        "Ctrl + F",
+        "F5",
+        "Alt + Tab"
       ],
-      "answer": "A. Win+Home"
+      "answer": "F4",
+      "explanation": "F4はアドレスバー履歴を開くため、過去にアクセスしたパスへ素早く移動できます。毎回フォルダー階層をたどる必要がなくなり、ファイル移動のボトルネックを壊せます。"
     },
     {
       "id": 2029,
-      "question": "アクティブウィンドウを別のモニターへ移動するショートカットキーはどれか。",
+      "question": "VS Codeなどのエディタで、現在行の下に追加カーソルを作り、複数行へ同時入力したい場合の代表的なショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Left または Win+Right",
-        "B. Win+Ctrl+Left または Win+Ctrl+Right",
-        "C. Win+Shift+Left または Win+Shift+Right",
-        "D. Alt+Shift+Left または Alt+Shift+Right"
+        "Ctrl + Alt + ↓",
+        "Alt + ↓",
+        "Shift + Alt + ↓",
+        "Ctrl + Shift + K"
       ],
-      "answer": "C. Win+Shift+Left または Win+Shift+Right"
+      "answer": "Ctrl + Alt + ↓",
+      "explanation": "Ctrl + Alt + ↓は、複数行にカーソルを増やすマルチカーソル操作です。リスト先頭に同じ記号を入れる、複数行の同じ位置を一括修正するなど、テキスト編集の概念を変える時短機能です。"
     },
     {
       "id": 2030,
-      "question": "外部ディスプレイへの投影方法を選ぶ画面を開くショートカットキーはどれか。",
+      "question": "VS Codeなどで、選択中の行をコピー＆ペーストせずに下へ移動するショートカットキーはどれですか？",
       "choices": [
-        "A. Win+P",
-        "B. Win+K",
-        "C. Win+I",
-        "D. Win+O"
+        "Alt + ↓",
+        "Shift + Alt + ↓",
+        "Ctrl + Alt + ↓",
+        "Ctrl + Shift + ↓"
       ],
-      "answer": "A. Win+P"
+      "answer": "Alt + ↓",
+      "explanation": "Alt + ↓は行を下へ移動します。カットして貼り付ける必要がなく、コードや文章の順序をそのままスワップするように調整できるため、構造整理が高速になります。"
     },
     {
       "id": 2031,
-      "question": "ワイヤレスディスプレイやキャスト接続を開くショートカットキーはどれか。",
+      "question": "VS Codeなどで、現在行を下方向に複製して似た行を増やしたい場合のショートカットキーはどれですか？",
       "choices": [
-        "A. Win+P",
-        "B. Win+K",
-        "C. Win+G",
-        "D. Win+V"
+        "Shift + Alt + ↓",
+        "Alt + ↓",
+        "Ctrl + D",
+        "Ctrl + Shift + K"
       ],
-      "answer": "B. Win+K"
+      "answer": "Shift + Alt + ↓",
+      "explanation": "Shift + Alt + ↓は現在行を下に複製します。似たコード、設定、箇条書きを増やすとき、コピーして貼り付ける手順を1操作に短縮できます。"
     },
     {
       "id": 2032,
-      "question": "クイック設定またはアクションセンターを開くショートカットキーはどれか。",
+      "question": "VS Codeなどのエディタで、行全体を選択せずに現在行を一発で削除するショートカットキーはどれですか？",
       "choices": [
-        "A. Win+A",
-        "B. Win+N",
-        "C. Win+S",
-        "D. Win+Q"
+        "Ctrl + Shift + K",
+        "Ctrl + K",
+        "Ctrl + Delete",
+        "Shift + Delete"
       ],
-      "answer": "A. Win+A"
+      "answer": "Ctrl + Shift + K",
+      "explanation": "Ctrl + Shift + Kは現在行を削除します。不要な行を選択してDeleteする手間がなくなり、コードやメモの整理を高速に進められます。"
     },
     {
       "id": 2033,
-      "question": "Windows 11で通知センターを開くショートカットキーはどれか。",
+      "question": "VS Codeなどで、選択行のコメントアウトと解除を切り替えるショートカットキーはどれですか？",
       "choices": [
-        "A. Win+A",
-        "B. Win+N",
-        "C. Win+V",
-        "D. Win+B"
+        "Ctrl + /",
+        "Ctrl + Shift + /",
+        "Alt + /",
+        "Ctrl + Shift + K"
       ],
-      "answer": "B. Win+N"
+      "answer": "Ctrl + /",
+      "explanation": "Ctrl + /はコメントアウトの切り替えです。コードの一時無効化、メモ化、検証時の切り分けを一瞬で行えるため、開発や編集の試行錯誤が圧倒的に速くなります。"
     },
     {
       "id": 2034,
-      "question": "音声入力を開始するショートカットキーはどれか。",
+      "question": "VS Codeで、複数行の同じ位置に同時入力する機能と、行を複製する機能の組み合わせとして正しいものはどれですか？",
       "choices": [
-        "A. Win+H",
-        "B. Win+V",
-        "C. Win+Y",
-        "D. Win+Ctrl+H"
+        "マルチカーソル: Ctrl + Alt + ↑/↓、行複製: Shift + Alt + ↑/↓",
+        "マルチカーソル: Alt + ↑/↓、行複製: Ctrl + Shift + K",
+        "マルチカーソル: Ctrl + U、行複製: F4",
+        "マルチカーソル: Shift + F10、行複製: Alt + Space"
       ],
-      "answer": "A. Win+H"
+      "answer": "マルチカーソル: Ctrl + Alt + ↑/↓、行複製: Shift + Alt + ↑/↓",
+      "explanation": "Ctrl + Alt + ↑/↓はカーソル追加、Shift + Alt + ↑/↓は行複製です。似ているため混同しやすいですが、この違いを押さえると編集作業の速度が一段上がります。"
     },
     {
       "id": 2035,
-      "question": "Xbox Game Barを開くショートカットキーはどれか。",
+      "question": "エディタで箇条書きの各行の先頭に同じ記号を一気に入力したい場合、最も効果的な機能はどれですか？",
       "choices": [
-        "A. Win+G",
-        "B. Win+Alt+G",
-        "C. Win+Shift+G",
-        "D. Ctrl+G"
+        "マルチカーソル",
+        "スーパーリロード",
+        "仮想デスクトップ",
+        "ブラウザタスクマネージャー"
       ],
-      "answer": "A. Win+G"
+      "answer": "マルチカーソル",
+      "explanation": "マルチカーソルを使うと、複数行の同じ位置に同時入力できます。行ごとに移動して入力する反復作業を消し去り、テキスト編集を一括処理へ変えられます。"
     },
     {
       "id": 2036,
-      "question": "Xbox Game Barで録画を開始または停止するショートカットキーはどれか。",
+      "question": "アプリが固まったとき、タスクマネージャーを最短で直接開くショートカットキーはどれですか？",
       "choices": [
-        "A. Win+G",
-        "B. Win+Alt+R",
-        "C. Win+Shift+R",
-        "D. Ctrl+Alt+R"
+        "Ctrl + Shift + Esc",
+        "Ctrl + Alt + Delete",
+        "Alt + F4",
+        "Win + X"
       ],
-      "answer": "B. Win+Alt+R"
+      "answer": "Ctrl + Shift + Esc",
+      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。Ctrl + Alt + Deleteの画面を経由せず、固まったアプリの終了や負荷確認に即移れるトラブル対応の基本です。"
     },
     {
       "id": 2037,
-      "question": "タスクバー上のアプリにフォーカスを移すショートカットキーはどれか。",
+      "question": "マウスが効きにくい状況で、タスクマネージャーを開いてキーボードだけで固まったアプリを終了する流れとして最も適切なものはどれですか？",
       "choices": [
-        "A. Win+T",
-        "B. Win+B",
-        "C. Win+1",
-        "D. Win+Tab"
+        "Ctrl + Shift + Esc → Tab → 矢印 → Delete",
+        "Win + R → calc → Enter",
+        "Alt + Space → X → R",
+        "Ctrl + U → Ctrl + Shift + R"
       ],
-      "answer": "A. Win+T"
+      "answer": "Ctrl + Shift + Esc → Tab → 矢印 → Delete",
+      "explanation": "Ctrl + Shift + Escでタスクマネージャーを開き、Tabや矢印で対象を選び、Deleteで終了する流れは、マウスが使えないフリーズ時の実戦的な復旧コンボです。"
     },
     {
       "id": 2038,
-      "question": "通知領域にフォーカスを移すショートカットキーはどれか。",
+      "question": "スタートメニューを探さず、コマンド名を入力してアプリを直接起動するために最初に押すショートカットキーはどれですか？",
       "choices": [
-        "A. Win+T",
-        "B. Win+B",
-        "C. Win+N",
-        "D. Win+A"
+        "Win + R",
+        "Win + E",
+        "Win + X",
+        "Ctrl + R"
       ],
-      "answer": "B. Win+B"
+      "answer": "Win + R",
+      "explanation": "Win + Rは「ファイル名を指定して実行」を開きます。cmd、calc、notepad、mspaintなどを直接起動でき、スタートメニューを探す時間をゼロにできます。"
     },
     {
       "id": 2039,
-      "question": "タスクバーの1番目にあるアプリを起動または切り替えるショートカットキーはどれか。",
+      "question": "PCのCPUやメモリ、Windowsのバージョン情報を確認するため、設定の深い階層をたどらずシステム情報を開くショートカットキーはどれですか？",
       "choices": [
-        "A. Win+1",
-        "B. Win+Shift+1",
-        "C. Win+Alt+1",
-        "D. Ctrl+1"
+        "Win + Pause/Break",
+        "Win + R",
+        "Ctrl + Shift + Esc",
+        "Win + Shift + S"
       ],
-      "answer": "A. Win+1"
+      "answer": "Win + Pause/Break",
+      "explanation": "Win + Pause/Breakはシステムのバージョン情報を開きます。PCスペック確認や問い合わせ対応で、設定画面を何階層もたどる手間を一気に省けます。"
     },
     {
       "id": 2040,
-      "question": "タスクバーの1番目にあるアプリの新しいインスタンスを開くショートカットキーはどれか。",
+      "question": "キーボードだけでWindowsのシャットダウンメニューをたどり、PCを電源オフする代表的な連続操作はどれですか？",
       "choices": [
-        "A. Win+1",
-        "B. Win+Shift+1",
-        "C. Win+Ctrl+1",
-        "D. Win+Alt+1"
+        "Win + X → U → U",
+        "Win + X → U → R",
+        "Win + R → U → Enter",
+        "Alt + Space → U → U"
       ],
-      "answer": "B. Win+Shift+1"
-    },
-    {
-      "id": 2041,
-      "question": "タスクバーの1番目にあるアプリのジャンプリストを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Win+1",
-        "B. Win+Shift+1",
-        "C. Win+Alt+1",
-        "D. Win+Ctrl+1"
-      ],
-      "answer": "C. Win+Alt+1"
-    },
-    {
-      "id": 2042,
-      "question": "タスクバーの1番目にあるアプリで最後にアクティブだったウィンドウへ切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Win+1",
-        "B. Win+Ctrl+1",
-        "C. Win+Shift+1",
-        "D. Win+Alt+1"
-      ],
-      "answer": "B. Win+Ctrl+1"
-    },
-    {
-      "id": 2043,
-      "question": "押している間だけデスクトップを一時表示するショートカットキーはどれか。",
-      "choices": [
-        "A. Win+D",
-        "B. Win+M",
-        "C. Win+,",
-        "D. Win+Home"
-      ],
-      "answer": "C. Win+,"
-    },
-    {
-      "id": 2044,
-      "question": "システム情報またはバージョン情報を開くショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Pause",
-        "B. Win+I",
-        "C. Win+U",
-        "D. Ctrl+Pause"
-      ],
-      "answer": "A. Win+Pause"
-    },
-    {
-      "id": 2045,
-      "question": "アクセシビリティ設定を開くショートカットキーはどれか。",
-      "choices": [
-        "A. Win+U",
-        "B. Win+A",
-        "C. Win+H",
-        "D. Win+Ctrl+U"
-      ],
-      "answer": "A. Win+U"
-    },
-    {
-      "id": 2046,
-      "question": "拡大鏡を起動するショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Plus",
-        "B. Win+Minus",
-        "C. Ctrl+Plus",
-        "D. Alt+Plus"
-      ],
-      "answer": "A. Win+Plus"
-    },
-    {
-      "id": 2047,
-      "question": "拡大鏡を終了するショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Esc",
-        "B. Esc",
-        "C. Ctrl+Esc",
-        "D. Alt+Esc"
-      ],
-      "answer": "A. Win+Esc"
-    },
-    {
-      "id": 2048,
-      "question": "ナレーターをオンまたはオフにするショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Ctrl+Enter",
-        "B. Win+Enter",
-        "C. Ctrl+Alt+Enter",
-        "D. Win+Shift+Enter"
-      ],
-      "answer": "A. Win+Ctrl+Enter"
-    },
-    {
-      "id": 2049,
-      "question": "入力言語やキーボードレイアウトを切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Space",
-        "B. Win+Tab",
-        "C. Ctrl+Space",
-        "D. Alt+Space"
-      ],
-      "answer": "A. Win+Space"
-    },
-    {
-      "id": 2050,
-      "question": "複数の入力言語がある環境で入力言語を切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Shift",
-        "B. Ctrl+Alt",
-        "C. Shift+Space",
-        "D. Win+Shift"
-      ],
-      "answer": "A. Alt+Shift"
-    },
-    {
-      "id": 2051,
-      "question": "エクスプローラーでアドレスバーへフォーカスするショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+D",
-        "B. Ctrl+P",
-        "C. F2",
-        "D. Win+D"
-      ],
-      "answer": "A. Alt+D"
-    },
-    {
-      "id": 2052,
-      "question": "エクスプローラーで検索ボックスへフォーカスするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+E",
-        "B. Ctrl+L",
-        "C. Ctrl+D",
-        "D. Alt+E"
-      ],
-      "answer": "A. Ctrl+E"
-    },
-    {
-      "id": 2053,
-      "question": "エクスプローラーで新しいフォルダーを作成するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+N",
-        "B. Ctrl+Shift+N",
-        "C. Ctrl+Alt+N",
-        "D. Shift+F11"
-      ],
-      "answer": "B. Ctrl+Shift+N"
-    },
-    {
-      "id": 2054,
-      "question": "エクスプローラーで選択したファイル名を変更するキーはどれか。",
-      "choices": [
-        "A. F1",
-        "B. F2",
-        "C. F4",
-        "D. F5"
-      ],
-      "answer": "B. F2"
-    },
-    {
-      "id": 2055,
-      "question": "エクスプローラーで表示内容を更新するキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F4",
-        "C. F5",
-        "D. F6"
-      ],
-      "answer": "C. F5"
-    },
-    {
-      "id": 2056,
-      "question": "エクスプローラーで1つ上の階層へ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Up",
-        "B. Alt+Left",
-        "C. Alt+Right",
-        "D. Ctrl+Up"
-      ],
-      "answer": "A. Alt+Up"
-    },
-    {
-      "id": 2057,
-      "question": "エクスプローラーで前の場所へ戻るショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Up",
-        "B. Alt+Left",
-        "C. Alt+Right",
-        "D. Ctrl+Left"
-      ],
-      "answer": "B. Alt+Left"
-    },
-    {
-      "id": 2058,
-      "question": "エクスプローラーで次の場所へ進むショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Up",
-        "B. Alt+Left",
-        "C. Alt+Right",
-        "D. Ctrl+Right"
-      ],
-      "answer": "C. Alt+Right"
-    },
-    {
-      "id": 2059,
-      "question": "エクスプローラーで新しいウィンドウを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+N",
-        "B. Ctrl+T",
-        "C. Ctrl+Shift+N",
-        "D. Win+N"
-      ],
-      "answer": "A. Ctrl+N"
-    },
-    {
-      "id": 2060,
-      "question": "エクスプローラーで現在のウィンドウを閉じるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+W",
-        "B. Ctrl+N",
-        "C. Ctrl+Q",
-        "D. Alt+W"
-      ],
-      "answer": "A. Ctrl+W"
-    },
-    {
-      "id": 2061,
-      "question": "エクスプローラーでプレビューウィンドウを表示または非表示にするショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+P",
-        "B. Ctrl+P",
-        "C. Shift+P",
-        "D. Win+P"
-      ],
-      "answer": "A. Alt+P"
-    },
-    {
-      "id": 2062,
-      "question": "エクスプローラーで詳細ウィンドウを表示または非表示にするショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+P",
-        "B. Alt+Shift+P",
-        "C. Ctrl+Shift+P",
-        "D. Win+Shift+P"
-      ],
-      "answer": "B. Alt+Shift+P"
-    },
-    {
-      "id": 2063,
-      "question": "エクスプローラーで選択した項目のプロパティを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Enter",
-        "B. Ctrl+Enter",
-        "C. Shift+Enter",
-        "D. Alt+Space"
-      ],
-      "answer": "A. Alt+Enter"
-    },
-    {
-      "id": 2064,
-      "question": "選択中の項目のコンテキストメニューをキーボードで開くショートカットキーはどれか。",
-      "choices": [
-        "A. Shift+F10",
-        "B. Ctrl+F10",
-        "C. Alt+F10",
-        "D. F10"
-      ],
-      "answer": "A. Shift+F10"
-    },
-    {
-      "id": 2065,
-      "question": "ファイルをごみ箱に入れず完全に削除するショートカットキーはどれか。",
-      "choices": [
-        "A. Delete",
-        "B. Shift+Delete",
-        "C. Ctrl+Delete",
-        "D. Alt+Delete"
-      ],
-      "answer": "B. Shift+Delete"
-    },
-    {
-      "id": 2066,
-      "question": "エクスプローラーでアドレスバーの履歴一覧を表示するキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F4",
-        "C. F5",
-        "D. F6"
-      ],
-      "answer": "B. F4"
-    },
-    {
-      "id": 2067,
-      "question": "エクスプローラーでフォルダー内の項目をすべて選択するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+A",
-        "B. Ctrl+S",
-        "C. Ctrl+E",
-        "D. Ctrl+Shift+A"
-      ],
-      "answer": "A. Ctrl+A"
-    },
-    {
-      "id": 2068,
-      "question": "エクスプローラーのナビゲーションウィンドウで、選択フォルダーまでの親フォルダーを展開するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+E",
-        "B. Ctrl+Shift+N",
-        "C. Ctrl+E",
-        "D. Alt+Shift+E"
-      ],
-      "answer": "A. Ctrl+Shift+E"
-    },
-    {
-      "id": 2069,
-      "question": "エクスプローラーの表示を詳細に切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+5",
-        "B. Ctrl+Shift+6",
-        "C. Ctrl+Shift+7",
-        "D. Ctrl+Shift+8"
-      ],
-      "answer": "B. Ctrl+Shift+6"
-    },
-    {
-      "id": 2070,
-      "question": "エクスプローラーの表示を一覧に切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+4",
-        "B. Ctrl+Shift+5",
-        "C. Ctrl+Shift+6",
-        "D. Ctrl+Shift+8"
-      ],
-      "answer": "B. Ctrl+Shift+5"
-    },
-    {
-      "id": 2071,
-      "question": "エクスプローラーの表示をコンテンツに切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+6",
-        "B. Ctrl+Shift+7",
-        "C. Ctrl+Shift+8",
-        "D. Ctrl+Shift+9"
-      ],
-      "answer": "C. Ctrl+Shift+8"
-    },
-    {
-      "id": 2072,
-      "question": "エクスプローラーの表示を大アイコンに切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+1",
-        "B. Ctrl+Shift+2",
-        "C. Ctrl+Shift+5",
-        "D. Ctrl+Shift+6"
-      ],
-      "answer": "B. Ctrl+Shift+2"
-    },
-    {
-      "id": 2073,
-      "question": "アクティブウィンドウのシステムメニューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Space",
-        "B. Ctrl+Space",
-        "C. Win+Space",
-        "D. Shift+Space"
-      ],
-      "answer": "A. Alt+Space"
-    },
-    {
-      "id": 2074,
-      "question": "現在のウィンドウまたはアプリを閉じるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F4",
-        "B. Alt+F4",
-        "C. Shift+F4",
-        "D. Win+F4"
-      ],
-      "answer": "B. Alt+F4"
-    },
-    {
-      "id": 2075,
-      "question": "開いているウィンドウを開いた順に切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Tab",
-        "B. Alt+Esc",
-        "C. Ctrl+Tab",
-        "D. Win+Tab"
-      ],
-      "answer": "B. Alt+Esc"
-    },
-    {
-      "id": 2076,
-      "question": "エクスプローラーやブラウザで全画面表示を切り替えるキーはどれか。",
-      "choices": [
-        "A. F5",
-        "B. F6",
-        "C. F11",
-        "D. F12"
-      ],
-      "answer": "C. F11"
-    },
-    {
-      "id": 2077,
-      "question": "ダイアログで次の入力欄やボタンへ移動するキーはどれか。",
-      "choices": [
-        "A. Tab",
-        "B. Shift+Tab",
-        "C. Ctrl+Tab",
-        "D. Alt+Tab"
-      ],
-      "answer": "A. Tab"
-    },
-    {
-      "id": 2078,
-      "question": "ダイアログで前の入力欄やボタンへ戻るショートカットキーはどれか。",
-      "choices": [
-        "A. Tab",
-        "B. Shift+Tab",
-        "C. Ctrl+Tab",
-        "D. Alt+Tab"
-      ],
-      "answer": "B. Shift+Tab"
-    },
-    {
-      "id": 2079,
-      "question": "ダイアログでフォーカス中のチェックボックスをオン・オフするキーはどれか。",
-      "choices": [
-        "A. Enter",
-        "B. Space",
-        "C. Esc",
-        "D. Delete"
-      ],
-      "answer": "B. Space"
-    },
-    {
-      "id": 2080,
-      "question": "ダイアログで既定のボタンや選択中の項目を実行するキーはどれか。",
-      "choices": [
-        "A. Enter",
-        "B. Esc",
-        "C. Backspace",
-        "D. Insert"
-      ],
-      "answer": "A. Enter"
-    },
-    {
-      "id": 2081,
-      "question": "ダイアログやメニューをキャンセルして閉じるキーはどれか。",
-      "choices": [
-        "A. Enter",
-        "B. Esc",
-        "C. Tab",
-        "D. Space"
-      ],
-      "answer": "B. Esc"
-    },
-    {
-      "id": 2082,
-      "question": "タブ付きダイアログで次のタブへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Tab",
-        "B. Ctrl+Shift+Tab",
-        "C. Alt+Tab",
-        "D. Shift+Tab"
-      ],
-      "answer": "A. Ctrl+Tab"
-    },
-    {
-      "id": 2083,
-      "question": "タブ付きダイアログで前のタブへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Tab",
-        "B. Ctrl+Shift+Tab",
-        "C. Alt+Tab",
-        "D. Shift+Tab"
-      ],
-      "answer": "B. Ctrl+Shift+Tab"
-    },
-    {
-      "id": 2084,
-      "question": "Windowsキーを使わずにスタートメニューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Esc",
-        "B. Alt+Esc",
-        "C. Ctrl+Space",
-        "D. Alt+Space"
-      ],
-      "answer": "A. Ctrl+Esc"
-    },
-    {
-      "id": 2085,
-      "question": "多くのデスクトップアプリでメニューバーにフォーカスするキーはどれか。",
-      "choices": [
-        "A. Alt",
-        "B. Ctrl",
-        "C. Shift",
-        "D. Esc"
-      ],
-      "answer": "A. Alt"
-    },
-    {
-      "id": 2086,
-      "question": "コンテキストメニューを開くための専用キーはどれか。",
-      "choices": [
-        "A. Menuキー",
-        "B. Pauseキー",
-        "C. ScrollLockキー",
-        "D. Insertキー"
-      ],
-      "answer": "A. Menuキー"
-    },
-    {
-      "id": 2087,
-      "question": "エクスプローラーで選択したファイルをコピーするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+C",
-        "B. Ctrl+X",
-        "C. Ctrl+V",
-        "D. Ctrl+Z"
-      ],
-      "answer": "A. Ctrl+C"
-    },
-    {
-      "id": 2088,
-      "question": "エクスプローラーで選択したファイルを移動のために切り取るショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+C",
-        "B. Ctrl+X",
-        "C. Ctrl+V",
-        "D. Ctrl+Y"
-      ],
-      "answer": "B. Ctrl+X"
-    },
-    {
-      "id": 2089,
-      "question": "エクスプローラーでコピーまたは切り取りしたファイルを貼り付けるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+P",
-        "B. Ctrl+V",
-        "C. Ctrl+F",
-        "D. Ctrl+H"
-      ],
-      "answer": "B. Ctrl+V"
-    },
-    {
-      "id": 2090,
-      "question": "エクスプローラーで直前のファイル操作を元に戻すショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Z",
-        "B. Ctrl+Y",
-        "C. Ctrl+R",
-        "D. Ctrl+U"
-      ],
-      "answer": "A. Ctrl+Z"
-    },
-    {
-      "id": 2091,
-      "question": "エクスプローラーで元に戻したファイル操作をやり直すショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Z",
-        "B. Ctrl+Y",
-        "C. Ctrl+Shift+Z",
-        "D. Alt+Y"
-      ],
-      "answer": "B. Ctrl+Y"
-    },
-    {
-      "id": 2092,
-      "question": "ファイル一覧で連続した複数項目をキーボードで選択する基本操作はどれか。",
-      "choices": [
-        "A. Shift+Arrow",
-        "B. Ctrl+Arrow",
-        "C. Alt+Arrow",
-        "D. Win+Arrow"
-      ],
-      "answer": "A. Shift+Arrow"
-    },
-    {
-      "id": 2093,
-      "question": "ファイル一覧でフォーカスを移動しながら個別に選択を追加する基本操作はどれか。",
-      "choices": [
-        "A. Shift+矢印で移動して Enter",
-        "B. Ctrl+矢印で移動して Space",
-        "C. Alt+矢印で移動して Space",
-        "D. Win+矢印で移動して Enter"
-      ],
-      "answer": "B. Ctrl+矢印で移動して Space"
-    },
-    {
-      "id": 2094,
-      "question": "クイックアシストを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Ctrl+Q",
-        "B. Win+Q",
-        "C. Ctrl+Alt+Q",
-        "D. Win+Shift+Q"
-      ],
-      "answer": "A. Win+Ctrl+Q"
-    },
-    {
-      "id": 2095,
-      "question": "Windows 11でウィジェットを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Win+W",
-        "B. Win+V",
-        "C. Win+N",
-        "D. Win+A"
-      ],
-      "answer": "A. Win+W"
-    },
-    {
-      "id": 2096,
-      "question": "タスクバーの日時やカレンダー表示を開閉するショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Alt+D",
-        "B. Win+Shift+D",
-        "C. Win+Ctrl+D",
-        "D. Alt+Shift+D"
-      ],
-      "answer": "A. Win+Alt+D"
-    },
-    {
-      "id": 2097,
-      "question": "通知を順番に切り替えて確認するショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Shift+V",
-        "B. Win+V",
-        "C. Win+Ctrl+V",
-        "D. Alt+Shift+V"
-      ],
-      "answer": "A. Win+Shift+V"
-    },
-    {
-      "id": 2098,
-      "question": "色覚フィルターのオン・オフを切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Ctrl+C",
-        "B. Win+C",
-        "C. Ctrl+Alt+C",
-        "D. Win+Shift+C"
-      ],
-      "answer": "A. Win+Ctrl+C"
-    },
-    {
-      "id": 2099,
-      "question": "スクリーンキーボードを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Win+Ctrl+O",
-        "B. Win+O",
-        "C. Ctrl+Alt+O",
-        "D. Win+Shift+O"
-      ],
-      "answer": "A. Win+Ctrl+O"
+      "answer": "Win + X → U → U",
+      "explanation": "Win + X → U → Uは、クイックリンクメニューからシャットダウンまで進む連続操作です。マウスでスタートメニューを開く必要がなく、退勤時の電源操作を流れるように完了できます。"
     }
   ],
   "1kyu": [
     {
-      "id": 1000,
-      "question": "ファイル名を指定して実行や検索結果で、入力したコマンドを管理者として起動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Enter",
-        "B. Ctrl+Shift+Enter",
-        "C. Alt+Enter",
-        "D. Shift+Enter"
-      ],
-      "answer": "B. Ctrl+Shift+Enter"
-    },
-    {
       "id": 1001,
-      "question": "画面が真っ黒になるなど表示系の問題が起きたとき、グラフィックスドライバーをリセットするショートカットキーはどれか。",
+      "question": "Windowsで開いているウィンドウと仮想デスクトップを俯瞰して確認するタスクビューを開くショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Ctrl+Shift+B",
-        "B. Win+Alt+Shift+B",
-        "C. Ctrl+Alt+Delete",
-        "D. Win+Shift+R"
+        "Windows + Tab",
+        "Alt + Tab",
+        "Ctrl + Tab",
+        "Windows + D"
       ],
-      "answer": "A. Win+Ctrl+Shift+B"
+      "answer": "Windows + Tab",
+      "explanation": "Windows + Tabはタスクビューを開きます。複数案件や複数アプリを同時に扱う上級者にとって、作業全体を俯瞰し、必要な画面へ素早く戻るための司令塔になります。"
     },
     {
       "id": 1002,
-      "question": "ウィンドウのシステムメニューから最大化をキーボード操作で実行する組み合わせはどれか。",
+      "question": "Windowsで新しい仮想デスクトップを作成し、作業空間を分けたいときに使うショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+Space, X",
-        "B. Alt+Space, N",
-        "C. Alt+Space, M",
-        "D. Alt+Space, C"
+        "Windows + Ctrl + D",
+        "Windows + D",
+        "Ctrl + Shift + N",
+        "Windows + Tab"
       ],
-      "answer": "A. Alt+Space, X"
+      "answer": "Windows + Ctrl + D",
+      "explanation": "Windows + Ctrl + Dは仮想デスクトップを新規作成します。会議用、資料作成用、調査用のように作業空間を分離でき、画面の散らかりと認知負荷を減らせます。"
     },
     {
       "id": 1003,
-      "question": "ウィンドウのシステムメニューから最小化をキーボード操作で実行する組み合わせはどれか。",
+      "question": "Windowsで作成済みの仮想デスクトップ間を左右に切り替えるショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+Space, X",
-        "B. Alt+Space, N",
-        "C. Alt+Space, S",
-        "D. Alt+Space, R"
+        "Windows + Ctrl + ← / →",
+        "Alt + ← / →",
+        "Ctrl + PageUp / Ctrl + PageDown",
+        "Windows + Shift + ← / →"
       ],
-      "answer": "B. Alt+Space, N"
+      "answer": "Windows + Ctrl + ← / →",
+      "explanation": "Windows + Ctrl + ← / →は仮想デスクトップ間の移動キーです。作業空間を切り替えるたびにタスクビューを開く必要がなく、案件や用途ごとの画面へ一瞬で移れます。"
     },
     {
       "id": 1004,
-      "question": "ウィンドウのシステムメニューから閉じるをキーボード操作で実行する組み合わせはどれか。",
+      "question": "Windowsで現在の仮想デスクトップを閉じるショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+Space, M",
-        "B. Alt+Space, R",
-        "C. Alt+Space, C",
-        "D. Alt+Space, S"
+        "Windows + Ctrl + F4",
+        "Alt + F4",
+        "Windows + F4",
+        "Ctrl + Shift + F4"
       ],
-      "answer": "C. Alt+Space, C"
+      "answer": "Windows + Ctrl + F4",
+      "explanation": "Windows + Ctrl + F4は現在の仮想デスクトップを閉じます。使い終わった作業空間をすぐ片付けられるため、デスクトップ運用を清潔に保てます。"
     },
     {
       "id": 1005,
-      "question": "マウスを使わずにウィンドウ移動モードへ入るシステムメニュー操作はどれか。",
+      "question": "Windowsでアクティブウィンドウを画面の左右にぴったり配置し、比較作業をしやすくするショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+Space, M",
-        "B. Alt+Space, S",
-        "C. Alt+Space, X",
-        "D. Alt+Space, N"
+        "Windows + ← / →",
+        "Alt + ← / →",
+        "Ctrl + ← / →",
+        "Shift + ← / →"
       ],
-      "answer": "A. Alt+Space, M"
+      "answer": "Windows + ← / →",
+      "explanation": "Windows + ← / →はウィンドウを左右にスナップします。Excelとブラウザ、資料とチャットなどを並べて確認でき、ドラッグでサイズ調整する手間をなくします。"
     },
     {
       "id": 1006,
-      "question": "マウスを使わずにウィンドウサイズ変更モードへ入るシステムメニュー操作はどれか。",
+      "question": "Windows 11でスナップレイアウトを表示し、ウィンドウ配置パターンを選びたいときに使うショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+Space, M",
-        "B. Alt+Space, S",
-        "C. Alt+Space, R",
-        "D. Alt+Space, C"
+        "Windows + Z",
+        "Windows + A",
+        "Windows + X",
+        "Windows + S"
       ],
-      "answer": "B. Alt+Space, S"
+      "answer": "Windows + Z",
+      "explanation": "Windows + Zはスナップレイアウトを呼び出します。複数ウィンドウを整然と並べる配置をキーボードから選べるため、大画面や外部モニターでの作業効率が大きく上がります。"
     },
     {
       "id": 1007,
-      "question": "最大化や最小化したウィンドウを元のサイズに戻すシステムメニュー操作はどれか。",
+      "question": "Windowsで絵文字、記号、顔文字などを入力するパネルを開くショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+Space, R",
-        "B. Alt+Space, X",
-        "C. Alt+Space, N",
-        "D. Alt+Space, C"
+        "Windows + .",
+        "Ctrl + .",
+        "Alt + .",
+        "Windows + ; + Shift"
       ],
-      "answer": "A. Alt+Space, R"
+      "answer": "Windows + .",
+      "explanation": "Windows + . は絵文字・記号パネルを開きます。チャットの反応、資料の記号入力、チェックマークや矢印の入力を、検索やコピペなしで素早く行えます。"
     },
     {
       "id": 1008,
-      "question": "デスクトップにフォーカスがある状態でシャットダウンダイアログを表示するショートカットキーはどれか。",
+      "question": "VS Codeでコマンドパレットを開き、設定変更や拡張機能のコマンドを名前で実行するショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+F4",
-        "B. Ctrl+Alt+Delete",
-        "C. Win+L",
-        "D. Win+X"
+        "Ctrl + Shift + P",
+        "Ctrl + P",
+        "Ctrl + Alt + P",
+        "F1 + Shift"
       ],
-      "answer": "A. Alt+F4"
+      "answer": "Ctrl + Shift + P",
+      "explanation": "Ctrl + Shift + PはVS Codeのコマンドパレットを開きます。メニューを探さず機能名で直接実行できるため、エディタ操作をコマンド駆動に変える上級者必須の入口です。"
     },
     {
       "id": 1009,
-      "question": "タスクバーの1番目にあるアプリを管理者として起動するショートカットキーはどれか。",
+      "question": "VS Codeでファイル名を数文字入力して、目的のファイルをすばやく開くショートカットキーはどれですか？",
       "choices": [
-        "A. Win+Shift+1",
-        "B. Win+Ctrl+1",
-        "C. Win+Alt+1",
-        "D. Win+Ctrl+Shift+1"
+        "Ctrl + P",
+        "Ctrl + F",
+        "Ctrl + O",
+        "Ctrl + Shift + F"
       ],
-      "answer": "D. Win+Ctrl+Shift+1"
+      "answer": "Ctrl + P",
+      "explanation": "Ctrl + Pはクイックオープンです。プロジェクト内の大量のファイルから目的のファイルへ直接ジャンプでき、フォルダーツリーをクリックして探す時間をなくします。"
     },
     {
       "id": 1010,
-      "question": "リモートデスクトップ接続中にリモート側へCtrl+Alt+Delete相当を送るショートカットキーはどれか。",
+      "question": "VS Codeで統合ターミナルを開閉し、エディタから離れずコマンド実行へ移るショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Alt+End",
-        "B. Ctrl+Alt+Delete",
-        "C. Ctrl+Shift+End",
-        "D. Alt+End"
+        "Ctrl + `",
+        "Ctrl + T",
+        "Alt + `",
+        "Ctrl + Shift + T"
       ],
-      "answer": "A. Ctrl+Alt+End"
+      "answer": "Ctrl + `",
+      "explanation": "Ctrl + `はVS Codeの統合ターミナルを開閉します。コード編集、テスト実行、Git操作を同じ画面内で往復できるため、開発作業の流れを止めません。"
     },
     {
       "id": 1011,
-      "question": "リモートデスクトップ接続で全画面表示を切り替えるショートカットキーはどれか。",
+      "question": "VS Codeで現在行や選択行をコピー＆ペーストせず、上下へ移動するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Alt+Break",
-        "B. Ctrl+Alt+Enter",
-        "C. Alt+Enter",
-        "D. Win+Enter"
+        "Alt + ↑ / ↓",
+        "Ctrl + ↑ / ↓",
+        "Shift + ↑ / ↓",
+        "Ctrl + Shift + ↑ / ↓"
       ],
-      "answer": "A. Ctrl+Alt+Break"
+      "answer": "Alt + ↑ / ↓",
+      "explanation": "Alt + ↑ / ↓は行の移動です。コード、箇条書き、設定項目の順序変更をコピペなしで行えるため、構造の並べ替えが圧倒的に速く安全になります。"
     },
     {
       "id": 1012,
-      "question": "リモートデスクトップ接続でアプリを左から右へ切り替えるショートカットキーはどれか。",
+      "question": "VS Codeで現在行を下方向に複製し、似た処理や設定行をすばやく増やすショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+PageUp",
-        "B. Alt+PageDown",
-        "C. Ctrl+PageUp",
-        "D. Ctrl+Alt+Tab"
+        "Shift + Alt + ↓",
+        "Ctrl + D",
+        "Ctrl + Shift + C",
+        "Alt + D"
       ],
-      "answer": "A. Alt+PageUp"
+      "answer": "Shift + Alt + ↓",
+      "explanation": "Shift + Alt + ↓は行の複製です。似たコードや設定を増やす場面で、選択、コピー、貼り付けの3段階を1操作に短縮できます。"
     },
     {
       "id": 1013,
-      "question": "リモートデスクトップ接続でアプリを右から左へ切り替えるショートカットキーはどれか。",
+      "question": "VS Codeなどのエディタで、選択行や現在行のコメントアウトを切り替えるショートカットキーはどれですか？",
       "choices": [
-        "A. Alt+PageUp",
-        "B. Alt+PageDown",
-        "C. Ctrl+PageDown",
-        "D. Shift+Alt+Tab"
+        "Ctrl + /",
+        "Ctrl + Shift + /",
+        "Alt + /",
+        "Ctrl + #"
       ],
-      "answer": "B. Alt+PageDown"
+      "answer": "Ctrl + /",
+      "explanation": "Ctrl + /はコメント切り替えの定番です。コードの一時無効化、メモ化、検証用の切り分けを高速に行え、デバッグやレビューのテンポが上がります。"
     },
     {
       "id": 1014,
-      "question": "リモートデスクトップ接続で起動した順にプログラムを切り替えるショートカットキーはどれか。",
+      "question": "VS Codeで変数名や関数名などのシンボル名を、安全に一括変更するリネーム機能のキーはどれですか？",
       "choices": [
-        "A. Alt+Insert",
-        "B. Alt+Home",
-        "C. Ctrl+Insert",
-        "D. Shift+Insert"
+        "F2",
+        "F5",
+        "F8",
+        "Ctrl + R"
       ],
-      "answer": "A. Alt+Insert"
+      "answer": "F2",
+      "explanation": "VS CodeのF2はシンボルのリネームです。単なる文字列置換ではなく参照関係を踏まえて変更できるため、変数名変更の漏れや事故を防げます。"
     },
     {
       "id": 1015,
-      "question": "リモートデスクトップ接続でリモート画面全体のスクリーンショットをクリップボードにコピーするショートカットキーはどれか。",
+      "question": "VS Codeで選択中の単語と同じ次の出現箇所を追加選択し、複数箇所を同時編集するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Alt+Plus",
-        "B. Ctrl+Alt+Minus",
-        "C. Alt+PrtSc",
-        "D. Win+PrtSc"
+        "Ctrl + D",
+        "Ctrl + F",
+        "Ctrl + Shift + L",
+        "Alt + Click"
       ],
-      "answer": "A. Ctrl+Alt+Plus"
+      "answer": "Ctrl + D",
+      "explanation": "Ctrl + Dは同じ単語の次の一致を選択に追加します。複数箇所の文言やコードを同時に編集でき、繰り返し修正の手間とミスを大きく減らします。"
     },
     {
       "id": 1016,
-      "question": "リモートデスクトップ接続でリモート側のアクティブウィンドウのスクリーンショットをコピーするショートカットキーはどれか。",
+      "question": "VS Codeで関数やクラスの定義元へジャンプするキーはどれですか？",
       "choices": [
-        "A. Ctrl+Alt+Plus",
-        "B. Ctrl+Alt+Minus",
-        "C. Alt+PrtSc",
-        "D. Ctrl+PrtSc"
+        "F12",
+        "F2",
+        "F5",
+        "Ctrl + F12"
       ],
-      "answer": "B. Ctrl+Alt+Minus"
+      "answer": "F12",
+      "explanation": "F12は定義へ移動するキーです。実装の場所を探してファイルツリーをたどる必要がなく、コード理解やレビューのスピードを大きく引き上げます。"
     },
     {
       "id": 1017,
-      "question": "Windows Terminalで新しいタブを開くショートカットキーはどれか。",
+      "question": "ブラウザで閲覧履歴、キャッシュ、Cookieなどを削除するダイアログを開くショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Shift+T",
-        "B. Ctrl+T",
-        "C. Ctrl+Alt+T",
-        "D. Alt+T"
+        "Ctrl + Shift + Delete",
+        "Ctrl + Delete",
+        "Alt + Shift + Delete",
+        "Ctrl + Shift + Backspace"
       ],
-      "answer": "A. Ctrl+Shift+T"
+      "answer": "Ctrl + Shift + Delete",
+      "explanation": "Ctrl + Shift + Deleteは閲覧データ削除の入口です。Webアプリの表示不具合やキャッシュ問題の切り分け時に、設定画面を探さずすぐ対処できます。"
     },
     {
       "id": 1018,
-      "question": "Windows Terminalで現在のタブまたはペインを閉じるショートカットキーはどれか。",
+      "question": "PowerPointでスライドショーを最初のスライドから開始するキーはどれですか？",
       "choices": [
-        "A. Ctrl+W",
-        "B. Ctrl+Shift+W",
-        "C. Alt+F4",
-        "D. Ctrl+F4"
+        "F5",
+        "Shift + F5",
+        "Ctrl + F5",
+        "Alt + F5"
       ],
-      "answer": "B. Ctrl+Shift+W"
+      "answer": "F5",
+      "explanation": "F5はPowerPointのスライドショーを最初から開始します。発表前の通し確認や本番開始で、リボンの再生ボタンを探さず堂々とプレゼンに入れます。"
     },
     {
       "id": 1019,
-      "question": "Windows Terminalでコマンドパレットを開くショートカットキーはどれか。",
+      "question": "PowerPointで現在表示しているスライドからスライドショーを開始するショートカットキーはどれですか？",
       "choices": [
-        "A. Ctrl+Shift+P",
-        "B. Ctrl+P",
-        "C. Ctrl+Alt+P",
-        "D. Alt+P"
+        "Shift + F5",
+        "F5",
+        "Ctrl + Enter",
+        "Alt + Enter"
       ],
-      "answer": "A. Ctrl+Shift+P"
+      "answer": "Shift + F5",
+      "explanation": "Shift + F5は現在のスライドからスライドショーを開始します。途中スライドの確認やリハーサルで最初から再生し直す必要がなく、修正確認が一気に速くなります。"
     },
     {
       "id": 1020,
-      "question": "Windows Terminalで検索を開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F",
-        "B. Ctrl+Shift+F",
-        "C. Alt+F",
-        "D. Ctrl+Alt+F"
-      ],
-      "answer": "B. Ctrl+Shift+F"
-    },
-    {
-      "id": 1021,
-      "question": "Windows Terminalで設定画面を開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+,",
-        "B. Ctrl+.",
-        "C. Ctrl+Shift+,",
-        "D. Alt+,"
-      ],
-      "answer": "A. Ctrl+,"
-    },
-    {
-      "id": 1022,
-      "question": "Windows Terminalで選択したテキストをコピーする既定ショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+C",
-        "B. Ctrl+Shift+C",
-        "C. Alt+C",
-        "D. Ctrl+Alt+C"
-      ],
-      "answer": "B. Ctrl+Shift+C"
-    },
-    {
-      "id": 1023,
-      "question": "Windows Terminalでクリップボードの内容を貼り付ける既定ショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+V",
-        "B. Ctrl+Shift+V",
-        "C. Shift+Insert",
-        "D. Alt+V"
-      ],
-      "answer": "B. Ctrl+Shift+V"
-    },
-    {
-      "id": 1024,
-      "question": "Windows Terminalでペインを自動分割するショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Shift+D",
-        "B. Ctrl+Shift+D",
-        "C. Alt+D",
-        "D. Ctrl+Alt+D"
-      ],
-      "answer": "A. Alt+Shift+D"
-    },
-    {
-      "id": 1025,
-      "question": "Windows Terminalで水平ペイン分割を行う既定ショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Shift+Minus",
-        "B. Alt+Shift+Plus",
-        "C. Ctrl+Shift+Minus",
-        "D. Ctrl+Alt+Minus"
-      ],
-      "answer": "A. Alt+Shift+Minus"
-    },
-    {
-      "id": 1026,
-      "question": "Windows Terminalで垂直ペイン分割を行う既定ショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Shift+Minus",
-        "B. Alt+Shift+Plus",
-        "C. Ctrl+Shift+Plus",
-        "D. Ctrl+Alt+Plus"
-      ],
-      "answer": "B. Alt+Shift+Plus"
-    },
-    {
-      "id": 1027,
-      "question": "Windows Terminalで分割ペイン間のフォーカスを移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Arrow",
-        "B. Ctrl+Arrow",
-        "C. Shift+Arrow",
-        "D. Win+Arrow"
-      ],
-      "answer": "A. Alt+Arrow"
-    },
-    {
-      "id": 1028,
-      "question": "Windows Terminalで分割ペインのサイズを変更するショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Shift+Arrow",
-        "B. Ctrl+Shift+Arrow",
-        "C. Win+Shift+Arrow",
-        "D. Ctrl+Alt+Arrow"
-      ],
-      "answer": "A. Alt+Shift+Arrow"
-    },
-    {
-      "id": 1029,
-      "question": "Windows Terminalで次のタブへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Tab",
-        "B. Ctrl+Shift+Tab",
-        "C. Alt+Tab",
-        "D. Ctrl+PageUp"
-      ],
-      "answer": "A. Ctrl+Tab"
-    },
-    {
-      "id": 1030,
-      "question": "Windows Terminalで前のタブへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Tab",
-        "B. Ctrl+Shift+Tab",
-        "C. Alt+Tab",
-        "D. Ctrl+PageDown"
-      ],
-      "answer": "B. Ctrl+Shift+Tab"
-    },
-    {
-      "id": 1031,
-      "question": "Windows Terminalで1番目のタブへ直接移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+1",
-        "B. Ctrl+Alt+1",
-        "C. Ctrl+Shift+1",
-        "D. Alt+1"
-      ],
-      "answer": "B. Ctrl+Alt+1"
-    },
-    {
-      "id": 1032,
-      "question": "Windows Terminalで新しいタブのプロファイル選択メニューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+Space",
-        "B. Ctrl+Space",
-        "C. Alt+Space",
-        "D. Ctrl+Alt+Space"
-      ],
-      "answer": "A. Ctrl+Shift+Space"
-    },
-    {
-      "id": 1033,
-      "question": "コマンドプロンプトでコマンド履歴ウィンドウを表示するキーはどれか。",
-      "choices": [
-        "A. F3",
-        "B. F5",
-        "C. F7",
-        "D. F9"
-      ],
-      "answer": "C. F7"
-    },
-    {
-      "id": 1034,
-      "question": "コマンドプロンプトで直前のコマンドを再入力するキーはどれか。",
-      "choices": [
-        "A. F1",
-        "B. F2",
-        "C. F3",
-        "D. F4"
-      ],
-      "answer": "C. F3"
-    },
-    {
-      "id": 1035,
-      "question": "コマンドプロンプトで直前のコマンドから1文字ずつコピーするキーはどれか。",
-      "choices": [
-        "A. F1",
-        "B. F2",
-        "C. F3",
-        "D. F4"
-      ],
-      "answer": "A. F1"
-    },
-    {
-      "id": 1036,
-      "question": "コマンドプロンプトで指定した文字の直前まで、前回コマンドからコピーするキーはどれか。",
-      "choices": [
-        "A. F1",
-        "B. F2",
-        "C. F4",
-        "D. F8"
-      ],
-      "answer": "B. F2"
-    },
-    {
-      "id": 1037,
-      "question": "コマンドプロンプトで指定した文字の直前まで、現在行の文字を削除するキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F3",
-        "C. F4",
-        "D. F7"
-      ],
-      "answer": "C. F4"
-    },
-    {
-      "id": 1038,
-      "question": "コマンドプロンプトで入力済みの文字列に一致する履歴を順に検索するキーはどれか。",
-      "choices": [
-        "A. F5",
-        "B. F7",
-        "C. F8",
-        "D. F9"
-      ],
-      "answer": "C. F8"
-    },
-    {
-      "id": 1039,
-      "question": "コマンドプロンプトで番号を指定して履歴からコマンドを呼び出すキーはどれか。",
-      "choices": [
-        "A. F5",
-        "B. F7",
-        "C. F8",
-        "D. F9"
-      ],
-      "answer": "D. F9"
-    },
-    {
-      "id": 1040,
-      "question": "コマンドプロンプトで現在のコマンド履歴を消去するショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+F7",
-        "B. Ctrl+F7",
-        "C. Shift+F7",
-        "D. Alt+Delete"
-      ],
-      "answer": "A. Alt+F7"
-    },
-    {
-      "id": 1041,
-      "question": "コマンド入力中に現在行をクリアするキーはどれか。",
-      "choices": [
-        "A. Esc",
-        "B. Tab",
-        "C. Insert",
-        "D. Pause"
-      ],
-      "answer": "A. Esc"
-    },
-    {
-      "id": 1042,
-      "question": "ターミナルで実行中のコマンドを中断する代表的なショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+C",
-        "B. Ctrl+V",
-        "C. Ctrl+Z",
-        "D. Ctrl+X"
-      ],
-      "answer": "A. Ctrl+C"
-    },
-    {
-      "id": 1043,
-      "question": "コンソールアプリへBreak信号を送るショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Break",
-        "B. Ctrl+Pause",
-        "C. Alt+Break",
-        "D. Shift+Break"
-      ],
-      "answer": "A. Ctrl+Break"
-    },
-    {
-      "id": 1044,
-      "question": "コマンド入力行でカーソル左側の文字をまとめて削除するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Home",
-        "B. Ctrl+End",
-        "C. Ctrl+Left",
-        "D. Ctrl+Backspace"
-      ],
-      "answer": "A. Ctrl+Home"
-    },
-    {
-      "id": 1045,
-      "question": "コマンド入力行でカーソル右側の文字をまとめて削除するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Home",
-        "B. Ctrl+End",
-        "C. Ctrl+Right",
-        "D. Ctrl+Delete"
-      ],
-      "answer": "B. Ctrl+End"
-    },
-    {
-      "id": 1046,
-      "question": "PowerShellで画面をクリアする代表的なショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+L",
-        "B. Ctrl+R",
-        "C. Ctrl+K",
-        "D. Ctrl+E"
-      ],
-      "answer": "A. Ctrl+L"
-    },
-    {
-      "id": 1047,
-      "question": "PowerShellで履歴の逆方向検索を開始するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F",
-        "B. Ctrl+R",
-        "C. Ctrl+H",
-        "D. Ctrl+S"
-      ],
-      "answer": "B. Ctrl+R"
-    },
-    {
-      "id": 1048,
-      "question": "コマンドラインで入力中のコマンドやパスを補完する基本キーはどれか。",
-      "choices": [
-        "A. Tab",
-        "B. Esc",
-        "C. Insert",
-        "D. Pause"
-      ],
-      "answer": "A. Tab"
-    },
-    {
-      "id": 1049,
-      "question": "コマンドライン補完候補を逆方向にたどるショートカットキーはどれか。",
-      "choices": [
-        "A. Shift+Tab",
-        "B. Ctrl+Tab",
-        "C. Alt+Tab",
-        "D. Win+Tab"
-      ],
-      "answer": "A. Shift+Tab"
-    },
-    {
-      "id": 1050,
-      "question": "Visual Studio Codeでコマンドパレットを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+P",
-        "B. Ctrl+P",
-        "C. Ctrl+Alt+P",
-        "D. F1+P"
-      ],
-      "answer": "A. Ctrl+Shift+P"
-    },
-    {
-      "id": 1051,
-      "question": "Visual Studio Codeでファイルを素早く開くQuick Openのショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+P",
-        "B. Ctrl+Shift+P",
-        "C. Ctrl+O",
-        "D. Ctrl+Alt+O"
-      ],
-      "answer": "A. Ctrl+P"
-    },
-    {
-      "id": 1052,
-      "question": "Visual Studio Codeで統合ターミナルを表示または非表示にするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+`",
-        "B. Ctrl+Shift+`",
-        "C. Alt+`",
-        "D. Ctrl+T"
-      ],
-      "answer": "A. Ctrl+`"
-    },
-    {
-      "id": 1053,
-      "question": "Visual Studio Codeでサイドバーを表示または非表示にするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+B",
-        "B. Ctrl+Shift+B",
-        "C. Alt+B",
-        "D. Ctrl+J"
-      ],
-      "answer": "A. Ctrl+B"
-    },
-    {
-      "id": 1054,
-      "question": "Visual Studio Codeでエクスプローラービューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+E",
-        "B. Ctrl+E",
-        "C. Ctrl+Alt+E",
-        "D. Alt+E"
-      ],
-      "answer": "A. Ctrl+Shift+E"
-    },
-    {
-      "id": 1055,
-      "question": "Visual Studio Codeで検索ビューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F",
-        "B. Ctrl+Shift+F",
-        "C. Ctrl+H",
-        "D. Ctrl+Alt+F"
-      ],
-      "answer": "B. Ctrl+Shift+F"
-    },
-    {
-      "id": 1056,
-      "question": "Visual Studio Codeでソース管理ビューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+G",
-        "B. Ctrl+G",
-        "C. Ctrl+Alt+G",
-        "D. Alt+G"
-      ],
-      "answer": "A. Ctrl+Shift+G"
-    },
-    {
-      "id": 1057,
-      "question": "Visual Studio Codeで実行とデバッグビューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+D",
-        "B. Ctrl+D",
-        "C. Ctrl+Alt+D",
-        "D. F5"
-      ],
-      "answer": "A. Ctrl+Shift+D"
-    },
-    {
-      "id": 1058,
-      "question": "Visual Studio Codeで拡張機能ビューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+X",
-        "B. Ctrl+X",
-        "C. Ctrl+Alt+X",
-        "D. Alt+X"
-      ],
-      "answer": "A. Ctrl+Shift+X"
-    },
-    {
-      "id": 1059,
-      "question": "Visual Studio Codeで問題パネルを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+M",
-        "B. Ctrl+M",
-        "C. Ctrl+Alt+M",
-        "D. Alt+M"
-      ],
-      "answer": "A. Ctrl+Shift+M"
-    },
-    {
-      "id": 1060,
-      "question": "Visual Studio Codeでパネルを表示または非表示にするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+J",
-        "B. Ctrl+B",
-        "C. Ctrl+Shift+J",
-        "D. Alt+J"
-      ],
-      "answer": "A. Ctrl+J"
-    },
-    {
-      "id": 1061,
-      "question": "Visual Studio Codeで定義へ移動するキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F5",
-        "C. F12",
-        "D. Shift+F12"
-      ],
-      "answer": "C. F12"
-    },
-    {
-      "id": 1062,
-      "question": "Visual Studio Codeで定義をピーク表示するショートカットキーはどれか。",
-      "choices": [
-        "A. F12",
-        "B. Alt+F12",
-        "C. Shift+F12",
-        "D. Ctrl+F12"
-      ],
-      "answer": "B. Alt+F12"
-    },
-    {
-      "id": 1063,
-      "question": "Visual Studio Codeで参照を表示するショートカットキーはどれか。",
-      "choices": [
-        "A. F12",
-        "B. Alt+F12",
-        "C. Shift+F12",
-        "D. Ctrl+Shift+F12"
-      ],
-      "answer": "C. Shift+F12"
-    },
-    {
-      "id": 1064,
-      "question": "Visual Studio Codeでシンボル名を変更するキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F4",
-        "C. F9",
-        "D. F12"
-      ],
-      "answer": "A. F2"
-    },
-    {
-      "id": 1065,
-      "question": "Visual Studio Codeで候補提示を手動表示するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Space",
-        "B. Ctrl+Enter",
-        "C. Alt+Space",
-        "D. Ctrl+Shift+Space"
-      ],
-      "answer": "A. Ctrl+Space"
-    },
-    {
-      "id": 1066,
-      "question": "Visual Studio Codeでクイック修正を表示するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+.",
-        "B. Ctrl+,",
-        "C. Alt+Enter",
-        "D. Shift+F4"
-      ],
-      "answer": "A. Ctrl+."
-    },
-    {
-      "id": 1067,
-      "question": "Visual Studio Codeで現在行を上下へ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Alt+Up/Down",
-        "B. Ctrl+Up/Down",
-        "C. Shift+Up/Down",
-        "D. Ctrl+Shift+Up/Down"
-      ],
-      "answer": "A. Alt+Up/Down"
-    },
-    {
-      "id": 1068,
-      "question": "Visual Studio Codeで現在行を下に複製するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+D",
-        "B. Shift+Alt+Down",
-        "C. Ctrl+Shift+D",
-        "D. Alt+Down"
-      ],
-      "answer": "B. Shift+Alt+Down"
-    },
-    {
-      "id": 1069,
-      "question": "Visual Studio Codeで行コメントを切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+/",
-        "B. Ctrl+Shift+/",
-        "C. Alt+/",
-        "D. Shift+Alt+A"
-      ],
-      "answer": "A. Ctrl+/"
-    },
-    {
-      "id": 1070,
-      "question": "Visual Studio Codeでブロックコメントを切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+/",
-        "B. Ctrl+Shift+/",
-        "C. Shift+Alt+A",
-        "D. Ctrl+Alt+A"
-      ],
-      "answer": "C. Shift+Alt+A"
-    },
-    {
-      "id": 1071,
-      "question": "Visual Studio Codeで現在選択している単語の次の一致箇所を追加選択するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+D",
-        "B. Ctrl+F",
-        "C. Ctrl+Shift+L",
-        "D. Alt+D"
-      ],
-      "answer": "A. Ctrl+D"
-    },
-    {
-      "id": 1072,
-      "question": "Visual Studio Codeで現在の選択語句と一致するすべての箇所を選択するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+D",
-        "B. Ctrl+Shift+L",
-        "C. Ctrl+F2",
-        "D. Ctrl+Alt+L"
-      ],
-      "answer": "B. Ctrl+Shift+L"
-    },
-    {
-      "id": 1073,
-      "question": "Visual Studio Codeで現在の単語の全出現箇所を選択するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F2",
-        "B. Ctrl+D",
-        "C. Ctrl+Shift+F",
-        "D. Alt+F2"
-      ],
-      "answer": "A. Ctrl+F2"
-    },
-    {
-      "id": 1074,
-      "question": "Visual Studio Codeでキーボードショートカット一覧を開くキーシーケンスはどれか。",
-      "choices": [
-        "A. Ctrl+K Ctrl+S",
-        "B. Ctrl+K Ctrl+O",
-        "C. Ctrl+K Ctrl+F",
-        "D. Ctrl+Shift+S"
-      ],
-      "answer": "A. Ctrl+K Ctrl+S"
-    },
-    {
-      "id": 1075,
-      "question": "Visual Studio Codeですべて折りたたむキーシーケンスはどれか。",
-      "choices": [
-        "A. Ctrl+K Ctrl+0",
-        "B. Ctrl+K Ctrl+J",
-        "C. Ctrl+Shift+[",
-        "D. Ctrl+Shift+]"
-      ],
-      "answer": "A. Ctrl+K Ctrl+0"
-    },
-    {
-      "id": 1076,
-      "question": "Visual Studio Codeですべて展開するキーシーケンスはどれか。",
-      "choices": [
-        "A. Ctrl+K Ctrl+0",
-        "B. Ctrl+K Ctrl+J",
-        "C. Ctrl+Shift+[",
-        "D. Ctrl+Shift+]"
-      ],
-      "answer": "B. Ctrl+K Ctrl+J"
-    },
-    {
-      "id": 1077,
-      "question": "Visual Studio Codeで現在の領域を折りたたむショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+[",
-        "B. Ctrl+Shift+]",
-        "C. Ctrl+K Ctrl+0",
-        "D. Alt+["
-      ],
-      "answer": "A. Ctrl+Shift+["
-    },
-    {
-      "id": 1078,
-      "question": "Visual Studio Codeで現在の領域を展開するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+[",
-        "B. Ctrl+Shift+]",
-        "C. Ctrl+K Ctrl+J",
-        "D. Alt+]"
-      ],
-      "answer": "B. Ctrl+Shift+]"
-    },
-    {
-      "id": 1079,
-      "question": "Visual Studio CodeでZen Modeを切り替えるキーシーケンスはどれか。",
-      "choices": [
-        "A. Ctrl+K Z",
-        "B. Ctrl+K M",
-        "C. Ctrl+Shift+Z",
-        "D. Alt+Z"
-      ],
-      "answer": "A. Ctrl+K Z"
-    },
-    {
-      "id": 1080,
-      "question": "Visual Studio Codeで1番目のエディターグループにフォーカスするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+1",
-        "B. Alt+1",
-        "C. Ctrl+Alt+1",
-        "D. Ctrl+Shift+1"
-      ],
-      "answer": "A. Ctrl+1"
-    },
-    {
-      "id": 1081,
-      "question": "Visual Studio Codeで2番目のエディターグループにフォーカスするショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+1",
-        "B. Ctrl+2",
-        "C. Alt+2",
-        "D. Ctrl+Shift+2"
-      ],
-      "answer": "B. Ctrl+2"
-    },
-    {
-      "id": 1082,
-      "question": "Visual Studio Codeで次のエディターへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+PageDown",
-        "B. Ctrl+PageUp",
-        "C. Alt+PageDown",
-        "D. Shift+PageDown"
-      ],
-      "answer": "A. Ctrl+PageDown"
-    },
-    {
-      "id": 1083,
-      "question": "Visual Studio Codeで前のエディターへ移動するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+PageDown",
-        "B. Ctrl+PageUp",
-        "C. Alt+PageUp",
-        "D. Shift+PageUp"
-      ],
-      "answer": "B. Ctrl+PageUp"
-    },
-    {
-      "id": 1084,
-      "question": "Visual Studio Codeで閉じたエディターを再度開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+T",
-        "B. Ctrl+T",
-        "C. Ctrl+Shift+N",
-        "D. Ctrl+Alt+T"
-      ],
-      "answer": "A. Ctrl+Shift+T"
-    },
-    {
-      "id": 1085,
-      "question": "Visual Studio Codeでデバッグを開始するキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F5",
-        "C. F9",
-        "D. F10"
-      ],
-      "answer": "B. F5"
-    },
-    {
-      "id": 1086,
-      "question": "Visual Studio Codeでデバッグせずに実行するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+F5",
-        "B. Shift+F5",
-        "C. Alt+F5",
-        "D. Ctrl+Shift+F5"
-      ],
-      "answer": "A. Ctrl+F5"
-    },
-    {
-      "id": 1087,
-      "question": "Visual Studio Codeでデバッグを停止するショートカットキーはどれか。",
-      "choices": [
-        "A. F5",
-        "B. Ctrl+F5",
-        "C. Shift+F5",
-        "D. Alt+F5"
-      ],
-      "answer": "C. Shift+F5"
-    },
-    {
-      "id": 1088,
-      "question": "Visual Studio Codeでブレークポイントを切り替えるキーはどれか。",
-      "choices": [
-        "A. F5",
-        "B. F8",
-        "C. F9",
-        "D. F10"
-      ],
-      "answer": "C. F9"
-    },
-    {
-      "id": 1089,
-      "question": "Visual Studio Codeのデバッグ中にステップオーバーするキーはどれか。",
-      "choices": [
-        "A. F9",
-        "B. F10",
-        "C. F11",
-        "D. Shift+F11"
-      ],
-      "answer": "B. F10"
-    },
-    {
-      "id": 1090,
-      "question": "Visual Studio Codeのデバッグ中にステップインするキーはどれか。",
-      "choices": [
-        "A. F9",
-        "B. F10",
-        "C. F11",
-        "D. Shift+F11"
-      ],
-      "answer": "C. F11"
-    },
-    {
-      "id": 1091,
-      "question": "Visual Studio Codeのデバッグ中にステップアウトするショートカットキーはどれか。",
-      "choices": [
-        "A. F10",
-        "B. F11",
-        "C. Shift+F11",
-        "D. Ctrl+F11"
-      ],
-      "answer": "C. Shift+F11"
-    },
-    {
-      "id": 1092,
-      "question": "ChromeやEdgeで開発者ツールを開く標準的な単一キーはどれか。",
-      "choices": [
-        "A. F5",
-        "B. F7",
-        "C. F11",
-        "D. F12"
-      ],
-      "answer": "D. F12"
-    },
-    {
-      "id": 1093,
-      "question": "ChromeやEdgeで開発者ツールを開く代表的な複合ショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+I",
-        "B. Ctrl+Shift+J",
-        "C. Ctrl+Shift+C",
-        "D. Ctrl+Shift+M"
-      ],
-      "answer": "A. Ctrl+Shift+I"
-    },
-    {
-      "id": 1094,
-      "question": "ChromeやEdgeの開発者ツールでConsoleを直接開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+I",
-        "B. Ctrl+Shift+J",
-        "C. Ctrl+Shift+C",
-        "D. Ctrl+Shift+P"
-      ],
-      "answer": "B. Ctrl+Shift+J"
-    },
-    {
-      "id": 1095,
-      "question": "ChromeやEdgeで要素選択ツールを起動してページ上の要素を検査するショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+C",
-        "B. Ctrl+Shift+I",
-        "C. Ctrl+Shift+J",
-        "D. Ctrl+Shift+M"
-      ],
-      "answer": "A. Ctrl+Shift+C"
-    },
-    {
-      "id": 1096,
-      "question": "ChromeやEdgeの開発者ツールでデバイスツールバーを切り替えるショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+D",
-        "B. Ctrl+Shift+M",
-        "C. Ctrl+Alt+M",
-        "D. Alt+Shift+M"
-      ],
-      "answer": "B. Ctrl+Shift+M"
-    },
-    {
-      "id": 1097,
-      "question": "ChromeやEdgeの開発者ツールでコマンドメニューを開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+Shift+P",
-        "B. Ctrl+P",
-        "C. Ctrl+Alt+P",
-        "D. Alt+P"
-      ],
-      "answer": "A. Ctrl+Shift+P"
-    },
-    {
-      "id": 1098,
-      "question": "ChromeやEdgeの開発者ツールでSources内のファイルを素早く開くショートカットキーはどれか。",
-      "choices": [
-        "A. Ctrl+P",
-        "B. Ctrl+Shift+P",
-        "C. Ctrl+O",
-        "D. Ctrl+Alt+O"
-      ],
-      "answer": "A. Ctrl+P"
-    },
-    {
-      "id": 1099,
-      "question": "ChromeやEdgeの開発者ツールで下部ドロワーを表示または非表示にするキーはどれか。",
-      "choices": [
-        "A. Esc",
-        "B. Tab",
-        "C. F5",
-        "D. Insert"
-      ],
-      "answer": "A. Esc"
+      "question": "Windowsのスタート検索で選択中のアプリを、管理者として実行したいときに使うショートカットキーはどれですか？",
+      "choices": [
+        "Ctrl + Shift + Enter",
+        "Ctrl + Enter",
+        "Alt + Enter",
+        "Shift + Enter"
+      ],
+      "answer": "Ctrl + Shift + Enter",
+      "explanation": "Ctrl + Shift + Enterは管理者として実行するための上級ショートカットです。管理者権限が必要な設定変更やツール起動を、右クリックなしで素早く実行できます。"
     }
   ]
 }

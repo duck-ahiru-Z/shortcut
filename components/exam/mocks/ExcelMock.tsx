@@ -1,6 +1,16 @@
-import styles from "./Mocks.module.css";
+"use client";
 
-export default function ExcelMock({ os = "windows" }: { os?: "windows" | "mac" }) {
+import { useState } from "react";
+import styles from "./ExcelMock.module.css";
+
+type Props = {
+  os?: "windows" | "mac";
+  isSuccess?: boolean;
+};
+
+export default function ExcelMock({ os = "windows", isSuccess }: Props) {
+  const [activeCell, setActiveCell] = useState<{r: number, c: number}>({r: 1, c: 1});
+
   return (
     <div className={styles.excelContainer}>
       <div className={styles.excelHeader}>
@@ -19,11 +29,31 @@ export default function ExcelMock({ os = "windows" }: { os?: "windows" | "mac" }
         {os === "mac" ? "Numbers / Excel" : "スプレッドシート"}
       </div>
       <div className={styles.excelBody}>
-        <div className={styles.excelBodyInner}>
-           <div className={styles.promptBox}>
-             指示されたキーを入力...
-           </div>
+        <div className={styles.excelGrid}>
+          {Array.from({ length: 6 }).map((_, r) => (
+            <div key={r} className={styles.excelRow}>
+              {Array.from({ length: 4 }).map((_, c) => {
+                const isActive = activeCell.r === r && activeCell.c === c;
+                // If success, jump selection to bottom right artificially for visual effect
+                const showActive = isSuccess ? (r === 5 && c === 3) : isActive;
+                return (
+                  <div 
+                    key={c} 
+                    className={`${styles.excelCell} ${showActive ? styles.excelCellActive : ""}`}
+                    onClick={() => setActiveCell({r, c})}
+                  >
+                    {r === 0 ? ["A", "B", "C", "D"][c] : `Data ${r}-${c}`}
+                  </div>
+                );
+              })}
+            </div>
+          ))}
         </div>
+        {isSuccess && (
+          <div className={styles.successToast}>
+            実行しました！
+          </div>
+        )}
       </div>
     </div>
   );

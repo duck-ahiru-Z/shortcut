@@ -6,9 +6,9 @@ export default function FlowSection() {
         {[
           { grade: '5級', desc: '基礎操作 (全ユーザー向け)', color: '#6c757d' },
           { grade: '4級', desc: '実務・ウィンドウ操作', color: '#00a4ef' },
-          { grade: '3級', desc: 'アプリ別応用 (準備中)', color: '#27c93f' },
-          { grade: '2級', desc: '高度・設定操作 (準備中)', color: '#ffbd2e' },
-          { grade: '1級', desc: '完全マウスレス (準備中)', color: '#ff5f56' },
+          { grade: '3級', desc: 'アプリ別応用', color: '#27c93f' },
+          { grade: '2級', desc: '高度・設定操作', color: '#ffbd2e' },
+          { grade: '1級', desc: '完全マウスレス', color: '#ff5f56' },
         ].map((g, i) => (
           <div key={i} style={{ 
             background: 'var(--card-bg)', border: `1px solid ${g.color}`, borderRadius: '12px', 

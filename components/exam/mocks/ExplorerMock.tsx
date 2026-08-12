@@ -1,6 +1,7 @@
-import styles from "./Mocks.module.css";
+import styles from "./ExplorerMock.module.css";
 
-export default function ExplorerMock({ os = "windows" }: { os?: "windows" | "mac" }) {
+type Props = { os?: "windows" | "mac"; isSuccess?: boolean; };
+export default function ExplorerMock({ os = "windows", isSuccess }: Props) {
   return (
     <div className={styles.explorerContainer}>
       <div className={styles.explorerHeader}>
@@ -27,6 +28,8 @@ export default function ExplorerMock({ os = "windows" }: { os?: "windows" | "mac
           指示されたキーを入力...
         </div>
       </div>
-    </div>
+    
+        {isSuccess && <div className={styles.successToast}>実行しました！</div>}
+      </div>
   );
 }

@@ -1,0 +1,71 @@
+/* ExcelMock */
+.excelContainer {
+  border: 1px solid #107c41;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0;
+  background-color: white;
+}
+.excelHeader {
+  background-color: #107c41;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.excelBody {
+  position: relative;
+  overflow: hidden;
+}
+.excelGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.excelRow {
+  display: flex;
+  width: 100%;
+}
+.excelRow:first-child .excelCell {
+  background-color: #f3f2f1;
+  font-weight: bold;
+  text-align: center;
+}
+.excelCell {
+  flex: 1;
+  border-right: 1px solid #e1dfdd;
+  border-bottom: 1px solid #e1dfdd;
+  padding: 8px;
+  font-size: 13px;
+  color: #323130;
+  cursor: pointer;
+  user-select: none;
+}
+.excelCellActive {
+  outline: 2px solid #107c41;
+  outline-offset: -2px;
+  background-color: rgba(16, 124, 65, 0.1);
+}
+
+.successToast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(16, 124, 65, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  animation: popIn 0.3s ease-out;
+  pointer-events: none;
+}
+
+@keyframes popIn {
+  0% { transform: translate(-50%, -40%); opacity: 0; }
+  100% { transform: translate(-50%, -50%); opacity: 1; }
+}

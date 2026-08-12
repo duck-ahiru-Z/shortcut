@@ -1,6 +1,11 @@
-import styles from "./Mocks.module.css";
+import styles from "./WordMock.module.css";
 
-export default function WordMock({ os = "windows" }: { os?: "windows" | "mac" }) {
+type Props = {
+  os?: "windows" | "mac";
+  isSuccess?: boolean;
+};
+
+export default function WordMock({ os = "windows", isSuccess }: Props) {
   return (
     <div className={styles.wordContainer}>
       <div className={styles.wordHeader}>
@@ -18,9 +23,16 @@ export default function WordMock({ os = "windows" }: { os?: "windows" | "mac" })
         {os === "mac" ? "Pages / Word" : "文書"}
       </div>
       <div className={styles.wordBody}>
-        <div className={styles.wordPage}>
-           指示されたキーを入力...
-        </div>
+        <textarea 
+          className={styles.wordPage} 
+          defaultValue="議事録\n\n1. 挨拶\n2. 前回の振り返り\n3. 今後の課題\n\n以上"
+          spellCheck={false}
+        />
+        {isSuccess && (
+          <div className={styles.successToast}>
+            実行しました！
+          </div>
+        )}
       </div>
     </div>
   );

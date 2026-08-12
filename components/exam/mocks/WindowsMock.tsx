@@ -1,6 +1,7 @@
-import styles from "./Mocks.module.css";
+import styles from "./WindowsMock.module.css";
 
-export default function WindowsMock({ os = "windows" }: { os?: "windows" | "mac" }) {
+type Props = { os?: "windows" | "mac"; isSuccess?: boolean; };
+export default function WindowsMock({ os = "windows", isSuccess }: Props) {
   return (
     <div className={styles.windowsContainer}>
       <div className={styles.windowsBody}>
@@ -27,6 +28,8 @@ export default function WindowsMock({ os = "windows" }: { os?: "windows" | "mac"
           </>
         )}
       </div>
-    </div>
+    
+        {isSuccess && <div className={styles.successToast}>実行しました！</div>}
+      </div>
   );
 }

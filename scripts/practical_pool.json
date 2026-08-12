@@ -1,3096 +1,731 @@
 {
   "practical-3kyu": [
     {
-      "id": 3500,
-      "type": "generic_combo",
-      "question": "選択中の文字やファイルをコピーしてください。",
+      "id": 13001,
+      "question": "（Excel）表の現在位置から下方向のデータ終端へ一気に移動してください。",
       "expectedKeyCombo": [
         "control",
-        "c"
+        "arrowdown"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + 矢印キーは連続データの端へ一気にジャンプできます。巨大な表でスクロールを続ける時間をゼロにし、確認作業の速度を根本から上げます。"
     },
     {
-      "id": 3501,
-      "type": "generic_combo",
-      "question": "クリップボードの内容を貼り付けてください。",
+      "id": 13002,
+      "question": "（Excel）現在位置から右方向のデータ終端まで一気に範囲選択してください。",
       "expectedKeyCombo": [
         "control",
-        "v"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3502,
-      "type": "generic_combo",
-      "question": "選択中の文字やファイルを切り取ってください。",
-      "expectedKeyCombo": [
-        "control",
-        "x"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3503,
-      "type": "generic_combo",
-      "question": "直前の操作を元に戻してください。",
-      "expectedKeyCombo": [
-        "control",
-        "z"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3504,
-      "type": "generic_combo",
-      "question": "元に戻した操作をやり直してください。",
-      "expectedKeyCombo": [
-        "control",
-        "y"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3505,
-      "type": "generic_combo",
-      "question": "表示中の内容をすべて選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "a"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3506,
-      "type": "generic_combo",
-      "question": "作業中のファイルを保存してください。",
-      "expectedKeyCombo": [
-        "control",
-        "s"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3507,
-      "type": "generic_combo",
-      "question": "表示中の内容を印刷してください。",
-      "expectedKeyCombo": [
-        "control",
-        "p"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3508,
-      "type": "generic_combo",
-      "question": "ページや文書内を検索してください。",
-      "expectedKeyCombo": [
-        "control",
-        "f"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3509,
-      "type": "generic_combo",
-      "question": "新しいウィンドウまたは文書を作成してください。",
-      "expectedKeyCombo": [
-        "control",
-        "n"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3510,
-      "type": "generic_combo",
-      "question": "既存のファイルを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "o"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3511,
-      "type": "generic_combo",
-      "question": "現在のタブまたは文書を閉じてください。",
-      "expectedKeyCombo": [
-        "control",
-        "w"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3512,
-      "type": "generic_combo",
-      "question": "ブラウザで新しいタブを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "t"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3513,
-      "type": "generic_combo",
-      "question": "ブラウザで現在のページを再読み込みしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "r"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3514,
-      "type": "generic_combo",
-      "question": "画面やページを最新の状態に更新してください。",
-      "expectedKeyCombo": [
-        "f5"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3515,
-      "type": "generic_combo",
-      "question": "ブラウザのアドレスバーに移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "l"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3516,
-      "type": "generic_combo",
-      "question": "エクスプローラーでアドレスバーに移動してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "d"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3517,
-      "type": "generic_combo",
-      "question": "ブラウザで前のページに戻ってください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3518,
-      "type": "generic_combo",
-      "question": "ブラウザで次のページに進んでください。",
-      "expectedKeyCombo": [
-        "alt",
+        "shift",
         "arrowright"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + 矢印キーは、データ端までの範囲選択を瞬時に行います。巨大な表のコピー、削除、書式設定の準備をドラッグなしで正確に実行できます。"
     },
     {
-      "id": 3519,
-      "type": "generic_combo",
-      "question": "アクティブなアプリを終了してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "f4"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3520,
-      "type": "generic_combo",
-      "question": "開いているアプリを切り替えてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "tab"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3521,
-      "type": "generic_combo",
-      "question": "パソコンをロックしてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "l"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3522,
-      "type": "generic_combo",
-      "question": "デスクトップを表示してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "d"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3523,
-      "type": "generic_combo",
-      "question": "エクスプローラーを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "e"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3524,
-      "type": "generic_combo",
-      "question": "Windowsの設定を開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "i"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3525,
-      "type": "generic_combo",
-      "question": "「ファイル名を指定して実行」を開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "r"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3526,
-      "type": "generic_combo",
-      "question": "Windows検索を開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "s"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3527,
-      "type": "generic_combo",
-      "question": "クイック設定を開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "a"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3528,
-      "type": "generic_combo",
-      "question": "スタートメニューを開いてください。",
+      "id": 13003,
+      "question": "（Excel）右隣のワークシートへ切り替えてください。",
       "expectedKeyCombo": [
         "control",
-        "escape"
+        "pagedown"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + PageDownは右隣のシートへ移動します。複数シートをまたぐ確認作業で、画面左下の小さなシート見出しを狙う必要がなくなります。"
     },
     {
-      "id": 3529,
-      "type": "generic_combo",
-      "question": "クリップボードの履歴を表示してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "v"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3530,
-      "type": "generic_combo",
-      "question": "絵文字パネルを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "period"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3531,
-      "type": "generic_combo",
-      "question": "タスクマネージャーを開いてください。",
+      "id": 13004,
+      "question": "（Excel）A1セルへ一気に戻ってください。",
       "expectedKeyCombo": [
         "control",
-        "shift",
-        "escape"
+        "home"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Homeはシートの先頭であるA1へ戻ります。広いシートで現在地を見失っても、即座に起点へ復帰できるため作業が止まりません。"
     },
     {
-      "id": 3532,
-      "type": "generic_combo",
-      "question": "エクスプローラーで新しいフォルダーを作成してください。",
+      "id": 13005,
+      "question": "（Excel）スクロールで画面外にあるアクティブセルへ表示位置を戻してください。",
       "expectedKeyCombo": [
         "control",
-        "shift",
-        "n"
+        "backspace"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Backspaceは選択中のセルが見える位置へ画面を戻します。確認のために遠くへスクロールしたあとでも、現在の作業地点へ迷わず復帰できます。"
     },
     {
-      "id": 3533,
-      "type": "generic_combo",
-      "question": "選択中のファイル名やフォルダー名を変更してください。",
+      "id": 13006,
+      "question": "（Excel）選択中のセルを編集モードにしてください。",
       "expectedKeyCombo": [
         "f2"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "F2はセル編集モードに入るキーです。ダブルクリックの位置ズレを避け、文字や数式の修正をキーボードだけでスムーズに始められます。"
     },
     {
-      "id": 3534,
-      "type": "generic_combo",
-      "question": "選択中の項目をごみ箱に移動してください。",
-      "expectedKeyCombo": [
-        "delete"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3535,
-      "type": "generic_combo",
-      "question": "選択中の項目を完全に削除してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "delete"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3536,
-      "type": "generic_combo",
-      "question": "選択中の項目のプロパティを開いてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "enter"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3537,
-      "type": "generic_combo",
-      "question": "選択中の項目のショートカットメニューを開いてください。",
-      "expectedKeyCombo": [
-        "shift",
-        "f10"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3538,
-      "type": "generic_combo",
-      "question": "カーソルを行の先頭へ移動してください。",
-      "expectedKeyCombo": [
-        "home"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3539,
-      "type": "generic_combo",
-      "question": "カーソルを行の末尾へ移動してください。",
-      "expectedKeyCombo": [
-        "end"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3540,
-      "type": "generic_combo",
-      "question": "文書の先頭へ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "home"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3541,
-      "type": "generic_combo",
-      "question": "文書の末尾へ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "end"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3542,
-      "type": "generic_combo",
-      "question": "カーソルを1単語左へ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3543,
-      "type": "generic_combo",
-      "question": "カーソルを1単語右へ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3544,
-      "type": "generic_combo",
-      "question": "左隣の1文字を選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3545,
-      "type": "generic_combo",
-      "question": "右隣の1文字を選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3546,
-      "type": "generic_combo",
-      "question": "行の先頭まで選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "home"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3547,
-      "type": "generic_combo",
-      "question": "行の末尾まで選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "end"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3548,
-      "type": "generic_combo",
-      "question": "カーソルの左の文字を削除してください。",
-      "expectedKeyCombo": [
-        "backspace"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3549,
-      "type": "generic_combo",
-      "question": "カーソルの右の文字を削除してください。",
-      "expectedKeyCombo": [
-        "delete"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3550,
-      "type": "generic_combo",
-      "question": "選択中のボタンや項目を実行してください。",
-      "expectedKeyCombo": [
-        "enter"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3551,
-      "type": "generic_combo",
-      "question": "ダイアログやメニューをキャンセルしてください。",
-      "expectedKeyCombo": [
-        "escape"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3552,
-      "type": "generic_combo",
-      "question": "次の入力欄や項目へ移動してください。",
-      "expectedKeyCombo": [
-        "tab"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3553,
-      "type": "generic_combo",
-      "question": "前の入力欄や項目へ戻ってください。",
-      "expectedKeyCombo": [
-        "shift",
-        "tab"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3554,
-      "type": "generic_combo",
-      "question": "ヘルプを表示してください。",
-      "expectedKeyCombo": [
-        "f1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3555,
-      "type": "generic_combo",
-      "question": "ブラウザで次のタブに移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "tab"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3556,
-      "type": "generic_combo",
-      "question": "ブラウザで前のタブに移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "tab"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3557,
-      "type": "generic_combo",
-      "question": "ブラウザで最初のタブに移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3558,
-      "type": "generic_combo",
-      "question": "ブラウザで最後のタブに移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "9"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3559,
-      "type": "generic_combo",
-      "question": "ブラウザのダウンロード一覧を開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "j"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3560,
-      "type": "generic_combo",
-      "question": "現在のページをブックマークに追加してください。",
+      "id": 13007,
+      "question": "（Excel）上のセルの内容を、現在のセルへコピーしてください。",
       "expectedKeyCombo": [
         "control",
         "d"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Dは上のセルを下へコピーします。連続入力や同じ値の展開で、コピーして貼り付ける2操作を1操作に圧縮できます。"
     },
     {
-      "id": 3561,
-      "type": "generic_combo",
-      "question": "ブラウザの履歴を開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "h"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3562,
-      "type": "generic_combo",
-      "question": "表示倍率を上げてください。",
-      "expectedKeyCombo": [
-        "control",
-        "plus"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3563,
-      "type": "generic_combo",
-      "question": "表示倍率を下げてください。",
-      "expectedKeyCombo": [
-        "control",
-        "minus"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3564,
-      "type": "generic_combo",
-      "question": "表示倍率を100%に戻してください。",
-      "expectedKeyCombo": [
-        "control",
-        "0"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3565,
-      "type": "generic_combo",
-      "question": "全画面表示に切り替えてください。",
-      "expectedKeyCombo": [
-        "f11"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3566,
-      "type": "generic_combo",
-      "question": "画面全体のスクリーンショットをクリップボードにコピーしてください。",
-      "expectedKeyCombo": [
-        "printscreen"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3567,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウのスクリーンショットをコピーしてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "printscreen"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3568,
-      "type": "generic_combo",
-      "question": "画面の一部を切り取るスクリーンショットを開始してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "s"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3569,
-      "type": "generic_combo",
-      "question": "すべてのウィンドウを最小化してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "m"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3570,
-      "type": "generic_combo",
-      "question": "最小化したウィンドウを元に戻してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "m"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3571,
-      "type": "generic_combo",
-      "question": "外部ディスプレイへの表示方法を選択してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "p"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3572,
-      "type": "generic_combo",
-      "question": "通知センターを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "n"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3573,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウを最大化してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "arrowup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3574,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウを最小化してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "arrowdown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3575,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウを画面左半分に配置してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3576,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウを画面右半分に配置してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3577,
-      "type": "generic_combo",
-      "question": "タスクバーの1番目のアプリを起動または切り替えてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3578,
-      "type": "generic_combo",
-      "question": "タスクバーの2番目のアプリを起動または切り替えてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "2"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3579,
-      "type": "generic_combo",
-      "question": "アプリのファイルメニューを開いてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "f"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3580,
-      "type": "generic_combo",
-      "question": "文字を太字にしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "b"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3581,
-      "type": "generic_combo",
-      "question": "文字を斜体にしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "i"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3582,
-      "type": "generic_combo",
-      "question": "文字に下線を付けてください。",
-      "expectedKeyCombo": [
-        "control",
-        "u"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3583,
-      "type": "generic_combo",
-      "question": "文書編集アプリで段落を左揃えにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "l"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3584,
-      "type": "generic_combo",
-      "question": "文書編集アプリで段落を中央揃えにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "e"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3585,
-      "type": "generic_combo",
-      "question": "文書編集アプリで段落を右揃えにしてください。",
+      "id": 13008,
+      "question": "（Excel）左のセルの内容を、現在のセルへコピーしてください。",
       "expectedKeyCombo": [
         "control",
         "r"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Rは左のセルを右へコピーします。横方向に同じ数式や見出しを広げるとき、マウス操作なしでテンポよく表を作成できます。"
     },
     {
-      "id": 3586,
-      "type": "generic_combo",
-      "question": "文書編集アプリで段落を両端揃えにしてください。",
+      "id": 13010,
+      "question": "（Excel）入力例から法則性を読み取り、フラッシュフィルを実行してください。",
       "expectedKeyCombo": [
         "control",
-        "j"
+        "e"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Eはフラッシュフィルを実行します。氏名分割やコード整形などの手作業を自動化し、データ加工の時間を劇的に短縮できます。"
     },
     {
-      "id": 3587,
-      "type": "generic_combo",
-      "question": "選択した文字にリンクを挿入してください。",
+      "id": 13011,
+      "question": "（Excel）形式を選択して貼り付けるダイアログを開いてください。",
       "expectedKeyCombo": [
         "control",
-        "k"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3588,
-      "type": "generic_combo",
-      "question": "スペルチェックを実行してください。",
-      "expectedKeyCombo": [
-        "f7"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3589,
-      "type": "generic_combo",
-      "question": "Officeで名前を付けて保存を開いてください。",
-      "expectedKeyCombo": [
-        "f12"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3590,
-      "type": "generic_combo",
-      "question": "書式をコピーしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "c"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3591,
-      "type": "generic_combo",
-      "question": "書式を貼り付けてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
+        "alt",
         "v"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Alt + Vは貼り付け形式を選ぶ入口です。値のみ、数式のみ、書式のみを使い分けることで、貼り付け事故を防ぎます。"
     },
     {
-      "id": 3592,
-      "type": "generic_combo",
-      "question": "エクスプローラーで検索ボックスに移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "f"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3593,
-      "type": "generic_combo",
-      "question": "エクスプローラーで1つ上のフォルダーへ移動してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3594,
-      "type": "generic_combo",
-      "question": "エクスプローラーで前の場所へ戻ってください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3595,
-      "type": "generic_combo",
-      "question": "エクスプローラーで次の場所へ進んでください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3596,
-      "type": "generic_combo",
-      "question": "現在選択しているファイルやフォルダーを開いてください。",
-      "expectedKeyCombo": [
-        "enter"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3597,
-      "type": "generic_combo",
-      "question": "下の項目へ移動してください。",
-      "expectedKeyCombo": [
-        "arrowdown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3598,
-      "type": "generic_combo",
-      "question": "上の項目へ移動してください。",
-      "expectedKeyCombo": [
-        "arrowup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 3599,
-      "type": "generic_combo",
-      "question": "1画面分下へスクロールしてください。",
-      "expectedKeyCombo": [
-        "pagedown"
-      ],
-      "answer": "CORRECT"
-    }
-  ],
-  "practical-2kyu": [
-    {
-      "id": 2500,
-      "type": "generic_combo",
-      "question": "タスクビューを開いて仮想デスクトップ一覧を表示してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "tab"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2501,
-      "type": "generic_combo",
-      "question": "新しい仮想デスクトップを作成してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "d"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2502,
-      "type": "generic_combo",
-      "question": "右の仮想デスクトップに切り替えてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2503,
-      "type": "generic_combo",
-      "question": "左の仮想デスクトップに切り替えてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2504,
-      "type": "generic_combo",
-      "question": "現在の仮想デスクトップを閉じてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "f4"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2505,
-      "type": "generic_combo",
-      "question": "スナップレイアウトを表示してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "z"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2506,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウ以外を最小化してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "home"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2507,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウを左のモニターへ移動してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2508,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウを右のモニターへ移動してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2509,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウを縦方向いっぱいに拡大してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "arrowup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2510,
-      "type": "generic_combo",
-      "question": "クイックリンクメニューを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "x"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2511,
-      "type": "generic_combo",
-      "question": "タスクバー上のアプリにフォーカスしてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "t"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2512,
-      "type": "generic_combo",
-      "question": "通知領域にフォーカスしてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "b"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2513,
-      "type": "generic_combo",
-      "question": "タスクバー1番目のアプリの新しいウィンドウを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2514,
-      "type": "generic_combo",
-      "question": "タスクバー2番目のアプリの新しいウィンドウを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "2"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2515,
-      "type": "generic_combo",
-      "question": "タスクバー1番目のアプリを管理者として開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "meta",
-        "1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2516,
-      "type": "generic_combo",
-      "question": "セキュリティオプション画面を表示してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "delete"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2517,
-      "type": "generic_combo",
-      "question": "検索結果で選択したアプリを管理者として実行してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "enter"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2518,
-      "type": "generic_combo",
-      "question": "音声入力を開始してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "h"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2519,
-      "type": "generic_combo",
-      "question": "接続またはキャストのパネルを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "k"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2520,
-      "type": "generic_combo",
-      "question": "アクセシビリティ設定を開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "u"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2521,
-      "type": "generic_combo",
-      "question": "拡大鏡を起動して拡大してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "plus"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2522,
-      "type": "generic_combo",
-      "question": "拡大鏡で縮小してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "minus"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2523,
-      "type": "generic_combo",
-      "question": "拡大鏡を終了してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "escape"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2524,
-      "type": "generic_combo",
-      "question": "ナレーターを起動または終了してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "enter"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2525,
-      "type": "generic_combo",
-      "question": "スクリーンキーボードを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "o"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2526,
-      "type": "generic_combo",
-      "question": "ゲームバーを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "g"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2527,
-      "type": "generic_combo",
-      "question": "画面録画を開始または停止してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "r"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2528,
-      "type": "generic_combo",
-      "question": "エクスプローラーでプレビューペインを切り替えてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "p"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2529,
-      "type": "generic_combo",
-      "question": "エクスプローラーで現在の場所を新しいウィンドウで開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "n"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2530,
-      "type": "generic_combo",
-      "question": "エクスプローラーで現在のウィンドウを閉じてください。",
-      "expectedKeyCombo": [
-        "control",
-        "w"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2531,
-      "type": "generic_combo",
-      "question": "エクスプローラーで検索ボックスを選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "e"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2532,
-      "type": "generic_combo",
-      "question": "エクスプローラーでナビゲーションペインを展開表示してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "e"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2533,
-      "type": "generic_combo",
-      "question": "エクスプローラーの表示を特大アイコンにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2534,
-      "type": "generic_combo",
-      "question": "エクスプローラーの表示を大アイコンにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "2"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2535,
-      "type": "generic_combo",
-      "question": "エクスプローラーの表示を中アイコンにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "3"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2536,
-      "type": "generic_combo",
-      "question": "エクスプローラーの表示を小アイコンにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "4"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2537,
-      "type": "generic_combo",
-      "question": "エクスプローラーの表示を一覧にしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "5"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2538,
-      "type": "generic_combo",
-      "question": "エクスプローラーの表示を詳細にしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "6"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2539,
-      "type": "generic_combo",
-      "question": "エクスプローラーの表示をタイルにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "7"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2540,
-      "type": "generic_combo",
-      "question": "エクスプローラーの表示をコンテンツにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "8"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2541,
-      "type": "generic_combo",
-      "question": "ブラウザで閉じたタブを復元してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "t"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2542,
-      "type": "generic_combo",
-      "question": "ブラウザでシークレットウィンドウを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "n"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2543,
-      "type": "generic_combo",
-      "question": "ブラウザで閲覧データの削除画面を開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "delete"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2544,
-      "type": "generic_combo",
-      "question": "ブラウザでブックマークバーを表示または非表示にしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "b"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2545,
-      "type": "generic_combo",
-      "question": "ブラウザでブックマークマネージャーを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "o"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2546,
-      "type": "generic_combo",
-      "question": "ブラウザでページのソースを表示してください。",
-      "expectedKeyCombo": [
-        "control",
-        "u"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2547,
-      "type": "generic_combo",
-      "question": "ブラウザで開発者ツールを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "i"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2548,
-      "type": "generic_combo",
-      "question": "ブラウザで開発者ツールのコンソールを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "j"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2549,
-      "type": "generic_combo",
-      "question": "ブラウザでホームページを開いてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "home"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2550,
-      "type": "generic_combo",
-      "question": "アドレスバーの入力内容を新しいタブで開いてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "enter"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2551,
-      "type": "generic_combo",
-      "question": "テキスト編集中に前の単語を削除してください。",
-      "expectedKeyCombo": [
-        "control",
-        "backspace"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2552,
-      "type": "generic_combo",
-      "question": "テキスト編集中に次の単語を削除してください。",
-      "expectedKeyCombo": [
-        "control",
-        "delete"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2553,
-      "type": "generic_combo",
-      "question": "1単語左まで選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2554,
-      "type": "generic_combo",
-      "question": "1単語右まで選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2555,
-      "type": "generic_combo",
-      "question": "現在位置から文書の先頭まで選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "home"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2556,
-      "type": "generic_combo",
-      "question": "現在位置から文書の末尾まで選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "end"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2557,
-      "type": "generic_combo",
-      "question": "1画面分上まで選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "pageup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2558,
-      "type": "generic_combo",
-      "question": "1画面分下まで選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "pagedown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2559,
-      "type": "generic_combo",
-      "question": "前の段落へ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "arrowup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2560,
-      "type": "generic_combo",
-      "question": "次の段落へ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "arrowdown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2561,
-      "type": "generic_combo",
-      "question": "上書き入力モードを切り替えてください。",
-      "expectedKeyCombo": [
-        "insert"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2562,
-      "type": "generic_combo",
-      "question": "Excelでセルの書式設定ダイアログを開いてください。",
+      "id": 13012,
+      "question": "（Excel）選択中のセルの書式設定ダイアログを開いてください。",
       "expectedKeyCombo": [
         "control",
         "1"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + 1はセルの書式設定を開きます。表示形式、配置、罫線などの調整を右クリックなしで始められる、Excel実務の必須キーです。"
     },
     {
-      "id": 2563,
-      "type": "generic_combo",
-      "question": "Excelで列全体を選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "space"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2564,
-      "type": "generic_combo",
-      "question": "Excelで行全体を選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "space"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2565,
-      "type": "generic_combo",
-      "question": "Excelで現在の日付を入力してください。",
-      "expectedKeyCombo": [
-        "control",
-        "semicolon"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2566,
-      "type": "generic_combo",
-      "question": "Excelで現在の時刻を入力してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "semicolon"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2567,
-      "type": "generic_combo",
-      "question": "Excelでセル内改行を挿入してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "enter"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2568,
-      "type": "generic_combo",
-      "question": "Excelで参照形式を切り替えてください。",
-      "expectedKeyCombo": [
-        "f4"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2569,
-      "type": "generic_combo",
-      "question": "Excelでデータ範囲の端まで移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "arrowdown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2570,
-      "type": "generic_combo",
-      "question": "Excelでデータ範囲の右端まで移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2571,
-      "type": "generic_combo",
-      "question": "Excelでデータ範囲を下方向へ選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "arrowdown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2572,
-      "type": "generic_combo",
-      "question": "Excelでデータ範囲を右方向へ選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2573,
-      "type": "generic_combo",
-      "question": "Excelで次のワークシートへ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "pagedown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2574,
-      "type": "generic_combo",
-      "question": "Excelで前のワークシートへ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "pageup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2575,
-      "type": "generic_combo",
-      "question": "Excelで新しいワークシートを挿入してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "f11"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2576,
-      "type": "generic_combo",
-      "question": "Excelで選択行を非表示にしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "9"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2577,
-      "type": "generic_combo",
-      "question": "Excelで選択列を非表示にしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "0"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2578,
-      "type": "generic_combo",
-      "question": "Excelで非表示の行を再表示してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "9"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2579,
-      "type": "generic_combo",
-      "question": "ExcelでオートSUMを挿入してください。",
+      "id": 13013,
+      "question": "（Excel）選択範囲の末尾にオートサムを挿入してください。",
       "expectedKeyCombo": [
         "alt",
         "equal"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Alt + =はオートサムを挿入します。SUM関数を手入力せず合計行や合計列を作れるため、集計表作成が一気に速くなります。"
     },
     {
-      "id": 2580,
-      "type": "generic_combo",
-      "question": "Wordで改ページを挿入してください。",
+      "id": 13014,
+      "question": "（Excel）現在選択しているセルに、本日の日付をすばやく入力してください。",
       "expectedKeyCombo": [
         "control",
-        "enter"
+        "semicolon"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + ; は今日の日付を一瞬で入力します。日報作成やファイルの更新日入力など、毎日使う操作を高速化します。"
     },
     {
-      "id": 2581,
-      "type": "generic_combo",
-      "question": "Wordで段落の書式を解除してください。",
+      "id": 13015,
+      "question": "（Excel）現在の行全体を選択してください。",
       "expectedKeyCombo": [
-        "control",
-        "q"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2582,
-      "type": "generic_combo",
-      "question": "Wordで文字書式を解除してください。",
-      "expectedKeyCombo": [
-        "control",
+        "shift",
         "space"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Shift + Spaceは行全体を選択します。行の挿入、削除、書式変更と組み合わせることで、表のレイアウト調整をマウスレスで進められます。"
     },
     {
-      "id": 2583,
-      "type": "generic_combo",
-      "question": "Wordでインデントを増やしてください。",
+      "id": 13016,
+      "question": "（Excel）選択中の行または列に対して挿入を実行してください。",
       "expectedKeyCombo": [
         "control",
-        "m"
+        "plus"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + +はセル、行、列の挿入に使います。行選択や列選択と組み合わせると、右クリックメニューを開かず表構造を変更できます。"
     },
     {
-      "id": 2584,
-      "type": "generic_combo",
-      "question": "Wordでインデントを減らしてください。",
+      "id": 13017,
+      "question": "（Word/PowerPoint）選択中の段落またはテキストを中央揃えにしてください。",
       "expectedKeyCombo": [
         "control",
-        "shift",
-        "m"
+        "e"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "WordやPowerPointのCtrl + Eは中央揃えです。リボンの配置ボタンを探さず、見た目を確認しながらレイアウトを即調整できます。"
     },
     {
-      "id": 2585,
-      "type": "generic_combo",
-      "question": "Wordでぶら下げインデントを設定してください。",
+      "id": 13018,
+      "question": "（PowerPoint）選択中の図形またはスライドを複製してください。",
       "expectedKeyCombo": [
         "control",
-        "t"
+        "d"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "PowerPointのCtrl + Dは複製です。同じデザインの図形やスライドを素早く増やせるため、資料作成の速度と整列の美しさが向上します。"
     },
     {
-      "id": 2586,
-      "type": "generic_combo",
-      "question": "Wordでぶら下げインデントを減らしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "t"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2587,
-      "type": "generic_combo",
-      "question": "Wordで見出し1を適用してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2588,
-      "type": "generic_combo",
-      "question": "Wordで見出し2を適用してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "2"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2589,
-      "type": "generic_combo",
-      "question": "PowerPointでスライドショーを最初から開始してください。",
-      "expectedKeyCombo": [
-        "f5"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2590,
-      "type": "generic_combo",
-      "question": "PowerPointで現在のスライドから開始してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "f5"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2591,
-      "type": "generic_combo",
-      "question": "Outlookで新しいメールを作成してください。",
+      "id": 13019,
+      "question": "（Word/PowerPoint）選択中の文字や図形の書式だけをコピーしてください。",
       "expectedKeyCombo": [
         "control",
         "shift",
-        "m"
+        "c"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Cは書式のみをコピーします。色、フォント、枠線などの見た目を統一したいとき、資料全体の完成度を一気に高められます。"
     },
     {
-      "id": 2592,
-      "type": "generic_combo",
-      "question": "Outlookで返信してください。",
-      "expectedKeyCombo": [
-        "control",
-        "r"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2593,
-      "type": "generic_combo",
-      "question": "Outlookで全員に返信してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "r"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2594,
-      "type": "generic_combo",
-      "question": "Outlookでメールを転送してください。",
-      "expectedKeyCombo": [
-        "control",
-        "f"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2595,
-      "type": "generic_combo",
-      "question": "Outlookで予定を新規作成してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "a"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2596,
-      "type": "generic_combo",
-      "question": "メールや文書の送信操作を実行してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "s"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2597,
-      "type": "generic_combo",
-      "question": "Webページや文書でリンクを挿入してください。",
+      "id": 13020,
+      "question": "（Slack/Teams）クイックスイッチャーを開き、相手やチャンネルへ移動できる状態にしてください。",
       "expectedKeyCombo": [
         "control",
         "k"
       ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2598,
-      "type": "generic_combo",
-      "question": "アプリのメニューバーにフォーカスしてください。",
-      "expectedKeyCombo": [
-        "f10"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 2599,
-      "type": "generic_combo",
-      "question": "アクティブウィンドウのシステムメニューを開いてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "space"
-      ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Kはチャットツールの移動を高速化するキーです。チャンネルや相手をマウスで探さず、名前を数文字打つだけで目的地へジャンプできます。"
     }
   ],
-  "practical-1kyu": [
+  "practical-2kyu": [
     {
-      "id": 1500,
-      "type": "generic_combo",
-      "question": "グラフィックスドライバーを再初期化してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "shift",
-        "b"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1501,
-      "type": "generic_combo",
-      "question": "カラーフィルターをオンまたはオフにしてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "c"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1502,
-      "type": "generic_combo",
-      "question": "ナレーター設定を開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "n"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1503,
-      "type": "generic_combo",
-      "question": "Windowsの音声認識を開始または停止してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "s"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1504,
-      "type": "generic_combo",
-      "question": "拡大鏡の設定を開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "m"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1505,
-      "type": "generic_combo",
-      "question": "ゲームバーで直前のプレイを録画してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "g"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1506,
-      "type": "generic_combo",
-      "question": "ゲームバーでスクリーンショットを撮影してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "printscreen"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1507,
-      "type": "generic_combo",
-      "question": "ゲームバーでマイク録音を切り替えてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "m"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1508,
-      "type": "generic_combo",
-      "question": "HDRをオンまたはオフにしてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "b"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1509,
-      "type": "generic_combo",
-      "question": "タスクバー1番目のアプリのジャンプリストを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1510,
-      "type": "generic_combo",
-      "question": "タスクバー2番目のアプリのジャンプリストを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "2"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1511,
-      "type": "generic_combo",
-      "question": "タスクバー上のアプリを逆方向に移動してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "t"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1512,
-      "type": "generic_combo",
-      "question": "開いているウィンドウを起動順に切り替えてください。",
+      "id": 12001,
+      "question": "（Windows）直前に使っていた別のアプリへ切り替えてください。",
       "expectedKeyCombo": [
         "alt",
-        "escape"
+        "tab"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Alt + Tabはアプリ切り替えの基本です。Excel、ブラウザ、チャットを往復する実務で、タスクバーを探す時間を削減できます。"
     },
     {
-      "id": 1513,
-      "type": "generic_combo",
-      "question": "開いているウィンドウを起動順の逆方向に切り替えてください。",
+      "id": 12002,
+      "question": "（Windows）デスクトップを表示してください。",
       "expectedKeyCombo": [
-        "alt",
-        "shift",
-        "escape"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1514,
-      "type": "generic_combo",
-      "question": "デスクトップを一時的にプレビューしてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "comma"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1515,
-      "type": "generic_combo",
-      "question": "画面上部へウィンドウをスナップしてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "arrowup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1516,
-      "type": "generic_combo",
-      "question": "画面下部へウィンドウをスナップしてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "alt",
-        "arrowdown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1517,
-      "type": "generic_combo",
-      "question": "アクティブなウィンドウの縦方向の拡大を元に戻してください。",
-      "expectedKeyCombo": [
-        "meta",
-        "shift",
-        "arrowdown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1518,
-      "type": "generic_combo",
-      "question": "入力言語とキーボードレイアウトを切り替えてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "space"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1519,
-      "type": "generic_combo",
-      "question": "クイックアシストを開いてください。",
-      "expectedKeyCombo": [
-        "meta",
-        "control",
-        "q"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1520,
-      "type": "generic_combo",
-      "question": "リモートデスクトップ内でセキュリティ画面を表示してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "end"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1521,
-      "type": "generic_combo",
-      "question": "リモートデスクトップを全画面表示とウィンドウ表示で切り替えてください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "break"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1522,
-      "type": "generic_combo",
-      "question": "リモートデスクトップ内でアプリを左から右へ切り替えてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "pageup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1523,
-      "type": "generic_combo",
-      "question": "リモートデスクトップ内でアプリを右から左へ切り替えてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "pagedown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1524,
-      "type": "generic_combo",
-      "question": "リモートデスクトップ内で起動順にアプリを切り替えてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "insert"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1525,
-      "type": "generic_combo",
-      "question": "リモートデスクトップ内でスタートメニューを開いてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "home"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1526,
-      "type": "generic_combo",
-      "question": "リモートデスクトップ内でアクティブウィンドウの画像をコピーしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "minus"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1527,
-      "type": "generic_combo",
-      "question": "リモートデスクトップ内で画面全体の画像をコピーしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "plus"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1528,
-      "type": "generic_combo",
-      "question": "Windows Terminalでコマンドパレットを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "p"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1529,
-      "type": "generic_combo",
-      "question": "Windows Terminalで新しいタブを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "t"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1530,
-      "type": "generic_combo",
-      "question": "Windows Terminalで現在のタブを閉じてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "w"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1531,
-      "type": "generic_combo",
-      "question": "Windows Terminalで検索を開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "f"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1532,
-      "type": "generic_combo",
-      "question": "Windows Terminalでペインを複製して分割してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "shift",
+        "windows",
         "d"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Windows + Dは開いているウィンドウを一時的に隠してデスクトップを表示します。デスクトップ上の資料を取りたいときに一瞬で作業できます。"
     },
     {
-      "id": 1533,
-      "type": "generic_combo",
-      "question": "Windows Terminalで横方向にペインを分割してください。",
+      "id": 12003,
+      "question": "（Windows）エクスプローラーを開いてください。",
       "expectedKeyCombo": [
-        "alt",
+        "windows",
+        "e"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Eはエクスプローラーを即起動します。ファイル添付、保存先確認、フォルダー整理の入口をすぐ開けます。"
+    },
+    {
+      "id": 12004,
+      "question": "（Windows）PCをロックしてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "l"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Lは離席時の安全操作です。画面上の情報を即座に保護でき、セキュリティ意識の高い実務習慣になります。"
+    },
+    {
+      "id": 12005,
+      "question": "（Windows）画面の一部を範囲指定してスクリーンショットを撮れる状態にしてください。",
+      "expectedKeyCombo": [
+        "windows",
         "shift",
-        "minus"
+        "s"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Windows + Shift + Sは画面切り取りを起動します。エラー画面や資料の一部を必要な範囲だけ素早く共有できます。"
     },
     {
-      "id": 1534,
-      "type": "generic_combo",
-      "question": "Windows Terminalで縦方向にペインを分割してください。",
+      "id": 12006,
+      "question": "（Windows）クリップボード履歴を開いてください。",
       "expectedKeyCombo": [
-        "alt",
-        "shift",
-        "plus"
+        "windows",
+        "v"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Windows + Vはクリップボード履歴を開きます。過去にコピーした内容を選んで貼れるため、コピーし直しの往復を減らせます。"
     },
     {
-      "id": 1535,
-      "type": "generic_combo",
-      "question": "Windows Terminalでペインを左へフォーカスしてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowleft"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1536,
-      "type": "generic_combo",
-      "question": "Windows Terminalでペインを右へフォーカスしてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowright"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1537,
-      "type": "generic_combo",
-      "question": "Windows Terminalでペインを上へフォーカスしてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowup"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1538,
-      "type": "generic_combo",
-      "question": "Windows Terminalでペインを下へフォーカスしてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowdown"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1539,
-      "type": "generic_combo",
-      "question": "Windows Terminalで選択範囲をコピーしてください。",
+      "id": 12007,
+      "question": "（Windows）タスクマネージャーを直接開いてください。",
       "expectedKeyCombo": [
         "control",
         "shift",
-        "c"
+        "escape"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。アプリが固まったときに、すぐ状態確認と終了操作へ移れます。"
     },
     {
-      "id": 1540,
-      "type": "generic_combo",
-      "question": "VS Codeでクイックオープンを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "p"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1541,
-      "type": "generic_combo",
-      "question": "VS Codeでコマンドパレットを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "p"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1542,
-      "type": "generic_combo",
-      "question": "VS Codeでサイドバーを表示または非表示にしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "b"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1543,
-      "type": "generic_combo",
-      "question": "VS Codeで統合ターミナルを表示してください。",
-      "expectedKeyCombo": [
-        "control",
-        "grave"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1544,
-      "type": "generic_combo",
-      "question": "VS Codeで新しい統合ターミナルを作成してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "grave"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1545,
-      "type": "generic_combo",
-      "question": "VS Codeでファイル全体の検索を開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "f"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1546,
-      "type": "generic_combo",
-      "question": "VS Codeでファイル全体の置換を開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "h"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1547,
-      "type": "generic_combo",
-      "question": "VS Codeで指定行へ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "g"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1548,
-      "type": "generic_combo",
-      "question": "VS Codeでファイル内シンボルへ移動してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "o"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1549,
-      "type": "generic_combo",
-      "question": "VS Codeで定義へ移動してください。",
-      "expectedKeyCombo": [
-        "f12"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1550,
-      "type": "generic_combo",
-      "question": "VS Codeで定義をピーク表示してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "f12"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1551,
-      "type": "generic_combo",
-      "question": "VS Codeで参照を検索してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "f12"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1552,
-      "type": "generic_combo",
-      "question": "VS Codeでシンボル名を変更してください。",
+      "id": 12010,
+      "question": "（エクスプローラー）選択中のファイル名を変更できる状態にしてください。",
       "expectedKeyCombo": [
         "f2"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "F2は名前変更のキーです。大量のファイル名を整える作業で、右クリックを使わずテンポよくリネームできます。"
     },
     {
-      "id": 1553,
-      "type": "generic_combo",
-      "question": "VS Codeで候補一覧を表示してください。",
+      "id": 12011,
+      "question": "（ブラウザ/エクスプローラー）アドレスバーへフォーカスしてください。",
       "expectedKeyCombo": [
         "control",
-        "space"
+        "l"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Lはアドレスバーへ即移動します。URL入力、検索、フォルダーパス移動をキーボードだけで開始できます。"
     },
     {
-      "id": 1554,
-      "type": "generic_combo",
-      "question": "VS Codeで現在行を上へ移動してください。",
+      "id": 12016,
+      "question": "（ブラウザ/文書）ページ内または文書内検索を開いてください。",
       "expectedKeyCombo": [
+        "control",
+        "f"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Fは検索の入口です。長いWebページや資料から目的の言葉を一瞬で見つけ、目視探索の時間を削減できます。"
+    },
+    {
+      "id": 12017,
+      "question": "（アプリ共通）現在の入力欄や一覧の内容をすべて選択してください。",
+      "expectedKeyCombo": [
+        "control",
+        "a"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Aは全選択です。全文コピー、一括削除、一括書式変更など、次の操作へ移るための準備を高速化します。"
+    },
+    {
+      "id": 12018,
+      "question": "（アプリ共通）選択中の内容をコピーしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "c"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Cはコピーの基本です。文字、ファイル、セル、画像などを再利用する実務の土台となる操作です。"
+    },
+    {
+      "id": 12019,
+      "question": "（アプリ共通）直前の操作を元に戻してください。",
+      "expectedKeyCombo": [
+        "control",
+        "z"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Zは元に戻す操作です。誤入力や誤編集をすぐ取り消せるため、スピードを落とさず安心して作業できます。"
+    },
+    {
+      "id": 12020,
+      "question": "（アプリ共通）作成中のファイルを上書き保存してください。",
+      "expectedKeyCombo": [
+        "control",
+        "s"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Sは上書き保存です。作業の節目で反射的に押すことで、突然のトラブルによる作業損失を防げます。"
+    },
+    {
+      "id": 12021,
+      "question": "（エクスプローラー）名前変更中のファイル名を確定し、次のファイルの名前変更へ移ってください。",
+      "expectedKeyCombo": [
+        "tab"
+      ],
+      "answer": "CORRECT",
+      "explanation": "名前変更中にTabを押すと、現在の名前を確定しながら次のファイルの名前変更モードへ移れます。連続リネーム作業を爆速化する神コンボです。"
+    },
+    {
+      "id": 12022,
+      "question": "（エクスプローラー）選択中のファイルに対する右クリックメニューを表示してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "f10"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + F10はコンテキストメニューを表示します。圧縮、プロパティ、送るなどの操作を、マウスの右クリックなしで呼び出せます。"
+    },
+    {
+      "id": 12023,
+      "question": "（エクスプローラー）現在のファイルから下方向へ連続範囲選択してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + 下矢印は、隣接するファイルを下方向へ範囲選択します。複数ファイルの移動、削除、右クリックメニュー操作の前準備に必須です。"
+    },
+    {
+      "id": 12024,
+      "question": "（エクスプローラー）現在のファイルから上方向へ連続範囲選択してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + 上矢印は、上方向へ範囲選択を広げます。ファイル一覧をキーボードだけで扱えるようになり、整理作業の持ち替えが減ります。"
+    },
+    {
+      "id": 12025,
+      "question": "（VS Code）現在行の下にマルチカーソルを追加してください。",
+      "expectedKeyCombo": [
+        "control",
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Alt + 下矢印は、下方向へカーソルを追加します。複数行の同じ位置に同時入力でき、反復編集を一括操作に変えられます。"
+    },
+    {
+      "id": 12026,
+      "question": "（VS Code）現在行の上にマルチカーソルを追加してください。",
+      "expectedKeyCombo": [
+        "control",
         "alt",
         "arrowup"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Alt + 上矢印は、上方向へカーソルを追加します。複数行の接頭辞追加や同じ列位置の修正を、1回の入力でまとめて処理できます。"
     },
     {
-      "id": 1555,
-      "type": "generic_combo",
-      "question": "VS Codeで現在行を下へ移動してください。",
+      "id": 12027,
+      "question": "（VS Code）現在行または選択行を下へ移動してください。",
       "expectedKeyCombo": [
         "alt",
         "arrowdown"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Alt + 下矢印は行を下へ移動します。カット＆ペーストを使わず、コードや段落の順序を安全に入れ替えられます。"
     },
     {
-      "id": 1556,
-      "type": "generic_combo",
-      "question": "VS Codeで現在行を上へコピーしてください。",
+      "id": 12028,
+      "question": "（VS Code）現在行または選択行を上へ移動してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt + 上矢印は行を上へ移動します。文章構成やコード順序の調整を、行単位で直感的に行えます。"
+    },
+    {
+      "id": 12029,
+      "question": "（VS Code）現在行または選択行を下方向へ複製してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + Alt + 下矢印は行を下へ複製します。似た処理や設定行を増やすとき、コピー＆ペーストの手間をなくせます。"
+    },
+    {
+      "id": 12030,
+      "question": "（VS Code）現在行または選択行を上方向へ複製してください。",
       "expectedKeyCombo": [
         "shift",
         "alt",
         "arrowup"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Shift + Alt + 上矢印は行を上へ複製します。既存行を基準に似た内容を増やす編集で、作業スピードが大きく上がります。"
     },
     {
-      "id": 1557,
-      "type": "generic_combo",
-      "question": "VS Codeで現在行を下へコピーしてください。",
+      "id": 12031,
+      "question": "（VS Code）現在の行を一発で削除してください。",
       "expectedKeyCombo": [
+        "control",
         "shift",
-        "alt",
-        "arrowdown"
+        "k"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Kは現在行を削除します。行全体を選択してDeleteを押す必要がなく、不要なコードや文章を瞬時に消せます。"
     },
     {
-      "id": 1558,
-      "type": "generic_combo",
-      "question": "VS Codeで行コメントを切り替えてください。",
+      "id": 12032,
+      "question": "（VS Code）現在行または選択行のコメントアウトを切り替えてください。",
       "expectedKeyCombo": [
         "control",
         "slash"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + /はコメントアウトと解除を切り替えます。検証中の一時無効化やメモ化をすばやく行える、開発・編集の必須キーです。"
     },
     {
-      "id": 1559,
-      "type": "generic_combo",
-      "question": "VS Codeでドキュメントを整形してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "alt",
-        "f"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1560,
-      "type": "generic_combo",
-      "question": "Excelでフィルターをオンまたはオフにしてください。",
+      "id": 12033,
+      "question": "（Windows）タスクマネージャーを直接開いてください。",
       "expectedKeyCombo": [
         "control",
         "shift",
-        "l"
+        "escape"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。フリーズしたアプリの終了やCPU・メモリ負荷の確認に即移れます。"
     },
     {
-      "id": 1561,
-      "type": "generic_combo",
-      "question": "Excelでテーブルを作成してください。",
-      "expectedKeyCombo": [
-        "control",
-        "t"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1562,
-      "type": "generic_combo",
-      "question": "Excelで形式を選択して貼り付けを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "v"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1563,
-      "type": "generic_combo",
-      "question": "Excelでセルを挿入してください。",
+      "id": 12034,
+      "question": "（Windows）タスクマネージャーを直接起動して、アプリの動作状況を確認してください。",
       "expectedKeyCombo": [
         "control",
         "shift",
-        "plus"
+        "escape"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。Ctrl+Alt+Delete画面を経由しないため、フリーズ時の初動が最速になります。"
     },
     {
-      "id": 1564,
-      "type": "generic_combo",
-      "question": "Excelでセルを削除してください。",
+      "id": 12035,
+      "question": "（Windows）「ファイル名を指定して実行」ダイアログを起動してください。",
       "expectedKeyCombo": [
-        "control",
-        "minus"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1565,
-      "type": "generic_combo",
-      "question": "Excelで数式の表示を切り替えてください。",
-      "expectedKeyCombo": [
-        "control",
-        "grave"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1566,
-      "type": "generic_combo",
-      "question": "Excelで上のセルの数式をコピーしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "apostrophe"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1567,
-      "type": "generic_combo",
-      "question": "Excelで下方向へフィルしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "d"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1568,
-      "type": "generic_combo",
-      "question": "Excelで右方向へフィルしてください。",
-      "expectedKeyCombo": [
-        "control",
+        "windows",
         "r"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Win + R は様々なアプリをコマンドで直接起動するための入り口になります。"
     },
     {
-      "id": 1569,
-      "type": "generic_combo",
-      "question": "Excelでフラッシュフィルを実行してください。",
+      "id": 12036,
+      "question": "（Windows）スタートボタンを右クリックしたときに出る「クイックリンクメニュー」を開いてください。",
       "expectedKeyCombo": [
-        "control",
-        "e"
+        "windows",
+        "x"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Win + X はシステム設定やデバイスマネージャーなどに素早くアクセスするための重要ショートカットです。"
     },
     {
-      "id": 1570,
-      "type": "generic_combo",
-      "question": "Excelで取り消し線を設定してください。",
+      "id": 12037,
+      "question": "（Windows）画面右下から通知パネル（アクションセンター）を開いてください。",
       "expectedKeyCombo": [
-        "control",
-        "5"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1571,
-      "type": "generic_combo",
-      "question": "Excelで選択範囲から名前を作成してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "f3"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1572,
-      "type": "generic_combo",
-      "question": "Excelで名前の管理を開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "f3"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1573,
-      "type": "generic_combo",
-      "question": "Excelで関数の挿入ダイアログを開いてください。",
-      "expectedKeyCombo": [
-        "shift",
-        "f3"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1574,
-      "type": "generic_combo",
-      "question": "Excelで新しいグラフシートを作成してください。",
-      "expectedKeyCombo": [
-        "f11"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1575,
-      "type": "generic_combo",
-      "question": "Excelで埋め込みグラフを作成してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "f1"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1576,
-      "type": "generic_combo",
-      "question": "Excelですべてのワークシートを再計算してください。",
-      "expectedKeyCombo": [
-        "f9"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1577,
-      "type": "generic_combo",
-      "question": "Excelでアクティブシートを再計算してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "f9"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1578,
-      "type": "generic_combo",
-      "question": "Excelで開いている全ブックを強制再計算してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "f9"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1579,
-      "type": "generic_combo",
-      "question": "Excelで依存関係を再確認して再計算してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "shift",
-        "f9"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1580,
-      "type": "generic_combo",
-      "question": "Wordで単語数を表示してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "g"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1581,
-      "type": "generic_combo",
-      "question": "Wordでコメントを挿入してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "m"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1582,
-      "type": "generic_combo",
-      "question": "Wordで変更履歴をオンまたはオフにしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "e"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1583,
-      "type": "generic_combo",
-      "question": "Wordで標準スタイルを適用してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "n"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1584,
-      "type": "generic_combo",
-      "question": "Wordで箇条書きを適用してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "l"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1585,
-      "type": "generic_combo",
-      "question": "Wordでフォントダイアログを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "d"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1586,
-      "type": "generic_combo",
-      "question": "Wordで二重下線を設定してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "d"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1587,
-      "type": "generic_combo",
-      "question": "Wordで単語だけに下線を設定してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "w"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1588,
-      "type": "generic_combo",
-      "question": "Wordで英字をすべて大文字に設定してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
+        "windows",
         "a"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Win + A で通知パネルを開くことができ、Wi-FiやBluetoothの切り替えもすばやく行えます。"
     },
     {
-      "id": 1589,
-      "type": "generic_combo",
-      "question": "Wordで英字を小型大文字に設定してください。",
+      "id": 12038,
+      "question": "（Windows）システムのバージョン情報を開いてください。",
       "expectedKeyCombo": [
-        "control",
-        "shift",
-        "k"
+        "windows",
+        "pause"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Win + Pause/Breakはシステム情報を開きます。CPU、メモリ、Windowsバージョンなどを確認するために設定画面を深くたどる必要がありません。"
     },
     {
-      "id": 1590,
-      "type": "generic_combo",
-      "question": "Wordで隠し文字を設定してください。",
+      "id": 12040,
+      "question": "（Windows）これまでにコピーしたテキストの「クリップボード履歴」を表示してください。",
       "expectedKeyCombo": [
-        "control",
-        "shift",
-        "h"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1591,
-      "type": "generic_combo",
-      "question": "Wordで脚注を挿入してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "f"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1592,
-      "type": "generic_combo",
-      "question": "Wordで文末脚注を挿入してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "d"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1593,
-      "type": "generic_combo",
-      "question": "PowerPointで選択したオブジェクトをグループ化してください。",
-      "expectedKeyCombo": [
-        "control",
-        "g"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1594,
-      "type": "generic_combo",
-      "question": "PowerPointで選択したグループを解除してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "g"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1595,
-      "type": "generic_combo",
-      "question": "PowerPointで書式をコピーしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "c"
-      ],
-      "answer": "CORRECT"
-    },
-    {
-      "id": 1596,
-      "type": "generic_combo",
-      "question": "PowerPointで書式を貼り付けてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
+        "windows",
         "v"
       ],
-      "answer": "CORRECT"
-    },
+      "answer": "CORRECT",
+      "explanation": "Win + V は過去にコピーした内容をさかのぼって貼り付けることができる、実務必須の時短ショートカットです。"
+    }
+  ],
+  "practical-1kyu": [
     {
-      "id": 1597,
-      "type": "generic_combo",
-      "question": "スライドショー中に画面を黒くしてください。",
+      "id": 11001,
+      "question": "（Windows）タスクビューを開いて、開いているウィンドウや仮想デスクトップを一覧できる状態にしてください。",
       "expectedKeyCombo": [
-        "b"
+        "windows",
+        "tab"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Windows + Tabはタスクビューを開きます。複数案件や複数アプリを同時に扱うとき、作業全体を俯瞰して素早く目的の画面へ戻れます。"
     },
     {
-      "id": 1598,
-      "type": "generic_combo",
-      "question": "ブラウザの開発者ツールで要素選択モードを切り替えてください。",
+      "id": 11002,
+      "question": "（Windows）新しい仮想デスクトップを作成してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "control",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Ctrl + Dは仮想デスクトップを新規作成します。作業空間を用途別に分けることで、画面の散らかりと集中力の低下を防げます。"
+    },
+    {
+      "id": 11003,
+      "question": "（Windows）右隣の仮想デスクトップへ移動してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "control",
+        "arrowright"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Ctrl + 右矢印は右隣の仮想デスクトップへ移動します。作業空間を切り替えるたびにタスクビューを開かずに済みます。"
+    },
+    {
+      "id": 11004,
+      "question": "（Windows）現在の仮想デスクトップを閉じてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "control",
+        "f4"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Ctrl + F4は現在の仮想デスクトップを閉じます。使い終わった作業空間を即座に片付け、作業環境を整理できます。"
+    },
+    {
+      "id": 11005,
+      "question": "（Windows）アクティブウィンドウを画面左半分にスナップしてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "arrowleft"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + 左矢印はウィンドウを左半分に配置します。資料とブラウザ、Excelとチャットなどを並べる比較作業で威力を発揮します。"
+    },
+    {
+      "id": 11006,
+      "question": "（Windows）スナップレイアウトを表示してください。",
+      "expectedKeyCombo": [
+        "windows",
+        "z"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + Zはスナップレイアウトを表示します。複数ウィンドウを整然と並べる配置をキーボードから選べるため、大画面作業が効率化します。"
+    },
+    {
+      "id": 11007,
+      "question": "（Windows）絵文字や記号を入力するパネルを開いてください。",
+      "expectedKeyCombo": [
+        "windows",
+        "period"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Windows + . は絵文字・記号パネルを開きます。チャットの反応や資料内の記号入力を、検索やコピペなしで素早く行えます。"
+    },
+    {
+      "id": 11008,
+      "question": "（VS Code）コマンドパレットを開いてください。",
       "expectedKeyCombo": [
         "control",
         "shift",
-        "c"
+        "p"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Pはコマンドパレットを開きます。機能名を入力して直接実行できるため、メニュー階層を探す時間を削減できます。"
     },
     {
-      "id": 1599,
-      "type": "generic_combo",
-      "question": "ブラウザの開発者ツールでデバイスツールバーを切り替えてください。",
+      "id": 11010,
+      "question": "（VS Code）統合ターミナルを開閉してください。",
+      "expectedKeyCombo": [
+        "control",
+        "backquote"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + `は統合ターミナルを開閉します。コード編集からコマンド実行へ即移れるため、開発作業の流れを止めません。"
+    },
+    {
+      "id": 11011,
+      "question": "（VS Code）現在行または選択行を上へ移動してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt + 上矢印は行を上へ移動します。コピペを使わず順序変更できるため、コードや箇条書きの構造整理が速く安全になります。"
+    },
+    {
+      "id": 11012,
+      "question": "（VS Code）現在行を下方向に複製してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + Alt + 下矢印は行を複製します。似た処理や設定行を増やすとき、コピーと貼り付けを1操作に短縮できます。"
+    },
+    {
+      "id": 11013,
+      "question": "（VS Code）現在行または選択行のコメントアウトを切り替えてください。",
+      "expectedKeyCombo": [
+        "control",
+        "slash"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + /はコメント切り替えです。検証中の一時無効化やメモ化をすばやく行え、デバッグやレビューのテンポが上がります。"
+    },
+    {
+      "id": 11014,
+      "question": "（VS Code）選択中の変数名や関数名をリネームできる状態にしてください。",
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2はシンボルのリネームです。単なる検索置換ではなく参照関係を踏まえて変更できるため、名前変更の漏れや事故を防げます。"
+    },
+    {
+      "id": 11015,
+      "question": "（VS Code）選択中の単語と同じ次の出現箇所を追加選択してください。",
+      "expectedKeyCombo": [
+        "control",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Dは次の一致を選択に追加します。複数箇所を同時編集でき、同じ修正を何度も繰り返す手間を減らせます。"
+    },
+    {
+      "id": 11016,
+      "question": "（VS Code）選択中の関数やクラスの定義元へ移動してください。",
+      "expectedKeyCombo": [
+        "f12"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F12は定義へ移動します。実装場所をファイルツリーから探す必要がなくなり、コード理解やレビューが高速になります。"
+    },
+    {
+      "id": 11017,
+      "question": "（ブラウザ）閲覧履歴やキャッシュなどの削除ダイアログを開いてください。",
       "expectedKeyCombo": [
         "control",
         "shift",
-        "m"
+        "delete"
       ],
-      "answer": "CORRECT"
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Deleteは閲覧データ削除を開きます。Webアプリの表示不具合やキャッシュ問題にすぐ対処できます。"
+    },
+    {
+      "id": 11018,
+      "question": "（PowerPoint）スライドショーを最初のスライドから開始してください。",
+      "expectedKeyCombo": [
+        "f5"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F5はスライドショーを最初から開始します。発表本番や通し確認で、リボンの再生ボタンを探さずスムーズに開始できます。"
+    },
+    {
+      "id": 11019,
+      "question": "（PowerPoint）現在のスライドからスライドショーを開始してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "f5"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + F5は現在のスライドからスライドショーを開始します。途中スライドの確認や修正後のチェックを最短で行えます。"
+    },
+    {
+      "id": 11020,
+      "question": "（Windows）スタート検索で選択中のアプリを管理者として実行してください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "enter"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl + Shift + Enterは管理者として実行する操作です。管理者権限が必要なツールや設定を、右クリックなしで素早く起動できます。"
     }
   ]
 }

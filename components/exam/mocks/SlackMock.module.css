@@ -1,0 +1,113 @@
+/* Mac Buttons Helper */
+.macButtons {
+  display: flex;
+  gap: 8px;
+  padding-right: 12px;
+}
+
+
+/* SlackMock */
+.slackContainer {
+  position: relative;
+  border: 1px solid #4a154b;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto 0;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+.slackHeader {
+  background-color: #350d36;
+  color: white;
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+}
+.slackSearch {
+  flex: 1;
+  margin: 0 40px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  text-align: center;
+}
+.slackBody {
+  display: flex;
+  height: 220px;
+}
+.slackSidebar {
+  width: 140px;
+  background-color: #3f0e40;
+  color: #cfc3cf;
+  padding: 12px 0;
+  font-size: 13px;
+}
+.slackChannel {
+  padding: 4px 16px;
+  cursor: pointer;
+}
+.slackChannelActive {
+  padding: 4px 16px;
+  background-color: #1164a3;
+  color: white;
+  font-weight: bold;
+}
+.slackMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.slackMessages {
+  flex: 1;
+  padding: 16px;
+  overflow: hidden;
+}
+.slackMessage {
+  margin-bottom: 16px;
+}
+.slackMessage strong {
+  color: #1d1c1d;
+  font-size: 14px;
+}
+.slackTime {
+  color: #616061;
+  font-size: 11px;
+  margin-left: 8px;
+}
+.slackMessage p {
+  margin: 4px 0 0 0;
+  color: #1d1c1d;
+  font-size: 14px;
+}
+.slackInputBox {
+  margin: 0 16px 16px 16px;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #616061;
+  font-size: 13px;
+}
+
+.successToast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 140, 0, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  animation: popIn 0.3s ease-out;
+  pointer-events: none;
+  z-index: 100;
+}
+@keyframes popIn {
+  0% { transform: translate(-50%, -40%); opacity: 0; }
+  100% { transform: translate(-50%, -50%); opacity: 1; }
+}

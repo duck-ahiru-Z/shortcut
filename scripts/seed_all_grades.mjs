@@ -187,25 +187,9 @@ function generatePracticalQuestions(grade, os = "windows") {
 async function seed() {
   const grades = [
     {
-      id: "5kyu",
-      title: "5級 (Windows版)",
-      questionsCount: 5,
-      passingRate: 0.8,
-      duration: 1800,
-      pool: generateDummyQuestions("5級", 5000)
-    },
-    {
-      id: "4kyu",
-      title: "4級 (Windows版)",
-      questionsCount: 30,
-      passingRate: 0.8,
-      duration: 1800,
-      pool: parse4kyu()
-    },
-    {
       id: "3kyu",
       title: "3級 (Windows版)",
-      questionsCount: 30,
+      questionsCount: knowledgePool["3kyu"].length,
       passingRate: 0.8,
       duration: 1800,
       pool: knowledgePool["3kyu"]
@@ -213,7 +197,7 @@ async function seed() {
     {
       id: "2kyu",
       title: "2級 (Windows版)",
-      questionsCount: 30,
+      questionsCount: knowledgePool["2kyu"].length,
       passingRate: 0.8,
       duration: 1800,
       pool: knowledgePool["2kyu"]
@@ -221,48 +205,15 @@ async function seed() {
     {
       id: "1kyu",
       title: "1級 (Windows版)",
-      questionsCount: 30,
+      questionsCount: knowledgePool["1kyu"].length,
       passingRate: 0.8,
       duration: 1800,
       pool: knowledgePool["1kyu"]
     },
-        // Practical Exams
-    {
-      id: "practical-5kyu",
-      title: "5級 実務検定 (実践シミュレータ) - Windows",
-      questionsCount: 5,
-      passingRate: 0.8,
-      duration: 1800,
-      pool: generatePracticalQuestions("5kyu", "windows")
-    },
-    {
-      id: "practical-mac-5kyu",
-      title: "5級 実務検定 (実践シミュレータ) - Mac",
-      questionsCount: 5,
-      passingRate: 0.8,
-      duration: 1800,
-      pool: generatePracticalQuestions("5kyu", "mac")
-    },
-    {
-      id: "practical-4kyu",
-      title: "4級 実務検定 (実践シミュレータ) - Windows",
-      questionsCount: 5,
-      passingRate: 0.8,
-      duration: 1800,
-      pool: generatePracticalQuestions("4kyu", "windows")
-    },
-    {
-      id: "practical-mac-4kyu",
-      title: "4級 実務検定 (実践シミュレータ) - Mac",
-      questionsCount: 5,
-      passingRate: 0.8,
-      duration: 1800,
-      pool: generatePracticalQuestions("4kyu", "mac")
-    },
-    {
+        {
       id: "practical-3kyu",
       title: "3級 実務検定 (実践シミュレータ)",
-      questionsCount: 30,
+      questionsCount: practicalPool["practical-3kyu"].length,
       passingRate: 0.8,
       duration: 1800,
       pool: practicalPool["practical-3kyu"]
@@ -270,7 +221,7 @@ async function seed() {
     {
       id: "practical-2kyu",
       title: "2級 実務検定 (実践シミュレータ)",
-      questionsCount: 30,
+      questionsCount: practicalPool["practical-2kyu"].length,
       passingRate: 0.8,
       duration: 1800,
       pool: practicalPool["practical-2kyu"]
@@ -278,7 +229,7 @@ async function seed() {
     {
       id: "practical-1kyu",
       title: "1級 実務検定 (実践シミュレータ)",
-      questionsCount: 30,
+      questionsCount: practicalPool["practical-1kyu"].length,
       passingRate: 0.8,
       duration: 1800,
       pool: practicalPool["practical-1kyu"]

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Mocks.module.css";
+import styles from "./LegacyGimmicks.module.css";
 
 type LegacyGimmickProps = {
   type: string;

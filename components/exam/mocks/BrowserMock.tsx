@@ -1,6 +1,7 @@
-import styles from "./Mocks.module.css";
+import styles from "./BrowserMock.module.css";
 
-export default function BrowserMock({ os = "windows" }: { os?: "windows" | "mac" }) {
+type Props = { os?: "windows" | "mac"; isSuccess?: boolean; };
+export default function BrowserMock({ os = "windows", isSuccess }: Props) {
   return (
     <div className={styles.browserContainer}>
       <div className={styles.browserHeader}>
@@ -24,6 +25,8 @@ export default function BrowserMock({ os = "windows" }: { os?: "windows" | "mac"
       <div className={styles.browserBody}>
         指示されたキーを入力...
       </div>
-    </div>
+    
+        {isSuccess && <div className={styles.successToast}>実行しました！</div>}
+      </div>
   );
 }
