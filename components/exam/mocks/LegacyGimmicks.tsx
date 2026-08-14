@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import styles from "./LegacyGimmicks.module.css";
 
 type LegacyGimmickProps = {
@@ -18,6 +18,23 @@ export default function LegacyGimmicks({
   handleInputKeyDown,
   handleInputSubmit
 }: LegacyGimmickProps) {
+  const findPasswordContent = useMemo(() => {
+    if (type !== "find_password") return null;
+    const dummyWords = [
+      "ダミーテキスト", "アカウント", "システム", "ログイン", "ユーザー", 
+      "パスワード", "password", "認証", "セキュリティ", "設定", 
+      "ABCDEF", "123456", "QWERTY", "テスト", "データ", "情報"
+    ];
+    let prefix = "";
+    let suffix = "";
+    // Generate a massive block of text to force Ctrl+F
+    for(let i=0; i<3000; i++) {
+      prefix += dummyWords[Math.floor(Math.random() * dummyWords.length)] + " ";
+      suffix += dummyWords[Math.floor(Math.random() * dummyWords.length)] + " ";
+    }
+    return { prefix, suffix };
+  }, [type]);
+
   switch (type) {
     case "select_all":
       return (
@@ -41,10 +58,10 @@ export default function LegacyGimmicks({
     case "find_password":
       return (
         <div className={styles.legacyColumnGroup}>
-          <div className={styles.legacyScrollBox}>
-            {"あ".repeat(3000)}
-            <span style={{ color: "black", fontWeight: "bold" }}>パスワード：{taskData?.password}</span>
-            {"あ".repeat(3000)}
+          <div className={styles.legacyScrollBox} style={{ fontSize: "14px", lineHeight: "1.6", color: "#333", wordBreak: "break-all" }}>
+            {findPasswordContent?.prefix}
+            <span>パスワード：{taskData?.password}</span>
+            {findPasswordContent?.suffix}
           </div>
           <div className={styles.legacyRowGroup}>
             <input
