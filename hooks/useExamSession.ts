@@ -79,6 +79,12 @@ export function useExamSession(grade: string, disableAntiCheat = false) {
       const result = await gradeExam(examToken, finalAnswers, tracking);
       
       if (result) {
+        try {
+          if (document.fullscreenElement) {
+            await document.exitFullscreen();
+          }
+        } catch(e) { /* ignore */ }
+
         localStorage.removeItem(stateKey);
         sessionStorage.setItem("examResult", JSON.stringify({
           ...result,
