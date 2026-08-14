@@ -128,8 +128,14 @@ export async function startExam(grade: string) {
       const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
       let pwd = "";
       for (let i = 0; i < 8; i++) pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+      
+      const lowerChars = "abcdefghijklmnopqrstuvwxyz";
+      let anchor = "";
+      for (let i = 0; i < 12; i++) anchor += lowerChars.charAt(Math.floor(Math.random() * lowerChars.length));
+
       dynamicAnswers[q.id] = pwd;
-      qData.taskData = { ...q.taskData, password: pwd };
+      qData.taskData = { ...q.taskData, password: pwd, anchor };
+      qData.question = `以下の大量の文字列の中から「${anchor}」を検索し、その直後に書かれている8桁のパスワードを入力してください。`;
     } else if (q.type === 'copy_paste') {
       dynamicAnswers[q.id] = q.taskData.targetText;
       qData.taskData = { ...q.taskData };

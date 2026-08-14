@@ -20,17 +20,13 @@ export default function LegacyGimmicks({
 }: LegacyGimmickProps) {
   const findPasswordContent = useMemo(() => {
     if (type !== "find_password") return null;
-    const dummyWords = [
-      "ダミーテキスト", "アカウント", "システム", "ログイン", "ユーザー", 
-      "認証", "セキュリティ", "設定", "プロファイル", "キー",
-      "ABCDEF", "123456", "QWERTY", "テスト", "データ", "情報"
-    ];
+    const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let prefix = "";
     let suffix = "";
-    // Generate a massive block of text to force Ctrl+F
-    for(let i=0; i<3000; i++) {
-      prefix += dummyWords[Math.floor(Math.random() * dummyWords.length)] + " ";
-      suffix += dummyWords[Math.floor(Math.random() * dummyWords.length)] + " ";
+    // Generate a massive block of random alphanumeric text
+    for(let i=0; i<8000; i++) {
+      prefix += chars.charAt(Math.floor(Math.random() * chars.length));
+      suffix += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     return { prefix, suffix };
   }, [type]);
@@ -58,9 +54,9 @@ export default function LegacyGimmicks({
     case "find_password":
       return (
         <div className={styles.legacyColumnGroup}>
-          <div className={styles.legacyScrollBox} style={{ fontSize: "14px", lineHeight: "1.6", color: "#333", wordBreak: "break-all" }}>
+          <div className={styles.legacyScrollBox} style={{ fontSize: "14px", lineHeight: "1.6", color: "#333", wordBreak: "break-all", fontFamily: "monospace" }}>
             {findPasswordContent?.prefix}
-            <span>パスワード：{taskData?.password}</span>
+            <span>{taskData?.anchor}{taskData?.password}</span>
             {findPasswordContent?.suffix}
           </div>
           <div className={styles.legacyRowGroup}>
