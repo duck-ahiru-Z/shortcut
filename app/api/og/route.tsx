@@ -1,7 +1,10 @@
 import { ImageResponse } from 'next/og';
 import { NextRequest } from 'next/server';
+import fs from 'fs';
+import path from 'path';
 
-export const runtime = 'edge';
+// Remove Edge runtime to allow fs.readFileSync and avoid 1-2MB Edge limits
+// export const runtime = 'edge';
 
 export async function GET(req: NextRequest) {
   try {
@@ -22,7 +25,7 @@ export async function GET(req: NextRequest) {
         message = 'マウスに触れる時間が減りそうです！';
       }
     } else {
-      if (rate >= 70) { // Assuming 80 is pass, close fail
+      if (rate >= 70) {
         message = 'あと少しで合格だったのに...！';
       } else if (rate >= 40) {
         message = '右クリックから卒業したい...';
@@ -33,23 +36,29 @@ export async function GET(req: NextRequest) {
 
     const isPractical = grade.includes('practical');
 
-    // Font Loading
-    // In Edge runtime, we need to read the font file using fetch.
-    // However, a simpler way is to fetch it from a public URL if local fetch fails, 
-    // or we can use the default sans-serif and see if it works, but it won't for Japanese.
-    // So we fetch it from our own origin.
-    const url = new URL(req.url);
-    const origin = url.origin; // e.g. http://localhost:3000
-    
-    // Attempt to fetch font. If it fails, Satori will fallback, but it might show tofu.
+    // Font Loading via fs (Node.js runtime)
     let fontData: ArrayBuffer | null = null;
     try {
-      const fontRes = await fetch(new URL('/fonts/NotoSansJP-Bold.otf', origin));
-      if (fontRes.ok) {
-        fontData = await fontRes.arrayBuffer();
+      const fontPath = path.join(process.cwd(), 'public', 'fonts', 'NotoSansJP-Bold.otf');
+      if (fs.existsSync(fontPath)) {
+        // Read the file and convert Buffer to ArrayBuffer
+        const buffer = fs.readFileSync(fontPath);
+        fontData = buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength);
       }
     } catch (e) {
-      console.warn('Failed to fetch font', e);
+      console.warn('Failed to load font from fs', e);
+    }
+
+    // Logo Loading via fs
+    let logoSrc = '';
+    try {
+      const logoPath = path.join(process.cwd(), 'public', 'logo.png');
+      if (fs.existsSync(logoPath)) {
+        const logoBuffer = fs.readFileSync(logoPath);
+        logoSrc = `data:image/png;base64,${logoBuffer.toString('base64')}`;
+      }
+    } catch (e) {
+      console.warn('Failed to load logo from fs', e);
     }
 
     const bgGradient = passed
@@ -144,27 +153,29 @@ export async function GET(req: NextRequest) {
             </div>
 
             {/* Logo and Brand */}
-            <div
-              style={{
-                position: 'absolute',
-                bottom: '30px',
-                right: '40px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-              }}
-            >
-              <img
-                src={`${origin}/logo.png`}
-                width="64"
-                height="64"
-                style={{ borderRadius: '16px' }}
-                alt="Logo"
-              />
-              <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#94a3b8' }}>
-                ショートカットキー検定
+            {logoSrc && (
+              <div
+                style={{
+                  position: 'absolute',
+                  bottom: '30px',
+                  right: '40px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '12px',
+                }}
+              >
+                <img
+                  src={logoSrc}
+                  width="64"
+                  height="64"
+                  style={{ borderRadius: '16px' }}
+                  alt="Logo"
+                />
+                <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#94a3b8' }}>
+                  ショートカットキー検定
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       ),
@@ -185,7 +196,7 @@ export async function GET(req: NextRequest) {
     );
   } catch (e: any) {
     console.error(e);
-    return new Response(`Failed to generate the image`, {
+    return new Response(`Failed to generate the image: ${e.message}`, {
       status: 500,
     });
   }
