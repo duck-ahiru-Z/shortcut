@@ -36,40 +36,39 @@ export default function LegacyGimmicks({
   switch (type) {
     case "select_all":
       return (
-        <div className={styles.legacyContainer}>
-          <textarea
-            readOnly
-            onMouseDown={(e) => {
-              e.preventDefault();
-              (e.target as HTMLTextAreaElement).focus();
-            }}
-            onContextMenu={(e) => e.preventDefault()}
-            className={styles.legacyTextarea}
-            defaultValue={`【社内情報セキュリティ基本方針】
-
-第1条（目的）
-本方針は、当社の保有する情報資産を様々な脅威から保護し、社会的信頼に応えるとともに、事業の継続的かつ安定的な発展に寄与することを目的とする。
-
-第2条（適用範囲）
-本方針は、役員、正社員、契約社員、派遣社員を含むすべての従業者に適用される。
-
-第3条（情報資産の保護）
-1. 従業者は、業務上知り得た機密情報を第三者に漏洩してはならない。
-2. 許可されていない私物デバイスの業務利用（BYOD）を原則禁止する。
-3. 不審なメールやファイルを受信した場合は、速やかにシステム管理部門に報告すること。
-
-第4条（監査と罰則）
-1. 情報セキュリティ委員は、定期的にセキュリティ監査を実施する。
-2. 本方針に違反する行為が確認された場合、就業規則に基づき懲戒処分の対象となる。
-
-第5条（改定）
-本方針の改定は、取締役会の承認を経て行うものとする。
-
-以上`}
-          />
-          <p className={styles.legacyWarning}>
+        <div className={styles.legacyColumnGroup}>
+          <div className={styles.legacyRowGroup}>
+            <textarea
+              readOnly
+              onMouseDown={(e) => {
+                e.preventDefault();
+                (e.target as HTMLTextAreaElement).focus();
+              }}
+              onContextMenu={(e) => e.preventDefault()}
+              className={styles.legacyTextarea}
+              defaultValue={taskData?.targetText}
+              style={{ flex: 1, resize: 'none' }}
+            />
+            <textarea
+              placeholder="ここにすべてペースト"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onContextMenu={(e) => e.preventDefault()}
+              className={styles.legacyTextarea}
+              style={{ flex: 1, resize: 'none' }}
+            />
+          </div>
+          <p className={styles.legacyWarningTop} style={{ marginTop: '0' }}>
             ※マウスによる選択・右クリックは禁止されています。
           </p>
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <button 
+              onClick={handleInputSubmit}
+              className={`btn btn-primary ${styles.legacyButton}`}
+            >
+              回答する
+            </button>
+          </div>
         </div>
       );
     

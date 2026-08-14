@@ -19,7 +19,7 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
     if (!q || (!q.expectedKeyCombo && !q.expectedKeyComboHash) || isSubmitting) return;
 
     // For tasks that require typing, we shouldn't prevent default on everything.
-    const isTypingTask = q.type === "find_password" || q.type === "copy_paste";
+    const isTypingTask = q.type === "find_password" || q.type === "copy_paste" || q.type === "select_all";
 
     const handleKeyDown = async (e: KeyboardEvent) => {
       if (!isTypingTask) {
