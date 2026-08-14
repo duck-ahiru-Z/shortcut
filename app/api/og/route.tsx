@@ -119,7 +119,7 @@ export async function GET(req: NextRequest) {
               </div>
             )}
 
-            <div style={{ fontSize: '32px', color: '#64748b', marginBottom: '20px', fontWeight: 'bold' }}>
+            <div style={{ fontSize: '32px', color: '#64748b', marginBottom: '20px', fontWeight: 'bold', display: 'flex' }}>
               {gradeTitle}
             </div>
 
@@ -130,13 +130,14 @@ export async function GET(req: NextRequest) {
                 color: passed ? '#d97706' : '#475569',
                 marginBottom: '20px',
                 lineHeight: 1,
+                display: 'flex',
               }}
             >
               {passed ? '合格！' : '不合格...'}
             </div>
 
-            <div style={{ fontSize: '36px', color: '#334155', marginBottom: '40px', fontWeight: 'bold' }}>
-              スコア: {score}点 / 正答率: {rate}%
+            <div style={{ fontSize: '36px', color: '#334155', marginBottom: '40px', fontWeight: 'bold', display: 'flex' }}>
+              {`スコア: ${score}点 / 正答率: ${rate}%`}
             </div>
 
             <div
@@ -147,6 +148,7 @@ export async function GET(req: NextRequest) {
                 padding: '16px 32px',
                 borderRadius: '9999px',
                 fontWeight: 'bold',
+                display: 'flex',
               }}
             >
               {message}
@@ -166,12 +168,12 @@ export async function GET(req: NextRequest) {
               >
                 <img
                   src={logoSrc}
-                  width="64"
-                  height="64"
+                  width={64}
+                  height={64}
                   style={{ borderRadius: '16px' }}
                   alt="Logo"
                 />
-                <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#94a3b8' }}>
+                <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#94a3b8', display: 'flex' }}>
                   ショートカットキー検定
                 </div>
               </div>

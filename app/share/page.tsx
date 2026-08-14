@@ -19,9 +19,11 @@ export async function generateMetadata(
   const description = `スコア: ${score}点 / 正答率: ${rate}%`;
 
   // Production URL needs to be absolute for OG images.
-  // Using VERCEL_URL if deployed to Vercel, else localhost
+  // Using VERCEL_PROJECT_PRODUCTION_URL to get the public production domain, 
+  // avoiding Vercel SSO protection on raw deployment URLs.
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL 
-    || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+    || (process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}` : 
+       (process.env.VERCEL_URL ? `https://shortcutkeyexam.vercel.app` : 'http://localhost:3000'));
 
   const ogUrl = new URL(`${baseUrl}/api/og`);
   ogUrl.searchParams.set('grade', grade);
