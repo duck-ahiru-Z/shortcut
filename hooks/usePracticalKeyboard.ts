@@ -22,8 +22,21 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
     const isTypingTask = q.type === "find_password" || q.type === "copy_paste";
 
     const handleKeyDown = async (e: KeyboardEvent) => {
-      // Only prevent default if it's an action-based task, to avoid interfering with copy/paste/typing
-      // e.preventDefault(); // Removed to allow native shortcuts (like Ctrl+C, Ctrl+A) to actually work in the UI mocks.
+      if (!isTypingTask) {
+        // Block all native browser actions for shortcut questions (e.g. prevent Ctrl+S from saving the page)
+        e.preventDefault();
+      } else {
+        // For typing tasks, allow native clipboard (Ctrl+C, Ctrl+V) but block dangerous browser shortcuts
+        const k = e.key.toLowerCase();
+        const isDangerous = 
+          (e.ctrlKey && ['r', 's', 'p'].includes(k)) ||
+          (e.metaKey && ['r', 's', 'p'].includes(k)) ||
+          e.key === 'F5';
+        
+        if (isDangerous) {
+          e.preventDefault();
+        }
+      }
 
       const pressed = new Set<string>();
       if (e.ctrlKey) pressed.add("control");
