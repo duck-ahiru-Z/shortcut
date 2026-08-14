@@ -97,8 +97,8 @@ export default function ExamPreScreen({
               await document.documentElement.requestFullscreen();
             }
             if ('keyboard' in navigator && typeof (navigator as any).keyboard.lock === 'function') {
-              // Lock dangerous keys (or all) if possible
-              await (navigator as any).keyboard.lock();
+              // Lock only dangerous browser keys (Ctrl+W, Ctrl+T, Ctrl+N, Ctrl+R), allow Ctrl+F
+              await (navigator as any).keyboard.lock(['KeyW', 'KeyT', 'KeyN', 'KeyR']);
             }
           } catch (e) {
             console.warn("Fullscreen or Keyboard Lock failed", e);

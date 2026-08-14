@@ -22,7 +22,7 @@ export default function LegacyGimmicks({
     if (type !== "find_password") return null;
     const dummyWords = [
       "ダミーテキスト", "アカウント", "システム", "ログイン", "ユーザー", 
-      "パスワード", "password", "認証", "セキュリティ", "設定", 
+      "認証", "セキュリティ", "設定", "プロファイル", "キー",
       "ABCDEF", "123456", "QWERTY", "テスト", "データ", "情報"
     ];
     let prefix = "";
