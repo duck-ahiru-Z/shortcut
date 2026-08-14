@@ -56,6 +56,7 @@ export async function generateMetadata(
 
 export default async function SharePage({ searchParams }: Props) {
   const params = await searchParams;
+  const grade = typeof params.grade === 'string' ? params.grade : '3kyu';
   const gradeTitle = typeof params.gradeTitle === 'string' ? params.gradeTitle : 'ショートカットキー検定';
   const score = typeof params.score === 'string' ? params.score : '0';
   const rate = typeof params.rate === 'string' ? params.rate : '0';
@@ -67,9 +68,18 @@ export default async function SharePage({ searchParams }: Props) {
         <h1 className="text-3xl font-bold text-slate-800 mb-2">
           {gradeTitle} {passed ? '合格' : '不合格'}
         </h1>
-        <p className="text-xl text-slate-600 mb-8">
+        <p className="text-xl text-slate-600 mb-6">
           スコア: {score}点 / 正答率: {rate}%
         </p>
+
+        {/* Display the actual OG image on the page */}
+        <div className="mb-8 rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+          <img 
+            src={`/api/og?grade=${grade}&gradeTitle=${encodeURIComponent(gradeTitle)}&score=${score}&rate=${rate}&passed=${passed}`} 
+            alt="試験結果画像" 
+            className="w-full h-auto object-cover"
+          />
+        </div>
 
         <div className="bg-slate-100 rounded-xl p-8 mb-8">
           <p className="text-slate-700 font-medium mb-4">
