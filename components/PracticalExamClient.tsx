@@ -27,22 +27,24 @@ export default function PracticalExamClient({ grade }: Props) {
   } = useExamSession(grade, true); // true = disable anticheat for practical exam
 
   const handleAnswer = useCallback((qId: number, answerValue: string) => {
-    setAnswers(prev => ({ ...prev, [qId]: answerValue }));
+    const nextAnswers = { ...answers, [qId]: answerValue };
+    setAnswers(nextAnswers);
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1);
     } else {
-      handleSubmit();
+      handleSubmit(nextAnswers);
     }
-  }, [currentIndex, questions.length, handleSubmit, setCurrentIndex, setAnswers]);
+  }, [answers, currentIndex, questions.length, handleSubmit, setCurrentIndex, setAnswers]);
 
   const handleSkip = useCallback((qId: number) => {
-    setAnswers(prev => ({ ...prev, [qId]: "SKIPPED" }));
+    const nextAnswers = { ...answers, [qId]: "SKIPPED" };
+    setAnswers(nextAnswers);
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1);
     } else {
-      handleSubmit();
+      handleSubmit(nextAnswers);
     }
-  }, [currentIndex, questions.length, handleSubmit, setCurrentIndex, setAnswers]);
+  }, [answers, currentIndex, questions.length, handleSubmit, setCurrentIndex, setAnswers]);
 
   if (!started) {
     return (
