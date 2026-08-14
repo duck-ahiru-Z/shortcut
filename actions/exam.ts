@@ -124,12 +124,15 @@ export async function startExam(grade: string) {
     }
     
     // Generate dynamic passwords
-    if (q.type === 'find_password' || q.type === 'copy_paste') {
+    if (q.type === 'find_password') {
       const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
       let pwd = "";
       for (let i = 0; i < 8; i++) pwd += chars.charAt(Math.floor(Math.random() * chars.length));
       dynamicAnswers[q.id] = pwd;
       qData.taskData = { ...q.taskData, password: pwd };
+    } else if (q.type === 'copy_paste') {
+      dynamicAnswers[q.id] = q.taskData.targetText;
+      qData.taskData = { ...q.taskData };
     } else if (q.taskData) {
       qData.taskData = q.taskData;
     }
@@ -198,7 +201,11 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
         score++;
       } else {
         let displayCorrect = correctAnswer;
-        if (q.expectedKeyCombo) {
+        if (q.type === 'copy_paste') {
+          displayCorrect = `${correctAnswer} (正しくペースト)`;
+        } else if (q.type === 'find_password') {
+          displayCorrect = `${correctAnswer} (正しく入力)`;
+        } else if (q.expectedKeyCombo) {
           displayCorrect = formatKeyCombo(q.expectedKeyCombo);
         }
         
