@@ -23,9 +23,7 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
 
     const handleKeyDown = async (e: KeyboardEvent) => {
       // Only prevent default if it's an action-based task, to avoid interfering with copy/paste/typing
-      if (!isTypingTask) {
-        e.preventDefault();
-      }
+      // e.preventDefault(); // Removed to allow native shortcuts (like Ctrl+C, Ctrl+A) to actually work in the UI mocks.
 
       const pressed = new Set<string>();
       if (e.ctrlKey) pressed.add("control");

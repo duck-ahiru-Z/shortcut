@@ -6,6 +6,7 @@ export type CertificateData = {
   gradeTitle: string;
   lastName: string;
   firstName: string;
+  gradeId?: string;
 };
 
 export const CertificateApp = {
@@ -30,25 +31,49 @@ export const CertificateApp = {
     canvas.height = h * scale;
     ctx.scale(scale, scale);
 
-    // 1. 背景グラデーション (羊皮紙調)
+    const isPractical = !!data.gradeId?.includes('practical');
+    const isGold = !!data.gradeId?.includes('1kyu');
+    const isSilver = !!data.gradeId?.includes('2kyu') || !!data.gradeId?.includes('3kyu');
+    
+    let bgColors = ['#faf6eb', '#ebdcb9'];
+    let outerBorder = '#c5a880';
+    let innerBorder = '#a67c4e';
+    let gradLineColor = '166,124,78';
+    let gradeTitleColor = '#b45309';
+
+    if (isGold) {
+      bgColors = ['#fffdf7', '#e8d5b5'];
+      outerBorder = '#d4af37';
+      innerBorder = '#b8860b';
+      gradLineColor = '212,175,55';
+      gradeTitleColor = '#9a7b2c';
+    } else if (isSilver) {
+      bgColors = ['#f8f9fa', '#e2e8f0'];
+      outerBorder = '#94a3b8';
+      innerBorder = '#64748b';
+      gradLineColor = '100,116,139';
+      gradeTitleColor = '#475569';
+    }
+
+    // 1. 背景グラデーション
     const bgGrad = ctx.createRadialGradient(w / 2, h / 2, 50, w / 2, h / 2, 750);
-    bgGrad.addColorStop(0, '#faf6eb');
-    bgGrad.addColorStop(1, '#ebdcb9');
+    bgGrad.addColorStop(0, bgColors[0]);
+    bgGrad.addColorStop(1, bgColors[1]);
     ctx.fillStyle = bgGrad;
     ctx.fillRect(0, 0, w, h);
 
-    // 2. ゴールド飾り枠
-    ctx.strokeStyle = '#c5a880';
+    // 2. 飾り枠
+    ctx.strokeStyle = outerBorder;
     ctx.lineWidth = 8;
     ctx.strokeRect(30, 30, w - 60, h - 60);
 
-    ctx.strokeStyle = '#a67c4e';
+    ctx.strokeStyle = innerBorder;
     ctx.lineWidth = 2;
     ctx.strokeRect(42, 42, w - 84, h - 84);
 
     // コーナー飾り
     ctx.save();
-    ctx.fillStyle = '#a67c4e';
+    ctx.fillStyle = innerBorder;
     this.drawCornerPiece(ctx, 42, 42, 0);
     this.drawCornerPiece(ctx, w - 42, 42, Math.PI / 2);
     this.drawCornerPiece(ctx, w - 42, h - 42, Math.PI);
@@ -62,11 +87,11 @@ export const CertificateApp = {
     ctx.textBaseline = 'alphabetic';
     ctx.fillText('合 格 証 書', 600, 160);
 
-    // ゴールドライン
+    // ライン
     const gradLine = ctx.createLinearGradient(400, 0, 800, 0);
-    gradLine.addColorStop(0, 'rgba(166,124,78,0)');
-    gradLine.addColorStop(0.5, 'rgba(166,124,78,1)');
-    gradLine.addColorStop(1, 'rgba(166,124,78,0)');
+    gradLine.addColorStop(0, `rgba(${gradLineColor},0)`);
+    gradLine.addColorStop(0.5, `rgba(${gradLineColor},1)`);
+    gradLine.addColorStop(1, `rgba(${gradLineColor},0)`);
     ctx.strokeStyle = gradLine;
     ctx.lineWidth = 3;
     ctx.beginPath();
@@ -76,7 +101,7 @@ export const CertificateApp = {
 
     // 4. 級タイトル
     ctx.font = 'bold 28px "MS Mincho", "Hiragino Mincho ProN", serif';
-    ctx.fillStyle = '#b45309';
+    ctx.fillStyle = gradeTitleColor;
     ctx.fillText(data.gradeTitle, 600, 235);
 
     // 5. 受験者氏名
@@ -108,6 +133,37 @@ export const CertificateApp = {
     ctx.fillText('ショートカットキー検定 運営事務局', 1000, 640);
     ctx.font = '20px "MS Mincho", "Hiragino Mincho ProN", serif';
     ctx.fillText('代表　岩倉 隼人', 1000, 680);
+
+    if (isPractical) {
+      ctx.save();
+      // Draw a subtle watermark ribbon/badge for practical exam
+      ctx.translate(w / 2, h / 2);
+      ctx.rotate(-Math.PI / 8);
+      ctx.font = 'bold 70px "Arial Black", sans-serif';
+      ctx.fillStyle = isGold ? 'rgba(212,175,55,0.06)' : isSilver ? 'rgba(100,116,139,0.05)' : 'rgba(166,124,78,0.06)';
+      ctx.textAlign = 'center';
+      ctx.fillText('PRACTICAL SKILL CERTIFIED', 0, 0);
+      
+      // Also add a small ribbon badge on the bottom left
+      ctx.restore();
+      ctx.save();
+      ctx.fillStyle = isGold ? '#d4af37' : isSilver ? '#94a3b8' : '#a67c4e';
+      ctx.beginPath();
+      ctx.moveTo(80, h - 180);
+      ctx.lineTo(160, h - 180);
+      ctx.lineTo(160, h - 60);
+      ctx.lineTo(120, h - 90);
+      ctx.lineTo(80, h - 60);
+      ctx.fill();
+      
+      ctx.fillStyle = 'white';
+      ctx.font = 'bold 16px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('実務技能', 120, h - 150);
+      ctx.fillText('認定', 120, h - 125);
+      
+      ctx.restore();
+    }
 
     // 認定印SVGの描画 (失敗時は従来のCanvas朱肉印を描画)
     try {

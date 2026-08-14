@@ -83,7 +83,8 @@ export function useExamSession(grade: string, disableAntiCheat = false) {
           ...result,
           lastName,
           firstName,
-          gradeTitle
+          gradeTitle,
+          gradeId: grade
         }));
         router.push("/exam/result");
       } else {
