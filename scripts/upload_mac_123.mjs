@@ -31,17 +31,17 @@ const p1 = pool["practical-mac-1kyu"];
 
 async function update() {
   await setDoc(doc(db, "exams", "practical-mac-3kyu"), {
-    id: "practical-mac-3kyu", title: "3級 実務検定 (Mac版)", questionsCount: p3.length, passingRate: 0.8, duration: 900, pool: p3
+    id: "practical-mac-3kyu", title: "3級 実務検定 (Mac版)", questionsCount: 5, passingRate: 0.8, duration: 900, pool: p3
   });
   console.log("Updated practical-mac-3kyu in Firestore.");
 
   await setDoc(doc(db, "exams", "practical-mac-2kyu"), {
-    id: "practical-mac-2kyu", title: "2級 実務検定 (Mac版)", questionsCount: p2.length, passingRate: 0.8, duration: 1800, pool: p2
+    id: "practical-mac-2kyu", title: "2級 実務検定 (Mac版)", questionsCount: 10, passingRate: 0.8, duration: 1800, pool: p2
   });
   console.log("Updated practical-mac-2kyu in Firestore.");
   
   await setDoc(doc(db, "exams", "practical-mac-1kyu"), {
-    id: "practical-mac-1kyu", title: "1級 実務検定 (Mac版)", questionsCount: p1.length, passingRate: 0.8, duration: 1800, pool: p1
+    id: "practical-mac-1kyu", title: "1級 実務検定 (Mac版)", questionsCount: 10, passingRate: 0.8, duration: 1800, pool: p1
   });
   console.log("Updated practical-mac-1kyu in Firestore.");
 }

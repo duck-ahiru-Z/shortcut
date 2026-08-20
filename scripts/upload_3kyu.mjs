@@ -29,7 +29,7 @@ const p3 = pool["practical-3kyu"];
 
 async function update() {
   await setDoc(doc(db, "exams", "practical-3kyu"), {
-    id: "practical-3kyu", title: "3級 実務検定 (実践シミュレータ)", questionsCount: p3.length, passingRate: 0.8, duration: 1800, pool: p3
+    id: "practical-3kyu", title: "3級 実務検定 (実践シミュレータ)", questionsCount: 5, passingRate: 0.8, duration: 1800, pool: p3
   });
   console.log("Updated practical-3kyu in Firestore.");
 }

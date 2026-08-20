@@ -30,12 +30,12 @@ const p2 = pool["practical-2kyu"];
 
 async function update() {
   await setDoc(doc(db, "exams", "practical-1kyu"), {
-    id: "practical-1kyu", title: "1級 実務検定 (実践シミュレータ)", questionsCount: p1.length, passingRate: 0.8, duration: 1800, pool: p1
+    id: "practical-1kyu", title: "1級 実務検定 (実践シミュレータ)", questionsCount: 10, passingRate: 0.8, duration: 1800, pool: p1
   });
   console.log("Updated practical-1kyu in Firestore.");
   
   await setDoc(doc(db, "exams", "practical-2kyu"), {
-    id: "practical-2kyu", title: "2級 実務検定 (実践シミュレータ)", questionsCount: p2.length, passingRate: 0.8, duration: 1800, pool: p2
+    id: "practical-2kyu", title: "2級 実務検定 (実践シミュレータ)", questionsCount: 10, passingRate: 0.8, duration: 1800, pool: p2
   });
   console.log("Updated practical-2kyu in Firestore.");
 }

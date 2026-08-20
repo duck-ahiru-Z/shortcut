@@ -100,16 +100,16 @@ const p4 = [
 
 async function update() {
   await setDoc(doc(db, "exams", "5kyu"), {
-    id: "5kyu", title: "5級 (Windows版)", questionsCount: k5.length, passingRate: 0.8, duration: 1800, pool: k5
+    id: "5kyu", title: "5級 (Windows版)", questionsCount: 5, passingRate: 0.8, duration: 1800, pool: k5
   });
   await setDoc(doc(db, "exams", "4kyu"), {
-    id: "4kyu", title: "4級 (Windows版)", questionsCount: k4.length, passingRate: 0.8, duration: 1800, pool: k4
+    id: "4kyu", title: "4級 (Windows版)", questionsCount: 5, passingRate: 0.8, duration: 1800, pool: k4
   });
   await setDoc(doc(db, "exams", "practical-5kyu"), {
-    id: "practical-5kyu", title: "5級 実務検定 (実践シミュレータ)", questionsCount: p5.length, passingRate: 0.8, duration: 1800, pool: p5
+    id: "practical-5kyu", title: "5級 実務検定 (実践シミュレータ)", questionsCount: 5, passingRate: 0.8, duration: 1800, pool: p5
   });
   await setDoc(doc(db, "exams", "practical-4kyu"), {
-    id: "practical-4kyu", title: "4級 実務検定 (実践シミュレータ)", questionsCount: p4.length, passingRate: 0.8, duration: 1800, pool: p4
+    id: "practical-4kyu", title: "4級 実務検定 (実践シミュレータ)", questionsCount: 5, passingRate: 0.8, duration: 1800, pool: p4
   });
   console.log("Updated 5kyu and 4kyu in Firestore.");
 }
