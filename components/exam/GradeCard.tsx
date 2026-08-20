@@ -11,9 +11,6 @@ export default function GradeCard({ config, onOpenModal }: GradeCardProps) {
   return (
     <div className="grade-card">
       <div className="grade-header">
-        <span className={`grade-badge ${config.badgeClass}`}>
-          {config.badgeText}
-        </span>
         <h3 className="grade-title">{config.title}</h3>
         <p className="grade-desc">{config.description}</p>
       </div>
