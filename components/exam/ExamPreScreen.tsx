@@ -83,14 +83,28 @@ export default function ExamPreScreen({
           />
           <span>
             【利用規約・不正行為への同意】<br />
-            試験中の別タブへの切り替え、検索、開発者ツールの使用などの不正行為を行わないことに同意します。（不正な操作は記録されます）
+            試験中の別タブへの切り替え、検索、開発者ツールの使用などの不正行為を行わないことに同意します。（不正な操作は記録されます）<br />
+            <span style={{ color: '#d97706', fontWeight: 'bold' }}>※試験開始時に自動的にフルスクリーンになり、誤操作防止のためブラウザのショートカット機能が一時的にロックされます。（Escキー長押しで解除可能）</span>
           </span>
         </label>
       </div>
 
       <button 
         className={`btn ${canStart ? 'btn-primary' : 'btn-disabled'} ${styles.startButton}`} 
-        onClick={onStart}
+        onClick={async () => {
+          try {
+            if (document.documentElement.requestFullscreen) {
+              await document.documentElement.requestFullscreen();
+            }
+            if ('keyboard' in navigator && typeof (navigator as any).keyboard.lock === 'function') {
+              // Lock only dangerous browser keys (Ctrl+W, Ctrl+T, Ctrl+N, Ctrl+R), allow Ctrl+F
+              await (navigator as any).keyboard.lock(['KeyW', 'KeyT', 'KeyN', 'KeyR']);
+            }
+          } catch (e) {
+            console.warn("Fullscreen or Keyboard Lock failed", e);
+          }
+          onStart();
+        }}
         disabled={!canStart}
       >
         {isLoading ? '準備中...' : '試験を開始する'}

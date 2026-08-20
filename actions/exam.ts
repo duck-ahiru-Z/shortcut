@@ -124,12 +124,50 @@ export async function startExam(grade: string) {
     }
     
     // Generate dynamic passwords
-    if (q.type === 'find_password' || q.type === 'copy_paste') {
+    if (q.type === 'find_password') {
       const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
       let pwd = "";
       for (let i = 0; i < 8; i++) pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+      
+      const lowerChars = "abcdefghijklmnopqrstuvwxyz";
+      let anchor = "";
+      for (let i = 0; i < 12; i++) anchor += lowerChars.charAt(Math.floor(Math.random() * lowerChars.length));
+
       dynamicAnswers[q.id] = pwd;
-      qData.taskData = { ...q.taskData, password: pwd };
+      qData.taskData = { ...q.taskData, password: pwd, anchor };
+      qData.question = `以下の大量の文字列の中から「${anchor}」を検索し、その直後に書かれている8桁のパスワードを入力してください。`;
+    } else if (q.type === 'copy_paste') {
+      dynamicAnswers[q.id] = q.taskData.targetText;
+      qData.taskData = { ...q.taskData };
+    } else if (q.type === 'select_all') {
+      const baseText = `【社内情報セキュリティ基本方針】
+
+第1条（目的）
+本方針は、当社の保有する情報資産を様々な脅威から保護し、社会的信頼に応えるとともに、事業の継続的かつ安定的な発展に寄与することを目的とする。
+
+第2条（適用範囲）
+本方針は、役員、正社員、契約社員、派遣社員を含むすべての従業者に適用される。
+
+第3条（情報資産の保護）
+1. 従業者は、業務上知り得た機密情報を第三者に漏洩してはならない。
+2. 許可されていない私物デバイスの業務利用（BYOD）を原則禁止する。
+3. 不審なメールやファイルを受信した場合は、速やかにシステム管理部門に報告すること。
+
+第4条（監査と罰則）
+1. 情報セキュリティ委員は、定期的にセキュリティ監査を実施する。
+2. 本方針に違反する行為が確認された場合、就業規則に基づき懲戒処分の対象となる。
+
+第5条（改定）
+本方針の改定は、取締役会の承認を経て行うものとする。
+
+`;
+      let longText = "";
+      for (let i = 1; i <= 100; i++) {
+        longText += `[改定履歴 第${i}版]\n` + baseText;
+      }
+      dynamicAnswers[q.id] = longText;
+      qData.taskData = { ...q.taskData, targetText: longText };
+      qData.question = "左のテキストエリア内の文章を「すべて選択」してコピーし、右のテキストエリアに貼り付けて回答してください。（※マウスでの選択・右クリックは禁止されています）";
     } else if (q.taskData) {
       qData.taskData = q.taskData;
     }
@@ -198,7 +236,13 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
         score++;
       } else {
         let displayCorrect = correctAnswer;
-        if (q.expectedKeyCombo) {
+        if (q.type === 'copy_paste') {
+          displayCorrect = `${correctAnswer} (正しくペースト)`;
+        } else if (q.type === 'select_all') {
+          displayCorrect = `全文を正しくペースト (Ctrl+A -> Ctrl+C -> Ctrl+V)`;
+        } else if (q.type === 'find_password') {
+          displayCorrect = `${correctAnswer} (正しく入力)`;
+        } else if (q.expectedKeyCombo) {
           displayCorrect = formatKeyCombo(q.expectedKeyCombo);
         }
         

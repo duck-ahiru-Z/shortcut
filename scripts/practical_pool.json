@@ -191,541 +191,2446 @@
       ],
       "answer": "CORRECT",
       "explanation": "Ctrl + Kはチャットツールの移動を高速化するキーです。チャンネルや相手をマウスで探さず、名前を数文字打つだけで目的地へジャンプできます。"
-    }
-  ],
-  "practical-2kyu": [
-    {
-      "id": 12001,
-      "question": "（Windows）直前に使っていた別のアプリへ切り替えてください。",
-      "expectedKeyCombo": [
-        "alt",
-        "tab"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Alt + Tabはアプリ切り替えの基本です。Excel、ブラウザ、チャットを往復する実務で、タスクバーを探す時間を削減できます。"
     },
     {
-      "id": 12002,
-      "question": "（Windows）デスクトップを表示してください。",
-      "expectedKeyCombo": [
-        "windows",
-        "d"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Dは開いているウィンドウを一時的に隠してデスクトップを表示します。デスクトップ上の資料を取りたいときに一瞬で作業できます。"
-    },
-    {
-      "id": 12003,
-      "question": "（Windows）エクスプローラーを開いてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "e"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Eはエクスプローラーを即起動します。ファイル添付、保存先確認、フォルダー整理の入口をすぐ開けます。"
-    },
-    {
-      "id": 12004,
-      "question": "（Windows）PCをロックしてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "l"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Lは離席時の安全操作です。画面上の情報を即座に保護でき、セキュリティ意識の高い実務習慣になります。"
-    },
-    {
-      "id": 12005,
-      "question": "（Windows）画面の一部を範囲指定してスクリーンショットを撮れる状態にしてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "shift",
-        "s"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Shift + Sは画面切り取りを起動します。エラー画面や資料の一部を必要な範囲だけ素早く共有できます。"
-    },
-    {
-      "id": 12006,
-      "question": "（Windows）クリップボード履歴を開いてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "v"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Vはクリップボード履歴を開きます。過去にコピーした内容を選んで貼れるため、コピーし直しの往復を減らせます。"
-    },
-    {
-      "id": 12007,
-      "question": "（Windows）タスクマネージャーを直接開いてください。",
+      "id": 3031,
+      "type": "slack_quick_switcher",
+      "question": "（Slack）チャンネル数が多すぎてサイドバーから探すのが大変です。チャンネル名やDM相手を入力して移動できるクイックスイッチャーを開いてください。",
       "expectedKeyCombo": [
         "control",
-        "shift",
-        "escape"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。アプリが固まったときに、すぐ状態確認と終了操作へ移れます。"
-    },
-    {
-      "id": 12010,
-      "question": "（エクスプローラー）選択中のファイル名を変更できる状態にしてください。",
-      "expectedKeyCombo": [
-        "f2"
-      ],
-      "answer": "CORRECT",
-      "explanation": "F2は名前変更のキーです。大量のファイル名を整える作業で、右クリックを使わずテンポよくリネームできます。"
-    },
-    {
-      "id": 12011,
-      "question": "（ブラウザ/エクスプローラー）アドレスバーへフォーカスしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "l"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Lはアドレスバーへ即移動します。URL入力、検索、フォルダーパス移動をキーボードだけで開始できます。"
-    },
-    {
-      "id": 12016,
-      "question": "（ブラウザ/文書）ページ内または文書内検索を開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "f"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Fは検索の入口です。長いWebページや資料から目的の言葉を一瞬で見つけ、目視探索の時間を削減できます。"
-    },
-    {
-      "id": 12017,
-      "question": "（アプリ共通）現在の入力欄や一覧の内容をすべて選択してください。",
-      "expectedKeyCombo": [
-        "control",
-        "a"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Aは全選択です。全文コピー、一括削除、一括書式変更など、次の操作へ移るための準備を高速化します。"
-    },
-    {
-      "id": 12018,
-      "question": "（アプリ共通）選択中の内容をコピーしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "c"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Cはコピーの基本です。文字、ファイル、セル、画像などを再利用する実務の土台となる操作です。"
-    },
-    {
-      "id": 12019,
-      "question": "（アプリ共通）直前の操作を元に戻してください。",
-      "expectedKeyCombo": [
-        "control",
-        "z"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Zは元に戻す操作です。誤入力や誤編集をすぐ取り消せるため、スピードを落とさず安心して作業できます。"
-    },
-    {
-      "id": 12020,
-      "question": "（アプリ共通）作成中のファイルを上書き保存してください。",
-      "expectedKeyCombo": [
-        "control",
-        "s"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Sは上書き保存です。作業の節目で反射的に押すことで、突然のトラブルによる作業損失を防げます。"
-    },
-    {
-      "id": 12021,
-      "question": "（エクスプローラー）名前変更中のファイル名を確定し、次のファイルの名前変更へ移ってください。",
-      "expectedKeyCombo": [
-        "tab"
-      ],
-      "answer": "CORRECT",
-      "explanation": "名前変更中にTabを押すと、現在の名前を確定しながら次のファイルの名前変更モードへ移れます。連続リネーム作業を爆速化する神コンボです。"
-    },
-    {
-      "id": 12022,
-      "question": "（エクスプローラー）選択中のファイルに対する右クリックメニューを表示してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "f10"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Shift + F10はコンテキストメニューを表示します。圧縮、プロパティ、送るなどの操作を、マウスの右クリックなしで呼び出せます。"
-    },
-    {
-      "id": 12023,
-      "question": "（エクスプローラー）現在のファイルから下方向へ連続範囲選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "arrowdown"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Shift + 下矢印は、隣接するファイルを下方向へ範囲選択します。複数ファイルの移動、削除、右クリックメニュー操作の前準備に必須です。"
-    },
-    {
-      "id": 12024,
-      "question": "（エクスプローラー）現在のファイルから上方向へ連続範囲選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "arrowup"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Shift + 上矢印は、上方向へ範囲選択を広げます。ファイル一覧をキーボードだけで扱えるようになり、整理作業の持ち替えが減ります。"
-    },
-    {
-      "id": 12025,
-      "question": "（VS Code）現在行の下にマルチカーソルを追加してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "arrowdown"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Alt + 下矢印は、下方向へカーソルを追加します。複数行の同じ位置に同時入力でき、反復編集を一括操作に変えられます。"
-    },
-    {
-      "id": 12026,
-      "question": "（VS Code）現在行の上にマルチカーソルを追加してください。",
-      "expectedKeyCombo": [
-        "control",
-        "alt",
-        "arrowup"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Alt + 上矢印は、上方向へカーソルを追加します。複数行の接頭辞追加や同じ列位置の修正を、1回の入力でまとめて処理できます。"
-    },
-    {
-      "id": 12027,
-      "question": "（VS Code）現在行または選択行を下へ移動してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowdown"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Alt + 下矢印は行を下へ移動します。カット＆ペーストを使わず、コードや段落の順序を安全に入れ替えられます。"
-    },
-    {
-      "id": 12028,
-      "question": "（VS Code）現在行または選択行を上へ移動してください。",
-      "expectedKeyCombo": [
-        "alt",
-        "arrowup"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Alt + 上矢印は行を上へ移動します。文章構成やコード順序の調整を、行単位で直感的に行えます。"
-    },
-    {
-      "id": 12029,
-      "question": "（VS Code）現在行または選択行を下方向へ複製してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "alt",
-        "arrowdown"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Shift + Alt + 下矢印は行を下へ複製します。似た処理や設定行を増やすとき、コピー＆ペーストの手間をなくせます。"
-    },
-    {
-      "id": 12030,
-      "question": "（VS Code）現在行または選択行を上方向へ複製してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "alt",
-        "arrowup"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Shift + Alt + 上矢印は行を上へ複製します。既存行を基準に似た内容を増やす編集で、作業スピードが大きく上がります。"
-    },
-    {
-      "id": 12031,
-      "question": "（VS Code）現在の行を一発で削除してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
         "k"
       ],
       "answer": "CORRECT",
-      "explanation": "Ctrl + Shift + Kは現在行を削除します。行全体を選択してDeleteを押す必要がなく、不要なコードや文章を瞬時に消せます。"
+      "explanation": "Ctrl+Kは、SlackでチャンネルやDMを検索して移動するためのショートカットです。参加チャンネルが多い組織では、サイドバーを探すより高速に目的の会話へ移動できます。"
     },
     {
-      "id": 12032,
-      "question": "（VS Code）現在行または選択行のコメントアウトを切り替えてください。",
+      "id": 3032,
+      "type": "slack_next_unread",
+      "question": "（Slack）未読チャンネルが複数たまっています。次の未読チャンネルへキーボードだけで移動してください。",
       "expectedKeyCombo": [
-        "control",
-        "slash"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + /はコメントアウトと解除を切り替えます。検証中の一時無効化やメモ化をすばやく行える、開発・編集の必須キーです。"
-    },
-    {
-      "id": 12033,
-      "question": "（Windows）タスクマネージャーを直接開いてください。",
-      "expectedKeyCombo": [
-        "control",
+        "alt",
         "shift",
-        "escape"
+        "arrowdown"
       ],
       "answer": "CORRECT",
-      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。フリーズしたアプリの終了やCPU・メモリ負荷の確認に即移れます。"
+      "explanation": "Alt+Shift+↓は、Slackで次の未読チャンネルやDMへ移動する時に使えるショートカットです。大量のチャンネルを順番に確認する時、マウス操作を大きく減らせます。"
     },
     {
-      "id": 12034,
-      "question": "（Windows）タスクマネージャーを直接起動して、アプリの動作状況を確認してください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "escape"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl + Shift + Escはタスクマネージャーを直接開きます。Ctrl+Alt+Delete画面を経由しないため、フリーズ時の初動が最速になります。"
-    },
-    {
-      "id": 12035,
-      "question": "（Windows）「ファイル名を指定して実行」ダイアログを起動してください。",
-      "expectedKeyCombo": [
-        "windows",
-        "r"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Win + R は様々なアプリをコマンドで直接起動するための入り口になります。"
-    },
-    {
-      "id": 12036,
-      "question": "（Windows）スタートボタンを右クリックしたときに出る「クイックリンクメニュー」を開いてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "x"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Win + X はシステム設定やデバイスマネージャーなどに素早くアクセスするための重要ショートカットです。"
-    },
-    {
-      "id": 12037,
-      "question": "（Windows）画面右下から通知パネル（アクションセンター）を開いてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "a"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Win + A で通知パネルを開くことができ、Wi-FiやBluetoothの切り替えもすばやく行えます。"
-    },
-    {
-      "id": 12038,
-      "question": "（Windows）システムのバージョン情報を開いてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "pause"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Win + Pause/Breakはシステム情報を開きます。CPU、メモリ、Windowsバージョンなどを確認するために設定画面を深くたどる必要がありません。"
-    },
-    {
-      "id": 12040,
-      "question": "（Windows）これまでにコピーしたテキストの「クリップボード履歴」を表示してください。",
-      "expectedKeyCombo": [
-        "windows",
-        "v"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Win + V は過去にコピーした内容をさかのぼって貼り付けることができる、実務必須の時短ショートカットです。"
-    }
-  ],
-  "practical-1kyu": [
-    {
-      "id": 11001,
-      "question": "（Windows）タスクビューを開いて、開いているウィンドウや仮想デスクトップを一覧できる状態にしてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "tab"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Tabはタスクビューを開きます。複数案件や複数アプリを同時に扱うとき、作業全体を俯瞰して素早く目的の画面へ戻れます。"
-    },
-    {
-      "id": 11002,
-      "question": "（Windows）新しい仮想デスクトップを作成してください。",
-      "expectedKeyCombo": [
-        "windows",
-        "control",
-        "d"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Ctrl + Dは仮想デスクトップを新規作成します。作業空間を用途別に分けることで、画面の散らかりと集中力の低下を防げます。"
-    },
-    {
-      "id": 11003,
-      "question": "（Windows）右隣の仮想デスクトップへ移動してください。",
-      "expectedKeyCombo": [
-        "windows",
-        "control",
-        "arrowright"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Ctrl + 右矢印は右隣の仮想デスクトップへ移動します。作業空間を切り替えるたびにタスクビューを開かずに済みます。"
-    },
-    {
-      "id": 11004,
-      "question": "（Windows）現在の仮想デスクトップを閉じてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "control",
-        "f4"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Ctrl + F4は現在の仮想デスクトップを閉じます。使い終わった作業空間を即座に片付け、作業環境を整理できます。"
-    },
-    {
-      "id": 11005,
-      "question": "（Windows）アクティブウィンドウを画面左半分にスナップしてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "arrowleft"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + 左矢印はウィンドウを左半分に配置します。資料とブラウザ、Excelとチャットなどを並べる比較作業で威力を発揮します。"
-    },
-    {
-      "id": 11006,
-      "question": "（Windows）スナップレイアウトを表示してください。",
-      "expectedKeyCombo": [
-        "windows",
-        "z"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + Zはスナップレイアウトを表示します。複数ウィンドウを整然と並べる配置をキーボードから選べるため、大画面作業が効率化します。"
-    },
-    {
-      "id": 11007,
-      "question": "（Windows）絵文字や記号を入力するパネルを開いてください。",
-      "expectedKeyCombo": [
-        "windows",
-        "period"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Windows + . は絵文字・記号パネルを開きます。チャットの反応や資料内の記号入力を、検索やコピペなしで素早く行えます。"
-    },
-    {
-      "id": 11008,
-      "question": "（VS Code）コマンドパレットを開いてください。",
+      "id": 3033,
+      "type": "vscode_command_palette",
+      "question": "（VS Code）設定変更や拡張機能のコマンド実行をしたいです。メニューを探さず、コマンドパレットを開いてください。",
       "expectedKeyCombo": [
         "control",
         "shift",
         "p"
       ],
       "answer": "CORRECT",
-      "explanation": "Ctrl + Shift + Pはコマンドパレットを開きます。機能名を入力して直接実行できるため、メニュー階層を探す時間を削減できます。"
+      "explanation": "Ctrl+Shift+Pは、VS Codeのコマンドパレットを開くショートカットです。各種コマンド、設定、拡張機能の操作をキーボードからすばやく呼び出せます。"
     },
     {
-      "id": 11010,
-      "question": "（VS Code）統合ターミナルを開閉してください。",
+      "id": 3034,
+      "type": "vscode_quick_open",
+      "question": "（VS Code）大きなプロジェクトで目的のファイルがフォルダーの奥深くにあります。ファイル名検索で素早く開いてください。",
       "expectedKeyCombo": [
         "control",
-        "backquote"
+        "p"
       ],
       "answer": "CORRECT",
-      "explanation": "Ctrl + `は統合ターミナルを開閉します。コード編集からコマンド実行へ即移れるため、開発作業の流れを止めません。"
+      "explanation": "Ctrl+Pは、VS Codeでファイル名を検索して開くクイックオープンのショートカットです。フォルダー階層を手でたどらず、目的のファイルへ即座に移動できます。"
     },
     {
-      "id": 11011,
-      "question": "（VS Code）現在行または選択行を上へ移動してください。",
+      "id": 3035,
+      "type": "vscode_format_document",
+      "question": "（VS Code）レビュー前のコードですが、インデントや改行が乱れて読みにくい状態です。現在のファイル全体をフォーマットしてください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "f"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Alt+Fは、VS Codeでドキュメント全体を整形するショートカットです。コードの見た目を統一し、レビューしやすい状態にできます。"
+    },
+    {
+      "id": 3036,
+      "type": "vscode_go_to_line",
+      "question": "（VS Code）エラーログに「128行目で失敗」と表示されています。指定行へジャンプするための入力欄を開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "g"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Gは、VS Codeで指定した行番号へ移動するためのショートカットです。エラーログやレビューコメントで示された行へすばやく移動できます。"
+    },
+    {
+      "id": 3037,
+      "type": "excel_select_row",
+      "question": "（Excel）売上データの1行分をまとめてコピーしたいです。現在のセルがある行全体を選択してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "space"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Spaceは、Excelでアクティブセルがある行全体を選択するショートカットです。行単位のコピー、削除、書式変更を効率よく行えます。"
+    },
+    {
+      "id": 3038,
+      "type": "excel_select_column",
+      "question": "（Excel）顧客リストのメールアドレス列だけを一括で書式変更したいです。現在のセルがある列全体を選択してください。",
+      "expectedKeyCombo": [
+        "control",
+        "space"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Spaceは、Excelでアクティブセルがある列全体を選択するショートカットです。列単位の集計、コピー、削除、書式設定に役立ちます。"
+    },
+    {
+      "id": 3039,
+      "type": "excel_select_to_end",
+      "question": "（Excel）現在のセルから入力済みデータの末尾までをまとめて選択し、集計対象にしたいです。選択範囲を最後のセルまで広げてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "end"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+Endは、現在のセルから使用中範囲の最後のセルまで選択を広げるショートカットです。大量データを一括でコピー、削除、集計したい時に便利です。"
+    },
+    {
+      "id": 3040,
+      "type": "chrome_devtools_inspect",
+      "question": "（Chrome）画面上のボタンのCSSが崩れています。対象要素を調査するため、開発者ツールの要素選択モードを開始してください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "c"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+Cは、Chromeの開発者ツールでページ上の要素を選択して調査するためのショートカットです。対象要素のHTML構造やCSSをすばやく確認できます。"
+    }
+  ],
+  "practical-2kyu": [
+    {
+      "id": 2001,
+      "type": "browser_copy_url",
+      "question": "（ブラウザ）現在見ている障害調査記事のURLを、チームチャットへ共有したいです。マウスを使わず、アドレスバーを選択してからURLをコピーしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "l"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Lでアドレスバー全体を選択し、Ctrl+CでURLをコピーできます。長いURLをマウスでドラッグする必要がなく、調査結果の共有が一瞬で終わります。"
+    },
+    {
+      "id": 2002,
+      "type": "browser_duplicate_current_tab",
+      "question": "（ブラウザ）今開いている管理画面を残したまま、同じページを別タブでも開いて比較したいです。現在のURLを新しいタブで開いてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "l"
+          ]
+        },
+        {
+          "keys": [
+            "alt",
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Lで現在のURLを選択し、Alt+Enterを押すと、そのURLを新しいタブで開けます。同じ画面を複製して比較・確認したい時に便利な連続技です。"
+    },
+    {
+      "id": 2003,
+      "type": "browser_hard_reload",
+      "question": "（ブラウザ）修正済みのCSSが反映されているはずなのに、自分の画面だけ古いデザインのままです。キャッシュを無視して強制再読み込みしてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "r"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+Rは、キャッシュを無視してページを再読み込みするショートカットです。Web制作や検証作業で、古いCSSや画像が残っている時の確認に役立ちます。"
+    },
+    {
+      "id": 2004,
+      "type": "chrome_devtools_console",
+      "question": "（Chrome）画面上の処理が失敗しています。JavaScriptエラーをすぐ確認するため、開発者ツールのConsoleを開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "j"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+JはChromeで開発者ツールのConsoleを開くショートカットです。エラー内容やログを即座に確認できるため、Webアプリの不具合調査で頻繁に使います。"
+    },
+    {
+      "id": 2005,
+      "type": "vscode_select_next_occurrences",
+      "question": "（VS Code）同じ変数名が近くに3回出てきます。検索置換を開くほどではないので、同じ単語を3つ連続で選択してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "d"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Dは、現在選択中の単語と同じ次の出現箇所を追加選択するショートカットです。繰り返し押すことでマルチカーソル編集ができ、局所的な一括修正を高速に行えます。"
+    },
+    {
+      "id": 2006,
+      "type": "vscode_move_line_up",
+      "question": "（VS Code）関数内の処理順が1行だけ逆になっています。現在行を上へ移動してください。",
       "expectedKeyCombo": [
         "alt",
         "arrowup"
       ],
       "answer": "CORRECT",
-      "explanation": "Alt + 上矢印は行を上へ移動します。コピペを使わず順序変更できるため、コードや箇条書きの構造整理が速く安全になります。"
+      "explanation": "Alt+↑は、VS Codeで現在行または選択行を上へ移動するショートカットです。切り取りと貼り付けを使わず、コードの順序をすばやく入れ替えられます。"
     },
     {
-      "id": 11012,
-      "question": "（VS Code）現在行を下方向に複製してください。",
+      "id": 2007,
+      "type": "vscode_duplicate_line_down",
+      "question": "（VS Code）似た設定行をもう1行作って、値だけ後から変えたいです。現在行を下に複製してください。",
       "expectedKeyCombo": [
         "shift",
         "alt",
         "arrowdown"
       ],
       "answer": "CORRECT",
-      "explanation": "Shift + Alt + 下矢印は行を複製します。似た処理や設定行を増やすとき、コピーと貼り付けを1操作に短縮できます。"
+      "explanation": "Shift+Alt+↓は、VS Codeで現在行または選択行を下に複製するショートカットです。類似コードや設定を増やす時、コピー＆ペーストよりも少ない操作で済みます。"
     },
     {
-      "id": 11013,
-      "question": "（VS Code）現在行または選択行のコメントアウトを切り替えてください。",
+      "id": 2008,
+      "type": "vscode_toggle_line_comment",
+      "question": "（VS Code）デバッグ用に一時的に処理を無効化したいです。現在行をコメント化してください。",
       "expectedKeyCombo": [
         "control",
         "slash"
       ],
       "answer": "CORRECT",
-      "explanation": "Ctrl + /はコメント切り替えです。検証中の一時無効化やメモ化をすばやく行え、デバッグやレビューのテンポが上がります。"
+      "explanation": "Ctrl+/は、VS Codeで行コメントのオン・オフを切り替えるショートカットです。処理を一時停止したり、コメントを外して戻したりする作業をすばやく行えます。"
     },
     {
-      "id": 11014,
-      "question": "（VS Code）選択中の変数名や関数名をリネームできる状態にしてください。",
+      "id": 2009,
+      "type": "vscode_replace_current_file",
+      "question": "（VS Code）現在のファイル内で古いAPI名を新しいAPI名に置換したいです。置換入力欄を開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "h"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Hは、VS Codeで現在のファイル内置換を開くショートカットです。単純検索ではなく、名称変更や文言差し替えをまとめて行いたい時に使います。"
+    },
+    {
+      "id": 2010,
+      "type": "excel_select_used_range_from_top",
+      "question": "（Excel）巨大な売上表を集計ツールへ渡すため、表の先頭へ戻ってから入力済み範囲をまとめて選択してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "home"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "shift",
+            "end"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Homeで表の先頭へ移動し、Ctrl+Shift+Endで使用中範囲の最後まで選択できます。何万行ある表でも、ドラッグせずに一気に選択できます。"
+    },
+    {
+      "id": 2011,
+      "type": "excel_toggle_filter",
+      "question": "（Excel）一覧表から特定部署のデータだけを絞り込みたいです。表にフィルターを設定してください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "l"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+Lは、Excelでオートフィルターのオン・オフを切り替えるショートカットです。大量の一覧データを条件で絞り込む作業の入口になります。"
+    },
+    {
+      "id": 2012,
+      "type": "excel_paste_values",
+      "question": "（Excel）数式セルをコピーしましたが、貼り付け先には計算結果の値だけを入れたいです。形式を選択して値貼り付けを実行してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "alt",
+            "v"
+          ]
+        },
+        {
+          "keys": [
+            "v"
+          ]
+        },
+        {
+          "keys": [
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Alt+Vで形式を選択して貼り付けを開き、Vで値を選び、Enterで確定します。数式や書式を持ち込まず、結果だけを貼り付けたい時に非常に便利です。"
+    },
+    {
+      "id": 2013,
+      "type": "excel_open_filter_dropdown",
+      "question": "（Excel）フィルター付きの見出しセルにいます。マウスで小さな三角ボタンを押さず、現在列のフィルターメニューを開いてください。",
+      "expectedKeyCombo": [
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt+↓は、Excelのフィルター見出しや入力候補のドロップダウンを開く時に使えます。小さなボタンをクリックする必要がなく、絞り込み条件の設定が速くなります。"
+    },
+    {
+      "id": 2014,
+      "type": "explorer_rename_next_file",
+      "question": "（エクスプローラー）スクリーンショットを連番で整理しています。選択中のファイル名を変更し、続けて次のファイル名変更へ進んでください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "f2"
+          ]
+        },
+        {
+          "keys": [
+            "tab"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2で選択中のファイル名を編集状態にし、Tabで確定しながら次のファイルの名前変更へ進めます。大量のファイルを連続リネームする時にマウス操作を大幅に減らせます。"
+    },
+    {
+      "id": 2015,
+      "type": "excel_copy_current_row",
+      "question": "（Excel）現在のセルがある受注明細行を、別シートへそのまま転記したいです。行全体を選択してコピーしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "shift",
+            "space"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Spaceでアクティブセルの行全体を選択し、Ctrl+Cでコピーできます。行番号をクリックする必要がなく、明細行単位の転記や確認が効率化します。"
+    },
+    {
+      "id": 2016,
+      "type": "browser_restore_tab_then_find",
+      "question": "（ブラウザ）調査中に重要なリリースノートのタブを閉じてしまいました。タブを復元し、そのままページ内検索を開いて該当エラーコードを探せる状態にしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "shift",
+            "t"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "f"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+Tで直前に閉じたタブを復元し、Ctrl+Fでページ内検索を開けます。履歴をたどって探し直すより、復元して即検索する方が圧倒的に速い連続技です。"
+    },
+    {
+      "id": 2017,
+      "type": "browser_open_downloads",
+      "question": "（ブラウザ）CSVをダウンロードしたはずなのに、保存先を見失いました。ダウンロード一覧を開いて確認してください。",
+      "expectedKeyCombo": [
+        "control",
+        "j"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Jはブラウザのダウンロード一覧を開くショートカットです。ダウンロードしたファイルを探すためにフォルダーを開き直す前に、まず一覧から確認できます。"
+    },
+    {
+      "id": 2018,
+      "type": "browser_jump_first_tab",
+      "question": "（ブラウザ）タブを大量に開いていますが、左端に固定している管理ダッシュボードへ一瞬で戻りたいです。最初のタブへ移動してください。",
+      "expectedKeyCombo": [
+        "control",
+        "1"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+1はブラウザで左から1番目のタブへ移動するショートカットです。固定タブや常用ページを左端に置いておくと、どれだけタブが増えても即座に戻れます。"
+    },
+    {
+      "id": 2019,
+      "type": "browser_jump_last_tab",
+      "question": "（ブラウザ）調査の最後に開いたチケットページが右端のタブにあります。タブを順番に送らず、最後のタブへ移動してください。",
+      "expectedKeyCombo": [
+        "control",
+        "9"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+9はブラウザで一番右のタブへ移動するショートカットです。新しく開いたページが右端に集まる運用では、最後の作業ページへすばやく戻れます。"
+    },
+    {
+      "id": 2020,
+      "type": "chrome_open_devtools",
+      "question": "（Chrome）本番反映後の画面でレイアウト崩れが起きています。DOMやCSSを確認するため、開発者ツールを開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "i"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+IはChromeで開発者ツールを開くショートカットです。HTML構造、CSS、通信、Consoleなどを確認でき、Web画面の不具合調査に欠かせません。"
+    },
+    {
+      "id": 2021,
+      "type": "vscode_workspace_search",
+      "question": "（VS Code）設定キーがどのファイルで使われているか、プロジェクト全体から探したいです。全体検索を開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "f"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+FはVS Codeでワークスペース全体の検索を開くショートカットです。巨大なプロジェクトでも、ファイルを1つずつ開かずに対象文字列を横断検索できます。"
+    },
+    {
+      "id": 2022,
+      "type": "vscode_workspace_replace",
+      "question": "（VS Code）古い環境変数名が複数ファイルに残っています。プロジェクト全体で置換できる画面を開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "h"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+HはVS Codeでワークスペース全体の置換を開くショートカットです。複数ファイルにまたがる名称変更や文言修正を効率よく進められます。"
+    },
+    {
+      "id": 2023,
+      "type": "vscode_rename_symbol",
+      "question": "（VS Code）変数名を手作業で置換すると、関係ない文字列まで変えそうで怖いです。現在のシンボルを安全にリネームする操作を開始してください。",
       "expectedKeyCombo": [
         "f2"
       ],
       "answer": "CORRECT",
-      "explanation": "F2はシンボルのリネームです。単なる検索置換ではなく参照関係を踏まえて変更できるため、名前変更の漏れや事故を防げます。"
+      "explanation": "F2はVS Codeでシンボルの名前変更を開始するショートカットです。単純な文字列置換ではなく、言語機能に基づいて変数や関数名を安全に変更できます。"
     },
     {
-      "id": 11015,
-      "question": "（VS Code）選択中の単語と同じ次の出現箇所を追加選択してください。",
+      "id": 2024,
+      "type": "vscode_delete_line",
+      "question": "（VS Code）デバッグ用のconsole出力が1行だけ残っています。選択やドラッグをせず、現在行を削除してください。",
       "expectedKeyCombo": [
         "control",
-        "d"
+        "shift",
+        "k"
       ],
       "answer": "CORRECT",
-      "explanation": "Ctrl + Dは次の一致を選択に追加します。複数箇所を同時編集でき、同じ修正を何度も繰り返す手間を減らせます。"
+      "explanation": "Ctrl+Shift+KはVS Codeで現在行を削除するショートカットです。行全体を選択してBackspaceを押す必要がなく、不要な行を一瞬で消せます。"
     },
     {
-      "id": 11016,
-      "question": "（VS Code）選択中の関数やクラスの定義元へ移動してください。",
+      "id": 2025,
+      "type": "vscode_insert_line_below",
+      "question": "（VS Code）現在行の下にログ出力を1行追加したいですが、行末まで移動するのが面倒です。現在行の下に新しい行を挿入してください。",
+      "expectedKeyCombo": [
+        "control",
+        "enter"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+EnterはVS Codeで現在行の下に新しい行を挿入するショートカットです。カーソル位置が行の途中でも、すぐ下に空行を作って入力を始められます。"
+    },
+    {
+      "id": 2026,
+      "type": "vscode_apply_quick_fix",
+      "question": "（VS Code）未使用importや型エラーに電球マークが出ています。クイックフィックスを開き、先頭候補を適用してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "period"
+          ]
+        },
+        {
+          "keys": [
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+.でクイックフィックスを開き、Enterで候補を適用できます。import追加、型修正、lint修正などをマウスなしで処理できるため、レビュー前の整備が速くなります。"
+    },
+    {
+      "id": 2027,
+      "type": "excel_create_table_confirm",
+      "question": "（Excel）CSVを開いたままの一覧表にフィルターや見やすい書式を付けたいです。テーブル作成を開始し、そのまま確定してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "t"
+          ]
+        },
+        {
+          "keys": [
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+TでExcelのテーブル作成ダイアログを開き、Enterで確定できます。テーブル化するとフィルター、見出し、範囲管理が扱いやすくなり、一覧データの分析が楽になります。"
+    },
+    {
+      "id": 2028,
+      "type": "excel_next_worksheet",
+      "question": "（Excel）月別シートが12枚並んだブックで、次月のシートを確認したいです。マウスでシートタブをクリックせず、次のシートへ移動してください。",
+      "expectedKeyCombo": [
+        "control",
+        "pagedown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+PageDownはExcelで次のワークシートへ移動するショートカットです。シート数が多いブックでも、下部の小さなタブをクリックせずに移動できます。"
+    },
+    {
+      "id": 2029,
+      "type": "excel_show_formulas",
+      "question": "（Excel）集計結果が怪しいので、セルに表示されている数値ではなく数式そのものを一括で確認したいです。数式表示を切り替えてください。",
+      "expectedKeyCombo": [
+        "control",
+        "grave"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+graveはExcelで数式の表示・非表示を切り替えるショートカットです。計算結果だけでは見えない参照ミスや式の違いを、表全体で確認できます。"
+    },
+    {
+      "id": 2030,
+      "type": "explorer_file_properties",
+      "question": "（エクスプローラー）提出ファイルのサイズや更新日時をすぐ確認したいです。選択中ファイルのプロパティを開いてください。",
+      "expectedKeyCombo": [
+        "alt",
+        "enter"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt+Enterはエクスプローラーで選択中ファイルやフォルダーのプロパティを開くショートカットです。右クリックメニューを使わず、サイズ・場所・更新日時などを確認できます。"
+    }
+  ],
+  "practical-1kyu": [
+    {
+      "id": 1001,
+      "type": "vscode_command_palette",
+      "question": "（VS Code）設定変更、拡張機能のコマンド、Git関連操作をメニューから探す時間が惜しいです。コマンドパレットを開いてください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "p"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+Pは、VS Codeのコマンドパレットを開くショートカットです。ほぼすべての機能をキーボードから検索・実行できるため、VS Codeを高速操作する中心的な入口になります。"
+    },
+    {
+      "id": 1002,
+      "type": "vscode_toggle_terminal",
+      "question": "（VS Code）コードを書きながら、すぐ下のターミナルでテストコマンドを確認したいです。統合ターミナルの表示を切り替えてください。",
+      "expectedKeyCombo": [
+        "control",
+        "grave"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+grave（バッククォート）は、VS Codeの統合ターミナル表示を切り替えるショートカットです。エディタとターミナルをマウスなしで往復でき、開発速度が大きく上がります。"
+    },
+    {
+      "id": 1003,
+      "type": "vscode_new_integrated_terminal",
+      "question": "（VS Code）既存ターミナルではサーバーを起動中です。ログを止めずに別コマンドを実行するため、新しい統合ターミナルを作成してください。",
+      "expectedKeyCombo": [
+        "control",
+        "shift",
+        "grave"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+grave（バッククォート）は、VS Codeで新しい統合ターミナルを作成するショートカットです。サーバー起動用、テスト用、Git操作用などを分けて作業できます。"
+    },
+    {
+      "id": 1004,
+      "type": "vscode_go_to_definition",
+      "question": "（VS Code）レビュー中に、呼び出している関数の実装がどこにあるのか即確認したいです。定義へジャンプしてください。",
       "expectedKeyCombo": [
         "f12"
       ],
       "answer": "CORRECT",
-      "explanation": "F12は定義へ移動します。実装場所をファイルツリーから探す必要がなくなり、コード理解やレビューが高速になります。"
+      "explanation": "F12は、VS Codeでシンボルの定義へ移動するショートカットです。関数やクラスの実装を探してフォルダを開いて回る必要がなく、コード読解が高速になります。"
     },
     {
-      "id": 11017,
-      "question": "（ブラウザ）閲覧履歴やキャッシュなどの削除ダイアログを開いてください。",
+      "id": 1005,
+      "type": "vscode_peek_definition",
+      "question": "（VS Code）現在の編集位置を離れずに、関数の中身だけチラ見して確認したいです。定義をピーク表示してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "f12"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Alt+F12は、VS Codeで定義をピーク表示するショートカットです。ファイル移動せずに小さなビューで実装を確認できるため、文脈を失わずに調査できます。"
+    },
+    {
+      "id": 1006,
+      "type": "vscode_find_references",
+      "question": "（VS Code）この関数を変更してよいか判断するため、プロジェクト内でどこから使われているか確認したいです。参照一覧を表示してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "f12"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+F12は、VS Codeで選択中のシンボルの参照箇所を表示するショートカットです。影響範囲を確認してから安全にリファクタリングできます。"
+    },
+    {
+      "id": 1007,
+      "type": "vscode_add_cursors_line_ends",
+      "question": "（VS Code）選択した複数行の末尾に、同じコメントを一括で追記したいです。各行末にカーソルを追加してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "i"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Alt+Iは、VS Codeで選択範囲内の各行末にカーソルを追加するショートカットです。複数行の末尾へ同じ文字を追加する作業を一撃で始められます。"
+    },
+    {
+      "id": 1008,
+      "type": "vscode_fold_all",
+      "question": "（VS Code）巨大なファイルで全体構造だけを見たいです。すべてのコードブロックを折りたたんでください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "0"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "VS CodeではCtrl+Kに続けてCtrl+0を押すと、すべての領域を折りたためます。長大なファイルでも関数やクラスの見出しだけを見渡しやすくなります。"
+    },
+    {
+      "id": 1009,
+      "type": "vscode_unfold_all",
+      "question": "（VS Code）折りたたまれたコードをまとめて確認したいです。すべての折りたたみを展開してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "j"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "VS CodeではCtrl+Kに続けてCtrl+Jを押すと、折りたたまれた領域をすべて展開できます。構造確認後に全文を戻して読む時に便利です。"
+    },
+    {
+      "id": 1010,
+      "type": "vscode_add_line_comment_chord",
+      "question": "（VS Code）一時的に選択中の複数行を無効化したいです。VS Codeの連続キー操作で行コメントを追加してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Kに続けてCtrl+Cを押すと、VS Codeで選択行に行コメントを追加できます。範囲選択した処理をまとめて無効化したい時に使える上級者向けの連続技です。"
+    },
+    {
+      "id": 1011,
+      "type": "vscode_format_selection_chord",
+      "question": "（VS Code）ファイル全体ではなく、レビュー対象の一部コードだけインデントが崩れています。選択範囲だけをフォーマットしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "f"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Kに続けてCtrl+Fを押すと、VS Codeで選択範囲だけをフォーマットできます。ファイル全体の差分を増やさず、必要な部分だけ整形したい時に有効です。"
+    },
+    {
+      "id": 1012,
+      "type": "terminal_clear_screen",
+      "question": "（統合ターミナル）ログが大量に流れて、直近のテスト結果が見づらくなりました。ターミナル画面をクリアしてください。",
       "expectedKeyCombo": [
         "control",
-        "shift",
-        "delete"
+        "l"
       ],
       "answer": "CORRECT",
-      "explanation": "Ctrl + Shift + Deleteは閲覧データ削除を開きます。Webアプリの表示不具合やキャッシュ問題にすぐ対処できます。"
+      "explanation": "Ctrl+Lは、多くのターミナルで画面をクリアするショートカットです。過去ログに埋もれず、次に実行するコマンドの結果を見やすくできます。"
     },
     {
-      "id": 11018,
-      "question": "（PowerPoint）スライドショーを最初のスライドから開始してください。",
-      "expectedKeyCombo": [
-        "f5"
+      "id": 1013,
+      "type": "powerpoint_duplicate_and_group",
+      "question": "（PowerPoint）選択中の複数図形をテンプレートとして複製し、その複製をひとまとめにして動かせるようにしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "g"
+          ]
+        }
       ],
       "answer": "CORRECT",
-      "explanation": "F5はスライドショーを最初から開始します。発表本番や通し確認で、リボンの再生ボタンを探さずスムーズに開始できます。"
+      "explanation": "Ctrl+Dで選択中のオブジェクトを複製し、Ctrl+Gで選択中の複数オブジェクトをグループ化できます。図形セットを量産して配置する資料作成で強力な連続技です。"
     },
     {
-      "id": 11019,
-      "question": "（PowerPoint）現在のスライドからスライドショーを開始してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "f5"
+      "id": 1014,
+      "type": "powerpoint_copy_format_to_next_object",
+      "question": "（PowerPoint）選択中の図形の見た目を、次の図形にもそろえたいです。書式をコピーし、次のオブジェクトへ移動して、書式を貼り付けてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "shift",
+            "c"
+          ]
+        },
+        {
+          "keys": [
+            "tab"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "shift",
+            "v"
+          ]
+        }
       ],
       "answer": "CORRECT",
-      "explanation": "Shift + F5は現在のスライドからスライドショーを開始します。途中スライドの確認や修正後のチェックを最短で行えます。"
+      "explanation": "Ctrl+Shift+Cで選択中オブジェクトの書式をコピーし、Tabで次のオブジェクトへ移動し、Ctrl+Shift+Vで書式を貼り付けます。スライド内の見た目をマウスなしで統一できます。"
     },
     {
-      "id": 11020,
-      "question": "（Windows）スタート検索で選択中のアプリを管理者として実行してください。",
+      "id": 1015,
+      "type": "powerpoint_new_slide_start_current",
+      "question": "（PowerPoint）発表練習中に補足スライドを1枚追加しました。新しいスライドを作成し、そのスライドからすぐにスライドショーを開始してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "m"
+          ]
+        },
+        {
+          "keys": [
+            "shift",
+            "f5"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Mで新しいスライドを追加し、Shift+F5で現在のスライドからスライドショーを開始できます。編集と確認をキーボードだけで連続実行できる、発表直前に便利な操作です。"
+    },
+    {
+      "id": 1016,
+      "type": "vscode_terminal_clear",
+      "question": "（VS Code）テストログが大量に流れて、次の実行結果が見づらくなりました。統合ターミナルを表示し、画面をクリアしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "grave"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "l"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+graveでVS Codeの統合ターミナルを表示し、Ctrl+Lでターミナル画面をクリアできます。ログに埋もれず、次のコマンド結果だけを見やすく確認できます。"
+    },
+    {
+      "id": 1017,
+      "type": "vscode_terminal_stop_process",
+      "question": "（VS Code）開発サーバーが暴走してログを吐き続けています。統合ターミナルへ移動し、実行中プロセスを停止してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "grave"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+graveで統合ターミナルを表示し、Ctrl+Cで実行中のプロセスへ中断を送れます。開発サーバーやテスト監視を止めたい時に使う定番の操作です。"
+    },
+    {
+      "id": 1018,
+      "type": "vscode_definition_and_back",
+      "question": "（VS Code）レビュー中に関数の実装を確認したいですが、確認後は元の呼び出し元へすぐ戻りたいです。定義へ移動してから戻ってください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "f12"
+          ]
+        },
+        {
+          "keys": [
+            "alt",
+            "arrowleft"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "F12で定義へジャンプし、Alt+←で直前の位置へ戻れます。実装確認とレビュー位置への復帰をキーボードだけで行えるため、コードリーディングが途切れません。"
+    },
+    {
+      "id": 1019,
+      "type": "vscode_references_peek_close",
+      "question": "（VS Code）この関数の利用箇所を一瞬だけ確認し、確認後すぐ編集画面へ戻りたいです。参照一覧を表示してから閉じてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "shift",
+            "f12"
+          ]
+        },
+        {
+          "keys": [
+            "escape"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+F12で参照一覧を表示し、Escapeで閉じられます。影響範囲を軽く確認したい時に、パネル操作へ手を伸ばさず完結できます。"
+    },
+    {
+      "id": 1020,
+      "type": "vscode_quick_fix_apply",
+      "question": "（VS Code）型エラーの箇所に修正候補が出ています。クイックフィックスを開き、選択中の候補を適用してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "period"
+          ]
+        },
+        {
+          "keys": [
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+.でクイックフィックスを開き、Enterで候補を適用します。import補完、型修正、lint修正などを高速に処理できる、実装中の強力な連続技です。"
+    },
+    {
+      "id": 1021,
+      "type": "vscode_change_all_occurrences",
+      "question": "（VS Code）現在選択しているローカル変数名がファイル内に何度も出ています。すべての出現箇所を一括編集できる状態にしてください。",
       "expectedKeyCombo": [
         "control",
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+F2はVS Codeで現在の単語のすべての出現箇所を選択するショートカットです。ファイル内の同じ変数名をマルチカーソルでまとめて編集できます。"
+    },
+    {
+      "id": 1022,
+      "type": "vscode_expand_selection_twice",
+      "question": "（VS Code）文字列の一部から、式全体、さらに周辺ブロックへと選択範囲を広げたいです。選択範囲を2段階拡張してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "shift",
+            "alt",
+            "arrowright"
+          ]
+        },
+        {
+          "keys": [
+            "shift",
+            "alt",
+            "arrowright"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Alt+→はVS Codeで選択範囲を構文単位で拡張するショートカットです。2回押すことで、単語から式、式からより大きな範囲へ広げられます。"
+    },
+    {
+      "id": 1023,
+      "type": "vscode_shrink_selection",
+      "question": "（VS Code）選択範囲を広げすぎて、不要な外側のブロックまで含めてしまいました。選択範囲を1段階縮小してください。",
+      "expectedKeyCombo": [
         "shift",
+        "alt",
+        "arrowleft"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Alt+←はVS Codeで選択範囲を1段階縮小するショートカットです。拡張しすぎた選択をマウスで選び直さず、構文単位で戻せます。"
+    },
+    {
+      "id": 1024,
+      "type": "vscode_trim_trailing_whitespace",
+      "question": "（VS Code）レビュー前に、行末の余計な空白が大量に残っていることに気づきました。連続キー操作で行末空白を削除してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "x"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "VS CodeではCtrl+Kに続けてCtrl+Xを押すと、行末の余計な空白を削除できます。差分ノイズを減らし、レビューしやすいコードに整えられます。"
+    },
+    {
+      "id": 1025,
+      "type": "vscode_markdown_preview_side",
+      "question": "（VS Code）READMEを編集しながら、横にプレビューを出して表示崩れを確認したいです。Markdownプレビューを横に開いてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "v"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Kに続けてVを押すと、VS CodeでMarkdownプレビューを横に開けます。編集画面とプレビューを並べられるため、READMEや手順書の確認が効率化します。"
+    },
+    {
+      "id": 1026,
+      "type": "vscode_open_keyboard_shortcuts",
+      "question": "（VS Code）よく使う操作を自分好みに割り当てたいです。キーボードショートカット設定画面を開いてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "s"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Kに続けてCtrl+Sを押すと、VS Codeのキーボードショートカット設定を開けます。頻繁に使う機能を自分の手癖に合わせることで、作業速度をさらに上げられます。"
+    },
+    {
+      "id": 1027,
+      "type": "powerpoint_ungroup_duplicate_group",
+      "question": "（PowerPoint）既存の図形グループを素材として使い回したいです。グループ解除、複製、再グループ化までキーボードで行ってください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "shift",
+            "g"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "g"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+Gでグループ解除、Ctrl+Dで複製、Ctrl+Gでグループ化できます。図形パーツを分解・複製・再利用する資料作成を、マウス操作なしで進められます。"
+    },
+    {
+      "id": 1028,
+      "type": "powerpoint_slideshow_blackout",
+      "question": "（PowerPoint）発表を開始した直後、口頭説明に集中してもらうため一時的に画面を黒くしたいです。スライドショーを開始してからブラックアウトしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "f5"
+          ]
+        },
+        {
+          "keys": [
+            "b"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "F5でスライドショーを最初から開始し、Bキーで画面を黒くできます。説明に集中してもらいたい時や、投影内容を一時的に隠したい時に便利です。"
+    },
+    {
+      "id": 1029,
+      "type": "powerpoint_increase_font_twice",
+      "question": "（PowerPoint）レビューで『タイトルが小さくて読めない』と指摘されました。選択中の文字サイズを2段階大きくしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "shift",
+            "period"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "shift",
+            "period"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+Shift+periodは、PowerPointなどで選択中テキストのフォントサイズを大きくするショートカットです。2回連続で押せば、細かいフォントサイズ調整をキーボードだけで行えます。"
+    },
+    {
+      "id": 1030,
+      "type": "excel_next_sheet_copy_used_range",
+      "question": "（Excel）月次ブックで次月シートへ移動し、入力済み範囲を丸ごとコピーして別システムへ渡したいです。次のシートへ移動し、先頭から使用範囲全体を選択してコピーしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "control",
+            "pagedown"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "home"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "shift",
+            "end"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Ctrl+PageDownで次のシートへ移動し、Ctrl+Homeで先頭へ戻り、Ctrl+Shift+Endで使用中範囲全体を選択し、Ctrl+Cでコピーします。月次処理や集計転記で威力を発揮する実務向けの連続技です。"
+    }
+  ],
+  "practical-mac-3kyu": [
+    {
+      "id": 23001,
+      "question": "（Excel）表の現在位置から下方向のデータ終端へ一気に移動してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + 矢印キーは連続データの端へ一気にジャンプできます。巨大な表でスクロールを続ける時間をゼロにし、確認作業の速度を根本から上げます。"
+    },
+    {
+      "id": 23002,
+      "question": "（Excel）現在位置から右方向のデータ終端まで一気に範囲選択してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "arrowright"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Shift + 矢印キーは、データ端までの範囲選択を瞬時に行います。巨大な表のコピー、削除、書式設定の準備をドラッグなしで正確に実行できます。"
+    },
+    {
+      "id": 23003,
+      "question": "（Excel）右隣のワークシートへ切り替えてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "pagedown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + PageDownは右隣のシートへ移動します。複数シートをまたぐ確認作業で、画面左下の小さなシート見出しを狙う必要がなくなります。"
+    },
+    {
+      "id": 23004,
+      "question": "（Excel）A1セルへ一気に戻ってください。",
+      "expectedKeyCombo": [
+        "meta",
+        "home"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Homeはシートの先頭であるA1へ戻ります。広いシートで現在地を見失っても、即座に起点へ復帰できるため作業が止まりません。"
+    },
+    {
+      "id": 23005,
+      "question": "（Excel）スクロールで画面外にあるアクティブセルへ表示位置を戻してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "backspace"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Backspaceは選択中のセルが見える位置へ画面を戻します。確認のために遠くへスクロールしたあとでも、現在の作業地点へ迷わず復帰できます。"
+    },
+    {
+      "id": 23006,
+      "question": "（Excel）選択中のセルを編集モードにしてください。",
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2はセル編集モードに入るキーです。ダブルクリックの位置ズレを避け、文字や数式の修正をキーボードだけでスムーズに始められます。"
+    },
+    {
+      "id": 23007,
+      "question": "（Excel）上のセルの内容を、現在のセルへコピーしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Dは上のセルを下へコピーします。連続入力や同じ値の展開で、コピーして貼り付ける2操作を1操作に圧縮できます。"
+    },
+    {
+      "id": 23008,
+      "question": "（Excel）左のセルの内容を、現在のセルへコピーしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "r"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Rは左のセルを右へコピーします。横方向に同じ数式や見出しを広げるとき、マウス操作なしでテンポよく表を作成できます。"
+    },
+    {
+      "id": 23010,
+      "question": "（Excel）入力例から法則性を読み取り、フラッシュフィルを実行してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "e"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Eはフラッシュフィルを実行します。氏名分割やコード整形などの手作業を自動化し、データ加工の時間を劇的に短縮できます。"
+    },
+    {
+      "id": 23011,
+      "question": "（Excel）形式を選択して貼り付けるダイアログを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "alt",
+        "v"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Option + Vは貼り付け形式を選ぶ入口です。値のみ、数式のみ、書式のみを使い分けることで、貼り付け事故を防ぎます。"
+    },
+    {
+      "id": 23012,
+      "question": "（Excel）選択中のセルの書式設定ダイアログを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "1"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + 1はセルの書式設定を開きます。表示形式、配置、罫線などの調整を右クリックなしで始められる、Excel実務の必須キーです。"
+    },
+    {
+      "id": 23013,
+      "question": "（Excel）選択範囲の末尾にオートサムを挿入してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "equal"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Option + =はオートサムを挿入します。SUM関数を手入力せず合計行や合計列を作れるため、集計表作成が一気に速くなります。"
+    },
+    {
+      "id": 23014,
+      "question": "（Excel）現在選択しているセルに、本日の日付をすばやく入力してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "semicolon"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + ; は今日の日付を一瞬で入力します。日報作成やファイルの更新日入力など、毎日使う操作を高速化します。"
+    },
+    {
+      "id": 23015,
+      "question": "（Excel）現在の行全体を選択してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "space"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift + Spaceは行全体を選択します。行の挿入、削除、書式変更と組み合わせることで、表のレイアウト調整をマウスレスで進められます。"
+    },
+    {
+      "id": 23016,
+      "question": "（Excel）選択中の行または列に対して挿入を実行してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "plus"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + +はセル、行、列の挿入に使います。行選択や列選択と組み合わせると、右クリックメニューを開かず表構造を変更できます。"
+    },
+    {
+      "id": 23017,
+      "question": "（Word/PowerPoint）選択中の段落またはテキストを中央揃えにしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "e"
+      ],
+      "answer": "CORRECT",
+      "explanation": "WordやPowerPointのCmd + Eは中央揃えです。リボンの配置ボタンを探さず、見た目を確認しながらレイアウトを即調整できます。"
+    },
+    {
+      "id": 23018,
+      "question": "（PowerPoint）選択中の図形またはスライドを複製してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "PowerPointのCmd + Dは複製です。同じデザインの図形やスライドを素早く増やせるため、資料作成の速度と整列の美しさが向上します。"
+    },
+    {
+      "id": 23019,
+      "question": "（Word/PowerPoint）選択中の文字や図形の書式だけをコピーしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "c"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Shift + Cは書式のみをコピーします。色、フォント、枠線などの見た目を統一したいとき、資料全体の完成度を一気に高められます。"
+    },
+    {
+      "id": 23020,
+      "question": "（Slack/Teams）クイックスイッチャーを開き、相手やチャンネルへ移動できる状態にしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "k"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd + Kはチャットツールの移動を高速化するキーです。チャンネルや相手をマウスで探さず、名前を数文字打つだけで目的地へジャンプできます。"
+    },
+    {
+      "id": 13031,
+      "type": "slack_quick_switcher",
+      "question": "（Slack）チャンネル数が多すぎてサイドバーから探すのが大変です。チャンネル名やDM相手を入力して移動できるクイックスイッチャーを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "k"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Kは、SlackでチャンネルやDMを検索して移動するためのショートカットです。参加チャンネルが多い組織では、サイドバーを探すより高速に目的の会話へ移動できます。"
+    },
+    {
+      "id": 13032,
+      "type": "slack_next_unread",
+      "question": "（Slack）未読チャンネルが複数たまっています。次の未読チャンネルへキーボードだけで移動してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "shift",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Option+Shift+↓は、Slackで次の未読チャンネルやDMへ移動する時に使えるショートカットです。大量のチャンネルを順番に確認する時、マウス操作を大きく減らせます。"
+    },
+    {
+      "id": 13033,
+      "type": "vscode_command_palette",
+      "question": "（VS Code）設定変更や拡張機能のコマンド実行をしたいです。メニューを探さず、コマンドパレットを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "p"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Pは、VS Codeのコマンドパレットを開くショートカットです。各種コマンド、設定、拡張機能の操作をキーボードからすばやく呼び出せます。"
+    },
+    {
+      "id": 13034,
+      "type": "vscode_quick_open",
+      "question": "（VS Code）大きなプロジェクトで目的のファイルがフォルダーの奥深くにあります。ファイル名検索で素早く開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "p"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Pは、VS Codeでファイル名を検索して開くクイックオープンのショートカットです。フォルダー階層を手でたどらず、目的のファイルへ即座に移動できます。"
+    },
+    {
+      "id": 13035,
+      "type": "vscode_format_document",
+      "question": "（VS Code）レビュー前のコードですが、インデントや改行が乱れて読みにくい状態です。現在のファイル全体をフォーマットしてください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "f"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Option+Fは、VS Codeでドキュメント全体を整形するショートカットです。コードの見た目を統一し、レビューしやすい状態にできます。"
+    },
+    {
+      "id": 13036,
+      "type": "vscode_go_to_line",
+      "question": "（VS Code）エラーログに「128行目で失敗」と表示されています。指定行へジャンプするための入力欄を開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "g"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Gは、VS Codeで指定した行番号へ移動するためのショートカットです。エラーログやレビューコメントで示された行へすばやく移動できます。"
+    },
+    {
+      "id": 13037,
+      "type": "excel_select_row",
+      "question": "（Excel）売上データの1行分をまとめてコピーしたいです。現在のセルがある行全体を選択してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "space"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Spaceは、Excelでアクティブセルがある行全体を選択するショートカットです。行単位のコピー、削除、書式変更を効率よく行えます。"
+    },
+    {
+      "id": 13038,
+      "type": "excel_select_column",
+      "question": "（Excel）顧客リストのメールアドレス列だけを一括で書式変更したいです。現在のセルがある列全体を選択してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "space"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Spaceは、Excelでアクティブセルがある列全体を選択するショートカットです。列単位の集計、コピー、削除、書式設定に役立ちます。"
+    },
+    {
+      "id": 13039,
+      "type": "excel_select_to_end",
+      "question": "（Excel）現在のセルから入力済みデータの末尾までをまとめて選択し、集計対象にしたいです。選択範囲を最後のセルまで広げてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "end"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Endは、現在のセルから使用中範囲の最後のセルまで選択を広げるショートカットです。大量データを一括でコピー、削除、集計したい時に便利です。"
+    },
+    {
+      "id": 13040,
+      "type": "chrome_devtools_inspect",
+      "question": "（Chrome）画面上のボタンのCSSが崩れています。対象要素を調査するため、開発者ツールの要素選択モードを開始してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "c"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Cは、Chromeの開発者ツールでページ上の要素を選択して調査するためのショートカットです。対象要素のHTML構造やCSSをすばやく確認できます。"
+    }
+  ],
+  "practical-mac-2kyu": [
+    {
+      "id": 12001,
+      "type": "browser_copy_url",
+      "question": "（ブラウザ）現在見ている障害調査記事のURLを、チームチャットへ共有したいです。マウスを使わず、アドレスバーを選択してからURLをコピーしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "l"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Lでアドレスバー全体を選択し、Cmd+CでURLをコピーできます。長いURLをマウスでドラッグする必要がなく、調査結果の共有が一瞬で終わります。"
+    },
+    {
+      "id": 12002,
+      "type": "browser_duplicate_current_tab",
+      "question": "（ブラウザ）今開いている管理画面を残したまま、同じページを別タブでも開いて比較したいです。現在のURLを新しいタブで開いてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "l"
+          ]
+        },
+        {
+          "keys": [
+            "alt",
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Lで現在のURLを選択し、Option+Enterを押すと、そのURLを新しいタブで開けます。同じ画面を複製して比較・確認したい時に便利な連続技です。"
+    },
+    {
+      "id": 12003,
+      "type": "browser_hard_reload",
+      "question": "（ブラウザ）修正済みのCSSが反映されているはずなのに、自分の画面だけ古いデザインのままです。キャッシュを無視して強制再読み込みしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "r"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Rは、キャッシュを無視してページを再読み込みするショートカットです。Web制作や検証作業で、古いCSSや画像が残っている時の確認に役立ちます。"
+    },
+    {
+      "id": 12004,
+      "type": "chrome_devtools_console",
+      "question": "（Chrome）画面上の処理が失敗しています。JavaScriptエラーをすぐ確認するため、開発者ツールのConsoleを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "j"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+JはChromeで開発者ツールのConsoleを開くショートカットです。エラー内容やログを即座に確認できるため、Webアプリの不具合調査で頻繁に使います。"
+    },
+    {
+      "id": 12005,
+      "type": "vscode_select_next_occurrences",
+      "question": "（VS Code）同じ変数名が近くに3回出てきます。検索置換を開くほどではないので、同じ単語を3つ連続で選択してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "d"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Dは、現在選択中の単語と同じ次の出現箇所を追加選択するショートカットです。繰り返し押すことでマルチカーソル編集ができ、局所的な一括修正を高速に行えます。"
+    },
+    {
+      "id": 12006,
+      "type": "vscode_move_line_up",
+      "question": "（VS Code）関数内の処理順が1行だけ逆になっています。現在行を上へ移動してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "arrowup"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Option+↑は、VS Codeで現在行または選択行を上へ移動するショートカットです。切り取りと貼り付けを使わず、コードの順序をすばやく入れ替えられます。"
+    },
+    {
+      "id": 12007,
+      "type": "vscode_duplicate_line_down",
+      "question": "（VS Code）似た設定行をもう1行作って、値だけ後から変えたいです。現在行を下に複製してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Option+↓は、VS Codeで現在行または選択行を下に複製するショートカットです。類似コードや設定を増やす時、コピー＆ペーストよりも少ない操作で済みます。"
+    },
+    {
+      "id": 12008,
+      "type": "vscode_toggle_line_comment",
+      "question": "（VS Code）デバッグ用に一時的に処理を無効化したいです。現在行をコメント化してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "slash"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+/は、VS Codeで行コメントのオン・オフを切り替えるショートカットです。処理を一時停止したり、コメントを外して戻したりする作業をすばやく行えます。"
+    },
+    {
+      "id": 12009,
+      "type": "vscode_replace_current_file",
+      "question": "（VS Code）現在のファイル内で古いAPI名を新しいAPI名に置換したいです。置換入力欄を開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "h"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Hは、VS Codeで現在のファイル内置換を開くショートカットです。単純検索ではなく、名称変更や文言差し替えをまとめて行いたい時に使います。"
+    },
+    {
+      "id": 12010,
+      "type": "excel_select_used_range_from_top",
+      "question": "（Excel）巨大な売上表を集計ツールへ渡すため、表の先頭へ戻ってから入力済み範囲をまとめて選択してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "home"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "shift",
+            "end"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Homeで表の先頭へ移動し、Cmd+Shift+Endで使用中範囲の最後まで選択できます。何万行ある表でも、ドラッグせずに一気に選択できます。"
+    },
+    {
+      "id": 12011,
+      "type": "excel_toggle_filter",
+      "question": "（Excel）一覧表から特定部署のデータだけを絞り込みたいです。表にフィルターを設定してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "l"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Lは、Excelでオートフィルターのオン・オフを切り替えるショートカットです。大量の一覧データを条件で絞り込む作業の入口になります。"
+    },
+    {
+      "id": 12012,
+      "type": "excel_paste_values",
+      "question": "（Excel）数式セルをコピーしましたが、貼り付け先には計算結果の値だけを入れたいです。形式を選択して値貼り付けを実行してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "alt",
+            "v"
+          ]
+        },
+        {
+          "keys": [
+            "v"
+          ]
+        },
+        {
+          "keys": [
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Option+Vで形式を選択して貼り付けを開き、Vで値を選び、Enterで確定します。数式や書式を持ち込まず、結果だけを貼り付けたい時に非常に便利です。"
+    },
+    {
+      "id": 12013,
+      "type": "excel_open_filter_dropdown",
+      "question": "（Excel）フィルター付きの見出しセルにいます。マウスで小さな三角ボタンを押さず、現在列のフィルターメニューを開いてください。",
+      "expectedKeyCombo": [
+        "alt",
+        "arrowdown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Option+↓は、Excelのフィルター見出しや入力候補のドロップダウンを開く時に使えます。小さなボタンをクリックする必要がなく、絞り込み条件の設定が速くなります。"
+    },
+    {
+      "id": 12014,
+      "type": "explorer_rename_next_file",
+      "question": "（エクスプローラー）スクリーンショットを連番で整理しています。選択中のファイル名を変更し、続けて次のファイル名変更へ進んでください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "f2"
+          ]
+        },
+        {
+          "keys": [
+            "tab"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2で選択中のファイル名を編集状態にし、Tabで確定しながら次のファイルの名前変更へ進めます。大量のファイルを連続リネームする時にマウス操作を大幅に減らせます。"
+    },
+    {
+      "id": 12015,
+      "type": "excel_copy_current_row",
+      "question": "（Excel）現在のセルがある受注明細行を、別シートへそのまま転記したいです。行全体を選択してコピーしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "shift",
+            "space"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Spaceでアクティブセルの行全体を選択し、Cmd+Cでコピーできます。行番号をクリックする必要がなく、明細行単位の転記や確認が効率化します。"
+    },
+    {
+      "id": 12016,
+      "type": "browser_restore_tab_then_find",
+      "question": "（ブラウザ）調査中に重要なリリースノートのタブを閉じてしまいました。タブを復元し、そのままページ内検索を開いて該当エラーコードを探せる状態にしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "shift",
+            "t"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "f"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Tで直前に閉じたタブを復元し、Cmd+Fでページ内検索を開けます。履歴をたどって探し直すより、復元して即検索する方が圧倒的に速い連続技です。"
+    },
+    {
+      "id": 12017,
+      "type": "browser_open_downloads",
+      "question": "（ブラウザ）CSVをダウンロードしたはずなのに、保存先を見失いました。ダウンロード一覧を開いて確認してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "j"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Jはブラウザのダウンロード一覧を開くショートカットです。ダウンロードしたファイルを探すためにフォルダーを開き直す前に、まず一覧から確認できます。"
+    },
+    {
+      "id": 12018,
+      "type": "browser_jump_first_tab",
+      "question": "（ブラウザ）タブを大量に開いていますが、左端に固定している管理ダッシュボードへ一瞬で戻りたいです。最初のタブへ移動してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "1"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+1はブラウザで左から1番目のタブへ移動するショートカットです。固定タブや常用ページを左端に置いておくと、どれだけタブが増えても即座に戻れます。"
+    },
+    {
+      "id": 12019,
+      "type": "browser_jump_last_tab",
+      "question": "（ブラウザ）調査の最後に開いたチケットページが右端のタブにあります。タブを順番に送らず、最後のタブへ移動してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "9"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+9はブラウザで一番右のタブへ移動するショートカットです。新しく開いたページが右端に集まる運用では、最後の作業ページへすばやく戻れます。"
+    },
+    {
+      "id": 12020,
+      "type": "chrome_open_devtools",
+      "question": "（Chrome）本番反映後の画面でレイアウト崩れが起きています。DOMやCSSを確認するため、開発者ツールを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "i"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+IはChromeで開発者ツールを開くショートカットです。HTML構造、CSS、通信、Consoleなどを確認でき、Web画面の不具合調査に欠かせません。"
+    },
+    {
+      "id": 12021,
+      "type": "vscode_workspace_search",
+      "question": "（VS Code）設定キーがどのファイルで使われているか、プロジェクト全体から探したいです。全体検索を開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "f"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+FはVS Codeでワークスペース全体の検索を開くショートカットです。巨大なプロジェクトでも、ファイルを1つずつ開かずに対象文字列を横断検索できます。"
+    },
+    {
+      "id": 12022,
+      "type": "vscode_workspace_replace",
+      "question": "（VS Code）古い環境変数名が複数ファイルに残っています。プロジェクト全体で置換できる画面を開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "h"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+HはVS Codeでワークスペース全体の置換を開くショートカットです。複数ファイルにまたがる名称変更や文言修正を効率よく進められます。"
+    },
+    {
+      "id": 12023,
+      "type": "vscode_rename_symbol",
+      "question": "（VS Code）変数名を手作業で置換すると、関係ない文字列まで変えそうで怖いです。現在のシンボルを安全にリネームする操作を開始してください。",
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2はVS Codeでシンボルの名前変更を開始するショートカットです。単純な文字列置換ではなく、言語機能に基づいて変数や関数名を安全に変更できます。"
+    },
+    {
+      "id": 12024,
+      "type": "vscode_delete_line",
+      "question": "（VS Code）デバッグ用のconsole出力が1行だけ残っています。選択やドラッグをせず、現在行を削除してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "k"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+KはVS Codeで現在行を削除するショートカットです。行全体を選択してBackspaceを押す必要がなく、不要な行を一瞬で消せます。"
+    },
+    {
+      "id": 12025,
+      "type": "vscode_insert_line_below",
+      "question": "（VS Code）現在行の下にログ出力を1行追加したいですが、行末まで移動するのが面倒です。現在行の下に新しい行を挿入してください。",
+      "expectedKeyCombo": [
+        "meta",
         "enter"
       ],
       "answer": "CORRECT",
-      "explanation": "Ctrl + Shift + Enterは管理者として実行する操作です。管理者権限が必要なツールや設定を、右クリックなしで素早く起動できます。"
+      "explanation": "Cmd+EnterはVS Codeで現在行の下に新しい行を挿入するショートカットです。カーソル位置が行の途中でも、すぐ下に空行を作って入力を始められます。"
+    },
+    {
+      "id": 12026,
+      "type": "vscode_apply_quick_fix",
+      "question": "（VS Code）未使用importや型エラーに電球マークが出ています。クイックフィックスを開き、先頭候補を適用してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "period"
+          ]
+        },
+        {
+          "keys": [
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+.でクイックフィックスを開き、Enterで候補を適用できます。import追加、型修正、lint修正などをマウスなしで処理できるため、レビュー前の整備が速くなります。"
+    },
+    {
+      "id": 12027,
+      "type": "excel_create_table_confirm",
+      "question": "（Excel）CSVを開いたままの一覧表にフィルターや見やすい書式を付けたいです。テーブル作成を開始し、そのまま確定してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "t"
+          ]
+        },
+        {
+          "keys": [
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+TでExcelのテーブル作成ダイアログを開き、Enterで確定できます。テーブル化するとフィルター、見出し、範囲管理が扱いやすくなり、一覧データの分析が楽になります。"
+    },
+    {
+      "id": 12028,
+      "type": "excel_next_worksheet",
+      "question": "（Excel）月別シートが12枚並んだブックで、次月のシートを確認したいです。マウスでシートタブをクリックせず、次のシートへ移動してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "pagedown"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+PageDownはExcelで次のワークシートへ移動するショートカットです。シート数が多いブックでも、下部の小さなタブをクリックせずに移動できます。"
+    },
+    {
+      "id": 12029,
+      "type": "excel_show_formulas",
+      "question": "（Excel）集計結果が怪しいので、セルに表示されている数値ではなく数式そのものを一括で確認したいです。数式表示を切り替えてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "grave"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+graveはExcelで数式の表示・非表示を切り替えるショートカットです。計算結果だけでは見えない参照ミスや式の違いを、表全体で確認できます。"
+    },
+    {
+      "id": 12030,
+      "type": "explorer_file_properties",
+      "question": "（エクスプローラー）提出ファイルのサイズや更新日時をすぐ確認したいです。選択中ファイルのプロパティを開いてください。",
+      "expectedKeyCombo": [
+        "alt",
+        "enter"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Option+Enterはエクスプローラーで選択中ファイルやフォルダーのプロパティを開くショートカットです。右クリックメニューを使わず、サイズ・場所・更新日時などを確認できます。"
+    }
+  ],
+  "practical-mac-1kyu": [
+    {
+      "id": 11001,
+      "type": "vscode_command_palette",
+      "question": "（VS Code）設定変更、拡張機能のコマンド、Git関連操作をメニューから探す時間が惜しいです。コマンドパレットを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "p"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Pは、VS Codeのコマンドパレットを開くショートカットです。ほぼすべての機能をキーボードから検索・実行できるため、VS Codeを高速操作する中心的な入口になります。"
+    },
+    {
+      "id": 11002,
+      "type": "vscode_toggle_terminal",
+      "question": "（VS Code）コードを書きながら、すぐ下のターミナルでテストコマンドを確認したいです。統合ターミナルの表示を切り替えてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "grave"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+grave（バッククォート）は、VS Codeの統合ターミナル表示を切り替えるショートカットです。エディタとターミナルをマウスなしで往復でき、開発速度が大きく上がります。"
+    },
+    {
+      "id": 11003,
+      "type": "vscode_new_integrated_terminal",
+      "question": "（VS Code）既存ターミナルではサーバーを起動中です。ログを止めずに別コマンドを実行するため、新しい統合ターミナルを作成してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "grave"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+grave（バッククォート）は、VS Codeで新しい統合ターミナルを作成するショートカットです。サーバー起動用、テスト用、Git操作用などを分けて作業できます。"
+    },
+    {
+      "id": 11004,
+      "type": "vscode_go_to_definition",
+      "question": "（VS Code）レビュー中に、呼び出している関数の実装がどこにあるのか即確認したいです。定義へジャンプしてください。",
+      "expectedKeyCombo": [
+        "f12"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F12は、VS Codeでシンボルの定義へ移動するショートカットです。関数やクラスの実装を探してフォルダを開いて回る必要がなく、コード読解が高速になります。"
+    },
+    {
+      "id": 11005,
+      "type": "vscode_peek_definition",
+      "question": "（VS Code）現在の編集位置を離れずに、関数の中身だけチラ見して確認したいです。定義をピーク表示してください。",
+      "expectedKeyCombo": [
+        "alt",
+        "f12"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Option+F12は、VS Codeで定義をピーク表示するショートカットです。ファイル移動せずに小さなビューで実装を確認できるため、文脈を失わずに調査できます。"
+    },
+    {
+      "id": 11006,
+      "type": "vscode_find_references",
+      "question": "（VS Code）この関数を変更してよいか判断するため、プロジェクト内でどこから使われているか確認したいです。参照一覧を表示してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "f12"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+F12は、VS Codeで選択中のシンボルの参照箇所を表示するショートカットです。影響範囲を確認してから安全にリファクタリングできます。"
+    },
+    {
+      "id": 11007,
+      "type": "vscode_add_cursors_line_ends",
+      "question": "（VS Code）選択した複数行の末尾に、同じコメントを一括で追記したいです。各行末にカーソルを追加してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "i"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Option+Iは、VS Codeで選択範囲内の各行末にカーソルを追加するショートカットです。複数行の末尾へ同じ文字を追加する作業を一撃で始められます。"
+    },
+    {
+      "id": 11008,
+      "type": "vscode_fold_all",
+      "question": "（VS Code）巨大なファイルで全体構造だけを見たいです。すべてのコードブロックを折りたたんでください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "0"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "VS CodeではCmd+Kに続けてCmd+0を押すと、すべての領域を折りたためます。長大なファイルでも関数やクラスの見出しだけを見渡しやすくなります。"
+    },
+    {
+      "id": 11009,
+      "type": "vscode_unfold_all",
+      "question": "（VS Code）折りたたまれたコードをまとめて確認したいです。すべての折りたたみを展開してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "j"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "VS CodeではCmd+Kに続けてCmd+Jを押すと、折りたたまれた領域をすべて展開できます。構造確認後に全文を戻して読む時に便利です。"
+    },
+    {
+      "id": 11010,
+      "type": "vscode_add_line_comment_chord",
+      "question": "（VS Code）一時的に選択中の複数行を無効化したいです。VS Codeの連続キー操作で行コメントを追加してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Kに続けてCmd+Cを押すと、VS Codeで選択行に行コメントを追加できます。範囲選択した処理をまとめて無効化したい時に使える上級者向けの連続技です。"
+    },
+    {
+      "id": 11011,
+      "type": "vscode_format_selection_chord",
+      "question": "（VS Code）ファイル全体ではなく、レビュー対象の一部コードだけインデントが崩れています。選択範囲だけをフォーマットしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "f"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Kに続けてCmd+Fを押すと、VS Codeで選択範囲だけをフォーマットできます。ファイル全体の差分を増やさず、必要な部分だけ整形したい時に有効です。"
+    },
+    {
+      "id": 11012,
+      "type": "terminal_clear_screen",
+      "question": "（統合ターミナル）ログが大量に流れて、直近のテスト結果が見づらくなりました。ターミナル画面をクリアしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "l"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Lは、多くのターミナルで画面をクリアするショートカットです。過去ログに埋もれず、次に実行するコマンドの結果を見やすくできます。"
+    },
+    {
+      "id": 11013,
+      "type": "powerpoint_duplicate_and_group",
+      "question": "（PowerPoint）選択中の複数図形をテンプレートとして複製し、その複製をひとまとめにして動かせるようにしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "g"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Dで選択中のオブジェクトを複製し、Cmd+Gで選択中の複数オブジェクトをグループ化できます。図形セットを量産して配置する資料作成で強力な連続技です。"
+    },
+    {
+      "id": 11014,
+      "type": "powerpoint_copy_format_to_next_object",
+      "question": "（PowerPoint）選択中の図形の見た目を、次の図形にもそろえたいです。書式をコピーし、次のオブジェクトへ移動して、書式を貼り付けてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "shift",
+            "c"
+          ]
+        },
+        {
+          "keys": [
+            "tab"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "shift",
+            "v"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Cで選択中オブジェクトの書式をコピーし、Tabで次のオブジェクトへ移動し、Cmd+Shift+Vで書式を貼り付けます。スライド内の見た目をマウスなしで統一できます。"
+    },
+    {
+      "id": 11015,
+      "type": "powerpoint_new_slide_start_current",
+      "question": "（PowerPoint）発表練習中に補足スライドを1枚追加しました。新しいスライドを作成し、そのスライドからすぐにスライドショーを開始してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "m"
+          ]
+        },
+        {
+          "keys": [
+            "shift",
+            "f5"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Mで新しいスライドを追加し、Shift+F5で現在のスライドからスライドショーを開始できます。編集と確認をキーボードだけで連続実行できる、発表直前に便利な操作です。"
+    },
+    {
+      "id": 11016,
+      "type": "vscode_terminal_clear",
+      "question": "（VS Code）テストログが大量に流れて、次の実行結果が見づらくなりました。統合ターミナルを表示し、画面をクリアしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "grave"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "l"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+graveでVS Codeの統合ターミナルを表示し、Cmd+Lでターミナル画面をクリアできます。ログに埋もれず、次のコマンド結果だけを見やすく確認できます。"
+    },
+    {
+      "id": 11017,
+      "type": "vscode_terminal_stop_process",
+      "question": "（VS Code）開発サーバーが暴走してログを吐き続けています。統合ターミナルへ移動し、実行中プロセスを停止してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "grave"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+graveで統合ターミナルを表示し、Cmd+Cで実行中のプロセスへ中断を送れます。開発サーバーやテスト監視を止めたい時に使う定番の操作です。"
+    },
+    {
+      "id": 11018,
+      "type": "vscode_definition_and_back",
+      "question": "（VS Code）レビュー中に関数の実装を確認したいですが、確認後は元の呼び出し元へすぐ戻りたいです。定義へ移動してから戻ってください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "f12"
+          ]
+        },
+        {
+          "keys": [
+            "alt",
+            "arrowleft"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "F12で定義へジャンプし、Option+←で直前の位置へ戻れます。実装確認とレビュー位置への復帰をキーボードだけで行えるため、コードリーディングが途切れません。"
+    },
+    {
+      "id": 11019,
+      "type": "vscode_references_peek_close",
+      "question": "（VS Code）この関数の利用箇所を一瞬だけ確認し、確認後すぐ編集画面へ戻りたいです。参照一覧を表示してから閉じてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "shift",
+            "f12"
+          ]
+        },
+        {
+          "keys": [
+            "escape"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+F12で参照一覧を表示し、Escapeで閉じられます。影響範囲を軽く確認したい時に、パネル操作へ手を伸ばさず完結できます。"
+    },
+    {
+      "id": 11020,
+      "type": "vscode_quick_fix_apply",
+      "question": "（VS Code）型エラーの箇所に修正候補が出ています。クイックフィックスを開き、選択中の候補を適用してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "period"
+          ]
+        },
+        {
+          "keys": [
+            "enter"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+.でクイックフィックスを開き、Enterで候補を適用します。import補完、型修正、lint修正などを高速に処理できる、実装中の強力な連続技です。"
+    },
+    {
+      "id": 11021,
+      "type": "vscode_change_all_occurrences",
+      "question": "（VS Code）現在選択しているローカル変数名がファイル内に何度も出ています。すべての出現箇所を一括編集できる状態にしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+F2はVS Codeで現在の単語のすべての出現箇所を選択するショートカットです。ファイル内の同じ変数名をマルチカーソルでまとめて編集できます。"
+    },
+    {
+      "id": 11022,
+      "type": "vscode_expand_selection_twice",
+      "question": "（VS Code）文字列の一部から、式全体、さらに周辺ブロックへと選択範囲を広げたいです。選択範囲を2段階拡張してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "shift",
+            "alt",
+            "arrowright"
+          ]
+        },
+        {
+          "keys": [
+            "shift",
+            "alt",
+            "arrowright"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Option+→はVS Codeで選択範囲を構文単位で拡張するショートカットです。2回押すことで、単語から式、式からより大きな範囲へ広げられます。"
+    },
+    {
+      "id": 11023,
+      "type": "vscode_shrink_selection",
+      "question": "（VS Code）選択範囲を広げすぎて、不要な外側のブロックまで含めてしまいました。選択範囲を1段階縮小してください。",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "arrowleft"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Option+←はVS Codeで選択範囲を1段階縮小するショートカットです。拡張しすぎた選択をマウスで選び直さず、構文単位で戻せます。"
+    },
+    {
+      "id": 11024,
+      "type": "vscode_trim_trailing_whitespace",
+      "question": "（VS Code）レビュー前に、行末の余計な空白が大量に残っていることに気づきました。連続キー操作で行末空白を削除してください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "x"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "VS CodeではCmd+Kに続けてCmd+Xを押すと、行末の余計な空白を削除できます。差分ノイズを減らし、レビューしやすいコードに整えられます。"
+    },
+    {
+      "id": 11025,
+      "type": "vscode_markdown_preview_side",
+      "question": "（VS Code）READMEを編集しながら、横にプレビューを出して表示崩れを確認したいです。Markdownプレビューを横に開いてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "v"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Kに続けてVを押すと、VS CodeでMarkdownプレビューを横に開けます。編集画面とプレビューを並べられるため、READMEや手順書の確認が効率化します。"
+    },
+    {
+      "id": 11026,
+      "type": "vscode_open_keyboard_shortcuts",
+      "question": "（VS Code）よく使う操作を自分好みに割り当てたいです。キーボードショートカット設定画面を開いてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "k"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "s"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Kに続けてCmd+Sを押すと、VS Codeのキーボードショートカット設定を開けます。頻繁に使う機能を自分の手癖に合わせることで、作業速度をさらに上げられます。"
+    },
+    {
+      "id": 11027,
+      "type": "powerpoint_ungroup_duplicate_group",
+      "question": "（PowerPoint）既存の図形グループを素材として使い回したいです。グループ解除、複製、再グループ化までキーボードで行ってください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "shift",
+            "g"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "g"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Gでグループ解除、Cmd+Dで複製、Cmd+Gでグループ化できます。図形パーツを分解・複製・再利用する資料作成を、マウス操作なしで進められます。"
+    },
+    {
+      "id": 11028,
+      "type": "powerpoint_slideshow_blackout",
+      "question": "（PowerPoint）発表を開始した直後、口頭説明に集中してもらうため一時的に画面を黒くしたいです。スライドショーを開始してからブラックアウトしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "f5"
+          ]
+        },
+        {
+          "keys": [
+            "b"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "F5でスライドショーを最初から開始し、Bキーで画面を黒くできます。説明に集中してもらいたい時や、投影内容を一時的に隠したい時に便利です。"
+    },
+    {
+      "id": 11029,
+      "type": "powerpoint_increase_font_twice",
+      "question": "（PowerPoint）レビューで『タイトルが小さくて読めない』と指摘されました。選択中の文字サイズを2段階大きくしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "shift",
+            "period"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "shift",
+            "period"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+periodは、PowerPointなどで選択中テキストのフォントサイズを大きくするショートカットです。2回連続で押せば、細かいフォントサイズ調整をキーボードだけで行えます。"
+    },
+    {
+      "id": 11030,
+      "type": "excel_next_sheet_copy_used_range",
+      "question": "（Excel）月次ブックで次月シートへ移動し、入力済み範囲を丸ごとコピーして別システムへ渡したいです。次のシートへ移動し、先頭から使用範囲全体を選択してコピーしてください。",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "pagedown"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "home"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "shift",
+            "end"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "c"
+          ]
+        }
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+PageDownで次のシートへ移動し、Cmd+Homeで先頭へ戻り、Cmd+Shift+Endで使用中範囲全体を選択し、Cmd+Cでコピーします。月次処理や集計転記で威力を発揮する実務向けの連続技です。"
     }
   ]
 }

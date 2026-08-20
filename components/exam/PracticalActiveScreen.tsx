@@ -104,14 +104,28 @@ export default function PracticalActiveScreen({
     const legacyTypes = ["select_all", "find_password", "copy_paste", "rename_file", "save_file", "undo_action", "bold_text", "print_doc"];
     if (q.type && legacyTypes.includes(q.type)) {
       return (
-        <LegacyGimmicks
-          type={q.type}
-          taskData={q.taskData}
-          inputValue={inputValue}
-          setInputValue={setInputValue}
-          handleInputKeyDown={handleInputKeyDown}
-          handleInputSubmit={handleInputSubmit}
-        />
+        <div style={{ position: 'relative', width: '100%' }}>
+          <LegacyGimmicks
+            type={q.type}
+            taskData={q.taskData}
+            inputValue={inputValue}
+            setInputValue={setInputValue}
+            handleInputKeyDown={handleInputKeyDown}
+            handleInputSubmit={handleInputSubmit}
+            isSuccess={isSuccess}
+          />
+          {isSuccess && (
+            <div style={{
+              position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+              backgroundColor: 'var(--success)', color: 'white', padding: '16px 32px',
+              borderRadius: '8px', fontSize: '24px', fontWeight: 'bold',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.2)', zIndex: 100,
+              animation: 'fadeInOut 1s forwards'
+            }}>
+              実行しました！
+            </div>
+          )}
+        </div>
       );
     }
 
@@ -119,9 +133,9 @@ export default function PracticalActiveScreen({
     const getUIContext = (text: string) => {
       if (/(Excel|セル|シート|数式|オートSUM)/i.test(text)) return "excel";
       if (/(Word|段落|文書|文字|書式)/i.test(text)) return "word";
-      if (/(ブラウザ|タブ|ページ|ダウンロード|再読み込み|ブックマーク|履歴)/i.test(text)) return "browser";
+      if (/(ブラウザ|タブ|ページ|ダウンロード|再読み込み|ブックマーク|履歴|Chrome)/i.test(text)) return "browser";
       if (/(エクスプローラー|フォルダ|ファイル)/i.test(text)) return "explorer";
-      if (/(VS Code|エディタ|マルチカーソル|コメントアウト|ターミナル|リネーム|関数|コマンドパレット)/i.test(text)) return "vscode";
+      if (/(VS Code|エディタ|マルチカーソル|コメントアウト|ターミナル|統合ターミナル|リネーム|関数|コマンドパレット)/i.test(text)) return "vscode";
       if (/(PowerPoint|スライド|プレゼンテーション|図形)/i.test(text)) return "powerpoint";
       if (/(Slack|Teams|チャット|チャンネル|メッセージ)/i.test(text)) return "slack";
       if (/(タスクマネージャー)/i.test(text)) return "taskmanager";

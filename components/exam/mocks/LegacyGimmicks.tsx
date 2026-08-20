@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import styles from "./LegacyGimmicks.module.css";
 
 type LegacyGimmickProps = {
@@ -8,6 +8,7 @@ type LegacyGimmickProps = {
   setInputValue: (val: string) => void;
   handleInputKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;
   handleInputSubmit: () => void;
+  isSuccess?: boolean;
 };
 
 export default function LegacyGimmicks({
@@ -16,35 +17,68 @@ export default function LegacyGimmicks({
   inputValue,
   setInputValue,
   handleInputKeyDown,
-  handleInputSubmit
+  handleInputSubmit,
+  isSuccess
 }: LegacyGimmickProps) {
+  const findPasswordContent = useMemo(() => {
+    if (type !== "find_password") return null;
+    const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let prefix = "";
+    let suffix = "";
+    // Generate a massive block of random alphanumeric text
+    for(let i=0; i<8000; i++) {
+      prefix += chars.charAt(Math.floor(Math.random() * chars.length));
+      suffix += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return { prefix, suffix };
+  }, [type]);
+
   switch (type) {
     case "select_all":
       return (
-        <div className={styles.legacyContainer}>
-          <textarea
-            readOnly
-            onMouseDown={(e) => {
-              e.preventDefault();
-              (e.target as HTMLTextAreaElement).focus();
-            }}
-            onContextMenu={(e) => e.preventDefault()}
-            className={styles.legacyTextarea}
-            defaultValue={"ダミーテキストダミーテキストダミーテキスト...\n".repeat(20)}
-          />
-          <p className={styles.legacyWarning}>
+        <div className={styles.legacyColumnGroup}>
+          <div className={styles.legacyRowGroup}>
+            <textarea
+              readOnly
+              onMouseDown={(e) => {
+                e.preventDefault();
+                (e.target as HTMLTextAreaElement).focus();
+              }}
+              onContextMenu={(e) => e.preventDefault()}
+              className={styles.legacyTextarea}
+              defaultValue={taskData?.targetText}
+              style={{ flex: 1, resize: 'none' }}
+            />
+            <textarea
+              placeholder="ここにすべてペースト"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onContextMenu={(e) => e.preventDefault()}
+              className={styles.legacyTextarea}
+              style={{ flex: 1, resize: 'none' }}
+            />
+          </div>
+          <p className={styles.legacyWarningTop} style={{ marginTop: '0' }}>
             ※マウスによる選択・右クリックは禁止されています。
           </p>
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <button 
+              onClick={handleInputSubmit}
+              className={`btn btn-primary ${styles.legacyButton}`}
+            >
+              回答する
+            </button>
+          </div>
         </div>
       );
     
     case "find_password":
       return (
         <div className={styles.legacyColumnGroup}>
-          <div className={styles.legacyScrollBox}>
-            {"あ".repeat(3000)}
-            <span style={{ color: "black", fontWeight: "bold" }}>パスワード：{taskData?.password}</span>
-            {"あ".repeat(3000)}
+          <div className={styles.legacyScrollBox} style={{ fontSize: "14px", lineHeight: "1.6", color: "#333", wordBreak: "break-all", fontFamily: "monospace" }}>
+            {findPasswordContent?.prefix}
+            <span>{taskData?.anchor}{taskData?.password}</span>
+            {findPasswordContent?.suffix}
           </div>
           <div className={styles.legacyRowGroup}>
             <input

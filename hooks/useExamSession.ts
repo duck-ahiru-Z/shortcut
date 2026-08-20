@@ -63,7 +63,7 @@ export function useExamSession(grade: string, disableAntiCheat = false) {
   }, [started, isSubmitting, clientStartTime, duration, questions, examToken, gradeTitle, lastName, firstName, answers, currentIndex, tabSwitches, stateKey]);
 
   // 3. Submit handler
-  const handleSubmit = useCallback(async () => {
+  const handleSubmit = useCallback(async (finalAnswersOverride?: Record<number, string>) => {
     if (isSubmitting) return;
     setIsSubmitting(true);
     
@@ -75,9 +75,16 @@ export function useExamSession(grade: string, disableAntiCheat = false) {
         firstName
       };
 
-      const result = await gradeExam(examToken, answersRef.current, tracking);
+      const finalAnswers = finalAnswersOverride || answersRef.current;
+      const result = await gradeExam(examToken, finalAnswers, tracking);
       
       if (result) {
+        try {
+          if (document.fullscreenElement) {
+            await document.exitFullscreen();
+          }
+        } catch(e) { /* ignore */ }
+
         localStorage.removeItem(stateKey);
         sessionStorage.setItem("examResult", JSON.stringify({
           ...result,
