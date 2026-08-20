@@ -31,9 +31,9 @@ const counts = {
   '1kyu': 20,
   'practical-5kyu': 5,
   'practical-4kyu': 5,
-  'practical-3kyu': 20,
-  'practical-2kyu': 20,
-  'practical-1kyu': 20,
+  'practical-3kyu': 10,
+  'practical-2kyu': 15,
+  'practical-1kyu': 15,
   'mac-5kyu': 15,
   'mac-4kyu': 15,
   'mac-3kyu': 20,
@@ -41,9 +41,9 @@ const counts = {
   'mac-1kyu': 20,
   'practical-mac-5kyu': 5,
   'practical-mac-4kyu': 5,
-  'practical-mac-3kyu': 20,
-  'practical-mac-2kyu': 20,
-  'practical-mac-1kyu': 20
+  'practical-mac-3kyu': 10,
+  'practical-mac-2kyu': 15,
+  'practical-mac-1kyu': 15
 };
 
 async function run() {

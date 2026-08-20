@@ -37,7 +37,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     badgeClass: "badge-available",
     description: "WordやExcelなどの各アプリ固有の操作など、応用的なショートカットを出題します。",
     knowledgeCount: 20,
-    practicalCount: 20,
+    practicalCount: 10,
     passingRate: "80%",
   },
   {
@@ -47,7 +47,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     badgeClass: "badge-available",
     description: "さらに高度な操作や、PCの設定周りのショートカットなどを出題します。",
     knowledgeCount: 20,
-    practicalCount: 20,
+    practicalCount: 15,
     passingRate: "80%",
   },
   {
@@ -57,7 +57,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     badgeClass: "badge-available",
     description: "あらゆるアプリをマウスなしで操作する、プロフェッショナル向けの最難関試験です。",
     knowledgeCount: 20,
-    practicalCount: 20,
+    practicalCount: 15,
     passingRate: "80%",
   }
 ];
