@@ -1,39 +1,56 @@
 import styles from "./PowerpointMock.module.css";
 
-type Props = { os?: "windows" | "mac"; isSuccess?: boolean; };
-export default function PowerpointMock({ os = "windows", isSuccess }: Props) {
+type Props = { os?: "windows" | "mac"; isSuccess?: boolean; q?: any; };
+export default function PowerpointMock({ os = "windows", isSuccess, q }: Props) {
   return (
     <div className={styles.pptContainer}>
       <div className={styles.pptHeader}>
-        {os === "mac" ? (
+        {os === "mac" && (
           <div className={styles.macButtons}>
-            <div className={styles.browserDotRed}></div>
-            <div className={styles.browserDotYellow}></div>
-            <div className={styles.browserDotGreen}></div>
+             <div className={styles.browserDotRed}></div>
+             <div className={styles.browserDotYellow}></div>
+             <div className={styles.browserDotGreen}></div>
           </div>
-        ) : null}
-        <div className={styles.pptTitle}>プレゼンテーション - PowerPoint</div>
+        )}
+        <div className={styles.pptTitle}>プレゼンテーション1 - PowerPoint</div>
       </div>
-      <div className={styles.pptRibbon}>
-        <span>ホーム</span><span>挿入</span><span>描画</span><span>デザイン</span><span>画面切り替え</span><span>アニメーション</span><span>スライドショー</span>
+      <div className={styles.pptToolbar}>
+        <div>ファイル</div><div>ホーム</div><div>挿入</div><div>描画</div><div>デザイン</div><div>画面切り替え</div><div>アニメーション</div><div>スライドショー</div>
       </div>
       <div className={styles.pptBody}>
         <div className={styles.pptSidebar}>
-          <div className={styles.pptSlideThumbActive}>1</div>
-          <div className={styles.pptSlideThumb}>2</div>
-          <div className={styles.pptSlideThumb}>3</div>
+          <div className={`${styles.pptThumbnail} ${styles.pptThumbnailActive}`}>1</div>
+          <div className={styles.pptThumbnail}>2</div>
+          {q?.type?.includes("new_slide") && isSuccess && <div className={`${styles.pptThumbnail} ${styles.pptThumbnailActive}`} style={{ border: "2px solid #d83b01" }}>3</div>}
         </div>
         <div className={styles.pptMain}>
-          <div className={styles.pptSlide}>
-            <h2>タイトル</h2>
-            <div className={styles.pptContentBox}>
-              指示されたキーを入力...
-            </div>
+          <div className={styles.pptSlide} style={q?.type?.includes("blackout") && isSuccess ? { backgroundColor: "#000" } : {}}>
+            {!(q?.type?.includes("blackout") && isSuccess) && (
+              <>
+                <h2 style={q?.type?.includes("font") && isSuccess ? { fontSize: "48px", transition: "0.2s" } : { transition: "0.2s" }}>
+                  {q?.type?.includes("new_slide") && isSuccess ? "タイトルを入力" : "四半期売上報告"}
+                </h2>
+                <div className={styles.pptContentBox}>
+                  {q?.type?.includes("duplicate") ? (
+                    <div style={{ display: "flex", gap: "16px" }}>
+                      <div style={{ width: "100px", height: "100px", backgroundColor: "#0078d4" }}></div>
+                      {isSuccess && <div style={{ width: "100px", height: "100px", backgroundColor: "#0078d4", border: q?.type?.includes("group") ? "2px dashed #000" : "none" }}></div>}
+                    </div>
+                  ) : (
+                    "テキストを入力"
+                  )}
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
-    
-        {isSuccess && <div className={styles.successToast}>実行しました！</div>}
-      </div>
+      
+      {isSuccess && !q?.type?.includes("blackout") && (
+        <div className={styles.successToast}>
+          実行しました！
+        </div>
+      )}
+    </div>
   );
 }

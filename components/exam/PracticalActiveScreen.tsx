@@ -133,9 +133,9 @@ export default function PracticalActiveScreen({
     const getUIContext = (text: string) => {
       if (/(Excel|セル|シート|数式|オートSUM)/i.test(text)) return "excel";
       if (/(Word|段落|文書|文字|書式)/i.test(text)) return "word";
-      if (/(ブラウザ|タブ|ページ|ダウンロード|再読み込み|ブックマーク|履歴)/i.test(text)) return "browser";
+      if (/(ブラウザ|タブ|ページ|ダウンロード|再読み込み|ブックマーク|履歴|Chrome)/i.test(text)) return "browser";
       if (/(エクスプローラー|フォルダ|ファイル)/i.test(text)) return "explorer";
-      if (/(VS Code|エディタ|マルチカーソル|コメントアウト|ターミナル|リネーム|関数|コマンドパレット)/i.test(text)) return "vscode";
+      if (/(VS Code|エディタ|マルチカーソル|コメントアウト|ターミナル|統合ターミナル|リネーム|関数|コマンドパレット)/i.test(text)) return "vscode";
       if (/(PowerPoint|スライド|プレゼンテーション|図形)/i.test(text)) return "powerpoint";
       if (/(Slack|Teams|チャット|チャンネル|メッセージ)/i.test(text)) return "slack";
       if (/(タスクマネージャー)/i.test(text)) return "taskmanager";
@@ -149,18 +149,18 @@ export default function PracticalActiveScreen({
     const ctx = getUIContext(q.question);
     
     switch (ctx) {
-      case "excel": return <ExcelMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "word": return <WordMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "browser": return <BrowserMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "explorer": return <ExplorerMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "windows": return <WindowsMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "vscode": return <VsCodeMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "powerpoint": return <PowerpointMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "slack": return <SlackMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "taskmanager": return <TaskManagerMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "rundialog": return <RunDialogMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "actioncenter": return <ActionCenterMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
-      case "taskview": return <TaskViewMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} />;
+      case "excel": return <ExcelMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "word": return <WordMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "browser": return <BrowserMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "explorer": return <ExplorerMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "windows": return <WindowsMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "vscode": return <VsCodeMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "powerpoint": return <PowerpointMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "slack": return <SlackMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "taskmanager": return <TaskManagerMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "rundialog": return <RunDialogMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "actioncenter": return <ActionCenterMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
+      case "taskview": return <TaskViewMock os={isMac ? "mac" : "windows"} isSuccess={isSuccess} q={q} />;
       default:
         return (
           <div className={styles.defaultGimmick}>

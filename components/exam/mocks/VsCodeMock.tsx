@@ -1,11 +1,14 @@
 import styles from "./VsCodeMock.module.css";
+import { getVsCodeInitialCode } from "./mockDataHelpers";
 
 type Props = {
   os?: "windows" | "mac";
   isSuccess?: boolean;
+  q?: any;
 };
 
-export default function VsCodeMock({ os = "windows", isSuccess }: Props) {
+export default function VsCodeMock({ os = "windows", isSuccess, q }: Props) {
+  const defaultCode = getVsCodeInitialCode(q?.type || "");
   return (
     <div className={styles.vscodeContainer}>
       <div className={styles.vscodeHeader}>
@@ -24,13 +27,23 @@ export default function VsCodeMock({ os = "windows", isSuccess }: Props) {
           <div className={styles.vscodeFile}>📄 app.tsx</div>
           <div className={styles.vscodeFile}>📄 style.css</div>
         </div>
-        <div className={styles.vscodeEditor}>
+        <div className={styles.vscodeEditor} style={{ display: "flex", flexDirection: "column" }}>
           <textarea 
             className={styles.vscodeTextArea} 
-            defaultValue={"const message = \"Hello World\";\n\nfunction init() {\n  // ここに入力したり選択できます\n  console.log(message);\n}\n"} 
+            style={{ flex: 1, padding: "16px", fontFamily: "Consolas, monospace", fontSize: "14px", lineHeight: "1.5" }}
+            defaultValue={defaultCode} 
             spellCheck={false}
           />
-          {isSuccess && (
+          {q?.type?.includes("terminal") && (
+            <div style={{ height: "40%", borderTop: "1px solid #333", backgroundColor: "#1e1e1e", color: "#ccc", padding: "8px", fontFamily: "monospace", fontSize: "12px", overflow: "hidden" }}>
+              <div>C:\Project&gt; npm run dev</div>
+              <div style={{ color: "#4caf50" }}>Starting development server...</div>
+              <div>Compiled successfully!</div>
+              {isSuccess && q?.type?.includes("clear") && <div style={{ color: "#888", marginTop: "8px" }}>(Terminal cleared)</div>}
+              {isSuccess && q?.type?.includes("stop") && <div style={{ color: "#ffeb3b", marginTop: "8px" }}>^C<br/>C:\Project&gt;</div>}
+            </div>
+          )}
+          {isSuccess && !q?.type?.includes("terminal") && (
             <div className={styles.successToast}>
               実行しました！
             </div>

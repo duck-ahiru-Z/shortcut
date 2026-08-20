@@ -1,7 +1,7 @@
 import styles from "./ExplorerMock.module.css";
 
-type Props = { os?: "windows" | "mac"; isSuccess?: boolean; };
-export default function ExplorerMock({ os = "windows", isSuccess }: Props) {
+type Props = { os?: "windows" | "mac"; isSuccess?: boolean; q?: any; };
+export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
   return (
     <div className={styles.explorerContainer}>
       <div className={styles.explorerHeader}>
@@ -25,7 +25,7 @@ export default function ExplorerMock({ os = "windows", isSuccess }: Props) {
           <div className={styles.explorerSidebarItem3}></div>
         </div>
         <div className={styles.explorerMain}>
-          指示されたキーを入力...
+          {q?.type?.includes("new_folder") ? "新しいフォルダー" : (q?.type?.includes("rename") ? "ファイル名変更" : "指示されたキーを入力...")}
         </div>
       </div>
     
