@@ -32,7 +32,7 @@ const counts = {
   'practical-5kyu': 5,
   'practical-4kyu': 5,
   'practical-3kyu': 10,
-  'practical-2kyu': 15,
+  'practical-2kyu': 10,
   'practical-1kyu': 15,
   'mac-5kyu': 15,
   'mac-4kyu': 15,
@@ -42,7 +42,7 @@ const counts = {
   'practical-mac-5kyu': 5,
   'practical-mac-4kyu': 5,
   'practical-mac-3kyu': 10,
-  'practical-mac-2kyu': 15,
+  'practical-mac-2kyu': 10,
   'practical-mac-1kyu': 15
 };
 
