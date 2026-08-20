@@ -47,7 +47,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     badgeClass: "badge-available",
     description: "さらに高度な操作や、PCの設定周りのショートカットなどを出題します。",
     knowledgeCount: 40,
-    practicalCount: 40,
+    practicalCount: 30,
     passingRate: "80%",
   },
   {
