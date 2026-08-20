@@ -24,25 +24,25 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 const counts = {
-  '5kyu': 30,
-  '4kyu': 30,
+  '5kyu': 15,
+  '4kyu': 15,
   '3kyu': 20,
-  '2kyu': 40,
+  '2kyu': 20,
   '1kyu': 20,
   'practical-5kyu': 5,
   'practical-4kyu': 5,
   'practical-3kyu': 20,
-  'practical-2kyu': 30,
+  'practical-2kyu': 20,
   'practical-1kyu': 20,
-  'mac-5kyu': 30,
-  'mac-4kyu': 30,
+  'mac-5kyu': 15,
+  'mac-4kyu': 15,
   'mac-3kyu': 20,
-  'mac-2kyu': 40,
+  'mac-2kyu': 20,
   'mac-1kyu': 20,
   'practical-mac-5kyu': 5,
   'practical-mac-4kyu': 5,
   'practical-mac-3kyu': 20,
-  'practical-mac-2kyu': 30,
+  'practical-mac-2kyu': 20,
   'practical-mac-1kyu': 20
 };
 
