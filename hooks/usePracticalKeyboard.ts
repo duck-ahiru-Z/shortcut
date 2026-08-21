@@ -46,8 +46,21 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
       if (e.shiftKey) pressed.add("shift");
       if (e.altKey) pressed.add("alt");
       if (e.metaKey) {
-        pressed.add("meta");
-        pressed.add("windows");
+        // e.metaKey is the Command key on Mac and the Windows key on Windows.
+        // The DB might expect 'meta' or 'windows'.
+        // To be safe against both matching logic (hash and size comparison), 
+        // we'll just let the later e.key handling add 'meta' or 'windows'.
+        // But e.key might not be 'meta' if it's a combo like Cmd+C.
+        // Wait, e.key for Cmd+C is 'c'. So we MUST add the modifier here.
+        // Let's add the exact modifier the question expects, or both and adjust size checking?
+        // Actually, let's just add 'meta' for Mac, and 'windows' for Windows if we know the OS.
+        // But we don't have OS here. Let's look at navigator.
+        const isMac = navigator.userAgent.toUpperCase().indexOf('MAC') >= 0;
+        if (isMac) {
+          pressed.add("meta");
+        } else {
+          pressed.add("windows");
+        }
       }
 
       const keyMap: Record<string, string> = { 
