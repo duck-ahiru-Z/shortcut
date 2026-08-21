@@ -92,29 +92,84 @@ export default function AdminQuestionEditor({ grade }: Props) {
               />
             </div>
             
-            <div className={styles.choicesGrid}>
-              {q.choices && q.choices.map((choice: string, cIndex: number) => (
-                <div key={cIndex} className={styles.choiceItem}>
-                  <label className={styles.choiceLabel}>選択肢 {cIndex + 1}</label>
+            {grade.includes("practical") ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div className={styles.fieldGroup}>
+                  <label className={styles.label}>タイプ (type)</label>
                   <input
                     type="text"
-                    value={choice}
-                    onChange={(e) => handleChoiceChange(qIndex, cIndex, e.target.value)}
+                    value={q.type || ""}
+                    onChange={(e) => handleChange(qIndex, "type", e.target.value)}
+                    className={styles.input}
+                    placeholder="省略可 (例: copy_paste)"
+                  />
+                </div>
+                
+                <div className={styles.fieldGroup}>
+                  <label className={styles.label}>正解キーコンボ (例: meta, c) ※カンマ区切り</label>
+                  <input
+                    type="text"
+                    value={q.expectedKeyCombo ? q.expectedKeyCombo.join(", ") : ""}
+                    onChange={(e) => handleChange(qIndex, "expectedKeyCombo", e.target.value ? e.target.value.split(",").map(k => k.trim()) : undefined)}
                     className={styles.input}
                   />
                 </div>
-              ))}
-            </div>
 
-            <div>
-              <label className={styles.answerLabel}>正解 (※選択肢と完全一致させること)</label>
-              <input
-                type="text"
-                value={q.answer}
-                onChange={(e) => handleChange(qIndex, "answer", e.target.value)}
-                className={styles.answerInput}
-              />
-            </div>
+                <div className={styles.fieldGroup}>
+                  <label className={styles.label}>解説 (explanation)</label>
+                  <textarea
+                    value={q.explanation || ""}
+                    onChange={(e) => handleChange(qIndex, "explanation", e.target.value)}
+                    className={styles.textarea}
+                  />
+                </div>
+
+                <div className={styles.fieldGroup}>
+                  <label className={styles.answerLabel}>内部正解テキスト (※通常は CORRECT)</label>
+                  <input
+                    type="text"
+                    value={q.answer}
+                    onChange={(e) => handleChange(qIndex, "answer", e.target.value)}
+                    className={styles.answerInput}
+                  />
+                </div>
+              </div>
+            ) : (
+              <>
+                <div className={styles.choicesGrid}>
+                  {q.choices && q.choices.map((choice: string, cIndex: number) => (
+                    <div key={cIndex} className={styles.choiceItem}>
+                      <label className={styles.choiceLabel}>選択肢 {cIndex + 1}</label>
+                      <input
+                        type="text"
+                        value={choice}
+                        onChange={(e) => handleChoiceChange(qIndex, cIndex, e.target.value)}
+                        className={styles.input}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                <div>
+                  <label className={styles.answerLabel}>正解 (※選択肢と完全一致させること)</label>
+                  <input
+                    type="text"
+                    value={q.answer}
+                    onChange={(e) => handleChange(qIndex, "answer", e.target.value)}
+                    className={styles.answerInput}
+                  />
+                </div>
+                
+                <div className={styles.fieldGroup} style={{ marginTop: '16px' }}>
+                  <label className={styles.label}>解説 (explanation)</label>
+                  <textarea
+                    value={q.explanation || ""}
+                    onChange={(e) => handleChange(qIndex, "explanation", e.target.value)}
+                    className={styles.textarea}
+                  />
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>
