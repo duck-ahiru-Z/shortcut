@@ -7,6 +7,7 @@ import AdminResultsTable from "@/components/AdminResultsTable";
 import AdminStatsCards from "@/components/admin/AdminStatsCards";
 import AdminWrongRankings from "@/components/admin/AdminWrongRankings";
 import AdminQuestionEditor from "@/components/admin/AdminQuestionEditor";
+import AdminGradeSelector from "@/components/admin/AdminGradeSelector";
 
 // Server Component (Admin Dashboard)
 export default async function AdminDashboard({
@@ -95,26 +96,7 @@ export default async function AdminDashboard({
         <Link href="/" className="btn btn-secondary">トップページへ戻る</Link>
       </div>
 
-      <div style={{ marginBottom: "32px", display: "flex", gap: "8px", overflowX: "auto" }}>
-        {grades.map(g => (
-          <Link 
-            key={g.id} 
-            href={`/hq-portal?grade=${g.id}`}
-            style={{ 
-              padding: "8px 16px", 
-              borderRadius: "4px", 
-              backgroundColor: grade === g.id ? "var(--accent-primary)" : "var(--bg-tertiary)",
-              color: grade === g.id ? "#fff" : "inherit",
-              textDecoration: "none",
-              fontWeight: grade === g.id ? 700 : 400
-            }}
-          >
-            {g.name}
-          </Link>
-        ))}
-      </div>
-
-      <h2 style={{ marginBottom: "24px", fontSize: "20px" }}>対象データ: {grades.find(g => g.id === grade)?.name}</h2>
+      <AdminGradeSelector currentGrade={grade} grades={grades} />
 
       {errorMsg && (
         <div style={{ padding: "16px", backgroundColor: "var(--danger-bg)", color: "var(--danger)", border: "1px solid var(--danger)", marginBottom: "24px" }}>
