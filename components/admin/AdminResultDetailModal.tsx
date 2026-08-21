@@ -65,7 +65,8 @@ export default function AdminResultDetailModal({ selectedResult, gradeName, onCl
     doc.addImage(imgData, 'PNG', 0, 0, 297, 210);
     
     const safeGradeName = gradeName.replace(/\s+/g, '_');
-    doc.save(`${selectedResult.lastName}_${selectedResult.firstName}_${safeGradeName}.pdf`);
+    const namePart = selectedResult.lastName || selectedResult.firstName ? `${selectedResult.lastName}_${selectedResult.firstName}` : "anonymous";
+    doc.save(`${namePart}_${safeGradeName}.pdf`);
   };
 
   if (!selectedResult) return null;
@@ -81,7 +82,7 @@ export default function AdminResultDetailModal({ selectedResult, gradeName, onCl
         </button>
         
         <h2 className={`section-title ${styles.title}`}>
-          受験詳細: {selectedResult.lastName} {selectedResult.firstName}
+          受験詳細: {selectedResult.lastName || selectedResult.firstName ? `${selectedResult.lastName} ${selectedResult.firstName}` : "匿名"}
         </h2>
         
         <div className={styles.statsGrid}>

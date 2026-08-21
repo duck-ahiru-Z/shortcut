@@ -53,7 +53,7 @@ export default function AdminResultsTable({ results, gradeName }: Props) {
                 <td className={styles.tableCellNowrap}>
                   {new Date(r.timestamp).toLocaleString("ja-JP", { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
                 </td>
-                <td className={styles.tableCell}>{r.lastName} {r.firstName}</td>
+                <td className={styles.tableCell}>{r.lastName || r.firstName ? `${r.lastName} ${r.firstName}` : "匿名"}</td>
                 <td className={r.passed ? styles.tableCellPass : styles.tableCellFail}>
                   {r.passed ? '合格' : '不合格'}
                 </td>

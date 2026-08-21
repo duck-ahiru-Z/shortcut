@@ -380,9 +380,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .result-grid {
-    grid-template-columns: 1fr;
-  }
   .card {
     padding: 24px 16px;
   }

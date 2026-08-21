@@ -23,7 +23,12 @@ export default function AdminQuestionEditor({ grade }: Props) {
     setLoading(true);
     try {
       const data = await getRawQuestions(grade);
-      setQuestions(data);
+      // Initialize _taskDataStr for JSON editing
+      const initialData = data.map((q: any) => ({
+        ...q,
+        _taskDataStr: q.taskData ? JSON.stringify(q.taskData, null, 2) : ""
+      }));
+      setQuestions(initialData);
     } catch (err) {
       console.error(err);
       setMessage("問題の取得に失敗しました。");
@@ -36,12 +41,29 @@ export default function AdminQuestionEditor({ grade }: Props) {
     if (!confirm("問題を上書き保存します。よろしいですか？")) return;
     setSaving(true);
     setMessage("");
+    
     try {
-      await updateQuestions(grade, questions);
+      // Parse _taskDataStr back into taskData
+      const qsToSave = questions.map(q => {
+        const copy = { ...q };
+        if (copy._taskDataStr && copy._taskDataStr.trim() !== "") {
+          try {
+            copy.taskData = JSON.parse(copy._taskDataStr);
+          } catch (e) {
+            throw new Error(`ID ${q.id} の taskData のJSON形式が不正です`);
+          }
+        } else {
+          delete copy.taskData;
+        }
+        delete copy._taskDataStr;
+        return copy;
+      });
+
+      await updateQuestions(grade, qsToSave);
       setMessage("保存しました！");
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
-      setMessage("保存に失敗しました。");
+      setMessage(err.message || "保存に失敗しました。");
     } finally {
       setSaving(false);
     }
@@ -92,29 +114,95 @@ export default function AdminQuestionEditor({ grade }: Props) {
               />
             </div>
             
-            <div className={styles.choicesGrid}>
-              {q.choices.map((choice: string, cIndex: number) => (
-                <div key={cIndex} className={styles.choiceItem}>
-                  <label className={styles.choiceLabel}>選択肢 {cIndex + 1}</label>
+            {grade.includes("practical") ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div className={styles.fieldGroup}>
+                  <label className={styles.label}>タイプ (type)</label>
                   <input
                     type="text"
-                    value={choice}
-                    onChange={(e) => handleChoiceChange(qIndex, cIndex, e.target.value)}
+                    value={q.type || ""}
+                    onChange={(e) => handleChange(qIndex, "type", e.target.value)}
+                    className={styles.input}
+                    placeholder="省略可 (例: copy_paste)"
+                  />
+                </div>
+                
+                <div className={styles.fieldGroup}>
+                  <label className={styles.label}>正解キーコンボ (例: meta, c) ※カンマ区切り</label>
+                  <input
+                    type="text"
+                    value={q.expectedKeyCombo ? q.expectedKeyCombo.join(", ") : ""}
+                    onChange={(e) => handleChange(qIndex, "expectedKeyCombo", e.target.value ? e.target.value.split(",").map(k => k.trim()) : undefined)}
                     className={styles.input}
                   />
                 </div>
-              ))}
-            </div>
 
-            <div>
-              <label className={styles.answerLabel}>正解 (※選択肢と完全一致させること)</label>
-              <input
-                type="text"
-                value={q.answer}
-                onChange={(e) => handleChange(qIndex, "answer", e.target.value)}
-                className={styles.answerInput}
-              />
-            </div>
+                <div className={styles.fieldGroup}>
+                  <label className={styles.label}>解説 (explanation)</label>
+                  <textarea
+                    value={q.explanation || ""}
+                    onChange={(e) => handleChange(qIndex, "explanation", e.target.value)}
+                    className={styles.textarea}
+                  />
+                </div>
+
+                <div className={styles.fieldGroup}>
+                  <label className={styles.label}>タスクデータ (taskData / JSON形式)</label>
+                  <textarea
+                    value={q._taskDataStr || ""}
+                    onChange={(e) => handleChange(qIndex, "_taskDataStr", e.target.value)}
+                    className={styles.textarea}
+                    placeholder={`{\n  "targetText": "ペースト対象の文字列"\n}`}
+                    style={{ fontFamily: 'monospace', minHeight: '120px' }}
+                  />
+                </div>
+
+                <div className={styles.fieldGroup}>
+                  <label className={styles.answerLabel}>内部正解テキスト (※通常は CORRECT)</label>
+                  <input
+                    type="text"
+                    value={q.answer}
+                    onChange={(e) => handleChange(qIndex, "answer", e.target.value)}
+                    className={styles.answerInput}
+                  />
+                </div>
+              </div>
+            ) : (
+              <>
+                <div className={styles.choicesGrid}>
+                  {q.choices && q.choices.map((choice: string, cIndex: number) => (
+                    <div key={cIndex} className={styles.choiceItem}>
+                      <label className={styles.choiceLabel}>選択肢 {cIndex + 1}</label>
+                      <input
+                        type="text"
+                        value={choice}
+                        onChange={(e) => handleChoiceChange(qIndex, cIndex, e.target.value)}
+                        className={styles.input}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                <div>
+                  <label className={styles.answerLabel}>正解 (※選択肢と完全一致させること)</label>
+                  <input
+                    type="text"
+                    value={q.answer}
+                    onChange={(e) => handleChange(qIndex, "answer", e.target.value)}
+                    className={styles.answerInput}
+                  />
+                </div>
+                
+                <div className={styles.fieldGroup} style={{ marginTop: '16px' }}>
+                  <label className={styles.label}>解説 (explanation)</label>
+                  <textarea
+                    value={q.explanation || ""}
+                    onChange={(e) => handleChange(qIndex, "explanation", e.target.value)}
+                    className={styles.textarea}
+                  />
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>

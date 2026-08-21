@@ -131,8 +131,7 @@ export const CertificateApp = {
     ctx.textAlign = 'right';
     ctx.font = 'bold 24px "MS Mincho", "Hiragino Mincho ProN", serif';
     ctx.fillText('ショートカットキー検定 運営事務局', 1000, 640);
-    ctx.font = '20px "MS Mincho", "Hiragino Mincho ProN", serif';
-    ctx.fillText('代表　岩倉 隼人', 1000, 680);
+
 
     if (isPractical) {
       ctx.save();

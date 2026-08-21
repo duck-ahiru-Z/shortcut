@@ -65,11 +65,12 @@ export default function ResultPage() {
   }
 
   // SNSシェア用のURL生成
-  const shareText = `ショートカットキー検定 ${result.gradeTitle} を受験しました！\nスコア: ${result.score}点 (正答率: ${result.rate}%)\n結果: ${result.passed ? '合格' : '不合格'}\n\n`;
+  const displayTitle = result.gradeTitle.replace(' (実践シミュレータ)', '');
+  const shareText = `ショートカットキー検定 ${displayTitle} を受験しました！\nスコア: ${result.score}点 (正答率: ${result.rate}%)\n結果: ${result.passed ? '合格' : '不合格'}\n\n`;
   
   // NOTE: process.env.NEXT_PUBLIC_BASE_URL MUST be set in production for this to work correctly when shared
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || (typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000');
-  const shareUrl = `${baseUrl}/share?grade=${result.gradeId || '3kyu'}&gradeTitle=${encodeURIComponent(result.gradeTitle)}&score=${result.score}&rate=${result.rate}&passed=${result.passed}`;
+  const shareUrl = `${baseUrl}/share?grade=${result.gradeId || '3kyu'}&gradeTitle=${encodeURIComponent(displayTitle)}&score=${result.score}&rate=${result.rate}&passed=${result.passed}`;
   const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}&hashtags=${encodeURIComponent('ショートカットキー検定')}`;
 
   return (

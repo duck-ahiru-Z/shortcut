@@ -1,6 +1,6 @@
 "use server";
 
-import { doc, getDoc, collection, addDoc, setDoc, increment } from "firebase/firestore";
+import { doc, getDoc, collection, addDoc, setDoc, increment, query, where, getDocs, limit } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import crypto from "crypto";
 import { shuffleArray, formatKeyCombo } from "@/lib/examHelpers";
@@ -285,8 +285,6 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
     await addDoc(collection(db, "exam_results"), {
       grade,
       deviceId: tracking.deviceId,
-      lastName: tracking.lastName,
-      firstName: tracking.firstName,
       score,
       total: examQuestionsCount,
       rate,
@@ -299,11 +297,17 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
       wrongAnswers: wrongAnswers
     });
 
+    // Check if this is a unique device
+    const prevQuery = query(collection(db, "exam_results"), where("grade", "==", grade), where("deviceId", "==", tracking.deviceId), limit(1));
+    const prevSnap = await getDocs(prevQuery);
+    const isUnique = prevSnap.empty;
+
     // Update aggregated stats (using increment to save reads)
     const statsRef = doc(db, "exam_stats", grade);
     const updates: Record<string, any> = {
       totalTakes: increment(1),
     };
+    if (isUnique) updates.uniqueUsers = increment(1);
     if (passed) updates.passedCount = increment(1);
     
     // Increment wrong answer counts for each missed question
