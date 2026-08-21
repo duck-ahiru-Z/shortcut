@@ -14,7 +14,8 @@ export async function GET(req: NextRequest) {
     const score = parseInt(searchParams.get('score') || '0', 10);
     const rate = parseInt(searchParams.get('rate') || '0', 10);
     const passed = searchParams.get('passed') === 'true';
-    const gradeTitle = searchParams.get('gradeTitle') || 'ショートカットキー検定';
+    let gradeTitle = searchParams.get('gradeTitle') || 'ショートカットキー検定';
+    gradeTitle = gradeTitle.replace(' (実践シミュレータ)', '');
 
     // 悔しさを煽る、またはクスッと笑えるメッセージ
     let message = '';
