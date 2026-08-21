@@ -85,15 +85,18 @@ export default async function AdminDashboard({
               <thead>
                 <tr style={{ backgroundColor: "var(--bg-tertiary)", borderBottom: "2px solid var(--border-color)" }}>
                   <th style={{ padding: "12px 16px" }}>試験名</th>
-                  <th style={{ padding: "12px 16px" }}>総受験者数</th>
+                  <th style={{ padding: "12px 16px" }}>総受験回数</th>
+                  <th style={{ padding: "12px 16px" }}>実受験人数</th>
                   <th style={{ padding: "12px 16px" }}>合格者数</th>
                   <th style={{ padding: "12px 16px" }}>合格率</th>
                 </tr>
               </thead>
               <tbody>
                 {grades.map(g => {
-                  const s = allStats.find(stat => stat.id === g.id) || { totalTakes: 0, passedCount: 0 };
+                  const s = allStats.find(stat => stat.id === g.id) || { totalTakes: 0, passedCount: 0, uniqueUsers: 0 };
                   const rate = s.totalTakes > 0 ? Math.round((s.passedCount / s.totalTakes) * 100) : 0;
+                  // If uniqueUsers is missing (old data), just show '-' or estimate
+                  const uniqueStr = s.uniqueUsers ? `${s.uniqueUsers} 人` : (s.totalTakes > 0 ? `不明 (${s.totalTakes}人以下)` : "0 人");
                   return (
                     <tr key={g.id} style={{ borderBottom: "1px solid var(--border-color)", cursor: "pointer", transition: "background 0.2s" }} onClick={`window.location.href='/hq-portal?grade=${g.id}'` as any}>
                       <td style={{ padding: "12px 16px" }}>
@@ -101,8 +104,9 @@ export default async function AdminDashboard({
                           {g.name}
                         </Link>
                       </td>
-                      <td style={{ padding: "12px 16px" }}>{s.totalTakes} 人</td>
-                      <td style={{ padding: "12px 16px" }}>{s.passedCount} 人</td>
+                      <td style={{ padding: "12px 16px" }}>{s.totalTakes} 回</td>
+                      <td style={{ padding: "12px 16px" }}>{uniqueStr}</td>
+                      <td style={{ padding: "12px 16px" }}>{s.passedCount} 回</td>
                       <td style={{ padding: "12px 16px" }}>
                         <span style={{ color: rate >= 80 ? "var(--success)" : rate > 0 ? "inherit" : "var(--text-muted)", fontWeight: rate >= 80 ? "bold" : "normal" }}>
                           {rate}%
