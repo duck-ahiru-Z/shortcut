@@ -26,8 +26,9 @@ export default function AdminGradeSelector({ currentGrade, grades }: Props) {
       <select 
         value={currentGrade} 
         onChange={handleChange}
-        style={{ padding: "8px 16px", fontSize: "16px", borderRadius: "4px", border: "1px solid var(--border-color)", flex: 1, maxWidth: "400px" }}
+        style={{ padding: "8px 16px", fontSize: "16px", borderRadius: "4px", border: "1px solid var(--border-color)", flex: 1, maxWidth: "400px", background: "var(--bg-primary)", color: "var(--text-primary)" }}
       >
+        <option value="all">📊 総合ダッシュボード (全試験の統計)</option>
         <optgroup label="Windows版 - 知識試験">
           {winKnowledge.map(g => (
             <option key={g.id} value={g.id}>{g.name}</option>
