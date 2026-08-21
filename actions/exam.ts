@@ -285,8 +285,6 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
     await addDoc(collection(db, "exam_results"), {
       grade,
       deviceId: tracking.deviceId,
-      lastName: tracking.lastName,
-      firstName: tracking.firstName,
       score,
       total: examQuestionsCount,
       rate,
