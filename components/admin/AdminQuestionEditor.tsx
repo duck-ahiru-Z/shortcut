@@ -93,7 +93,7 @@ export default function AdminQuestionEditor({ grade }: Props) {
             </div>
             
             <div className={styles.choicesGrid}>
-              {q.choices.map((choice: string, cIndex: number) => (
+              {q.choices && q.choices.map((choice: string, cIndex: number) => (
                 <div key={cIndex} className={styles.choiceItem}>
                   <label className={styles.choiceLabel}>選択肢 {cIndex + 1}</label>
                   <input
