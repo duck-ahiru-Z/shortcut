@@ -18,7 +18,7 @@ export default function ExamPreScreen({
   firstName, setFirstName,
   isLoading, onStart
 }: Props) {
-  const canStart = agreed && !isLoading && lastName.trim() !== "" && firstName.trim() !== "";
+  const canStart = agreed && !isLoading;
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -51,27 +51,7 @@ export default function ExamPreScreen({
         準備ができたら以下の項目を入力・確認して、試験を開始してください。
       </p>
 
-      <div className={styles.formGroup}>
-        <label className={styles.label}>
-          受験者氏名 (合格証書に記載されます)
-        </label>
-        <div className={styles.inputGroup}>
-          <input
-            type="text"
-            placeholder="姓"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            className={styles.input}
-          />
-          <input
-            type="text"
-            placeholder="名"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            className={styles.input}
-          />
-        </div>
-      </div>
+
 
       <div className={styles.agreementGroup}>
         <label className={styles.checkboxLabel}>

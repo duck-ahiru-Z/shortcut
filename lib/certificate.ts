@@ -105,7 +105,7 @@ export const CertificateApp = {
     ctx.fillText(data.gradeTitle, 600, 235);
 
     // 5. 受験者氏名
-    const fullName = `${data.lastName}  ${data.firstName}`;
+    const fullName = (data.lastName || data.firstName) ? `${data.lastName}  ${data.firstName}`.trim() : "受験者";
     ctx.fillStyle = '#0f172a';
     ctx.font = 'bold 36px "MS Gothic", "Hiragino Sans", sans-serif';
     ctx.textAlign = 'left';
