@@ -332,5 +332,3 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
     certNo: passed ? certNo : ""
   };
 }
-/ /   t r i g g e r   d e p l o y   f o r   c a c h e   i n v a l i d a t i o n  
- 
