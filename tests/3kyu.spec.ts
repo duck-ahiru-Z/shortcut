@@ -1,12 +1,12 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('5kyu Exams', () => {
-  test('Knowledge Exam (5級 知識試験) - Happy Path', async ({ page }) => {
+test.describe('3kyu Exams', () => {
+  test('Knowledge Exam (3級 知識試験) - Happy Path', async ({ page }) => {
     // 1. トップページから一覧へ
     await page.goto('/');
     
     // 2. 直接試験URLへ移動
-    await page.goto('/exam?grade=5kyu');
+    await page.goto('/exam?grade=3kyu');
 
     // 3. 名前入力画面
     await page.getByPlaceholder('姓').fill('Playwright');
@@ -42,8 +42,8 @@ test.describe('5kyu Exams', () => {
     await expect(page.getByText('正答率')).toBeVisible();
   });
 
-  test('Practical Exam (5級 実務検定) - Navigation Test', async ({ page }) => {
-    await page.goto('/exam?grade=practical-5kyu');
+  test('Practical Exam (3級 実務検定) - Navigation Test', async ({ page }) => {
+    await page.goto('/exam?grade=practical-3kyu');
     
     await page.getByPlaceholder('姓').fill('Playwright');
     await page.getByPlaceholder('名').fill('実務');
