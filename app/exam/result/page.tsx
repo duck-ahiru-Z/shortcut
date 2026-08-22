@@ -4,7 +4,9 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { GradeResult, WrongAnswerInfo } from "@/actions/exam";
-import { CertificateApp, CertificateData } from "@/lib/certificate";
+import { CertificateData } from "@/lib/certificate";
+import ExamResultReview from "@/components/exam/ExamResultReview";
+import ExamCertificate from "@/components/exam/ExamCertificate";
 
 type StoredResult = GradeResult & {
   lastName: string;
@@ -17,7 +19,6 @@ export default function ResultPage() {
   const router = useRouter();
   const [result, setResult] = useState<StoredResult | null>(null);
   const [certData, setCertData] = useState<CertificateData | null>(null);
-  const canvasRef = React.useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const data = sessionStorage.getItem("examResult");
@@ -48,17 +49,6 @@ export default function ResultPage() {
       router.push("/");
     }
   }, [router]);
-
-  useEffect(() => {
-    if (certData && canvasRef.current) {
-      CertificateApp.generate(canvasRef.current, certData);
-    }
-  }, [certData]);
-
-  const handleDownloadPDF = () => {
-    // 印刷ダイアログを呼び出し、ブラウザの機能でベクターPDFとして保存させる
-    window.print();
-  };
 
   if (!result) {
     return <div style={{ padding: "40px", textAlign: "center" }}>結果を読み込み中...</div>;
@@ -105,76 +95,14 @@ export default function ResultPage() {
           </div>
         </div>
 
-        {/* 間違えた問題の振り返りセクション */}
-        <div style={{ marginTop: "40px" }}>
-          <h3 className="section-title">結果の振り返り</h3>
-          <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "16px" }}>
-            不正解だった問題と正しい解答、および詳細な解説を確認できます。
-          </p>
-          
-          {result.score === result.total ? (
-            <div style={{ padding: "24px", border: "1px solid var(--success)", backgroundColor: "var(--success-bg)", color: "var(--success)", textAlign: "center", fontWeight: 700 }}>
-              全問正解です！素晴らしい成績です。
-            </div>
-          ) : result.wrongAnswers && result.wrongAnswers.length > 0 ? (
-            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              {result.wrongAnswers.map((wrongObj: WrongAnswerInfo, i: number) => (
-                <div key={i} style={{ border: "1px solid var(--border-color)", padding: "16px", backgroundColor: "var(--bg-tertiary)" }}>
-                  <p style={{ fontWeight: 700, marginBottom: "12px", lineHeight: "1.5" }}>
-                    Q. {wrongObj.question}
-                  </p>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", fontSize: "14px" }}>
-                    <div style={{ flex: 1, minWidth: "200px" }}>
-                      <span style={{ color: "var(--danger)", fontWeight: 700 }}>× あなたの解答:</span>
-                      <div style={{ marginTop: "4px", padding: "8px", border: "1px solid var(--danger)", backgroundColor: "var(--danger-bg)" }}>
-                        {wrongObj.userAnswer}
-                      </div>
-                    </div>
-                    <div style={{ flex: 1, minWidth: "200px" }}>
-                      <span style={{ color: "var(--success)", fontWeight: 700 }}>○ 正しい解答:</span>
-                      <div style={{ marginTop: "4px", padding: "8px", border: "1px solid var(--success)", backgroundColor: "var(--success-bg)" }}>
-                        {wrongObj.correctAnswer}
-                      </div>
-                    </div>
-                  </div>
-                  {wrongObj.explanation && (
-                    <div style={{ marginTop: "12px", paddingTop: "12px", borderTop: "1px dashed var(--border-light)", fontSize: "13px", color: "var(--text-muted)", whiteSpace: "pre-wrap", lineHeight: "1.6" }}>
-                      <strong>【解説】</strong><br/>
-                      {wrongObj.explanation}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div style={{ padding: "24px", border: "1px solid var(--warning)", backgroundColor: "var(--warning-bg, #fff8e1)", color: "#b27b00", textAlign: "center", fontWeight: 700 }}>
-              未解答の問題がありました。（間違えた問題のデータがありません）
-            </div>
-          )}
-        </div>
+        <ExamResultReview 
+          score={result.score} 
+          total={result.total} 
+          wrongAnswers={result.wrongAnswers || []} 
+        />
 
         {result.passed && certData && (
-          <div className="certificate-section" style={{ marginTop: "48px" }}>
-            <div className="certificate-title">合格証書 (IBT)</div>
-            
-            <div style={{ marginTop: "16px", marginBottom: "24px" }}>
-              <button className="btn btn-primary" onClick={handleDownloadPDF} style={{ padding: "12px 32px" }}>
-                PDFで保存・印刷する
-              </button>
-            </div>
-            
-            {/* キャンバス版の合格証書（高画質でプレビュー＆印刷対応） */}
-            <div style={{ marginTop: "24px", maxWidth: "100%", textAlign: "center" }}>
-              <canvas 
-                id="resultCertCanvas" 
-                ref={canvasRef} 
-                style={{ width: "100%", maxWidth: "800px", height: "auto", aspectRatio: "1.414 / 1", border: "1px solid var(--border-color)", boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }}
-              ></canvas>
-            </div>
-            <p style={{ fontSize: "13px", color: "var(--text-muted)", marginTop: "8px" }}>
-              ※証書番号: {result.certNo}
-            </p>
-          </div>
+          <ExamCertificate certData={certData} certNo={result.certNo || "IBT-0000"} />
         )}
 
         <div style={{ marginTop: "40px", textAlign: "center", display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
