@@ -45,18 +45,14 @@ async function run() {
         issues.push(`Duplicate question text found.`);
       }
       seenQuestions.add(q.question);
-
-      if (q.id === 11015) {
-        console.log(`\nDEBUG Q11015:`, JSON.stringify(q, null, 2));
-      }
       
       if (grade.startsWith('practical')) {
         // Practical Exam validation
-        if (!q.expectedKeyCombo && !q.type) {
-          issues.push(`Missing BOTH 'expectedKeyCombo' and 'type'.`);
-        } else if (!q.expectedKeyCombo) {
+        if (!q.expectedKeyCombo && !q.expectedKeySequence && !q.type) {
+          issues.push(`Missing 'expectedKeyCombo', 'expectedKeySequence' AND 'type'.`);
+        } else if (!q.expectedKeyCombo && !q.expectedKeySequence) {
           if (!['copy_paste', 'find_password', 'select_all'].includes(q.type)) {
-            issues.push(`Missing 'expectedKeyCombo' and unknown type: ${q.type}`);
+            issues.push(`Missing key combo/sequence and unknown type: ${q.type}`);
           }
         }
       } else {
