@@ -5,6 +5,7 @@ type Question = {
   expectedKeyCombo?: string[];
   expectedKeySequence?: { keys: string[] }[];
   expectedKeyComboHash?: string;
+  expectedKeySequenceHashes?: string[];
   type?: string;
 };
 
@@ -19,7 +20,7 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
   const sequenceIndexRef = useRef(0);
 
   useEffect(() => {
-    if (!q || (!q.expectedKeyCombo && !q.expectedKeyComboHash && !q.expectedKeySequence) || isSubmitting) return;
+    if (!q || (!q.expectedKeyCombo && !q.expectedKeyComboHash && !q.expectedKeySequence && !q.expectedKeySequenceHashes) || isSubmitting) return;
 
     // For tasks that require typing, we shouldn't prevent default on everything.
     const isTypingTask = q.type === "find_password" || q.type === "copy_paste" || q.type === "select_all";
@@ -93,11 +94,32 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
         const hashArray = Array.from(new Uint8Array(hashBuffer));
         const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
         isMatch = (hashHex === q.expectedKeyComboHash);
-      } else if (q.expectedKeySequence) {
-        const expectedCombo = q.expectedKeySequence[sequenceIndexRef.current].keys.map(k => k.toLowerCase());
-        const isStepMatch = expectedCombo.every(k => pressed.has(k)) && pressed.size === expectedCombo.length;
+      } else if (q.expectedKeySequenceHashes || q.expectedKeySequence) {
+        let isStepMatch = false;
+        let isFirstStepMatch = false;
+        
+        if (q.expectedKeySequenceHashes) {
+          const sortedPressed = Array.from(pressed).sort().join("+");
+          const encoder = new TextEncoder();
+          const data = encoder.encode(sortedPressed);
+          const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+          const hashArray = Array.from(new Uint8Array(hashBuffer));
+          const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+          
+          isStepMatch = (hashHex === q.expectedKeySequenceHashes[sequenceIndexRef.current]);
+          isFirstStepMatch = (hashHex === q.expectedKeySequenceHashes[0]);
+        } else if (q.expectedKeySequence) {
+          const expectedCombo = q.expectedKeySequence[sequenceIndexRef.current].keys.map(k => k.toLowerCase());
+          isStepMatch = expectedCombo.every(k => pressed.has(k)) && pressed.size === expectedCombo.length;
+          
+          const firstStepCombo = q.expectedKeySequence[0].keys.map(k => k.toLowerCase());
+          isFirstStepMatch = firstStepCombo.every(k => pressed.has(k)) && pressed.size === firstStepCombo.length;
+        }
+
+        const totalSteps = q.expectedKeySequenceHashes ? q.expectedKeySequenceHashes.length : (q.expectedKeySequence ? q.expectedKeySequence.length : 0);
+
         if (isStepMatch) {
-          if (sequenceIndexRef.current === q.expectedKeySequence.length - 1) {
+          if (sequenceIndexRef.current === totalSteps - 1) {
             isMatch = true;
           } else {
             sequenceIndexRef.current += 1;
@@ -105,9 +127,6 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
           }
         } else if (!["control", "shift", "alt", "meta", "os"].includes(mainKey)) {
           // If they pressed a final key and it didn't match the expected step, reset sequence.
-          // Wait, what if it matches the FIRST step of the sequence (e.g. they started over)?
-          const firstStepCombo = q.expectedKeySequence[0].keys.map(k => k.toLowerCase());
-          const isFirstStepMatch = firstStepCombo.every(k => pressed.has(k)) && pressed.size === firstStepCombo.length;
           if (isFirstStepMatch) {
             sequenceIndexRef.current = 1;
             return;

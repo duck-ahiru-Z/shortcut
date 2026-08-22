@@ -3,7 +3,7 @@
 import { doc, getDoc, collection, addDoc, setDoc, increment, query, where, getDocs, limit } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import crypto from "crypto";
-import { shuffleArray, formatKeyCombo } from "@/lib/examHelpers";
+import { shuffleArray, formatKeyCombo, formatKeySequence } from "@/lib/examHelpers";
 
 // Secret for HMAC signing (in production, use process.env.SECRET_KEY)
 const SECRET_KEY = process.env.SECRET_KEY || "shortcut_exam_secret_key_2026";
@@ -22,6 +22,8 @@ export type QuestionData = {
   answer: string;
   expectedKeyCombo?: string[];
   expectedKeyComboHash?: string;
+  expectedKeySequence?: { keys: string[] }[];
+  expectedKeySequenceHashes?: string[];
   taskData?: any;
   explanation?: string;
 };
@@ -122,6 +124,12 @@ export async function startExam(grade: string) {
       const sortedCombo = [...q.expectedKeyCombo].sort().join("+");
       qData.expectedKeyComboHash = crypto.createHash('sha256').update(sortedCombo).digest('hex');
     }
+    if (q.expectedKeySequence) {
+      qData.expectedKeySequenceHashes = q.expectedKeySequence.map((step: any) => {
+        const sortedCombo = [...step.keys].sort().join("+");
+        return crypto.createHash('sha256').update(sortedCombo).digest('hex');
+      });
+    }
     
     // Generate dynamic passwords
     if (q.type === 'find_password') {
@@ -175,11 +183,14 @@ export async function startExam(grade: string) {
     return qData;
   });
 
+  const questionIds = selectedQuestions.map(q => q.id);
+
   const token = signPayload({
     grade,
     startTime: Date.now(),
     duration: data.duration,
-    dynamicAnswers
+    dynamicAnswers,
+    questionIds
   });
 
   return {
@@ -205,7 +216,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
     return null;
   }
 
-  const { grade, startTime, duration, dynamicAnswers } = payload;
+  const { grade, startTime, duration, dynamicAnswers, questionIds } = payload;
   const data = await getCachedExamData(grade);
   if (!data) return null;
 
@@ -219,6 +230,9 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
   }
 
   const realQuestions = data.pool;
+  const assignedQuestions = questionIds 
+    ? realQuestions.filter((q: any) => questionIds.includes(q.id))
+    : realQuestions;
   const examQuestionsCount = data.questionsCount;
   
   let score = 0;
@@ -229,7 +243,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
 
   // Helper formatKeyCombo moved to lib/examHelpers
 
-  for (const q of realQuestions) {
+  for (const q of assignedQuestions) {
     if (answeredIds.includes(q.id)) {
       const correctAnswer = (dynamicAnswers && dynamicAnswers[q.id]) ? dynamicAnswers[q.id] : q.answer;
       if (correctAnswer === userAnswers[q.id]) {
@@ -242,6 +256,8 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
           displayCorrect = `全文を正しくペースト (Ctrl+A -> Ctrl+C -> Ctrl+V)`;
         } else if (q.type === 'find_password') {
           displayCorrect = `${correctAnswer} (正しく入力)`;
+        } else if (q.expectedKeySequence) {
+          displayCorrect = formatKeySequence(q.expectedKeySequence);
         } else if (q.expectedKeyCombo) {
           displayCorrect = formatKeyCombo(q.expectedKeyCombo);
         }
@@ -249,7 +265,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
         let displayUser = userAnswers[q.id] || "無回答";
         if (displayUser === "SKIPPED") {
           displayUser = "スキップ (時間切れ等)";
-        } else if (q.expectedKeyCombo && displayUser !== "SKIPPED") {
+        } else if ((q.expectedKeyCombo || q.expectedKeySequence) && displayUser !== "SKIPPED") {
           // In practical exams, user answers are either correct or skipped,
           // but just in case we have other values, leave them as is
         }
@@ -268,8 +284,26 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
 
   // Count unattempted questions as wrong
   if (answeredIds.length < examQuestionsCount) {
-    // Assuming they didn't finish, we don't know exactly which questions they missed unless we track the 30 selected IDs in the token.
-    // For simplicity, we just won't include unattempted in the wrongAnswers list, but it affects the score.
+    const answeredSet = new Set(answeredIds);
+    for (const q of assignedQuestions) {
+      if (!answeredSet.has(q.id) && wrongAnswers.length < (examQuestionsCount - score)) {
+        let displayCorrect = q.answer;
+        if (q.type === 'copy_paste') displayCorrect = `${q.answer || ''} (正しくペースト)`;
+        else if (q.type === 'select_all') displayCorrect = `全文を正しくペースト (Ctrl+A -> Ctrl+C -> Ctrl+V)`;
+        else if (q.type === 'find_password') displayCorrect = `${dynamicAnswers[q.id] || ''} (正しく入力)`;
+        else if (q.expectedKeySequence) displayCorrect = formatKeySequence(q.expectedKeySequence);
+        else if (q.expectedKeyCombo) displayCorrect = formatKeyCombo(q.expectedKeyCombo);
+
+        wrongAnswers.push({
+          id: q.id,
+          question: q.question,
+          userAnswer: "未解答",
+          correctAnswer: displayCorrect,
+          explanation: q.explanation
+        });
+        wrongIds[q.id.toString()] = 1;
+      }
+    }
   }
 
   const rate = Math.round((score / examQuestionsCount) * 100);
