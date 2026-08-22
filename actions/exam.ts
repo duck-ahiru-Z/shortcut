@@ -3,7 +3,7 @@
 import { doc, getDoc, collection, addDoc, setDoc, increment, query, where, getDocs, limit } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import crypto from "crypto";
-import { shuffleArray, formatKeyCombo } from "@/lib/examHelpers";
+import { shuffleArray, formatKeyCombo, formatKeySequence } from "@/lib/examHelpers";
 
 // Secret for HMAC signing (in production, use process.env.SECRET_KEY)
 const SECRET_KEY = process.env.SECRET_KEY || "shortcut_exam_secret_key_2026";
@@ -22,6 +22,8 @@ export type QuestionData = {
   answer: string;
   expectedKeyCombo?: string[];
   expectedKeyComboHash?: string;
+  expectedKeySequence?: { keys: string[] }[];
+  expectedKeySequenceHashes?: string[];
   taskData?: any;
   explanation?: string;
 };
@@ -121,6 +123,12 @@ export async function startExam(grade: string) {
     if (q.expectedKeyCombo) {
       const sortedCombo = [...q.expectedKeyCombo].sort().join("+");
       qData.expectedKeyComboHash = crypto.createHash('sha256').update(sortedCombo).digest('hex');
+    }
+    if (q.expectedKeySequence) {
+      qData.expectedKeySequenceHashes = q.expectedKeySequence.map((step: any) => {
+        const sortedCombo = [...step.keys].sort().join("+");
+        return crypto.createHash('sha256').update(sortedCombo).digest('hex');
+      });
     }
     
     // Generate dynamic passwords
@@ -242,6 +250,8 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
           displayCorrect = `全文を正しくペースト (Ctrl+A -> Ctrl+C -> Ctrl+V)`;
         } else if (q.type === 'find_password') {
           displayCorrect = `${correctAnswer} (正しく入力)`;
+        } else if (q.expectedKeySequence) {
+          displayCorrect = formatKeySequence(q.expectedKeySequence);
         } else if (q.expectedKeyCombo) {
           displayCorrect = formatKeyCombo(q.expectedKeyCombo);
         }
@@ -249,7 +259,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
         let displayUser = userAnswers[q.id] || "無回答";
         if (displayUser === "SKIPPED") {
           displayUser = "スキップ (時間切れ等)";
-        } else if (q.expectedKeyCombo && displayUser !== "SKIPPED") {
+        } else if ((q.expectedKeyCombo || q.expectedKeySequence) && displayUser !== "SKIPPED") {
           // In practical exams, user answers are either correct or skipped,
           // but just in case we have other values, leave them as is
         }

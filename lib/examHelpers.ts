@@ -31,3 +31,13 @@ export const formatKeyCombo = (combo: string[]) => {
     return lower.charAt(0).toUpperCase() + lower.slice(1);
   }).join(" + ");
 };
+
+/**
+ * Formats a key sequence array (e.g., [{ keys: ["control", "c"] }, { keys: ["control", "v"] }]) 
+ * into a readable string (e.g., "Ctrl + C -> Ctrl + V").
+ */
+export const formatKeySequence = (sequence: { keys: string[] }[]) => {
+  if (!sequence || !Array.isArray(sequence) || sequence.length === 0) return "CORRECT";
+  return sequence.map(step => formatKeyCombo(step.keys)).join(" -> ");
+};
+
