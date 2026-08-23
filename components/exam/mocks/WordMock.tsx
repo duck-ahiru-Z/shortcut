@@ -25,7 +25,13 @@ export default function WordMock({ os = "windows", isSuccess }: Props) {
       <div className={styles.wordBody}>
         <textarea 
           className={styles.wordPage} 
-          defaultValue="議事録\n\n1. 挨拶\n2. 前回の振り返り\n3. 今後の課題\n\n以上"
+          defaultValue={`議事録
+
+1. 挨拶
+2. 前回の振り返り
+3. 今後の課題
+
+以上`}
           spellCheck={false}
         />
         {isSuccess && (
