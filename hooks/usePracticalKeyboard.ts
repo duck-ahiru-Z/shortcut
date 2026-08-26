@@ -108,13 +108,24 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
           
           isStepMatch = (hashHex === q.expectedKeySequenceHashes[sequenceIndexRef.current]);
           isFirstStepMatch = (hashHex === q.expectedKeySequenceHashes[0]);
-        } else if (q.expectedKeySequence) {
-          const expectedCombo = q.expectedKeySequence[sequenceIndexRef.current].keys.map(k => k.toLowerCase());
-          isStepMatch = expectedCombo.every(k => pressed.has(k)) && pressed.size === expectedCombo.length;
-          
-          const firstStepCombo = q.expectedKeySequence[0].keys.map(k => k.toLowerCase());
-          isFirstStepMatch = firstStepCombo.every(k => pressed.has(k)) && pressed.size === firstStepCombo.length;
-        }
+                  } else if (q.expectedKeySequence) {
+            let effectivePressed = new Set(pressed);
+            const requiresShiftLayouts = ["plus", "equal", "asterisk", "question", "less", "greater", "colon", "quotedbl", "braceleft", "braceright", "bar", "tilde", "underscore", "+", "*", "?", "<", ">", ":", "\"", "{", "}", "|", "~", "_", "="];
+            if (pressed.has("shift") && requiresShiftLayouts.includes(mainKey)) {
+              effectivePressed.delete("shift");
+            }
+            
+            const expectedCombo = q.expectedKeySequence[sequenceIndexRef.current].keys.map(k => k.toLowerCase());
+            if (expectedCombo.includes("shift")) effectivePressed.add("shift");
+            isStepMatch = expectedCombo.every(k => effectivePressed.has(k)) && effectivePressed.size === expectedCombo.length;
+            
+            const firstStepCombo = q.expectedKeySequence[0].keys.map(k => k.toLowerCase());
+            let firstEffectivePressed = new Set(pressed);
+            if (pressed.has("shift") && requiresShiftLayouts.includes(mainKey) && !firstStepCombo.includes("shift")) {
+              firstEffectivePressed.delete("shift");
+            }
+            isFirstStepMatch = firstStepCombo.every(k => firstEffectivePressed.has(k)) && firstEffectivePressed.size === firstStepCombo.length;
+          }
 
         const totalSteps = q.expectedKeySequenceHashes ? q.expectedKeySequenceHashes.length : (q.expectedKeySequence ? q.expectedKeySequence.length : 0);
 
@@ -134,9 +145,16 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
             sequenceIndexRef.current = 0;
           }
         }
-      } else if (q.expectedKeyCombo) {
+            } else if (q.expectedKeyCombo) {
         const expected = q.expectedKeyCombo.map((k: string) => k.toLowerCase());
-        isMatch = expected.every((k: string) => pressed.has(k)) && pressed.size === expected.length;
+        let effectivePressed = new Set(pressed);
+        const requiresShiftLayouts = ["plus", "equal", "asterisk", "question", "less", "greater", "colon", "quotedbl", "braceleft", "braceright", "bar", "tilde", "underscore", "+", "*", "?", "<", ">", ":", "\"", "{", "}", "|", "~", "_", "="];
+        
+        if (!expected.includes("shift") && pressed.has("shift") && requiresShiftLayouts.includes(mainKey)) {
+          effectivePressed.delete("shift");
+        }
+        
+        isMatch = expected.every((k: string) => effectivePressed.has(k)) && effectivePressed.size === expected.length;
       }
 
       if (isMatch && !isTypingTask) {
