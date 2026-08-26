@@ -193,17 +193,6 @@
       "explanation": "Ctrl + Kはチャットツールの移動を高速化するキーです。チャンネルや相手をマウスで探さず、名前を数文字打つだけで目的地へジャンプできます。"
     },
     {
-      "id": 3031,
-      "type": "slack_quick_switcher",
-      "question": "（Slack）チャンネル数が多すぎてサイドバーから探すのが大変です。チャンネル名やDM相手を入力して移動できるクイックスイッチャーを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "k"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl+Kは、SlackでチャンネルやDMを検索して移動するためのショートカットです。参加チャンネルが多い組織では、サイドバーを探すより高速に目的の会話へ移動できます。"
-    },
-    {
       "id": 3032,
       "type": "slack_next_unread",
       "question": "（Slack）未読チャンネルが複数たまっています。次の未読チャンネルへキーボードだけで移動してください。",
@@ -260,17 +249,6 @@
       ],
       "answer": "CORRECT",
       "explanation": "Ctrl+Gは、VS Codeで指定した行番号へ移動するためのショートカットです。エラーログやレビューコメントで示された行へすばやく移動できます。"
-    },
-    {
-      "id": 3037,
-      "type": "excel_select_row",
-      "question": "（Excel）売上データの1行分をまとめてコピーしたいです。現在のセルがある行全体を選択してください。",
-      "expectedKeyCombo": [
-        "shift",
-        "space"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Shift+Spaceは、Excelでアクティブセルがある行全体を選択するショートカットです。行単位のコピー、削除、書式変更を効率よく行えます。"
     },
     {
       "id": 3038,
@@ -350,18 +328,6 @@
       ],
       "answer": "CORRECT",
       "explanation": "Ctrl+Lで現在のURLを選択し、Alt+Enterを押すと、そのURLを新しいタブで開けます。同じ画面を複製して比較・確認したい時に便利な連続技です。"
-    },
-    {
-      "id": 2003,
-      "type": "browser_hard_reload",
-      "question": "（ブラウザ）修正済みのCSSが反映されているはずなのに、自分の画面だけ古いデザインのままです。キャッシュを無視して強制再読み込みしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "r"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl+Shift+Rは、キャッシュを無視してページを再読み込みするショートカットです。Web制作や検証作業で、古いCSSや画像が残っている時の確認に役立ちます。"
     },
     {
       "id": 2004,
@@ -581,17 +547,6 @@
       "explanation": "Ctrl+Shift+Tで直前に閉じたタブを復元し、Ctrl+Fでページ内検索を開けます。履歴をたどって探し直すより、復元して即検索する方が圧倒的に速い連続技です。"
     },
     {
-      "id": 2017,
-      "type": "browser_open_downloads",
-      "question": "（ブラウザ）CSVをダウンロードしたはずなのに、保存先を見失いました。ダウンロード一覧を開いて確認してください。",
-      "expectedKeyCombo": [
-        "control",
-        "j"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl+Jはブラウザのダウンロード一覧を開くショートカットです。ダウンロードしたファイルを探すためにフォルダーを開き直す前に、まず一覧から確認できます。"
-    },
-    {
       "id": 2018,
       "type": "browser_jump_first_tab",
       "question": "（ブラウザ）タブを大量に開いていますが、左端に固定している管理ダッシュボードへ一瞬で戻りたいです。最初のタブへ移動してください。",
@@ -758,18 +713,6 @@
   ],
   "practical-1kyu": [
     {
-      "id": 1001,
-      "type": "vscode_command_palette",
-      "question": "（VS Code）設定変更、拡張機能のコマンド、Git関連操作をメニューから探す時間が惜しいです。コマンドパレットを開いてください。",
-      "expectedKeyCombo": [
-        "control",
-        "shift",
-        "p"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl+Shift+Pは、VS Codeのコマンドパレットを開くショートカットです。ほぼすべての機能をキーボードから検索・実行できるため、VS Codeを高速操作する中心的な入口になります。"
-    },
-    {
       "id": 1002,
       "type": "vscode_toggle_terminal",
       "question": "（VS Code）コードを書きながら、すぐ下のターミナルでテストコマンドを確認したいです。統合ターミナルの表示を切り替えてください。",
@@ -919,17 +862,6 @@
       ],
       "answer": "CORRECT",
       "explanation": "Ctrl+Kに続けてCtrl+Fを押すと、VS Codeで選択範囲だけをフォーマットできます。ファイル全体の差分を増やさず、必要な部分だけ整形したい時に有効です。"
-    },
-    {
-      "id": 1012,
-      "type": "terminal_clear_screen",
-      "question": "（統合ターミナル）ログが大量に流れて、直近のテスト結果が見づらくなりました。ターミナル画面をクリアしてください。",
-      "expectedKeyCombo": [
-        "control",
-        "l"
-      ],
-      "answer": "CORRECT",
-      "explanation": "Ctrl+Lは、多くのターミナルで画面をクリアするショートカットです。過去ログに埋もれず、次に実行するコマンドの結果を見やすくできます。"
     },
     {
       "id": 1013,
@@ -1342,7 +1274,7 @@
       "id": 23003,
       "question": "（Excel）右隣のワークシートへ切り替えてください。",
       "expectedKeyCombo": [
-        "meta",
+        "control",
         "pagedown"
       ],
       "answer": "CORRECT",
@@ -1352,7 +1284,7 @@
       "id": 23004,
       "question": "（Excel）A1セルへ一気に戻ってください。",
       "expectedKeyCombo": [
-        "meta",
+        "control",
         "home"
       ],
       "answer": "CORRECT",
@@ -1401,7 +1333,7 @@
       "id": 23010,
       "question": "（Excel）入力例から法則性を読み取り、フラッシュフィルを実行してください。",
       "expectedKeyCombo": [
-        "meta",
+        "control",
         "e"
       ],
       "answer": "CORRECT",
@@ -1472,7 +1404,7 @@
       "id": 23017,
       "question": "（Word/PowerPoint）選択中の段落またはテキストを中央揃えにしてください。",
       "expectedKeyCombo": [
-        "meta",
+        "control",
         "e"
       ],
       "answer": "CORRECT",
@@ -1594,7 +1526,7 @@
       "type": "excel_select_column",
       "question": "（Excel）顧客リストのメールアドレス列だけを一括で書式変更したいです。現在のセルがある列全体を選択してください。",
       "expectedKeyCombo": [
-        "meta",
+        "control",
         "space"
       ],
       "answer": "CORRECT",
@@ -2044,7 +1976,7 @@
       "type": "excel_next_worksheet",
       "question": "（Excel）月別シートが12枚並んだブックで、次月のシートを確認したいです。マウスでシートタブをクリックせず、次のシートへ移動してください。",
       "expectedKeyCombo": [
-        "meta",
+        "control",
         "pagedown"
       ],
       "answer": "CORRECT",
