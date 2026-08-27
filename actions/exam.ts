@@ -5,8 +5,11 @@ import { db } from "@/lib/firebase";
 import crypto from "crypto";
 import { shuffleArray, formatKeyCombo, formatKeySequence } from "@/lib/examHelpers";
 
-// Secret for HMAC signing (in production, use process.env.SECRET_KEY)
-const SECRET_KEY = process.env.SECRET_KEY || "shortcut_exam_secret_key_2026";
+// Secret for HMAC signing
+const SECRET_KEY = process.env.SECRET_KEY;
+if (!SECRET_KEY) {
+  throw new Error("SECRET_KEY environment variable is not set");
+}
 
 export type ScrubbedQuestion = {
   id: number;
