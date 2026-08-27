@@ -90,16 +90,16 @@ export default async function AdminDashboard({
   const passRate = totalTakes > 0 ? Math.round((passedCount / totalTakes) * 100) : 0;
 
   return (
-    <main style={{ maxWidth: "1000px" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "24px" }}>
-        <h1 className="hero-title" style={{ fontSize: "28px", margin: 0 }}>HQ Portal (管理者ダッシュボード)</h1>
+    <main className="max-w-[1000px] mx-auto w-full">
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="hero-title text-3xl m-0">HQ Portal (管理者ダッシュボード)</h1>
         <Link href="/" className="btn btn-secondary">トップページへ戻る</Link>
       </div>
 
       <AdminGradeSelector currentGrade={grade} grades={grades} />
 
       {errorMsg && (
-        <div style={{ padding: "16px", backgroundColor: "var(--danger-bg)", color: "var(--danger)", border: "1px solid var(--danger)", marginBottom: "24px" }}>
+        <div className="p-4 bg-[var(--danger-bg)] text-[var(--danger)] border border-[var(--danger)] mb-6 rounded-md">
           {errorMsg}
         </div>
       )}
@@ -111,17 +111,17 @@ export default async function AdminDashboard({
         passRate={passRate} 
       />
 
-      <div style={{ display: "flex", gap: "32px", flexWrap: "wrap", marginBottom: "32px" }}>
+      <div className="flex gap-8 flex-wrap mb-8">
         
         {/* 間違えやすい問題ランキング */}
-        <div style={{ flex: "1 1 300px" }}>
+        <div className="flex-1 min-w-[300px]">
           <AdminWrongRankings wrongRankings={wrongRankings} />
         </div>
 
         {/* 直近の受験履歴 */}
-        <div style={{ flex: "2 1 500px" }}>
-          <div className="card" style={{ padding: "24px", height: "100%" }}>
-            <h2 className="section-title" style={{ fontSize: "18px", marginBottom: "16px" }}>
+        <div className="flex-[2] min-w-[500px]">
+          <div className="card p-6 h-full">
+            <h2 className="section-title text-lg mb-4">
               直近の受験記録
             </h2>
             

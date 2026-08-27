@@ -21,24 +21,24 @@ export default function ExamCertificate({ certData, certNo }: Props) {
   };
 
   return (
-    <div className="certificate-section" style={{ marginTop: "48px" }}>
+    <div className="certificate-section mt-12">
       <div className="certificate-title">合格証書 (IBT)</div>
       
-      <div style={{ marginTop: "16px", marginBottom: "24px" }}>
-        <button className="btn btn-primary" onClick={handleDownloadPDF} style={{ padding: "12px 32px" }}>
+      <div className="mt-4 mb-6">
+        <button className="btn btn-primary px-8 py-3" onClick={handleDownloadPDF}>
           PDFで保存・印刷する
         </button>
       </div>
       
       {/* キャンバス版の合格証書（高画質でプレビュー＆印刷対応） */}
-      <div style={{ marginTop: "24px", maxWidth: "100%", textAlign: "center" }}>
+      <div className="mt-6 w-full text-center">
         <canvas 
           id="resultCertCanvas" 
           ref={canvasRef} 
-          style={{ width: "100%", maxWidth: "800px", height: "auto", aspectRatio: "1.414 / 1", border: "1px solid var(--border-color)", boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }}
+          className="w-full max-w-[800px] h-auto aspect-[1.414/1] border border-[var(--border-color)] shadow-md"
         ></canvas>
       </div>
-      <p style={{ fontSize: "13px", color: "var(--text-muted)", marginTop: "8px" }}>
+      <p className="text-[13px] text-[var(--text-muted)] mt-2">
         ※証書番号: {certNo}
       </p>
     </div>
