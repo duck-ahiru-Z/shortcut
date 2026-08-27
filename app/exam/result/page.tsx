@@ -1,5 +1,6 @@
-import { DEFAULT_GRADE_ID } from '@/config/grades';
 "use client";
+import { DEFAULT_GRADE_ID } from '@/config/grades';
+
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";

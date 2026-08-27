@@ -1,5 +1,6 @@
-import { DEFAULT_GRADE_ID } from '@/config/grades';
 "use client";
+import { DEFAULT_GRADE_ID } from '@/config/grades';
+
 
 import React, { useEffect, useRef } from "react";
 import { CertificateApp, CertificateData } from "@/lib/certificate";
