@@ -10,6 +10,7 @@ import AdminQuestionEditor from "@/components/admin/AdminQuestionEditor";
 import AdminGradeSelector from "@/components/admin/AdminGradeSelector";
 
 import AdminGlobalDashboard from "@/components/admin/AdminGlobalDashboard";
+import { ALL_GRADES_LIST } from "@/config/grades";
 
 export default async function AdminDashboard({
   searchParams,
@@ -26,28 +27,7 @@ export default async function AdminDashboard({
   const sp = await searchParams;
   const grade = sp.grade || "all";
 
-  const grades = [
-    { id: "5kyu", name: "5級 (Win知識)" },
-    { id: "4kyu", name: "4級 (Win知識)" },
-    { id: "3kyu", name: "3級 (Win知識)" },
-    { id: "2kyu", name: "2級 (Win知識)" },
-    { id: "1kyu", name: "1級 (Win知識)" },
-    { id: "practical-5kyu", name: "5級 (Win実務)" },
-    { id: "practical-4kyu", name: "4級 (Win実務)" },
-    { id: "practical-3kyu", name: "3級 (Win実務)" },
-    { id: "practical-2kyu", name: "2級 (Win実務)" },
-    { id: "practical-1kyu", name: "1級 (Win実務)" },
-    { id: "mac-5kyu", name: "5級 (Mac知識)" },
-    { id: "mac-4kyu", name: "4級 (Mac知識)" },
-    { id: "mac-3kyu", name: "3級 (Mac知識)" },
-    { id: "mac-2kyu", name: "2級 (Mac知識)" },
-    { id: "mac-1kyu", name: "1級 (Mac知識)" },
-    { id: "practical-mac-5kyu", name: "5級 (Mac実務)" },
-    { id: "practical-mac-4kyu", name: "4級 (Mac実務)" },
-    { id: "practical-mac-3kyu", name: "3級 (Mac実務)" },
-    { id: "practical-mac-2kyu", name: "2級 (Mac実務)" },
-    { id: "practical-mac-1kyu", name: "1級 (Mac実務)" }
-  ];
+  const grades = ALL_GRADES_LIST;
 
   let errorMsg = "";
 
