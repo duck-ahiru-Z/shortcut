@@ -90,5 +90,3 @@ export function getBaseGradeConfig(gradeId: string): GradeConfig | undefined {
   return GRADE_CONFIGS.find(g => g.id === baseGrade);
 }
 export const DEFAULT_GRADE_ID = '3kyu';
-
-export const DEFAULT_GRADE_ID = '3kyu';
