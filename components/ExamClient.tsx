@@ -1,11 +1,12 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useExamSession } from "@/hooks/useExamSession";
 import { useExamKeyboard } from "@/hooks/useExamKeyboard";
 
 import ExamPreScreen from "./exam/ExamPreScreen";
 import ExamActiveScreen from "./exam/ExamActiveScreen";
+import SubmitConfirmModal from "./exam/SubmitConfirmModal";
 
 type Props = {
   grade: string;
@@ -27,6 +28,17 @@ export default function ExamClient({ grade }: Props) {
     handleSubmit
   } = useExamSession(grade, false);
 
+  const [showConfirm, setShowConfirm] = useState(false);
+
+  const handleConfirmSubmit = useCallback(() => {
+    setShowConfirm(true);
+  }, []);
+
+  const doSubmit = useCallback(() => {
+    setShowConfirm(false);
+    handleSubmit();
+  }, [handleSubmit]);
+
   const handleSelect = useCallback((qId: number, choice: string) => {
     setAnswers(prev => ({ ...prev, [qId]: choice }));
   }, [setAnswers]);
@@ -38,7 +50,7 @@ export default function ExamClient({ grade }: Props) {
     questions, 
     setCurrentIndex, 
     handleSelect, 
-    handleSubmit
+    handleConfirmSubmit
   );
 
   if (!started) {
@@ -54,15 +66,24 @@ export default function ExamClient({ grade }: Props) {
   }
 
   return (
-    <ExamActiveScreen 
-      questions={questions}
-      currentIndex={currentIndex}
-      setCurrentIndex={setCurrentIndex}
-      answers={answers}
-      handleSelect={handleSelect}
-      timeLeft={timeLeft}
-      isSubmitting={isSubmitting}
-      onSubmit={handleSubmit}
-    />
+    <>
+      <ExamActiveScreen 
+        questions={questions}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+        answers={answers}
+        handleSelect={handleSelect}
+        timeLeft={timeLeft}
+        isSubmitting={isSubmitting}
+        onSubmit={handleConfirmSubmit}
+      />
+      
+      <SubmitConfirmModal 
+        isOpen={showConfirm}
+        isSubmitting={isSubmitting}
+        onCancel={() => setShowConfirm(false)}
+        onSubmit={doSubmit}
+      />
+    </>
   );
 }

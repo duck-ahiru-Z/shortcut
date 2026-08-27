@@ -1,10 +1,11 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useExamSession } from "@/hooks/useExamSession";
 
 import ExamPreScreen from "./exam/ExamPreScreen";
 import PracticalActiveScreen from "./exam/PracticalActiveScreen";
+import SubmitConfirmModal from "./exam/SubmitConfirmModal";
 
 type Props = {
   grade: string;
@@ -26,15 +27,17 @@ export default function PracticalExamClient({ grade }: Props) {
     handleSubmit
   } = useExamSession(grade, true); // true = disable anticheat for practical exam
 
+  const [showConfirm, setShowConfirm] = useState(false);
+
   const handleAnswer = useCallback((qId: number, answerValue: string) => {
     const nextAnswers = { ...answers, [qId]: answerValue };
     setAnswers(nextAnswers);
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1);
     } else {
-      handleSubmit(nextAnswers);
+      setShowConfirm(true);
     }
-  }, [answers, currentIndex, questions.length, handleSubmit, setCurrentIndex, setAnswers]);
+  }, [answers, currentIndex, questions.length, setCurrentIndex, setAnswers]);
 
   const handleSkip = useCallback((qId: number) => {
     const nextAnswers = { ...answers, [qId]: "SKIPPED" };
@@ -42,9 +45,14 @@ export default function PracticalExamClient({ grade }: Props) {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1);
     } else {
-      handleSubmit(nextAnswers);
+      setShowConfirm(true);
     }
-  }, [answers, currentIndex, questions.length, handleSubmit, setCurrentIndex, setAnswers]);
+  }, [answers, currentIndex, questions.length, setCurrentIndex, setAnswers]);
+
+  const doSubmit = useCallback(() => {
+    setShowConfirm(false);
+    handleSubmit(answers);
+  }, [handleSubmit, answers]);
 
   if (!started) {
     return (
@@ -59,14 +67,23 @@ export default function PracticalExamClient({ grade }: Props) {
   }
 
   return (
-    <PracticalActiveScreen 
-      grade={grade}
-      questions={questions}
-      currentIndex={currentIndex}
-      timeLeft={timeLeft}
-      isSubmitting={isSubmitting}
-      onAnswer={handleAnswer}
-      onSkip={handleSkip}
-    />
+    <>
+      <PracticalActiveScreen 
+        grade={grade}
+        questions={questions}
+        currentIndex={currentIndex}
+        timeLeft={timeLeft}
+        isSubmitting={isSubmitting}
+        onAnswer={handleAnswer}
+        onSkip={handleSkip}
+      />
+
+      <SubmitConfirmModal 
+        isOpen={showConfirm}
+        isSubmitting={isSubmitting}
+        onCancel={() => setShowConfirm(false)}
+        onSubmit={doSubmit}
+      />
+    </>
   );
 }
