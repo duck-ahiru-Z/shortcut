@@ -1,3 +1,4 @@
+import { DEFAULT_GRADE_ID } from '@/config/grades';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -9,7 +10,7 @@ export async function generateMetadata(
   { searchParams }: Props
 ): Promise<Metadata> {
   const params = await searchParams;
-  const grade = typeof params.grade === 'string' ? params.grade : '3kyu';
+  const grade = typeof params.grade === 'string' ? params.grade : DEFAULT_GRADE_ID;
   const gradeTitle = typeof params.gradeTitle === 'string' ? params.gradeTitle : 'ショートカットキー検定';
   const score = typeof params.score === 'string' ? params.score : '0';
   const rate = typeof params.rate === 'string' ? params.rate : '0';
@@ -58,7 +59,7 @@ export async function generateMetadata(
 
 export default async function SharePage({ searchParams }: Props) {
   const params = await searchParams;
-  const grade = typeof params.grade === 'string' ? params.grade : '3kyu';
+  const grade = typeof params.grade === 'string' ? params.grade : DEFAULT_GRADE_ID;
   const gradeTitle = typeof params.gradeTitle === 'string' ? params.gradeTitle : 'ショートカットキー検定';
   const score = typeof params.score === 'string' ? params.score : '0';
   const rate = typeof params.rate === 'string' ? params.rate : '0';

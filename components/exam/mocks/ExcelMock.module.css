@@ -69,3 +69,88 @@
   0% { transform: translate(-50%, -40%); opacity: 0; }
   100% { transform: translate(-50%, -50%); opacity: 1; }
 }
+
+
+.excelToolbar {
+  display: flex;
+  gap: 16px;
+  padding: 4px 12px;
+  background-color: #f3f2f1;
+  border-bottom: 1px solid #e1dfdd;
+  font-size: 12px;
+  color: #323130;
+}
+.excelTitle {
+  font-weight: 500;
+}
+.excelFormulaBar {
+  display: flex;
+  border-bottom: 1px solid #e1dfdd;
+  background-color: white;
+  align-items: center;
+}
+.excelNameBox {
+  padding: 4px 8px;
+  width: 50px;
+  font-size: 12px;
+  border-right: 1px solid #e1dfdd;
+  text-align: center;
+}
+.excelFx {
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #605e5c;
+  font-style: italic;
+  font-weight: bold;
+}
+.excelFormulaInput {
+  flex: 1;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-left: 1px solid #e1dfdd;
+  min-height: 24px;
+}
+.excelColHeader, .excelRowHeader {
+  background-color: #f3f2f1;
+  color: #605e5c;
+  font-size: 12px;
+  border-right: 1px solid #e1dfdd;
+  border-bottom: 1px solid #e1dfdd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.excelColHeader {
+  flex: 1;
+  padding: 4px;
+}
+.excelRowHeader {
+  width: 30px;
+  flex-shrink: 0;
+}
+.excelTabs {
+  display: flex;
+  background-color: #f3f2f1;
+  border-top: 1px solid #e1dfdd;
+  padding-top: 4px;
+  padding-left: 12px;
+  gap: 4px;
+}
+.excelTab, .excelTabActive {
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #e1dfdd;
+  border-bottom: none;
+  cursor: pointer;
+}
+.excelTab {
+  background-color: #f3f2f1;
+  color: #605e5c;
+}
+.excelTabActive {
+  background-color: white;
+  color: #107c41;
+  font-weight: bold;
+}

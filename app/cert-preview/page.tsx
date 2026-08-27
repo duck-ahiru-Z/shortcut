@@ -1,4 +1,6 @@
 "use client";
+import { DEFAULT_GRADE_ID } from '@/config/grades';
+
 
 import React, { useEffect, useRef } from "react";
 import { CertificateApp, CertificateData } from "@/lib/certificate";
@@ -52,7 +54,7 @@ const mockCerts: CertificateData[] = [
     gradeTitle: "3級 (スタンダード)",
     lastName: "鈴木",
     firstName: "一郎",
-    gradeId: "3kyu",
+    gradeId: DEFAULT_GRADE_ID,
   },
   {
     score: 30,

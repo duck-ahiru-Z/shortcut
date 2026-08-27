@@ -5,8 +5,11 @@ import { db } from "@/lib/firebase";
 import crypto from "crypto";
 import { shuffleArray, formatKeyCombo, formatKeySequence } from "@/lib/examHelpers";
 
-// Secret for HMAC signing (in production, use process.env.SECRET_KEY)
-const SECRET_KEY = process.env.SECRET_KEY || "shortcut_exam_secret_key_2026";
+// Secret for HMAC signing
+const SECRET_KEY = process.env.SECRET_KEY;
+if (!SECRET_KEY) {
+  throw new Error("SECRET_KEY environment variable is not set");
+}
 
 export type ScrubbedQuestion = {
   id: number;
@@ -83,7 +86,7 @@ async function getCachedExamData(grade: string): Promise<ExamData | null> {
 
 function signPayload(payload: any): string {
   const dataStr = JSON.stringify(payload);
-  const hmac = crypto.createHmac('sha256', SECRET_KEY);
+  const hmac = crypto.createHmac('sha256', SECRET_KEY as string);
   hmac.update(dataStr);
   const signature = hmac.digest('hex');
   return Buffer.from(JSON.stringify({ data: payload, signature })).toString('base64');
@@ -93,7 +96,7 @@ function verifyPayload(token: string): any | null {
   try {
     const decoded = Buffer.from(token, 'base64').toString('utf-8');
     const { data, signature } = JSON.parse(decoded);
-    const hmac = crypto.createHmac('sha256', SECRET_KEY);
+    const hmac = crypto.createHmac('sha256', SECRET_KEY as string);
     hmac.update(JSON.stringify(data));
     const expectedSignature = hmac.digest('hex');
     if (signature === expectedSignature) return data;

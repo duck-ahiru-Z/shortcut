@@ -1,3 +1,4 @@
+import { DEFAULT_GRADE_ID } from '@/config/grades';
 import { ImageResponse } from 'next/og';
 import { NextRequest } from 'next/server';
 import fs from 'fs';
@@ -10,7 +11,7 @@ export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
 
-    const grade = searchParams.get('grade') || '3kyu';
+    const grade = searchParams.get('grade') || DEFAULT_GRADE_ID;
     const score = parseInt(searchParams.get('score') || '0', 10);
     const rate = parseInt(searchParams.get('rate') || '0', 10);
     const passed = searchParams.get('passed') === 'true';

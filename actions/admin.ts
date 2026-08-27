@@ -4,10 +4,14 @@ import { cookies } from "next/headers";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
-// In a real app, this should be in an env variable
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "shortcut2026";
+// Admin password must be set via environment variable
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
 export async function loginAdmin(password: string): Promise<boolean> {
+  if (!ADMIN_PASSWORD) {
+    throw new Error("ADMIN_PASSWORD environment variable is not set");
+  }
+
   if (password === ADMIN_PASSWORD) {
     const cookieStore = await cookies();
     cookieStore.set("admin_auth", "true", {

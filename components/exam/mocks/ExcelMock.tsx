@@ -41,13 +41,15 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
       </div>
       
       <div className={styles.excelGrid}>
-        <div className={styles.excelCorner}></div>
-        {Array.from({ length: 5 }).map((_, c) => (
-          <div key={`col-${c}`} className={styles.excelColHeader}>
-            {getCol(c)}
-            {q?.type?.includes("filter") && isSuccess && <span style={{ marginLeft: "4px", fontSize: "10px" }}>▼</span>}
-          </div>
-        ))}
+        <div className={styles.excelRow}>
+          <div className={styles.excelRowHeader}></div>
+          {Array.from({ length: 5 }).map((_, c) => (
+            <div key={`col-${c}`} className={styles.excelColHeader}>
+              {getCol(c)}
+              {q?.type?.includes("filter") && isSuccess && <span style={{ marginLeft: "4px", fontSize: "10px" }}>▼</span>}
+            </div>
+          ))}
+        </div>
         
         {Array.from({ length: 6 }).map((_, r) => (
           <div key={`row-${r}`} className={styles.excelRow}>
