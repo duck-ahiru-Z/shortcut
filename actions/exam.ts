@@ -86,7 +86,7 @@ async function getCachedExamData(grade: string): Promise<ExamData | null> {
 
 function signPayload(payload: any): string {
   const dataStr = JSON.stringify(payload);
-  const hmac = crypto.createHmac('sha256', SECRET_KEY);
+  const hmac = crypto.createHmac('sha256', SECRET_KEY as string);
   hmac.update(dataStr);
   const signature = hmac.digest('hex');
   return Buffer.from(JSON.stringify({ data: payload, signature })).toString('base64');
@@ -96,7 +96,7 @@ function verifyPayload(token: string): any | null {
   try {
     const decoded = Buffer.from(token, 'base64').toString('utf-8');
     const { data, signature } = JSON.parse(decoded);
-    const hmac = crypto.createHmac('sha256', SECRET_KEY);
+    const hmac = crypto.createHmac('sha256', SECRET_KEY as string);
     hmac.update(JSON.stringify(data));
     const expectedSignature = hmac.digest('hex');
     if (signature === expectedSignature) return data;
