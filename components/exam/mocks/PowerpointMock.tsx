@@ -1,3 +1,4 @@
+import WindowControls from "./WindowControls";
 import styles from "./PowerpointMock.module.css";
 
 type Props = { os?: "windows" | "mac"; isSuccess?: boolean; q?: any; };
@@ -5,13 +6,7 @@ export default function PowerpointMock({ os = "windows", isSuccess, q }: Props) 
   return (
     <div className={styles.pptContainer}>
       <div className={styles.pptHeader}>
-        {os === "mac" && (
-          <div className={styles.macButtons}>
-             <div className={styles.browserDotRed}></div>
-             <div className={styles.browserDotYellow}></div>
-             <div className={styles.browserDotGreen}></div>
-          </div>
-        )}
+        {os === "mac" && <WindowControls os={os} />}
         <div className={styles.pptTitle}>プレゼンテーション1 - PowerPoint</div>
       </div>
       <div className={styles.pptToolbar}>

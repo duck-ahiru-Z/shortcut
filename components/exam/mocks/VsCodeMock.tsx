@@ -1,3 +1,4 @@
+import WindowControls from "./WindowControls";
 import styles from "./VsCodeMock.module.css";
 import { getVsCodeInitialCode } from "./mockDataHelpers";
 
@@ -12,14 +13,9 @@ export default function VsCodeMock({ os = "windows", isSuccess, q }: Props) {
   return (
     <div className={styles.vscodeContainer}>
       <div className={styles.vscodeHeader}>
-        {os === "mac" ? (
-          <div className={styles.macButtons}>
-            <div className={styles.browserDotRed}></div>
-            <div className={styles.browserDotYellow}></div>
-            <div className={styles.browserDotGreen}></div>
-          </div>
-        ) : null}
+        {os === "mac" && <WindowControls os={os} />}
         <div className={styles.vscodeTitle}>index.ts - Visual Studio Code</div>
+        {os === "windows" && <WindowControls os={os} />}
       </div>
       <div className={styles.vscodeBody}>
         <div className={styles.vscodeSidebar}>

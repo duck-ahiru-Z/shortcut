@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./ExcelMock.module.css";
+import WindowControls from "./WindowControls";
 
 type Props = {
   os?: "windows" | "mac";
@@ -29,7 +30,9 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
   return (
     <div className={styles.excelContainer}>
       <div className={styles.excelHeader}>
-        <div className={styles.excelTitle}>Book1 - Excel</div>
+        {os === "mac" && <WindowControls os={os} />}
+        <div className={styles.excelTitle} style={{ flex: 1, textAlign: os === "mac" ? "center" : "left", marginLeft: os === "mac" ? "0" : "16px" }}>Book1 - Excel</div>
+        {os === "windows" && <WindowControls os={os} />}
       </div>
       <div className={styles.excelToolbar}>
         <div>ファイル</div><div>ホーム</div><div>挿入</div><div>描画</div><div>ページレイアウト</div><div>数式</div><div>データ</div>
