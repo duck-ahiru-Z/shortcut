@@ -1,3 +1,4 @@
+import WindowControls from "./WindowControls";
 import styles from "./BrowserMock.module.css";
 import { getBrowserContent } from "./mockDataHelpers";
 
@@ -7,13 +8,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q }: Props) {
   return (
     <div className={styles.browserContainer}>
       <div className={styles.browserHeader}>
-        {os === "mac" && (
-          <div className={styles.macButtons}>
-             <div className={styles.browserDotRed}></div>
-             <div className={styles.browserDotYellow}></div>
-             <div className={styles.browserDotGreen}></div>
-          </div>
-        )}
+        {os === "mac" && <WindowControls os={os} />}
         <div className={styles.browserTabs} style={{ display: "flex", gap: "8px", marginLeft: "16px" }}>
           <div className={styles.browserTabActive} style={{ backgroundColor: "#fff", padding: "4px 12px", borderRadius: "8px 8px 0 0", fontSize: "12px", display: "flex", alignItems: "center", gap: "8px" }}>
              <div style={{ flex: 1 }}>{content.title}</div>
@@ -29,6 +24,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q }: Props) {
         <div className={styles.browserAddress} style={q?.type?.includes("copy_url") && isSuccess ? { backgroundColor: "#cce5ff", color: "#000" } : {}}>
           {content.url}
         </div>
+        {os === "windows" && <WindowControls os={os} />}
       </div>
       <div className={styles.browserBody} style={{ padding: "20px", display: "flex", flexDirection: "column", gap: "16px", backgroundColor: "#fff", color: "#333", height: "100%" }}>
         <h1 style={{ margin: 0, fontSize: "24px" }}>{content.h1}</h1>

@@ -1,3 +1,4 @@
+import WindowControls from "./WindowControls";
 import styles from "./SlackMock.module.css";
 
 type Props = { os?: "windows" | "mac"; isSuccess?: boolean; };
@@ -5,14 +6,9 @@ export default function SlackMock({ os = "windows", isSuccess }: Props) {
   return (
     <div className={styles.slackContainer}>
       <div className={styles.slackHeader}>
-        {os === "mac" ? (
-          <div className={styles.macButtons}>
-            <div className={styles.browserDotRed}></div>
-            <div className={styles.browserDotYellow}></div>
-            <div className={styles.browserDotGreen}></div>
-          </div>
-        ) : null}
+        {os === "mac" && <WindowControls os={os} />}
         <div className={styles.slackSearch}>🔍 検索...</div>
+        {os === "windows" && <WindowControls os={os} />}
       </div>
       <div className={styles.slackBody}>
         <div className={styles.slackSidebar}>

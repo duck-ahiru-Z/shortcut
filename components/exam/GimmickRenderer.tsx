@@ -74,18 +74,33 @@ export default function GimmickRenderer({
 
   // 2. Context-aware generic mock UI
   const getUIContext = (text: string) => {
-    if (/(Excel|セル|シート|数式|オートSUM)/i.test(text)) return "excel";
-    if (/(Word|段落|文書|文字|書式)/i.test(text)) return "word";
-    if (/(ブラウザ|タブ|ページ|ダウンロード|再読み込み|ブックマーク|履歴|Chrome)/i.test(text)) return "browser";
-    if (/(エクスプローラー|フォルダ|ファイル)/i.test(text)) return "explorer";
-    if (/(VS Code|エディタ|マルチカーソル|コメントアウト|ターミナル|統合ターミナル|リネーム|関数|コマンドパレット)/i.test(text)) return "vscode";
+    // 1. Exact Tag Matching (Highest Priority)
+    if (text.includes('【Excel】') || text.includes('（Excel）')) return "excel";
+    if (text.includes('【ブラウザ】') || text.includes('（ブラウザ）') || text.includes('（フォーム入力）')) return "browser";
+    if (text.includes('【VS Code】') || text.includes('（VS Code）')) return "vscode";
+    if (text.includes('【ターミナル】') || text.includes('（ターミナル）')) return "vscode";
+    if (text.includes('【Slack】') || text.includes('（Slack）')) return "slack";
+    if (text.includes('【Word】') || text.includes('（Word）') || text.includes('ドキュメントを「印刷」')) return "word";
+    if (text.includes('【Word/PowerPoint】')) return "word";
+    if (text.includes('【PowerPoint】') || text.includes('（PowerPoint）')) return "powerpoint";
+    if (text.includes('【エクスプローラー/共通】') || text.includes('（エクスプローラー）')) return "explorer";
+    if (text.includes('【Windows共通】') || text.includes('【Mac共通】')) return "windows";
+    
+    // 2. Fuzzy Text Matching (Fallback)
+    if (/(Excel|セル|シート|数式|オートサム|フラッシュフィル|表の|データが)/i.test(text)) return "excel";
+    if (/(Word|段落|文字|文章|書式|議事録|テキスト)/i.test(text)) return "word";
+    if (/(ブラウザ|タブ|ページ|ダウンロード|再読み込み|ブックマーク|履歴|Chrome|キャッシュ|シークレット|URL)/i.test(text)) return "browser";
+    if (/(エクスプローラー|フォルダ|ファイル|Finder)/i.test(text)) return "explorer";
+    if (/(VS Code|エディタ|マルチカーソル|コメントアウト|統合ターミナル|リネーム|関数|コマンドパレット|定義へ移動|行ごと削除|フォーマット|クイックオープン)/i.test(text)) return "vscode";
     if (/(PowerPoint|スライド|プレゼンテーション|図形)/i.test(text)) return "powerpoint";
-    if (/(Slack|Teams|チャット|チャンネル|メッセージ)/i.test(text)) return "slack";
+    if (/(Slack|Teams|チャット|チャンネル|メッセージ|未読)/i.test(text)) return "slack";
+    if (/(ターミナル|コマンドプロンプト|シェル|コマンド履歴|リバースサーチ)/i.test(text)) return "vscode";
     if (/(タスクマネージャー)/i.test(text)) return "taskmanager";
     if (/(ファイル名を指定して実行)/i.test(text)) return "rundialog";
     if (/(通知パネル|アクションセンター)/i.test(text)) return "actioncenter";
     if (/(タスクビュー|仮想デスクトップ)/i.test(text)) return "taskview";
-    if (/(Windows|タスクバー|デスクトップ|仮想|設定|アプリ|画面|パソコン|システム|スタートメニュー|コマンドプロンプト|電卓|メモ帳|クイックリンクメニュー|PC|クリップボード)/i.test(text)) return "windows";
+    if (/(Windows|Mac|タスクバー|デスクトップ|仮想|設定|アプリ|画面|パソコン|システム|スタートメニュー|電卓|メモ帳|クイックリンクメニュー|PC|クリップボード|ロック)/i.test(text)) return "windows";
+    
     return "default";
   };
 
