@@ -92,7 +92,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
           <div style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden', gap: '12px' }}>
             <div style={{ flex: 1, overflowY: "auto", fontSize: "14px", lineHeight: "1.6", color: "#333", wordBreak: "break-all", fontFamily: "monospace", border: "1px solid #ddd", padding: "8px", borderRadius: "4px" }}>
               {findPasswordContent?.prefix}
-              <span style={{ backgroundColor: '#ffeb3b', padding: '0 2px' }}>{q?.taskData?.anchor}{q?.taskData?.password}</span>
+              <span>{q?.taskData?.anchor}{q?.taskData?.password}</span>
               {findPasswordContent?.suffix}
             </div>
             <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
