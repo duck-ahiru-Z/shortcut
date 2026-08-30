@@ -51,15 +51,15 @@ export default function GimmickRenderer({
     if (text.includes('【VS Code】') || text.includes('（VS Code）')) return "vscode";
     if (text.includes('【ターミナル】') || text.includes('（ターミナル）')) return "vscode";
     if (text.includes('【Slack】') || text.includes('（Slack）')) return "slack";
-    if (text.includes('【Word】') || text.includes('（Word）') || text.includes('ドキュメントを「印刷」')) return "word";
+    if (text.includes('【Word】') || text.includes('（Word）') || text.includes('ドキュメントを「印刷」') || text.includes('ファイルを保存') || text.includes('上書き保存')) return "word";
     if (text.includes('【Word/PowerPoint】')) return "word";
     if (text.includes('【PowerPoint】') || text.includes('（PowerPoint）')) return "powerpoint";
     if (text.includes('【エクスプローラー/共通】') || text.includes('（エクスプローラー）')) return "explorer";
     if (text.includes('【Windows共通】') || text.includes('【Mac共通】')) return "windows";
     
     // 2. Fuzzy Text Matching (Fallback)
-    if (/(Excel|セル|シート|数式|オートサム|フラッシュフィル|表の|データが)/i.test(text)) return "excel";
-    if (/(Word|段落|文字|文章|書式|議事録|テキスト)/i.test(text)) return "word";
+    if (/(Excel|セル|シート|数式|オートサム|フラッシュフィル|表の|データ入力)/i.test(text)) return "excel";
+    if (/(Word|段落|文章|文字|書式|議事録|テキスト|メール|白紙同然)/i.test(text)) return "word";
     if (/(ブラウザ|タブ|ページ|ダウンロード|再読み込み|ブックマーク|履歴|Chrome|キャッシュ|シークレット|URL)/i.test(text)) return "browser";
     if (/(エクスプローラー|フォルダ|ファイル|Finder)/i.test(text)) return "explorer";
     if (/(VS Code|エディタ|マルチカーソル|コメントアウト|統合ターミナル|リネーム|関数|コマンドパレット|定義へ移動|行ごと削除|フォーマット|クイックオープン)/i.test(text)) return "vscode";
