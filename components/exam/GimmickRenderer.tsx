@@ -47,6 +47,7 @@ export default function GimmickRenderer({
     // 1. Exact Tag Matching (Highest Priority)
     if (text.includes('【Excel】') || text.includes('（Excel）')) return "excel";
     if (text.includes('【ブラウザ】') || text.includes('（ブラウザ）') || text.includes('（フォーム入力）')) return "browser";
+    if (text.includes('大量の文字列') || text.includes('パスワード')) return "browser";
     if (text.includes('【VS Code】') || text.includes('（VS Code）')) return "vscode";
     if (text.includes('【ターミナル】') || text.includes('（ターミナル）')) return "vscode";
     if (text.includes('【Slack】') || text.includes('（Slack）')) return "slack";
@@ -75,21 +76,22 @@ export default function GimmickRenderer({
   };
 
   const ctx = getUIContext(q.question);
-  const os = isMac ? "mac" : "windows";
-  
+  const os: "mac" | "windows" = isMac ? "mac" : "windows";
+  const mockProps = { os, isSuccess, q, inputValue, setInputValue, handleInputKeyDown, handleInputSubmit };
+
   switch (ctx) {
-    case "excel": return <ExcelMock os={os} isSuccess={isSuccess} />;
-    case "word": return <WordMock os={os} isSuccess={isSuccess} />;
-    case "browser": return <BrowserMock os={os} isSuccess={isSuccess} />;
-    case "explorer": return <ExplorerMock os={os} isSuccess={isSuccess} />;
-    case "windows": return <WindowsMock os={os} isSuccess={isSuccess} />;
-    case "vscode": return <VsCodeMock os={os} isSuccess={isSuccess} />;
-    case "powerpoint": return <PowerpointMock os={os} isSuccess={isSuccess} />;
-    case "slack": return <SlackMock os={os} isSuccess={isSuccess} />;
-    case "taskmanager": return <TaskManagerMock os={os} isSuccess={isSuccess} />;
-    case "rundialog": return <RunDialogMock os={os} isSuccess={isSuccess} />;
-    case "actioncenter": return <ActionCenterMock os={os} isSuccess={isSuccess} />;
-    case "taskview": return <TaskViewMock os={os} isSuccess={isSuccess} />;
+    case "excel": return <ExcelMock {...mockProps} />;
+    case "word": return <WordMock {...mockProps} />;
+    case "browser": return <BrowserMock {...mockProps} />;
+    case "explorer": return <ExplorerMock {...mockProps} />;
+    case "windows": return <WindowsMock {...mockProps} />;
+    case "vscode": return <VsCodeMock {...mockProps} />;
+    case "powerpoint": return <PowerpointMock {...mockProps} />;
+    case "slack": return <SlackMock {...mockProps} />;
+    case "taskmanager": return <TaskManagerMock {...mockProps} />;
+    case "rundialog": return <RunDialogMock {...mockProps} />;
+    case "actioncenter": return <ActionCenterMock {...mockProps} />;
+    case "taskview": return <TaskViewMock {...mockProps} />;
     default:
       return (
         <div className={styles.defaultGimmick}>

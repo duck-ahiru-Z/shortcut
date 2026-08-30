@@ -129,9 +129,8 @@ export default function PracticalActiveScreen({
         <button 
           onClick={() => setShowKeyboard(prev => !prev)} 
           className="btn btn-outline"
-          style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
         >
-          <span>⌨️</span> キーボード表示
+          キーボードを表示
         </button>
         <button 
           onClick={() => onSkip(q.id)} 

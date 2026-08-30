@@ -147,11 +147,21 @@ export default function VirtualKeyboard({ os = "windows", onClose }: Props) {
     if (k.startsWith("F") && k.length > 1) className += ` ${styles.fnKey}`;
 
     const label = KEY_LABELS[k] || k;
+    
+    // Adjust font size for keys with long labels so they don't overflow
+    let fontSize = "14px";
+    if (["半/全", "カナ/かな", "無変換", "変換", "Enter", "Shift", "Command", "Option", "Control", "Backspace"].includes(label)) {
+      fontSize = "12px";
+    }
+    if (label.length > 5) {
+      fontSize = "10px";
+    }
 
     return (
       <button 
         key={`${k}-${idx}`} 
         className={className} 
+        style={{ fontSize }}
         onTouchStart={(e) => { e.preventDefault(); handleKeyPress(k); }} 
         onMouseDown={(e) => { e.preventDefault(); handleKeyPress(k); }}
       >
