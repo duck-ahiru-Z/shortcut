@@ -18,7 +18,7 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
           <div className={styles.explorerSidebarItem3}></div>
         </div>
         <div className={styles.explorerMain}>
-          {q?.type?.includes("new_folder") ? "新しいフォルダー" : (q?.type?.includes("rename") ? "ファイル名変更" : "指示されたキーを入力...")}
+          {(q?.question || "").includes("新しいフォルダ") ? "新しいフォルダー" : ((q?.question || "").includes("名前を変更") ? "ファイル名変更" : "指示されたキーを入力...")}
         </div>
       </div>
     

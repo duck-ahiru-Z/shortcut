@@ -4,7 +4,7 @@ import { getBrowserContent } from "./mockDataHelpers";
 
 type Props = { os?: "windows" | "mac"; isSuccess?: boolean; q?: any; };
 export default function BrowserMock({ os = "windows", isSuccess, q }: Props) {
-  const content = getBrowserContent(q?.type || "");
+  const content = getBrowserContent(q?.question || "");
   return (
     <div className={styles.browserContainer}>
       <div className={styles.browserHeader}>
@@ -14,14 +14,14 @@ export default function BrowserMock({ os = "windows", isSuccess, q }: Props) {
              <div style={{ flex: 1 }}>{content.title}</div>
              <div style={{ color: '#888' }}>✕</div>
           </div>
-          {q?.type?.includes("duplicate") && isSuccess && (
+          {(q?.question || "").includes("複製") && isSuccess && (
             <div className={styles.browserTabActive} style={{ backgroundColor: "#fff", padding: "4px 12px", borderRadius: "8px 8px 0 0", fontSize: "12px", display: "flex", alignItems: "center", gap: "8px" }}>
                <div style={{ flex: 1 }}>{content.title}</div>
                <div style={{ color: '#888' }}>✕</div>
             </div>
           )}
         </div>
-        <div className={styles.browserAddress} style={q?.type?.includes("copy_url") && isSuccess ? { backgroundColor: "#cce5ff", color: "#000" } : {}}>
+        <div className={styles.browserAddress} style={(q?.question || "").includes("URL") && isSuccess ? { backgroundColor: "#cce5ff", color: "#000" } : {}}>
           {content.url}
         </div>
         {os === "windows" && <WindowControls os={os} />}
@@ -30,14 +30,14 @@ export default function BrowserMock({ os = "windows", isSuccess, q }: Props) {
         <h1 style={{ margin: 0, fontSize: "24px" }}>{content.h1}</h1>
         <p style={{ margin: 0, color: "#555", lineHeight: "1.6" }}>{content.p}</p>
         
-        {q?.type?.includes("devtools") && isSuccess && (
+        {(q?.question || "").includes("開発者ツール") || (q?.question || "").includes("エラーを確認") && isSuccess && (
           <div style={{ marginTop: "auto", height: "150px", borderTop: "1px solid #ccc", backgroundColor: "#f3f3f3", padding: "8px", fontFamily: "monospace", fontSize: "12px", color: "#d32f2f" }}>
             Uncaught TypeError: Cannot read properties of undefined (reading 'map')<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;at renderList (app.js:42)
           </div>
         )}
       </div>
-      {isSuccess && !q?.type?.includes("devtools") && <div className={styles.successToast}>実行しました！</div>}
+      {isSuccess && !(q?.question || "").includes("開発者ツール") || (q?.question || "").includes("エラーを確認") && <div className={styles.successToast}>実行しました！</div>}
     </div>
   );
 }
