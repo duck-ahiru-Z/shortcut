@@ -8,7 +8,7 @@ type Props = {
 
 export default function WindowsMock({ os = "windows", isSuccess, q }: Props) {
   const question = q?.question || "";
-  const isCancel = question.includes("キャンセル") || question.includes("ダイアログ");
+  const isCancel = question.includes("キャンセル") || question.includes("ダイアログ") || question.includes("ポップアップ");
   const isCut = question.includes("切り取り") || question.includes("カット");
   const isCopy = question.includes("コピー");
   const isUndo = question.includes("元に戻す");
@@ -46,7 +46,7 @@ export default function WindowsMock({ os = "windows", isSuccess, q }: Props) {
             
             {isSuccess && (
                <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", padding: "20px", backgroundColor: "rgba(0,0,0,0.7)", color: "#fff", borderRadius: "8px", fontSize: "24px" }}>
-                 キャンセルしました
+                 {question.includes("ポップアップ") ? "閉じました" : "キャンセルしました"}
                </div>
             )}
           </div>
@@ -123,7 +123,6 @@ export default function WindowsMock({ os = "windows", isSuccess, q }: Props) {
         )}
       </div>
     
-      {isSuccess && !isCancel && !isCut && <div className={styles.successToast}>実行しました！</div>}
     </div>
   );
 }

@@ -6,8 +6,11 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
   const question = q?.question || "";
   
   const isNewFolder = question.includes("新しいフォルダ");
-  const isRename = question.includes("名前を変更") || question.includes("ファイル名を");
+  const isRename = (question.includes("名前を変更") || question.includes("ファイル名を")) && !question.includes("コピー");
+  const isCopy = question.includes("コピー");
   const isUndo = question.includes("間違えて閉じてしまったフォルダ");
+
+  const isFileSelected = isRename || isCopy || question.includes("選択中のファイル");
 
   return (
     <div className={styles.explorerContainer}>
@@ -43,7 +46,7 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
             <div style={{ fontSize: "12px", marginTop: "4px" }}>src</div>
           </div>
           
-          <div style={{ width: "80px", textAlign: "center", backgroundColor: isRename && !isSuccess ? "#e3f2fd" : "transparent", padding: "4px", borderRadius: "4px" }}>
+          <div style={{ width: "80px", textAlign: "center", backgroundColor: (isFileSelected && !isSuccess) || (isCopy && isSuccess) ? "#cce5ff" : "transparent", padding: "4px", borderRadius: "4px" }}>
             <svg width="40" height="40" viewBox="0 0 24 24" fill="#ccc"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg>
             {isRename && isSuccess ? (
               <input type="text" defaultValue="report_v2.txt" autoFocus style={{ width: "100%", fontSize: "12px", textAlign: "center", border: "1px solid #0b57d0" }} />
@@ -62,7 +65,11 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
         </div>
       </div>
     
-      {isSuccess && <div className={styles.successToast}>実行しました！</div>}
+      {isSuccess && (
+        <div className={styles.successToast}>
+          {isCopy ? "コピーしました！" : "実行しました！"}
+        </div>
+      )}
     </div>
   );
 }

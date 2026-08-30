@@ -442,18 +442,7 @@
       ],
       "explanation": "Ctrl+Yは、Ctrl+Zで取り消した操作をやり直すショートカットです。戻しすぎた編集を再適用したい時に便利です。",
       "id": 5039
-    },
-    {
-      "expectedKeyCombo": [
-        "escape"
-      ],
-      "question": "検索バーや小さなポップアップが画面に残っていて作業の邪魔です。キーボードで閉じてください。",
-      "answer": "CORRECT",
-      "id": 5040,
-      "type": "escape_close_overlay",
-      "explanation": "Escapeキーは、検索バー、メニュー、ダイアログなどを閉じる時によく使います。マウスで閉じるボタンを探さずに、すばやく元の作業へ戻れます。"
-    }
-  ],
+    }],
   "practical-4kyu": [
     {
       "answer": "CORRECT",
@@ -1177,18 +1166,7 @@
       ],
       "explanation": "Cmd+Yは、Cmd+Zで取り消した操作をやり直すショートカットです。戻しすぎた編集を再適用したい時に便利です。",
       "id": 5039
-    },
-    {
-      "expectedKeyCombo": [
-        "escape"
-      ],
-      "question": "検索バーや小さなポップアップが画面に残っていて作業の邪魔です。キーボードで閉じてください。",
-      "answer": "CORRECT",
-      "id": 5040,
-      "type": "escape_close_overlay",
-      "explanation": "Escapeキーは、検索バー、メニュー、ダイアログなどを閉じる時によく使います。マウスで閉じるボタンを探さずに、すばやく元の作業へ戻れます。"
-    }
-  ],
+    }],
   "practical-mac-4kyu": [
     {
       "answer": "CORRECT",

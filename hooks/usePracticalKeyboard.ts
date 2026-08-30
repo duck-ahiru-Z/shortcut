@@ -8,6 +8,7 @@ type Question = {
   expectedKeyComboHash?: string;
   expectedKeySequenceHashes?: string[];
   type?: string;
+  answer?: string;
 };
 
 type UsePracticalKeyboardProps = {
@@ -131,11 +132,19 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
 
       if (isMatch) {
         sequenceIndexRef.current = 0;
+        
+        // If it requires a specific string answer (not just "CORRECT"), we should NOT auto-submit.
+        // The user must type/paste the answer into an input box and click submit.
+        const requiresManualSubmit = q.answer !== "CORRECT" && q.answer !== undefined;
+
         if (!isTypingTask) {
           e.preventDefault();
         }
-        if (onSuccess) onSuccess(q.id);
-        else onAnswer(q.id, "CORRECT");
+        
+        if (!requiresManualSubmit) {
+          if (onSuccess) onSuccess(q.id);
+          else onAnswer(q.id, "CORRECT");
+        }
       }
     };
 
