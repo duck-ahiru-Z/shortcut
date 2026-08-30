@@ -88,7 +88,13 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
       </div>
 
       <div className={styles.browserBody} style={mainContainerStyle}>
-        {isFindPassword ? (
+        {isReload && isSuccess ? (
+          <div style={{ margin: "auto", display: "flex", flexDirection: "column", alignItems: "center", gap: "16px", color: "#666" }}>
+            <div style={{ fontSize: "32px", animation: "spin 1s linear infinite" }}>↻</div>
+            <div style={{ fontSize: "18px" }}>ページを再読み込みしています...</div>
+            <style>{`@keyframes spin { 100% { transform: rotate(360deg); } }`}</style>
+          </div>
+        ) : isFindPassword ? (
           <div style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden', gap: '12px' }}>
             <div style={{ flex: 1, overflowY: "auto", fontSize: "14px", lineHeight: "1.6", color: "#333", wordBreak: "break-all", fontFamily: "monospace", border: "1px solid #ddd", padding: "8px", borderRadius: "4px" }}>
               {findPasswordContent?.prefix}

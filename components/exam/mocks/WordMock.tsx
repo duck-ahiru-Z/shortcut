@@ -18,13 +18,14 @@ export default function WordMock({ os = "windows", isSuccess, q, inputValue = ""
   const isBold = question.includes("太字");
   const isItalic = question.includes("斜体");
   const isUnderline = question.includes("下線");
+  const isPreSelected = question.includes("選択中");
   // Ensure we match the exact copy paste question to avoid triggering on other things
   const isCopyPaste = question.includes("左のテキストエリア") || question.includes("右のテキストエリア") || question.includes("貼り付けて回答");
 
   let content = q?.taskData?.targetText || `議事録\n\n1. 挨拶\n2. 前回の振り返り\n3. 今後の課題\n以上`;
   
   const textAreaStyle: any = {
-    backgroundColor: (isSuccess && isSelectAll && !isCopyPaste) ? "#e3f2fd" : "transparent",
+    backgroundColor: ((isSuccess && isSelectAll && !isCopyPaste) || isPreSelected) ? "#cce5ff" : "transparent",
     fontWeight: (isSuccess && isBold) ? "bold" : "normal",
     fontStyle: (isSuccess && isItalic) ? "italic" : "normal",
     textDecoration: (isSuccess && isUnderline) ? "underline" : "none",
