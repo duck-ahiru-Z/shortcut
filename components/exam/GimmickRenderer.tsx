@@ -1,5 +1,4 @@
 import React from "react";
-import LegacyGimmicks from "./mocks/LegacyGimmicks";
 import ExcelMock from "./mocks/ExcelMock";
 import WordMock from "./mocks/WordMock";
 import BrowserMock from "./mocks/BrowserMock";
@@ -43,35 +42,6 @@ export default function GimmickRenderer({
   handleInputSubmit,
   isSuccess
 }: Props) {
-  // 1. Legacy type-based gimmicks
-  const legacyTypes = ["select_all", "find_password", "copy_paste", "rename_file", "save_file", "undo_action", "bold_text", "print_doc"];
-  if (q.type && legacyTypes.includes(q.type)) {
-    return (
-      <div style={{ position: 'relative', width: '100%' }}>
-        <LegacyGimmicks
-          type={q.type}
-          taskData={q.taskData}
-          inputValue={inputValue}
-          setInputValue={setInputValue}
-          handleInputKeyDown={handleInputKeyDown}
-          handleInputSubmit={handleInputSubmit}
-          isSuccess={isSuccess}
-        />
-        {isSuccess && (
-          <div style={{
-            position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-            backgroundColor: 'var(--success)', color: 'white', padding: '16px 32px',
-            borderRadius: '8px', fontSize: '24px', fontWeight: 'bold',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.2)', zIndex: 100,
-            animation: 'fadeInOut 1s forwards'
-          }}>
-            実行しました！
-          </div>
-        )}
-      </div>
-    );
-  }
-
   // 2. Context-aware generic mock UI
   const getUIContext = (text: string) => {
     // 1. Exact Tag Matching (Highest Priority)

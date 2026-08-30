@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 type Question = {
   id: number;
+  question: string;
   expectedKeyCombo?: string[];
   expectedKeySequence?: { keys: string[] }[];
   expectedKeyComboHash?: string;
@@ -16,30 +17,36 @@ type UsePracticalKeyboardProps = {
   onSuccess?: (qId: number) => void;
 };
 
+async function calculateComboHash(pressedSet: Set<string>): Promise<string> {
+  const sortedPressed = Array.from(pressedSet).sort().join("+");
+  const encoder = new TextEncoder();
+  const data = encoder.encode(sortedPressed);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
 export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: UsePracticalKeyboardProps) {
   const sequenceIndexRef = useRef(0);
 
   useEffect(() => {
     if (!q || (!q.expectedKeyCombo && !q.expectedKeyComboHash && !q.expectedKeySequence && !q.expectedKeySequenceHashes) || isSubmitting) return;
 
-    // For tasks that require typing, we shouldn't prevent default on everything.
-    const isTypingTask = q.type === "find_password" || q.type === "copy_paste" || q.type === "select_all";
+    // For tasks that require typing in an input field (like searching or renaming)
+    const isTypingTask = /検索|パスワード|コピー|すべて選択|名前を変更|名前の変更|フォルダ/.test(q.question || "");
 
     const handleKeyDown = async (e: KeyboardEvent) => {
-      if (!isTypingTask) {
-        // Block all native browser actions for shortcut questions (e.g. prevent Ctrl+S from saving the page)
+      // Allow specific inputs to type normally, or if typing task let clipboard work
+      if (!isTypingTask && !(e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement)) {
+        // Block native actions (like Ctrl+S saving the webpage)
         e.preventDefault();
       } else {
-        // For typing tasks, allow native clipboard (Ctrl+C, Ctrl+V) but block dangerous browser shortcuts
         const k = e.key.toLowerCase();
         const isDangerous = 
           (e.ctrlKey && ['r', 's', 'p'].includes(k)) ||
           (e.metaKey && ['r', 's', 'p'].includes(k)) ||
           e.key === 'F5';
-        
-        if (isDangerous) {
-          e.preventDefault();
-        }
+        if (isDangerous) e.preventDefault();
       }
 
       const pressed = new Set<string>();
@@ -47,85 +54,55 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
       if (e.shiftKey) pressed.add("shift");
       if (e.altKey) pressed.add("alt");
       if (e.metaKey) {
-        // e.metaKey is the Command key on Mac and the Windows key on Windows.
-        // The DB might expect 'meta' or 'windows'.
-        // To be safe against both matching logic (hash and size comparison), 
-        // we'll just let the later e.key handling add 'meta' or 'windows'.
-        // But e.key might not be 'meta' if it's a combo like Cmd+C.
-        // Wait, e.key for Cmd+C is 'c'. So we MUST add the modifier here.
-        // Let's add the exact modifier the question expects, or both and adjust size checking?
-        // Actually, let's just add 'meta' for Mac, and 'windows' for Windows if we know the OS.
-        // But we don't have OS here. Let's look at navigator.
         const isMac = navigator.userAgent.toUpperCase().indexOf('MAC') >= 0;
-        if (isMac) {
-          pressed.add("meta");
-        } else {
-          pressed.add("windows");
-        }
+        pressed.add(isMac ? "meta" : "windows");
       }
 
       const keyMap: Record<string, string> = { 
-        " ": "space",
-        ".": "period",
-        ",": "comma",
-        "+": "plus",
-        "-": "minus",
-        "=": "equal",
-        ";": "semicolon",
-        "'": "apostrophe",
-        "/": "slash",
-        "`": "grave",
-        "pause": "break"
+        " ": "space", ".": "period", ",": "comma", "+": "plus", "-": "minus",
+        "=": "equal", ";": "semicolon", "'": "apostrophe", "/": "slash",
+        "`": "grave", "pause": "break"
       };
+      
       let mainKey = e.key.toLowerCase();
       if (keyMap[mainKey]) mainKey = keyMap[mainKey];
       
-      if (!["control", "shift", "alt", "meta", "os"].includes(mainKey)) {
+      if (!["control", "shift", "alt", "meta", "os", "windows"].includes(mainKey)) {
         pressed.add(mainKey);
       }
 
       let isMatch = false;
 
       if (q.expectedKeyComboHash) {
-        const sortedPressed = Array.from(pressed).sort().join("+");
-        const encoder = new TextEncoder();
-        const data = encoder.encode(sortedPressed);
-        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-        const hashArray = Array.from(new Uint8Array(hashBuffer));
-        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        const hashHex = await calculateComboHash(pressed);
         isMatch = (hashHex === q.expectedKeyComboHash);
       } else if (q.expectedKeySequenceHashes || q.expectedKeySequence) {
         let isStepMatch = false;
         let isFirstStepMatch = false;
         
         if (q.expectedKeySequenceHashes) {
-          const sortedPressed = Array.from(pressed).sort().join("+");
-          const encoder = new TextEncoder();
-          const data = encoder.encode(sortedPressed);
-          const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-          const hashArray = Array.from(new Uint8Array(hashBuffer));
-          const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-          
+          const hashHex = await calculateComboHash(pressed);
           isStepMatch = (hashHex === q.expectedKeySequenceHashes[sequenceIndexRef.current]);
           isFirstStepMatch = (hashHex === q.expectedKeySequenceHashes[0]);
-                  } else if (q.expectedKeySequence) {
-            let effectivePressed = new Set(pressed);
-            const requiresShiftLayouts = ["plus", "equal", "asterisk", "question", "less", "greater", "colon", "quotedbl", "braceleft", "braceright", "bar", "tilde", "underscore", "+", "*", "?", "<", ">", ":", "\"", "{", "}", "|", "~", "_", "="];
-            if (pressed.has("shift") && requiresShiftLayouts.includes(mainKey)) {
-              effectivePressed.delete("shift");
-            }
-            
-            const expectedCombo = q.expectedKeySequence[sequenceIndexRef.current].keys.map(k => k.toLowerCase());
-            if (expectedCombo.includes("shift")) effectivePressed.add("shift");
-            isStepMatch = expectedCombo.every(k => effectivePressed.has(k)) && effectivePressed.size === expectedCombo.length;
-            
-            const firstStepCombo = q.expectedKeySequence[0].keys.map(k => k.toLowerCase());
-            let firstEffectivePressed = new Set(pressed);
-            if (pressed.has("shift") && requiresShiftLayouts.includes(mainKey) && !firstStepCombo.includes("shift")) {
-              firstEffectivePressed.delete("shift");
-            }
-            isFirstStepMatch = firstStepCombo.every(k => firstEffectivePressed.has(k)) && firstEffectivePressed.size === firstStepCombo.length;
+        } else if (q.expectedKeySequence) {
+          const requiresShiftLayouts = ["plus", "equal", "asterisk", "question", "less", "greater", "colon", "quotedbl", "braceleft", "braceright", "bar", "tilde", "underscore", "+", "*", "?", "<", ">", ":", "\"", "{", "}", "|", "~", "_", "="];
+          
+          let effectivePressed = new Set(pressed);
+          if (pressed.has("shift") && requiresShiftLayouts.includes(mainKey)) {
+            effectivePressed.delete("shift");
           }
+          
+          const expectedCombo = q.expectedKeySequence[sequenceIndexRef.current].keys.map(k => k.toLowerCase());
+          if (expectedCombo.includes("shift")) effectivePressed.add("shift");
+          isStepMatch = expectedCombo.every(k => effectivePressed.has(k)) && effectivePressed.size === expectedCombo.length;
+          
+          const firstStepCombo = q.expectedKeySequence[0].keys.map(k => k.toLowerCase());
+          let firstEffectivePressed = new Set(pressed);
+          if (pressed.has("shift") && requiresShiftLayouts.includes(mainKey) && !firstStepCombo.includes("shift")) {
+            firstEffectivePressed.delete("shift");
+          }
+          isFirstStepMatch = firstStepCombo.every(k => firstEffectivePressed.has(k)) && firstEffectivePressed.size === firstStepCombo.length;
+        }
 
         const totalSteps = q.expectedKeySequenceHashes ? q.expectedKeySequenceHashes.length : (q.expectedKeySequence ? q.expectedKeySequence.length : 0);
 
@@ -134,18 +111,13 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
             isMatch = true;
           } else {
             sequenceIndexRef.current += 1;
-            return; // Wait for next key combo
-          }
-        } else if (!["control", "shift", "alt", "meta", "os"].includes(mainKey)) {
-          // If they pressed a final key and it didn't match the expected step, reset sequence.
-          if (isFirstStepMatch) {
-            sequenceIndexRef.current = 1;
             return;
-          } else {
-            sequenceIndexRef.current = 0;
           }
+        } else if (!["control", "shift", "alt", "meta", "os", "windows"].includes(mainKey)) {
+          sequenceIndexRef.current = isFirstStepMatch ? 1 : 0;
+          if (isFirstStepMatch) return;
         }
-            } else if (q.expectedKeyCombo) {
+      } else if (q.expectedKeyCombo) {
         const expected = q.expectedKeyCombo.map((k: string) => k.toLowerCase());
         let effectivePressed = new Set(pressed);
         const requiresShiftLayouts = ["plus", "equal", "asterisk", "question", "less", "greater", "colon", "quotedbl", "braceleft", "braceright", "bar", "tilde", "underscore", "+", "*", "?", "<", ">", ":", "\"", "{", "}", "|", "~", "_", "="];
@@ -157,13 +129,13 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
         isMatch = expected.every((k: string) => effectivePressed.has(k)) && effectivePressed.size === expected.length;
       }
 
-      if (isMatch && !isTypingTask) {
-        sequenceIndexRef.current = 0; // Reset for next time just in case
-        if (onSuccess) {
-          onSuccess(q.id);
-        } else {
-          onAnswer(q.id, "CORRECT");
+      if (isMatch) {
+        sequenceIndexRef.current = 0;
+        if (!isTypingTask) {
+          e.preventDefault();
         }
+        if (onSuccess) onSuccess(q.id);
+        else onAnswer(q.id, "CORRECT");
       }
     };
 
