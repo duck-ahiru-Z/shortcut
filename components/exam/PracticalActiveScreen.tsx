@@ -75,7 +75,7 @@ export default function PracticalActiveScreen({
     setIsSuccess(true);
     setTimeout(() => {
       onAnswer(qId, "CORRECT");
-    }, 1000);
+    }, 300);
   }, [onAnswer]);
 
   // Keyboard shortcut listener extracted to a custom hook

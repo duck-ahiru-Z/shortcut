@@ -30,10 +30,15 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
   // Specific legacy types checking
   const isFindPassword = question.includes("検索し、その直後に書かれている") || question.includes("パスワード");
   const isPrint = question.includes("印刷");
+  const isCopyPasteURL = question.includes("URLをコピー");
 
   const addressBarStyle = isAddressBar && isSuccess 
     ? { backgroundColor: "#cce5ff", color: "#000" } 
     : {};
+
+  const displayedUrl = isCopyPasteURL && q?.taskData?.targetText 
+    ? q.taskData.targetText 
+    : (isFindPassword ? "https://example.com/password-list" : content.url);
 
   const mainContainerStyle: any = {
     padding: "20px", display: "flex", flexDirection: "column", gap: "16px", backgroundColor: isPrivate ? "#333" : "#fff", color: isPrivate ? "#ddd" : "#333", height: "100%", position: "relative"
@@ -80,7 +85,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
       <div style={{ backgroundColor: isPrivate ? "#333" : "#fff", padding: "8px", display: "flex", gap: "8px", alignItems: "center", borderBottom: "1px solid #ccc" }}>
         <div style={{ color: isReload && isSuccess ? "#0b57d0" : "#666" }}>↻</div>
         <div className={styles.browserAddress} style={{ ...addressBarStyle, flex: 1, padding: "4px 12px", borderRadius: "16px", border: "1px solid #ddd", fontSize: "12px" }}>
-          {isNewTab && isSuccess ? "" : (isFindPassword ? "https://example.com/password-list" : content.url)}
+          {isNewTab && isSuccess ? "" : displayedUrl}
         </div>
         {isBookmark && (
           <div style={{ color: isSuccess ? "#f4b400" : "#ccc", fontSize: "16px" }}>★</div>
