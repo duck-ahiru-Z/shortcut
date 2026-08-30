@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function VsCodeMock({ os = "windows", isSuccess, q }: Props) {
-  const defaultCode = getVsCodeInitialCode(q?.type || "");
+  const defaultCode = getVsCodeInitialCode(q?.question || "");
   return (
     <div className={styles.vscodeContainer}>
       <div className={styles.vscodeHeader}>
@@ -30,16 +30,16 @@ export default function VsCodeMock({ os = "windows", isSuccess, q }: Props) {
             defaultValue={defaultCode} 
             spellCheck={false}
           />
-          {q?.type?.includes("terminal") && (
+          {(q?.question || "").includes("ターミナル") || (q?.question || "").includes("コマンドプロンプト") && (
             <div style={{ height: "40%", borderTop: "1px solid #333", backgroundColor: "#1e1e1e", color: "#ccc", padding: "8px", fontFamily: "monospace", fontSize: "12px", overflow: "hidden" }}>
               <div>C:\Project&gt; npm run dev</div>
               <div style={{ color: "#4caf50" }}>Starting development server...</div>
               <div>Compiled successfully!</div>
-              {isSuccess && q?.type?.includes("clear") && <div style={{ color: "#888", marginTop: "8px" }}>(Terminal cleared)</div>}
-              {isSuccess && q?.type?.includes("stop") && <div style={{ color: "#ffeb3b", marginTop: "8px" }}>^C<br/>C:\Project&gt;</div>}
+              {isSuccess && (q?.question || "").includes("ログが画面いっぱいに流れて") && <div style={{ color: "#888", marginTop: "8px" }}>(Terminal cleared)</div>}
+              {isSuccess && (q?.question || "").includes("強制終了") && <div style={{ color: "#ffeb3b", marginTop: "8px" }}>^C<br/>C:\Project&gt;</div>}
             </div>
           )}
-          {isSuccess && !q?.type?.includes("terminal") && (
+          {isSuccess && !(q?.question || "").includes("ターミナル") || (q?.question || "").includes("コマンドプロンプト") && (
             <div className={styles.successToast}>
               実行しました！
             </div>

@@ -23,7 +23,7 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
     if (c === 0) return `100${r}`;
     if (c === 1) return `2024/08/0${r}`;
     if (c === 2) return ["佐藤", "鈴木", "高橋", "田中", "伊藤"][r-1] || "";
-    if (c === 3) return q?.type?.includes("formulas") && isSuccess ? `=VLOOKUP(C${r+1}, Master!A:B, 2, FALSE)` : `¥${r * 15000}`;
+    if (c === 3) return (q?.question || "").includes("フラッシュフィル") && isSuccess ? `=VLOOKUP(C${r+1}, Master!A:B, 2, FALSE)` : `¥${r * 15000}`;
     return "";
   };
 
@@ -49,7 +49,7 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
           {Array.from({ length: 5 }).map((_, c) => (
             <div key={`col-${c}`} className={styles.excelColHeader}>
               {getCol(c)}
-              {q?.type?.includes("filter") && isSuccess && <span style={{ marginLeft: "4px", fontSize: "10px" }}>▼</span>}
+              {(q?.question || "").includes("フィルター") && isSuccess && <span style={{ marginLeft: "4px", fontSize: "10px" }}>▼</span>}
             </div>
           ))}
         </div>
@@ -61,11 +61,11 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
               const isActive = activeCell.r === r && activeCell.c === c;
               let showActive = isActive;
               if (isSuccess) {
-                if (q?.type?.includes("used_range")) {
+                if ((q?.question || "").includes("表全体")) {
                   showActive = r >= 0 && r < 6 && c >= 0 && c < 5;
-                } else if (q?.type?.includes("select_row")) {
+                } else if ((q?.question || "").includes("行全体") || (q?.question || "").includes("行を選択")) {
                   showActive = r === activeCell.r;
-                } else if (q?.type?.includes("select_column")) {
+                } else if ((q?.question || "").includes("列全体") || (q?.question || "").includes("列を選択")) {
                   showActive = c === activeCell.c;
                 } else {
                   showActive = (r === 5 && c === 4);
