@@ -14,10 +14,10 @@ export default function PowerpointMock({ os = "windows", isSuccess, q }: Props) 
   
   if (isSlideshow && isSuccess) {
     return (
-      <div className={styles.pptContainer} style={{ backgroundColor: "#000", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <div style={{ width: "80%", height: "80%", backgroundColor: "#fff", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", boxShadow: "0 0 20px rgba(255,255,255,0.2)" }}>
-           <h1 style={{ fontSize: "64px" }}>四半期売上報告</h1>
-           <p style={{ fontSize: "32px", color: "#555" }}>2024年度 第2四半期</p>
+      <div className={styles.pptContainer} style={{ backgroundColor: "#000", display: "flex", justifyContent: "center", alignItems: "center", minHeight: "300px" }}>
+        <div style={{ width: "80%", height: "200px", backgroundColor: "#fff", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", boxShadow: "0 0 20px rgba(255,255,255,0.2)" }}>
+           <h1 style={{ fontSize: "24px", margin: "0 0 16px 0" }}>四半期売上報告</h1>
+           <p style={{ fontSize: "14px", color: "#555", margin: 0 }}>2024年度 第2四半期</p>
         </div>
         <div className={styles.successToast}>実行しました！</div>
       </div>
@@ -31,14 +31,14 @@ export default function PowerpointMock({ os = "windows", isSuccess, q }: Props) 
         <div className={styles.pptTitle}>プレゼンテーション1 - PowerPoint</div>
         {os === "windows" && <WindowControls os={os} />}
       </div>
-      <div className={styles.pptToolbar}>
+      <div className={styles.pptRibbon}>
         <div>ファイル</div><div>ホーム</div><div>挿入</div><div>描画</div><div>デザイン</div><div>画面切り替え</div><div>アニメーション</div><div>スライドショー</div>
       </div>
       <div className={styles.pptBody}>
         <div className={styles.pptSidebar}>
-          <div className={`${styles.pptThumbnail} ${!isNewSlide || !isSuccess ? styles.pptThumbnailActive : ''}`}>1</div>
-          <div className={styles.pptThumbnail}>2</div>
-          {isNewSlide && isSuccess && <div className={`${styles.pptThumbnail} ${styles.pptThumbnailActive}`} style={{ border: "2px solid #d83b01" }}>3</div>}
+          <div className={`${styles.pptSlideThumb} ${!isNewSlide || !isSuccess ? styles.pptSlideThumbActive : ''}`}>1</div>
+          <div className={styles.pptSlideThumb}>2</div>
+          {isNewSlide && isSuccess && <div className={`${styles.pptSlideThumb} ${styles.pptSlideThumbActive}`}>3</div>}
         </div>
         <div className={styles.pptMain}>
           <div className={styles.pptSlide} style={isBlackout && isSuccess ? { backgroundColor: "#000" } : {}}>
@@ -52,10 +52,10 @@ export default function PowerpointMock({ os = "windows", isSuccess, q }: Props) 
                     <div style={{ display: "flex", gap: "16px", padding: "20px", border: isGroup && isSuccess ? "2px dashed #666" : "none", position: "relative" }}>
                       {isGroup && isSuccess && <div style={{ position: "absolute", top: -10, left: -10, backgroundColor: "#fff", padding: "2px", fontSize: "10px", border: "1px solid #ccc" }}>グループ化済み</div>}
                       
-                      <div style={{ width: "100px", height: "100px", backgroundColor: "#0078d4", border: (isUngroup && isSuccess) ? "2px solid #ffb900" : "none" }}></div>
+                      <div style={{ width: "80px", height: "80px", backgroundColor: "#0078d4", border: (isUngroup && isSuccess) ? "2px solid #ffb900" : "none" }}></div>
                       
                       {(isDuplicate && isSuccess) || isGroup || isUngroup ? (
-                        <div style={{ width: "100px", height: "100px", backgroundColor: "#0078d4", border: (isUngroup && !isSuccess) ? "none" : "none" }}></div>
+                        <div style={{ width: "80px", height: "80px", backgroundColor: "#0078d4", border: (isUngroup && !isSuccess) ? "none" : "none" }}></div>
                       ) : null}
                     </div>
                   ) : (
