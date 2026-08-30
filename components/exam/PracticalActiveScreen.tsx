@@ -37,6 +37,7 @@ export default function PracticalActiveScreen({
 }: Props) {
   const q = questions[currentIndex];
   const containerRef = useRef<HTMLDivElement>(null);
+  const [showKeyboard, setShowKeyboard] = useState(false);
   
   // Define isMac at the component level so it's accessible everywhere
   const isMac = grade.includes("mac");
@@ -74,7 +75,7 @@ export default function PracticalActiveScreen({
     setIsSuccess(true);
     setTimeout(() => {
       onAnswer(qId, "CORRECT");
-    }, 1000);
+    }, 300);
   }, [onAnswer]);
 
   // Keyboard shortcut listener extracted to a custom hook
@@ -124,7 +125,13 @@ export default function PracticalActiveScreen({
         />
       </div>
 
-      <div className={styles.skipContainer}>
+      <div className={styles.skipContainer} style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
+        <button 
+          onClick={() => setShowKeyboard(prev => !prev)} 
+          className="btn btn-outline"
+        >
+          キーボードを表示
+        </button>
         <button 
           onClick={() => onSkip(q.id)} 
           className="btn btn-secondary"
@@ -141,8 +148,10 @@ export default function PracticalActiveScreen({
         </div>
       )}
 
-      {/* モバイル用仮想キーボード */}
-      <VirtualKeyboard os={isMac ? "mac" : "windows"} />
+      {/* 仮想キーボード */}
+      {showKeyboard && (
+        <VirtualKeyboard os={isMac ? "mac" : "windows"} onClose={() => setShowKeyboard(false)} />
+      )}
     </div>
   );
 }

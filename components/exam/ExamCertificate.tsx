@@ -30,12 +30,12 @@ export default function ExamCertificate({ certData, certNo }: Props) {
         </button>
       </div>
       
-      {/* キャンバス版の合格証書（高画質でプレビュー＆印刷対応） */}
-      <div className="mt-6 w-full text-center">
+      {/* キャンバス版・合格証書（高画質でプレビュー・印刷対応）*/}
+      <div className="mt-6 w-full text-center" style={{ width: "100%", textAlign: "center" }}>
         <canvas 
           id="resultCertCanvas" 
           ref={canvasRef} 
-          className="w-full max-w-[800px] h-auto aspect-[1.414/1] border border-[var(--border-color)] shadow-md"
+          style={{ width: "100%", maxWidth: "800px", height: "auto", border: "1px solid #ccc", boxShadow: "0 4px 6px rgba(0,0,0,0.1)", margin: "0 auto" }}
         ></canvas>
       </div>
       <p className="text-[13px] text-[var(--text-muted)] mt-2">

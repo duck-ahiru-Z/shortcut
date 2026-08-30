@@ -1,0 +1,917 @@
+{
+  "practical-mac-5kyu": [
+    {
+      "id": 6001,
+      "type": "select_all",
+      "question": "【Word】下のテキストエリア内の文章をすべて選択してください。（マウスによるドラッグ選択禁止）",
+      "expectedKeyCombo": [
+        "meta",
+        "a"
+      ],
+      "answer": "CORRECT",
+      "explanation": "長文をマウスでドラッグして選択するのは時間がかかり、ミスも起きやすくなります。Cmd+A（All）を使えば、どんなに長い文章でも一瞬で全選択できます。"
+    },
+    {
+      "id": 6002,
+      "type": "copy_paste",
+      "question": "【ブラウザ】下の複雑なURLをコピーして、すぐ下の入力欄に貼り付けてください。（右クリック禁止）",
+      "expectedKeyCombo": [
+        "meta",
+        "v"
+      ],
+      "taskData": {
+        "targetText": "https://example.com/secure/token=xyz987"
+      },
+      "answer": "https://example.com/secure/token=xyz987",
+      "explanation": "URLやパスワードなど、絶対に間違えてはいけない文字列は手入力せず、必ずコピー（Cmd+C）とペースト（Cmd+V）を使用して正確に入力しましょう。"
+    },
+    {
+      "id": 6003,
+      "type": "save_file",
+      "question": "【Finder/共通】このファイルを「上書き保存」してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "s"
+      ],
+      "answer": "CORRECT",
+      "explanation": "PCのフリーズや不慮のエラーに備え、作業中は息をするようにCmd+S（Save）を押すクセをつけましょう。数秒の操作が数時間の作業データを救います。"
+    },
+    {
+      "id": 6004,
+      "type": "find_password",
+      "question": "【Word】以下の大量のテキストの中から「パスワード」を探し出し、下の解答欄に入力してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "f"
+      ],
+      "taskData": {
+        "password": "APPLE"
+      },
+      "answer": "APPLE",
+      "explanation": "大量の文字列から目視で目的の単語を探すのは非効率です。Cmd+F（Find）を使えば、数万文字の中からでも瞬時に目的の箇所へジャンプできます。"
+    },
+    {
+      "id": 6005,
+      "type": "undo_action",
+      "question": "（Word）誤って削除してしまったテキストを「元に戻す」ショートカットを使用してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "z"
+      ],
+      "answer": "CORRECT",
+      "explanation": "誤って大切なテキストを消してしまった時は慌てずにCmd+Zを押しましょう。ほとんどのアプリで「直前の操作を取り消して元に戻す」ことができます。"
+    },
+    {
+      "id": 6006,
+      "type": "browser_reload",
+      "question": "【ブラウザ】ブラウザ画面を「リロード（再読み込み）」してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "r"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Webページの動作がおかしい時や、最新の情報を取得し直したい時はCmd+R（Reload）を押します。F5キーでも同様にリロードが可能です。"
+    },
+    {
+      "id": 6007,
+      "type": "bold_text",
+      "question": "（Word）選択中のテキストを「太字」にするショートカットを使用してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "b"
+      ],
+      "answer": "CORRECT",
+      "explanation": "文書作成において、マウスでメニューから「B」のアイコンを探してクリックするよりも、Cmd+B（Bold）を押す方が圧倒的に早く文字を強調できます。"
+    },
+    {
+      "id": 6008,
+      "type": "print_doc",
+      "question": "【Word】このドキュメントを「印刷」するダイアログを呼び出してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "p"
+      ],
+      "answer": "CORRECT",
+      "explanation": "資料を印刷する際、メニューをたどって「印刷」を探す必要はありません。Cmd+P（Print）を押せば、いつでもすぐに印刷設定画面を呼び出せます。"
+    },
+    {
+      "id": 6019,
+      "question": "【Mac共通】選択しているテキストやファイルを「コピー」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "c"
+      ],
+      "explanation": "Cmd + Cはコピーのショートカットです。最もよく使うショートカットの一つです。"
+    },
+    {
+      "id": 6020,
+      "question": "【Mac共通】選択しているテキストやファイルを「切り取り（カット）」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "x"
+      ],
+      "explanation": "Cmd + Xは切り取りのショートカットです。移動させたい時にコピー＆削除の代わりに使います。"
+    },
+    {
+      "id": 6021,
+      "question": "【Mac共通】誤って開いてしまったメニューやダイアログを「キャンセルして閉じて」ください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "escape"
+      ],
+      "explanation": "Escキーは、キャンセルや閉じる操作に使える基本キーです。"
+    }
+  ],
+  "practical-mac-4kyu": [
+    {
+      "id": 5001,
+      "type": "browser_new_tab",
+      "question": "（ブラウザ）「新しいタブ」を開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "t"
+      ],
+      "answer": "CORRECT",
+      "explanation": "調べ物をしている最中に、今見ているページを消さずに別の検索を始めたい時にCmd+Tが役立ちます。"
+    },
+    {
+      "id": 5002,
+      "type": "browser_close_tab",
+      "question": "（ブラウザ）「現在のタブ」を閉じてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "w"
+      ],
+      "answer": "CORRECT",
+      "explanation": "タブが増えすぎるとPCの動作が重くなります。マウスカーソルを小さな×ボタンに合わせる手間なく、Cmd+Wでサクサク閉じましょう。"
+    },
+    {
+      "id": 5003,
+      "type": "browser_reopen_tab",
+      "question": "（ブラウザ）誤って閉じてしまったタブを「復元」してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "t"
+      ],
+      "answer": "CORRECT",
+      "explanation": "「あっ、間違えて消しちゃった！」という時でも大丈夫です。Cmd+Shift+Tを押せば、閉じたタブを履歴ごと魔法のように復活させることができます。"
+    },
+    {
+      "id": 5004,
+      "type": "browser_address",
+      "question": "（ブラウザ）「アドレスバー」を選択（フォーカス）してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "l"
+      ],
+      "answer": "CORRECT",
+      "explanation": "今見ているページのURLをコピーして誰かに送りたい時や、すぐに別の検索を始めたい時は、マウスで上部をクリックするよりCmd+Lが最速です。"
+    },
+    {
+      "id": 5005,
+      "type": "browser_bookmark",
+      "question": "（ブラウザ）このページを「ブックマーク（お気に入り）」に追加してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "d"
+      ],
+      "answer": "CORRECT",
+      "explanation": "よく見るページやお気に入りのページを保存したい時は、Cmd+D（Bookmark / 語尾のD）を使えば一瞬でブックマークバーに追加できます。"
+    },
+    {
+      "id": 5006,
+      "type": "explorer_rename",
+      "question": "（Finder）選択されているファイルの名前を変更するモードに切り替えてください。",
+      "expectedKeyCombo": [
+        "enter"
+      ],
+      "answer": "CORRECT",
+      "explanation": "ファイル整理の基本です。右クリックから「名前の変更」を選ぶのは時間がかかりますが、Return(Enter)キーなら一発でファイル名編集モードに入れます。"
+    },
+    {
+      "id": 5007,
+      "type": "explorer_new_folder",
+      "question": "（Finder）「新しいフォルダ」を作成してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "n"
+      ],
+      "answer": "CORRECT",
+      "explanation": "資料をまとめるためのフォルダを作りたい時、右クリックメニューの深い階層をたどらずとも、Cmd+Shift+Nで一瞬にして新しいフォルダが誕生します。"
+    },
+    {
+      "id": 5008,
+      "type": "word_redo",
+      "question": "（Word）「元に戻す」で取り消した操作を「やり直す（リドゥ）」ショートカットを使用してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "y"
+      ],
+      "answer": "CORRECT",
+      "explanation": "「元に戻す（Cmd+Z）」を押しすぎてしまい、戻しすぎた！という時はCmd+Y（やり直し）で進めることができます。"
+    },
+    {
+      "id": 5009,
+      "type": "excel_top",
+      "question": "（Excel）表の「先頭（A1セル）」へ一気に移動してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "home"
+      ],
+      "answer": "CORRECT",
+      "explanation": "数千行・数百列ある巨大なExcelデータでも、Cmd+Homeを押せば一瞬でスタート地点（A1セル）に帰ってくることができます。"
+    },
+    {
+      "id": 5010,
+      "type": "excel_bottom",
+      "question": "（Excel）データが入力されている「右下端のセル」へ一気に移動してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "end"
+      ],
+      "answer": "CORRECT",
+      "explanation": "巨大なデータの最後尾に新しいデータを追加したい時、マウスで延々とスクロールするのは時間の無駄です。Cmd+Endで一気に末尾へジャンプしましょう。"
+    },
+    {
+      "id": 5012,
+      "type": "word_italic",
+      "question": "（Word）選択中のテキストを「斜体（イタリック）」にするショートカットを使用してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "i"
+      ],
+      "answer": "CORRECT",
+      "explanation": "英語の引用や専門用語など、文字を少し斜めに傾けて（イタリック体）目立たせたい時はCmd+Iを使います。"
+    },
+    {
+      "id": 5013,
+      "type": "word_underline",
+      "question": "（Word）選択中のテキストに「下線（アンダーライン）」を引くショートカットを使用してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "u"
+      ],
+      "answer": "CORRECT",
+      "explanation": "重要なキーワードに下線（アンダーライン）を引きたい時は、マウスでUのアイコンを探さずともCmd+Uでスピーディに装飾できます。"
+    },
+    {
+      "id": 5014,
+      "type": "word_search",
+      "question": "（Word）文書内の文字を検索・置換するダイアログを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "h"
+      ],
+      "answer": "CORRECT",
+      "explanation": "大量の文書の中から特定の単語を見つけ出し、別の単語に一括で書き換えたい（置換したい）場合はCmd+Hが非常に便利です。"
+    },
+    {
+      "id": 5015,
+      "type": "browser_downloads",
+      "question": "（ブラウザ）「ダウンロード履歴」のページを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "j"
+      ],
+      "answer": "CORRECT",
+      "explanation": "「さっきダウンロードしたファイル、どこに行ったっけ？」と探す時間をゼロにするのがCmd+J（ダウンロード履歴）です。"
+    },
+    {
+      "id": 5031,
+      "type": "browser_restore_tab",
+      "question": "（ブラウザ）リサーチ中に30個近くタブを開いています。重要な資料ページを誤って閉じてしまったので、直前に閉じたタブを復元してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "t"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Tは直前に閉じたブラウザタブを復元するショートカットです。誤って閉じたページを履歴から探し直す手間を省けます。"
+    },
+    {
+      "id": 5032,
+      "type": "browser_new_tab",
+      "question": "（ブラウザ）今見ている資料ページを残したまま、別のキーワードで検索するために新しいタブを開いてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "t"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Tはブラウザで新しいタブを開くショートカットです。現在のページを閉じずに別の調査や作業を始められます。"
+    },
+    {
+      "id": 5033,
+      "type": "browser_close_tab",
+      "question": "（ブラウザ）確認し終わったプレビュー画面がタブに残っています。現在のタブを閉じて作業画面を整理してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "w"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Wは現在のタブを閉じるショートカットです。不要なタブをすばやく閉じることで、調査中や作業中のタブ迷子を防げます。"
+    },
+    {
+      "id": 5034,
+      "type": "browser_hard_reload",
+      "question": "（ブラウザ）「デザインを更新しました」と連絡が来ましたが、自分の画面だけ古い表示のままです。キャッシュを無視して強制的に再読み込みしてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "r"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Rは、ブラウザでキャッシュを無視して再読み込みする時に使います。CSSや画像などの古いキャッシュが残っている時の確認に有効です。"
+    },
+    {
+      "id": 5035,
+      "type": "browser_zoom_reset",
+      "question": "（ブラウザ）誤操作でWebページが極小サイズになり、文字が読めません。表示倍率を標準に戻してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "0"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+0はブラウザの表示倍率を100%に戻すショートカットです。拡大・縮小しすぎた画面を一瞬で標準表示に戻せます。"
+    },
+    {
+      "id": 5036,
+      "type": "form_previous_field",
+      "question": "（フォーム入力）長い申請フォームを入力中、一つ上の住所欄に入力ミスを見つけました。マウスを使わず前の入力欄へ戻ってください。",
+      "expectedKeyCombo": [
+        "shift",
+        "tab"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Shift+Tabは、フォームや入力欄で一つ前の項目へ戻るショートカットです。Tabで次へ進み、Shift+Tabで戻る操作を覚えると、入力作業がかなり速くなります。"
+    },
+    {
+      "id": 5037,
+      "type": "explorer_rename",
+      "question": "（Finder）資料フォルダ内のファイル名を連番付きに整理しています。選択中のファイル名を変更できる状態にしてください。",
+      "expectedKeyCombo": [
+        "f2"
+      ],
+      "answer": "CORRECT",
+      "explanation": "F2は、選択中のファイルやフォルダの名前変更に使います。右クリックメニューを開かずにリネームできるため、ファイル整理の効率が上がります。"
+    },
+    {
+      "id": 5038,
+      "type": "explorer_new_folder",
+      "question": "（Finder）案件資料を整理するため、現在の場所に新しいフォルダーを作成してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "n"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Shift+Nは、Finderで新しいフォルダーを作成するショートカットです。資料整理や案件別フォルダー作成をマウス操作なしで行えます。"
+    },
+    {
+      "id": 5039,
+      "type": "word_underline",
+      "question": "（Word）議事録の中で、提出期限だけを目立たせたいです。選択中のテキストに下線を付けてください。",
+      "expectedKeyCombo": [
+        "meta",
+        "u"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Uは選択中の文字に下線を付けるショートカットです。期限、注意点、重要語句などを強調したい時に使えます。"
+    },
+    {
+      "id": 5040,
+      "type": "excel_last_cell",
+      "question": "（Excel）10万行ある顧客リストの末尾に追記したいです。スクロールせず、入力済み範囲の最後のセルへ一気に移動してください。",
+      "expectedKeyCombo": [
+        "meta",
+        "end"
+      ],
+      "answer": "CORRECT",
+      "explanation": "Cmd+Endは、Excelで使用中の範囲の最後のセルへ移動するショートカットです。巨大な表の末尾へ移動する時、マウスホイールで延々とスクロールする必要がなくなります。"
+    }
+  ],
+  "practical-mac-3kyu": [
+    {
+      "id": 14001,
+      "question": "【Excel】現在の表全体を選択してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "a"
+      ],
+      "explanation": "Cmd + Aは、Excelで表全体を選択する基本ショートカットです。表の中の任意のセルを選択した状態で押すだけで、データが入っている範囲を一気に選択できます。"
+    },
+    {
+      "id": 14002,
+      "question": "【Excel】選択範囲をコピーしてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "c"
+      ],
+      "explanation": "Cmd + Cはコピーの基本です。ExcelでもWordでも様々なアプリで共通して使える必須ショートカットです。"
+    },
+    {
+      "id": 14003,
+      "question": "【Excel】選択した範囲を、書式（色や罫線など）なしで「値のみ」貼り付けてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "v"
+      ],
+      "explanation": "Cmd + Shift + Vは、元の書式を無視して「値（テキスト）のみ」を貼り付けるショートカットです。Webサイトからのコピペや、他の表のデータを崩さずに貼り付ける際に非常に重宝します。"
+    },
+    {
+      "id": 14004,
+      "question": "【Excel】間違えてしまった1つ前の操作を取り消して、元に戻してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "z"
+      ],
+      "explanation": "Cmd + Zは「元に戻す」ショートカットです。Excelでセルを消してしまったり、貼り付けを間違えたりした時にすぐ押せるようにしておきましょう。"
+    },
+    {
+      "id": 14005,
+      "question": "【Excel】このファイルを上書き保存してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "s"
+      ],
+      "explanation": "Cmd + Sで上書き保存ができます。Excelは強制終了することもあるため、こまめに保存する癖をつけるのが実務の基本です。"
+    },
+    {
+      "id": 14006,
+      "question": "【Excel】文字列を検索するダイアログを開いてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "f"
+      ],
+      "explanation": "Cmd + Fは検索（Find）のショートカットです。巨大な表の中から特定の名前やデータを一瞬で見つけ出すことができます。"
+    },
+    {
+      "id": 14007,
+      "question": "【Excel】選択中のセルを編集モードにしてください。（ダブルクリックと同じ効果）",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "control",
+        "u"
+      ],
+      "explanation": "Control + Uキーを押すとセルが編集モードになり、キーボードだけでセルの文字修正が始められます。マウスに持ち替えてダブルクリックする手間が省けます。"
+    },
+    {
+      "id": 14008,
+      "question": "【Excel】選択中のセルの文字を太字（ボールド）にしてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "b"
+      ],
+      "explanation": "Cmd + B（Bold）で太字への切り替えができます。見出しを強調したい時などにマウスを使わず一瞬で設定できます。"
+    },
+    {
+      "id": 14009,
+      "question": "【PowerPoint】新しいスライドを挿入してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "n"
+      ],
+      "explanation": "Mac版PowerPointでは、Cmd + Shift + Nで新しいスライドを追加します。"
+    },
+    {
+      "id": 14010,
+      "question": "【PowerPoint】プレゼンテーションを最初からスライドショー再生してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "enter"
+      ],
+      "explanation": "Mac版PowerPointでは、Cmd + Shift + Return（Enter）で最初からスライドショーを開始します。"
+    },
+    {
+      "id": 14011,
+      "question": "【Word】すべての文章を選択してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "a"
+      ],
+      "explanation": "WordでもCmd + Aは「すべて選択」です。文書全体のフォントを一括で変えたい時などに重宝します。"
+    },
+    {
+      "id": 14012,
+      "question": "【Excel】現在選択しているセルに、本日の日付をすぐに入力してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "semicolon"
+      ],
+      "explanation": "Cmd + ;（セミコロン）は今日の日付を一瞬で入力します。日報や更新日の入力など、毎日使う作業を高速化します。"
+    },
+    {
+      "id": 14013,
+      "question": "【Excel】スクロールして見失った現在のアクティブセルに、画面の表示位置を戻してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "backspace"
+      ],
+      "explanation": "Cmd + Backspaceは、選択中のセルが見える位置へ画面を戻します。遠くへスクロールして確認したあとでも、瞬時に作業地点へ復帰できます。"
+    },
+    {
+      "id": 14014,
+      "question": "【Excel】上のセルの内容を、現在のセルへそのままコピーしてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "d"
+      ],
+      "explanation": "Cmd + D（Down）は、すぐ上のセルの内容を下へコピーします。同じ値を連続して入力する際に、コピペよりはるかに速く入力できます。"
+    },
+    {
+      "id": 14015,
+      "question": "【Excel】左のセルの内容を、現在のセルへそのままコピーしてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "r"
+      ],
+      "explanation": "Cmd + R（Right）は、すぐ左のセルの内容を右へコピーします。表作成で横に同じ数式を展開する時などに役立ちます。"
+    }
+  ],
+  "practical-mac-2kyu": [
+    {
+      "id": 13001,
+      "question": "【Excel】入力例から法則性を読み取り、残りの行を一気に自動入力する「フラッシュフィル」を実行してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "control",
+        "e"
+      ],
+      "explanation": "Control + E はフラッシュフィルを実行します。氏名の分割やコード整形など、面倒な手作業を一瞬で終わらせる魔法のようなショートカットです。"
+    },
+    {
+      "id": 13002,
+      "question": "【Slack】チャンネル数が多すぎて探すのが大変です。チャンネル名や相手の名前を入力して移動できる「クイックスイッチャー」を開いてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "k"
+      ],
+      "explanation": "Cmd + KはSlack等のチャットツールで素早く別チャンネルへジャンプする最強のショートカットです。マウスでサイドバーを探す手間が省けます。"
+    },
+    {
+      "id": 13003,
+      "question": "【Slack】未読メッセージが複数あります。次の「未読チャンネル」へキーボードだけで移動してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "alt",
+        "shift",
+        "arrowdown"
+      ],
+      "explanation": "Alt + Shift + ↓ で次の未読へ移動できます。大量のチャンネルを巡回する際にマウス操作を劇的に減らします。"
+    },
+    {
+      "id": 13004,
+      "question": "【ブラウザ】CSSや画像のキャッシュが残って古い表示になっています。キャッシュを無視して強制的に再読み込み（スーパーリロード）してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "r"
+      ],
+      "explanation": "Cmd + Shift + Rでスーパーリロードを行います。Web制作やシステム開発では必須の操作です。"
+    },
+    {
+      "id": 13005,
+      "question": "【ブラウザ】閲覧履歴を残さずにWebサイトを確認するため、新しく「シークレットウィンドウ（プライベートウィンドウ）」を開いてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "n"
+      ],
+      "explanation": "Cmd + Shift + Nでシークレットウィンドウを開きます。別アカウントでのログイン確認などに使います。"
+    },
+    {
+      "id": 13006,
+      "question": "【ターミナル】実行中の重い処理や、暴走してしまったコマンドを「強制終了（キャンセル）」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "control",
+        "c"
+      ],
+      "explanation": "ターミナル（コマンドプロンプト）での Control + C は、文字列のコピーではなく「プロセスの強制終了(SIGINT)」を意味します。"
+    },
+    {
+      "id": 13007,
+      "question": "【ターミナル】ログが画面いっぱいに流れて見づらくなりました。ターミナルの画面を「クリア（白紙に）」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "control",
+        "l"
+      ],
+      "explanation": "Control + L（または clearコマンド）で画面を綺麗にします。次のログ出力を見逃さないためによく使います。"
+    },
+    {
+      "id": 13008,
+      "question": "【ターミナル】過去に打った長いコマンドをもう一度実行したいです。コマンド履歴の「後方検索（リバースサーチ）」を開始してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "control",
+        "r"
+      ],
+      "explanation": "Control + Rを押してから文字列を打つと、過去のコマンド履歴から部分一致で検索できます。上矢印キーを何度も押すより圧倒的に速いです。"
+    },
+    {
+      "id": 13009,
+      "question": "【VS Code】巨大なプロジェクトで目的のファイルが奥深くにあります。ファイル名を検索して素早く開く「クイックオープン」を起動してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "p"
+      ],
+      "explanation": "Cmd + P はファイル名検索です。Finderのツリーをマウスクリックで辿る必要がなくなります。"
+    },
+    {
+      "id": 13010,
+      "question": "【VS Code】コードのインデントや改行が乱れて読みにくいです。現在のファイル全体を「フォーマット（自動整形）」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "shift",
+        "alt",
+        "f"
+      ],
+      "explanation": "Shift + Alt + F でコードを一瞬で綺麗に整形できます。レビューを依頼する前のマナーとして必須の操作です。"
+    },
+    {
+      "id": 13011,
+      "question": "【Excel】選択している行または列の隣に、新しい行/列を「挿入」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "plus"
+      ],
+      "explanation": "Cmd + +（プラス）で行や列、セルの挿入が行えます。"
+    },
+    {
+      "id": 13012,
+      "question": "【Excel】選択している行または列を「削除」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "minus"
+      ],
+      "explanation": "Cmd + -（マイナス）で行や列、セルの削除が行えます。右クリックメニューを使わずに表の構造を変更できます。"
+    },
+    {
+      "id": 13013,
+      "question": "【Excel】選択中のセルの表示形式や罫線などを細かく設定するため、「セルの書式設定」ダイアログを開いてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "1"
+      ],
+      "explanation": "Cmd + 1（数字の1）はセルの書式設定を開きます。実務で最も頻繁に呼び出す画面の一つです。"
+    },
+    {
+      "id": 13014,
+      "question": "【Word/PowerPoint】選択中の文字や図形の「書式（色やサイズなどの見た目）だけ」をコピーしてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "c"
+      ],
+      "explanation": "Cmd + Shift + C は書式のコピーです。この後 Cmd + Shift + V を使うことで、見た目だけを他の要素に貼り付けることができます。"
+    },
+    {
+      "id": 13015,
+      "question": "【Excel】選択範囲の末尾に、合計を算出する「オートサム」を挿入してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "t"
+      ],
+      "explanation": "Cmd + Shift + T はSUM関数を自動入力します。マウスでリボンを探すよりも遥かに高速に合計欄を作成できます。"
+    },
+    {
+      "id": 13016,
+      "question": "【Excel】巨大な表の中で、現在の位置から「データが入っている端（上下左右）」まで一気にジャンプして移動してください。（例：右端へ）",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "arrowright"
+      ],
+      "explanation": "Cmd + 矢印キー は、データが連続している端まで一気にワープできる操作です。スクロールの手間が完全に無くなります。"
+    },
+    {
+      "id": 13017,
+      "question": "【ターミナル】直前に実行したコマンドをもう一度呼び出すため、履歴を「1つ前」に戻ってください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "arrowup"
+      ],
+      "explanation": "ターミナルでの 上矢印キー（↑）は、直前のコマンド履歴を呼び出します。同じコマンドを何度も打つ必要はありません。"
+    }
+  ],
+  "practical-mac-1kyu": [
+    {
+      "id": 12001,
+      "question": "【ブラウザ】JavaScriptのエラーを確認するため、開発者ツールの「コンソール(Console)タブ」を直接開いてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "alt",
+        "j"
+      ],
+      "explanation": "Macでは Cmd + Option(Alt) + J でコンソールを開きます。"
+    },
+    {
+      "id": 12002,
+      "question": "【ブラウザ】ページのレイアウト崩れを調査するため、開発者ツールを開き、同時に「要素選択モード」を開始してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "alt",
+        "c"
+      ],
+      "explanation": "Macでは Cmd + Option(Alt) + C で要素選択モードを開きます。"
+    },
+    {
+      "id": 12003,
+      "question": "【ブラウザ】画面の枠やアドレスバーを隠し、画面全体をWebページで表示する「全画面（フルスクリーン）モード」に切り替えてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "control",
+        "f"
+      ],
+      "explanation": "Macでは Cmd + Control + F でフルスクリーンを切り替えます。"
+    },
+    {
+      "id": 12004,
+      "question": "【PowerPoint】プレゼンの途中で修正を加えました。「現在のスライド」からスライドショーを再開してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "shift",
+        "f5"
+      ],
+      "explanation": "Shift + F5 は現在のスライドから再生を開始します。F5（最初から）との違いを理解していると、発表やレビューが非常にスムーズになります。"
+    },
+    {
+      "id": 12005,
+      "question": "【PowerPoint】バラバラの複数の図形を一つにまとめて扱いやすくするため、「グループ化」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "g"
+      ],
+      "explanation": "Cmd + G（Group）で図形をグループ化します。美しいスライドを効率よく作るための基本です。"
+    },
+    {
+      "id": 12006,
+      "question": "【PowerPoint】ひとまとめになっている図形の一部だけ色を変えるため、「グループ解除」を行ってください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "g"
+      ],
+      "explanation": "Cmd + Shift + G はグループの解除です。グループ化(Cmd+G)とセットで息をするように使える必要があります。"
+    },
+    {
+      "id": 12007,
+      "question": "【VS Code】エディタの各種コマンドや設定、拡張機能をキーボードから呼び出すための「コマンドパレット」を開いてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "p"
+      ],
+      "explanation": "Cmd + Shift + P はVS Codeの心臓部であるコマンドパレットを開きます。これさえ知っていればあらゆる機能にアクセスできます。"
+    },
+    {
+      "id": 12008,
+      "question": "【VS Code】呼び出している関数の実装内容を確認するため、関数の「定義へ移動」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "f12"
+      ],
+      "explanation": "F12は定義へのジャンプです。膨大なコードベースを読み解く際、手動でファイルを探す時間をゼロにします。"
+    },
+    {
+      "id": 12009,
+      "question": "【VS Code】同じ変数名が複数あります。現在の選択単語と同じ単語を「次も見つけてマルチカーソル（複数同時編集）」状態にしてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "d"
+      ],
+      "explanation": "Cmd + D はマルチカーソル編集の基本です。数回のタイピングで複数箇所の変数を安全・確実に一括リネームできます。"
+    },
+    {
+      "id": 12010,
+      "question": "【VS Code】現在カーソルがある行を、選択せずに「行ごと削除」してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "shift",
+        "k"
+      ],
+      "explanation": "Cmd + Shift + K で行削除が可能です。BackSpaceを押し続ける必要がなくなり、編集速度が格段に上がります。"
+    },
+    {
+      "id": 12011,
+      "question": "【ターミナル】入力待ちのシェルを終了する（ログアウトする）ため、「EOF（End of File）」シグナルを送信してください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "control",
+        "d"
+      ],
+      "explanation": "ターミナルにおける Control + D はEOFを意味し、多くの場合 exit コマンドと同じようにシェルを終了させます。"
+    },
+    {
+      "id": 12012,
+      "question": "【連続操作】現在見ているURLを「全て選択」して「コピー」し、「右のタブへ移動」してから「貼り付け」る一連の操作を行ってください。",
+      "answer": "CORRECT",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "a"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "c"
+          ]
+        },
+        {
+          "keys": [
+            "control",
+            "tab"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "v"
+          ]
+        }
+      ],
+      "explanation": "基本ショートカットを流れるように組み合わせる連続技です。これが無意識にできるようになれば1級の実力です。"
+    },
+    {
+      "id": 12013,
+      "question": "【連続操作】PowerPointにて、選択中の図形を「複製(Duplicate)」し、それら元の図形と複製図形の両方を選択状態にしたうえで「グループ化」してください。",
+      "answer": "CORRECT",
+      "expectedKeySequence": [
+        {
+          "keys": [
+            "meta",
+            "d"
+          ]
+        },
+        {
+          "keys": [
+            "meta",
+            "g"
+          ]
+        }
+      ],
+      "explanation": "スライド作成で非常によく使うコンボです。複雑な図形もあっという間に増殖・整理できます。"
+    },
+    {
+      "id": 12014,
+      "question": "【VS Code】エディタ下部に表示されている「統合ターミナル」の表示/非表示を切り替えてください。",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "grave"
+      ],
+      "explanation": "Cmd + ` (バッククォート) で統合ターミナルを開閉できます。コーディングとコマンド実行をシームレスに行き来するための重要ショートカットです。"
+    },
+    {
+      "id": 12015,
+      "question": "【Finder/共通】間違えて閉じてしまったフォルダウィンドウを復元する機能はMac標準にはありません。代わりに、現在のウィンドウを新しく「複製（同じ場所で開く）」ショートカットキーを使用してください。（※ブラウザのタブ複製機能と同じです）",
+      "answer": "CORRECT",
+      "expectedKeyCombo": [
+        "meta",
+        "n"
+      ],
+      "explanation": "Cmd + N はFinderでもブラウザでも「新しいウィンドウ（現在の状態を引き継ぐ）」を開きます。2つのフォルダを並べて作業したい時に重宝します。"
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import LegacyGimmicks from "./mocks/LegacyGimmicks";
 import ExcelMock from "./mocks/ExcelMock";
 import WordMock from "./mocks/WordMock";
 import BrowserMock from "./mocks/BrowserMock";
@@ -43,40 +42,12 @@ export default function GimmickRenderer({
   handleInputSubmit,
   isSuccess
 }: Props) {
-  // 1. Legacy type-based gimmicks
-  const legacyTypes = ["select_all", "find_password", "copy_paste", "rename_file", "save_file", "undo_action", "bold_text", "print_doc"];
-  if (q.type && legacyTypes.includes(q.type)) {
-    return (
-      <div style={{ position: 'relative', width: '100%' }}>
-        <LegacyGimmicks
-          type={q.type}
-          taskData={q.taskData}
-          inputValue={inputValue}
-          setInputValue={setInputValue}
-          handleInputKeyDown={handleInputKeyDown}
-          handleInputSubmit={handleInputSubmit}
-          isSuccess={isSuccess}
-        />
-        {isSuccess && (
-          <div style={{
-            position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-            backgroundColor: 'var(--success)', color: 'white', padding: '16px 32px',
-            borderRadius: '8px', fontSize: '24px', fontWeight: 'bold',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.2)', zIndex: 100,
-            animation: 'fadeInOut 1s forwards'
-          }}>
-            実行しました！
-          </div>
-        )}
-      </div>
-    );
-  }
-
   // 2. Context-aware generic mock UI
   const getUIContext = (text: string) => {
     // 1. Exact Tag Matching (Highest Priority)
     if (text.includes('【Excel】') || text.includes('（Excel）')) return "excel";
     if (text.includes('【ブラウザ】') || text.includes('（ブラウザ）') || text.includes('（フォーム入力）')) return "browser";
+    if (text.includes('大量の文字列') || text.includes('パスワード')) return "browser";
     if (text.includes('【VS Code】') || text.includes('（VS Code）')) return "vscode";
     if (text.includes('【ターミナル】') || text.includes('（ターミナル）')) return "vscode";
     if (text.includes('【Slack】') || text.includes('（Slack）')) return "slack";
@@ -105,21 +76,22 @@ export default function GimmickRenderer({
   };
 
   const ctx = getUIContext(q.question);
-  const os = isMac ? "mac" : "windows";
-  
+  const os: "mac" | "windows" = isMac ? "mac" : "windows";
+  const mockProps = { os, isSuccess, q, inputValue, setInputValue, handleInputKeyDown, handleInputSubmit };
+
   switch (ctx) {
-    case "excel": return <ExcelMock os={os} isSuccess={isSuccess} />;
-    case "word": return <WordMock os={os} isSuccess={isSuccess} />;
-    case "browser": return <BrowserMock os={os} isSuccess={isSuccess} />;
-    case "explorer": return <ExplorerMock os={os} isSuccess={isSuccess} />;
-    case "windows": return <WindowsMock os={os} isSuccess={isSuccess} />;
-    case "vscode": return <VsCodeMock os={os} isSuccess={isSuccess} />;
-    case "powerpoint": return <PowerpointMock os={os} isSuccess={isSuccess} />;
-    case "slack": return <SlackMock os={os} isSuccess={isSuccess} />;
-    case "taskmanager": return <TaskManagerMock os={os} isSuccess={isSuccess} />;
-    case "rundialog": return <RunDialogMock os={os} isSuccess={isSuccess} />;
-    case "actioncenter": return <ActionCenterMock os={os} isSuccess={isSuccess} />;
-    case "taskview": return <TaskViewMock os={os} isSuccess={isSuccess} />;
+    case "excel": return <ExcelMock {...mockProps} />;
+    case "word": return <WordMock {...mockProps} />;
+    case "browser": return <BrowserMock {...mockProps} />;
+    case "explorer": return <ExplorerMock {...mockProps} />;
+    case "windows": return <WindowsMock {...mockProps} />;
+    case "vscode": return <VsCodeMock {...mockProps} />;
+    case "powerpoint": return <PowerpointMock {...mockProps} />;
+    case "slack": return <SlackMock {...mockProps} />;
+    case "taskmanager": return <TaskManagerMock {...mockProps} />;
+    case "rundialog": return <RunDialogMock {...mockProps} />;
+    case "actioncenter": return <ActionCenterMock {...mockProps} />;
+    case "taskview": return <TaskViewMock {...mockProps} />;
     default:
       return (
         <div className={styles.defaultGimmick}>
