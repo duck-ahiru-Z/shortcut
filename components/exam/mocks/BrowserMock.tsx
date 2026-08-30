@@ -45,7 +45,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
   };
 
   const findPasswordContent = useMemo(() => {
-    if (!isFindPassword) return null;
+    if (!isFindTask) return null;
     const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let prefix = "";
     let suffix = "";
@@ -54,7 +54,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
       suffix += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     return { prefix, suffix };
-  }, [isFindPassword]);
+  }, [isFindTask]);
 
   return (
     <div className={styles.browserContainer}>
@@ -111,7 +111,13 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
         ) : isFindTask ? (
           <div style={{ display: "flex", flexDirection: "column", height: "100%", gap: "16px" }}>
             <div style={{ flex: 1, overflowY: "auto", border: "1px solid #ddd", padding: "12px", fontSize: "12px", fontFamily: "monospace", wordBreak: "break-all", lineHeight: 1.5, maxHeight: "250px" }}>
-              {q?.taskData?.targetText || randomString}
+              {q?.taskData?.targetText || (findPasswordContent ? (
+                <>
+                  {findPasswordContent.prefix}
+                  <span>{q?.taskData?.anchor}{q?.taskData?.password}</span>
+                  {findPasswordContent.suffix}
+                </>
+              ) : null)}
             </div>
             <div style={{ backgroundColor: '#f9f9f9', padding: '12px', borderRadius: '8px', border: '1px solid #e0e0e0' }}>
               <div style={{ fontSize: '12px', fontWeight: 'bold', marginBottom: '8px', color: '#555' }}>
@@ -184,7 +190,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
         )}
       </div>
       
-      {isSuccess && !isFindPassword && <div className={styles.successToast}>実行しました！</div>}
+      {isSuccess && !isFindTask && <div className={styles.successToast}>実行しました！</div>}
     </div>
   );
 }

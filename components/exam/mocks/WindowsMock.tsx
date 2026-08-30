@@ -123,7 +123,6 @@ export default function WindowsMock({ os = "windows", isSuccess, q }: Props) {
         )}
       </div>
     
-      {isSuccess && !isCancel && !isCut && <div className={styles.successToast}>実行しました！</div>}
     </div>
   );
 }
