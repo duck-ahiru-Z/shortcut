@@ -15,7 +15,7 @@ export default function PowerpointMock({ os = "windows", isSuccess, q }: Props) 
   if (isSlideshow && isSuccess) {
     return (
       <div className={styles.pptContainer} style={{ backgroundColor: "#000", display: "flex", justifyContent: "center", alignItems: "center", minHeight: "300px" }}>
-        <div style={{ width: "80%", height: "200px", backgroundColor: "#fff", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", boxShadow: "0 0 20px rgba(255,255,255,0.2)" }}>
+        <div style={{ width: "400px", height: "225px", backgroundColor: "#fff", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", boxShadow: "0 0 20px rgba(255,255,255,0.2)" }}>
            <h1 style={{ fontSize: "24px", margin: "0 0 16px 0" }}>四半期売上報告</h1>
            <p style={{ fontSize: "14px", color: "#555", margin: 0 }}>2024年度 第2四半期</p>
         </div>
