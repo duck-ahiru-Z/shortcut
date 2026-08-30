@@ -96,7 +96,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
           </div>
         ) : isFindPassword ? (
           <div style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden', gap: '12px' }}>
-            <div style={{ flex: 1, overflowY: "auto", fontSize: "14px", lineHeight: "1.6", color: "#333", wordBreak: "break-all", fontFamily: "monospace", border: "1px solid #ddd", padding: "8px", borderRadius: "4px" }}>
+            <div style={{ flex: 1, overflowY: "auto", maxHeight: "250px", fontSize: "14px", lineHeight: "1.6", color: "#333", wordBreak: "break-all", fontFamily: "monospace", border: "1px solid #ddd", padding: "8px", borderRadius: "4px" }}>
               {findPasswordContent?.prefix}
               <span>{q?.taskData?.anchor}{q?.taskData?.password}</span>
               {findPasswordContent?.suffix}
@@ -125,11 +125,33 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
             <button style={{ padding: "8px 16px", backgroundColor: "#0b57d0", color: "#fff", border: "none", borderRadius: "4px" }}>印刷</button>
           </div>
         ) : !(isNewTab && isSuccess) ? (
-          <>
+          <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
             <h1 style={{ margin: 0, fontSize: "24px" }}>{content.h1}</h1>
             <p style={{ margin: 0, color: isPrivate ? "#aaa" : "#555", lineHeight: "1.6" }}>{content.p}</p>
             {isPrivate && <div style={{ marginTop: "20px", fontSize: "18px", fontWeight: "bold" }}>🕶 シークレットモードです</div>}
-          </>
+            
+            {q?.question?.includes("URLをコピー") && (
+              <div style={{ marginTop: 'auto', paddingTop: '16px', borderTop: '1px solid #ccc', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ fontSize: '12px', fontWeight: 'bold' }}>ここにURLを貼り付け:</div>
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <input
+                    type="text"
+                    placeholder="https://..."
+                    value={inputValue}
+                    onChange={(e) => setInputValue && setInputValue(e.target.value)}
+                    onKeyDown={handleInputKeyDown}
+                    style={{ flex: 1, padding: '8px', borderRadius: '4px', border: '2px dashed #0b57d0', fontSize: '14px' }}
+                  />
+                  <button 
+                    onClick={handleInputSubmit}
+                    style={{ padding: '8px 16px', backgroundColor: '#0b57d0', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+                  >
+                    回答する
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
         ) : (
           <div style={{ margin: "auto", fontSize: "24px", color: "#ccc" }}>Google</div>
         )}

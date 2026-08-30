@@ -10,6 +10,7 @@ export default function WindowsMock({ os = "windows", isSuccess, q }: Props) {
   const question = q?.question || "";
   const isCancel = question.includes("キャンセル") || question.includes("ダイアログ");
   const isCut = question.includes("切り取り") || question.includes("カット");
+  const isCopy = question.includes("コピー");
 
   return (
     <div className={styles.windowsContainer}>
@@ -48,22 +49,22 @@ export default function WindowsMock({ os = "windows", isSuccess, q }: Props) {
                </div>
             )}
           </div>
-        ) : isCut ? (
+        ) : (isCut || isCopy) ? (
           <div style={{ width: "100%", height: "100%", position: "relative", backgroundColor: "#fff", color: "#333" }}>
             <div style={{ padding: "12px", borderBottom: "1px solid #ccc", backgroundColor: "#f3f3f3", fontSize: "14px", display: "flex", gap: "16px" }}>
               <span>ファイル</span><span>ホーム</span><span>共有</span><span>表示</span>
             </div>
             <div style={{ padding: "24px", display: "flex", gap: "24px" }}>
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", opacity: isSuccess ? 0.3 : 1 }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", opacity: (isCut && isSuccess) ? 0.3 : 1 }}>
                 <div style={{ width: "64px", height: "64px", backgroundColor: "#ffca28", borderRadius: "4px", position: "relative" }}>
                   <div style={{ position: "absolute", top: 0, left: 0, width: "30%", height: "20%", backgroundColor: "#ffb300", borderRadius: "4px 4px 0 0", transform: "translateY(-50%)" }}></div>
                 </div>
-                <div style={{ fontSize: "12px", backgroundColor: isSuccess ? "transparent" : "#cce5ff", padding: "2px 8px", borderRadius: "4px" }}>重要データ</div>
+                <div style={{ fontSize: "12px", backgroundColor: (isCut && isSuccess) ? "transparent" : "#cce5ff", padding: "2px 8px", borderRadius: "4px" }}>重要データ</div>
               </div>
             </div>
             {isSuccess && (
                <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", padding: "20px", backgroundColor: "rgba(0,0,0,0.7)", color: "#fff", borderRadius: "8px", fontSize: "24px" }}>
-                 切り取りました
+                 {isCut ? "切り取りました" : "コピーしました"}
                </div>
             )}
           </div>
