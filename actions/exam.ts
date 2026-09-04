@@ -220,6 +220,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
   }
 
   const { grade, startTime, duration, dynamicAnswers, questionIds } = payload;
+  const isMac = grade.includes("mac");
   const data = await getCachedExamData(grade);
   if (!data) return null;
 
@@ -260,9 +261,9 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
         } else if (q.type === 'find_password') {
           displayCorrect = `${correctAnswer} (正しく入力)`;
         } else if (q.expectedKeySequence) {
-          displayCorrect = formatKeySequence(q.expectedKeySequence);
+          displayCorrect = formatKeySequence(q.expectedKeySequence, isMac);
         } else if (q.expectedKeyCombo) {
-          displayCorrect = formatKeyCombo(q.expectedKeyCombo);
+          displayCorrect = formatKeyCombo(q.expectedKeyCombo, isMac);
         }
         
         let displayUser = userAnswers[q.id] || "無回答";
@@ -294,8 +295,8 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
         if (q.type === 'copy_paste') displayCorrect = `${q.answer || ''} (正しくペースト)`;
         else if (q.type === 'select_all') displayCorrect = `全文を正しくペースト (Ctrl+A -> Ctrl+C -> Ctrl+V)`;
         else if (q.type === 'find_password') displayCorrect = `${dynamicAnswers[q.id] || ''} (正しく入力)`;
-        else if (q.expectedKeySequence) displayCorrect = formatKeySequence(q.expectedKeySequence);
-        else if (q.expectedKeyCombo) displayCorrect = formatKeyCombo(q.expectedKeyCombo);
+        else if (q.expectedKeySequence) displayCorrect = formatKeySequence(q.expectedKeySequence, isMac);
+        else if (q.expectedKeyCombo) displayCorrect = formatKeyCombo(q.expectedKeyCombo, isMac);
 
         wrongAnswers.push({
           id: q.id,
