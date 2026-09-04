@@ -21,12 +21,12 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
         {os === "windows" && <WindowControls os={os} />}
       </div>
       
-      <div style={{ padding: "8px", borderBottom: "1px solid #ccc", display: "flex", gap: "8px", backgroundColor: "#f9f9f9" }}>
+      <div style={{ padding: "8px", borderBottom: "1px solid #ccc", display: "flex", gap: "8px", backgroundColor: os === "mac" ? "#ececec" : "#f9f9f9" }}>
         <div style={{ color: "#666" }}>←</div>
         <div style={{ color: "#666" }}>→</div>
         <div style={{ color: "#666" }}>↑</div>
         <div style={{ flex: 1, backgroundColor: "#fff", border: "1px solid #ccc", padding: "2px 8px", fontSize: "12px" }}>
-          C:\Users\Documents\Projects
+          {os === "mac" ? "Macintosh HD / ユーザ / 書類 / Projects" : "C:\\Users\\Documents\\Projects"}
         </div>
         <div style={{ width: "150px", backgroundColor: "#fff", border: "1px solid #ccc", padding: "2px 8px", fontSize: "12px", color: "#888" }}>
           検索
@@ -42,7 +42,7 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
         <div className={styles.explorerMain} style={{ flex: 1, padding: "16px", display: "flex", flexWrap: "wrap", gap: "16px", alignContent: "flex-start", backgroundColor: "#fff" }}>
           
           <div style={{ width: "80px", textAlign: "center" }}>
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="#f3d32a"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path></svg>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill={os === "mac" ? "#54aeff" : "#f3d32a"}><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path></svg>
             <div style={{ fontSize: "12px", marginTop: "4px" }}>src</div>
           </div>
           
@@ -57,7 +57,7 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
           
           {isNewFolder && isSuccess && (
             <div style={{ width: "80px", textAlign: "center", padding: "4px", backgroundColor: "#e3f2fd", borderRadius: "4px" }}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="#f3d32a"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path></svg>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill={os === "mac" ? "#54aeff" : "#f3d32a"}><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path></svg>
               <input type="text" defaultValue={os === "mac" ? "名称未設定フォルダ" : "新しいフォルダー"} autoFocus style={{ width: "100%", fontSize: "12px", textAlign: "center", border: "1px solid #0b57d0" }} />
             </div>
           )}
