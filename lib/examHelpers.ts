@@ -13,11 +13,11 @@ export function shuffleArray<T>(array: T[]): T[] {
 /**
  * Formats a key combination array (e.g., ["control", "c"]) into a readable string (e.g., "Ctrl + C").
  */
-export const formatKeyCombo = (combo: string[]) => {
+export const formatKeyCombo = (combo: string[], isMac = false) => {
   if (!combo || !Array.isArray(combo) || combo.length === 0) return "CORRECT";
   
   const map: Record<string, string> = {
-    "control": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Win", "escape": "Esc",
+    "control": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": isMac ? "Cmd" : "Win", "escape": "Esc",
     "enter": "Enter", "space": "Space", "arrowup": "↑", "arrowdown": "↓", "arrowleft": "←",
     "arrowright": "→", "period": ".", "comma": ",", "plus": "+", "minus": "-", "equal": "=",
     "semicolon": ";", "apostrophe": "'", "slash": "/", "grave": "`", "backspace": "Backspace",
@@ -36,8 +36,7 @@ export const formatKeyCombo = (combo: string[]) => {
  * Formats a key sequence array (e.g., [{ keys: ["control", "c"] }, { keys: ["control", "v"] }]) 
  * into a readable string (e.g., "Ctrl + C -> Ctrl + V").
  */
-export const formatKeySequence = (sequence: { keys: string[] }[]) => {
+export const formatKeySequence = (sequence: { keys: string[] }[], isMac = false) => {
   if (!sequence || !Array.isArray(sequence) || sequence.length === 0) return "CORRECT";
-  return sequence.map(step => formatKeyCombo(step.keys)).join(" -> ");
+  return sequence.map(step => formatKeyCombo(step.keys, isMac)).join(" -> ");
 };
-
