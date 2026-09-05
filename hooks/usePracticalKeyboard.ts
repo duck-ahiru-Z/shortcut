@@ -133,9 +133,19 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
       if (isMatch) {
         sequenceIndexRef.current = 0;
         
-        // If it requires a specific string answer (not just "CORRECT"), we should NOT auto-submit.
-        // The user must type/paste the answer into an input box and click submit.
-        const requiresManualSubmit = q.answer !== "CORRECT" && q.answer !== undefined;
+        // Since q.answer is stripped on the client for security, we determine if it requires manual submit 
+        // by checking if the question explicitly asks the user to input/paste something into a field.
+        const qText = q.question || "";
+        const requiresManualSubmit = 
+          qText.includes("解答欄に") || 
+          qText.includes("入力欄に") || 
+          qText.includes("探して") || 
+          qText.includes("探し出し") || 
+          qText.includes("パスワード") ||
+          qText.includes("検索し、") ||
+          qText.includes("URLをコピー") ||
+          qText.includes("ワンタイムコードをコピー") ||
+          qText.includes("貼り付けて回答");
 
         if (!isTypingTask) {
           e.preventDefault();

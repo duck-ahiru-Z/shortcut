@@ -66,6 +66,9 @@ export default function ExamActiveScreen({
           {currentQ.choices.map((choice, idx) => {
             const letter = ['A', 'B', 'C', 'D'][idx];
             const isSelected = answers[currentQ.id] === choice;
+            // Choice strings retain their original label for server-side grading.
+            // Render only the shuffled, keyboard-accessible label to avoid duplication.
+            const choiceText = choice.replace(/^[A-D]\.\s*/, '');
             return (
               <button 
                 key={idx}
@@ -73,7 +76,7 @@ export default function ExamActiveScreen({
                 onClick={() => handleSelect(currentQ.id, choice)}
               >
                 <div className={styles.choiceBadge}>{letter}</div>
-                <div>{choice}</div>
+                <div>{choiceText}</div>
               </button>
             );
           })}
