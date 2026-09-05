@@ -10,7 +10,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Windows ショートカットキー検定 IBT試験",
+  title: "ショートカットキー検定 IBT試験",
   description: "AIっぽさを排除したプレミアムでフラットなビジネス調テーマのショートカットキー検定",
 };
 
