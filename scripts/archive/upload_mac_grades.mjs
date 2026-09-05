@@ -36,7 +36,7 @@ async function main() {
       title: grade.includes('5kyu') ? '5級 (Mac版)' : '4級 (Mac版)',
       questionsCount: grade.includes('practical') ? 5 : 30,
       passingRate: 80,
-      duration: grade.includes('practical') ? 10 * 60 : 30 * 60,
+      duration: 30 * 60,
       pool: data[grade]
     };
 
