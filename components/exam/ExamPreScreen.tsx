@@ -42,7 +42,7 @@ export default function ExamPreScreen({
         <div className={styles.warningBox}>
           <strong>【重要】PC環境での受験を推奨します</strong>
           <p className={styles.warningText}>
-            本試験（特に実務シミュレータ）は、物理的なキーボード操作が必須となります。スマートフォン等のタッチデバイスでは正常に解答できない可能性があるため、PC環境での受験をお願いいたします。
+            本試験（特に実技シミュレーター）は、物理的なキーボード操作が必須となります。スマートフォン等のタッチデバイスでは正常に解答できない可能性があるため、PC環境での受験をお願いいたします。
           </p>
         </div>
       )}
