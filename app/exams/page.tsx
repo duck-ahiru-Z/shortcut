@@ -13,6 +13,7 @@ export default function Exams() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedGrade, setSelectedGrade] = useState("");
   const [isPractical, setIsPractical] = useState(false);
+  const supportsMac = selectedGrade === "5kyu" || selectedGrade === "4kyu";
 
   const openModal = (grade: string, practical: boolean) => {
     setSelectedGrade(grade);
@@ -86,7 +87,7 @@ export default function Exams() {
                 <div style={{ fontWeight: 'bold', fontSize: '18px' }}>Windows</div>
               </button>
               
-              <button 
+              {supportsMac && <button 
                 onClick={() => handleOsSelect("mac")}
                 style={{
                   flex: 1, padding: '24px 16px', borderRadius: '12px',
@@ -104,7 +105,7 @@ export default function Exams() {
                   </svg>
                 </div>
                 <div style={{ fontWeight: 'bold', fontSize: '18px' }}>Mac</div>
-              </button>
+              </button>}
             </div>
           </div>
         </div>
