@@ -9,7 +9,7 @@ type Props = {
   firstName: string;
   setFirstName: (v: string) => void;
   isLoading: boolean;
-  onStart: () => void;
+  onStart: () => void | Promise<void>;
 };
 
 export default function ExamPreScreen({
@@ -92,6 +92,9 @@ export default function ExamPreScreen({
       <button 
         className={`btn ${canStart ? 'btn-primary' : 'btn-disabled'} ${styles.startButton}`} 
         onClick={async () => {
+          // Start loading the exam immediately. Browser security APIs below are
+          // best-effort and must not prevent the exam request from running.
+          const startPromise = onStart();
           try {
             if (document.documentElement.requestFullscreen) {
               await document.documentElement.requestFullscreen();
@@ -103,7 +106,7 @@ export default function ExamPreScreen({
           } catch (e) {
             console.warn("Fullscreen or Keyboard Lock failed", e);
           }
-          onStart();
+          await startPromise;
         }}
         disabled={!canStart}
       >
