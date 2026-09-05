@@ -16,6 +16,22 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Browser tests
+
+The Playwright suite covers every published Windows knowledge grade, the published Mac knowledge grades (4 and 5), and every Windows/Mac practical grade. Practical exams are completed through grading, and the suite also checks the OS-specific virtual keyboard, the 30-minute limit, and mobile layouts.
+
+```bash
+npx playwright test
+```
+
+For a quicker Mac/practical smoke check, run one grade file:
+
+```bash
+npx playwright test tests/5kyu.spec.ts
+```
+
+Test submissions use the identifiable name `Codex テスト`. Failed tests retain a screenshot and Playwright trace under `test-results/`.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
