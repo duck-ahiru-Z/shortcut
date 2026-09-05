@@ -4,6 +4,8 @@ import { doc, getDoc, collection, addDoc, setDoc, increment, query, where, getDo
 import { db } from "@/lib/firebase";
 import crypto from "crypto";
 import { shuffleArray, formatKeyCombo, formatKeySequence } from "@/lib/examHelpers";
+import knowledgePools from "@/scripts/archive/knowledge_pool.json";
+import practicalPools from "@/scripts/archive/practical_pool.json";
 
 // Secret for HMAC signing
 const SECRET_KEY = process.env.SECRET_KEY;
@@ -61,6 +63,21 @@ export type GradeResult = {
 const examCache: Record<string, { data: ExamData; timestamp: number }> = {};
 const CACHE_TTL = 1000 * 60 * 60; // 1 hour
 
+// Keep the published 3級以上 pools available when a Firestore document has
+// not been seeded yet. This prevents an otherwise valid exam link from
+// stopping at the pre-screen with "Exam not found".
+const bundledExamConfig: Record<string, { title: string; questionsCount: number; pool: QuestionData[] }> = {
+  "3kyu": { title: "3級 知識試験 (Windows版)", questionsCount: 20, pool: (knowledgePools["knowledge-3kyu"] || []) as QuestionData[] },
+  "2kyu": { title: "2級 知識試験 (Windows版)", questionsCount: 20, pool: (knowledgePools["knowledge-2kyu"] || []) as QuestionData[] },
+  "1kyu": { title: "1級 知識試験 (Windows版)", questionsCount: 20, pool: (knowledgePools["knowledge-1kyu"] || []) as QuestionData[] },
+  "practical-3kyu": { title: "3級 実務検定 (Windows版)", questionsCount: 10, pool: (practicalPools["practical-3kyu"] || []) as QuestionData[] },
+  "practical-2kyu": { title: "2級 実務検定 (Windows版)", questionsCount: 10, pool: (practicalPools["practical-2kyu"] || []) as QuestionData[] },
+  "practical-1kyu": { title: "1級 実務検定 (Windows版)", questionsCount: 15, pool: (practicalPools["practical-1kyu"] || []) as QuestionData[] },
+  "practical-mac-3kyu": { title: "3級 実務検定 (Mac版)", questionsCount: 10, pool: (practicalPools["practical-mac-3kyu"] || []) as QuestionData[] },
+  "practical-mac-2kyu": { title: "2級 実務検定 (Mac版)", questionsCount: 10, pool: (practicalPools["practical-mac-2kyu"] || []) as QuestionData[] },
+  "practical-mac-1kyu": { title: "1級 実務検定 (Mac版)", questionsCount: 15, pool: (practicalPools["practical-mac-1kyu"] || []) as QuestionData[] },
+};
+
 async function getCachedExamData(grade: string): Promise<ExamData | null> {
   const now = Date.now();
   if (examCache[grade] && now - examCache[grade].timestamp < CACHE_TTL) {
@@ -71,7 +88,13 @@ async function getCachedExamData(grade: string): Promise<ExamData | null> {
     const docRef = doc(db, "exams", grade);
     const docSnap = await getDoc(docRef);
 
-    if (!docSnap.exists()) return null;
+    if (!docSnap.exists()) {
+      const bundled = bundledExamConfig[grade];
+      if (!bundled || bundled.pool.length === 0) return null;
+      const fallback: ExamData = { ...bundled, passingRate: 0.8, duration: 1800 };
+      examCache[grade] = { data: fallback, timestamp: now };
+      return fallback;
+    }
 
     const data = docSnap.data() as ExamData;
     examCache[grade] = { data, timestamp: now };
