@@ -32,12 +32,15 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
   const isFindTask = question.includes("探して") || question.includes("探し出し") || question.includes("パスワード") || question.includes("検索し、");
   const isPrint = question.includes("印刷");
   const isCopyPasteURL = question.includes("URLをコピー");
+  const isDownloads = question.includes("ダウンロード履歴") || question.includes("ダウンロードの履歴");
 
   const addressBarStyle = isAddressBar && isSuccess 
     ? { backgroundColor: "#cce5ff", color: "#000" } 
     : {};
 
-  const displayedUrl = isCopyPasteURL && q?.taskData?.targetText 
+  const displayedUrl = isDownloads && isSuccess
+    ? "chrome://downloads"
+    : isCopyPasteURL && q?.taskData?.targetText
     ? q.taskData.targetText 
     : (isFindTask ? "https://example.com/search-target" : content.url);
 
@@ -146,6 +149,19 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
                   回答する
                 </button>
               </div>
+            </div>
+          </div>
+        ) : isDownloads && isSuccess ? (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px", height: "100%" }}>
+            <h1 style={{ margin: 0, fontSize: "24px" }}>ダウンロード</h1>
+            <div style={{ border: "1px solid #ddd", borderRadius: "8px", overflow: "hidden" }}>
+              {["shortcut_exam_guide.pdf", "practice_questions.xlsx"].map((name, index) => (
+                <div key={name} style={{ display: "flex", alignItems: "center", gap: "12px", padding: "14px 16px", borderBottom: index === 0 ? "1px solid #eee" : "none" }}>
+                  <span style={{ fontSize: "22px" }}>📄</span>
+                  <div style={{ flex: 1 }}><div style={{ fontWeight: 600 }}>{name}</div><div style={{ color: "#666", fontSize: "12px" }}>{index === 0 ? "2026/09/06 14:32" : "2026/09/05 09:10"}</div></div>
+                  <span style={{ color: "#0b57d0", fontSize: "12px" }}>フォルダを表示</span>
+                </div>
+              ))}
             </div>
           </div>
         ) : isPrint && isSuccess ? (
