@@ -107,10 +107,17 @@ export default function WordMock({ os = "windows", isSuccess, q, inputValue = ""
             <textarea 
               className={styles.wordPage} 
               defaultValue={content}
-              style={textAreaStyle}
+              style={{ ...textAreaStyle, outline: isSuccess && isSelectAll ? '2px solid #0b57d0' : undefined, boxShadow: isSuccess && isSelectAll ? '0 0 0 3px rgba(11,87,208,0.15)' : undefined }}
               spellCheck={false}
             />
           </>
+        )}
+
+        {isSuccess && isSelectAll && !isCopyPaste && (
+          <div style={{ position: 'absolute', top: 10, left: 16, right: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '6px 10px', backgroundColor: '#e8f0fe', border: '1px solid #8ab4f8', borderRadius: '4px', color: '#174ea6', fontSize: '12px', zIndex: 5 }}>
+            <span>文書全体を選択中</span>
+            <span>5行 · すべての内容</span>
+          </div>
         )}
         
         {isSuccess && !isCopyPaste && (
