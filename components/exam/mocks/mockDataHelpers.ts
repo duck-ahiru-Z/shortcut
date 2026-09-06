@@ -8,10 +8,13 @@ export function getVsCodeInitialCode(question: string) {
   if (question.includes("行を移動")) {
     return "function init() {\n  console.log('2番目に実行したい');\n  console.log('1番目に実行したい');\n}";
   }
+  if (question.includes("console出力") || question.includes("現在行を削除")) {
+    return "function handleSubmit() {\n  const result = validateForm();\n  console.log('debug: validation result', result);\n  return result;\n}";
+  }
   if (question.includes("コメントアウト")) {
     return "function debug() {\n  // 以下の行をコメントアウトしてください\n  console.log('大量のログが出力されます');\n}";
   }
-  if (question.includes("フォーマット")) {
+  if (question.includes("フォーマット") || question.includes("インデント") || question.includes("改行が乱れて")) {
     return "function poorlyFormatted() {\nlet x=1;\n    if(x) {\n console.log(x)\n  }\n}";
   }
   if (question.includes("リネーム") || question.includes("一括変更") || question.includes("定義へ移動")) {

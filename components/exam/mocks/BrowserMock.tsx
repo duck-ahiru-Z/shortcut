@@ -26,6 +26,7 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
   const isBookmark = question.includes("ブックマーク");
   const isReload = question.includes("リロード") || question.includes("再読み込み");
   const isPrivate = question.includes("シークレット");
+  const isLastTab = question.includes("最後のタブ") || question.includes("右端のタブ");
   
   // Specific legacy types checking
   const isFindTask = question.includes("探して") || question.includes("探し出し") || question.includes("パスワード") || question.includes("検索し、");
@@ -62,7 +63,13 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
         {os === "mac" && <WindowControls os={os} />}
         
         <div className={styles.browserTabs} style={{ display: "flex", gap: "8px", marginLeft: "16px", alignItems: "flex-end", flex: 1, paddingTop: "8px" }}>
-          {!(isSuccess && isCloseTab) && (
+          {isLastTab && !isSuccess && ["開発ドキュメント", "障害調査メモ", "チケット #1842"].map((title, index) => (
+            <div key={title} className={index === 2 ? styles.browserTabActive : styles.browserTab} style={{ backgroundColor: index === 2 ? "#fff" : "#e5e7eb", color: "#000", padding: "8px 12px", borderRadius: "8px 8px 0 0", fontSize: "12px", display: "flex", alignItems: "center", gap: "8px", minWidth: "150px" }}>
+              <div style={{ flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{title}</div>
+              <div style={{ color: "#888" }}>×</div>
+            </div>
+          ))}
+          {!isLastTab && !(isSuccess && isCloseTab) && (
             <div className={styles.browserTabActive} style={{ backgroundColor: isPrivate ? "#333" : "#fff", color: isPrivate ? "#fff" : "#000", padding: "8px 12px", borderRadius: "8px 8px 0 0", fontSize: "12px", display: "flex", alignItems: "center", gap: "8px", minWidth: "150px" }}>
                <div style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{isFindTask ? "パスワード検索" : content.title}</div>
                <div style={{ color: '#888', cursor: 'pointer' }}>×</div>
