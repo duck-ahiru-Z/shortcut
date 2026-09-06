@@ -11,6 +11,8 @@ export default function PowerpointMock({ os = "windows", isSuccess, q }: Props) 
   const isUngroup = question.includes("ひとまとめになっている図形の一部") || question.includes("グループ解除");
   const isSlideshow = question.includes("スライドショー") || question.includes("最初から") || question.includes("現在のスライドから");
   const isBlackout = question.includes("真っ黒に");
+  const isFormatCopy = question.includes("書式") && question.includes("コピー");
+  const showSelection = isDuplicate || isGroup || isUngroup || isFormatCopy;
   
   if (isSlideshow && isSuccess) {
     return (
@@ -52,12 +54,18 @@ export default function PowerpointMock({ os = "windows", isSuccess, q }: Props) 
                     <div style={{ display: "flex", gap: "16px", padding: "20px", border: isGroup && isSuccess ? "2px dashed #666" : "none", position: "relative" }}>
                       {isGroup && isSuccess && <div style={{ position: "absolute", top: -10, left: -10, backgroundColor: "#fff", padding: "2px", fontSize: "10px", border: "1px solid #ccc" }}>グループ化済み</div>}
                       
-                      <div style={{ width: "80px", height: "80px", backgroundColor: "#0078d4", border: (isUngroup && isSuccess) ? "2px solid #ffb900" : "none" }}></div>
+                      <div style={{ width: "80px", height: "80px", backgroundColor: "#0078d4", border: isSuccess && showSelection ? "2px solid #5b9bd5" : "none", position: "relative" }}>
+                        {isSuccess && showSelection && <span style={{ position: "absolute", top: -20, left: -2, color: "#0078d4", fontSize: "10px", whiteSpace: "nowrap" }}>選択中</span>}
+                      </div>
                       
                       {(isDuplicate && isSuccess) || isGroup || isUngroup ? (
-                        <div style={{ width: "80px", height: "80px", backgroundColor: "#0078d4", border: (isUngroup && !isSuccess) ? "none" : "none" }}></div>
+                        <div style={{ width: "80px", height: "80px", backgroundColor: "#0078d4", border: isSuccess && (isDuplicate || isGroup) ? "2px solid #5b9bd5" : "none", position: "relative" }}>
+                          {isSuccess && (isDuplicate || isGroup) && <span style={{ position: "absolute", bottom: -20, right: 0, color: "#0078d4", fontSize: "10px", whiteSpace: "nowrap" }}>複製・選択中</span>}
+                        </div>
                       ) : null}
                     </div>
+                  ) : isFormatCopy && isSuccess ? (
+                    <div style={{ color: "#0078d4", fontWeight: 600 }}>書式ブラシ：適用対象を選択中</div>
                   ) : (
                     "テキストを入力"
                   )}
