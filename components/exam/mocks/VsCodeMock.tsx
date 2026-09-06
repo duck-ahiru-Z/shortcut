@@ -17,6 +17,10 @@ export default function VsCodeMock({ os = "windows", isSuccess, q }: Props) {
   const isCancel = question.includes("強制終了") || question.includes("キャンセル");
   const isReverseSearch = question.includes("リバースサーチ") || question.includes("過去に打った");
   const isCommandPalette = question.includes("コマンドパレット");
+  const isCurrentLineTask = question.includes("現在行") || question.includes("現在の行");
+  const lineMatch = question.match(/(\d+)行目/);
+  const currentLine = lineMatch ? Number(lineMatch[1]) : (isCurrentLineTask ? 3 : 1);
+  const lineNumbers = Array.from({ length: 12 }, (_, index) => index + 1);
   
   return (
     <div className={styles.vscodeContainer}>
@@ -46,12 +50,20 @@ export default function VsCodeMock({ os = "windows", isSuccess, q }: Props) {
           <div className={styles.vscodeFile}>📄 style.css</div>
         </div>
         <div className={styles.vscodeEditor} style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-          <textarea 
-            className={styles.vscodeTextArea} 
-            style={{ flex: 1, padding: "16px", fontFamily: "Consolas, monospace", fontSize: "14px", lineHeight: "1.5", backgroundColor: "#1e1e1e", color: "#d4d4d4", border: "none", outline: "none", resize: "none" }}
-            defaultValue={defaultCode} 
-            spellCheck={false}
-          />
+          <div style={{ display: "flex", flex: 1, minHeight: 0 }}>
+            <div aria-label="行番号" style={{ width: "42px", padding: "16px 8px 16px 0", backgroundColor: "#1e1e1e", color: "#858585", textAlign: "right", fontFamily: "Consolas, monospace", fontSize: "14px", lineHeight: "1.5", userSelect: "none" }}>
+              {lineNumbers.map((line) => (
+                <div key={line} style={{ backgroundColor: line === currentLine ? "#264f78" : "transparent", color: line === currentLine ? "#fff" : "#858585" }}>{line}</div>
+              ))}
+            </div>
+            <textarea
+              className={styles.vscodeTextArea}
+              aria-label={`コードエディタ（${currentLine}行目が対象）`}
+              style={{ flex: 1, minWidth: 0, padding: "16px", fontFamily: "Consolas, monospace", fontSize: "14px", lineHeight: "1.5", backgroundColor: "#1e1e1e", color: "#d4d4d4", border: "none", outline: "none", resize: "none" }}
+              defaultValue={defaultCode}
+              spellCheck={false}
+            />
+          </div>
           {isTerminal && (
             <div style={{ height: "40%", borderTop: "1px solid #333", backgroundColor: "#1e1e1e", color: "#ccc", padding: "8px", fontFamily: "monospace", fontSize: "12px", overflow: "hidden", display: "flex", flexDirection: "column" }}>
               <div style={{ display: "flex", gap: "16px", borderBottom: "1px solid #333", paddingBottom: "4px", marginBottom: "8px" }}>
