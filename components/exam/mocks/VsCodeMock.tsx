@@ -17,6 +17,12 @@ export default function VsCodeMock({ os = "windows", isSuccess, q }: Props) {
   const isCancel = question.includes("強制終了") || question.includes("キャンセル");
   const isReverseSearch = question.includes("リバースサーチ") || question.includes("過去に打った");
   const isCommandPalette = question.includes("コマンドパレット");
+  const isFormatTask = question.includes("フォーマット") || question.includes("自動整形") || question.includes("インデントや改行が乱れて");
+  const isDefinitionTask = question.includes("定義へ") || question.includes("定義元") || question.includes("実装へジャンプ");
+  const isPeekTask = question.includes("ピーク表示") || question.includes("中身だけチラ見");
+  const isReferencesTask = question.includes("参照一覧") || question.includes("利用箇所");
+  const isQuickFixTask = question.includes("クイックフィックス") || question.includes("修正候補");
+  const isMultiCursorTask = question.includes("マルチカーソル") || question.includes("同じ単語") || question.includes("一括で");
   const isCurrentLineTask = question.includes("現在行") || question.includes("現在の行");
   const lineMatch = question.match(/(\d+)行目/);
   const currentLine = lineMatch ? Number(lineMatch[1]) : (isCurrentLineTask ? 3 : 1);
@@ -57,13 +63,28 @@ export default function VsCodeMock({ os = "windows", isSuccess, q }: Props) {
               ))}
             </div>
             <textarea
+              key={`${q?.id ?? "vscode"}-${isSuccess ? "success" : "initial"}`}
               className={styles.vscodeTextArea}
               aria-label={`コードエディタ（${currentLine}行目が対象）`}
               style={{ flex: 1, minWidth: 0, padding: "16px", fontFamily: "Consolas, monospace", fontSize: "14px", lineHeight: "1.5", backgroundColor: "#1e1e1e", color: "#d4d4d4", border: "none", outline: "none", resize: "none" }}
-              defaultValue={defaultCode}
+              defaultValue={isFormatTask && isSuccess ? "function poorlyFormatted() {\n  let x = 1;\n  if (x) {\n    console.log(x);\n  }\n}" : defaultCode}
               spellCheck={false}
             />
           </div>
+          {isSuccess && (isDefinitionTask || isPeekTask || isReferencesTask || isQuickFixTask || isMultiCursorTask) && (
+            <div style={{ position: "absolute", inset: "42px 12px auto 132px", backgroundColor: "#252526", border: "1px solid #454545", borderRadius: "4px", boxShadow: "0 4px 12px rgba(0,0,0,.45)", zIndex: 4, color: "#d4d4d4", fontSize: "12px" }}>
+              <div style={{ padding: "7px 10px", backgroundColor: "#333", borderBottom: "1px solid #454545", fontWeight: 600 }}>
+                {isDefinitionTask ? "定義へ移動" : isPeekTask ? "定義のピーク" : isReferencesTask ? "参照" : isQuickFixTask ? "クイックフィックス" : "マルチカーソル"}
+              </div>
+              <div style={{ padding: "10px", lineHeight: 1.6 }}>
+                {isDefinitionTask && <><div style={{ color: "#4ec9b0" }}>function calculate()</div><div>src/utils/calculate.ts:1</div></>}
+                {isPeekTask && <><div style={{ color: "#4ec9b0" }}>function calculate(a: number)</div><div style={{ color: "#9cdcfe" }}>return a * 2;</div></>}
+                {isReferencesTask && <><div>calculate — 3 件の参照</div><div style={{ color: "#9cdcfe" }}>src/app.tsx:12　src/tests/calc.test.ts:4</div></>}
+                {isQuickFixTask && <><div style={{ color: "#4ec9b0" }}>✓ import {`{ useState }`} from 'react';</div><div style={{ color: "#888" }}>修正候補を適用しました</div></>}
+                {isMultiCursorTask && <><div style={{ color: "#4ec9b0" }}>3 個の選択範囲を追加</div><div style={{ color: "#888" }}>同時編集モードが有効です</div></>}
+              </div>
+            </div>
+          )}
           {isTerminal && (
             <div style={{ height: "40%", borderTop: "1px solid #333", backgroundColor: "#1e1e1e", color: "#ccc", padding: "8px", fontFamily: "monospace", fontSize: "12px", overflow: "hidden", display: "flex", flexDirection: "column" }}>
               <div style={{ display: "flex", gap: "16px", borderBottom: "1px solid #333", paddingBottom: "4px", marginBottom: "8px" }}>
