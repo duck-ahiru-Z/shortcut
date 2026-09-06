@@ -1,5 +1,6 @@
 /* ExcelMock */
 .excelContainer {
+  position: relative;
   border: 1px solid #107c41;
   border-radius: 6px;
   overflow: hidden;

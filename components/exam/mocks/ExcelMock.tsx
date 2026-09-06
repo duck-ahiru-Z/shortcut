@@ -14,11 +14,14 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
   const question = q?.question || "";
   const isFilterTask = question.includes("フィルター");
   const isReturnToActiveCellTask = question.includes("画面外にあるアクティブセル");
+  const isA1Task = question.includes("A1") || question.includes("先頭セル") || question.includes("ホームへ戻");
+  const isSheetSwitchTask = question.includes("ワークシート") || question.includes("シートへ切り替");
+  const isRangeSelectTask = question.includes("末尾まで") || question.includes("まとめて選択") || question.includes("連続データ");
   // Seed the worksheet with the context described by the task.  Previously every
   // question started on B2, which made filter and off-screen-cell tasks impossible
   // to understand from the simulator alone.
   const [activeCell, setActiveCell] = useState<{r: number, c: number}>(() =>
-    isFilterTask ? { r: 0, c: 1 } : isReturnToActiveCellTask ? { r: 11, c: 1 } : { r: 1, c: 1 }
+    isFilterTask ? { r: 0, c: 1 } : isReturnToActiveCellTask ? { r: 11, c: 1 } : isA1Task ? { r: 0, c: 0 } : { r: 1, c: 1 }
   );
 
   const getCol = (c: number) => {
@@ -69,7 +72,9 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
               const isActive = activeCell.r === r && activeCell.c === c;
               let showActive = isActive;
               if (isSuccess) {
-                if ((q?.question || "").includes("表全体")) {
+                if (isRangeSelectTask) {
+                  showActive = r >= 1 && r < 6 && c >= 1 && c < 5;
+                } else if ((q?.question || "").includes("表全体")) {
                   showActive = r >= 0 && r < 6 && c >= 0 && c < 5;
                 } else if ((q?.question || "").includes("行全体") || (q?.question || "").includes("行を選択")) {
                   showActive = r === activeCell.r;
@@ -94,10 +99,20 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
       </div>
       
       <div className={styles.excelTabs}>
-        <div className={styles.excelTabActive}>Sheet1</div>
-        <div className={styles.excelTab}>Sheet2</div>
+        <div className={!isSheetSwitchTask || !isSuccess ? styles.excelTabActive : styles.excelTab}>Sheet1</div>
+        <div className={isSheetSwitchTask && isSuccess ? styles.excelTabActive : styles.excelTab}>Sheet2</div>
         <div className={styles.excelTab}>Sheet3</div>
       </div>
+
+      {isFilterTask && isSuccess && (
+        <div style={{ position: "absolute", top: "92px", left: "120px", width: "170px", backgroundColor: "#fff", border: "1px solid #999", boxShadow: "0 4px 10px rgba(0,0,0,.25)", zIndex: 3, fontSize: "12px", color: "#323130" }}>
+          <div style={{ padding: "8px", borderBottom: "1px solid #ddd", fontWeight: 600 }}>フィルター</div>
+          <div style={{ padding: "7px 8px" }}>すべて選択</div>
+          <div style={{ padding: "7px 8px", backgroundColor: "#e8f3ec" }}>☑ 佐藤</div>
+          <div style={{ padding: "7px 8px" }}>☐ 鈴木</div>
+          <div style={{ padding: "7px 8px" }}>☐ 高橋</div>
+        </div>
+      )}
       
       {isSuccess && (
         <div className={styles.successToast}>
