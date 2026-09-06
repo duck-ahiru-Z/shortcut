@@ -9,6 +9,7 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
   const isRename = (question.includes("名前を変更") || question.includes("ファイル名を")) && !question.includes("コピー");
   const isCopy = question.includes("コピー");
   const isUndo = question.includes("間違えて閉じてしまったフォルダ");
+  const isProperties = question.includes("プロパティ") || question.includes("詳細情報");
 
   const isFileSelected = isRename || isCopy || question.includes("選択中のファイル");
 
@@ -20,6 +21,19 @@ export default function ExplorerMock({ os = "windows", isSuccess, q }: Props) {
         <span className={styles.explorerTitle}>{os === "mac" ? "Finder" : "PC > ドキュメント"}</span>
         {os === "windows" && <WindowControls os={os} />}
       </div>
+
+      {isProperties && isSuccess && (
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: "280px", padding: "16px", background: "#fff", border: "1px solid #999", borderRadius: "6px", boxShadow: "0 6px 20px rgba(0,0,0,.25)", zIndex: 10 }}>
+          <div style={{ fontWeight: 700, marginBottom: "12px" }}>report.txt のプロパティ</div>
+          <div style={{ display: "grid", gridTemplateColumns: "90px 1fr", gap: "8px", fontSize: "12px", color: "#444" }}>
+            <span>種類</span><span>テキスト ドキュメント</span>
+            <span>サイズ</span><span>2.4 KB</span>
+            <span>場所</span><span>C:\\Users\\Documents\\Projects</span>
+            <span>更新日時</span><span>2026/09/06 15:40</span>
+          </div>
+          <button style={{ display: "block", margin: "16px 0 0 auto", padding: "5px 16px", border: "1px solid #aaa", borderRadius: "4px", background: "#f5f5f5" }}>閉じる</button>
+        </div>
+      )}
       
       <div style={{ padding: "8px", borderBottom: "1px solid #ccc", display: "flex", gap: "8px", backgroundColor: os === "mac" ? "#ececec" : "#f9f9f9" }}>
         <div style={{ color: "#666" }}>←</div>
