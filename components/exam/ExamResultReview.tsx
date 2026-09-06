@@ -30,13 +30,13 @@ export default function ExamResultReview({ score, total, wrongAnswers }: Props) 
                 <div className="flex-1 min-w-[200px]">
                   <span className="text-[var(--danger)] font-bold">× あなたの解答:</span>
                   <div className="mt-1 p-2 border border-[var(--danger)] bg-[var(--danger-bg)] rounded-sm">
-                    {wrongObj.userAnswer}
+                    {wrongObj.userAnswer?.trim() || "（未回答）"}
                   </div>
                 </div>
                 <div className="flex-1 min-w-[200px]">
                   <span className="text-[var(--success)] font-bold">○ 正しい解答:</span>
                   <div className="mt-1 p-2 border border-[var(--success)] bg-[var(--success-bg)] rounded-sm">
-                    {wrongObj.correctAnswer}
+                    {wrongObj.correctAnswer?.trim() || "（正解データなし）"}
                   </div>
                 </div>
               </div>
