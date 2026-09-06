@@ -11,7 +11,15 @@ type Props = {
 };
 
 export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
-  const [activeCell, setActiveCell] = useState<{r: number, c: number}>({r: 1, c: 1});
+  const question = q?.question || "";
+  const isFilterTask = question.includes("フィルター");
+  const isReturnToActiveCellTask = question.includes("画面外にあるアクティブセル");
+  // Seed the worksheet with the context described by the task.  Previously every
+  // question started on B2, which made filter and off-screen-cell tasks impossible
+  // to understand from the simulator alone.
+  const [activeCell, setActiveCell] = useState<{r: number, c: number}>(() =>
+    isFilterTask ? { r: 0, c: 1 } : isReturnToActiveCellTask ? { r: 11, c: 1 } : { r: 1, c: 1 }
+  );
 
   const getCol = (c: number) => {
     const cols = ["A", "B", "C", "D", "E"];
@@ -49,7 +57,7 @@ export default function ExcelMock({ os = "windows", isSuccess, q }: Props) {
           {Array.from({ length: 5 }).map((_, c) => (
             <div key={`col-${c}`} className={styles.excelColHeader}>
               {getCol(c)}
-              {(q?.question || "").includes("フィルター") && isSuccess && <span style={{ marginLeft: "4px", fontSize: "10px" }}>▼</span>}
+              {isFilterTask && <span style={{ marginLeft: "4px", fontSize: "10px" }}>▼</span>}
             </div>
           ))}
         </div>
