@@ -123,6 +123,11 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
       </div>
 
       <div className={styles.browserBody} style={mainContainerStyle}>
+        {isRestoreTab && isSuccess && (
+          <div style={{ position: "absolute", top: 12, left: 12, right: 12, padding: "8px 12px", backgroundColor: "#e8f0fe", border: "1px solid #8ab4f8", borderRadius: "6px", color: "#174ea6", fontSize: "12px", display: "flex", justifyContent: "space-between", zIndex: 4 }}>
+            <span>閉じたタブを復元しました</span><span>履歴: レポート編集ページ</span>
+          </div>
+        )}
         {isReload && isSuccess ? (
           <div style={{ margin: "auto", display: "flex", flexDirection: "column", alignItems: "center", gap: "16px", color: "#666" }}>
             <div style={{ fontSize: "32px", animation: "spin 1s linear infinite" }}>↻</div>
