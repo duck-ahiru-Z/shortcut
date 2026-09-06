@@ -7,6 +7,7 @@ export default function SlackMock({ os = "windows", isSuccess, q }: Props) {
   
   const isSearch = question.includes("探すのが大変") || question.includes("検索");
   const isUnread = question.includes("未読メッセージ") || question.includes("次の「未読");
+  const isQuickSwitcher = question.includes("クイックスイッチャー") || question.includes("チャンネルやメンバー") || question.includes("移動");
 
   return (
     <div className={styles.slackContainer}>
@@ -17,6 +18,13 @@ export default function SlackMock({ os = "windows", isSuccess, q }: Props) {
         </div>
         {os === "windows" && <WindowControls os={os} />}
       </div>
+      {isQuickSwitcher && isSuccess && (
+        <div style={{ position: "absolute", top: "48px", left: "50%", transform: "translateX(-50%)", width: "340px", backgroundColor: "#fff", color: "#1d1c1d", borderRadius: "6px", boxShadow: "0 8px 24px rgba(0,0,0,.35)", zIndex: 5, overflow: "hidden" }}>
+          <div style={{ padding: "10px 12px", borderBottom: "1px solid #ddd", fontSize: "13px", color: "#616061" }}>移動先を検索</div>
+          <div style={{ padding: "10px 12px", backgroundColor: "#1264a3", color: "#fff", fontSize: "13px" }}># project-a</div>
+          <div style={{ padding: "10px 12px", fontSize: "13px" }}>田中 太郎（メンバー）</div>
+        </div>
+      )}
       <div className={styles.slackBody}>
         <div className={styles.slackSidebar}>
           <div className={!isUnread || !isSuccess ? styles.slackChannelActive : styles.slackChannel}># general</div>
