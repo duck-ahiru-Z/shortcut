@@ -30,6 +30,13 @@ async function calculateComboHash(pressedSet: Set<string>): Promise<string> {
 export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: UsePracticalKeyboardProps) {
   const sequenceIndexRef = useRef(0);
 
+  // A skipped question must not leave a partially completed sequence active.
+  // Without this reset, the next question can be evaluated from the previous
+  // question's second (or later) step.
+  useEffect(() => {
+    sequenceIndexRef.current = 0;
+  }, [q?.id]);
+
   useEffect(() => {
     if (!q || (!q.expectedKeyCombo && !q.expectedKeyComboHash && !q.expectedKeySequence && !q.expectedKeySequenceHashes) || isSubmitting) return;
 
