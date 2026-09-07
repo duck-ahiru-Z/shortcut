@@ -136,7 +136,12 @@ export async function startExam(grade: string) {
 
   const dynamicAnswers: Record<number, string> = {};
 
-  const shuffledPool = shuffleArray(data.pool);
+  // Avoid presenting identical question text more than once in a single pool.
+  // Some legacy pools contain duplicate entries with different IDs.
+  const uniquePool = data.pool.filter((q: any, index: number, pool: any[]) =>
+    pool.findIndex((candidate: any) => candidate.question === q.question) === index
+  );
+  const shuffledPool = shuffleArray(uniquePool);
   const selectedQuestions = shuffledPool.slice(0, data.questionsCount).map((q: any) => {
     const qData: any = {
       id: q.id,

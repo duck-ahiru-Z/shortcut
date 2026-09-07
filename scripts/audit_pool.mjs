@@ -23,7 +23,14 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 async function run() {
-  const snap = await getDocs(collection(db, 'exams'));
+  let snap;
+  try {
+    snap = await getDocs(collection(db, 'exams'));
+  } catch (error) {
+    console.error('Failed to connect to Firestore; audit did not run:', error);
+    process.exitCode = 1;
+    return;
+  }
   let totalIssues = 0;
 
   for (const d of snap.docs) {
