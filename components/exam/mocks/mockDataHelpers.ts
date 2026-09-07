@@ -5,7 +5,7 @@ export function getVsCodeInitialCode(question: string) {
   if (question.includes("複製") || question.includes("コピー")) {
     return "export const API_ENDPOINT = 'https://api.example.com/v1';\n\n// カーソルは上の行にあります";
   }
-  if (question.includes("行を移動")) {
+  if (question.includes("行を移動") || question.includes("行を上へ移動") || question.includes("行を下へ移動")) {
     return "function init() {\n  console.log('2番目に実行したい');\n  console.log('1番目に実行したい');\n}";
   }
   if (question.includes("console出力") || question.includes("現在行を削除")) {
