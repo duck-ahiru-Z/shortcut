@@ -29,7 +29,22 @@ function convertQuestion(q) {
 
   // Convert practical expected combo
   if (newQ.expectedKeyCombo) {
-    newQ.expectedKeyCombo = newQ.expectedKeyCombo.map(key => convertTextToMac(key));
+    newQ.expectedKeyCombo = newQ.expectedKeyCombo.map(key => {
+      const normalized = String(key).toLowerCase();
+      if (normalized === 'control' || normalized === 'ctrl') return 'meta';
+      return key;
+    });
+  }
+
+  if (newQ.expectedKeySequence) {
+    newQ.expectedKeySequence = newQ.expectedKeySequence.map(step => ({
+      ...step,
+      keys: (step.keys || []).map(key => {
+        const normalized = String(key).toLowerCase();
+        if (normalized === 'control' || normalized === 'ctrl') return 'meta';
+        return key;
+      })
+    }));
   }
 
   // Task data conversion if needed
