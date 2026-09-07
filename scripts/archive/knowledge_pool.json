@@ -9,7 +9,7 @@
         "Ctrl + PageDown",
         "Alt + 矢印キー"
       ],
-      "answer": "Ctrl + ↓",
+        "answer": "Ctrl + 矢印キー",
       "explanation": "Ctrl + 矢印キーは、連続したデータ範囲の端へ一気にジャンプできます。何万行もの表をマウスホイールで追いかける時間を消し去る、Excel実務の移動速度を根本から変えるショートカットです。"
     },
     {
@@ -189,7 +189,7 @@
         "Alt + + / Alt + -",
         "Shift + + / Shift + -"
       ],
-      "answer": "Ctrl + Shift + + / Ctrl + -",
+        "answer": "Ctrl + + / Ctrl + -",
       "explanation": "Ctrl + Shift + + (JIS配列では+を入力するのにShiftが必要なため)で挿入、Ctrl + -で削除できます。行選択や列選択と組み合わせると、表の行列調整を右クリックなしで完結できる強力な実務コンボになります。"
     },
     {
@@ -1549,8 +1549,8 @@
         "Alt + `",
         "Ctrl + Shift + T"
       ],
-      "answer": "Ctrl + J",
-      "explanation": "Ctrl + JはVS Codeの統合ターミナルを開閉します。コード編集、テスト実行、Git操作を同じ画面内で往復できるため、開発作業の流れを止めません。"
+        "answer": "Ctrl + `",
+        "explanation": "Ctrl + `（バッククォート）はVS Codeの統合ターミナルを開閉します。コード編集、テスト実行、Git操作を同じ画面内で往復できるため、開発作業の流れを止めません。"
     },
     {
       "id": 1011,

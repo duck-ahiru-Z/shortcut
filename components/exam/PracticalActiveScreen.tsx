@@ -140,7 +140,7 @@ export default function PracticalActiveScreen({
         <button 
           onClick={() => onSkip(q.id)} 
           className="btn btn-secondary"
-          disabled={isSubmitting}
+          disabled={isSubmitting || isSuccess}
         >
           スキップして次へ
         </button>
