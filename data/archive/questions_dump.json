@@ -251,7 +251,8 @@
       ],
       "question": "外部モニターやプロジェクターへの表示方法を切り替えたい。使うショートカットはどれか。",
       "id": 1001,
-      "answer": "A. Windows + P"
+      "answer": "A. Windows + P",
+      "explanation": "PはPrint（印刷）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Windows + E\n・Windows + D\n・Windows + L"
     },
     {
       "question": "PowerPointでスライドショーを最初のスライドから開始したい。使うキーはどれか。",
@@ -262,7 +263,8 @@
         "D. Esc"
       ],
       "id": 1002,
-      "answer": "A. Shift + F5"
+      "answer": "A. Shift + F5",
+      "explanation": "F5は更新の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・F5\n・F11\n・Esc"
     },
     {
       "question": "PowerPointで現在開いているスライドからスライドショーを開始したい。使うショートカットはどれか。",
@@ -273,7 +275,8 @@
         "D. Windows + P"
       ],
       "answer": "A. F5",
-      "id": 1003
+      "id": 1003,
+      "explanation": "F5は更新の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + P\n・Shift + F5\n・Windows + P"
     },
     {
       "question": "スライドショーや動画の全画面表示を終了して元の画面に戻りたい。使うキーはどれか。",
@@ -284,7 +287,8 @@
         "D. Esc"
       ],
       "answer": "A. F11",
-      "id": 1004
+      "id": 1004,
+      "explanation": "F11は全画面表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + W\n・Alt + Tab\n・Esc"
     },
     {
       "choices": [
@@ -295,7 +299,8 @@
       ],
       "question": "スライドショー中に画面を真っ暗にして、いったん注目を集めたい。押すキーはどれか。",
       "id": 1005,
-      "answer": "A. B"
+      "answer": "A. B",
+      "explanation": "Bは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・W\n・P\n・D"
     },
     {
       "question": "スライドショー中に画面を真っ白にして、一時的に表示を止めたい。押すキーはどれか。",
@@ -306,7 +311,8 @@
         "D. F5"
       ],
       "id": 1006,
-      "answer": "A. B"
+      "answer": "A. B",
+      "explanation": "Bは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・W\n・Esc\n・F5"
     },
     {
       "question": "PowerPointのスライドショー実行中に、ポインターをペンに変えて書き込みたい。使うショートカットはどれか。",
@@ -317,7 +323,8 @@
         "D. Ctrl + S"
       ],
       "answer": "A. Ctrl + D",
-      "id": 1007
+      "id": 1007,
+      "explanation": "Dはデスクトップ表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + K\n・Ctrl + P\n・Ctrl + S"
     },
     {
       "answer": "A. Ctrl + 矢印キー",
@@ -328,7 +335,8 @@
         "B. Alt + 矢印キー",
         "C. Windows + 矢印キー",
         "D. Shift + 矢印キー"
-      ]
+      ],
+      "explanation": "矢印キーは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Alt + 矢印キー\n・Windows + 矢印キー\n・Shift + 矢印キー"
     },
     {
       "answer": "A. Ctrl + 矢印キー",
@@ -339,7 +347,8 @@
         "B. Shift + 矢印キー",
         "C. Windows + 矢印キー",
         "D. Alt + Tab"
-      ]
+      ],
+      "explanation": "矢印キーは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Shift + 矢印キー\n・Windows + 矢印キー\n・Alt + Tab"
     },
     {
       "choices": [
@@ -350,7 +359,8 @@
       ],
       "question": "現在入力している行の先頭へカーソルを移動したい。使うキーはどれか。",
       "answer": "A. End",
-      "id": 1010
+      "id": 1010,
+      "explanation": "Endは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Home\n・Ctrl + Home\n・Shift + Home"
     },
     {
       "answer": "A. Ctrl + End",
@@ -361,7 +371,8 @@
         "C. End",
         "D. Shift + End"
       ],
-      "question": "現在入力している行の末尾へカーソルを移動したい。使うキーはどれか。"
+      "question": "現在入力している行の末尾へカーソルを移動したい。使うキーはどれか。",
+      "explanation": "Endは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Home\n・End\n・Shift + End"
     },
     {
       "id": 1012,
@@ -372,7 +383,8 @@
         "B. Home",
         "C. Ctrl + End",
         "D. Ctrl + Home"
-      ]
+      ],
+      "explanation": "Homeは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Home\n・Ctrl + End\n・Ctrl + Home"
     },
     {
       "answer": "A. Ctrl + End",
@@ -383,7 +395,8 @@
         "C. Shift + End",
         "D. Ctrl + Home"
       ],
-      "question": "ファイルやページの一番下へ一気に移動したい。使うショートカットはどれか。"
+      "question": "ファイルやページの一番下へ一気に移動したい。使うショートカットはどれか。",
+      "explanation": "Endは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・End\n・Shift + End\n・Ctrl + Home"
     },
     {
       "choices": [
@@ -394,7 +407,8 @@
       ],
       "question": "カーソル位置から行の先頭までを一気に範囲選択したい。使うショートカットはどれか。",
       "id": 1014,
-      "answer": "A. Ctrl + Home"
+      "answer": "A. Ctrl + Home",
+      "explanation": "Homeは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Shift + Home\n・Home\n・Ctrl + Shift + N"
     },
     {
       "id": 1015,
@@ -405,7 +419,8 @@
         "B. Ctrl + End",
         "C. Shift + End",
         "D. Ctrl + Shift + Tab"
-      ]
+      ],
+      "explanation": "Endは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + End\n・Shift + End\n・Ctrl + Shift + Tab"
     },
     {
       "choices": [
@@ -416,7 +431,8 @@
       ],
       "question": "選択した文字を太字にしたい。使うショートカットはどれか。",
       "answer": "A. Ctrl + I",
-      "id": 1016
+      "id": 1016,
+      "explanation": "Iは設定の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + U\n・Ctrl + K\n・Ctrl + B"
     },
     {
       "id": 1017,
@@ -427,7 +443,8 @@
         "C. Ctrl + U",
         "D. Ctrl + D"
       ],
-      "question": "選択した文字を斜体にしたい。使うショートカットはどれか。"
+      "question": "選択した文字を斜体にしたい。使うショートカットはどれか。",
+      "explanation": "Iは設定の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + B\n・Ctrl + U\n・Ctrl + D"
     },
     {
       "id": 1018,
@@ -438,7 +455,8 @@
         "C. Ctrl + K",
         "D. Ctrl + L"
       ],
-      "question": "選択した文字に下線を引きたい。使うショートカットはどれか。"
+      "question": "選択した文字に下線を引きたい。使うショートカットはどれか。",
+      "explanation": "Bは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + U\n・Ctrl + K\n・Ctrl + L"
     },
     {
       "question": "カーソルの左側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。",
@@ -449,7 +467,8 @@
         "D. Alt + Backspace"
       ],
       "id": 1019,
-      "answer": "A. Ctrl + Delete"
+      "answer": "A. Ctrl + Delete",
+      "explanation": "Deleteは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Shift + Delete\n・Ctrl + Backspace\n・Alt + Backspace"
     },
     {
       "id": 1020,
@@ -460,7 +479,8 @@
         "B. Backspace",
         "C. Delete",
         "D. Ctrl + Delete"
-      ]
+      ],
+      "explanation": "Backspaceは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Backspace\n・Delete\n・Ctrl + Delete"
     },
     {
       "id": 511,
@@ -472,7 +492,7 @@
         "D. Ctrl + C"
       ],
       "answer": "A. Ctrl + N",
-      "explanation": "Nは新規作成の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Nは新規作成の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 512,
@@ -484,7 +504,7 @@
         "D. Ctrl + O"
       ],
       "answer": "D. Ctrl + O",
-      "explanation": "OはOpen（開く）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "OはOpen（開く）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 513,
@@ -496,7 +516,7 @@
         "D. Ctrl + S"
       ],
       "answer": "C. Ctrl + W",
-      "explanation": "Wは閉じるの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Wは閉じるの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 514,
@@ -508,7 +528,7 @@
         "D. Ctrl + P"
       ],
       "answer": "B. Ctrl + Y",
-      "explanation": "Yはやり直すの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Yはやり直すの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 515,
@@ -520,7 +540,7 @@
         "D. Ctrl + C"
       ],
       "answer": "A. Ctrl + F",
-      "explanation": "Fは検索の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Fは検索の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 516,
@@ -532,7 +552,7 @@
         "D. Ctrl + V"
       ],
       "answer": "D. Ctrl + V",
-      "explanation": "Vは貼り付けの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Vは貼り付けの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 517,
@@ -544,7 +564,7 @@
         "D. Ctrl + S"
       ],
       "answer": "C. Ctrl + C",
-      "explanation": "CはCopy（コピー）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + Z"
+      "explanation": "CはCopy（コピー）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + Z"
     },
     {
       "id": 518,
@@ -556,7 +576,7 @@
         "D. Ctrl + P"
       ],
       "answer": "B. Ctrl + X",
-      "explanation": "Xは切り取りの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Xは切り取りの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 519,
@@ -568,7 +588,7 @@
         "D. Ctrl + Z"
       ],
       "answer": "A. Ctrl + S",
-      "explanation": "SはSave（保存）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + P、Ctrl + C、Ctrl + Z"
+      "explanation": "SはSave（保存）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + P\n・Ctrl + C\n・Ctrl + Z"
     },
     {
       "id": 520,
@@ -580,7 +600,7 @@
         "D. Ctrl + A"
       ],
       "answer": "D. Ctrl + A",
-      "explanation": "Aはすべて選択の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Aはすべて選択の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 521,
@@ -592,7 +612,7 @@
         "D. Ctrl + S"
       ],
       "answer": "C. Windows + L",
-      "explanation": "LはLock（ロック）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "LはLock（ロック）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 522,
@@ -604,7 +624,7 @@
         "D. Ctrl + P"
       ],
       "answer": "B. Windows + I",
-      "explanation": "Iは設定の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Iは設定の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 523,
@@ -616,7 +636,7 @@
         "D. Ctrl + C"
       ],
       "answer": "A. Windows + S",
-      "explanation": "SはSave（保存）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "SはSave（保存）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 524,
@@ -628,7 +648,7 @@
         "D. Windows + D"
       ],
       "answer": "D. Windows + D",
-      "explanation": "Dはデスクトップ表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Dはデスクトップ表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 525,
@@ -640,7 +660,7 @@
         "D. Ctrl + S"
       ],
       "answer": "C. Windows + E",
-      "explanation": "Eはエクスプローラーの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Eはエクスプローラーの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 526,
@@ -652,7 +672,7 @@
         "D. Ctrl + P"
       ],
       "answer": "B. Ctrl + Shift + Esc",
-      "explanation": "Escはタスクマネージャーの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Escはタスクマネージャーの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 527,
@@ -664,7 +684,7 @@
         "D. Ctrl + C"
       ],
       "answer": "A. Alt + Tab",
-      "explanation": "Tabはアプリ切替の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "Tabはアプリ切替の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 528,
@@ -676,7 +696,7 @@
         "D. F11"
       ],
       "answer": "D. F11",
-      "explanation": "F11は全画面表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "F11は全画面表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 529,
@@ -688,7 +708,7 @@
         "D. Ctrl + S"
       ],
       "answer": "C. F1",
-      "explanation": "F1はヘルプの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "F1はヘルプの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     },
     {
       "id": 530,
@@ -700,7 +720,7 @@
         "D. Ctrl + P"
       ],
       "answer": "B. F5",
-      "explanation": "F5は更新の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+      "explanation": "F5は更新の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S\n・Ctrl + P\n・Ctrl + C"
     }
   ],
   "practical-5kyu": [
