@@ -219,15 +219,15 @@
       "id": 408
     },
     {
-      "answer": "D. AとCの両方",
-      "explanation": "アドレスバーを選択すると、そのまま検索キーワードを入力したり、URLをコピーしたりできます。どちらのショートカットも広く使われています。\n\n【他の選択肢】\n・Ctrl + L: アドレスバーを選択 (Location)\n・Alt + D: アドレスバーを選択\n・Ctrl + K: 検索エンジンによる検索状態にする",
+      "answer": "D. Ctrl + L と Alt + D の両方",
+      "explanation": "Ctrl + L と Alt + D は、どちらもブラウザのアドレスバーを選択します。選択後はそのままURLや検索語を入力できます。\n\n【他の選択肢】\n・Ctrl + K: 検索欄にフォーカスする\n・Ctrl + L と Alt + D の両方: この問題の正しい組み合わせ",
       "question": "ブラウザのアドレスバーを選択するショートカットキーはどれか。",
       "id": 409,
       "choices": [
         "A. Ctrl + L",
         "B. Ctrl + K",
         "C. Alt + D",
-        "D. AとCの両方"
+        "D. Ctrl + L と Alt + D の両方"
       ]
     },
     {
@@ -300,7 +300,7 @@
       "question": "スライドショー中に画面を真っ暗にして、いったん注目を集めたい。押すキーはどれか。",
       "id": 1005,
       "answer": "A. B",
-      "explanation": "Bは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・W\n・P\n・D"
+      "explanation": "BはBlack（黒画面）の頭文字です。プレゼン中に一時的に画面を暗くし、聞き手の注目を話し手へ戻すために使います。\n\n【他の選択肢】\n・W: White（白画面）に切り替える\n・P: ペン（レーザーポインター）を使う\n・D: 描画モードを切り替える"
     },
     {
       "question": "スライドショー中に画面を真っ白にして、一時的に表示を止めたい。押すキーはどれか。",
@@ -507,18 +507,6 @@
       "explanation": "OはOpen（開く）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
     },
     {
-      "id": 513,
-      "question": "作業中のタブや文書を閉じたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + P",
-        "B. Ctrl + C",
-        "C. Ctrl + W",
-        "D. Ctrl + S"
-      ],
-      "answer": "C. Ctrl + W",
-      "explanation": "Wは閉じるの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
-    },
-    {
       "id": 514,
       "question": "取り消した操作をもう一度やり直したい。どのキーを押すか。",
       "choices": [
@@ -603,18 +591,6 @@
       "explanation": "Aはすべて選択の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
     },
     {
-      "id": 521,
-      "question": "席を離れるので、Windowsをすぐロックしたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + P",
-        "B. Ctrl + C",
-        "C. Windows + L",
-        "D. Ctrl + S"
-      ],
-      "answer": "C. Windows + L",
-      "explanation": "LはLock（ロック）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
-    },
-    {
       "id": 522,
       "question": "Windowsの設定をキーボードだけで開きたい。どのキーを押すか。",
       "choices": [
@@ -637,30 +613,6 @@
       ],
       "answer": "A. Windows + S",
       "explanation": "SはSave（保存）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
-    },
-    {
-      "id": 524,
-      "question": "開いているウィンドウを隠してデスクトップを確認したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + S",
-        "B. Ctrl + P",
-        "C. Ctrl + C",
-        "D. Windows + D"
-      ],
-      "answer": "D. Windows + D",
-      "explanation": "Dはデスクトップ表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
-    },
-    {
-      "id": 525,
-      "question": "ファイルの一覧を表示して、別のファイルを探したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + P",
-        "B. Ctrl + C",
-        "C. Windows + E",
-        "D. Ctrl + S"
-      ],
-      "answer": "C. Windows + E",
-      "explanation": "Eはエクスプローラーの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
     },
     {
       "id": 526,
@@ -696,7 +648,7 @@
         "D. F11"
       ],
       "answer": "D. F11",
-      "explanation": "F11は全画面表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
+      "explanation": "F11はファンクションキーの一つで、ブラウザの全画面表示を切り替えます。頭文字ではなく、ブラウザで決められた機能キーとして覚えます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
     },
     {
       "id": 529,
@@ -720,7 +672,7 @@
         "D. Ctrl + P"
       ],
       "answer": "B. F5",
-      "explanation": "F5は更新の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
+      "explanation": "F5はブラウザのページを再読み込みするファンクションキーです。表示が古いときに最新状態を取得できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）"
     }
   ],
   "practical-5kyu": [

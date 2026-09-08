@@ -54,6 +54,22 @@ for (const question of data["5kyu"]) {
 for (const question of data["4kyu"]) {
   if (!question.explanation && question.answer) question.explanation = explain(question.answer.replace(/^[A-D]\.\s*/, ""), (question.choices || []).map((choice) => choice.replace(/^[A-D]\.\s*/, "")));
 }
+// Keep the original lower-grade questions when the added scenario is a duplicate.
+data["4kyu"] = data["4kyu"].filter((question) => ![513, 521, 524, 525].includes(question.id));
+const addressQuestion = data["4kyu"].find((question) => question.id === 409);
+if (addressQuestion) {
+  addressQuestion.choices = ["A. Ctrl + L", "B. Ctrl + K", "C. Alt + D", "D. Ctrl + L と Alt + D の両方"];
+  addressQuestion.answer = "D. Ctrl + L と Alt + D の両方";
+  addressQuestion.explanation = "Ctrl + L と Alt + D は、どちらもブラウザのアドレスバーを選択します。選択後はそのままURLや検索語を入力できます。\n\n【他の選択肢】\n・Ctrl + K: 検索欄にフォーカスする\n・Ctrl + L と Alt + D の両方: この問題の正しい組み合わせ";
+}
+const blackScreenQuestion = data["4kyu"].find((question) => question.id === 1005);
+if (blackScreenQuestion) {
+  blackScreenQuestion.explanation = "BはBlack（黒画面）の頭文字です。プレゼン中に一時的に画面を暗くし、聞き手の注目を話し手へ戻すために使います。\n\n【他の選択肢】\n・W: White（白画面）に切り替える\n・P: ペン（レーザーポインター）を使う\n・D: 描画モードを切り替える";
+}
+const fullScreenQuestion = data["4kyu"].find((question) => question.id === 528);
+if (fullScreenQuestion) fullScreenQuestion.explanation = "F11はファンクションキーの一つで、ブラウザの全画面表示を切り替えます。頭文字ではなく、ブラウザで決められた機能キーとして覚えます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）";
+const refreshQuestion = data["4kyu"].find((question) => question.id === 530);
+if (refreshQuestion) refreshQuestion.explanation = "F5はブラウザのページを再読み込みするファンクションキーです。表示が古いときに最新状態を取得できます。\n\n【他の選択肢】\n・Ctrl + S: Save（保存）\n・Ctrl + P: Print（印刷）\n・Ctrl + C: Copy（コピー）";
 if (data["4kyu"].length < 30) {
   const historical = JSON.parse(execFileSync("git", ["show", "59aad70:questions_dump.json"], { encoding: "utf8" }))["4kyu"];
   const ids = new Set(data["4kyu"].map((q) => q.id));
