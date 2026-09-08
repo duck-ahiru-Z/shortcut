@@ -1,42 +1,6 @@
 {
   "knowledge-3kyu": [
     {
-      "id": 3001,
-      "question": "Excelで数万行の売上データを確認しているとき、現在のセルから表の一番下のデータ端まで一気に移動するショートカットキーはどれですか？",
-      "choices": [
-        "Ctrl + 矢印キー",
-        "Shift + 矢印キー",
-        "Ctrl + PageDown",
-        "Alt + 矢印キー"
-      ],
-      "answer": "Ctrl + 矢印キー",
-      "explanation": "Ctrl + 矢印キーは、連続したデータ範囲の端へ一気にジャンプできます。何万行もの表をマウスホイールで追いかける時間を消し去る、Excel実務の移動速度を根本から変えるショートカットです。"
-    },
-    {
-      "id": 3002,
-      "question": "Excelで現在のセルからデータの端まで一気に範囲選択し、コピーや書式設定の準備をしたい場合に使うショートカットキーはどれですか？",
-      "choices": [
-        "Ctrl + Shift + 矢印キー",
-        "Ctrl + Alt + 矢印キー",
-        "Shift + PageDown",
-        "Ctrl + Space"
-      ],
-      "answer": "Ctrl + Shift + 矢印キー",
-      "explanation": "Ctrl + Shift + 矢印キーは、移動だけでなくデータ端までの範囲選択を一瞬で行えます。巨大な表の列や行をまとめて処理する場面で、ドラッグ選択の不安定さを完全に排除できます。"
-    },
-    {
-      "id": 3003,
-      "question": "Excelで複数のワークシートを確認しているとき、画面左下のシート見出しをクリックせずに左右のシートへ切り替えるショートカットキーはどれですか？",
-      "choices": [
-        "Ctrl + PageUp / Ctrl + PageDown",
-        "Alt + Tab",
-        "Ctrl + Tab",
-        "Shift + F4"
-      ],
-      "answer": "Ctrl + PageUp / Ctrl + PageDown",
-      "explanation": "Ctrl + PageUp / Ctrl + PageDownを使うと、Excel内のシートを左右に高速移動できます。月別シートや部門別シートを横断して確認する作業では、マウスで小さなタブを狙う必要がなくなります。"
-    },
-    {
       "id": 3004,
       "question": "Excelで広いシートを操作中に迷子になったとき、A1セルへ一瞬で戻るショートカットキーはどれですか？",
       "choices": [
@@ -47,54 +11,6 @@
       ],
       "answer": "Ctrl + Home",
       "explanation": "Ctrl + Homeはシートの先頭であるA1セルへ戻るための復帰キーです。広大な表の中で現在位置を見失ったとき、マウスでスクロールして戻るより圧倒的に速く、作業のリズムを崩しません。"
-    },
-    {
-      "id": 3005,
-      "question": "Excelで画面だけ遠くへスクロールして確認したあと、現在選択しているアクティブセルが見える位置へ表示を戻すショートカットキーはどれですか？",
-      "choices": [
-        "Ctrl + Backspace",
-        "Ctrl + Home",
-        "Alt + Backspace",
-        "Ctrl + F"
-      ],
-      "answer": "Ctrl + Backspace",
-      "explanation": "Ctrl + Backspaceは、選択中のセルが画面に表示されるように視点を戻します。確認のためにスクロールしても現在地へ即復帰できるため、Excelでの迷子時間を大幅に削減できます。"
-    },
-    {
-      "id": 3006,
-      "question": "Excelでセルをダブルクリックせずに、セル内の文字や数式をすぐ編集したい場合に使うキーはどれですか？",
-      "choices": [
-        "F2",
-        "F4",
-        "F7",
-        "Enter"
-      ],
-      "answer": "F2",
-      "explanation": "F2はセルを編集モードに切り替える基本中の基本です。セルの末尾に追記したいときや数式を微修正したいとき、ダブルクリックの位置ズレを防ぎ、入力作業を滑らかにします。"
-    },
-    {
-      "id": 3007,
-      "question": "Excelで上のセルの内容を、現在選択している下のセルへすばやくコピーするショートカットキーはどれですか？",
-      "choices": [
-        "Ctrl + D",
-        "Ctrl + R",
-        "Ctrl + C",
-        "Ctrl + E"
-      ],
-      "answer": "Ctrl + D",
-      "explanation": "Ctrl + DのDはDownの意味で、上のセルを下へコピーします。連続入力や同じ分類名の入力で、Ctrl+CとCtrl+Vを繰り返す手間を1アクションに圧縮できます。"
-    },
-    {
-      "id": 3008,
-      "question": "Excelで左のセルの内容を、現在選択している右のセルへすばやくコピーするショートカットキーはどれですか？",
-      "choices": [
-        "Ctrl + R",
-        "Ctrl + D",
-        "Ctrl + L",
-        "Ctrl + Shift + R"
-      ],
-      "answer": "Ctrl + R",
-      "explanation": "Ctrl + RのRはRightの意味で、左のセルを右へコピーします。横方向に同じ数式や見出しを展開する場面で、表作成のスピードを一気に引き上げます。"
     },
     {
       "id": 3009,
@@ -143,18 +59,6 @@
       ],
       "answer": "Ctrl + 1",
       "explanation": "Ctrl + 1はセル書式設定の最短ルートです。右クリックから探す時間をなくし、数値、日付、罫線、配置などの調整をすぐ始められるため、表の仕上げ速度が大きく変わります。"
-    },
-    {
-      "id": 3013,
-      "question": "Excelで選択中の数値に、桁区切りカンマなどの表示形式をすばやく適用するショートカットキーはどれですか？",
-      "choices": [
-        "Ctrl + Shift + 1",
-        "Ctrl + 1",
-        "Ctrl + Alt + 1",
-        "Shift + F4"
-      ],
-      "answer": "Ctrl + Shift + 1",
-      "explanation": "Ctrl + Shift + 1は数値に桁区切り表示を適用する代表的な書式ショートカットです。売上金額や数量を見やすく整える操作を、リボンに触れずに一瞬で完了できます。"
     },
     {
       "id": 3014,
@@ -287,6 +191,102 @@
       ],
       "answer": "Alt → H → O → I",
       "explanation": "Alt → H → O → Iは列幅の自動調整を行うアクセスキーコンボです。列の境界をダブルクリックするマウス操作を排除し、表の見切れを一瞬で整えられます。"
+    },
+    {
+      "id": 3041,
+      "question": "ブラウザで新しいタブを開いて、別のページを調べたい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Ctrl + T",
+        "B. Ctrl + W",
+        "C. Ctrl + R",
+        "D. Ctrl + H"
+      ],
+      "answer": "A. Ctrl + T",
+      "explanation": "Ctrl + Tは新しいタブ（Tab）を開きます。現在のページを残したまま別の情報を調べるときに便利です。\n\n【他の選択肢】\n・Ctrl + W: 現在のタブを閉じる\n・Ctrl + R: ページを再読み込みする\n・Ctrl + H: 閲覧履歴を開く"
+    },
+    {
+      "id": 3042,
+      "question": "ブラウザで閉じてしまったタブをもう一度開きたい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Ctrl + Shift + T",
+        "B. Ctrl + Shift + W",
+        "C. Ctrl + T",
+        "D. Alt + Left"
+      ],
+      "answer": "A. Ctrl + Shift + T",
+      "explanation": "Ctrl + Shift + Tは直前に閉じたタブを復元します。間違えてタブを閉じたときにすぐ戻せます。\n\n【他の選択肢】\n・Ctrl + Shift + W: ウィンドウを閉じる\n・Ctrl + T: 新しいタブを開く\n・Alt + Left: 前のページへ戻る"
+    },
+    {
+      "id": 3043,
+      "question": "複数のタブを開いている。マウスを使わず右隣のタブへ移動するキーはどれか。",
+      "choices": [
+        "A. Ctrl + Tab",
+        "B. Ctrl + W",
+        "C. Ctrl + PageUp",
+        "D. Alt + Tab"
+      ],
+      "answer": "A. Ctrl + Tab",
+      "explanation": "Ctrl + Tabは右隣のタブへ移動します。調査中にタブを順番に確認するときに使います。\n\n【他の選択肢】\n・Ctrl + W: タブを閉じる\n・Ctrl + PageUp: 左隣のタブへ移動する\n・Alt + Tab: アプリを切り替える"
+    },
+    {
+      "id": 3044,
+      "question": "あとで見返したいページをブックマークに登録したい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Ctrl + D",
+        "B. Ctrl + B",
+        "C. Ctrl + M",
+        "D. Ctrl + K"
+      ],
+      "answer": "A. Ctrl + D",
+      "explanation": "Ctrl + Dは現在のページをブックマーク（お気に入り）に追加します。よく使うページを保存するときに便利です。\n\n【他の選択肢】\n・Ctrl + B: 太字など、アプリによって異なる操作\n・Ctrl + M: ウィンドウを最小化する場合がある\n・Ctrl + K: 検索欄へフォーカスする"
+    },
+    {
+      "id": 3045,
+      "question": "前に見ていたページへ戻りたい。ブラウザで使うショートカットキーはどれか。",
+      "choices": [
+        "A. Alt + Left",
+        "B. Alt + Right",
+        "C. Ctrl + R",
+        "D. Ctrl + L"
+      ],
+      "answer": "A. Alt + Left",
+      "explanation": "Alt + Leftはブラウザの履歴を1つ戻ります。リンクをたどったあと、前のページを見直すときに使います。\n\n【他の選択肢】\n・Alt + Right: 次の履歴へ進む\n・Ctrl + R: ページを再読み込みする\n・Ctrl + L: アドレスバーを選択する"
+    },
+    {
+      "id": 3046,
+      "question": "入力した検索語を変えずに、検索結果のページだけ最新状態に更新したい。どのキーを使うか。",
+      "choices": [
+        "A. Ctrl + R",
+        "B. Ctrl + N",
+        "C. Ctrl + F",
+        "D. F11"
+      ],
+      "answer": "A. Ctrl + R",
+      "explanation": "Ctrl + Rは現在のページを再読み込み（Reload）します。フォーム入力を保ったまま更新したい場面で使います。\n\n【他の選択肢】\n・Ctrl + N: 新しいウィンドウを開く\n・Ctrl + F: ページ内を検索する\n・F11: 全画面表示を切り替える"
+    },
+    {
+      "id": 3047,
+      "question": "以前に閲覧したページのタイトルやURLを確認したい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Ctrl + H",
+        "B. Ctrl + J",
+        "C. Ctrl + D",
+        "D. Ctrl + P"
+      ],
+      "answer": "A. Ctrl + H",
+      "explanation": "Ctrl + Hは閲覧履歴（History）を開きます。以前見たページを探し直すときに役立ちます。\n\n【他の選択肢】\n・Ctrl + J: ダウンロード履歴を開く\n・Ctrl + D: ブックマークに追加する\n・Ctrl + P: 印刷画面を開く"
+    },
+    {
+      "id": 3048,
+      "question": "ブラウザでダウンロードしたファイルの一覧を確認したい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Ctrl + J",
+        "B. Ctrl + H",
+        "C. Ctrl + S",
+        "D. Ctrl + O"
+      ],
+      "answer": "A. Ctrl + J",
+      "explanation": "Ctrl + Jはダウンロード履歴を開きます。保存したファイルの場所を確認したいときに便利です。\n\n【他の選択肢】\n・Ctrl + H: 閲覧履歴を開く\n・Ctrl + S: ページを保存する\n・Ctrl + O: ファイルを開く"
     }
   ],
   "knowledge-2kyu": [
