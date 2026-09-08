@@ -41,7 +41,11 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
     if (!q || (!q.expectedKeyCombo && !q.expectedKeyComboHash && !q.expectedKeySequence && !q.expectedKeySequenceHashes) || isSubmitting) return;
 
     // For tasks that require typing in an input field (like searching or renaming)
-    const isTypingTask = /検索|パスワード|コピー|すべて選択|名前を変更|名前の変更|フォルダ/.test(q.question || "");
+    // Folder-creation tasks must still prevent the browser's native
+    // Ctrl+Shift+N action. The name field only appears after the shortcut
+    // succeeds, so treating every "フォルダ" question as a typing task lets
+    // Ctrl+Shift+N open an incognito window instead of being captured here.
+    const isTypingTask = /検索|パスワード|コピー|すべて選択|名前を変更|名前の変更/.test(q.question || "");
 
     const handleKeyDown = async (e: KeyboardEvent) => {
       // Allow specific inputs to type normally, or if typing task let clipboard work

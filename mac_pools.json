@@ -113,15 +113,6 @@
         "x"
       ],
       "explanation": "Cmd + Xは切り取りのショートカットです。移動させたい時にコピー＆削除の代わりに使います。"
-    },
-    {
-      "id": 6021,
-      "question": "【Mac共通】誤って開いてしまったメニューやダイアログを「キャンセルして閉じて」ください。",
-      "answer": "CORRECT",
-      "expectedKeyCombo": [
-        "escape"
-      ],
-      "explanation": "Escキーは、キャンセルや閉じる操作に使える基本キーです。"
     }
   ],
   "practical-mac-4kyu": [

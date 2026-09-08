@@ -67,7 +67,6 @@ const p5 = [
   {"id":5037,"type":"basic_copy_filename","question":"選択中のファイル名をチャットに共有するため、クリップボードにコピーしてください。","expectedKeyCombo":["control","c"],"answer":"CORRECT","explanation":"Ctrl+Cは選択中の文字列やファイルをコピーするショートカットです。元の内容を残したまま、別の場所へ同じ内容を貼り付けたい時に使います。"},
   {"id":5038,"type":"basic_cut_paragraph","question":"報告書の段落を別の見出しの下へ移動したいです。選択中の段落を切り取ってください。","expectedKeyCombo":["control","x"],"answer":"CORRECT","explanation":"Ctrl+Xは切り取りのショートカットです。選択した内容を元の場所から削除し、貼り付け先へ移動する準備ができます。文章や表の並べ替えでよく使います。"},
   {"id":5039,"type":"basic_redo","question":"取り消し操作を押しすぎて、必要な修正まで戻ってしまいました。取り消した操作をやり直してください。","expectedKeyCombo":["control","y"],"answer":"CORRECT","explanation":"Ctrl+Yは、Ctrl+Zで取り消した操作をやり直すショートカットです。戻しすぎた編集を再適用したい時に便利です。"},
-  {"id":5040,"type":"escape_close_overlay","question":"検索バーや小さなポップアップが画面に残っていて作業の邪魔です。キーボードで閉じてください。","expectedKeyCombo":["escape"],"answer":"CORRECT","explanation":"Escapeキーは、検索バー、メニュー、ダイアログなどを閉じる時によく使います。マウスで閉じるボタンを探さずに、すばやく元の作業へ戻れます。"}
 ];
 
 const p4 = [
