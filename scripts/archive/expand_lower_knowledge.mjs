@@ -29,8 +29,12 @@ const choices = ["Ctrl + S", "Ctrl + P", "Ctrl + C", "Ctrl + Z"];
 const explain = (answer, optionList) => {
   const key = answer.split(" + ").at(-1);
   const meanings = { S: "Save（保存）", P: "Print（印刷）", C: "Copy（コピー）", Z: "元に戻す", V: "貼り付け", X: "切り取り", A: "すべて選択", N: "新規作成", O: "Open（開く）", W: "閉じる", Y: "やり直す", F: "検索", L: "Lock（ロック）", I: "設定", D: "デスクトップ表示", E: "エクスプローラー", Esc: "タスクマネージャー", Tab: "アプリ切替", F1: "ヘルプ", F5: "更新", F11: "全画面表示" };
-  const others = optionList.filter((choice) => choice !== answer).map((choice) => `${choice}`).join("、");
-  return `${key}は${meanings[key] || "操作"}の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n${others.split("、").map((choice) => `・${choice}`).join("\n")}`;
+  const describe = (choice) => {
+    const choiceKey = choice.split(" + ").at(-1);
+    return `${choice}: ${meanings[choiceKey] || "関連する操作"}`;
+  };
+  const others = optionList.filter((choice) => choice !== answer).map(describe).join("\n");
+  return `${key}は${meanings[key] || "操作"}の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n${others.split("\n").map((choice) => `・${choice}`).join("\n")}`;
 };
 data["5kyu"] = (data["5kyu"] || []).filter((q) => q.id < 511);
 for (let i = 0; i < basics.length; i++) {
