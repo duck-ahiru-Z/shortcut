@@ -25,6 +25,7 @@ export default function DebugQuestionBrowser({ pools }: Props) {
   const [grade, setGrade] = useState<string>(groups[0][0]);
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
   const questions = useMemo(() => pools[grade] ?? [], [pools, grade]);
+  const allRevealed = questions.length > 0 && revealed.size === questions.length;
   const toggle = (index: number) => setRevealed(prev => {
     const next = new Set(prev); next.has(index) ? next.delete(index) : next.add(index); return next;
   });
@@ -34,6 +35,9 @@ export default function DebugQuestionBrowser({ pools }: Props) {
     <select value={grade} onChange={e => { setGrade(e.target.value); setRevealed(new Set()); }} style={{ padding: "10px", minWidth: 280, marginBottom: 20 }}>
       {groups.map(([id, label]) => <option key={id} value={id} disabled={!pools[id]?.length}>{label}（{pools[id]?.length ?? 0}問）</option>)}
     </select>
+    {!!questions.length && <button onClick={() => setRevealed(allRevealed ? new Set() : new Set(questions.map((_, index) => index)))} style={{ display: "block", marginBottom: 20, padding: "8px 14px", fontWeight: 700 }}>
+      {allRevealed ? "すべての回答・解説を隠す" : "すべての回答・解説を表示"}
+    </button>}
     {!questions.length && <p style={{ padding: 16, border: "1px solid #e2a12b", background: "#fff9e8" }}>この級の問題データはまだ登録されていません。</p>}
     <div style={{ display: "grid", gap: 12 }}>
       {questions.map((q, index) => <article key={`${q.id}-${index}`} style={{ border: "1px solid #ccd3dd", borderRadius: 8, padding: 16, background: "#fff" }}>
