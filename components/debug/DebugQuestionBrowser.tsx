@@ -45,7 +45,7 @@ export default function DebugQuestionBrowser({ pools }: Props) {
         <div style={{ fontWeight: 700, marginBottom: 10 }}>{q.question}</div>
         {q.choices?.map((choice, choiceIndex) => <div key={`${choice}-${choiceIndex}`} style={{ padding: "4px 0" }}>{choice}</div>)}
         <button onClick={() => toggle(index)} style={{ marginTop: 10, padding: "7px 12px" }}>{revealed.has(index) ? "回答を隠す" : "回答・解説を表示"}</button>
-        {revealed.has(index) && <div style={{ marginTop: 10, padding: 12, background: "#f3f7ff" }}><div><strong>正答:</strong> {q.answer ?? "実務操作の成功判定"}</div>{q.expectedKeyCombo && <div><strong>キー:</strong> {Array.isArray(q.expectedKeyCombo) ? q.expectedKeyCombo.join(" + ") : q.expectedKeyCombo}</div>}{q.explanation && <div style={{ marginTop: 6, whiteSpace: "pre-wrap" }}>{q.explanation}</div>}</div>}
+        {revealed.has(index) && <div style={{ marginTop: 10, padding: 12, background: "#f3f7ff" }}><div><strong>正答:</strong> {q.answer ?? "実務操作の成功判定"}</div>{q.expectedKeyCombo && <div><strong>キー:</strong> {Array.isArray(q.expectedKeyCombo) ? q.expectedKeyCombo.join(" + ") : q.expectedKeyCombo}</div>}<div style={{ marginTop: 6, whiteSpace: "pre-wrap" }}>{q.explanation ?? "正答のショートカットキーを実際に操作して確認してください。"}</div></div>}
       </article>)}
     </div>
   </>;

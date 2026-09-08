@@ -122,223 +122,243 @@
     },
     {
       "id": 511,
-      "question": "【5級】新しいウィンドウを開くショートカットキーはどれか。",
+      "question": "新しいウィンドウを開くショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + N",
         "B. Ctrl + S",
         "C. Ctrl + P",
         "D. Ctrl + C"
       ],
-      "answer": "A. Ctrl + N"
+      "answer": "A. Ctrl + N",
+      "explanation": "Ctrl + N は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 512,
-      "question": "【5級】ファイルを開くショートカットキーはどれか。",
+      "question": "ファイルを開くショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + S",
         "B. Ctrl + P",
         "C. Ctrl + C",
         "D. Ctrl + O"
       ],
-      "answer": "D. Ctrl + O"
+      "answer": "D. Ctrl + O",
+      "explanation": "Ctrl + O は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 513,
-      "question": "【5級】ファイルを閉じるショートカットキーはどれか。",
+      "question": "ファイルを閉じるショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + P",
         "B. Ctrl + C",
         "C. Ctrl + W",
         "D. Ctrl + S"
       ],
-      "answer": "C. Ctrl + W"
+      "answer": "C. Ctrl + W",
+      "explanation": "Ctrl + W は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 514,
-      "question": "【5級】操作をやり直すショートカットキーはどれか。",
+      "question": "操作をやり直すショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + C",
         "B. Ctrl + Y",
         "C. Ctrl + S",
         "D. Ctrl + P"
       ],
-      "answer": "B. Ctrl + Y"
+      "answer": "B. Ctrl + Y",
+      "explanation": "Ctrl + Y は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 515,
-      "question": "【5級】テキストを検索するショートカットキーはどれか。",
+      "question": "テキストを検索するショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + F",
         "B. Ctrl + S",
         "C. Ctrl + P",
         "D. Ctrl + C"
       ],
-      "answer": "A. Ctrl + F"
+      "answer": "A. Ctrl + F",
+      "explanation": "Ctrl + F は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 516,
-      "question": "【5級】選択したテキストを貼り付けるショートカットキーはどれか。",
+      "question": "選択したテキストを貼り付けるショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + S",
         "B. Ctrl + P",
         "C. Ctrl + C",
         "D. Ctrl + V"
       ],
-      "answer": "D. Ctrl + V"
+      "answer": "D. Ctrl + V",
+      "explanation": "Ctrl + V は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 517,
-      "question": "【5級】選択したテキストをコピーするショートカットキーはどれか。",
+      "question": "選択したテキストをコピーするショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + P",
         "B. Ctrl + Z",
         "C. Ctrl + C",
         "D. Ctrl + S"
       ],
-      "answer": "C. Ctrl + C"
+      "answer": "C. Ctrl + C",
+      "explanation": "Ctrl + C は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 518,
-      "question": "【5級】選択したテキストを切り取るショートカットキーはどれか。",
+      "question": "選択したテキストを切り取るショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + C",
         "B. Ctrl + X",
         "C. Ctrl + S",
         "D. Ctrl + P"
       ],
-      "answer": "B. Ctrl + X"
+      "answer": "B. Ctrl + X",
+      "explanation": "Ctrl + X は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 519,
-      "question": "【5級】ファイルを保存するショートカットキーはどれか。",
+      "question": "ファイルを保存するショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + S",
         "B. Ctrl + P",
         "C. Ctrl + C",
         "D. Ctrl + Z"
       ],
-      "answer": "A. Ctrl + S"
+      "answer": "A. Ctrl + S",
+      "explanation": "Ctrl + S は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 520,
-      "question": "【5級】すべての項目を選択するショートカットキーはどれか。",
+      "question": "すべての項目を選択するショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + S",
         "B. Ctrl + P",
         "C. Ctrl + C",
         "D. Ctrl + A"
       ],
-      "answer": "D. Ctrl + A"
+      "answer": "D. Ctrl + A",
+      "explanation": "Ctrl + A は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 521,
-      "question": "【5級】画面をロックするショートカットキーはどれか。",
+      "question": "画面をロックするショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + P",
         "B. Ctrl + C",
         "C. Windows + L",
         "D. Ctrl + S"
       ],
-      "answer": "C. Windows + L"
+      "answer": "C. Windows + L",
+      "explanation": "Windows + L は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 522,
-      "question": "【5級】設定画面を開くショートカットキーはどれか。",
+      "question": "設定画面を開くショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + C",
         "B. Windows + I",
         "C. Ctrl + S",
         "D. Ctrl + P"
       ],
-      "answer": "B. Windows + I"
+      "answer": "B. Windows + I",
+      "explanation": "Windows + I は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 523,
-      "question": "【5級】検索画面を開くショートカットキーはどれか。",
+      "question": "検索画面を開くショートカットキーはどれか。",
       "choices": [
         "A. Windows + S",
         "B. Ctrl + S",
         "C. Ctrl + P",
         "D. Ctrl + C"
       ],
-      "answer": "A. Windows + S"
+      "answer": "A. Windows + S",
+      "explanation": "Windows + S は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 524,
-      "question": "【5級】デスクトップを表示するショートカットキーはどれか。",
+      "question": "デスクトップを表示するショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + S",
         "B. Ctrl + P",
         "C. Ctrl + C",
         "D. Windows + D"
       ],
-      "answer": "D. Windows + D"
+      "answer": "D. Windows + D",
+      "explanation": "Windows + D は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 525,
-      "question": "【5級】エクスプローラーを開くショートカットキーはどれか。",
+      "question": "エクスプローラーを開くショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + P",
         "B. Ctrl + C",
         "C. Windows + E",
         "D. Ctrl + S"
       ],
-      "answer": "C. Windows + E"
+      "answer": "C. Windows + E",
+      "explanation": "Windows + E は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 526,
-      "question": "【5級】タスクマネージャーを開くショートカットキーはどれか。",
+      "question": "タスクマネージャーを開くショートカットキーはどれか。",
       "choices": [
         "A. Ctrl + C",
         "B. Ctrl + Shift + Esc",
         "C. Ctrl + S",
         "D. Ctrl + P"
       ],
-      "answer": "B. Ctrl + Shift + Esc"
+      "answer": "B. Ctrl + Shift + Esc",
+      "explanation": "Ctrl + Shift + Esc は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 527,
-      "question": "【5級】アプリを切り替えるショートカットキーはどれか。",
+      "question": "アプリを切り替えるショートカットキーはどれか。",
       "choices": [
         "A. Alt + Tab",
         "B. Ctrl + S",
         "C. Ctrl + P",
         "D. Ctrl + C"
       ],
-      "answer": "A. Alt + Tab"
+      "answer": "A. Alt + Tab",
+      "explanation": "Alt + Tab は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 528,
-      "question": "【5級】画面を全画面表示にするキーはどれか。",
+      "question": "画面を全画面表示にするキーはどれか。",
       "choices": [
         "A. Ctrl + S",
         "B. Ctrl + P",
         "C. Ctrl + C",
         "D. F11"
       ],
-      "answer": "D. F11"
+      "answer": "D. F11",
+      "explanation": "F11 は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 529,
-      "question": "【5級】ヘルプを表示するキーはどれか。",
+      "question": "ヘルプを表示するキーはどれか。",
       "choices": [
         "A. Ctrl + P",
         "B. Ctrl + C",
         "C. F1",
         "D. Ctrl + S"
       ],
-      "answer": "C. F1"
+      "answer": "C. F1",
+      "explanation": "F1 は、この操作をすばやく実行するための基本ショートカットです。"
     },
     {
       "id": 530,
-      "question": "【5級】ページを更新するキーはどれか。",
+      "question": "ページを更新するキーはどれか。",
       "choices": [
         "A. Ctrl + C",
         "B. F5",
         "C. Ctrl + S",
         "D. Ctrl + P"
       ],
-      "answer": "B. F5"
+      "answer": "B. F5",
+      "explanation": "F5 は、この操作をすばやく実行するための基本ショートカットです。"
     }
   ],
   "4kyu": [

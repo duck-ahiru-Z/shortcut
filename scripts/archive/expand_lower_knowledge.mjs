@@ -33,7 +33,7 @@ for (let i = 0; i < basics.length; i++) {
   const rotated = [answer, ...choices.filter((choice) => choice !== answer)].slice(0, 4);
   const position = i % rotated.length;
   const ordered = [...rotated.slice(position), ...rotated.slice(0, position)];
-  const item = { id, question: `【5級】${question}`, choices: ordered.map((choice, n) => `${String.fromCharCode(65 + n)}. ${choice}`), answer: `${String.fromCharCode(65 + (rotated.indexOf(answer) - position + 4) % 4)}. ${answer}` };
+  const item = { id, question, choices: ordered.map((choice, n) => `${String.fromCharCode(65 + n)}. ${choice}`), answer: `${String.fromCharCode(65 + (rotated.indexOf(answer) - position + 4) % 4)}. ${answer}`, explanation: `${answer} は、この操作をすばやく実行するための基本ショートカットです。` };
   const index = data["5kyu"].findIndex((q) => q.id === id);
   if (index >= 0) data["5kyu"][index] = item; else data["5kyu"].push(item);
 }
