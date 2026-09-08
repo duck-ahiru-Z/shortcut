@@ -119,246 +119,6 @@
       "explanation": "RはReload（再読み込み）の頭文字です。ページが正しく表示されない場合や、最新の情報に更新したい場合に使用します。（F5キーでも同じ動作になります）\n\n【他の選択肢】\n・Ctrl + E: 検索バーにフォーカス\n・Ctrl + W: タブを閉じる\n・Ctrl + T: 新しいタブを開く",
       "answer": "A. Ctrl + R",
       "question": "ブラウザを再読み込み（リロード）するショートカットキーはどれか。"
-    },
-    {
-      "id": 511,
-      "question": "新しい文書を作成したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + N",
-        "B. Ctrl + S",
-        "C. Ctrl + P",
-        "D. Ctrl + C"
-      ],
-      "answer": "A. Ctrl + N",
-      "explanation": "Ctrl + N は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 512,
-      "question": "保存済みのファイルを開いて編集したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + S",
-        "B. Ctrl + P",
-        "C. Ctrl + C",
-        "D. Ctrl + O"
-      ],
-      "answer": "D. Ctrl + O",
-      "explanation": "Ctrl + O は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 513,
-      "question": "作業中のタブや文書を閉じたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + P",
-        "B. Ctrl + C",
-        "C. Ctrl + W",
-        "D. Ctrl + S"
-      ],
-      "answer": "C. Ctrl + W",
-      "explanation": "Ctrl + W は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 514,
-      "question": "取り消した操作をもう一度やり直したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + C",
-        "B. Ctrl + Y",
-        "C. Ctrl + S",
-        "D. Ctrl + P"
-      ],
-      "answer": "B. Ctrl + Y",
-      "explanation": "Ctrl + Y は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 515,
-      "question": "長いページから特定の単語を探したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + F",
-        "B. Ctrl + S",
-        "C. Ctrl + P",
-        "D. Ctrl + C"
-      ],
-      "answer": "A. Ctrl + F",
-      "explanation": "Ctrl + F は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 516,
-      "question": "コピーした文章をカーソル位置に入れたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + S",
-        "B. Ctrl + P",
-        "C. Ctrl + C",
-        "D. Ctrl + V"
-      ],
-      "answer": "D. Ctrl + V",
-      "explanation": "Ctrl + V は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 517,
-      "question": "選択した文章を別の場所でも使いたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + P",
-        "B. Ctrl + Z",
-        "C. Ctrl + C",
-        "D. Ctrl + S"
-      ],
-      "answer": "C. Ctrl + C",
-      "explanation": "Ctrl + C は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 518,
-      "question": "選択した文章を移動するため、元の場所から切り取りたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + C",
-        "B. Ctrl + X",
-        "C. Ctrl + S",
-        "D. Ctrl + P"
-      ],
-      "answer": "B. Ctrl + X",
-      "explanation": "Ctrl + X は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 519,
-      "question": "編集中の内容を失わないよう、すぐ保存したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + S",
-        "B. Ctrl + P",
-        "C. Ctrl + C",
-        "D. Ctrl + Z"
-      ],
-      "answer": "A. Ctrl + S",
-      "explanation": "Ctrl + S は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 520,
-      "question": "文書内の項目をまとめて選択したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + S",
-        "B. Ctrl + P",
-        "C. Ctrl + C",
-        "D. Ctrl + A"
-      ],
-      "answer": "D. Ctrl + A",
-      "explanation": "Ctrl + A は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 521,
-      "question": "席を離れるので、Windowsをすぐロックしたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + P",
-        "B. Ctrl + C",
-        "C. Windows + L",
-        "D. Ctrl + S"
-      ],
-      "answer": "C. Windows + L",
-      "explanation": "Windows + L は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 522,
-      "question": "Windowsの設定をキーボードだけで開きたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + C",
-        "B. Windows + I",
-        "C. Ctrl + S",
-        "D. Ctrl + P"
-      ],
-      "answer": "B. Windows + I",
-      "explanation": "Windows + I は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 523,
-      "question": "アプリやファイルを名前で検索したい。どのキーを押すか。",
-      "choices": [
-        "A. Windows + S",
-        "B. Ctrl + S",
-        "C. Ctrl + P",
-        "D. Ctrl + C"
-      ],
-      "answer": "A. Windows + S",
-      "explanation": "Windows + S は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 524,
-      "question": "開いているウィンドウを隠してデスクトップを確認したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + S",
-        "B. Ctrl + P",
-        "C. Ctrl + C",
-        "D. Windows + D"
-      ],
-      "answer": "D. Windows + D",
-      "explanation": "Windows + D は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 525,
-      "question": "ファイルの一覧を表示して、別のファイルを探したい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + P",
-        "B. Ctrl + C",
-        "C. Windows + E",
-        "D. Ctrl + S"
-      ],
-      "answer": "C. Windows + E",
-      "explanation": "Windows + E は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 526,
-      "question": "応答しないアプリを終了するため管理画面を開きたい。どのキーを押すか。",
-      "choices": [
-        "A. Ctrl + C",
-        "B. Ctrl + Shift + Esc",
-        "C. Ctrl + S",
-        "D. Ctrl + P"
-      ],
-      "answer": "B. Ctrl + Shift + Esc",
-      "explanation": "Ctrl + Shift + Esc は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 527,
-      "question": "マウスを使わず、別のアプリへ切り替えたい。どのキーを押すか。",
-      "choices": [
-        "A. Alt + Tab",
-        "B. Ctrl + S",
-        "C. Ctrl + P",
-        "D. Ctrl + C"
-      ],
-      "answer": "A. Alt + Tab",
-      "explanation": "Alt + Tab は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 528,
-      "question": "ブラウザの表示を画面いっぱいに広げたい。このキーは何か。",
-      "choices": [
-        "A. Ctrl + S",
-        "B. Ctrl + P",
-        "C. Ctrl + C",
-        "D. F11"
-      ],
-      "answer": "D. F11",
-      "explanation": "F11 は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 529,
-      "question": "操作方法がわからないので、ヘルプを開きたい。このキーは何か。",
-      "choices": [
-        "A. Ctrl + P",
-        "B. Ctrl + C",
-        "C. F1",
-        "D. Ctrl + S"
-      ],
-      "answer": "C. F1",
-      "explanation": "F1 は、この操作をすばやく実行するための基本ショートカットです。"
-    },
-    {
-      "id": 530,
-      "question": "表示が古いページになっているので、最新状態に更新したい。このキーは何か。",
-      "choices": [
-        "A. Ctrl + C",
-        "B. F5",
-        "C. Ctrl + S",
-        "D. Ctrl + P"
-      ],
-      "answer": "B. F5",
-      "explanation": "F5 は、この操作をすばやく実行するための基本ショートカットです。"
     }
   ],
   "4kyu": [
@@ -701,6 +461,246 @@
         "C. Delete",
         "D. Ctrl + Delete"
       ]
+    },
+    {
+      "id": 511,
+      "question": "新しい文書を作成したい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + N",
+        "B. Ctrl + S",
+        "C. Ctrl + P",
+        "D. Ctrl + C"
+      ],
+      "answer": "A. Ctrl + N",
+      "explanation": "Nは新規作成の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 512,
+      "question": "保存済みのファイルを開いて編集したい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Ctrl + O"
+      ],
+      "answer": "D. Ctrl + O",
+      "explanation": "OはOpen（開く）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 513,
+      "question": "作業中のタブや文書を閉じたい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + C",
+        "C. Ctrl + W",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. Ctrl + W",
+      "explanation": "Wは閉じるの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 514,
+      "question": "取り消した操作をもう一度やり直したい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. Ctrl + Y",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. Ctrl + Y",
+      "explanation": "Yはやり直すの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 515,
+      "question": "長いページから特定の単語を探したい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + F",
+        "B. Ctrl + S",
+        "C. Ctrl + P",
+        "D. Ctrl + C"
+      ],
+      "answer": "A. Ctrl + F",
+      "explanation": "Fは検索の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 516,
+      "question": "コピーした文章をカーソル位置に入れたい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Ctrl + V"
+      ],
+      "answer": "D. Ctrl + V",
+      "explanation": "Vは貼り付けの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 517,
+      "question": "選択した文章を別の場所でも使いたい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + Z",
+        "C. Ctrl + C",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. Ctrl + C",
+      "explanation": "CはCopy（コピー）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + Z"
+    },
+    {
+      "id": 518,
+      "question": "選択した文章を移動するため、元の場所から切り取りたい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. Ctrl + X",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. Ctrl + X",
+      "explanation": "Xは切り取りの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 519,
+      "question": "編集中の内容を失わないよう、すぐ保存したい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Ctrl + Z"
+      ],
+      "answer": "A. Ctrl + S",
+      "explanation": "SはSave（保存）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + P、Ctrl + C、Ctrl + Z"
+    },
+    {
+      "id": 520,
+      "question": "文書内の項目をまとめて選択したい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Ctrl + A"
+      ],
+      "answer": "D. Ctrl + A",
+      "explanation": "Aはすべて選択の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 521,
+      "question": "席を離れるので、Windowsをすぐロックしたい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + C",
+        "C. Windows + L",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. Windows + L",
+      "explanation": "LはLock（ロック）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 522,
+      "question": "Windowsの設定をキーボードだけで開きたい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. Windows + I",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. Windows + I",
+      "explanation": "Iは設定の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 523,
+      "question": "アプリやファイルを名前で検索したい。どのキーを押すか。",
+      "choices": [
+        "A. Windows + S",
+        "B. Ctrl + S",
+        "C. Ctrl + P",
+        "D. Ctrl + C"
+      ],
+      "answer": "A. Windows + S",
+      "explanation": "SはSave（保存）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 524,
+      "question": "開いているウィンドウを隠してデスクトップを確認したい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Windows + D"
+      ],
+      "answer": "D. Windows + D",
+      "explanation": "Dはデスクトップ表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 525,
+      "question": "ファイルの一覧を表示して、別のファイルを探したい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + C",
+        "C. Windows + E",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. Windows + E",
+      "explanation": "Eはエクスプローラーの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 526,
+      "question": "応答しないアプリを終了するため管理画面を開きたい。どのキーを押すか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. Ctrl + Shift + Esc",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. Ctrl + Shift + Esc",
+      "explanation": "Escはタスクマネージャーの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 527,
+      "question": "マウスを使わず、別のアプリへ切り替えたい。どのキーを押すか。",
+      "choices": [
+        "A. Alt + Tab",
+        "B. Ctrl + S",
+        "C. Ctrl + P",
+        "D. Ctrl + C"
+      ],
+      "answer": "A. Alt + Tab",
+      "explanation": "Tabはアプリ切替の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 528,
+      "question": "ブラウザの表示を画面いっぱいに広げたい。このキーは何か。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. F11"
+      ],
+      "answer": "D. F11",
+      "explanation": "F11は全画面表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 529,
+      "question": "操作方法がわからないので、ヘルプを開きたい。このキーは何か。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + C",
+        "C. F1",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. F1",
+      "explanation": "F1はヘルプの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
+    },
+    {
+      "id": 530,
+      "question": "表示が古いページになっているので、最新状態に更新したい。このキーは何か。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. F5",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. F5",
+      "explanation": "F5は更新の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 Ctrl + S、Ctrl + P、Ctrl + C"
     }
   ],
   "practical-5kyu": [

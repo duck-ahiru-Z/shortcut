@@ -26,16 +26,26 @@ const basics = [
   ["表示が古いページになっているので、最新状態に更新したい。このキーは何か。", "F5"],
 ];
 const choices = ["Ctrl + S", "Ctrl + P", "Ctrl + C", "Ctrl + Z"];
-const existing = new Set((data["5kyu"] || []).map((q) => q.id));
+const explain = (answer, optionList) => {
+  const key = answer.split(" + ").at(-1);
+  const meanings = { S: "Save（保存）", P: "Print（印刷）", C: "Copy（コピー）", Z: "元に戻す", V: "貼り付け", X: "切り取り", A: "すべて選択", N: "新規作成", O: "Open（開く）", W: "閉じる", Y: "やり直す", F: "検索", L: "Lock（ロック）", I: "設定", D: "デスクトップ表示", E: "エクスプローラー", Esc: "タスクマネージャー", Tab: "アプリ切替", F1: "ヘルプ", F5: "更新", F11: "全画面表示" };
+  const others = optionList.filter((choice) => choice !== answer).map((choice) => `${choice}`).join("、");
+  return `${key}は${meanings[key] || "操作"}の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。 【他の選択肢】 ${others}`;
+};
+data["5kyu"] = (data["5kyu"] || []).filter((q) => q.id < 511);
 for (let i = 0; i < basics.length; i++) {
   const id = 511 + i;
   const [question, answer] = basics[i];
   const rotated = [answer, ...choices.filter((choice) => choice !== answer)].slice(0, 4);
   const position = i % rotated.length;
   const ordered = [...rotated.slice(position), ...rotated.slice(0, position)];
-  const item = { id, question, choices: ordered.map((choice, n) => `${String.fromCharCode(65 + n)}. ${choice}`), answer: `${String.fromCharCode(65 + (rotated.indexOf(answer) - position + 4) % 4)}. ${answer}`, explanation: `${answer} は、この操作をすばやく実行するための基本ショートカットです。` };
-  const index = data["5kyu"].findIndex((q) => q.id === id);
-  if (index >= 0) data["5kyu"][index] = item; else data["5kyu"].push(item);
+  const answerLabel = `${String.fromCharCode(65 + (rotated.indexOf(answer) - position + 4) % 4)}. ${answer}`;
+  const item = { id, question, choices: ordered.map((choice, n) => `${String.fromCharCode(65 + n)}. ${choice}`), answer: answerLabel, explanation: explain(answer, rotated) };
+  const index = data["4kyu"].findIndex((q) => q.id === id);
+  if (index >= 0) data["4kyu"][index] = item; else data["4kyu"].push(item);
+}
+for (const question of data["5kyu"]) {
+  if (!question.explanation && question.answer) question.explanation = explain(question.answer.replace(/^[A-D]\.\s*/, ""), (question.choices || []).map((choice) => choice.replace(/^[A-D]\.\s*/, "")));
 }
 if (data["4kyu"].length < 30) {
   const historical = JSON.parse(execFileSync("git", ["show", "59aad70:questions_dump.json"], { encoding: "utf8" }))["4kyu"];
