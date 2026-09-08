@@ -118,7 +118,7 @@ export default function Exams() {
             <div>
               <div className="grade-meta">
                 <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
-                <p><strong>合格基準:</strong> 正答率80%以上</p>
+                <p><strong>合格基準:</strong> 正答率60%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 <button onClick={() => openModal("5kyu", false)} className="btn btn-primary">
@@ -143,7 +143,7 @@ export default function Exams() {
             <div>
               <div className="grade-meta">
                 <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
-                <p><strong>合格基準:</strong> 正答率80%以上</p>
+                <p><strong>合格基準:</strong> 正答率60%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 <button onClick={() => openModal("4kyu", false)} className="btn btn-primary">
@@ -166,7 +166,7 @@ export default function Exams() {
             <div>
               <div className="grade-meta">
                 <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
-                <p><strong>合格基準:</strong> 正答率80%以上</p>
+                <p><strong>合格基準:</strong> 正答率60%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 <button onClick={() => openModal("3kyu", false)} className="btn btn-primary">
@@ -189,7 +189,7 @@ export default function Exams() {
             <div>
               <div className="grade-meta">
                 <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
-                <p><strong>合格基準:</strong> 正答率80%以上</p>
+                <p><strong>合格基準:</strong> 正答率60%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 <button onClick={() => openModal("2kyu", false)} className="btn btn-primary">
@@ -212,7 +212,7 @@ export default function Exams() {
             <div>
               <div className="grade-meta">
                 <p><strong>出題数:</strong> 30問 (実務: 5問)</p>
-                <p><strong>合格基準:</strong> 正答率80%以上</p>
+                <p><strong>合格基準:</strong> 正答率60%以上</p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 <button onClick={() => openModal("1kyu", false)} className="btn btn-primary">

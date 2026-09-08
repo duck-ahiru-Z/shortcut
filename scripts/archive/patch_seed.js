@@ -105,7 +105,7 @@ const practicalGrades = `    // Practical Exams
       id: "practical-5kyu",
       title: "5級 実務検定 (実践シミュレータ) - Windows",
       questionsCount: 5,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: generatePracticalQuestions("5kyu", "windows")
     },
@@ -113,7 +113,7 @@ const practicalGrades = `    // Practical Exams
       id: "practical-mac-5kyu",
       title: "5級 実務検定 (実践シミュレータ) - Mac",
       questionsCount: 5,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: generatePracticalQuestions("5kyu", "mac")
     },
@@ -121,7 +121,7 @@ const practicalGrades = `    // Practical Exams
       id: "practical-4kyu",
       title: "4級 実務検定 (実践シミュレータ) - Windows",
       questionsCount: 5,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: generatePracticalQuestions("4kyu", "windows")
     },
@@ -129,7 +129,7 @@ const practicalGrades = `    // Practical Exams
       id: "practical-mac-4kyu",
       title: "4級 実務検定 (実践シミュレータ) - Mac",
       questionsCount: 5,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: generatePracticalQuestions("4kyu", "mac")
     },`;

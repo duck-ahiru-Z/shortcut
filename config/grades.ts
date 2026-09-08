@@ -44,7 +44,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     description: desc5kyu,
     knowledgeCount: 10,
     practicalCount: 5,
-    passingRate: "80%",
+    passingRate: "60%",
   },
   {
     id: "4kyu",
@@ -52,7 +52,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     description: desc4kyu,
     knowledgeCount: 10,
     practicalCount: 5,
-    passingRate: "80%",
+    passingRate: "60%",
   },
   {
     id: "3kyu",
@@ -60,7 +60,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     description: desc3kyu,
     knowledgeCount: 20,
     practicalCount: 10,
-    passingRate: "80%",
+    passingRate: "60%",
   },
   {
     id: "2kyu",
@@ -68,7 +68,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     description: desc2kyu,
     knowledgeCount: 20,
     practicalCount: 10,
-    passingRate: "80%",
+    passingRate: "60%",
   },
   {
     id: "1kyu",
@@ -76,7 +76,7 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     description: desc1kyu,
     knowledgeCount: 20,
     practicalCount: 15,
-    passingRate: "80%",
+    passingRate: "60%",
   }
 ];
 
