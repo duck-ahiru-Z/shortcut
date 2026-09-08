@@ -119,6 +119,226 @@
       "explanation": "RはReload（再読み込み）の頭文字です。ページが正しく表示されない場合や、最新の情報に更新したい場合に使用します。（F5キーでも同じ動作になります）\n\n【他の選択肢】\n・Ctrl + E: 検索バーにフォーカス\n・Ctrl + W: タブを閉じる\n・Ctrl + T: 新しいタブを開く",
       "answer": "A. Ctrl + R",
       "question": "ブラウザを再読み込み（リロード）するショートカットキーはどれか。"
+    },
+    {
+      "id": 511,
+      "question": "【5級】新しいウィンドウを開くショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + N",
+        "B. Ctrl + S",
+        "C. Ctrl + P",
+        "D. Ctrl + C"
+      ],
+      "answer": "A. Ctrl + N"
+    },
+    {
+      "id": 512,
+      "question": "【5級】ファイルを開くショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Ctrl + O"
+      ],
+      "answer": "D. Ctrl + O"
+    },
+    {
+      "id": 513,
+      "question": "【5級】ファイルを閉じるショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + C",
+        "C. Ctrl + W",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. Ctrl + W"
+    },
+    {
+      "id": 514,
+      "question": "【5級】操作をやり直すショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. Ctrl + Y",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. Ctrl + Y"
+    },
+    {
+      "id": 515,
+      "question": "【5級】テキストを検索するショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + F",
+        "B. Ctrl + S",
+        "C. Ctrl + P",
+        "D. Ctrl + C"
+      ],
+      "answer": "A. Ctrl + F"
+    },
+    {
+      "id": 516,
+      "question": "【5級】選択したテキストを貼り付けるショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Ctrl + V"
+      ],
+      "answer": "D. Ctrl + V"
+    },
+    {
+      "id": 517,
+      "question": "【5級】選択したテキストをコピーするショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + Z",
+        "C. Ctrl + C",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. Ctrl + C"
+    },
+    {
+      "id": 518,
+      "question": "【5級】選択したテキストを切り取るショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. Ctrl + X",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. Ctrl + X"
+    },
+    {
+      "id": 519,
+      "question": "【5級】ファイルを保存するショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Ctrl + Z"
+      ],
+      "answer": "A. Ctrl + S"
+    },
+    {
+      "id": 520,
+      "question": "【5級】すべての項目を選択するショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Ctrl + A"
+      ],
+      "answer": "D. Ctrl + A"
+    },
+    {
+      "id": 521,
+      "question": "【5級】画面をロックするショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + C",
+        "C. Windows + L",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. Windows + L"
+    },
+    {
+      "id": 522,
+      "question": "【5級】設定画面を開くショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. Windows + I",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. Windows + I"
+    },
+    {
+      "id": 523,
+      "question": "【5級】検索画面を開くショートカットキーはどれか。",
+      "choices": [
+        "A. Windows + S",
+        "B. Ctrl + S",
+        "C. Ctrl + P",
+        "D. Ctrl + C"
+      ],
+      "answer": "A. Windows + S"
+    },
+    {
+      "id": 524,
+      "question": "【5級】デスクトップを表示するショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. Windows + D"
+      ],
+      "answer": "D. Windows + D"
+    },
+    {
+      "id": 525,
+      "question": "【5級】エクスプローラーを開くショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + C",
+        "C. Windows + E",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. Windows + E"
+    },
+    {
+      "id": 526,
+      "question": "【5級】タスクマネージャーを開くショートカットキーはどれか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. Ctrl + Shift + Esc",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. Ctrl + Shift + Esc"
+    },
+    {
+      "id": 527,
+      "question": "【5級】アプリを切り替えるショートカットキーはどれか。",
+      "choices": [
+        "A. Alt + Tab",
+        "B. Ctrl + S",
+        "C. Ctrl + P",
+        "D. Ctrl + C"
+      ],
+      "answer": "A. Alt + Tab"
+    },
+    {
+      "id": 528,
+      "question": "【5級】画面を全画面表示にするキーはどれか。",
+      "choices": [
+        "A. Ctrl + S",
+        "B. Ctrl + P",
+        "C. Ctrl + C",
+        "D. F11"
+      ],
+      "answer": "D. F11"
+    },
+    {
+      "id": 529,
+      "question": "【5級】ヘルプを表示するキーはどれか。",
+      "choices": [
+        "A. Ctrl + P",
+        "B. Ctrl + C",
+        "C. F1",
+        "D. Ctrl + S"
+      ],
+      "answer": "C. F1"
+    },
+    {
+      "id": 530,
+      "question": "【5級】ページを更新するキーはどれか。",
+      "choices": [
+        "A. Ctrl + C",
+        "B. F5",
+        "C. Ctrl + S",
+        "D. Ctrl + P"
+      ],
+      "answer": "B. F5"
     }
   ],
   "4kyu": [
@@ -241,6 +461,226 @@
       ],
       "answer": "A. Windows + L",
       "explanation": "LはLock（ロック）の頭文字です。離席する際に他人にパソコンを操作されないよう、一瞬でセキュリティを確保する社会人の必須ショートカットです。\n\n【他の選択肢】\n・Windows + K: キャスト（ワイヤレス接続）メニューを開く\n・Ctrl + L: ブラウザのアドレスバーを選択する\n・Alt + L: （特定のアプリの機能）"
+    },
+    {
+      "choices": [
+        "A. Windows + P",
+        "B. Windows + E",
+        "C. Windows + D",
+        "D. Windows + L"
+      ],
+      "question": "外部モニターやプロジェクターへの表示方法を切り替えたい。使うショートカットはどれか。",
+      "id": 1001,
+      "answer": "A. Windows + P"
+    },
+    {
+      "question": "PowerPointでスライドショーを最初のスライドから開始したい。使うキーはどれか。",
+      "choices": [
+        "A. Shift + F5",
+        "B. F5",
+        "C. F11",
+        "D. Esc"
+      ],
+      "id": 1002,
+      "answer": "A. Shift + F5"
+    },
+    {
+      "question": "PowerPointで現在開いているスライドからスライドショーを開始したい。使うショートカットはどれか。",
+      "choices": [
+        "A. F5",
+        "B. Ctrl + P",
+        "C. Shift + F5",
+        "D. Windows + P"
+      ],
+      "answer": "A. F5",
+      "id": 1003
+    },
+    {
+      "question": "スライドショーや動画の全画面表示を終了して元の画面に戻りたい。使うキーはどれか。",
+      "choices": [
+        "A. F11",
+        "B. Ctrl + W",
+        "C. Alt + Tab",
+        "D. Esc"
+      ],
+      "answer": "A. F11",
+      "id": 1004
+    },
+    {
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. P",
+        "D. D"
+      ],
+      "question": "スライドショー中に画面を真っ暗にして、いったん注目を集めたい。押すキーはどれか。",
+      "id": 1005,
+      "answer": "A. B"
+    },
+    {
+      "question": "スライドショー中に画面を真っ白にして、一時的に表示を止めたい。押すキーはどれか。",
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. Esc",
+        "D. F5"
+      ],
+      "id": 1006,
+      "answer": "A. B"
+    },
+    {
+      "question": "PowerPointのスライドショー実行中に、ポインターをペンに変えて書き込みたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + D",
+        "B. Ctrl + K",
+        "C. Ctrl + P",
+        "D. Ctrl + S"
+      ],
+      "answer": "A. Ctrl + D",
+      "id": 1007
+    },
+    {
+      "answer": "A. Ctrl + 矢印キー",
+      "id": 1008,
+      "question": "文字を1文字ずつ範囲選択しながらカーソルを動かしたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + 矢印キー",
+        "B. Alt + 矢印キー",
+        "C. Windows + 矢印キー",
+        "D. Shift + 矢印キー"
+      ]
+    },
+    {
+      "answer": "A. Ctrl + 矢印キー",
+      "id": 1009,
+      "question": "文書内でカーソルを1単語ごとにすばやく移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + 矢印キー",
+        "B. Shift + 矢印キー",
+        "C. Windows + 矢印キー",
+        "D. Alt + Tab"
+      ]
+    },
+    {
+      "choices": [
+        "A. End",
+        "B. Home",
+        "C. Ctrl + Home",
+        "D. Shift + Home"
+      ],
+      "question": "現在入力している行の先頭へカーソルを移動したい。使うキーはどれか。",
+      "answer": "A. End",
+      "id": 1010
+    },
+    {
+      "answer": "A. Ctrl + End",
+      "id": 1011,
+      "choices": [
+        "A. Ctrl + End",
+        "B. Home",
+        "C. End",
+        "D. Shift + End"
+      ],
+      "question": "現在入力している行の末尾へカーソルを移動したい。使うキーはどれか。"
+    },
+    {
+      "id": 1012,
+      "answer": "A. Shift + Home",
+      "question": "ファイルやページの一番上へ一気に移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Shift + Home",
+        "B. Home",
+        "C. Ctrl + End",
+        "D. Ctrl + Home"
+      ]
+    },
+    {
+      "answer": "A. Ctrl + End",
+      "id": 1013,
+      "choices": [
+        "A. Ctrl + End",
+        "B. End",
+        "C. Shift + End",
+        "D. Ctrl + Home"
+      ],
+      "question": "ファイルやページの一番下へ一気に移動したい。使うショートカットはどれか。"
+    },
+    {
+      "choices": [
+        "A. Ctrl + Home",
+        "B. Shift + Home",
+        "C. Home",
+        "D. Ctrl + Shift + N"
+      ],
+      "question": "カーソル位置から行の先頭までを一気に範囲選択したい。使うショートカットはどれか。",
+      "id": 1014,
+      "answer": "A. Ctrl + Home"
+    },
+    {
+      "id": 1015,
+      "answer": "A. End",
+      "question": "カーソル位置から行の末尾までを一気に範囲選択したい。使うショートカットはどれか。",
+      "choices": [
+        "A. End",
+        "B. Ctrl + End",
+        "C. Shift + End",
+        "D. Ctrl + Shift + Tab"
+      ]
+    },
+    {
+      "choices": [
+        "A. Ctrl + I",
+        "B. Ctrl + U",
+        "C. Ctrl + K",
+        "D. Ctrl + B"
+      ],
+      "question": "選択した文字を太字にしたい。使うショートカットはどれか。",
+      "answer": "A. Ctrl + I",
+      "id": 1016
+    },
+    {
+      "id": 1017,
+      "answer": "A. Ctrl + I",
+      "choices": [
+        "A. Ctrl + I",
+        "B. Ctrl + B",
+        "C. Ctrl + U",
+        "D. Ctrl + D"
+      ],
+      "question": "選択した文字を斜体にしたい。使うショートカットはどれか。"
+    },
+    {
+      "id": 1018,
+      "answer": "A. Ctrl + B",
+      "choices": [
+        "A. Ctrl + B",
+        "B. Ctrl + U",
+        "C. Ctrl + K",
+        "D. Ctrl + L"
+      ],
+      "question": "選択した文字に下線を引きたい。使うショートカットはどれか。"
+    },
+    {
+      "question": "カーソルの左側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Delete",
+        "B. Shift + Delete",
+        "C. Ctrl + Backspace",
+        "D. Alt + Backspace"
+      ],
+      "id": 1019,
+      "answer": "A. Ctrl + Delete"
+    },
+    {
+      "id": 1020,
+      "answer": "A. Ctrl + Backspace",
+      "question": "カーソルの右側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Ctrl + Backspace",
+        "B. Backspace",
+        "C. Delete",
+        "D. Ctrl + Delete"
+      ]
     }
   ],
   "practical-5kyu": [
@@ -442,7 +882,8 @@
       ],
       "explanation": "Ctrl+Yは、Ctrl+Zで取り消した操作をやり直すショートカットです。戻しすぎた編集を再適用したい時に便利です。",
       "id": 5039
-    }],
+    }
+  ],
   "practical-4kyu": [
     {
       "answer": "CORRECT",
@@ -1166,7 +1607,8 @@
       ],
       "explanation": "Cmd+Yは、Cmd+Zで取り消した操作をやり直すショートカットです。戻しすぎた編集を再適用したい時に便利です。",
       "id": 5039
-    }],
+    }
+  ],
   "practical-mac-4kyu": [
     {
       "answer": "CORRECT",
