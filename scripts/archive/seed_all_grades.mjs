@@ -190,7 +190,7 @@ async function seed() {
       id: "3kyu",
       title: "3級 (Windows版)",
       questionsCount: knowledgePool["3kyu"].length,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: knowledgePool["3kyu"]
     },
@@ -198,7 +198,7 @@ async function seed() {
       id: "2kyu",
       title: "2級 (Windows版)",
       questionsCount: knowledgePool["2kyu"].length,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: knowledgePool["2kyu"]
     },
@@ -206,7 +206,7 @@ async function seed() {
       id: "1kyu",
       title: "1級 (Windows版)",
       questionsCount: knowledgePool["1kyu"].length,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: knowledgePool["1kyu"]
     },
@@ -214,7 +214,7 @@ async function seed() {
       id: "practical-3kyu",
       title: "3級 実務検定 (実践シミュレータ)",
       questionsCount: practicalPool["practical-3kyu"].length,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: practicalPool["practical-3kyu"]
     },
@@ -222,7 +222,7 @@ async function seed() {
       id: "practical-2kyu",
       title: "2級 実務検定 (実践シミュレータ)",
       questionsCount: practicalPool["practical-2kyu"].length,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: practicalPool["practical-2kyu"]
     },
@@ -230,7 +230,7 @@ async function seed() {
       id: "practical-1kyu",
       title: "1級 実務検定 (実践シミュレータ)",
       questionsCount: practicalPool["practical-1kyu"].length,
-      passingRate: 0.8,
+      passingRate: 0.6,
       duration: 1800,
       pool: practicalPool["practical-1kyu"]
     }

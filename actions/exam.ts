@@ -91,12 +91,12 @@ async function getCachedExamData(grade: string): Promise<ExamData | null> {
     if (!docSnap.exists()) {
       const bundled = bundledExamConfig[grade];
       if (!bundled || bundled.pool.length === 0) return null;
-      const fallback: ExamData = { ...bundled, passingRate: 0.8, duration: 1800 };
+      const fallback: ExamData = { ...bundled, passingRate: 0.6, duration: 1800 };
       examCache[grade] = { data: fallback, timestamp: now };
       return fallback;
     }
 
-    const data = docSnap.data() as ExamData;
+    const data = { ...(docSnap.data() as ExamData), passingRate: 0.6 };
     examCache[grade] = { data, timestamp: now };
     return data;
   } catch (error) {
@@ -138,8 +138,9 @@ export async function startExam(grade: string) {
 
   // Avoid presenting identical question text more than once in a single pool.
   // Some legacy pools contain duplicate entries with different IDs.
+  const duplicateQuestionIds = new Set([3021, 3024, 3025, 3027, 3028, 3029, 3031, 3032, 3037, 3038, 3039, 3040]);
   const uniquePool = data.pool.filter((q: any, index: number, pool: any[]) =>
-    pool.findIndex((candidate: any) => candidate.question === q.question) === index
+    !duplicateQuestionIds.has(q.id) && pool.findIndex((candidate: any) => candidate.question === q.question) === index
   );
   const shuffledPool = shuffleArray(uniquePool);
   const selectedQuestions = shuffledPool.slice(0, data.questionsCount).map((q: any) => {

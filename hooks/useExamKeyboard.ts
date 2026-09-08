@@ -20,10 +20,15 @@ export function useExamKeyboard(
       (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") ||
       (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") ||
       (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") ||
-      (e.ctrlKey && e.key.toLowerCase() === "c");
+      (e.ctrlKey && e.key.toLowerCase() === "c") ||
+      // Prevent browser/window escape routes during the exam.
+      (e.ctrlKey && e.shiftKey && ["n", "escape"].includes(e.key.toLowerCase())) ||
+      (e.ctrlKey && ["r", "s", "p", "w", "tab"].includes(e.key.toLowerCase())) ||
+      e.key === "F5" || e.key === "F11";
 
     if (isDevTools) {
       e.preventDefault();
+      e.stopPropagation();
       return;
     }
 

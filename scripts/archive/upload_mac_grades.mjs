@@ -35,7 +35,7 @@ async function main() {
     const examData = {
       title: grade.includes('5kyu') ? '5級 (Mac版)' : '4級 (Mac版)',
       questionsCount: grade.includes('practical') ? 5 : 30,
-      passingRate: 80,
+      passingRate: 0.6,
       duration: 30 * 60,
       pool: data[grade]
     };
