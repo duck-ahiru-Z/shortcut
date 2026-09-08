@@ -1398,6 +1398,246 @@
       ],
       "answer": "A. Mac + L",
       "explanation": "LはLock（ロック）の頭文字です。離席する際に他人にパソコンを操作されないよう、一瞬でセキュリティを確保する社会人の必須ショートカットです。\n\n【他の選択肢】\n・Mac + K: キャスト（ワイヤレス接続）メニューを開く\n・Cmd + L: ブラウザのアドレスバーを選択する\n・Option + L: （特定のアプリの機能）"
+    },
+    {
+      "explanation": "TはTab（タブ）の頭文字です。現在見ているページを残したまま、新しく検索などをしたい時に使います。\n\n【他の選択肢】\n・Cmd + N: 新しいウィンドウを開く (New)\n・Cmd + W: 現在のタブを閉じる\n・Cmd + J: ダウンロード履歴を開く",
+      "question": "ブラウザで新しいタブを開くショートカットキーはどれか。",
+      "id": 1401,
+      "choices": [
+        "A. Cmd + T",
+        "B. Cmd + N",
+        "C. Cmd + W",
+        "D. Cmd + J"
+      ],
+      "answer": "A. Cmd + T"
+    },
+    {
+      "explanation": "不要になったタブをマウスの小さな×ボタンで閉じる手間を省けます。\n\n【他の選択肢】\n・Cmd + Q: アプリケーション全体の終了（Macなど）\n・Cmd + E: 検索バーにフォーカス\n・Cmd + D: お気に入り（ブックマーク）に追加",
+      "id": 1402,
+      "question": "ブラウザで現在のタブを閉じるショートカットキーはどれか。",
+      "answer": "A. Cmd + W",
+      "choices": [
+        "A. Cmd + W",
+        "B. Cmd + Q",
+        "C. Cmd + E",
+        "D. Cmd + D"
+      ]
+    },
+    {
+      "explanation": "「新しいタブを開く（Cmd+T）」にShiftを加えることで、「閉じてしまったタブを復活させる」という強力な復元機能になります。\n\n【他の選択肢】\n・Cmd + Alt + T: （Linuxなどで）ターミナルを開く\n・Cmd + Shift + W: すべてのタブ（ウィンドウごと）を閉じる\n・Cmd + Z: テキスト入力などを元に戻す（タブ復元には使えません）",
+      "choices": [
+        "A. Cmd + Shift + T",
+        "B. Cmd + Alt + T",
+        "C. Cmd + Shift + W",
+        "D. Cmd + Z"
+      ],
+      "id": 1403,
+      "answer": "A. Cmd + Shift + T",
+      "question": "誤って閉じたタブを復元するショートカットキーはどれか。"
+    },
+    {
+      "answer": "A. F2",
+      "explanation": "右クリックから「名前の変更」を探す必要がなくなり、ファイル整理のスピードが格段に上がります。\n\n【他の選択肢】\n・F4: アドレスバーの履歴を開く（エクスプローラー）\n・F5: 更新（リロード）\n・F12: 名前を付けて保存（Officeなど）、または開発者ツール（ブラウザ）",
+      "question": "ファイルやフォルダの名前を変更するショートカットキーはどれか。",
+      "choices": [
+        "A. F2",
+        "B. F4",
+        "C. F5",
+        "D. F12"
+      ],
+      "id": 1404
+    },
+    {
+      "explanation": "NはNew（新規）の頭文字です。右クリックから「新規作成」＞「フォルダー」とたどる煩わしい手順をスキップできます。\n\n【他の選択肢】\n・Cmd + N: 新しいウィンドウを開く\n・Cmd + Alt + N: （特定のアプリの機能）\n・Shift + N: （単なる大文字のN入力）",
+      "answer": "A. Cmd + Shift + N",
+      "choices": [
+        "A. Cmd + Shift + N",
+        "B. Cmd + N",
+        "C. Cmd + Alt + N",
+        "D. Shift + N"
+      ],
+      "question": "新しいフォルダを作成するショートカットキーはどれか。",
+      "id": 1405
+    },
+    {
+      "answer": "D. Cmd + L と Alt + D の両方",
+      "explanation": "Cmd + L と Alt + D は、どちらもブラウザのアドレスバーを選択します。選択後はそのままURLや検索語を入力できます。\n\n【他の選択肢】\n・Cmd + K: 検索欄にフォーカスする\n・Cmd + L と Alt + D の両方: この問題の正しい組み合わせ",
+      "question": "ブラウザのアドレスバーを選択するショートカットキーはどれか。",
+      "id": 1406,
+      "choices": [
+        "A. Cmd + L",
+        "B. Cmd + K",
+        "C. Alt + D",
+        "D. Cmd + L と Alt + D の両方"
+      ]
+    },
+    {
+      "question": "PowerPointでスライドショーを最初のスライドから開始したい。使うキーはどれか。",
+      "choices": [
+        "A. Shift + F5",
+        "B. F5",
+        "C. F11",
+        "D. Esc"
+      ],
+      "id": 1407,
+      "answer": "A. Shift + F5",
+      "explanation": "F5は更新の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・F5\n・F11\n・Esc"
+    },
+    {
+      "question": "スライドショーや動画の全画面表示を終了して元の画面に戻りたい。使うキーはどれか。",
+      "choices": [
+        "A. F11",
+        "B. Cmd + W",
+        "C. Alt + Tab",
+        "D. Esc"
+      ],
+      "answer": "A. F11",
+      "id": 1408,
+      "explanation": "F11は全画面表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + W\n・Alt + Tab\n・Esc"
+    },
+    {
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. P",
+        "D. D"
+      ],
+      "question": "スライドショー中に画面を真っ暗にして、いったん注目を集めたい。押すキーはどれか。",
+      "id": 1409,
+      "answer": "A. B",
+      "explanation": "BはBlack（黒画面）の頭文字です。プレゼン中に一時的に画面を暗くし、聞き手の注目を話し手へ戻すために使います。\n\n【他の選択肢】\n・W: White（白画面）に切り替える\n・P: ペン（レーザーポインター）を使う\n・D: 描画モードを切り替える"
+    },
+    {
+      "question": "スライドショー中に画面を真っ白にして、一時的に表示を止めたい。押すキーはどれか。",
+      "choices": [
+        "A. B",
+        "B. W",
+        "C. Esc",
+        "D. F5"
+      ],
+      "id": 1410,
+      "answer": "A. B",
+      "explanation": "Bは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・W\n・Esc\n・F5"
+    },
+    {
+      "question": "PowerPointのスライドショー実行中に、ポインターをペンに変えて書き込みたい。使うショートカットはどれか。",
+      "choices": [
+        "A. Cmd + D",
+        "B. Cmd + K",
+        "C. Cmd + P",
+        "D. Cmd + S"
+      ],
+      "answer": "A. Cmd + D",
+      "id": 1411,
+      "explanation": "Dはデスクトップ表示の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + K\n・Cmd + P\n・Cmd + S"
+    },
+    {
+      "choices": [
+        "A. End",
+        "B. Home",
+        "C. Cmd + Home",
+        "D. Shift + Home"
+      ],
+      "question": "現在入力している行の先頭へカーソルを移動したい。使うキーはどれか。",
+      "answer": "A. End",
+      "id": 1412,
+      "explanation": "Endは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Home\n・Cmd + Home\n・Shift + Home"
+    },
+    {
+      "answer": "A. Cmd + End",
+      "id": 1413,
+      "choices": [
+        "A. Cmd + End",
+        "B. Home",
+        "C. End",
+        "D. Shift + End"
+      ],
+      "question": "現在入力している行の末尾へカーソルを移動したい。使うキーはどれか。",
+      "explanation": "Endは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Home\n・End\n・Shift + End"
+    },
+    {
+      "id": 1414,
+      "answer": "A. Shift + Home",
+      "question": "ファイルやページの一番上へ一気に移動したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Shift + Home",
+        "B. Home",
+        "C. Cmd + End",
+        "D. Cmd + Home"
+      ],
+      "explanation": "Homeは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Home\n・Cmd + End\n・Cmd + Home"
+    },
+    {
+      "answer": "A. Cmd + End",
+      "id": 1415,
+      "choices": [
+        "A. Cmd + End",
+        "B. End",
+        "C. Shift + End",
+        "D. Cmd + Home"
+      ],
+      "question": "ファイルやページの一番下へ一気に移動したい。使うショートカットはどれか。",
+      "explanation": "Endは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・End\n・Shift + End\n・Cmd + Home"
+    },
+    {
+      "choices": [
+        "A. Cmd + Home",
+        "B. Shift + Home",
+        "C. Home",
+        "D. Cmd + Shift + N"
+      ],
+      "question": "カーソル位置から行の先頭までを一気に範囲選択したい。使うショートカットはどれか。",
+      "id": 1416,
+      "answer": "A. Cmd + Home",
+      "explanation": "Homeは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Shift + Home\n・Home\n・Cmd + Shift + N"
+    },
+    {
+      "id": 1417,
+      "answer": "A. End",
+      "question": "カーソル位置から行の末尾までを一気に範囲選択したい。使うショートカットはどれか。",
+      "choices": [
+        "A. End",
+        "B. Cmd + End",
+        "C. Shift + End",
+        "D. Cmd + Shift + Tab"
+      ],
+      "explanation": "Endは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + End\n・Shift + End\n・Cmd + Shift + Tab"
+    },
+    {
+      "choices": [
+        "A. Cmd + I",
+        "B. Cmd + U",
+        "C. Cmd + K",
+        "D. Cmd + B"
+      ],
+      "question": "選択した文字を太字にしたい。使うショートカットはどれか。",
+      "answer": "A. Cmd + I",
+      "id": 1418,
+      "explanation": "Iは設定の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + U\n・Cmd + K\n・Cmd + B"
+    },
+    {
+      "id": 1419,
+      "answer": "A. Cmd + I",
+      "choices": [
+        "A. Cmd + I",
+        "B. Cmd + B",
+        "C. Cmd + U",
+        "D. Cmd + D"
+      ],
+      "question": "選択した文字を斜体にしたい。使うショートカットはどれか。",
+      "explanation": "Iは設定の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + B\n・Cmd + U\n・Cmd + D"
+    },
+    {
+      "id": 1420,
+      "answer": "A. Cmd + B",
+      "choices": [
+        "A. Cmd + B",
+        "B. Cmd + U",
+        "C. Cmd + K",
+        "D. Cmd + L"
+      ],
+      "question": "選択した文字に下線を引きたい。使うショートカットはどれか。",
+      "explanation": "Bは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + U\n・Cmd + K\n・Cmd + L"
     }
   ],
   "practical-mac-5kyu": [
@@ -1879,6 +2119,296 @@
       "answer": "CORRECT",
       "question": "（Excel）10万行ある顧客リストの末尾に追記したいです。スクロールせず、入力済み範囲の最後のセルへ一気に移動してください。",
       "id": 4040
+    }
+  ],
+  "mac-3kyu": [
+    {
+      "id": 1301,
+      "question": "Excelで広いシートを操作中に迷子になったとき、A1セルへ一瞬で戻るショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + Home",
+        "Cmd + End",
+        "Alt + Home",
+        "Shift + Home"
+      ],
+      "answer": "Cmd + Home",
+      "explanation": "Cmd + Homeはシートの先頭であるA1セルへ戻るための復帰キーです。広大な表の中で現在位置を見失ったとき、マウスでスクロールして戻るより圧倒的に速く、作業のリズムを崩しません。"
+    },
+    {
+      "id": 1302,
+      "question": "Excelで通常のデータ範囲を、フィルターや自動拡張が効くテーブルに変換するショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + L（または Cmd + T）",
+        "Cmd + E",
+        "Cmd + Shift + L",
+        "Alt + ="
+      ],
+      "answer": "Cmd + L（または Cmd + T）",
+      "explanation": "Cmd + LまたはCmd + Tで、ただの範囲をExcelテーブルに変換できます。フィルター、デザイン、数式の自動拡張が効くようになり、集計表を実務で扱いやすい構造へ一瞬で変えられます。"
+    },
+    {
+      "id": 1303,
+      "question": "Excelで氏名の列から名字だけを抽出するなど、入力例から法則性を読み取って自動入力する機能を呼び出すショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + E",
+        "Cmd + D",
+        "Cmd + R",
+        "Alt + E"
+      ],
+      "answer": "Cmd + E",
+      "explanation": "Cmd + Eはフラッシュフィルのショートカットです。文字列の分割、結合、整形を法則性から自動実行できるため、手作業のデータ加工を一気に時短できます。"
+    },
+    {
+      "id": 1304,
+      "question": "Excelで値のみ、数式のみ、書式のみなどを選んで貼り付けたいときに、「形式を選択して貼り付け」ダイアログを開くショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + Alt + V",
+        "Cmd + Shift + V",
+        "Cmd + V",
+        "Alt + V"
+      ],
+      "answer": "Cmd + Alt + V",
+      "explanation": "Cmd + Alt + Vは貼り付け方法を選ぶ入口です。値貼り付けや書式のみ貼り付けを正確に使い分けることで、数式崩れや不要な装飾の混入を防げます。"
+    },
+    {
+      "id": 1305,
+      "question": "Excelで現在選択しているセルの表示形式、配置、罫線などを調整する「セルの書式設定」ダイアログを開くショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + 1",
+        "Cmd + F",
+        "Alt + Enter",
+        "F2"
+      ],
+      "answer": "Cmd + 1",
+      "explanation": "Cmd + 1はセル書式設定の最短ルートです。右クリックから探す時間をなくし、数値、日付、罫線、配置などの調整をすぐ始められるため、表の仕上げ速度が大きく変わります。"
+    },
+    {
+      "id": 1306,
+      "question": "Excelで集計表の末尾にSUM関数を手入力せず、合計を自動挿入するショートカットキーはどれですか？",
+      "choices": [
+        "Alt + =",
+        "Cmd + =",
+        "Shift + =",
+        "Cmd + Shift + ="
+      ],
+      "answer": "Alt + =",
+      "explanation": "Alt + =はオートサムを挿入するショートカットです。合計行や合計列を作るたびにSUM関数を手打ちしなくて済み、集計表作成の定番作業を高速化できます。"
+    },
+    {
+      "id": 1307,
+      "question": "Excelで列番号をマウスでクリックせず、現在の列全体を選択するショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + Space",
+        "Shift + Space",
+        "Cmd + A",
+        "Alt + Space"
+      ],
+      "answer": "Cmd + Space",
+      "explanation": "Cmd + Spaceは列全体を選択するショートカットです。列の削除、挿入、書式変更と組み合わせることで、表のレイアウト調整をマウスレスで進められます。"
+    },
+    {
+      "id": 1308,
+      "question": "Excelで行や列を選択したあと、挿入または削除をキーボードだけで実行するショートカットキーの組み合わせはどれですか？",
+      "choices": [
+        "Cmd + + / Cmd + -",
+        "Cmd + I / Cmd + D",
+        "Alt + + / Alt + -",
+        "Shift + + / Shift + -"
+      ],
+      "answer": "Cmd + + / Cmd + -",
+      "explanation": "Cmd + Shift + + (JIS配列では+を入力するのにShiftが必要なため)で挿入、Cmd + -で削除できます。行選択や列選択と組み合わせると、表の行列調整を右クリックなしで完結できる強力な実務コンボになります。"
+    },
+    {
+      "id": 1309,
+      "question": "WordやPowerPointで、段落やテキストを左揃え、右揃え、中央揃え、両端揃えに切り替えるショートカットキー群はどれですか？",
+      "choices": [
+        "Cmd + L / Cmd + R / Cmd + E / Cmd + J",
+        "Cmd + C / Cmd + V / Cmd + X / Cmd + Z",
+        "Alt + L / Alt + R / Alt + E / Alt + J",
+        "Cmd + Shift + L / Cmd + Shift + R / Cmd + Shift + E / Cmd + Shift + J"
+      ],
+      "answer": "Cmd + L / Cmd + R / Cmd + E / Cmd + J",
+      "explanation": "WordやPowerPointではCmd + L/R/E/Jで文字配置を瞬時に切り替えられます。リボンで配置ボタンを探さず、資料や文書の見た目をテンポよく整えられます。"
+    },
+    {
+      "id": 1310,
+      "question": "PowerPointで図形やスライドを複製し、同じデザインの要素をすばやく増やしたいときに使うショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + D",
+        "Cmd + R",
+        "Cmd + G",
+        "Cmd + Shift + C"
+      ],
+      "answer": "Cmd + D",
+      "explanation": "PowerPointのCmd + Dは複製の必須キーです。図形を等間隔で増やしたり、同じ構成のスライドを量産したりできるため、資料作成のスピードと整列精度が一気に上がります。"
+    },
+    {
+      "id": 1311,
+      "question": "WordやPowerPointで、文字や図形の色、フォント、枠線などの見た目だけをコピーして別の要素に適用するショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + Shift + C / Cmd + Shift + V",
+        "Cmd + C / Cmd + V",
+        "Cmd + Alt + V",
+        "Cmd + G / Cmd + Shift + G"
+      ],
+      "answer": "Cmd + Shift + C / Cmd + Shift + V",
+      "explanation": "Cmd + Shift + CとCmd + Shift + Vは、内容ではなく書式だけをコピーして貼り付けます。資料全体のデザインを統一するうえで、マウス操作より圧倒的に速く美しい仕上げが可能です。"
+    },
+    {
+      "id": 1312,
+      "question": "SlackやTeamsで、検索窓をクリックせずに相手の名前やチャンネル名を入力して目的の場所へ移動するショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + K",
+        "Cmd + F",
+        "Shift + Esc",
+        "Cmd + /"
+      ],
+      "answer": "Cmd + K",
+      "explanation": "Cmd + Kはチャットツールのクイックスイッチャーを呼び出す代表的なショートカットです。未読チャンネルや相手をマウスで探す時間をなくし、情報処理のスピードを大きく高めます。"
+    },
+    {
+      "id": 1313,
+      "question": "Excelで横に長い表を操作しているとき、下の横スクロールバーを掴まずに画面を右方向へ横スクロールするショートカットキーはどれですか？",
+      "choices": [
+        "Alt + PageDown",
+        "Cmd + PageDown",
+        "Shift + PageDown",
+        "Cmd + →"
+      ],
+      "answer": "Alt + PageDown",
+      "explanation": "Alt + PageDownはExcelで画面を右方向へ横スクロールします。列数の多い表で横スクロールバーをマウスで操作する苦行から解放され、横長データの確認が一気に快適になります。"
+    },
+    {
+      "id": 1314,
+      "question": "Excelで選択中の数値をパーセント表示にすばやく変更したい場合に使うショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + Shift + 5",
+        "Cmd + Shift + 1",
+        "Cmd + 5",
+        "Alt + Shift + 5"
+      ],
+      "answer": "Cmd + Shift + 5",
+      "explanation": "Cmd + Shift + 5はパーセント表示を適用する書式ショートカットです。比率や達成率を扱う資料で、リボンを探さず一瞬で見やすい表示に切り替えられます。"
+    },
+    {
+      "id": 1315,
+      "question": "Excelでタスク完了日などに今日の日付を手入力せず入れたい場合のショートカットキーはどれですか？",
+      "choices": [
+        "Cmd + ;",
+        "Cmd + :",
+        "Alt + ;",
+        "Shift + ;"
+      ],
+      "answer": "Cmd + ;",
+      "explanation": "Cmd + ;は今日の日付を入力します。日付の打ち間違いやカレンダー確認の手間をなくし、日報、進捗表、管理台帳への入力を正確かつ高速にします。"
+    },
+    {
+      "id": 1316,
+      "question": "Excelで文字が見切れている列の幅を、内容に合わせて自動調整するアクセスキー操作はどれですか？",
+      "choices": [
+        "Alt → H → O → I",
+        "Alt → H → A → C",
+        "Cmd + Shift + I",
+        "Cmd + Alt + I"
+      ],
+      "answer": "Alt → H → O → I",
+      "explanation": "Alt → H → O → Iは列幅の自動調整を行うアクセスキーコンボです。列の境界をダブルクリックするマウス操作を排除し、表の見切れを一瞬で整えられます。"
+    },
+    {
+      "id": 1317,
+      "question": "ブラウザで新しいタブを開いて、別のページを調べたい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Cmd + T",
+        "B. Cmd + W",
+        "C. Cmd + R",
+        "D. Cmd + H"
+      ],
+      "answer": "A. Cmd + T",
+      "explanation": "Cmd + Tは新しいタブ（Tab）を開きます。現在のページを残したまま別の情報を調べるときに便利です。\n\n【他の選択肢】\n・Cmd + W: 現在のタブを閉じる\n・Cmd + R: ページを再読み込みする\n・Cmd + H: 閲覧履歴を開く"
+    },
+    {
+      "id": 1318,
+      "question": "ブラウザで閉じてしまったタブをもう一度開きたい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Cmd + Shift + T",
+        "B. Cmd + Shift + W",
+        "C. Cmd + T",
+        "D. Cmd + ["
+      ],
+      "answer": "A. Cmd + Shift + T",
+      "explanation": "Cmd + Shift + Tは直前に閉じたタブを復元します。間違えてタブを閉じたときにすぐ戻せます。\n\n【他の選択肢】\n・Cmd + Shift + W: ウィンドウを閉じる\n・Cmd + T: 新しいタブを開く\n・Cmd + [: 前のページへ戻る"
+    },
+    {
+      "id": 1319,
+      "question": "複数のタブを開いている。マウスを使わず右隣のタブへ移動するキーはどれか。",
+      "choices": [
+        "A. Cmd + Tab",
+        "B. Cmd + W",
+        "C. Cmd + PageUp",
+        "D. Alt + Tab"
+      ],
+      "answer": "A. Cmd + Tab",
+      "explanation": "Cmd + Tabは右隣のタブへ移動します。調査中にタブを順番に確認するときに使います。\n\n【他の選択肢】\n・Cmd + W: タブを閉じる\n・Cmd + PageUp: 左隣のタブへ移動する\n・Alt + Tab: アプリを切り替える"
+    },
+    {
+      "id": 1320,
+      "question": "あとで見返したいページをブックマークに登録したい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Cmd + D",
+        "B. Cmd + B",
+        "C. Cmd + M",
+        "D. Cmd + K"
+      ],
+      "answer": "A. Cmd + D",
+      "explanation": "Cmd + Dは現在のページをブックマーク（お気に入り）に追加します。よく使うページを保存するときに便利です。\n\n【他の選択肢】\n・Cmd + B: 太字など、アプリによって異なる操作\n・Cmd + M: ウィンドウを最小化する場合がある\n・Cmd + K: 検索欄へフォーカスする"
+    },
+    {
+      "id": 1321,
+      "question": "前に見ていたページへ戻りたい。ブラウザで使うショートカットキーはどれか。",
+      "choices": [
+        "A. Cmd + [",
+        "B. Cmd + ]",
+        "C. Cmd + R",
+        "D. Cmd + L"
+      ],
+      "answer": "A. Cmd + [",
+      "explanation": "Cmd + [はブラウザの履歴を1つ戻ります。リンクをたどったあと、前のページを見直すときに使います。\n\n【他の選択肢】\n・Cmd + ]: 次の履歴へ進む\n・Cmd + R: ページを再読み込みする\n・Cmd + L: アドレスバーを選択する"
+    },
+    {
+      "id": 1322,
+      "question": "入力した検索語を変えずに、検索結果のページだけ最新状態に更新したい。どのキーを使うか。",
+      "choices": [
+        "A. Cmd + R",
+        "B. Cmd + N",
+        "C. Cmd + F",
+        "D. F11"
+      ],
+      "answer": "A. Cmd + R",
+      "explanation": "Cmd + Rは現在のページを再読み込み（Reload）します。フォーム入力を保ったまま更新したい場面で使います。\n\n【他の選択肢】\n・Cmd + N: 新しいウィンドウを開く\n・Cmd + F: ページ内を検索する\n・F11: 全画面表示を切り替える"
+    },
+    {
+      "id": 1323,
+      "question": "以前に閲覧したページのタイトルやURLを確認したい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Cmd + H",
+        "B. Cmd + J",
+        "C. Cmd + D",
+        "D. Cmd + P"
+      ],
+      "answer": "A. Cmd + H",
+      "explanation": "Cmd + Hは閲覧履歴（History）を開きます。以前見たページを探し直すときに役立ちます。\n\n【他の選択肢】\n・Cmd + J: ダウンロード履歴を開く\n・Cmd + D: ブックマークに追加する\n・Cmd + P: 印刷画面を開く"
+    },
+    {
+      "id": 1324,
+      "question": "ブラウザでダウンロードしたファイルの一覧を確認したい。どのショートカットキーを使うか。",
+      "choices": [
+        "A. Cmd + J",
+        "B. Cmd + H",
+        "C. Cmd + S",
+        "D. Cmd + O"
+      ],
+      "answer": "A. Cmd + J",
+      "explanation": "Cmd + Jはダウンロード履歴を開きます。保存したファイルの場所を確認したいときに便利です。\n\n【他の選択肢】\n・Cmd + H: 閲覧履歴を開く\n・Cmd + S: ページを保存する\n・Cmd + O: ファイルを開く"
     }
   ]
 }
