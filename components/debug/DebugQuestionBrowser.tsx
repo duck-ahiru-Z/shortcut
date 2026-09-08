@@ -15,7 +15,7 @@ type Props = { pools: Record<string, DebugQuestion[]> };
 
 const groups = [
   ["5kyu", "5級 知識 (Windows)"], ["4kyu", "4級 知識 (Windows)"],
-  ["3kyu", "3級 知識 (Windows)"], ["2kyu", "2級 知識 (Windows)"], ["1kyu", "1級 知識 (Windows)"],
+  ["knowledge-3kyu", "3級 知識 (Windows)"], ["knowledge-2kyu", "2級 知識 (Windows)"], ["knowledge-1kyu", "1級 知識 (Windows)"],
   ["mac-5kyu", "5級 知識 (Mac)"], ["mac-4kyu", "4級 知識 (Mac)"], ["mac-3kyu", "3級 知識 (Mac)"], ["mac-2kyu", "2級 知識 (Mac)"], ["mac-1kyu", "1級 知識 (Mac)"],
   ["practical-5kyu", "5級 実務 (Windows)"], ["practical-4kyu", "4級 実務 (Windows)"], ["practical-3kyu", "3級 実務 (Windows)"], ["practical-2kyu", "2級 実務 (Windows)"], ["practical-1kyu", "1級 実務 (Windows)"],
   ["practical-mac-5kyu", "5級 実務 (Mac)"], ["practical-mac-4kyu", "4級 実務 (Mac)"], ["practical-mac-3kyu", "3級 実務 (Mac)"], ["practical-mac-2kyu", "2級 実務 (Mac)"], ["practical-mac-1kyu", "1級 実務 (Mac)"],
