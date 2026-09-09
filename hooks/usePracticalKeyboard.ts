@@ -164,7 +164,7 @@ export function usePracticalKeyboard({ q, isMac = false, isSubmitting, onAnswer,
       // In a Windows-hosted browser, synthetic Command events can expose the
       // key reliably but bypass the browser's normal meta shortcut path.
       // Match Mac grade single-chord commands explicitly from the grade.
-      if (!isMatch && isMac && e.metaKey && q.expectedKeyCombo?.includes("meta")) {
+      if (!isMatch && isMac && (e.metaKey || e.ctrlKey) && q.expectedKeyCombo?.includes("meta")) {
         const expectedMain = q.expectedKeyCombo.find((key) => !["meta", "shift", "alt", "control"].includes(key.toLowerCase()));
         isMatch = expectedMain?.toLowerCase() === mainKey &&
           (!q.expectedKeyCombo.includes("shift") || e.shiftKey) &&
