@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     description: "ショートカットキーの知識と実技スキルをオンラインで測定。",
     images: ["/logo.png"],
   },
+  verification: {
+    google: "hbZL7FmZqb47bVAGvY4pKbsoDUPdX0J4oc3jABbfmto",
+  },
 };
 
 export default function RootLayout({
