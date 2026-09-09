@@ -80,7 +80,7 @@ export default function PracticalActiveScreen({
       const normalizedKey = key.toLowerCase();
       const expectedMain = expected.find((value: string) => !["meta", "control", "shift", "alt"].includes(value));
       const commandMatch = expected.includes("meta") && expectedMain === normalizedKey &&
-        (modifiers.meta || modifiers.ctrl) &&
+        modifiers.meta &&
         (!expected.includes("shift") || modifiers.shift) && (!expected.includes("alt") || modifiers.alt);
       if (commandMatch) {
         handleSuccess(q.id);
