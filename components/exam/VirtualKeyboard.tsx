@@ -72,9 +72,11 @@ export default function VirtualKeyboard({ os = "windows", onClose, onVirtualKey 
   const [alt, setAlt] = useState(false);
   const [meta, setMeta] = useState(false);
 
-  // Initialize position to bottom center
+  // Initialize position to the center of the viewport
   useEffect(() => {
-    setPos({ x: 0, y: window.innerHeight * 0.2 }); // Slightly above bottom
+    // Center the keyboard so all rows are visible on the initial display.
+    // Users can still drag it to another position afterward.
+    setPos({ x: 0, y: 0 });
   }, []);
 
   const handlePointerDown = (e: React.PointerEvent) => {
