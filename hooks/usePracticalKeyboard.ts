@@ -141,6 +141,14 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
         isMatch = expected.every((k: string) => effectivePressed.has(k)) && effectivePressed.size === expected.length;
       }
 
+      // Some browser/OS combinations consume Shift+Alt+I (keyboard-layout
+      // switching) before exposing the Shift modifier to the page. In the
+      // corresponding practical simulation, accept the observable Alt+I
+      // fallback so the task remains solvable in a browser.
+      if (!isMatch && mainKey === "i" && e.altKey && !e.shiftKey && /複数行の末尾/.test(q.question || "")) {
+        isMatch = true;
+      }
+
       if (isMatch) {
         sequenceIndexRef.current = 0;
         
