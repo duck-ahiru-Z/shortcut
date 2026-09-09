@@ -5,6 +5,7 @@ import styles from "./VirtualKeyboard.module.css";
 
 type Props = {
   os?: "windows" | "mac";
+  resetKey?: string | number;
   onClose: () => void;
   onVirtualKey?: (key: string, modifiers: { ctrl: boolean; shift: boolean; alt: boolean; meta: boolean }) => void;
 };
@@ -60,7 +61,7 @@ const KEY_LABELS: Record<string, string> = {
 
 type LayoutType = keyof typeof LAYOUTS;
 
-export default function VirtualKeyboard({ os = "windows", onClose, onVirtualKey }: Props) {
+export default function VirtualKeyboard({ os = "windows", resetKey, onClose, onVirtualKey }: Props) {
   const [layout, setLayout] = useState<LayoutType>(os === "mac" ? "mac-jis" : "win-jis");
   const [scale, setScale] = useState(1);
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -82,6 +83,17 @@ export default function VirtualKeyboard({ os = "windows", onClose, onVirtualKey 
     // Users can still drag it to another position afterward.
     setPos({ x: 0, y: 0 });
   }, []);
+
+  // Keep the keyboard mounted while moving between questions, but clear any
+  // sticky modifiers so the next question always starts from a clean state.
+  useEffect(() => {
+    const next = { ctrl: false, shift: false, alt: false, meta: false };
+    modifierRef.current = next;
+    setCtrl(false);
+    setShift(false);
+    setAlt(false);
+    setMeta(false);
+  }, [resetKey]);
 
   const handlePointerDown = (e: React.PointerEvent) => {
     setIsDragging(true);

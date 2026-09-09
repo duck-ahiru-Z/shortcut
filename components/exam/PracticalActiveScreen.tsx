@@ -182,7 +182,7 @@ export default function PracticalActiveScreen({
 
       {/* 仮想キーボード */}
       {showKeyboard && (
-        <VirtualKeyboard key={q.id} os={isMac ? "mac" : "windows"} onClose={() => setShowKeyboard(false)} onVirtualKey={handleVirtualKey} />
+        <VirtualKeyboard resetKey={q.id} os={isMac ? "mac" : "windows"} onClose={() => setShowKeyboard(false)} onVirtualKey={handleVirtualKey} />
       )}
     </div>
   );
