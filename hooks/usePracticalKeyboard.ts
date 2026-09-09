@@ -192,13 +192,24 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
         void handleKeyDown(synthetic);
       }
     };
+    const handlePaste = (e: ClipboardEvent) => {
+      if (!q.expectedKeySequence || sequenceIndexRef.current === 0) return;
+      const step = q.expectedKeySequence[sequenceIndexRef.current]?.keys.map(k => k.toLowerCase());
+      if (step?.includes("control") && step.includes("shift") && step.includes("v") && step.length === 3) {
+        e.preventDefault();
+        const synthetic = new KeyboardEvent("keydown", { key: "v", ctrlKey: true, shiftKey: true, bubbles: true, cancelable: true });
+        void handleKeyDown(synthetic);
+      }
+    };
     document.addEventListener("keydown", handleKeyDownOnce, { capture: true, passive: false });
     window.addEventListener("keydown", handleKeyDownOnce, { passive: false });
     document.addEventListener("copy", handleCopy, { capture: true });
+    document.addEventListener("paste", handlePaste, { capture: true });
     return () => {
       document.removeEventListener("keydown", handleKeyDownOnce, true);
       window.removeEventListener("keydown", handleKeyDownOnce);
       document.removeEventListener("copy", handleCopy, true);
+      document.removeEventListener("paste", handlePaste, true);
     };
   }, [q, isSubmitting, onAnswer, onSuccess]);
 }
