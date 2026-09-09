@@ -80,8 +80,9 @@ export default function PracticalActiveScreen({
       const normalizedKey = key.toLowerCase();
       const expectedMain = expected.find((value: string) => !["meta", "control", "shift", "alt"].includes(value));
       const commandMatch = expected.includes("meta") && expectedMain === normalizedKey &&
+        (modifiers.meta || modifiers.ctrl) &&
         (!expected.includes("shift") || modifiers.shift) && (!expected.includes("alt") || modifiers.alt);
-      if (commandMatch && expected.length === 2) {
+      if (commandMatch) {
         handleSuccess(q.id);
         return;
       }
@@ -90,11 +91,12 @@ export default function PracticalActiveScreen({
     if (!isTypingTask) return;
 
     const lower = key.toLowerCase();
-    if (modifiers.ctrl && lower === "c") {
+    const clipboardModifier = modifiers.ctrl || (isMac && modifiers.meta);
+    if (clipboardModifier && lower === "c") {
       setVirtualClipboard(q?.taskData?.targetText || q?.taskData?.password || "");
       return;
     }
-    if (modifiers.ctrl && lower === "v") {
+    if (clipboardModifier && lower === "v") {
       const pasted = virtualClipboard || q?.taskData?.targetText || "";
       if (pasted) setInputValue((previous) => previous + pasted);
       return;

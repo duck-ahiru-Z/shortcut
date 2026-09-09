@@ -150,7 +150,10 @@ export default function VirtualKeyboard({ os = "windows", resetKey, onClose, onV
       bubbles: true,
       cancelable: true,
     });
-    onVirtualKey?.(k, modifiers);
+    const callbackModifiers = layout.startsWith("mac") && modifiers.meta
+      ? { ...modifiers, ctrl: true }
+      : modifiers;
+    onVirtualKey?.(k, callbackModifiers);
     // Dispatch on document so the capture listener in usePracticalKeyboard
     // receives synthetic shortcuts even when the browser reserves a key
     // combination (for example Shift+Alt+I) at the window level.
@@ -192,8 +195,7 @@ export default function VirtualKeyboard({ os = "windows", resetKey, onClose, onV
         key={`${k}-${idx}`} 
         className={className} 
         style={{ fontSize, ...(minWidth ? { minWidth } : {}) }}
-        onTouchStart={(e) => { e.preventDefault(); handleKeyPress(k); }} 
-        onMouseDown={(e) => { e.preventDefault(); handleKeyPress(k); }}
+        onClick={(e) => { e.preventDefault(); handleKeyPress(k); }}
       >
         {label}
       </button>
