@@ -77,7 +77,7 @@ export default function PracticalActiveScreen({
     const text = q?.question || "";
     // Some persisted practical questions expose only a combo hash. Keep the
     // Mac virtual keyboard usable for these well-known single-key tasks too.
-    if (isMac && !q?.expectedKeyCombo && modifiers.meta) {
+    if (isMac && modifiers.meta) {
       const fallbackKey = text.includes("保存") ? "s" : text.includes("元に戻す") ? "z" :
         text.includes("リロード") || text.includes("再読み込み") ? "r" : text.includes("太字") ? "b" :
         text.includes("印刷") ? "p" : text.includes("やり直") ? "y" : undefined;
