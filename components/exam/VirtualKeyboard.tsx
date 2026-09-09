@@ -159,7 +159,17 @@ export default function VirtualKeyboard({ os = "windows", resetKey, onClose, onV
     // combination (for example Shift+Alt+I) at the window level.
     document.dispatchEvent(event);
 
-    // Note: We DO NOT auto-reset modifiers anymore, they are sticky until clicked again.
+    // Treat command/control/option as a one-shot chord. Keeping these modifiers
+    // latched across questions makes the next shortcut silently lose its
+    // modifier when the user clicks the key again (especially after an
+    // auto-advance). Shift remains sticky so uppercase text entry still works.
+    if (modifiers.ctrl || modifiers.meta || modifiers.alt) {
+      const cleared = { ...modifierRef.current, ctrl: false, meta: false, alt: false };
+      modifierRef.current = cleared;
+      setCtrl(false);
+      setMeta(false);
+      setAlt(false);
+    }
   };
 
   const renderKey = (k: string, idx: number) => {
