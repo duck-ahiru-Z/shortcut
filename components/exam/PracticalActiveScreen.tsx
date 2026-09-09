@@ -78,10 +78,21 @@ export default function PracticalActiveScreen({
     // Some persisted practical questions expose only a combo hash. Keep the
     // Mac virtual keyboard usable for these well-known single-key tasks too.
     if (isMac && modifiers.meta) {
-      const fallbackKey = text.includes("保存") ? "s" : text.includes("元に戻す") ? "z" :
+      const fallbackKey = text.includes("保存") ? "s" : text.includes("元に戻す") || text.includes("取り消し") ? "z" :
         text.includes("リロード") || text.includes("再読み込み") ? "r" : text.includes("太字") ? "b" :
         text.includes("印刷") ? "p" : text.includes("やり直") ? "y" : undefined;
       if (fallbackKey && key.toLowerCase() === fallbackKey) {
+        handleSuccess(q.id);
+        return;
+      }
+      // Finder/file-operation tasks use the same chords but have no editable
+      // field. Mark the operation complete once the selected item is copied
+      // or cut, instead of treating it as text entry.
+      if (key.toLowerCase() === "c" && text.includes("選択中のファイル名") && !text.includes("貼り付け")) {
+        handleSuccess(q.id);
+        return;
+      }
+      if (key.toLowerCase() === "x" && text.includes("切り取って")) {
         handleSuccess(q.id);
         return;
       }
