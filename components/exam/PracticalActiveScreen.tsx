@@ -75,6 +75,17 @@ export default function PracticalActiveScreen({
 
   const handleVirtualKey = (key: string, modifiers: { ctrl: boolean; shift: boolean; alt: boolean; meta: boolean }) => {
     const text = q?.question || "";
+    if (isMac && q?.expectedKeyCombo) {
+      const expected = q.expectedKeyCombo.map((value: string) => value.toLowerCase());
+      const normalizedKey = key.toLowerCase();
+      const expectedMain = expected.find((value: string) => !["meta", "control", "shift", "alt"].includes(value));
+      const commandMatch = expected.includes("meta") && expectedMain === normalizedKey &&
+        (!expected.includes("shift") || modifiers.shift) && (!expected.includes("alt") || modifiers.alt);
+      if (commandMatch && expected.length === 2) {
+        handleSuccess(q.id);
+        return;
+      }
+    }
     const isTypingTask = /検索|パスワード|コピー|すべて選択|名前を変更|名前の変更/.test(text);
     if (!isTypingTask) return;
 
@@ -108,6 +119,7 @@ export default function PracticalActiveScreen({
   // Keyboard shortcut listener extracted to a custom hook
   usePracticalKeyboard({ 
     q, 
+    isMac,
     isSubmitting: isSubmitting || isSuccess, 
     onAnswer,
     onSuccess: handleSuccess
