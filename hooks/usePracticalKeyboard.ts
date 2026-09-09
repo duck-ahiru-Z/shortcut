@@ -169,7 +169,22 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown, { passive: false });
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    // Capture at the document level as well as the window level. Browsers may
+    // reserve clipboard shortcuts such as Ctrl+C before a bubbling window
+    // listener receives them; capture lets practical-simulation tasks observe
+    // the shortcut first. A native event bubbles through both listeners, so
+    // mark handled events to avoid advancing a sequence twice.
+    const handledEvents = new WeakSet<KeyboardEvent>();
+    const handleKeyDownOnce = (e: KeyboardEvent) => {
+      if (handledEvents.has(e)) return;
+      handledEvents.add(e);
+      void handleKeyDown(e);
+    };
+    document.addEventListener("keydown", handleKeyDownOnce, { capture: true, passive: false });
+    window.addEventListener("keydown", handleKeyDownOnce, { passive: false });
+    return () => {
+      document.removeEventListener("keydown", handleKeyDownOnce, true);
+      window.removeEventListener("keydown", handleKeyDownOnce);
+    };
   }, [q, isSubmitting, onAnswer, onSuccess]);
 }
