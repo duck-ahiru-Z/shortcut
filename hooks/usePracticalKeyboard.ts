@@ -106,6 +106,14 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
           
           const expectedCombo = q.expectedKeySequence[sequenceIndexRef.current].keys.map(k => k.toLowerCase());
           if (expectedCombo.includes("shift")) effectivePressed.add("shift");
+          // Virtual keyboard modifiers are sticky. For a sequence step that
+          // is a plain key (such as Tab between Ctrl+Shift+C and
+          // Ctrl+Shift+V), ignore modifiers carried over from the previous
+          // chord instead of requiring the user to toggle them off manually.
+          const modifierNames = ["control", "shift", "alt", "meta", "windows"];
+          if (!expectedCombo.some(k => modifierNames.includes(k))) {
+            modifierNames.forEach(modifier => effectivePressed.delete(modifier));
+          }
           isStepMatch = expectedCombo.every(k => effectivePressed.has(k)) && effectivePressed.size === expectedCombo.length;
           
           const firstStepCombo = q.expectedKeySequence[0].keys.map(k => k.toLowerCase());
