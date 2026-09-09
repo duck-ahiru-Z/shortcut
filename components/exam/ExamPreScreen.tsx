@@ -52,20 +52,24 @@ export default function ExamPreScreen({
       </p>
 
       <div className={styles.formGroup}>
-        <label className={styles.label}>
+        <label className={styles.label} htmlFor="exam-last-name">
           受験者氏名 (合格証書に記載されます)
         </label>
         <div className={styles.inputGroup}>
           <input
+            id="exam-last-name"
             type="text"
             placeholder="姓"
+            aria-label="姓"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             className={styles.input}
           />
           <input
+            id="exam-first-name"
             type="text"
             placeholder="名"
+            aria-label="名"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             className={styles.input}
@@ -84,7 +88,7 @@ export default function ExamPreScreen({
           <span>
             【利用規約・不正行為への同意】<br />
             試験中の別タブへの切り替え、検索、開発者ツールの使用などの不正行為を行わないことに同意します。（不正な操作は記録されます）<br />
-            <span style={{ color: '#d97706', fontWeight: 'bold' }}>※試験開始時に自動的にフルスクリーンになり、誤操作防止のためブラウザのショートカット機能が一時的にロックされます。（Escキー長押しで解除可能）</span>
+            <span style={{ color: '#d97706', fontWeight: 'bold' }}>※試験開始時に自動的にフルスクリーンになり、誤操作防止のためブラウザのショートカット機能が一時的にロックされます。（フルスクリーンはEscキーで解除できます）</span>
           </span>
         </label>
       </div>
