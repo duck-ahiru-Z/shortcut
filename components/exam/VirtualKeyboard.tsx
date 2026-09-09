@@ -71,6 +71,10 @@ export default function VirtualKeyboard({ os = "windows", onClose, onVirtualKey 
   const [shift, setShift] = useState(false);
   const [alt, setAlt] = useState(false);
   const [meta, setMeta] = useState(false);
+  // Keep modifier state synchronously available to key dispatch. React state
+  // updates are batched, so reading `ctrl` immediately after clicking Ctrl
+  // could otherwise dispatch the following key without the modifier.
+  const modifierRef = useRef({ ctrl: false, shift: false, alt: false, meta: false });
 
   // Initialize position to the center of the viewport
   useEffect(() => {
@@ -98,10 +102,12 @@ export default function VirtualKeyboard({ os = "windows", onClose, onVirtualKey 
   };
 
   const handleModifier = (mod: "ctrl" | "shift" | "alt" | "meta") => {
-    if (mod === "ctrl") setCtrl(!ctrl);
-    if (mod === "shift") setShift(!shift);
-    if (mod === "alt") setAlt(!alt);
-    if (mod === "meta") setMeta(!meta);
+    const next = { ...modifierRef.current, [mod]: !modifierRef.current[mod] };
+    modifierRef.current = next;
+    setCtrl(next.ctrl);
+    setShift(next.shift);
+    setAlt(next.alt);
+    setMeta(next.meta);
   };
 
   const handleKeyPress = (k: string) => {
@@ -122,16 +128,17 @@ export default function VirtualKeyboard({ os = "windows", onClose, onVirtualKey 
       return;
     }
 
+    const modifiers = modifierRef.current;
     const event = new KeyboardEvent("keydown", {
       key: eventKey,
-      ctrlKey: ctrl,
-      shiftKey: shift,
-      altKey: alt,
-      metaKey: meta,
+      ctrlKey: modifiers.ctrl,
+      shiftKey: modifiers.shift,
+      altKey: modifiers.alt,
+      metaKey: modifiers.meta,
       bubbles: true,
       cancelable: true,
     });
-    onVirtualKey?.(k, { ctrl, shift, alt, meta });
+    onVirtualKey?.(k, modifiers);
     window.dispatchEvent(event);
 
     // Note: We DO NOT auto-reset modifiers anymore, they are sticky until clicked again.
