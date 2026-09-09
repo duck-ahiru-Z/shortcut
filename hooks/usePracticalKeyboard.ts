@@ -180,11 +180,25 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
       handledEvents.add(e);
       void handleKeyDown(e);
     };
+    // Ctrl+C can be exposed only as a clipboard `copy` event by automation
+    // and some browsers. Treat that event as the C key for sequences that
+    // explicitly expect Ctrl+C, while preserving normal copy behavior.
+    const handleCopy = (e: ClipboardEvent) => {
+      if (!q.expectedKeySequence || sequenceIndexRef.current === 0) return;
+      const step = q.expectedKeySequence[sequenceIndexRef.current]?.keys.map(k => k.toLowerCase());
+      if (step?.includes("control") && step.includes("c") && step.length === 2) {
+        e.preventDefault();
+        const synthetic = new KeyboardEvent("keydown", { key: "c", ctrlKey: true, bubbles: true, cancelable: true });
+        void handleKeyDown(synthetic);
+      }
+    };
     document.addEventListener("keydown", handleKeyDownOnce, { capture: true, passive: false });
     window.addEventListener("keydown", handleKeyDownOnce, { passive: false });
+    document.addEventListener("copy", handleCopy, { capture: true });
     return () => {
       document.removeEventListener("keydown", handleKeyDownOnce, true);
       window.removeEventListener("keydown", handleKeyDownOnce);
+      document.removeEventListener("copy", handleCopy, true);
     };
   }, [q, isSubmitting, onAnswer, onSuccess]);
 }
