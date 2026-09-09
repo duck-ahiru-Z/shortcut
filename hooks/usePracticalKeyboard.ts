@@ -156,6 +156,9 @@ export function usePracticalKeyboard({ q, isSubmitting, onAnswer, onSuccess }: U
       if (!isMatch && mainKey === "i" && e.altKey && !e.shiftKey && /複数行の末尾/.test(q.question || "")) {
         isMatch = true;
       }
+      if (!isMatch && mainKey === "v" && e.ctrlKey && e.shiftKey && /書式をコピー/.test(q.question || "")) {
+        isMatch = true;
+      }
 
       if (isMatch) {
         sequenceIndexRef.current = 0;
