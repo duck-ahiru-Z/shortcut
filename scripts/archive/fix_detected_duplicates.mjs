@@ -11,6 +11,7 @@ const macAddress = questions["mac-4kyu"]?.find((question) => question.id === 140
 if (macAddress) {
   macAddress.choices = ["A. Cmd + L", "B. Cmd + K", "C. Option + D", "D. Cmd + L と Option + D の両方"];
   macAddress.answer = "D. Cmd + L と Option + D の両方";
+  macAddress.explanation = "Cmd + L と Option + D は、どちらもブラウザのアドレスバーを選択します。選択後はそのままURLや検索語を入力できます。\n\n【他の選択肢】\n・Cmd + K: 検索欄にフォーカスする";
 }
 fs.writeFileSync(questionPath, `${JSON.stringify(questions, null, 2)}\n`);
 
