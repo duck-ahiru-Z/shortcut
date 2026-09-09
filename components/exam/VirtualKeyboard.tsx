@@ -6,6 +6,7 @@ import styles from "./VirtualKeyboard.module.css";
 type Props = {
   os?: "windows" | "mac";
   onClose: () => void;
+  onVirtualKey?: (key: string, modifiers: { ctrl: boolean; shift: boolean; alt: boolean; meta: boolean }) => void;
 };
 
 const LAYOUTS = {
@@ -59,7 +60,7 @@ const KEY_LABELS: Record<string, string> = {
 
 type LayoutType = keyof typeof LAYOUTS;
 
-export default function VirtualKeyboard({ os = "windows", onClose }: Props) {
+export default function VirtualKeyboard({ os = "windows", onClose, onVirtualKey }: Props) {
   const [layout, setLayout] = useState<LayoutType>(os === "mac" ? "mac-jis" : "win-jis");
   const [scale, setScale] = useState(1);
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -128,6 +129,7 @@ export default function VirtualKeyboard({ os = "windows", onClose }: Props) {
       bubbles: true,
       cancelable: true,
     });
+    onVirtualKey?.(k, { ctrl, shift, alt, meta });
     window.dispatchEvent(event);
 
     // Note: We DO NOT auto-reset modifiers anymore, they are sticky until clicked again.

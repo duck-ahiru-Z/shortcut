@@ -44,12 +44,14 @@ export default function PracticalActiveScreen({
   
   // For find_password and copy_paste
   const [inputValue, setInputValue] = useState("");
+  const [virtualClipboard, setVirtualClipboard] = useState("");
   // Success state for animations
   const [isSuccess, setIsSuccess] = useState(false);
 
   // Reset input and success when question changes
   useEffect(() => {
     setInputValue("");
+    setVirtualClipboard("");
     setIsSuccess(false);
   }, [currentIndex]);
 
@@ -68,6 +70,31 @@ export default function PracticalActiveScreen({
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       handleInputSubmit();
+    }
+  };
+
+  const handleVirtualKey = (key: string, modifiers: { ctrl: boolean; shift: boolean; alt: boolean; meta: boolean }) => {
+    const text = q?.question || "";
+    const isTypingTask = /検索|パスワード|コピー|すべて選択|名前を変更|名前の変更/.test(text);
+    if (!isTypingTask) return;
+
+    const lower = key.toLowerCase();
+    if (modifiers.ctrl && lower === "c") {
+      setVirtualClipboard(q?.taskData?.targetText || q?.taskData?.password || "");
+      return;
+    }
+    if (modifiers.ctrl && lower === "v") {
+      const pasted = virtualClipboard || q?.taskData?.targetText || "";
+      if (pasted) setInputValue((previous) => previous + pasted);
+      return;
+    }
+    if (modifiers.ctrl || modifiers.alt || modifiers.meta) return;
+    if (key === "Backspace") {
+      setInputValue((previous) => previous.slice(0, -1));
+    } else if (key === "Enter") {
+      handleInputSubmit();
+    } else if (key.length === 1) {
+      setInputValue((previous) => previous + (modifiers.shift ? key.toUpperCase() : key));
     }
   };
 
@@ -155,7 +182,7 @@ export default function PracticalActiveScreen({
 
       {/* 仮想キーボード */}
       {showKeyboard && (
-        <VirtualKeyboard os={isMac ? "mac" : "windows"} onClose={() => setShowKeyboard(false)} />
+        <VirtualKeyboard os={isMac ? "mac" : "windows"} onClose={() => setShowKeyboard(false)} onVirtualKey={handleVirtualKey} />
       )}
     </div>
   );
