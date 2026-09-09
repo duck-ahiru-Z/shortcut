@@ -159,11 +159,15 @@ export default function VirtualKeyboard({ os = "windows", onClose, onVirtualKey 
       fontSize = "10px";
     }
 
+    // Keep longer Japanese/modifier labels readable instead of squeezing them
+    // into the same width as single-character keys.
+    const minWidth = label.length >= 7 ? 64 : label.length >= 5 ? 52 : undefined;
+
     return (
       <button 
         key={`${k}-${idx}`} 
         className={className} 
-        style={{ fontSize }}
+        style={{ fontSize, ...(minWidth ? { minWidth } : {}) }}
         onTouchStart={(e) => { e.preventDefault(); handleKeyPress(k); }} 
         onMouseDown={(e) => { e.preventDefault(); handleKeyPress(k); }}
       >
