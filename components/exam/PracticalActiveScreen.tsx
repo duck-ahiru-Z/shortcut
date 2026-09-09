@@ -75,6 +75,17 @@ export default function PracticalActiveScreen({
 
   const handleVirtualKey = (key: string, modifiers: { ctrl: boolean; shift: boolean; alt: boolean; meta: boolean }) => {
     const text = q?.question || "";
+    // Some persisted practical questions expose only a combo hash. Keep the
+    // Mac virtual keyboard usable for these well-known single-key tasks too.
+    if (isMac && !q?.expectedKeyCombo && modifiers.meta) {
+      const fallbackKey = text.includes("保存") ? "s" : text.includes("元に戻す") ? "z" :
+        text.includes("リロード") || text.includes("再読み込み") ? "r" : text.includes("太字") ? "b" :
+        text.includes("印刷") ? "p" : text.includes("やり直") ? "y" : undefined;
+      if (fallbackKey && key.toLowerCase() === fallbackKey) {
+        handleSuccess(q.id);
+        return;
+      }
+    }
     if (isMac && q?.expectedKeyCombo) {
       const expected = q.expectedKeyCombo.map((value: string) => value.toLowerCase());
       const normalizedKey = key.toLowerCase();
