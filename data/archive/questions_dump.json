@@ -1376,18 +1376,6 @@
       "id": 408
     },
     {
-      "answer": "D. AとCの両方",
-      "explanation": "アドレスバーを選択すると、そのまま検索キーワードを入力したり、URLをコピーしたりできます。どちらのショートカットも広く使われています。\n\n【他の選択肢】\n・Cmd + L: アドレスバーを選択 (Location)\n・Option + D: アドレスバーを選択\n・Cmd + K: 検索エンジンによる検索状態にする",
-      "question": "ブラウザのアドレスバーを選択するショートカットキーはどれか。",
-      "id": 409,
-      "choices": [
-        "A. Cmd + L",
-        "B. Cmd + K",
-        "C. Option + D",
-        "D. AとCの両方"
-      ]
-    },
-    {
       "id": 410,
       "question": "パソコンの画面をロックするショートカットキーはどれか。",
       "choices": [
@@ -1400,75 +1388,15 @@
       "explanation": "LはLock（ロック）の頭文字です。離席する際に他人にパソコンを操作されないよう、一瞬でセキュリティを確保する社会人の必須ショートカットです。\n\n【他の選択肢】\n・Mac + K: キャスト（ワイヤレス接続）メニューを開く\n・Cmd + L: ブラウザのアドレスバーを選択する\n・Option + L: （特定のアプリの機能）"
     },
     {
-      "explanation": "TはTab（タブ）の頭文字です。現在見ているページを残したまま、新しく検索などをしたい時に使います。\n\n【他の選択肢】\n・Cmd + N: 新しいウィンドウを開く (New)\n・Cmd + W: 現在のタブを閉じる\n・Cmd + J: ダウンロード履歴を開く",
-      "question": "ブラウザで新しいタブを開くショートカットキーはどれか。",
-      "id": 1401,
-      "choices": [
-        "A. Cmd + T",
-        "B. Cmd + N",
-        "C. Cmd + W",
-        "D. Cmd + J"
-      ],
-      "answer": "A. Cmd + T"
-    },
-    {
-      "explanation": "不要になったタブをマウスの小さな×ボタンで閉じる手間を省けます。\n\n【他の選択肢】\n・Cmd + Q: アプリケーション全体の終了（Macなど）\n・Cmd + E: 検索バーにフォーカス\n・Cmd + D: お気に入り（ブックマーク）に追加",
-      "id": 1402,
-      "question": "ブラウザで現在のタブを閉じるショートカットキーはどれか。",
-      "answer": "A. Cmd + W",
-      "choices": [
-        "A. Cmd + W",
-        "B. Cmd + Q",
-        "C. Cmd + E",
-        "D. Cmd + D"
-      ]
-    },
-    {
-      "explanation": "「新しいタブを開く（Cmd+T）」にShiftを加えることで、「閉じてしまったタブを復活させる」という強力な復元機能になります。\n\n【他の選択肢】\n・Cmd + Alt + T: （Linuxなどで）ターミナルを開く\n・Cmd + Shift + W: すべてのタブ（ウィンドウごと）を閉じる\n・Cmd + Z: テキスト入力などを元に戻す（タブ復元には使えません）",
-      "choices": [
-        "A. Cmd + Shift + T",
-        "B. Cmd + Alt + T",
-        "C. Cmd + Shift + W",
-        "D. Cmd + Z"
-      ],
-      "id": 1403,
-      "answer": "A. Cmd + Shift + T",
-      "question": "誤って閉じたタブを復元するショートカットキーはどれか。"
-    },
-    {
-      "answer": "A. F2",
-      "explanation": "右クリックから「名前の変更」を探す必要がなくなり、ファイル整理のスピードが格段に上がります。\n\n【他の選択肢】\n・F4: アドレスバーの履歴を開く（エクスプローラー）\n・F5: 更新（リロード）\n・F12: 名前を付けて保存（Officeなど）、または開発者ツール（ブラウザ）",
-      "question": "ファイルやフォルダの名前を変更するショートカットキーはどれか。",
-      "choices": [
-        "A. F2",
-        "B. F4",
-        "C. F5",
-        "D. F12"
-      ],
-      "id": 1404
-    },
-    {
-      "explanation": "NはNew（新規）の頭文字です。右クリックから「新規作成」＞「フォルダー」とたどる煩わしい手順をスキップできます。\n\n【他の選択肢】\n・Cmd + N: 新しいウィンドウを開く\n・Cmd + Alt + N: （特定のアプリの機能）\n・Shift + N: （単なる大文字のN入力）",
-      "answer": "A. Cmd + Shift + N",
-      "choices": [
-        "A. Cmd + Shift + N",
-        "B. Cmd + N",
-        "C. Cmd + Alt + N",
-        "D. Shift + N"
-      ],
-      "question": "新しいフォルダを作成するショートカットキーはどれか。",
-      "id": 1405
-    },
-    {
-      "answer": "D. Cmd + L と Alt + D の両方",
+      "answer": "D. Cmd + L と Option + D の両方",
       "explanation": "Cmd + L と Alt + D は、どちらもブラウザのアドレスバーを選択します。選択後はそのままURLや検索語を入力できます。\n\n【他の選択肢】\n・Cmd + K: 検索欄にフォーカスする\n・Cmd + L と Alt + D の両方: この問題の正しい組み合わせ",
       "question": "ブラウザのアドレスバーを選択するショートカットキーはどれか。",
       "id": 1406,
       "choices": [
         "A. Cmd + L",
         "B. Cmd + K",
-        "C. Alt + D",
-        "D. Cmd + L と Alt + D の両方"
+        "C. Option + D",
+        "D. Cmd + L と Option + D の両方"
       ]
     },
     {
@@ -1638,6 +1566,66 @@
       ],
       "question": "選択した文字に下線を引きたい。使うショートカットはどれか。",
       "explanation": "Bは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + U\n・Cmd + K\n・Cmd + L"
+    },
+    {
+      "question": "カーソルの左側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Cmd + Delete",
+        "B. Shift + Delete",
+        "C. Cmd + Backspace",
+        "D. Alt + Backspace"
+      ],
+      "id": 1401,
+      "answer": "A. Cmd + Delete",
+      "explanation": "Deleteは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Shift + Delete\n・Cmd + Backspace\n・Alt + Backspace"
+    },
+    {
+      "id": 1402,
+      "answer": "A. Cmd + Backspace",
+      "question": "カーソルの右側にある文字を1単語ごとにまとめて削除したい。使うショートカットはどれか。",
+      "choices": [
+        "A. Cmd + Backspace",
+        "B. Backspace",
+        "C. Delete",
+        "D. Cmd + Delete"
+      ],
+      "explanation": "Backspaceは操作の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Backspace\n・Delete\n・Cmd + Delete"
+    },
+    {
+      "id": 1403,
+      "question": "新しい文書を作成したい。どのキーを押すか。",
+      "choices": [
+        "A. Cmd + N",
+        "B. Cmd + S",
+        "C. Cmd + P",
+        "D. Cmd + C"
+      ],
+      "answer": "A. Cmd + N",
+      "explanation": "Nは新規作成の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + S: Save（保存）\n・Cmd + P: Print（印刷）\n・Cmd + C: Copy（コピー）"
+    },
+    {
+      "id": 1404,
+      "question": "保存済みのファイルを開いて編集したい。どのキーを押すか。",
+      "choices": [
+        "A. Cmd + S",
+        "B. Cmd + P",
+        "C. Cmd + C",
+        "D. Cmd + O"
+      ],
+      "answer": "D. Cmd + O",
+      "explanation": "OはOpen（開く）の頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + S: Save（保存）\n・Cmd + P: Print（印刷）\n・Cmd + C: Copy（コピー）"
+    },
+    {
+      "id": 1405,
+      "question": "取り消した操作をもう一度やり直したい。どのキーを押すか。",
+      "choices": [
+        "A. Cmd + C",
+        "B. Cmd + Y",
+        "C. Cmd + S",
+        "D. Cmd + P"
+      ],
+      "answer": "B. Cmd + Y",
+      "explanation": "Yはやり直すの頭文字・意味で覚えられます。こまめに使うことで作業を効率化できます。\n\n【他の選択肢】\n・Cmd + S: Save（保存）\n・Cmd + P: Print（印刷）\n・Cmd + C: Copy（コピー）"
     }
   ],
   "practical-mac-5kyu": [
@@ -3049,18 +3037,6 @@
       "explanation": "Win + Cmd + →は右隣の仮想デスクトップへ移動します。案件別の作業空間をスワイプするように行き来でき、ウィンドウ迷子を防ぎます。"
     },
     {
-      "id": 1254,
-      "question": "不要になった現在の仮想デスクトップを閉じるショートカットキーはどれですか？",
-      "choices": [
-        "Win + Cmd + F4",
-        "Alt + F4",
-        "Cmd + Shift + F4",
-        "Win + F4"
-      ],
-      "answer": "Win + Cmd + F4",
-      "explanation": "Win + Cmd + F4は現在の仮想デスクトップを閉じます。作業領域だけを破棄でき、開いていたアプリは隣のデスクトップへ移るため、画面整理が安全かつ高速です。"
-    },
-    {
       "id": 1255,
       "question": "Windowsで押している間だけ全ウィンドウを透かし、デスクトップをチラ見するショートカットキーはどれですか？",
       "choices": [
@@ -3638,5 +3614,6 @@
       "answer": "Win + Cmd + Shift + B",
       "explanation": "Win + Cmd + Shift + Bはグラフィックドライバを再起動します。画面描画のフリーズ時にPC全体を再起動する前の切り札として使える、1級らしい深層トラブル対応キーです。"
     }
-  ]
+  ],
+  "knowledge-2kyu": []
 }

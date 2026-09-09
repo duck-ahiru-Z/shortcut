@@ -7,12 +7,16 @@ const transform = (value) => value.replaceAll("Ctrl", "Cmd").replaceAll("Alt + L
 const canConvert = (question) => !question.choices?.some((choice) => choice.includes("Windows +"));
 const convertPool = (source, target, idBase, limit) => {
   const existing = new Set((data[target] || []).map((question) => question.id));
+  const existingTexts = new Set((data[target] || []).map((question) => question.question?.replace(/\s+/g, "")));
   let added = 0;
   for (const question of source) {
     if (added >= limit || !canConvert(question)) continue;
+    const convertedText = transform(question.question).replace(/\s+/g, "");
+    if (existingTexts.has(convertedText)) continue;
     const id = idBase + added;
     if (existing.has(id)) continue;
     data[target].push({ ...question, id, question: transform(question.question), choices: question.choices?.map(transform), answer: transform(question.answer || ""), explanation: transform(question.explanation || "") });
+    existingTexts.add(convertedText);
     added++;
   }
   return added;
