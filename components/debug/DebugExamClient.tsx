@@ -25,7 +25,12 @@ export default function DebugExamClient({ grade, pool }: { grade: string; pool: 
   const isPractical = grade.startsWith("practical-");
   const current = questions[currentIndex];
   const handleAnswer = (id: number, value: string) => {
-    setAnswers((previous) => ({ ...previous, [id]: value }));
+    // Practical input tasks submit the entered value (URL, search text, etc.)
+    // instead of the sentinel used by shortcut-only tasks. In debug mode the
+    // interaction itself is what is being verified, so count any submitted
+    // non-skip value as a correct response.
+    const normalizedValue = isPractical && value !== "SKIPPED" ? "CORRECT" : value;
+    setAnswers((previous) => ({ ...previous, [id]: normalizedValue }));
     if (isPractical && currentIndex < questions.length - 1) setCurrentIndex((index) => index + 1);
   };
   const correct = questions.filter((question) => answers[question.id] === (question.answer || "CORRECT")).length;
