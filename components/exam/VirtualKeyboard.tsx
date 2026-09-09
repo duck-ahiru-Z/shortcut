@@ -151,7 +151,10 @@ export default function VirtualKeyboard({ os = "windows", resetKey, onClose, onV
       cancelable: true,
     });
     onVirtualKey?.(k, modifiers);
-    window.dispatchEvent(event);
+    // Dispatch on document so the capture listener in usePracticalKeyboard
+    // receives synthetic shortcuts even when the browser reserves a key
+    // combination (for example Shift+Alt+I) at the window level.
+    document.dispatchEvent(event);
 
     // Note: We DO NOT auto-reset modifiers anymore, they are sticky until clicked again.
   };
