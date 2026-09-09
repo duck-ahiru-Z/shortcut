@@ -33,7 +33,12 @@ export default function DebugExamClient({ grade, pool }: { grade: string; pool: 
     setAnswers((previous) => ({ ...previous, [id]: normalizedValue }));
     if (isPractical && currentIndex < questions.length - 1) setCurrentIndex((index) => index + 1);
   };
-  const correct = questions.filter((question) => answers[question.id] === (question.answer || "CORRECT")).length;
+  // Practical debug runs use the interaction sentinel (CORRECT); the
+  // stored `answer` field is the shortcut itself and must not be compared to
+  // that sentinel.  Otherwise valid practical answers were shown as wrong.
+  const correct = isPractical
+    ? questions.filter((question) => answers[question.id] === "CORRECT").length
+    : questions.filter((question) => answers[question.id] === (question.answer || "CORRECT")).length;
 
   if (!questions.length) return <div style={{ maxWidth: 900, margin: "40px auto", padding: 20 }}>この級の問題データはありません。</div>;
   if (finished) return <div style={{ maxWidth: 900, margin: "40px auto", padding: 20 }}><h1>デバッグ受験完了</h1><p>{questions.length}問中 {correct}問を正解しました。</p><a href="/debug">問題一覧へ戻る</a></div>;

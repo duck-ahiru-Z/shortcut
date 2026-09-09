@@ -30,7 +30,10 @@ export default function BrowserMock({ os = "windows", isSuccess, q, inputValue =
   const isTabMove = question.includes("次のタブ") || question.includes("前のタブ") || question.includes("左隣") || question.includes("右隣");
   
   // Specific legacy types checking
-  const isFindTask = question.includes("探して") || question.includes("探し出し") || question.includes("パスワード") || question.includes("検索し、");
+  // Search and copy/paste tasks need the same visible result area and answer
+  // field.  The one-time-code task previously fell through to the generic
+  // browser page because its wording contains neither "検索" nor "パスワード".
+  const isFindTask = question.includes("探して") || question.includes("探し出し") || question.includes("パスワード") || question.includes("検索し、") || question.includes("ワンタイムコード");
   const isPrint = question.includes("印刷");
   const isCopyPasteURL = question.includes("URLをコピー");
   const isDownloads = question.includes("ダウンロード履歴") || question.includes("ダウンロードの履歴");
