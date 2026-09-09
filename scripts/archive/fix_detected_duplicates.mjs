@@ -2,6 +2,7 @@ import fs from "node:fs";
 
 const questionPath = "data/archive/questions_dump.json";
 const questions = JSON.parse(fs.readFileSync(questionPath, "utf8"));
+delete questions["knowledge-2kyu"];
 const remove = (pool, ids) => { questions[pool] = (questions[pool] || []).filter((question) => !ids.has(question.id)); };
 remove("mac-4kyu", new Set([1401, 1402, 1403, 1404, 1405, 409]));
 remove("mac-2kyu", new Set([1254]));
