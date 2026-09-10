@@ -44,12 +44,14 @@ export default function PracticalActiveScreen({
   
   // For find_password and copy_paste
   const [inputValue, setInputValue] = useState("");
+  const [virtualClipboard, setVirtualClipboard] = useState("");
   // Success state for animations
   const [isSuccess, setIsSuccess] = useState(false);
 
   // Reset input and success when question changes
   useEffect(() => {
     setInputValue("");
+    setVirtualClipboard("");
     setIsSuccess(false);
   }, [currentIndex]);
 
@@ -71,6 +73,66 @@ export default function PracticalActiveScreen({
     }
   };
 
+  const handleVirtualKey = (key: string, modifiers: { ctrl: boolean; shift: boolean; alt: boolean; meta: boolean }) => {
+    const text = q?.question || "";
+    // Some persisted practical questions expose only a combo hash. Keep the
+    // Mac virtual keyboard usable for these well-known single-key tasks too.
+    if (isMac && modifiers.meta) {
+      const fallbackKey = text.includes("保存") ? "s" : text.includes("元に戻す") || text.includes("取り消し") ? "z" :
+        text.includes("リロード") || text.includes("再読み込み") ? "r" : text.includes("太字") ? "b" :
+        text.includes("印刷") ? "p" : text.includes("やり直") ? "y" : undefined;
+      if (fallbackKey && key.toLowerCase() === fallbackKey) {
+        handleSuccess(q.id);
+        return;
+      }
+      // Finder/file-operation tasks use the same chords but have no editable
+      // field. Mark the operation complete once the selected item is copied
+      // or cut, instead of treating it as text entry.
+      if (key.toLowerCase() === "c" && text.includes("選択中のファイル名") && !text.includes("貼り付け")) {
+        handleSuccess(q.id);
+        return;
+      }
+      if (key.toLowerCase() === "x" && text.includes("切り取って")) {
+        handleSuccess(q.id);
+        return;
+      }
+    }
+    if (isMac && q?.expectedKeyCombo) {
+      const expected = q.expectedKeyCombo.map((value: string) => value.toLowerCase());
+      const normalizedKey = key.toLowerCase();
+      const expectedMain = expected.find((value: string) => !["meta", "control", "shift", "alt"].includes(value));
+      const commandMatch = expected.includes("meta") && expectedMain === normalizedKey &&
+        modifiers.meta &&
+        (!expected.includes("shift") || modifiers.shift) && (!expected.includes("alt") || modifiers.alt);
+      if (commandMatch) {
+        handleSuccess(q.id);
+        return;
+      }
+    }
+    const isTypingTask = /検索|パスワード|コピー|すべて選択|名前を変更|名前の変更/.test(text);
+    if (!isTypingTask) return;
+
+    const lower = key.toLowerCase();
+    const clipboardModifier = modifiers.ctrl || (isMac && modifiers.meta);
+    if (clipboardModifier && lower === "c") {
+      setVirtualClipboard(q?.taskData?.targetText || q?.taskData?.password || "");
+      return;
+    }
+    if (clipboardModifier && lower === "v") {
+      const pasted = virtualClipboard || q?.taskData?.targetText || "";
+      if (pasted) setInputValue((previous) => previous + pasted);
+      return;
+    }
+    if (modifiers.ctrl || modifiers.alt || modifiers.meta) return;
+    if (key === "Backspace") {
+      setInputValue((previous) => previous.slice(0, -1));
+    } else if (key === "Enter") {
+      handleInputSubmit();
+    } else if (key.length === 1) {
+      setInputValue((previous) => previous + (modifiers.shift ? key.toUpperCase() : key));
+    }
+  };
+
   const handleSuccess = useCallback((qId: number) => {
     setIsSuccess(true);
     setTimeout(() => {
@@ -81,6 +143,7 @@ export default function PracticalActiveScreen({
   // Keyboard shortcut listener extracted to a custom hook
   usePracticalKeyboard({ 
     q, 
+    isMac,
     isSubmitting: isSubmitting || isSuccess, 
     onAnswer,
     onSuccess: handleSuccess
@@ -155,7 +218,7 @@ export default function PracticalActiveScreen({
 
       {/* 仮想キーボード */}
       {showKeyboard && (
-        <VirtualKeyboard os={isMac ? "mac" : "windows"} onClose={() => setShowKeyboard(false)} />
+        <VirtualKeyboard resetKey={q.id} os={isMac ? "mac" : "windows"} onClose={() => setShowKeyboard(false)} onVirtualKey={handleVirtualKey} />
       )}
     </div>
   );

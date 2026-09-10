@@ -20,6 +20,7 @@ export default function ExamPreScreen({
 }: Props) {
   const canStart = agreed && !isLoading && lastName.trim() !== "" && firstName.trim() !== "";
   const [isMobile, setIsMobile] = useState(false);
+  const [securityNotice, setSecurityNotice] = useState<string | null>(null);
 
   useEffect(() => {
     // Check if the device primarily uses touch (coarse pointer) or has a narrow screen
@@ -88,10 +89,12 @@ export default function ExamPreScreen({
           <span>
             【利用規約・不正行為への同意】<br />
             試験中の別タブへの切り替え、検索、開発者ツールの使用などの不正行為を行わないことに同意します。（不正な操作は記録されます）<br />
-            <span style={{ color: '#d97706', fontWeight: 'bold' }}>※試験開始時に自動的にフルスクリーンになり、誤操作防止のためブラウザのショートカット機能が一時的にロックされます。（フルスクリーンはEscキーで解除できます）</span>
+            <span style={{ color: '#d97706', fontWeight: 'bold' }}>※試験開始時に可能な範囲でフルスクリーン表示とショートカットキー制限を行います。ブラウザによっては利用できない場合があります。</span>
           </span>
         </label>
       </div>
+
+      {securityNotice && <p role="status" className={styles.warningText}>{securityNotice}</p>}
 
       <button 
         className={`btn ${canStart ? 'btn-primary' : 'btn-disabled'} ${styles.startButton}`} 
@@ -108,7 +111,9 @@ export default function ExamPreScreen({
               await (navigator as any).keyboard.lock(['KeyW', 'KeyT', 'KeyN', 'KeyR']);
             }
           } catch (e) {
-            console.warn("Fullscreen or Keyboard Lock failed", e);
+            // These browser APIs are optional (e.g. in-app browsers often reject
+            // Keyboard Lock). Never block the exam when they are unavailable.
+            setSecurityNotice("このブラウザでは一部の誤操作防止機能を利用できないため、そのまま試験を開始します。");
           }
           await startPromise;
         }}

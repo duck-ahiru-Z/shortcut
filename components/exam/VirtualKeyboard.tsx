@@ -5,7 +5,9 @@ import styles from "./VirtualKeyboard.module.css";
 
 type Props = {
   os?: "windows" | "mac";
+  resetKey?: string | number;
   onClose: () => void;
+  onVirtualKey?: (key: string, modifiers: { ctrl: boolean; shift: boolean; alt: boolean; meta: boolean }) => void;
 };
 
 const LAYOUTS = {
@@ -19,7 +21,7 @@ const LAYOUTS = {
   ],
   "win-jis": [
     ["Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"],
-    ["半角/全角", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "^", "¥", "Backspace"],
+    ["半角/全角", "`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "^", "¥", "Backspace"],
     ["Tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "@", "[", "Enter"],
     ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";", ":", "]"],
     ["Shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", "\\", "Shift"],
@@ -35,7 +37,7 @@ const LAYOUTS = {
   ],
   "mac-jis": [
     ["Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"],
-    ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "^", "¥", "Delete"],
+    ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "^", "¥", "Delete"],
     ["Tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "@", "[", "Return"],
     ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";", ":", "]"],
     ["Shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", "_", "Shift"],
@@ -59,7 +61,7 @@ const KEY_LABELS: Record<string, string> = {
 
 type LayoutType = keyof typeof LAYOUTS;
 
-export default function VirtualKeyboard({ os = "windows", onClose }: Props) {
+export default function VirtualKeyboard({ os = "windows", resetKey, onClose, onVirtualKey }: Props) {
   const [layout, setLayout] = useState<LayoutType>(os === "mac" ? "mac-jis" : "win-jis");
   const [scale, setScale] = useState(1);
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -70,11 +72,28 @@ export default function VirtualKeyboard({ os = "windows", onClose }: Props) {
   const [shift, setShift] = useState(false);
   const [alt, setAlt] = useState(false);
   const [meta, setMeta] = useState(false);
+  // Keep modifier state synchronously available to key dispatch. React state
+  // updates are batched, so reading `ctrl` immediately after clicking Ctrl
+  // could otherwise dispatch the following key without the modifier.
+  const modifierRef = useRef({ ctrl: false, shift: false, alt: false, meta: false });
 
-  // Initialize position to bottom center
+  // Initialize position to the center of the viewport
   useEffect(() => {
-    setPos({ x: 0, y: window.innerHeight * 0.2 }); // Slightly above bottom
+    // Center the keyboard so all rows are visible on the initial display.
+    // Users can still drag it to another position afterward.
+    setPos({ x: 0, y: 0 });
   }, []);
+
+  // Keep the keyboard mounted while moving between questions, but clear any
+  // sticky modifiers so the next question always starts from a clean state.
+  useEffect(() => {
+    const next = { ctrl: false, shift: false, alt: false, meta: false };
+    modifierRef.current = next;
+    setCtrl(false);
+    setShift(false);
+    setAlt(false);
+    setMeta(false);
+  }, [resetKey]);
 
   const handlePointerDown = (e: React.PointerEvent) => {
     setIsDragging(true);
@@ -95,10 +114,12 @@ export default function VirtualKeyboard({ os = "windows", onClose }: Props) {
   };
 
   const handleModifier = (mod: "ctrl" | "shift" | "alt" | "meta") => {
-    if (mod === "ctrl") setCtrl(!ctrl);
-    if (mod === "shift") setShift(!shift);
-    if (mod === "alt") setAlt(!alt);
-    if (mod === "meta") setMeta(!meta);
+    const next = { ...modifierRef.current, [mod]: !modifierRef.current[mod] };
+    modifierRef.current = next;
+    setCtrl(next.ctrl);
+    setShift(next.shift);
+    setAlt(next.alt);
+    setMeta(next.meta);
   };
 
   const handleKeyPress = (k: string) => {
@@ -119,18 +140,36 @@ export default function VirtualKeyboard({ os = "windows", onClose }: Props) {
       return;
     }
 
+    const modifiers = modifierRef.current;
     const event = new KeyboardEvent("keydown", {
       key: eventKey,
-      ctrlKey: ctrl,
-      shiftKey: shift,
-      altKey: alt,
-      metaKey: meta,
+      ctrlKey: modifiers.ctrl,
+      shiftKey: modifiers.shift,
+      altKey: modifiers.alt,
+      metaKey: modifiers.meta,
       bubbles: true,
       cancelable: true,
     });
-    window.dispatchEvent(event);
+    const callbackModifiers = layout.startsWith("mac") && modifiers.meta
+      ? { ...modifiers, ctrl: true }
+      : modifiers;
+    onVirtualKey?.(k, callbackModifiers);
+    // Dispatch on document so the capture listener in usePracticalKeyboard
+    // receives synthetic shortcuts even when the browser reserves a key
+    // combination (for example Shift+Alt+I) at the window level.
+    document.dispatchEvent(event);
 
-    // Note: We DO NOT auto-reset modifiers anymore, they are sticky until clicked again.
+    // Treat command/control/option as a one-shot chord. Keeping these modifiers
+    // latched across questions makes the next shortcut silently lose its
+    // modifier when the user clicks the key again (especially after an
+    // auto-advance). Shift remains sticky so uppercase text entry still works.
+    if (modifiers.ctrl || modifiers.meta || modifiers.alt) {
+      const cleared = { ...modifierRef.current, ctrl: false, meta: false, alt: false };
+      modifierRef.current = cleared;
+      setCtrl(false);
+      setMeta(false);
+      setAlt(false);
+    }
   };
 
   const renderKey = (k: string, idx: number) => {
@@ -157,13 +196,16 @@ export default function VirtualKeyboard({ os = "windows", onClose }: Props) {
       fontSize = "10px";
     }
 
+    // Keep longer Japanese/modifier labels readable instead of squeezing them
+    // into the same width as single-character keys.
+    const minWidth = label.length >= 7 ? 64 : label.length >= 5 ? 52 : undefined;
+
     return (
       <button 
         key={`${k}-${idx}`} 
         className={className} 
-        style={{ fontSize }}
-        onTouchStart={(e) => { e.preventDefault(); handleKeyPress(k); }} 
-        onMouseDown={(e) => { e.preventDefault(); handleKeyPress(k); }}
+        style={{ fontSize, ...(minWidth ? { minWidth } : {}) }}
+        onClick={(e) => { e.preventDefault(); handleKeyPress(k); }}
       >
         {label}
       </button>

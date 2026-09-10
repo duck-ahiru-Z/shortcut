@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 type DebugQuestion = {
   id?: string | number;
@@ -45,6 +46,7 @@ export default function DebugQuestionBrowser({ pools }: Props) {
     {!!questions.length && <button onClick={() => { setSolveMode(!solveMode); setAnswers({}); setChecked(new Set()); }} style={{ display: "block", marginBottom: 20, padding: "8px 14px", fontWeight: 700 }}>
       {solveMode ? "確認モードに戻す" : "選んで解くモード"}
     </button>}
+    {!!questions.length && <Link href={`/debug/exam?grade=${encodeURIComponent(grade)}`} style={{ display: "inline-block", marginBottom: 20, padding: "9px 14px", background: "#1e3a8a", color: "#fff", textDecoration: "none", fontWeight: 700 }}>この級を全問受験する</Link>}
     {!questions.length && <p style={{ padding: 16, border: "1px solid #e2a12b", background: "#fff9e8" }}>この級の問題データはまだ登録されていません。</p>}
     <div style={{ display: "grid", gap: 12 }}>
       {questions.map((q, index) => (solveMode && index !== currentIndex) ? null : <article key={`${q.id}-${index}`} style={{ border: "1px solid #ccd3dd", borderRadius: 8, padding: 16, background: "#fff" }}>

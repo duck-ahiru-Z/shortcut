@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     template: "%s｜ショートカットキー検定",
   },
   description: "Windows・Macのショートカットキーを知識と実技で測定するオンライン検定。5級から1級まで、実務シミュレーターでスキルを確認できます。",
+  applicationName: "ショートカットキー検定",
+  authors: [{ name: "ショートカットキー検定" }],
+  creator: "ショートカットキー検定",
+  publisher: "ショートカットキー検定",
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: "/icon.svg",
+  },
   keywords: ["ショートカットキー", "検定", "資格", "Windows", "Mac", "PCスキル", "実技試験"],
   alternates: { canonical: "/" },
   openGraph: {
