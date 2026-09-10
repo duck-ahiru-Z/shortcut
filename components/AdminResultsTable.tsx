@@ -8,8 +8,8 @@ type ResultRecord = {
   id: string;
   grade: string;
   deviceId: string;
-  lastName: string;
-  firstName: string;
+  lastName?: string;
+  firstName?: string;
   score: number;
   total: number;
   rate: number;
