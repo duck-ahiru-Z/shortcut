@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     siteName: "ショートカットキー検定",
     title: "ショートカットキー検定｜Windows・Mac対応の実技試験",
     description: "ショートカットキーの知識と実技スキルをオンラインで測定。",
-    images: [{ url: "/logo.png", width: 512, height: 512, alt: "ショートカットキー検定" }],
+    images: [{ url: "/api/og?home=true", width: 1200, height: 630, alt: "ショートカットキー検定" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "ショートカットキー検定｜Windows・Mac対応",
     description: "ショートカットキーの知識と実技スキルをオンラインで測定。",
-    images: ["/logo.png"],
+    images: ["/api/og?home=true"],
   },
   verification: {
     google: "hbZL7FmZqb47bVAGvY4pKbsoDUPdX0J4oc3jABbfmto",

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { CertificateApp, CertificateData } from "@/lib/certificate";
 import jsPDF from "jspdf";
 import { WrongAnswerInfo } from "@/actions/exam";
@@ -7,8 +7,8 @@ type ResultRecord = {
   id: string;
   grade: string;
   deviceId: string;
-  lastName: string;
-  firstName: string;
+  lastName?: string;
+  firstName?: string;
   score: number;
   total: number;
   rate: number;
@@ -31,6 +31,15 @@ import styles from "./AdminResultDetailModal.module.css";
 
 export default function AdminResultDetailModal({ selectedResult, gradeName, onClose }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [certificateLastName, setCertificateLastName] = useState("");
+  const [certificateFirstName, setCertificateFirstName] = useState("");
+  const lastName = certificateLastName.trim();
+  const firstName = certificateFirstName.trim();
+
+  useEffect(() => {
+    setCertificateLastName(selectedResult?.lastName?.trim() || "");
+    setCertificateFirstName(selectedResult?.firstName?.trim() || "");
+  }, [selectedResult]);
 
   // Generate certificate on modal open if passed
   useEffect(() => {
@@ -44,13 +53,13 @@ export default function AdminResultDetailModal({ selectedResult, gradeName, onCl
         certNo: selectedResult.certNo || "IBT-00000000-0000",
         dateStr,
         gradeTitle: gradeName,
-        lastName: selectedResult.lastName,
-        firstName: selectedResult.firstName,
+        lastName,
+        firstName,
       };
 
       CertificateApp.generate(canvasRef.current, certData);
     }
-  }, [selectedResult, gradeName]);
+  }, [selectedResult, gradeName, lastName, firstName]);
 
   const handleDownloadPDF = () => {
     if (!canvasRef.current || !selectedResult) return;
@@ -65,7 +74,7 @@ export default function AdminResultDetailModal({ selectedResult, gradeName, onCl
     doc.addImage(imgData, 'PNG', 0, 0, 297, 210);
     
     const safeGradeName = gradeName.replace(/\s+/g, '_');
-    const namePart = selectedResult.lastName || selectedResult.firstName ? `${selectedResult.lastName}_${selectedResult.firstName}` : "anonymous";
+    const namePart = lastName || firstName ? `${lastName}_${firstName}` : "anonymous";
     doc.save(`${namePart}_${safeGradeName}.pdf`);
   };
 
@@ -82,7 +91,7 @@ export default function AdminResultDetailModal({ selectedResult, gradeName, onCl
         </button>
         
         <h2 className={`section-title ${styles.title}`}>
-          受験詳細: {selectedResult.lastName || selectedResult.firstName ? `${selectedResult.lastName} ${selectedResult.firstName}` : "匿名"}
+          受験詳細: {lastName || firstName ? `${lastName} ${firstName}` : "匿名"}
         </h2>
         
         <div className={styles.statsGrid}>
@@ -101,6 +110,27 @@ export default function AdminResultDetailModal({ selectedResult, gradeName, onCl
         {selectedResult.passed && (
           <div className={styles.certPreviewSection}>
             <h3 className={styles.sectionHeading}>合格証書プレビュー</h3>
+            <p className={styles.certHint}>証書に記載する氏名を入力してください（この画面での再発行専用・データは保存されません）。</p>
+            <div className={styles.certNameInputs}>
+              <label>
+                姓
+                <input
+                  type="text"
+                  value={certificateLastName}
+                  onChange={(e) => setCertificateLastName(e.target.value)}
+                  placeholder="例：山田"
+                />
+              </label>
+              <label>
+                名
+                <input
+                  type="text"
+                  value={certificateFirstName}
+                  onChange={(e) => setCertificateFirstName(e.target.value)}
+                  placeholder="例：太郎"
+                />
+              </label>
+            </div>
             <div className={`certificate-preview-container ${styles.certPreviewContainer}`}>
               <canvas id="adminCertCanvas" ref={canvasRef} className={styles.certCanvas}></canvas>
             </div>

@@ -11,6 +11,7 @@ export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
 
+    const isHome = searchParams.get('home') === 'true';
     const grade = searchParams.get('grade') || DEFAULT_GRADE_ID;
     const score = parseInt(searchParams.get('score') || '0', 10);
     const rate = parseInt(searchParams.get('rate') || '0', 10);
@@ -36,7 +37,7 @@ export async function GET(req: NextRequest) {
       }
     }
 
-    const isPractical = grade.includes('practical');
+    const isPractical = !isHome && grade.includes('practical');
 
     // Font Loading via fs (Node.js runtime)
     let fontData: ArrayBuffer | null = null;
@@ -63,7 +64,9 @@ export async function GET(req: NextRequest) {
       console.warn('Failed to load logo from fs', e);
     }
 
-    const bgGradient = passed
+    const bgGradient = isHome
+      ? 'linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%)'
+      : passed
       ? 'linear-gradient(135deg, #fef08a 0%, #f59e0b 100%)' // Pop Yellow/Orange for Pass
       : 'linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%)'; // Gray for Fail
 
@@ -95,7 +98,7 @@ export async function GET(req: NextRequest) {
               height: '100%',
               borderRadius: '24px',
               boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-              border: passed ? '8px solid #f59e0b' : '8px solid #94a3b8',
+            border: isHome ? '8px solid #60a5fa' : passed ? '8px solid #f59e0b' : '8px solid #94a3b8',
               padding: '40px',
               position: 'relative',
               overflow: 'hidden',
@@ -121,28 +124,28 @@ export async function GET(req: NextRequest) {
               </div>
             )}
 
-            <div style={{ fontSize: '32px', color: '#64748b', marginBottom: '20px', fontWeight: 'bold', display: 'flex' }}>
-              {gradeTitle}
+            <div style={{ fontSize: isHome ? '56px' : '32px', color: isHome ? '#1d4ed8' : '#64748b', marginBottom: '20px', fontWeight: 'bold', display: 'flex', textAlign: 'center' }}>
+              {isHome ? 'ショートカットキー検定' : gradeTitle}
             </div>
 
             <div
               style={{
-                fontSize: '96px',
+                fontSize: isHome ? '52px' : '96px',
                 fontWeight: 'bold',
-                color: passed ? '#d97706' : '#475569',
+                color: isHome ? '#1e3a8a' : passed ? '#d97706' : '#475569',
                 marginBottom: '20px',
                 lineHeight: 1,
                 display: 'flex',
               }}
             >
-              {passed ? '合格！' : '不合格...'}
+              {isHome ? 'Windows・Mac対応の実技試験' : passed ? '合格！' : '不合格...'}
             </div>
 
-            <div style={{ fontSize: '36px', color: '#334155', marginBottom: '40px', fontWeight: 'bold', display: 'flex' }}>
-              {`スコア: ${score}点 / 正答率: ${rate}%`}
+            <div style={{ fontSize: isHome ? '28px' : '36px', color: '#334155', marginBottom: '40px', fontWeight: 'bold', display: 'flex', textAlign: 'center' }}>
+              {isHome ? '知識と実務スキルをオンラインで測定' : `スコア: ${score}点 / 正答率: ${rate}%`}
             </div>
 
-            <div
+            {!isHome && <div
               style={{
                 fontSize: '28px',
                 color: passed ? '#b45309' : '#1e293b',
@@ -154,7 +157,7 @@ export async function GET(req: NextRequest) {
               }}
             >
               {message}
-            </div>
+            </div>}
 
             {/* Logo and Brand */}
             {logoSrc && (
