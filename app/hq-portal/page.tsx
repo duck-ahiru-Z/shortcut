@@ -55,6 +55,16 @@ export default async function AdminDashboard({
   let stats: any = null;
   let recentResults: any[] = [];
 
+  // Keep historical results in Firestore, but hide them from the default HQ
+  // view. The cutoff is the start of today in Japan time.
+  const now = new Date();
+  const jstNow = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+  const todayStartJst = Date.UTC(
+    jstNow.getUTCFullYear(),
+    jstNow.getUTCMonth(),
+    jstNow.getUTCDate(),
+  ) - 9 * 60 * 60 * 1000;
+
   try {
     const statsDoc = await getDoc(doc(db, "exam_stats", grade));
     if (statsDoc.exists()) {
@@ -73,7 +83,9 @@ export default async function AdminDashboard({
       ...d.data()
     } as any));
 
-    recentResults = allResults.filter(r => r.grade === grade).slice(0, 20);
+    recentResults = allResults
+      .filter(r => r.grade === grade && new Date(r.timestamp).getTime() >= todayStartJst)
+      .slice(0, 20);
 
   } catch (err: any) {
     console.error(err);
@@ -118,11 +130,11 @@ export default async function AdminDashboard({
           <AdminWrongRankings wrongRankings={wrongRankings} />
         </div>
 
-        {/* 直近の受験履歴 */}
+        {/* 本日の受験履歴 */}
         <div className="flex-[2] min-w-[500px]">
           <div className="card p-6 h-full">
             <h2 className="section-title text-lg mb-4">
-              直近の受験記録
+              本日の受験記録
             </h2>
             
             <AdminResultsTable 
