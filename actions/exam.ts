@@ -279,6 +279,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
   let score = 0;
   const wrongAnswers: WrongAnswerInfo[] = [];
   const wrongIds: Record<string, number> = {};
+  const stripChoiceLabel = (value: string) => value.replace(/^[A-D]\.\s*/, "");
 
   const answeredIds = Object.keys(userAnswers).map(Number);
 
@@ -290,7 +291,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
       if (correctAnswer === userAnswers[q.id]) {
         score++;
       } else {
-        let displayCorrect = correctAnswer;
+        let displayCorrect = stripChoiceLabel(correctAnswer);
         if (q.type === 'copy_paste') {
           displayCorrect = `${correctAnswer} (正しくペースト)`;
         } else if (q.type === 'select_all') {
@@ -303,7 +304,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
           displayCorrect = formatKeyCombo(q.expectedKeyCombo, isMac);
         }
         
-        let displayUser = userAnswers[q.id] || "無回答";
+        let displayUser = stripChoiceLabel(userAnswers[q.id] || "無回答");
         if (displayUser === "SKIPPED") {
           displayUser = "スキップ (時間切れ等)";
         } else if ((q.expectedKeyCombo || q.expectedKeySequence) && displayUser !== "SKIPPED") {
@@ -328,7 +329,7 @@ export async function gradeExam(token: string, userAnswers: Record<number, strin
     const answeredSet = new Set(answeredIds);
     for (const q of assignedQuestions) {
       if (!answeredSet.has(q.id) && wrongAnswers.length < (examQuestionsCount - score)) {
-        let displayCorrect = q.answer;
+        let displayCorrect = stripChoiceLabel(q.answer);
         if (q.type === 'copy_paste') displayCorrect = `${q.answer || ''} (正しくペースト)`;
         else if (q.type === 'select_all') displayCorrect = `全文を正しくペースト (Ctrl+A -> Ctrl+C -> Ctrl+V)`;
         else if (q.type === 'find_password') displayCorrect = `${dynamicAnswers[q.id] || ''} (正しく入力)`;
