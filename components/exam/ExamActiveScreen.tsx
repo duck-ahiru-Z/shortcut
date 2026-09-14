@@ -64,12 +64,11 @@ export default function ExamActiveScreen({
         
         <div className={styles.choicesContainer}>
           {currentQ.choices.map((choice, idx) => {
-            // Choice strings retain their original letter while the list is shuffled.
-            // Re-numbering here made the visible option and result label disagree.
-            const letter = choice.match(/^([A-D])\./)?.[1] ?? ['A', 'B', 'C', 'D'][idx];
+            // Choices are shuffled for each attempt, so the visible labels must
+            // always follow the displayed order (A, B, C, D). Keep the original
+            // choice string internally for grading.
+            const letter = ['A', 'B', 'C', 'D'][idx];
             const isSelected = answers[currentQ.id] === choice;
-            // Choice strings retain their original label for server-side grading.
-            // Render only the shuffled, keyboard-accessible label to avoid duplication.
             const choiceText = choice.replace(/^[A-D]\.\s*/, '');
             return (
               <button 
