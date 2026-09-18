@@ -15,7 +15,7 @@ export default function FeaturesSection() {
           </div>
           <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>暗記ではなく「実技」</h3>
           <p style={{ color: 'var(--text-muted)', fontSize: '15px', lineHeight: 1.6 }}>
-            本検定の最大の特徴は、実際の画面を模した「実務シミュレータ」を採用している点です。頭で覚えるだけでなく、指が覚えているかを測ります。
+            本検定の最大の特徴は、実際の画面を模した「実務検定」を採用している点です。頭で覚えるだけでなく、指が覚えているかを測ります。
           </p>
         </div>
 
