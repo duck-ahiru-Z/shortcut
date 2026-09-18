@@ -177,7 +177,7 @@ export default function PracticalActiveScreen({
 
       <div className={styles.questionBox}>
         <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px", color: "#5f6368", fontSize: "12px" }}>
-          <span style={{ padding: "3px 8px", borderRadius: "999px", background: "#e8f0fe", color: "#174ea6", fontWeight: 600 }}>実務シミュレーター</span>
+          <span style={{ padding: "3px 8px", borderRadius: "999px", background: "#e8f0fe", color: "#174ea6", fontWeight: 600 }}>実務検定</span>
           <span>画面上の対象を操作して解答してください</span>
         </div>
         <h2 className={styles.questionText}>{q.question}</h2>

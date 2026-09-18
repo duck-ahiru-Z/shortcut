@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "ショートカットキー検定｜Windows・Mac対応の実技試験",
     template: "%s｜ショートカットキー検定",
   },
-  description: "Windows・Macのショートカットキーを知識と実技で測定するオンライン検定。5級から1級まで、実務シミュレーターでスキルを確認できます。",
+  description: "Windows・Macのショートカットキーを知識と実技で測定するオンライン検定。5級から1級まで、実務検定でスキルを確認できます。",
   applicationName: "ショートカットキー検定",
   authors: [{ name: "ショートカットキー検定" }],
   creator: "ショートカットキー検定",
