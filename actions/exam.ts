@@ -70,7 +70,7 @@ const CACHE_TTL = 1000 * 60 * 60; // 1 hour
 const bundledExamConfig: Record<string, { title: string; questionsCount: number; pool: QuestionData[] }> = {
   "5kyu": { title: "5級 知識試験 (Windows版)", questionsCount: 10, pool: (lowerGradePools["5kyu"] || []) as QuestionData[] },
   "4kyu": { title: "4級 知識試験 (Windows版)", questionsCount: 10, pool: (lowerGradePools["4kyu"] || []) as QuestionData[] },
-  "mac-5kyu": { title: "5級 知識試験 (Mac版)", questionsCount: 10, pool: (lowerGradePools["mac-5kyu"] || []) as QuestionData[] },
+  "mac-5kyu": { title: "5級 知識試験 (Mac版)", questionsCount: 5, pool: (lowerGradePools["mac-5kyu"] || []) as QuestionData[] },
   "mac-4kyu": { title: "4級 知識試験 (Mac版)", questionsCount: 10, pool: (lowerGradePools["mac-4kyu"] || []) as QuestionData[] },
   "mac-3kyu": { title: "3級 知識試験 (Mac版)", questionsCount: 20, pool: (lowerGradePools["mac-3kyu"] || []) as QuestionData[] },
   "mac-2kyu": { title: "2級 知識試験 (Mac版)", questionsCount: 20, pool: (lowerGradePools["mac-2kyu"] || []) as QuestionData[] },
